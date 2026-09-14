@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CareerPilot BD - personal job search and ATS resume tailoring dashboard">
+<title>CareerPilot BD | Smart Career & ATS Job Engine</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+@media print{
+ body{background:#fff!important;color:#111!important}
+ .no-print{display:none!important}
+ .print-area{display:block!important}
+}
+@page{size:A4;margin:10mm}
+@media print{body{background:#fff!important}.no-print{display:none!important}.print-resume{position:absolute;left:0;top:0;width:100%;margin:0;box-shadow:none!important;border-radius:0!important}}
+</style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+<div id="root"></div>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+const {useState,useEffect,useMemo}=React;
+
+/*
+ CAREERPILOT BD - GitHub Pages Static Edition
+ IMPORTANT:
+ - Data stays in this browser using localStorage.
+ - GitHub Pages cannot securely store API keys or run server-side automation.
+ - Resume tailoring here is rule-based and truthful: it never invents skills.
+*/
+
+const STORAGE_KEY="careerpilot_bd_v2_profile";
+const JOB_KEY="careerpilot_bd_v2_jobs";
+
+const DEFAULT_PROFILE={
+ personal:{fullName:"Kazi Shihab Jaiyid",email:"abesh9450@gmail.com",phone:"01859559450",location:"Dhaka, Bangladesh",linkedin:"",github:"https://github.com/Shihab-Abesh",portfolio:""},
+ education:[{degree:"Bachelor of Science in Computer Science & Engineering",institution:"American International University-Bangladesh (AIUB)",cgpa:"3.46 / 4.00",graduation:"Completed"}],
+ experience:[{
+   role:"Software Quality Assurance Intern",company:"Innolytic IT Ltd.",location:"Dhaka, Bangladesh",duration:"June 2026 – September 2026",
+   bullets:[
+    "Performed manual testing on a university website rebuild project, covering UI and design verification, functional testing, form validation, responsive testing, cross-browser testing, and regression testing.",
+    "Verified backend behaviour through frontend actions and identified content display defects before client delivery.",
+    "Documented and reported defects with reproduction steps and screen recordings, and verified fixes before closure.",
+    "Participated in client requirement, Scrum, and project meetings with developers, designers, and the project manager.",
+    "Supported website migration verification and gained exposure to hosting, DNS configuration, domain registration, and website setup."
+   ],
+   tags:["SQA","QA","IT","Information Systems","Application Support"]
+ }],
+ projects:[
+  {name:"Shipping Port Management System",description:"Academic system project covering ship registration, terminal operations, and shipment tracking.",bullets:["Prepared system requirements, UML diagrams, WBS, cost estimation using COCOMO, and risk analysis.","Designed functional test cases and performed system validation."],skills:["System Analysis","Requirements Analysis","UML","WBS","Risk Analysis","Functional Testing"],categories:["Information Systems","MIS","Business Analysis","SQA"]},
+  {name:"University Payroll Management System",description:"Relational database system project.",bullets:["Designed a relational database using Oracle with ER modeling and normalization.","Implemented SQL queries, joins, subqueries, triggers, procedures, and constraints while maintaining data integrity."],skills:["Oracle","SQL","PL/SQL","Database Design","ER Diagram","Normalization"],categories:["Information Systems","MIS","Data & Reporting","IT"]},
+  {name:"Shipping Port Management Web Application",description:"Dynamic web application with database-backed CRUD functionality.",bullets:["Built CRUD functionality using HTML, CSS, PHP, JavaScript, and MySQL.","Implemented form validation and database connectivity using phpMyAdmin."],skills:["HTML","CSS","PHP","JavaScript","MySQL","phpMyAdmin","Form Validation"],categories:["IT","Information Systems","Application Support"]}
+ ],
+ skills:{
+  technical:["SQL","PL/SQL","Oracle","MySQL","PHP","JavaScript","HTML","CSS"],
+  testing:["Manual Testing","Functional Testing","Regression Testing","UI Verification","Form Validation","Responsive Testing","Cross-Browser Testing","Defect Reporting","Test Case Design"],
+  tools:["Microsoft Office","Visual Studio Code","phpMyAdmin","Cisco Packet Tracer","Dia Diagram Editor"],
+  systems:["Information Systems","Database Management","System Analysis","Requirements Analysis","Data Integrity"],
+  soft:["Analytical Thinking","Problem Solving","Attention to Detail","Communication","Cross-functional Collaboration"]
+ },
+ preferences:{
+  categories:["Software Quality Assurance","Information Technology","Information Systems","MIS","Business Analysis","Application Support","Data & Reporting"],
+  titles:["Software QA Engineer","Junior SQA Engineer","QA Analyst","Software Tester","MIS Executive","MIS Analyst","Information Systems Executive","Systems Analyst","IT Executive","IT Officer","Application Support Engineer","Junior Business Analyst","Business Systems Analyst","Junior Data Analyst","Reporting Analyst"],
+  locations:["Dhaka, Bangladesh","Hybrid - Dhaka","Remote"],
+  excluded:["Senior Software Developer","Backend Developer","Full Stack Developer"],
+  minimumMatch:60
+ }
+};
+
+const stopWords=new Set(("and or the a an to of in for with on at from by is are be as this that will can should experience knowledge skills skill requirements responsible preferred plus using use ability excellent strong good candidate job role position company years year").split(" "));
+function normalize(s){return (s||"").toLowerCase().replace(/[^a-z0-9+#./ ]/g," ")}
+function terms(s){return [...new Set(normalize(s).split(/\s+/).filter(x=>x.length>2&&!stopWords.has(x)))]}
+function allEvidence(p){
+ return [
+ ...p.skills.technical,...p.skills.testing,...p.skills.tools,...p.skills.systems,...p.skills.soft,
+ ...p.experience.flatMap(x=>[x.role,x.company,...x.bullets]),
+ ...p.projects.flatMap(x=>[x.name,x.description,...x.skills,...x.bullets])
+ ].join(" ").toLowerCase()
+}
+function analyzeJob(job,p){
+ const text=[job.title,job.description,job.requiredSkills||""].join(" ");
+ const raw=terms(text);
+ const evidence=allEvidence(p);
+ const matched=raw.filter(t=>evidence.includes(t));
+ const missing=raw.filter(t=>!evidence.includes(t)).slice(0,12);
+ const skillPct=raw.length?Math.round((matched.length/raw.length)*100):0;
+ const titlePref=p.preferences.titles.some(x=>normalize(job.title).includes(normalize(x))||normalize(x).includes(normalize(job.title)));
+ const cat=(job.category||"").toLowerCase();
+ const relevantExp=p.experience.filter(x=>[x.role,...x.tags].join(" ").toLowerCase().includes(cat)).length;
+ const projectHits=p.projects.filter(x=>x.categories.some(c=>c.toLowerCase()===cat)||normalize([x.name,x.description,...x.skills,...x.bullets].join(" ")).split(" ").some(t=>raw.includes(t))).length;
+ const expScore=Math.min(100,relevantExp?85:45);
+ const projectScore=Math.min(100,projectHits*35);
+ const prefScore=titlePref||p.preferences.categories.some(c=>c.toLowerCase()===cat)?100:40;
+ const score=Math.round(skillPct*.35+expScore*.25+100*.15+projectScore*.15+prefScore*.10);
+ return {score,skillPct,matched:[...new Set(matched)].slice(0,15),missing:[...new Set(missing)],expScore,projectScore,prefScore}
+}
+const ROLE_STRATEGIES={
+"Software Quality Assurance":{label:"SQA / QA Resume",headline:"Software Quality Assurance | Manual Testing | Web Validation",skills:["Manual Testing","Functional Testing","Regression Testing","UI Verification","Test Case Design","Defect Reporting","Responsive Testing","Cross-Browser Testing","SQL"]},
+"Information Technology":{label:"IT Resume",headline:"Information Technology | Application Support | Web & Database",skills:["Technical Support","Web Technologies","Database Management","SQL","HTML","CSS","JavaScript","PHP","DNS","Hosting","SSL"]},
+"Information Systems":{label:"Information Systems Resume",headline:"Information Systems | Systems Analysis | Database Management",skills:["Information Systems","System Analysis","Requirements Analysis","Database Management","SQL","Oracle","MySQL","UML","Risk Analysis","Functional Testing"]},
+"MIS":{label:"MIS Resume",headline:"Management Information Systems | SQL | Reporting | Data",skills:["MIS","SQL","Database Management","Oracle","MySQL","Data Management","Information Systems","System Analysis","Microsoft Office","Analytical Thinking"]},
+"Business Analysis":{label:"Business Analyst Resume",headline:"Business Analysis | Requirements | System Analysis | SQL",skills:["Requirements Analysis","System Analysis","UML","WBS","Risk Analysis","Stakeholder Communication","SQL","Process Understanding","Functional Testing","Analytical Thinking"]},
+"Application Support":{label:"Application Support Resume",headline:"Application Support | Web Applications | Database | Validation",skills:["Application Support","Web Applications","SQL","Database Management","Troubleshooting","Functional Testing","Defect Reporting","DNS","Hosting","SSL"]},
+"Data & Reporting":{label:"Data / Reporting Resume",headline:"Data & Reporting | SQL | Oracle | Database | Analytics",skills:["SQL","Oracle","MySQL","Database Design","Data Integrity","Data Management","Reporting","Analytical Thinking","Excel / Microsoft Office"]}
+};
+function tailoredResume(job,p){
+ const a=analyzeJob(job,p);
+ const category=(job.category||"General");
+ const relevantProjects=[...p.projects].sort((x,y)=>{
+  const xt=x.categories.includes(category)?2:0, yt=y.categories.includes(category)?2:0;
+  return yt-xt;
+ }).slice(0,3);
+ const jobWords=terms([job.title,job.description].join(" "));
+ const skills=[...p.skills.testing,...p.skills.systems,...p.skills.technical,...p.skills.tools]
+  .filter(s=>jobWords.some(w=>normalize(s).includes(w)||w.includes(normalize(s).split(" ")[0])))
+  .concat([...p.skills.testing,...p.skills.systems,...p.skills.technical].filter(s=>!jobWords.some(w=>normalize(s).includes(w)||w.includes(normalize(s).split(" ")[0]))))
+  .filter((v,i,a)=>a.indexOf(v)===i).slice(0,12);
+ const summaryMap={
+  "Software Quality Assurance":"Computer Science and Engineering graduate with hands-on SQA internship experience in manual testing, functional testing, regression testing, UI verification, defect reporting, and cross-functional collaboration.",
+  "Information Systems":"Computer Science and Engineering graduate with knowledge of information systems, relational databases, SQL, database design, and system analysis through academic projects and practical software quality experience.",
+  "MIS":"Computer Science and Engineering graduate with knowledge of SQL, relational databases, information systems, system analysis, and data management.",
+  "Information Technology":"Computer Science and Engineering graduate with practical exposure to web technologies, databases, software testing, website infrastructure, hosting, DNS configuration, and technical validation.",
+  "Business Analysis":"Computer Science and Engineering graduate with academic experience in requirements analysis, UML, WBS, risk analysis, system validation, and database-backed application projects.",
+  "Application Support":"Computer Science and Engineering graduate with exposure to web applications, databases, software validation, hosting, DNS, and technical troubleshooting.",
+  "Data & Reporting":"Computer Science and Engineering graduate with experience in SQL, Oracle, relational database design, data integrity, and analytical problem solving."
+ };
+ return {summary:summaryMap[category]||"Computer Science and Engineering graduate with a multidisciplinary background in software quality, information systems, databases, system analysis, and web technologies.",skills,relevantProjects,analysis:a}
+}
+function download(filename,content,type="text/plain"){
+ const blob=new Blob([content],{type}); const u=URL.createObjectURL(blob); const a=document.createElement("a");a.href=u;a.download=filename;a.click();URL.revokeObjectURL(u);
+}
+function csvEscape(v){return `"${String(v??"").replaceAll('"','""')}"`}
+
+function App(){
+ const [profile,setProfile]=useState(()=>JSON.parse(localStorage.getItem(STORAGE_KEY)||"null")||DEFAULT_PROFILE);
+ const [jobs,setJobs]=useState(()=>JSON.parse(localStorage.getItem(JOB_KEY)||"[]"));
+ const [tab,setTab]=useState("dashboard");
+ const [selected,setSelected]=useState(null);
+ const [editing,setEditing]=useState(false);
+ const [toast,setToast]=useState("");
+ const [jobForm,setJobForm]=useState({title:"",company:"",category:"Software Quality Assurance",location:"Dhaka, Bangladesh",source:"",url:"",description:""});
+ const [search,setSearch]=useState("");
+ const [profileText,setProfileText]=useState("");
+
+ useEffect(()=>localStorage.setItem(STORAGE_KEY,JSON.stringify(profile)),[profile]);
+ useEffect(()=>localStorage.setItem(JOB_KEY,JSON.stringify(jobs)),[jobs]);
+ const notify=m=>{setToast(m);setTimeout(()=>setToast(""),3500)};
+ const saveProfileJSON=()=>{
+  try{const obj=JSON.parse(profileText);setProfile(obj);setEditing(false);notify("Profile saved successfully.");}
+  catch(e){alert("Invalid JSON. Please correct the profile data.");}
+ };
+ const addJob=e=>{
+  e.preventDefault();
+  if(!jobForm.title||!jobForm.company||!jobForm.description)return alert("Please provide title, company, and full job description.");
+  const j={...jobForm,id:crypto.randomUUID(),status:"Awaiting Review",createdAt:new Date().toISOString()};
+  setJobs([j,...jobs]);setJobForm({title:"",company:"",category:"Software Quality Assurance",location:"Dhaka, Bangladesh",source:"",url:"",description:""});setTab("jobs");notify("Job added and analyzed.");
+ };
+ const exportProfile=()=>download("careerpilot-profile.json",JSON.stringify(profile,null,2),"application/json");
+ const exportJobs=()=>{const rows=[["Title","Company","Category","Location","Match","Status","Source","URL"],...jobs.map(j=>{const a=analyzeJob(j,profile);return[j.title,j.company,j.category,j.location,a.score,j.status,j.source,j.url]})];download("careerpilot-jobs.csv",rows.map(r=>r.map(csvEscape).join(",")).join("\n"),"text/csv")};
+ const importProfile=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{setProfile(JSON.parse(r.result));notify("Profile imported.");}catch{alert("Invalid profile file.");}};r.readAsText(f)};
+ const visibleJobs=jobs.filter(j=>[j.title,j.company,j.category,j.location].join(" ").toLowerCase().includes(search.toLowerCase()));
+ const stats=useMemo(()=>{const scores=jobs.map(j=>analyzeJob(j,profile).score);return{total:jobs.length,strong:scores.filter(x=>x>=80).length,review:jobs.filter(j=>j.status==="Awaiting Review").length,applied:jobs.filter(j=>j.status==="Applied").length}},[jobs,profile]);
+ const nav=[["dashboard","Dashboard"],["profile","Master Profile"],["preferences","Career Preferences"],["add","Add Job"],["jobs","Job Analysis"],["tracker","Tracker"]];
+ return <div>
+  <header className="no-print sticky top-0 z-30 border-b border-slate-800 bg-slate-950/95 backdrop-blur">
+   <div className="max-w-7xl mx-auto px-4 py-3 flex flex-wrap gap-3 justify-between items-center">
+    <div><h1 className="font-bold text-lg">CareerPilot BD</h1><p className="text-xs text-cyan-400">Multi-Career Job Search & Truthful ATS Resume Engine</p></div>
+    <div className="flex flex-wrap gap-1">{nav.map(([id,label])=><button key={id} onClick={()=>setTab(id)} className={"px-3 py-2 rounded-lg text-xs "+(tab===id?"bg-cyan-600 text-white":"bg-slate-900 text-slate-300 hover:bg-slate-800")}>{label}</button>)}</div>
+   </div>
+  </header>
+  {toast&&<div className="no-print fixed right-4 top-20 z-50 bg-emerald-600 text-white px-4 py-3 rounded-lg shadow">{toast}</div>}
+  <main className="max-w-7xl mx-auto p-4 md:p-6">
+   {tab==="dashboard"&&<section className="space-y-6">
+    <div className="bg-gradient-to-r from-cyan-900/40 to-slate-900 border border-slate-800 rounded-2xl p-6"><h2 className="text-2xl font-bold">Welcome, {profile.personal.fullName||"Candidate"}</h2><p className="text-slate-400 mt-2">One master profile. Multiple career paths. Job-specific, truthful resume tailoring.</p><p className="text-xs text-amber-300 mt-3">Static GitHub Pages edition: this app stores data in your browser. It does not automatically apply to jobs.</p></div>
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">{[["Jobs",stats.total],["Strong Match (80+)",stats.strong],["Awaiting Review",stats.review],["Applied",stats.applied]].map(x=><div key={x[0]} className="bg-slate-900 border border-slate-800 rounded-xl p-4"><p className="text-xs text-slate-400">{x[0]}</p><p className="text-2xl font-bold mt-1">{x[1]}</p></div>)}</div>
+    <div className="bg-slate-900 border border-slate-800 rounded-xl p-5"><h3 className="font-semibold">Active Career Areas</h3><div className="flex flex-wrap gap-2 mt-3">{profile.preferences.categories.map(c=><span className="bg-cyan-950 text-cyan-300 border border-cyan-800 px-3 py-1 rounded-full text-xs" key={c}>{c}</span>)}</div></div>
+   </section>}
+
+   {tab==="profile"&&<section className="space-y-4">
+    <div className="flex flex-wrap justify-between gap-2"><div><h2 className="text-xl font-bold">Master Profile</h2><p className="text-sm text-slate-400">This is your source of truth. Keep all information factual.</p></div><div className="flex gap-2"><button onClick={exportProfile} className="px-3 py-2 text-xs rounded bg-slate-800">Export Backup</button><label className="px-3 py-2 text-xs rounded bg-slate-800 cursor-pointer">Import Backup<input type="file" accept=".json" className="hidden" onChange={importProfile}/></label><button onClick={()=>{setProfileText(JSON.stringify(profile,null,2));setEditing(true)}} className="px-3 py-2 text-xs rounded bg-cyan-600">Edit Profile</button></div></div>
+    {!editing?<ProfileView p={profile}/>:<div className="space-y-3"><div className="bg-amber-950/40 border border-amber-800 p-3 rounded text-xs text-amber-200">Advanced editor: edit carefully. This version uses structured JSON so every part of the master profile can be changed.</div><textarea value={profileText} onChange={e=>setProfileText(e.target.value)} className="w-full h-[600px] bg-slate-900 border border-slate-700 rounded-xl p-4 font-mono text-xs"/><div className="flex gap-2"><button onClick={saveProfileJSON} className="px-4 py-2 bg-emerald-600 rounded">Save</button><button onClick={()=>setEditing(false)} className="px-4 py-2 bg-slate-800 rounded">Cancel</button></div></div>}
+   </section>}
+
+   {tab==="preferences"&&<Preferences p={profile} setProfile={setProfile} notify={notify}/>}
+   {tab==="add"&&<section className="max-w-3xl"><h2 className="text-xl font-bold mb-2">Add Job for Analysis</h2><p className="text-sm text-slate-400 mb-4">Paste the complete job description. The system calculates a transparent compatibility analysis using your master profile.</p><form onSubmit={addJob} className="bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-3">
+    <div className="grid md:grid-cols-2 gap-3"><Input placeholder="Job Title *" value={jobForm.title} set={v=>setJobForm({...jobForm,title:v})}/><Input placeholder="Company *" value={jobForm.company} set={v=>setJobForm({...jobForm,company:v})}/></div>
+    <div className="grid md:grid-cols-2 gap-3"><select value={jobForm.category} onChange={e=>setJobForm({...jobForm,category:e.target.value})} className="bg-slate-950 border border-slate-700 rounded p-3">{profile.preferences.categories.map(c=><option key={c}>{c}</option>)}</select><Input placeholder="Location" value={jobForm.location} set={v=>setJobForm({...jobForm,location:v})}/></div>
+    <div className="grid md:grid-cols-2 gap-3"><Input placeholder="Source (Bdjobs, company site, LinkedIn...)" value={jobForm.source} set={v=>setJobForm({...jobForm,source:v})}/><Input placeholder="Application URL" value={jobForm.url} set={v=>setJobForm({...jobForm,url:v})}/></div>
+    <textarea required placeholder="Paste the FULL job description here *" value={jobForm.description} onChange={e=>setJobForm({...jobForm,description:e.target.value})} className="w-full h-56 bg-slate-950 border border-slate-700 rounded p-3"/>
+    <button className="bg-cyan-600 px-5 py-2 rounded font-semibold">Analyze & Add to Queue</button>
+   </form></section>}
+
+   {tab==="jobs"&&<section><div className="flex flex-wrap justify-between gap-3 mb-4"><div><h2 className="text-xl font-bold">Job Analysis & Resume Queue</h2><p className="text-sm text-slate-400">Scores are explainable estimates, not a claim about any employer's ATS.</p></div><div className="flex gap-2"><input placeholder="Search jobs..." value={search} onChange={e=>setSearch(e.target.value)} className="bg-slate-900 border border-slate-700 rounded px-3 text-sm"/><button onClick={exportJobs} className="bg-slate-800 px-3 py-2 rounded text-xs">Export CSV</button></div></div>
+    <div className="grid lg:grid-cols-2 gap-4">{visibleJobs.map(j=>{const a=analyzeJob(j,profile);return <div key={j.id} className="bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between gap-4"><div><h3 className="font-bold">{j.title}</h3><p className="text-sm text-cyan-400">{j.company} · {j.category}</p><p className="text-xs text-slate-400">{j.location}</p></div><div className="text-right"><p className="text-3xl font-bold text-cyan-400">{a.score}%</p><p className="text-[10px] text-slate-400">COMPATIBILITY</p></div></div><div className="grid grid-cols-3 gap-2 text-xs mt-4"><Metric label="Keyword" value={a.skillPct}/><Metric label="Experience" value={a.expScore}/><Metric label="Projects" value={a.projectScore}/></div><div className="flex gap-2 mt-4"><button onClick={()=>{setSelected(j);setTab("resume")}} className="bg-cyan-600 px-3 py-2 rounded text-xs">View Analysis & Resume</button><button onClick={()=>setJobs(jobs.filter(x=>x.id!==j.id))} className="bg-slate-800 px-3 py-2 rounded text-xs">Delete</button></div></div>})}</div>
+    {!jobs.length&&<div className="text-slate-400 bg-slate-900 border border-slate-800 rounded-xl p-8 text-center">No jobs yet. Add a real job description to begin.</div>}
+   </section>}
+
+   {tab==="resume"&&selected&&<ResumePanel job={selected} p={profile} setJobs={setJobs} jobs={jobs} notify={notify}/>}
+   {tab==="resume"&&!selected&&<div className="text-slate-400">Select a job from Job Analysis first.</div>}
+   {tab==="tracker"&&<Tracker jobs={jobs} setJobs={setJobs}/>}
+  </main>
+  <footer className="no-print text-center text-xs text-slate-500 p-5 border-t border-slate-900">CareerPilot BD · Static GitHub Pages Edition · Your data remains in this browser unless you export it.</footer>
+ </div>
+}
+
+function Input({placeholder,value,set}){return <input placeholder={placeholder} value={value} onChange={e=>set(e.target.value)} className="bg-slate-950 border border-slate-700 rounded p-3 w-full text-sm"/>}
+function Metric({label,value}){return <div className="bg-slate-950 rounded p-2"><p className="text-slate-500">{label}</p><p className="font-bold">{value}%</p></div>}
+function ProfileView({p}){return <div className="space-y-4">
+ <Block title="Personal Information"><div className="grid md:grid-cols-2 gap-2 text-sm">{Object.entries(p.personal).map(([k,v])=><p key={k}><span className="text-slate-500">{k}:</span> {v||"—"}</p>)}</div></Block>
+ <Block title="Education">{p.education.map((x,i)=><div key={i} className="text-sm mb-3"><b>{x.degree}</b><br/><span className="text-slate-400">{x.institution} · {x.cgpa} · {x.graduation}</span></div>)}</Block>
+ <Block title="Experience">{p.experience.map((x,i)=><div key={i} className="mb-5"><b>{x.role}</b><p className="text-sm text-cyan-400">{x.company} · {x.duration}</p><ul className="list-disc ml-5 mt-2 text-sm text-slate-300">{x.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</Block>
+ <Block title="Projects">{p.projects.map((x,i)=><div key={i} className="mb-4"><b>{x.name}</b><p className="text-sm text-slate-400">{x.description}</p><p className="text-xs text-cyan-300 mt-1">{x.skills.join(" · ")}</p></div>)}</Block>
+ <Block title="Skills">{Object.entries(p.skills).map(([k,v])=><p className="text-sm mb-2" key={k}><span className="capitalize text-slate-400">{k}:</span> {v.join(", ")}</p>)}</Block>
+</div>}
+function Block({title,children}){return <div className="bg-slate-900 border border-slate-800 rounded-xl p-5"><h3 className="font-semibold mb-3">{title}</h3>{children}</div>}
+
+function Preferences({p,setProfile,notify}){
+ const [newTitle,setNewTitle]=useState("");
+ const toggle=(arr,v)=>arr.includes(v)?arr.filter(x=>x!==v):[...arr,v];
+ const categories=["Software Quality Assurance","Information Technology","Information Systems","MIS","Business Analysis","Application Support","Data & Reporting"];
+ return <section className="space-y-5"><div><h2 className="text-xl font-bold">Career Preferences</h2><p className="text-sm text-slate-400">Turn career areas on or off. Your job search and relevance analysis follow these preferences.</p></div>
+ <Block title="Career Areas"><div className="grid md:grid-cols-2 gap-2">{categories.map(c=><label key={c} className="bg-slate-900 border border-slate-800 p-3 rounded cursor-pointer text-sm"><input type="checkbox" checked={p.preferences.categories.includes(c)} onChange={()=>setProfile({...p,preferences:{...p.preferences,categories:toggle(p.preferences.categories,c)}})} className="mr-2"/>{c}</label>)}</div></Block>
+ <Block title="Target Job Titles"><div className="flex flex-wrap gap-2">{p.preferences.titles.map(t=><span key={t} className="bg-cyan-950 border border-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-xs">{t}<button className="ml-2 text-red-300" onClick={()=>setProfile({...p,preferences:{...p.preferences,titles:p.preferences.titles.filter(x=>x!==t)}})}>×</button></span>)}</div><div className="flex gap-2 mt-4"><input value={newTitle} onChange={e=>setNewTitle(e.target.value)} placeholder="Add job title" className="bg-slate-950 border border-slate-700 rounded p-2 flex-1 text-sm"/><button onClick={()=>{if(newTitle.trim()){setProfile({...p,preferences:{...p.preferences,titles:[...p.preferences.titles,newTitle.trim()]}});setNewTitle("");notify("Job title added.")}}} className="bg-cyan-600 px-3 rounded text-sm">Add</button></div></Block>
+ <Block title="Search Guardrails"><p className="text-sm text-slate-400 mb-2">Excluded roles are kept out of your preferred targets.</p><textarea value={p.preferences.excluded.join("\n")} onChange={e=>setProfile({...p,preferences:{...p.preferences,excluded:e.target.value.split("\n").map(x=>x.trim()).filter(Boolean)}})} className="w-full h-24 bg-slate-950 border border-slate-700 rounded p-3 text-sm"/></Block>
+ </section>
+}
+
+function ResumePanel({job,p,setJobs,jobs,notify}){
+ const [strategy,setStrategy]=useState(ROLE_STRATEGIES[job.category]?job.category:"Information Systems");
+ const cfg=ROLE_STRATEGIES[strategy];
+ const a=analyzeJob({...job,category:strategy},p);
+ const exp=[...p.experience].map(e=>({...e,bullets:[...e.bullets].sort((x,y)=>scoreBullet(y,job)-scoreBullet(x,job))}));
+ const realSkills=[...p.skills.technical,...p.skills.testing,...p.skills.tools,...p.skills.systems,...p.skills.soft].filter((v,i,a)=>a.indexOf(v)===i);
+ const skills=[...cfg.skills,...realSkills].filter((v,i,a)=>a.indexOf(v)===i).filter(x=>realSkills.some(r=>normalize(r)===normalize(x)||normalize(r).includes(normalize(x))||normalize(x).includes(normalize(r)))).slice(0,14);
+ const projects=[...p.projects].sort((x,y)=>projectScore(y,strategy,job)-projectScore(x,strategy,job)).slice(0,3);
+ const summary=summaryFor(strategy);
+ const contact=[p.personal.location,p.personal.phone,p.personal.email,p.personal.linkedin,p.personal.github,p.personal.portfolio].filter(Boolean).join(" | ");
+ const downloadTxt=()=>download(`${p.personal.fullName.replace(/\s+/g,"_")}_${strategy.replace(/\W+/g,"_")}.txt`,makeText());
+ const makeText=()=>`${p.personal.fullName}\n${contact}\n${cfg.headline}\n\nPROFESSIONAL SUMMARY\n${summary}\n\nCORE SKILLS\n${skills.join(" | ")}\n\nPROFESSIONAL EXPERIENCE\n${exp.map(e=>`${e.role} | ${e.company} | ${e.duration}\n${e.bullets.map(b=>"• "+b).join("\n")}`).join("\n\n")}\n\nSELECTED PROJECTS\n${projects.map(x=>`${x.name}\n${x.description}\n${x.bullets.map(b=>"• "+b).join("\n")}\nSkills: ${x.skills.join(", ")}`).join("\n\n")}\n\nEDUCATION\n${p.education.map(e=>`${e.degree} | ${e.institution} | ${e.cgpa} | ${e.graduation}`).join("\n")}`;
+ const print=()=>window.print();
+ const setStatus=status=>{setJobs(jobs.map(x=>x.id===job.id?{...x,status,selectedStrategy:strategy}:x));notify(`Status updated to ${status}.`)};
+ return <section className="space-y-5">
+  <div className="flex flex-wrap justify-between gap-3"><div><h2 className="text-xl font-bold">Recruiter-Style ATS Resume</h2><p className="text-sm text-cyan-400">{job.title} · {job.company}</p><p className="text-xs text-slate-500 mt-1">One-page, single-column, text-first resume layout.</p></div><div className="no-print flex gap-2"><button onClick={downloadTxt} className="bg-slate-800 px-3 py-2 rounded text-xs">Download TXT</button><button onClick={print} className="bg-cyan-600 px-3 py-2 rounded text-xs">Print / Save PDF</button></div></div>
+  <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between items-center mb-3"><div><h3 className="font-semibold">Resume Strategy</h3><p className="text-xs text-slate-500">The system changes emphasis, not your facts.</p></div><span className="text-xs text-cyan-300">{cfg.label}</span></div><div className="grid md:grid-cols-4 gap-2">{Object.entries(ROLE_STRATEGIES).map(([k,v])=><button key={k} onClick={()=>setStrategy(k)} className={`p-3 rounded-lg border text-left text-xs ${strategy===k?'border-cyan-500 bg-cyan-950/50':'border-slate-800 bg-slate-950'}`}><b>{v.label}</b><span className="block text-slate-500 mt-1">{k}</span></button>)}</div></div>
+  <div className="grid md:grid-cols-2 gap-4 no-print"><Block title={`Compatibility Analysis: ${a.score}%`}><div className="grid grid-cols-2 gap-2"><Metric label="Keyword Evidence" value={a.skillPct}/><Metric label="Experience" value={a.expScore}/><Metric label="Projects" value={a.projectScore}/><Metric label="Preference" value={a.prefScore}/></div><p className="text-xs text-emerald-300 mt-3">Matched: {a.matched.slice(0,10).join(", ")||"None"}</p><p className="text-xs text-amber-300 mt-2">Potential gaps: {a.missing.slice(0,8).join(", ")||"None detected"}</p></Block><Block title="ATS Quality"><CheckRow ok text="Single-column, standard section headings"/><CheckRow ok text="No graphics, tables, icons, sidebars, or decorative resume elements"/><CheckRow ok text="Plain-text contact information"/><CheckRow ok={a.missing.length<8} text="Job keywords reviewed without inventing qualifications"/><p className="text-[11px] text-slate-500 mt-3">Compatibility is an internal estimate, not a real employer ATS score.</p></Block></div>
+  <div className="bg-white text-black max-w-[794px] mx-auto p-8 md:p-10 shadow-2xl rounded print-resume">
+    <header className="border-b pb-3 mb-4 text-center"><h1 className="text-2xl font-bold tracking-tight">{p.personal.fullName}</h1><p className="text-[10px] mt-1 leading-4">{contact}</p><p className="text-[12px] font-semibold mt-1">{cfg.headline}</p></header>
+    <ResumeSection title="PROFESSIONAL SUMMARY"><p className="text-[10.5px] leading-5">{summary}</p></ResumeSection>
+    <ResumeSection title="CORE SKILLS"><p className="text-[10.5px] leading-5">{skills.join(" • ")}</p></ResumeSection>
+    <ResumeSection title="PROFESSIONAL EXPERIENCE">{exp.map((e,i)=><div key={i} className="mb-3"><div className="flex justify-between text-[10.5px]"><b>{e.role}</b><b>{e.duration}</b></div><div className="text-[10.5px] font-semibold">{e.company} · {e.location}</div><ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{e.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
+    <ResumeSection title="SELECTED PROJECTS">{projects.map((x,i)=><div key={i} className="mb-3"><b className="text-[10.5px]">{x.name}</b><p className="text-[10px] leading-4">{x.description}</p><ul className="list-disc ml-5 text-[10px] leading-4">{x.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul><p className="text-[9.5px]"><b>Skills:</b> {x.skills.join(", ")}</p></div>)}</ResumeSection>
+    <ResumeSection title="EDUCATION">{p.education.map((e,i)=><p key={i} className="text-[10px] leading-4 mb-1"><b>{e.degree}</b><br/>{e.institution} · {e.cgpa} · {e.graduation}</p>)}</ResumeSection>
+  </div>
+  <div className="no-print flex flex-wrap gap-2 justify-end"><button onClick={()=>setStatus("Saved")} className="bg-slate-800 px-3 py-2 rounded text-xs">Save</button><button onClick={()=>setStatus("Awaiting Approval")} className="bg-amber-600 px-3 py-2 rounded text-xs">Send to Approval</button><button onClick={()=>setStatus("Applied")} className="bg-emerald-600 px-3 py-2 rounded text-xs">Mark Applied</button>{job.url&&<a href={job.url} target="_blank" rel="noopener" className="bg-cyan-700 px-3 py-2 rounded text-xs">Open Job</a>}</div>
+ </section>
+}
+function scoreBullet(b,job){return terms([job.title,job.description].join(" ")).filter(t=>normalize(b).includes(t)).length}
+function projectScore(x,strategy,job){return (x.categories.includes(strategy)?20:0)+terms([job.title,job.description].join(" ")).filter(t=>normalize([x.name,x.description,...x.skills,...x.bullets].join(" ")).includes(t)).length}
+function summaryFor(strategy){const m={
+"Software Quality Assurance":"Computer Science and Engineering graduate with hands-on Software Quality Assurance internship experience in manual, functional and regression testing of web applications. Experienced in UI verification, form validation, responsive and cross-browser testing, defect documentation, fix verification, and collaboration with development and project teams.",
+"Information Technology":"Computer Science and Engineering graduate with practical exposure to web applications, databases, software quality validation, website infrastructure, hosting, DNS configuration, SSL setup, and technical problem solving through internship and academic projects.",
+"Information Systems":"Computer Science and Engineering graduate with experience in information systems, relational databases, SQL, system analysis, requirements documentation, UML, risk analysis, and software validation through academic projects and practical QA experience.",
+"MIS":"Computer Science and Engineering graduate with a foundation in management information systems, SQL, relational databases, data management, system analysis, and analytical problem solving.",
+"Business Analysis":"Computer Science and Engineering graduate with academic experience in requirements analysis, UML, work breakdown structures, risk analysis, system validation, and database-backed application projects.",
+"Application Support":"Computer Science and Engineering graduate with practical experience validating web applications, documenting defects, verifying fixes, working with databases, and exposure to hosting, DNS, SSL, and website migration.",
+"Data & Reporting":"Computer Science and Engineering graduate with practical database experience in Oracle and MySQL, SQL queries, database design, data integrity, data management, and analytical problem solving."};return m[strategy]||m["Information Systems"]}
+function ResumeSection({title,children}){return <section className="mb-4"><h2 className="text-[10.5px] tracking-widest font-bold border-b border-black pb-1 mb-2">{title}</h2>{children}</section>}
+function CheckRow({ok,text}){return <p className="text-xs flex gap-2 items-start"><span className={ok?'text-emerald-400':'text-amber-400'}>{ok?'✓':'!'}</span>{text}</p>}
+
+function Tracker({jobs,setJobs}){const statuses=["Awaiting Review","Saved","Awaiting Approval","Applied","Interview","Rejected","Offer"];return <section><h2 className="text-xl font-bold mb-4">Application Tracker</h2><div className="space-y-3">{jobs.map(j=><div key={j.id} className="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-wrap justify-between gap-3"><div><b>{j.title}</b><p className="text-sm text-slate-400">{j.company}</p></div><select value={j.status} onChange={e=>setJobs(jobs.map(x=>x.id===j.id?{...x,status:e.target.value}:x))} className="bg-slate-950 border border-slate-700 rounded p-2 text-sm">{statuses.map(s=><option key={s}>{s}</option>)}</select></div>)}</div></section>}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+</script>
+</body>
+</html>
