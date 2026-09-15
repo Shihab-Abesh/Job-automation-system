@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Approval queue - CareerPilot BD</title>
+<link rel="stylesheet" href="review.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a class="back" href="index.html">CareerPilot</a>
+    <div class="freshness" id="freshness">Loading the feed</div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="count" id="waitingCount">&mdash;</p>
+    <h1 id="waitingLabel">jobs waiting on your decision</h1>
+    <p class="hero-note">
+      Nothing here has been applied to. The pipeline finds and ranks, you decide.
+    </p>
+  </section>
+
+  <nav class="filters" id="filters" aria-label="Filter the queue">
+    <button class="chip is-on" data-filter="pending">Waiting on you</button>
+    <button class="chip" data-filter="A">Strong match</button>
+    <button class="chip" data-filter="flagged">Flagged by a rule</button>
+    <button class="chip" data-filter="all">Everything</button>
+    <input type="search" id="search" placeholder="Filter by title, company or area">
+  </nav>
+
+  <p class="keys">
+    Move with <kbd>J</kbd> <kbd>K</kbd>, approve with <kbd>A</kbd>,
+    save for later with <kbd>S</kbd>, pass with <kbd>X</kbd>,
+    open the posting with <kbd>O</kbd>.
+  </p>
+
+  <ol class="queue" id="queue" tabindex="-1"></ol>
+
+  <p class="empty" id="empty" hidden>
+    Queue is clear. The next run is scheduled for 9am and 5pm Dhaka time.
+  </p>
+</main>
+
+<footer class="foot">
+  <button id="exportBtn" class="ghost">Export decisions</button>
+  <button id="syncBtn" class="ghost">Push to dashboard</button>
+  <span id="status" class="status" role="status" aria-live="polite"></span>
+</footer>
+
+<template id="rowTpl">
+  <li class="row" tabindex="0">
+    <div class="gate"><span class="gate-fill"></span><span class="gate-score"></span></div>
+    <div class="body">
+      <h2 class="title"></h2>
+      <p class="org"></p>
+      <p class="facts"></p>
+      <p class="flags"></p>
+      <p class="skills"></p>
+    </div>
+    <div class="actions">
+      <button data-act="Awaiting Approval" class="act approve">Approve</button>
+      <button data-act="Saved" class="act save">Save</button>
+      <button data-act="Rejected" class="act pass">Pass</button>
+      <a class="act open" target="_blank" rel="noopener">Open posting</a>
+    </div>
+  </li>
+</template>
+
+<script src="review.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+{
+ "schema": 2,
+ "generatedAt": "2026-09-14T11:44:47+00:00",
+ "meta": {
+  "queries": [
+   "software quality assurance",
+   "QA engineer",
+   "software tester",
+   "manual testing",
+   "QA analyst",
+   "MIS executive",
+   "MIS officer",
+   "information systems executive",
+   "IT officer",
+   "IT executive",
+   "application support engineer",
+   "junior business analyst",
+   "junior data analyst"
+  ],
+  "sources": {
+   "bdjobs": {
+    "found": 0,
+    "errors": []
+   },
+   "rss": {
+    "found": 0,
+    "errors": [
+     "RemoteOK: empty response",
+     "We Work Remotely: empty response"
+    ]
+   },
+   "careers": {
+    "found": 0,
+    "errors": []
+   },
+   "local": {
+    "found": 7,
+    "errors": []
+   }
+  },
+  "counts": {
+   "total": 6,
+   "new": 6,
+   "expired": 0,
+   "duplicatesFolded": 1,
+   "priorityA": 0,
+   "priorityB": 4,
+   "priorityC": 2
+  },
+  "filters": {
+   "min_salary_bdt": 20000,
+   "max_distance_km": 10,
+   "allow_remote": true,
+   "retention_days": 45,
+   "drop_expired": true
+  },
+  "blockedUrls": [
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+quality+assurance&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+quality+assurance&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+engineer&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+engineer&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+tester&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+tester&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=manual+testing&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=manual+testing&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+analyst&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+analyst&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+executive&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+executive&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+officer&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+officer&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=information+systems+executive&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=information+systems+executive&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+officer&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+officer&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+executive&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+executive&pg=2"
+  ],
+  "ranAt": "2026-09-14T11:44:47+00:00"
+ },
+ "jobs": [
+  {
+   "title": "IT Support Officer",
+   "company": "BRAC Bank PLC",
+   "description": "Provide application support and technical support to internal users, troubleshoot web applications, basic SQL queries, database management support, hosting and DNS understanding, documentation of incidents.",
+   "category": "Application Support",
+   "location": "Mohakhali, Dhaka",
+   "source": "Bdjobs",
+   "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1291200",
+   "status": "Awaiting Review",
+   "id": "6e159791-6154-4994-95cb-a76e61c85930",
+   "createdAt": "2026-09-14T11:44:47+00:00",
+   "requiredSkills": "officer, provide, technical, internal, users, troubleshoot, applications, basic, understanding, documentation, incidents.",
+   "postedAt": null,
+   "deadline": "2026-10-15",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "",
+   "experienceText": "",
+   "area": "Mohakhali",
+   "distanceKm": 1.9,
+   "fingerprint": "608db9c535faca93",
+   "sources": [
+    {
+     "source": "Bdjobs",
+     "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1291200",
+     "found_at": "2026-09-14T11:44:47+00:00"
+    }
+   ],
+   "matchScore": 77,
+   "scoreParts": {
+    "keyword": 45,
+    "experience": 85,
+    "projects": 100,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "local"
+  },
+  {
+   "title": "Junior SQA Engineer",
+   "company": "Innolytic IT Ltd.",
+   "description": "We are looking for a Junior SQA Engineer. Responsibilities include manual testing of web applications, writing test cases, functional testing, regression testing, cross-browser testing and defect reporting in Jira. Knowledge of SQL and API testing with Postman is a plus. Fresh graduates in CSE are encouraged to apply.",
+   "category": "Software Quality Assurance",
+   "location": "Dhanmondi, Dhaka",
+   "source": "Bdjobs + LinkedIn alert",
+   "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1288411&ln=1",
+   "status": "Awaiting Review",
+   "id": "72c41fd8-2e4d-4ad4-bba0-87d840b44c0b",
+   "createdAt": "2026-09-14T11:44:47+00:00",
+   "requiredSkills": "junior, sqa, engineer, looking, engineer., responsibilities, include, applications, writing, jira., api, postman",
+   "postedAt": null,
+   "deadline": "2026-10-30",
+   "salaryMin": 22000,
+   "salaryMax": 28000,
+   "salaryText": "Tk 22,000 - 28,000",
+   "employmentType": "",
+   "experienceText": "",
+   "area": "Dhanmondi",
+   "distanceKm": 2.8,
+   "fingerprint": "2e1d36e441e57983",
+   "sources": [
+    {
+     "source": "Bdjobs",
+     "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1288411&ln=1",
+     "found_at": "2026-09-14T11:44:47+00:00"
+    },
+    {
+     "source": "LinkedIn alert",
+     "url": "https://www.linkedin.com/comm/jobs/view/3899221144?trk=eml-alert",
+     "found_at": "2026-09-14T11:44:47+00:00"
+    }
+   ],
+   "matchScore": 75,
+   "scoreParts": {
+    "keyword": 40,
+    "experience": 85,
+    "projects": 100,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [],
+   "discoveredBy": "local"
+  },
+  {
+   "title": "MIS Executive",
+   "company": "Square Pharmaceuticals PLC",
+   "description": "Prepare management information system reports, maintain databases using SQL, produce daily and monthly reporting for management, ensure data integrity, support requirement analysis with Microsoft Office and Excel.",
+   "category": "MIS",
+   "location": "Tejgaon, Dhaka",
+   "source": "Bdjobs",
+   "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290002",
+   "status": "Awaiting Review",
+   "id": "0cc75ef6-136c-4fcb-8e2b-49c51f072328",
+   "createdAt": "2026-09-14T11:44:47+00:00",
+   "requiredSkills": "mis, executive, reports, databases, produce, daily, monthly, ensure, excel.",
+   "postedAt": null,
+   "deadline": "2026-10-20",
+   "salaryMin": 25000,
+   "salaryMax": 30000,
+   "salaryText": "Tk 25,000 - 30,000",
+   "employmentType": "",
+   "experienceText": "",
+   "area": "Tejgaon",
+   "distanceKm": 0.0,
+   "fingerprint": "5b0fcc6ec665a9a7",
+   "sources": [
+    {
+     "source": "Bdjobs",
+     "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290002",
+     "found_at": "2026-09-14T11:44:47+00:00"
+    }
+   ],
+   "matchScore": 73,
+   "scoreParts": {
+    "keyword": 61,
+    "experience": 45,
+    "projects": 100,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [],
+   "discoveredBy": "local"
+  },
+  {
+   "title": "Junior Data Analyst",
+   "company": "Shopfront Commerce",
+   "description": "Build reports and dashboards, write SQL queries against MySQL, support data integrity checks, produce analytics for the commercial team, Excel and Microsoft Office.",
+   "category": "Data & Reporting",
+   "location": "Banani, Dhaka",
+   "source": "Careers page",
+   "url": "https://example.com/careers/junior-data-analyst",
+   "status": "Awaiting Review",
+   "id": "555ed816-d36a-4c85-aa6f-ec06fe312788",
+   "createdAt": "2026-09-14T11:44:47+00:00",
+   "requiredSkills": "junior, analyst, reports, dashboards, write, against, checks, produce, analytics, commercial, team, excel",
+   "postedAt": null,
+   "deadline": null,
+   "salaryMin": 24000,
+   "salaryMax": 32000,
+   "salaryText": "Tk 24,000 - 32,000",
+   "employmentType": "",
+   "experienceText": "",
+   "area": "Banani",
+   "distanceKm": 3.5,
+   "fingerprint": "e1f1b05805e7785f",
+   "sources": [
+    {
+     "source": "Careers page",
+     "url": "https://example.com/careers/junior-data-analyst",
+     "found_at": "2026-09-14T11:44:47+00:00"
+    }
+   ],
+   "matchScore": 60,
+   "scoreParts": {
+    "keyword": 38,
+    "experience": 45,
+    "projects": 70,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [],
+   "discoveredBy": "local"
+  },
+  {
+   "title": "QA Engineer",
+   "company": "Far Away Tech Ltd.",
+   "description": "Manual testing and regression testing of software products. Test case design and defect reporting.",
+   "category": "Software Quality Assurance",
+   "location": "Gazipur",
+   "source": "Bdjobs",
+   "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290555",
+   "status": "Awaiting Review",
+   "id": "076e9027-f6ac-4eaf-9422-5f2b8c672da1",
+   "createdAt": "2026-09-14T11:44:47+00:00",
+   "requiredSkills": "engineer, products., reporting.",
+   "postedAt": null,
+   "deadline": null,
+   "salaryMin": 15000,
+   "salaryMax": null,
+   "salaryText": "Tk 15,000",
+   "employmentType": "",
+   "experienceText": "",
+   "area": "Gazipur",
+   "distanceKm": 26.4,
+   "fingerprint": "fa9158f7b530cdad",
+   "sources": [
+    {
+     "source": "Bdjobs",
+     "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290555",
+     "found_at": "2026-09-14T11:44:47+00:00"
+    }
+   ],
+   "matchScore": 82,
+   "scoreParts": {
+    "keyword": 73,
+    "experience": 85,
+    "projects": 70,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Starts at Tk 15,000, below your Tk 20,000 floor",
+    "Gazipur is about 26.4 km out, past your 10 km limit"
+   ],
+   "discoveredBy": "local"
+  },
+  {
+   "title": "Senior Backend Developer",
+   "company": "Fintech BD Ltd.",
+   "description": "Node.js microservices, Kubernetes, distributed systems. Five years of experience required.",
+   "category": "Information Technology",
+   "location": "Gulshan 1, Dhaka",
+   "source": "Bdjobs",
+   "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290777",
+   "status": "Awaiting Review",
+   "id": "a1b71b2a-4699-46c0-a90c-b441fb0c3da3",
+   "createdAt": "2026-09-14T11:44:47+00:00",
+   "requiredSkills": "senior, node.js, microservices, kubernetes, distributed, systems., five, required.",
+   "postedAt": null,
+   "deadline": null,
+   "salaryMin": 90000,
+   "salaryMax": null,
+   "salaryText": "Tk 90,000",
+   "employmentType": "",
+   "experienceText": "",
+   "area": "Gulshan 1",
+   "distanceKm": 2.9,
+   "fingerprint": "e1c8494d317178e9",
+   "sources": [
+    {
+     "source": "Bdjobs",
+     "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290777",
+     "found_at": "2026-09-14T11:44:47+00:00"
+    }
+   ],
+   "matchScore": 43,
+   "scoreParts": {
+    "keyword": 20,
+    "experience": 45,
+    "projects": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Title matches your excluded list (Backend Developer)"
+   ],
+   "discoveredBy": "local"
+  }
+ ]
+}

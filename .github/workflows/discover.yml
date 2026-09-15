@@ -1,0 +1,91 @@
+name: Discover jobs
+
+on:
+  schedule:
+    # 03:00 and 11:00 UTC = 9am and 5pm Dhaka time
+    - cron: "0 3 * * *"
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print results without committing"
+        type: boolean
+        default: false
+
+# contents: commit the feed. pages + id-token: publish it.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore HTTP cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/http
+          key: http-cache-${{ github.run_id }}
+          restore-keys: http-cache-
+
+      - name: Run discovery
+        env:
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          IMAP_USER: ${{ secrets.IMAP_USER }}
+          IMAP_PASSWORD: ${{ secrets.IMAP_PASSWORD }}
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        run: |
+          python -m backend.pipeline run \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Summarise the run
+        if: always()
+        run: python -m backend.pipeline stats >> $GITHUB_STEP_SUMMARY || true
+
+      - name: Commit the updated feed
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name  "careerpilot-bot"
+          git config user.email "actions@github.com"
+          git add data/jobs.json state/ledger.json state/last_digest.json
+          if git diff --staged --quiet; then
+            echo "No feed changes."
+          else
+            git commit -m "feed: $(date -u '+%Y-%m-%d %H:%M') UTC"
+            git push
+          fi
+
+      # A commit made with GITHUB_TOKEN does not trigger a Pages build, so the
+      # site would keep serving yesterday's jobs.json. Publishing from inside
+      # this workflow is what makes the new feed actually go live.
+      - name: Package the site
+        if: ${{ !inputs.dry_run }}
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Publish to Pages
+        id: deployment
+        if: ${{ !inputs.dry_run }}
+        uses: actions/deploy-pages@v4

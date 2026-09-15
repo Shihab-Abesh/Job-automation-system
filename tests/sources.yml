@@ -1,0 +1,8 @@
+sources:
+  local:
+    enabled: true
+    folders: ["fixtures"]
+  bdjobs: {enabled: false}
+  rss: {enabled: false}
+  careers: {enabled: false}
+  email_alerts: {enabled: false}

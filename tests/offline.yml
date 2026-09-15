@@ -1,0 +1,17 @@
+# Offline smoke test. No network, fixtures only.
+dashboard_url: ""
+paths:
+  profile: config/profile.json
+  output: state/test-jobs.json
+  ledger: state/test-ledger.json
+  digest: state/test-digest.json
+  http_cache: .cache/http
+queries: ["quality assurance"]
+filters:
+  min_salary_bdt: 20000
+  max_distance_km: 10
+  retention_days: 45
+  drop_expired: true
+notify:
+  email: {enabled: false}
+  webhook: {enabled: false}
