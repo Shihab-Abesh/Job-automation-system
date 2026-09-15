@@ -1,0 +1,55 @@
+{
+ "queries": [
+  "software quality assurance",
+  "QA engineer",
+  "software tester",
+  "manual testing",
+  "QA analyst",
+  "MIS executive",
+  "MIS officer",
+  "information systems executive",
+  "IT officer",
+  "IT executive",
+  "application support engineer",
+  "junior business analyst",
+  "junior data analyst"
+ ],
+ "sources": {
+  "bdjobs": {
+   "found": 0,
+   "errors": []
+  },
+  "rss": {
+   "found": 19,
+   "errors": [
+    "RemoteOK: empty response"
+   ]
+  },
+  "careers": {
+   "found": 15,
+   "errors": []
+  },
+  "local": {
+   "found": 7,
+   "errors": []
+  }
+ },
+ "counts": {
+  "total": 29,
+  "new": 29,
+  "expired": 0,
+  "duplicatesFolded": 12,
+  "priorityA": 0,
+  "priorityB": 11,
+  "priorityC": 18
+ },
+ "filters": {
+  "min_salary_bdt": 20000,
+  "max_distance_km": 10,
+  "allow_remote": true,
+  "retention_days": 45,
+  "drop_expired": true
+ },
+ "blockedUrls": [],
+ "ranAt": "2026-09-15T06:24:09+00:00"
+}
