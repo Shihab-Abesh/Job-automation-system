@@ -37,7 +37,31 @@ const {useState,useEffect,useMemo}=React;
 */
 
 const STORAGE_KEY="careerpilot_bd_v2_profile";
+const VAULT_KEY="careerpilot_bd_v2_vault";
 const JOB_KEY="careerpilot_bd_v2_jobs";
+
+/* Password-derived encryption for the profile only (name, contact links,
+   resume content). Job listings stay unencrypted so review.html keeps
+   working without a password prompt — they're public postings, not personal
+   data. There is no recovery: losing the password means the vault cannot be
+   decrypted by anyone, which is the point. */
+function bufToB64(buf){return btoa(String.fromCharCode(...new Uint8Array(buf)))}
+function b64ToBuf(b64){return Uint8Array.from(atob(b64),c=>c.charCodeAt(0))}
+async function deriveKey(password,saltB64){
+ const salt=saltB64?b64ToBuf(saltB64):crypto.getRandomValues(new Uint8Array(16));
+ const keyMaterial=await crypto.subtle.importKey("raw",new TextEncoder().encode(password),"PBKDF2",false,["deriveKey"]);
+ const key=await crypto.subtle.deriveKey({name:"PBKDF2",salt,iterations:200000,hash:"SHA-256"},keyMaterial,{name:"AES-GCM",length:256},false,["encrypt","decrypt"]);
+ return {key,saltB64:bufToB64(salt)};
+}
+async function encryptJSON(key,obj){
+ const iv=crypto.getRandomValues(new Uint8Array(12));
+ const data=await crypto.subtle.encrypt({name:"AES-GCM",iv},key,new TextEncoder().encode(JSON.stringify(obj)));
+ return {iv:bufToB64(iv),data:bufToB64(data)};
+}
+async function decryptJSON(key,ivB64,dataB64){
+ const plain=await crypto.subtle.decrypt({name:"AES-GCM",iv:b64ToBuf(ivB64)},key,b64ToBuf(dataB64));
+ return JSON.parse(new TextDecoder().decode(plain));
+}
 
 const DEFAULT_PROFILE={
  personal:{fullName:"",headline:"",location:"Dhaka, Bangladesh",phone:"",email:"",linkedin:"",github:"",portfolio:""},
@@ -175,7 +199,10 @@ function downloadBlob(filename,blob){
 function csvEscape(v){return `"${String(v??"").replaceAll('"','""')}"`}
 
 function App(){
- const [profile,setProfile]=useState(()=>migrateProfile(JSON.parse(localStorage.getItem(STORAGE_KEY)||"null"))||DEFAULT_PROFILE);
+ const [vaultStatus,setVaultStatus]=useState(()=>localStorage.getItem(VAULT_KEY)?"locked":"setup");
+ const [cryptoKey,setCryptoKey]=useState(null);
+ const [lockError,setLockError]=useState("");
+ const [profile,setProfile]=useState(null);
  const [jobs,setJobs]=useState(()=>JSON.parse(localStorage.getItem(JOB_KEY)||"[]"));
  const [tab,setTab]=useState("dashboard");
  const [selected,setSelected]=useState(null);
@@ -185,9 +212,48 @@ function App(){
  const [search,setSearch]=useState("");
  const [profileText,setProfileText]=useState("");
 
- useEffect(()=>localStorage.setItem(STORAGE_KEY,JSON.stringify(profile)),[profile]);
+ useEffect(()=>{
+  if(!cryptoKey||!profile)return;
+  (async()=>{
+   const enc=await encryptJSON(cryptoKey,profile);
+   const vault=JSON.parse(localStorage.getItem(VAULT_KEY)||"{}");
+   localStorage.setItem(VAULT_KEY,JSON.stringify({...vault,iv:enc.iv,data:enc.data}));
+  })();
+ },[profile,cryptoKey]);
  useEffect(()=>localStorage.setItem(JOB_KEY,JSON.stringify(jobs)),[jobs]);
  const notify=m=>{setToast(m);setTimeout(()=>setToast(""),3500)};
+ const createVault=async password=>{
+  const {key,saltB64}=await deriveKey(password);
+  const existing=migrateProfile(JSON.parse(localStorage.getItem(STORAGE_KEY)||"null"));
+  const initial=existing||DEFAULT_PROFILE;
+  const enc=await encryptJSON(key,initial);
+  localStorage.setItem(VAULT_KEY,JSON.stringify({salt:saltB64,iv:enc.iv,data:enc.data}));
+  localStorage.removeItem(STORAGE_KEY);
+  setCryptoKey(key);setProfile(initial);setVaultStatus("unlocked");
+  if(existing)notify("Existing profile data in this browser was encrypted with your new password.");
+ };
+ const unlockVault=async password=>{
+  setLockError("");
+  try{
+   const vault=JSON.parse(localStorage.getItem(VAULT_KEY));
+   const {key}=await deriveKey(password,vault.salt);
+   const decrypted=await decryptJSON(key,vault.iv,vault.data);
+   setCryptoKey(key);setProfile(migrateProfile(decrypted)||DEFAULT_PROFILE);setVaultStatus("unlocked");
+  }catch(e){setLockError("Incorrect password.");}
+ };
+ const lockVault=()=>{setCryptoKey(null);setProfile(null);setVaultStatus("locked");setTab("dashboard");};
+ // Hooks must run unconditionally on every render, so this stays above the
+ // early return below (which only happens while locked/setting up) — moving
+ // it after that return caused React to see a different hook count between
+ // the locked and unlocked renders and silently fail to render anything.
+ const stats=useMemo(()=>{
+  if(!profile)return{total:0,strong:0,review:0,applied:0};
+  const scores=jobs.map(j=>analyzeJob(j,profile).score);
+  return{total:jobs.length,strong:scores.filter(x=>x>=80).length,review:jobs.filter(j=>j.status==="Awaiting Review").length,applied:jobs.filter(j=>j.status==="Applied").length};
+ },[jobs,profile]);
+ if(vaultStatus!=="unlocked"){
+  return <LockScreen mode={vaultStatus} onCreate={createVault} onUnlock={unlockVault} error={lockError}/>;
+ }
  const updateJob=(id,patch)=>{
   setJobs(prev=>prev.map(x=>x.id===id?{...x,...patch}:x));
   setSelected(prev=>prev&&prev.id===id?{...prev,...patch}:prev);
@@ -206,14 +272,13 @@ function App(){
  const exportJobs=()=>{const rows=[["Title","Company","Category","Location","Match","Status","Source","URL"],...jobs.map(j=>{const a=analyzeJob(j,profile);return[j.title,j.company,j.category,j.location,a.score,j.status,j.source,j.url]})];download("careerpilot-jobs.csv",rows.map(r=>r.map(csvEscape).join(",")).join("\n"),"text/csv")};
  const importProfile=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{setProfile(migrateProfile(JSON.parse(r.result)));notify("Profile imported.");}catch{alert("Invalid profile file.");}};r.readAsText(f)};
  const visibleJobs=jobs.filter(j=>[j.title,j.company,j.category,j.location].join(" ").toLowerCase().includes(search.toLowerCase()));
- const stats=useMemo(()=>{const scores=jobs.map(j=>analyzeJob(j,profile).score);return{total:jobs.length,strong:scores.filter(x=>x>=80).length,review:jobs.filter(j=>j.status==="Awaiting Review").length,applied:jobs.filter(j=>j.status==="Applied").length}},[jobs,profile]);
  const nav=[["dashboard","Dashboard"],["profile","Master Profile"],["preferences","Career Preferences"],["add","Add Job"],["jobs","Job Analysis"],["tracker","Tracker"]];
  return <div>
   <header className="no-print sticky top-0 z-30 border-b border-slate-800 bg-slate-950/95 backdrop-blur">
    <div className="max-w-7xl mx-auto px-4 py-3 flex flex-wrap gap-3 justify-between items-center">
     <div><h1 className="font-bold text-lg">CareerPilot BD</h1><p className="text-xs text-cyan-400">Multi-Career Job Search & Truthful ATS Resume Engine</p></div>
     <a href="review.html" className="px-3 py-2 rounded-lg text-xs bg-slate-900 text-cyan-400 hover:bg-slate-800 border border-slate-800">Approval queue</a>
-    <div className="flex flex-wrap gap-1">{nav.map(([id,label])=><button key={id} onClick={()=>setTab(id)} className={"px-3 py-2 rounded-lg text-xs "+(tab===id?"bg-cyan-600 text-white":"bg-slate-900 text-slate-300 hover:bg-slate-800")}>{label}</button>)}</div>
+    <div className="flex flex-wrap gap-1">{nav.map(([id,label])=><button key={id} onClick={()=>setTab(id)} className={"px-3 py-2 rounded-lg text-xs "+(tab===id?"bg-cyan-600 text-white":"bg-slate-900 text-slate-300 hover:bg-slate-800")}>{label}</button>)}<button onClick={lockVault} className="px-3 py-2 rounded-lg text-xs bg-slate-900 text-amber-300 hover:bg-slate-800 border border-slate-800">Lock</button></div>
    </div>
   </header>
   {toast&&<div className="no-print fixed right-4 top-20 z-50 bg-emerald-600 text-white px-4 py-3 rounded-lg shadow">{toast}</div>}
@@ -258,6 +323,40 @@ function App(){
  </div>
 }
 
+function LockScreen({mode,onCreate,onUnlock,error}){
+ const [pw,setPw]=useState("");
+ const [pw2,setPw2]=useState("");
+ const [busy,setBusy]=useState(false);
+ const [localError,setLocalError]=useState("");
+ const submit=async e=>{
+  e.preventDefault();
+  setLocalError("");
+  if(mode==="setup"){
+   if(pw.length<8){setLocalError("Use at least 8 characters.");return;}
+   if(pw!==pw2){setLocalError("Passwords do not match.");return;}
+   setBusy(true);await onCreate(pw);setBusy(false);
+  }else{
+   if(!pw){setLocalError("Enter your password.");return;}
+   setBusy(true);await onUnlock(pw);setBusy(false);
+  }
+ };
+ return <div className="min-h-screen flex items-center justify-center bg-slate-950 text-slate-100 p-4">
+  <form onSubmit={submit} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 w-full max-w-sm space-y-4">
+   <div><h1 className="font-bold text-lg">CareerPilot BD</h1><p className="text-xs text-cyan-400">Multi-Career Job Search & Truthful ATS Resume Engine</p></div>
+   {mode==="setup"?<>
+    <p className="text-sm text-slate-400">Set a password to encrypt your profile and resume data in this browser (AES-256, derived with PBKDF2). There is no recovery — if you forget it, this data cannot be unlocked by anyone, including you. Export a backup once you're set up.</p>
+    <input type="password" autoFocus placeholder="Create a password (8+ characters)" value={pw} onChange={e=>setPw(e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-3 text-sm"/>
+    <input type="password" placeholder="Confirm password" value={pw2} onChange={e=>setPw2(e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-3 text-sm"/>
+   </>:<>
+    <p className="text-sm text-slate-400">Enter your password to unlock your profile and resume data.</p>
+    <input type="password" autoFocus placeholder="Password" value={pw} onChange={e=>setPw(e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-3 text-sm"/>
+   </>}
+   {(localError||error)&&<p className="text-xs text-red-400">{localError||error}</p>}
+   <button disabled={busy} className="w-full bg-cyan-600 py-2 rounded font-semibold disabled:opacity-50">{busy?"Working...":mode==="setup"?"Create & Unlock":"Unlock"}</button>
+   <p className="text-[11px] text-slate-600">This protects data stored in this browser only. It is not an online account and cannot be reset or recovered without the password.</p>
+  </form>
+ </div>;
+}
 function Input({placeholder,value,set}){return <input placeholder={placeholder} value={value} onChange={e=>set(e.target.value)} className="bg-slate-950 border border-slate-700 rounded p-3 w-full text-sm"/>}
 function Metric({label,value}){return <div className="bg-slate-950 rounded p-2"><p className="text-slate-500">{label}</p><p className="font-bold">{value}%</p></div>}
 function Block({title,children}){return <div className="bg-slate-900 border border-slate-800 rounded-xl p-5"><h3 className="font-semibold mb-3">{title}</h3>{children}</div>}
