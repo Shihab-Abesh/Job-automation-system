@@ -137,13 +137,13 @@ function analyzeJob(job,p){
  return {score,skillPct,matched:[...new Set(matched)].slice(0,15),missing:[...new Set(missing)],expScore,projectScore,prefScore}
 }
 const ROLE_STRATEGIES={
-"Software Quality Assurance":{label:"SQA / QA Resume",headline:"Software Quality Assurance | Manual Testing | Web Validation"},
-"Information Technology":{label:"IT Resume",headline:"Information Technology | Application Support | Web & Database"},
-"Information Systems":{label:"Information Systems Resume",headline:"Information Systems | Systems Analysis | Database Management"},
-"MIS":{label:"MIS Resume",headline:"Management Information Systems | SQL | Reporting | Data"},
-"Business Analysis":{label:"Business Analyst Resume",headline:"Business Analysis | Requirements | System Analysis | SQL"},
-"Application Support":{label:"Application Support Resume",headline:"Application Support | Web Applications | Database | Validation"},
-"Data & Reporting":{label:"Data / Reporting Resume",headline:"Data & Reporting | SQL | Oracle | Database | Analytics"}
+"Software Quality Assurance":{label:"SQA / QA Resume",headline:"Software Quality Assurance | Manual Testing | Web Validation",keywords:["manual testing","test case","test execution","regression","functional testing","defect","quality assurance","bug","test plan","uat","sqa","tester","qa engineer","smoke testing","cross-browser","cross browser"]},
+"Information Technology":{label:"IT Resume",headline:"Information Technology | Application Support | Web & Database",keywords:["it support","help desk","helpdesk","hosting","dns","ssl","network","hardware","troubleshoot","technical support","it officer","system admin","desktop support","it executive"]},
+"Information Systems":{label:"Information Systems Resume",headline:"Information Systems | Systems Analysis | Database Management",keywords:["information systems","systems analysis","system analyst","database design","requirements analysis","uml","er diagram","normalization"]},
+"MIS":{label:"MIS Resume",headline:"Management Information Systems | SQL | Reporting | Data",keywords:["mis","management information system","mis executive","mis officer","daily report","monthly report","data entry","excel report"]},
+"Business Analysis":{label:"Business Analyst Resume",headline:"Business Analysis | Requirements | System Analysis | SQL",keywords:["business analyst","business analysis","requirements gathering","stakeholder","process improvement","bpmn","work breakdown","wbs"]},
+"Application Support":{label:"Application Support Resume",headline:"Application Support | Web Applications | Database | Validation",keywords:["application support","production support","incident","ticket","l1 support","l2 support","support engineer"]},
+"Data & Reporting":{label:"Data / Reporting Resume",headline:"Data & Reporting | SQL | Oracle | Database | Analytics",keywords:["data analyst","data analytics","reporting analyst","dashboard","business intelligence","data management","analytics"]}
 };
 function summaryFor(strategy){const m={
 "Software Quality Assurance":"Computer Science and Engineering graduate with hands-on Software Quality Assurance internship experience in manual, functional and regression testing of web applications. Experienced in UI verification, form validation, responsive and cross-browser testing, defect documentation, fix verification, and collaboration with development and project teams.",
@@ -155,6 +155,16 @@ function summaryFor(strategy){const m={
 "Data & Reporting":"Computer Science and Engineering graduate with practical database experience in Oracle and MySQL, SQL queries, database design, data integrity, data management, and analytical problem solving."};return m[strategy]||m["Information Systems"]}
 function scoreBullet(b,job){return terms([job.title,job.description].join(" ")).filter(t=>normalize(b).includes(t)).length}
 function projectScore(x,strategy,job){return (x.categories.includes(strategy)?20:0)+terms([job.title,job.description].join(" ")).filter(t=>normalize([x.name,x.subtitle||"",...(x.skills||[]),...x.bullets].join(" ")).includes(t)).length}
+function bestFitStrategy(job){
+ const text=normalize([job.title,job.description].join(" "));
+ const fallback=job.category&&ROLE_STRATEGIES[job.category]?job.category:"Information Systems";
+ let best=fallback,bestScore=0;
+ for(const [key,cfg] of Object.entries(ROLE_STRATEGIES)){
+  const s=(cfg.keywords||[]).filter(k=>text.includes(normalize(k))).length;
+  if(s>bestScore){bestScore=s;best=key;}
+ }
+ return best;
+}
 
 function download(filename,content,type="text/plain"){
  const blob=new Blob([content],{type}); downloadBlob(filename,blob);
@@ -240,7 +250,7 @@ function App(){
     {!jobs.length&&<div className="text-slate-400 bg-slate-900 border border-slate-800 rounded-xl p-8 text-center">No jobs yet. Add a real job description to begin.</div>}
    </section>}
 
-   {tab==="resume"&&selected&&<ResumePanel job={selected} p={profile} updateJob={updateJob} notify={notify}/>}
+   {tab==="resume"&&selected&&<ResumePanel key={selected.id} job={selected} p={profile} updateJob={updateJob} notify={notify}/>}
    {tab==="resume"&&!selected&&<div className="text-slate-400">Select a job from Job Analysis first.</div>}
    {tab==="tracker"&&<Tracker jobs={jobs} setJobs={setJobs}/>}
   </main>
@@ -313,6 +323,7 @@ function ExperienceEditor({p,setProfile}){
      <label className="text-xs text-slate-400">Bullets (one per line)</label>
      <textarea value={x.bullets.join("\n")} onChange={e=>update(i,{bullets:e.target.value.split("\n")})} className="w-full h-32 bg-slate-950 border border-slate-700 rounded p-3 text-sm mt-1"/>
     </div>
+    <Input placeholder="Career area tags, comma separated (e.g. Software Quality Assurance, IT) — used for the compatibility score, not printed" value={(x.tags||[]).join(", ")} set={v=>update(i,{tags:v.split(",").map(s=>s.trim())})}/>
    </EntryCard>)}
   </div>
   <AddButton onClick={add}>Add Experience Entry</AddButton>
@@ -336,6 +347,7 @@ function ProjectsEditor({p,setProfile}){
      <textarea value={x.bullets.join("\n")} onChange={e=>update(i,{bullets:e.target.value.split("\n")})} className="w-full h-24 bg-slate-950 border border-slate-700 rounded p-3 text-sm mt-1"/>
     </div>
     <Input placeholder="Skills used, comma separated (used for job matching, not printed)" value={(x.skills||[]).join(", ")} set={v=>update(i,{skills:v.split(",").map(s=>s.trim())})}/>
+    <Input placeholder="Career area tags, comma separated (e.g. Information Systems, MIS) — used for the compatibility score, not printed" value={(x.categories||[]).join(", ")} set={v=>update(i,{categories:v.split(",").map(s=>s.trim())})}/>
    </EntryCard>)}
   </div>
   <AddButton onClick={add}>Add Project</AddButton>
@@ -397,7 +409,8 @@ function Preferences({p,setProfile,notify}){
 }
 
 function ResumePanel({job,p,updateJob,notify}){
- const [strategy,setStrategy]=useState(ROLE_STRATEGIES[job.category]?job.category:"Information Systems");
+ const recommended=bestFitStrategy(job);
+ const [strategy,setStrategy]=useState(()=>job.selectedStrategy||recommended);
  const cfg=ROLE_STRATEGIES[strategy];
  const a=analyzeJob({...job,category:strategy},p);
  const exp=[...p.experience].map(e=>({...e,bullets:[...e.bullets].filter(Boolean).sort((x,y)=>scoreBullet(y,job)-scoreBullet(x,job))}));
@@ -563,7 +576,7 @@ function ResumePanel({job,p,updateJob,notify}){
    <div className="flex flex-wrap gap-2"><button onClick={saveEdit} className="bg-emerald-600 px-4 py-2 rounded text-xs">Save Edits</button><button onClick={()=>setEditMode(false)} className="bg-slate-800 px-4 py-2 rounded text-xs">Cancel</button>{ov&&<button onClick={resetToAuto} className="bg-red-900 px-4 py-2 rounded text-xs">Reset to Auto-generated</button>}</div>
   </div>}
 
-  <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between items-center mb-3"><div><h3 className="font-semibold">Resume Strategy</h3><p className="text-xs text-slate-500">The system changes emphasis, not your facts.</p></div><span className="text-xs text-cyan-300">{cfg.label}</span></div><div className="grid md:grid-cols-4 gap-2">{Object.entries(ROLE_STRATEGIES).map(([k,v])=><button key={k} onClick={()=>{setStrategy(k);setEditMode(false)}} className={`p-3 rounded-lg border text-left text-xs ${strategy===k?'border-cyan-500 bg-cyan-950/50':'border-slate-800 bg-slate-950'}`}><b>{v.label}</b><span className="block text-slate-500 mt-1">{k}</span></button>)}</div></div>
+  <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between items-center mb-3"><div><h3 className="font-semibold">Resume Strategy</h3><p className="text-xs text-slate-500">Auto-picked from this job's title and description — pick a different one any time.</p></div><span className="text-xs text-cyan-300">{cfg.label}</span></div><div className="grid md:grid-cols-4 gap-2">{Object.entries(ROLE_STRATEGIES).map(([k,v])=><button key={k} onClick={()=>{setStrategy(k);setEditMode(false);updateJob(job.id,{selectedStrategy:k})}} className={`p-3 rounded-lg border text-left text-xs ${strategy===k?'border-cyan-500 bg-cyan-950/50':'border-slate-800 bg-slate-950'}`}><b>{v.label}</b>{k===recommended&&<span className="ml-1 text-[9px] text-emerald-400">(recommended)</span>}<span className="block text-slate-500 mt-1">{k}</span></button>)}</div></div>
   <div className="grid md:grid-cols-2 gap-4 no-print"><Block title={`Compatibility Analysis: ${a.score}%`}><div className="grid grid-cols-2 gap-2"><Metric label="Keyword Evidence" value={a.skillPct}/><Metric label="Experience" value={a.expScore}/><Metric label="Projects" value={a.projectScore}/><Metric label="Preference" value={a.prefScore}/></div><p className="text-xs text-emerald-300 mt-3">Matched: {a.matched.slice(0,10).join(", ")||"None"}</p><p className="text-xs text-amber-300 mt-2">Potential gaps: {a.missing.slice(0,8).join(", ")||"None detected"}</p></Block><Block title="ATS Quality"><CheckRow ok text="Single-column, standard section headings"/><CheckRow ok text="No graphics, tables, icons, sidebars, or decorative resume elements"/><CheckRow ok text="Plain-text contact information"/><CheckRow ok={a.missing.length<8} text="Job keywords reviewed without inventing qualifications"/><p className="text-[11px] text-slate-500 mt-3">Compatibility is an internal estimate, not a real employer ATS score.</p></Block></div>
   <div className="bg-white text-black max-w-[794px] mx-auto p-8 md:p-10 shadow-2xl rounded print-resume">
     <header className="border-b pb-3 mb-4"><h1 className="text-3xl font-black tracking-wide">{(p.personal.fullName||"YOUR NAME").toUpperCase()}</h1>{finalHeadline&&<p className="text-[12px] font-bold text-sky-700 mt-1 tracking-wide">{finalHeadline.toUpperCase()}</p>}<p className="text-[10px] mt-1 leading-4">{contact}</p></header>
