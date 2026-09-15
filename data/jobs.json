@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-15T06:24:09+00:00",
+ "generatedAt": "2026-09-15T07:19:11+00:00",
  "meta": {
   "queries": [
    "software quality assurance",
@@ -29,22 +29,22 @@
     ]
    },
    "careers": {
-    "found": 15,
+    "found": 6,
     "errors": []
    },
    "local": {
-    "found": 7,
+    "found": 0,
     "errors": []
    }
   },
   "counts": {
-   "total": 29,
-   "new": 29,
+   "total": 20,
+   "new": 0,
    "expired": 0,
-   "duplicatesFolded": 12,
+   "duplicatesFolded": 5,
    "priorityA": 0,
-   "priorityB": 11,
-   "priorityC": 18
+   "priorityB": 6,
+   "priorityC": 14
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -54,178 +54,9 @@
    "drop_expired": true
   },
   "blockedUrls": [],
-  "ranAt": "2026-09-15T06:24:09+00:00"
+  "ranAt": "2026-09-15T07:19:11+00:00"
  },
  "jobs": [
-  {
-   "title": "IT Support Officer",
-   "company": "BRAC Bank PLC",
-   "description": "Provide application support and technical support to internal users, troubleshoot web applications, basic SQL queries, database management support, hosting and DNS understanding, documentation of incidents.",
-   "category": "Application Support",
-   "location": "Mohakhali, Dhaka",
-   "source": "Bdjobs",
-   "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1291200",
-   "status": "Awaiting Review",
-   "id": "ef7a07ab-c7ab-4803-b011-16936db63f92",
-   "createdAt": "2026-09-15T06:24:09+00:00",
-   "requiredSkills": "officer, provide, technical, internal, users, troubleshoot, applications, basic, understanding, documentation, incidents.",
-   "postedAt": null,
-   "deadline": "2026-10-15",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "",
-   "experienceText": "",
-   "area": "Mohakhali",
-   "distanceKm": 1.9,
-   "fingerprint": "608db9c535faca93",
-   "sources": [
-    {
-     "source": "Bdjobs",
-     "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1291200",
-     "found_at": "2026-09-15T06:24:09+00:00"
-    }
-   ],
-   "matchScore": 77,
-   "scoreParts": {
-    "keyword": 45,
-    "experience": 85,
-    "projects": 100,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "local"
-  },
-  {
-   "title": "Junior SQA Engineer",
-   "company": "Innolytic IT Ltd.",
-   "description": "We are looking for a Junior SQA Engineer. Responsibilities include manual testing of web applications, writing test cases, functional testing, regression testing, cross-browser testing and defect reporting in Jira. Knowledge of SQL and API testing with Postman is a plus. Fresh graduates in CSE are encouraged to apply.",
-   "category": "Software Quality Assurance",
-   "location": "Dhanmondi, Dhaka",
-   "source": "Bdjobs + LinkedIn alert",
-   "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1288411&ln=1",
-   "status": "Awaiting Review",
-   "id": "57a4bf66-705f-4dd3-9706-fe5947e1ccb7",
-   "createdAt": "2026-09-15T06:24:09+00:00",
-   "requiredSkills": "junior, sqa, engineer, looking, engineer., responsibilities, include, applications, writing, jira., api, postman",
-   "postedAt": null,
-   "deadline": "2026-10-30",
-   "salaryMin": 22000,
-   "salaryMax": 28000,
-   "salaryText": "Tk 22,000 - 28,000",
-   "employmentType": "",
-   "experienceText": "",
-   "area": "Dhanmondi",
-   "distanceKm": 2.8,
-   "fingerprint": "2e1d36e441e57983",
-   "sources": [
-    {
-     "source": "Bdjobs",
-     "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1288411&ln=1",
-     "found_at": "2026-09-15T06:24:09+00:00"
-    },
-    {
-     "source": "LinkedIn alert",
-     "url": "https://www.linkedin.com/comm/jobs/view/3899221144?trk=eml-alert",
-     "found_at": "2026-09-15T06:24:09+00:00"
-    }
-   ],
-   "matchScore": 75,
-   "scoreParts": {
-    "keyword": 40,
-    "experience": 85,
-    "projects": 100,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [],
-   "discoveredBy": "local"
-  },
-  {
-   "title": "MIS Executive",
-   "company": "Square Pharmaceuticals PLC",
-   "description": "Prepare management information system reports, maintain databases using SQL, produce daily and monthly reporting for management, ensure data integrity, support requirement analysis with Microsoft Office and Excel.",
-   "category": "MIS",
-   "location": "Tejgaon, Dhaka",
-   "source": "Bdjobs",
-   "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290002",
-   "status": "Awaiting Review",
-   "id": "c3c601a9-c5f2-49d6-bc8b-a9f3232cfe14",
-   "createdAt": "2026-09-15T06:24:09+00:00",
-   "requiredSkills": "mis, executive, reports, databases, produce, daily, monthly, ensure, excel.",
-   "postedAt": null,
-   "deadline": "2026-10-20",
-   "salaryMin": 25000,
-   "salaryMax": 30000,
-   "salaryText": "Tk 25,000 - 30,000",
-   "employmentType": "",
-   "experienceText": "",
-   "area": "Tejgaon",
-   "distanceKm": 0.0,
-   "fingerprint": "5b0fcc6ec665a9a7",
-   "sources": [
-    {
-     "source": "Bdjobs",
-     "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290002",
-     "found_at": "2026-09-15T06:24:09+00:00"
-    }
-   ],
-   "matchScore": 73,
-   "scoreParts": {
-    "keyword": 61,
-    "experience": 45,
-    "projects": 100,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [],
-   "discoveredBy": "local"
-  },
-  {
-   "title": "QA Testing & Automation",
-   "company": "Brain Station 23",
-   "description": "QA Testing & Automation",
-   "category": "Software Quality Assurance",
-   "location": "Mohakhali, Dhaka",
-   "source": "Brain Station 23 careers",
-   "url": "https://brainstation-23.com/software-testing-as-service/",
-   "status": "Awaiting Review",
-   "id": "a25f2f1a-8acd-44df-80cc-5d33896e35d7",
-   "createdAt": "2026-09-15T06:24:03+00:00",
-   "requiredSkills": "automation",
-   "postedAt": null,
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "",
-   "experienceText": "",
-   "area": "Mohakhali",
-   "distanceKm": 1.9,
-   "fingerprint": "e1f6edef8be96ebe",
-   "sources": [
-    {
-     "source": "Brain Station 23 careers",
-     "url": "https://brainstation-23.com/software-testing-as-service/",
-     "found_at": "2026-09-15T06:24:03+00:00"
-    }
-   ],
-   "matchScore": 69,
-   "scoreParts": {
-    "keyword": 50,
-    "experience": 85,
-    "projects": 35,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "careers"
-  },
   {
    "title": "CircleCI: Senior Software Engineer",
    "company": "Unknown company",
@@ -252,7 +83,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 65,
@@ -294,7 +125,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vonage-aem-developer",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 65,
@@ -336,7 +167,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-manager-security-operations-center-emea",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 64,
@@ -378,7 +209,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 64,
@@ -420,7 +251,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/platform-sh-billing-systems-architect",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 64,
@@ -462,7 +293,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/ignition-inc-mac-msp-help-desk-guru-work-from-home",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 63,
@@ -477,131 +308,6 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Junior Data Analyst",
-   "company": "Shopfront Commerce",
-   "description": "Build reports and dashboards, write SQL queries against MySQL, support data integrity checks, produce analytics for the commercial team, Excel and Microsoft Office.",
-   "category": "Data & Reporting",
-   "location": "Banani, Dhaka",
-   "source": "Careers page",
-   "url": "https://example.com/careers/junior-data-analyst",
-   "status": "Awaiting Review",
-   "id": "fb8ae9d9-809e-46d8-813b-ba426c9fc48b",
-   "createdAt": "2026-09-15T06:24:09+00:00",
-   "requiredSkills": "junior, analyst, reports, dashboards, write, against, checks, produce, analytics, commercial, team, excel",
-   "postedAt": null,
-   "deadline": null,
-   "salaryMin": 24000,
-   "salaryMax": 32000,
-   "salaryText": "Tk 24,000 - 32,000",
-   "employmentType": "",
-   "experienceText": "",
-   "area": "Banani",
-   "distanceKm": 3.5,
-   "fingerprint": "e1f1b05805e7785f",
-   "sources": [
-    {
-     "source": "Careers page",
-     "url": "https://example.com/careers/junior-data-analyst",
-     "found_at": "2026-09-15T06:24:09+00:00"
-    }
-   ],
-   "matchScore": 60,
-   "scoreParts": {
-    "keyword": 38,
-    "experience": 45,
-    "projects": 70,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [],
-   "discoveredBy": "local"
-  },
-  {
-   "title": "QA Engineer",
-   "company": "Far Away Tech Ltd.",
-   "description": "Manual testing and regression testing of software products. Test case design and defect reporting.",
-   "category": "Software Quality Assurance",
-   "location": "Gazipur",
-   "source": "Bdjobs",
-   "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290555",
-   "status": "Awaiting Review",
-   "id": "cc7b1d8d-7d55-448a-8ee4-e6738673e870",
-   "createdAt": "2026-09-15T06:24:09+00:00",
-   "requiredSkills": "engineer, products., reporting.",
-   "postedAt": null,
-   "deadline": null,
-   "salaryMin": 15000,
-   "salaryMax": null,
-   "salaryText": "Tk 15,000",
-   "employmentType": "",
-   "experienceText": "",
-   "area": "Gazipur",
-   "distanceKm": 26.4,
-   "fingerprint": "fa9158f7b530cdad",
-   "sources": [
-    {
-     "source": "Bdjobs",
-     "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290555",
-     "found_at": "2026-09-15T06:24:09+00:00"
-    }
-   ],
-   "matchScore": 82,
-   "scoreParts": {
-    "keyword": 73,
-    "experience": 85,
-    "projects": 70,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Starts at Tk 15,000, below your Tk 20,000 floor",
-    "Gazipur is about 26.4 km out, past your 10 km limit"
-   ],
-   "discoveredBy": "local"
-  },
-  {
-   "title": "Data Engineering",
-   "company": "Brain Station 23",
-   "description": "Data Engineering",
-   "category": "Information Technology",
-   "location": "Mohakhali, Dhaka",
-   "source": "Brain Station 23 careers",
-   "url": "https://brainstation-23.com/data-engineering-services",
-   "status": "Awaiting Review",
-   "id": "2d259eb7-eba6-431b-80ff-ea912bb76bd3",
-   "createdAt": "2026-09-15T06:24:03+00:00",
-   "requiredSkills": "engineering",
-   "postedAt": null,
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "",
-   "experienceText": "",
-   "area": "Mohakhali",
-   "distanceKm": 1.9,
-   "fingerprint": "eb2aa99905940018",
-   "sources": [
-    {
-     "source": "Brain Station 23 careers",
-     "url": "https://brainstation-23.com/data-engineering-services",
-     "found_at": "2026-09-15T06:24:03+00:00"
-    }
-   ],
-   "matchScore": 59,
-   "scoreParts": {
-    "keyword": 50,
-    "experience": 45,
-    "projects": 35,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "careers"
   },
   {
    "title": "Discord: Engineering Manager, Notifications",
@@ -629,7 +335,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-engineering-manager-notifications",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 55,
@@ -671,7 +377,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-devops-engineer-3",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 55,
@@ -686,53 +392,6 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Adobe Experience Manager",
-   "company": "Brain Station 23",
-   "description": "Adobe Experience Manager",
-   "category": "Information Technology",
-   "location": "Mohakhali, Dhaka",
-   "source": "Brain Station 23 careers",
-   "url": "https://brainstation-23.com/adobe-experience-manager-aem/",
-   "status": "Awaiting Review",
-   "id": "bd6d7a7e-4348-46aa-8170-6d6311b4f062",
-   "createdAt": "2026-09-15T06:24:03+00:00",
-   "requiredSkills": "adobe",
-   "postedAt": null,
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "",
-   "experienceText": "",
-   "area": "Mohakhali",
-   "distanceKm": 1.9,
-   "fingerprint": "780808aa85142f3f",
-   "sources": [
-    {
-     "source": "Brain Station 23 careers",
-     "url": "https://brainstation-23.com/adobe-experience-manager-aem/",
-     "found_at": "2026-09-15T06:24:03+00:00"
-    },
-    {
-     "source": "Brain Station 23 careers",
-     "url": "https://brainstation-23.com/essential-questions-to-ask-an-aem-implementation-partner/",
-     "found_at": "2026-09-15T06:24:03+00:00"
-    }
-   ],
-   "matchScore": 54,
-   "scoreParts": {
-    "keyword": 50,
-    "experience": 45,
-    "projects": 0,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "careers"
   },
   {
    "title": "Abnormal: Critical Situation Manager",
@@ -760,7 +419,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-critical-situation-manager",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 54,
@@ -802,7 +461,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/databricks-cyber-security-gtm-leader",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 54,
@@ -844,7 +503,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/datadog-developer-advocate-service-management",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 54,
@@ -886,7 +545,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/fastly-senior-sre-networks",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 54,
@@ -928,12 +587,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-senior-professional-services-devops-engineer",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 54,
@@ -975,7 +634,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager-sled",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 54,
@@ -1017,12 +676,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-application-security-engineer-ii",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/temporal-technologies-senior-application-security-engineer",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 54,
@@ -1064,7 +723,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zenara-health-devops-security-engineer-ai-native-healthcare-saas",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 54,
@@ -1106,7 +765,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-evergreen-sales-development-representative",
-     "found_at": "2026-09-15T06:23:44+00:00"
+     "found_at": "2026-09-15T07:18:48+00:00"
     }
    ],
    "matchScore": 53,
@@ -1148,7 +807,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/uilm",
-     "found_at": "2026-09-15T06:24:09+00:00"
+     "found_at": "2026-09-15T07:19:11+00:00"
     }
    ],
    "matchScore": 48,
@@ -1163,48 +822,6 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "careers"
-  },
-  {
-   "title": "Senior Backend Developer",
-   "company": "Fintech BD Ltd.",
-   "description": "Node.js microservices, Kubernetes, distributed systems. Five years of experience required.",
-   "category": "Information Technology",
-   "location": "Gulshan 1, Dhaka",
-   "source": "Bdjobs",
-   "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290777",
-   "status": "Awaiting Review",
-   "id": "875b84e0-b85f-41b2-b12f-5a01cb024c64",
-   "createdAt": "2026-09-15T06:24:09+00:00",
-   "requiredSkills": "senior, node.js, microservices, kubernetes, distributed, systems., five, required.",
-   "postedAt": null,
-   "deadline": null,
-   "salaryMin": 90000,
-   "salaryMax": null,
-   "salaryText": "Tk 90,000",
-   "employmentType": "",
-   "experienceText": "",
-   "area": "Gulshan 1",
-   "distanceKm": 2.9,
-   "fingerprint": "e1c8494d317178e9",
-   "sources": [
-    {
-     "source": "Bdjobs",
-     "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290777",
-     "found_at": "2026-09-15T06:24:09+00:00"
-    }
-   ],
-   "matchScore": 43,
-   "scoreParts": {
-    "keyword": 20,
-    "experience": 45,
-    "projects": 0,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Title matches your excluded list (Backend Developer)"
-   ],
-   "discoveredBy": "local"
   },
   {
    "title": "Engineering",
@@ -1232,7 +849,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/careers/",
-     "found_at": "2026-09-15T06:24:09+00:00"
+     "found_at": "2026-09-15T07:19:11+00:00"
     }
    ],
    "matchScore": 36,
@@ -1274,7 +891,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/manufacturing-engineering",
-     "found_at": "2026-09-15T06:24:09+00:00"
+     "found_at": "2026-09-15T07:19:11+00:00"
     }
    ],
    "matchScore": 36,

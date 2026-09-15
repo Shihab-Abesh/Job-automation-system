@@ -26,22 +26,22 @@
    ]
   },
   "careers": {
-   "found": 15,
+   "found": 6,
    "errors": []
   },
   "local": {
-   "found": 7,
+   "found": 0,
    "errors": []
   }
  },
  "counts": {
-  "total": 29,
-  "new": 29,
+  "total": 20,
+  "new": 0,
   "expired": 0,
-  "duplicatesFolded": 12,
+  "duplicatesFolded": 5,
   "priorityA": 0,
-  "priorityB": 11,
-  "priorityC": 18
+  "priorityB": 6,
+  "priorityC": 14
  },
  "filters": {
   "min_salary_bdt": 20000,
@@ -51,5 +51,5 @@
   "drop_expired": true
  },
  "blockedUrls": [],
- "ranAt": "2026-09-15T06:24:09+00:00"
+ "ranAt": "2026-09-15T07:19:11+00:00"
 }
