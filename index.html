@@ -23,6 +23,8 @@ body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",san
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://unpkg.com/jspdf@2.5.2/dist/jspdf.umd.min.js"></script>
+<script src="https://unpkg.com/docx@8.5.0/build/index.umd.js"></script>
 <script type="text/babel">
 const {useState,useEffect,useMemo}=React;
 
@@ -132,7 +134,10 @@ function tailoredResume(job,p){
  return {summary:summaryMap[category]||"Computer Science and Engineering graduate with a multidisciplinary background in software quality, information systems, databases, system analysis, and web technologies.",skills,relevantProjects,analysis:a}
 }
 function download(filename,content,type="text/plain"){
- const blob=new Blob([content],{type}); const u=URL.createObjectURL(blob); const a=document.createElement("a");a.href=u;a.download=filename;a.click();URL.revokeObjectURL(u);
+ const blob=new Blob([content],{type}); downloadBlob(filename,blob);
+}
+function downloadBlob(filename,blob){
+ const u=URL.createObjectURL(blob); const a=document.createElement("a");a.href=u;a.download=filename;a.click();URL.revokeObjectURL(u);
 }
 function csvEscape(v){return `"${String(v??"").replaceAll('"','""')}"`}
 
@@ -150,6 +155,10 @@ function App(){
  useEffect(()=>localStorage.setItem(STORAGE_KEY,JSON.stringify(profile)),[profile]);
  useEffect(()=>localStorage.setItem(JOB_KEY,JSON.stringify(jobs)),[jobs]);
  const notify=m=>{setToast(m);setTimeout(()=>setToast(""),3500)};
+ const updateJob=(id,patch)=>{
+  setJobs(prev=>prev.map(x=>x.id===id?{...x,...patch}:x));
+  setSelected(prev=>prev&&prev.id===id?{...prev,...patch}:prev);
+ };
  const saveProfileJSON=()=>{
   try{const obj=JSON.parse(profileText);setProfile(obj);setEditing(false);notify("Profile saved successfully.");}
   catch(e){alert("Invalid JSON. Please correct the profile data.");}
@@ -184,7 +193,7 @@ function App(){
 
    {tab==="profile"&&<section className="space-y-4">
     <div className="flex flex-wrap justify-between gap-2"><div><h2 className="text-xl font-bold">Master Profile</h2><p className="text-sm text-slate-400">This is your source of truth. Keep all information factual.</p></div><div className="flex gap-2"><button onClick={exportProfile} className="px-3 py-2 text-xs rounded bg-slate-800">Export Backup</button><label className="px-3 py-2 text-xs rounded bg-slate-800 cursor-pointer">Import Backup<input type="file" accept=".json" className="hidden" onChange={importProfile}/></label><button onClick={()=>{setProfileText(JSON.stringify(profile,null,2));setEditing(true)}} className="px-3 py-2 text-xs rounded bg-cyan-600">Edit Profile</button></div></div>
-    {!editing?<ProfileView p={profile}/>:<div className="space-y-3"><div className="bg-amber-950/40 border border-amber-800 p-3 rounded text-xs text-amber-200">Advanced editor: edit carefully. This version uses structured JSON so every part of the master profile can be changed.</div><textarea value={profileText} onChange={e=>setProfileText(e.target.value)} className="w-full h-[600px] bg-slate-900 border border-slate-700 rounded-xl p-4 font-mono text-xs"/><div className="flex gap-2"><button onClick={saveProfileJSON} className="px-4 py-2 bg-emerald-600 rounded">Save</button><button onClick={()=>setEditing(false)} className="px-4 py-2 bg-slate-800 rounded">Cancel</button></div></div>}
+    {!editing?<div className="space-y-4"><PersonalInfoForm p={profile} setProfile={setProfile}/><ProfileView p={profile}/></div>:<div className="space-y-3"><div className="bg-amber-950/40 border border-amber-800 p-3 rounded text-xs text-amber-200">Advanced editor: edit carefully. This version uses structured JSON so every part of the master profile can be changed.</div><textarea value={profileText} onChange={e=>setProfileText(e.target.value)} className="w-full h-[600px] bg-slate-900 border border-slate-700 rounded-xl p-4 font-mono text-xs"/><div className="flex gap-2"><button onClick={saveProfileJSON} className="px-4 py-2 bg-emerald-600 rounded">Save</button><button onClick={()=>setEditing(false)} className="px-4 py-2 bg-slate-800 rounded">Cancel</button></div></div>}
    </section>}
 
    {tab==="preferences"&&<Preferences p={profile} setProfile={setProfile} notify={notify}/>}
@@ -201,7 +210,7 @@ function App(){
     {!jobs.length&&<div className="text-slate-400 bg-slate-900 border border-slate-800 rounded-xl p-8 text-center">No jobs yet. Add a real job description to begin.</div>}
    </section>}
 
-   {tab==="resume"&&selected&&<ResumePanel job={selected} p={profile} setJobs={setJobs} jobs={jobs} notify={notify}/>}
+   {tab==="resume"&&selected&&<ResumePanel job={selected} p={profile} updateJob={updateJob} notify={notify}/>}
    {tab==="resume"&&!selected&&<div className="text-slate-400">Select a job from Job Analysis first.</div>}
    {tab==="tracker"&&<Tracker jobs={jobs} setJobs={setJobs}/>}
   </main>
@@ -211,8 +220,22 @@ function App(){
 
 function Input({placeholder,value,set}){return <input placeholder={placeholder} value={value} onChange={e=>set(e.target.value)} className="bg-slate-950 border border-slate-700 rounded p-3 w-full text-sm"/>}
 function Metric({label,value}){return <div className="bg-slate-950 rounded p-2"><p className="text-slate-500">{label}</p><p className="font-bold">{value}%</p></div>}
+function PersonalInfoForm({p,setProfile}){
+ const set=(k,v)=>setProfile({...p,personal:{...p.personal,[k]:v}});
+ return <Block title="Personal Information">
+  <p className="text-xs text-slate-500 mb-3">This is what appears in your resume header — your real name and links go here, not in the JSON editor below.</p>
+  <div className="grid md:grid-cols-2 gap-3">
+   <Input placeholder="Full Name" value={p.personal.fullName} set={v=>set("fullName",v)}/>
+   <Input placeholder="Email" value={p.personal.email} set={v=>set("email",v)}/>
+   <Input placeholder="Phone" value={p.personal.phone} set={v=>set("phone",v)}/>
+   <Input placeholder="Location" value={p.personal.location} set={v=>set("location",v)}/>
+   <Input placeholder="LinkedIn URL" value={p.personal.linkedin} set={v=>set("linkedin",v)}/>
+   <Input placeholder="GitHub URL" value={p.personal.github} set={v=>set("github",v)}/>
+   <Input placeholder="Portfolio / Website URL" value={p.personal.portfolio} set={v=>set("portfolio",v)}/>
+  </div>
+ </Block>
+}
 function ProfileView({p}){return <div className="space-y-4">
- <Block title="Personal Information"><div className="grid md:grid-cols-2 gap-2 text-sm">{Object.entries(p.personal).map(([k,v])=><p key={k}><span className="text-slate-500">{k}:</span> {v||"—"}</p>)}</div></Block>
  <Block title="Education">{p.education.map((x,i)=><div key={i} className="text-sm mb-3"><b>{x.degree}</b><br/><span className="text-slate-400">{x.institution} · {x.cgpa} · {x.graduation}</span></div>)}</Block>
  <Block title="Experience">{p.experience.map((x,i)=><div key={i} className="mb-5"><b>{x.role}</b><p className="text-sm text-cyan-400">{x.company} · {x.duration}</p><ul className="list-disc ml-5 mt-2 text-sm text-slate-300">{x.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</Block>
  <Block title="Projects">{p.projects.map((x,i)=><div key={i} className="mb-4"><b>{x.name}</b><p className="text-sm text-slate-400">{x.description}</p><p className="text-xs text-cyan-300 mt-1">{x.skills.join(" · ")}</p></div>)}</Block>
@@ -231,30 +254,119 @@ function Preferences({p,setProfile,notify}){
  </section>
 }
 
-function ResumePanel({job,p,setJobs,jobs,notify}){
+function ResumePanel({job,p,updateJob,notify}){
  const [strategy,setStrategy]=useState(ROLE_STRATEGIES[job.category]?job.category:"Information Systems");
  const cfg=ROLE_STRATEGIES[strategy];
  const a=analyzeJob({...job,category:strategy},p);
  const exp=[...p.experience].map(e=>({...e,bullets:[...e.bullets].sort((x,y)=>scoreBullet(y,job)-scoreBullet(x,job))}));
  const realSkills=[...p.skills.technical,...p.skills.testing,...p.skills.tools,...p.skills.systems,...p.skills.soft].filter((v,i,a)=>a.indexOf(v)===i);
- const skills=[...cfg.skills,...realSkills].filter((v,i,a)=>a.indexOf(v)===i).filter(x=>realSkills.some(r=>normalize(r)===normalize(x)||normalize(r).includes(normalize(x))||normalize(x).includes(normalize(r)))).slice(0,14);
+ const autoSkills=[...cfg.skills,...realSkills].filter((v,i,a)=>a.indexOf(v)===i).filter(x=>realSkills.some(r=>normalize(r)===normalize(x)||normalize(r).includes(normalize(x))||normalize(x).includes(normalize(r)))).slice(0,14);
  const projects=[...p.projects].sort((x,y)=>projectScore(y,strategy,job)-projectScore(x,strategy,job)).slice(0,3);
- const summary=summaryFor(strategy);
+ const autoSummary=summaryFor(strategy);
+ const autoExperienceText=exp.map(e=>`${e.role} | ${e.company} | ${e.duration}\n${e.bullets.map(b=>"• "+b).join("\n")}`).join("\n\n");
+ const autoProjectsText=projects.map(x=>`${x.name}\n${x.description}\n${x.bullets.map(b=>"• "+b).join("\n")}\nSkills: ${x.skills.join(", ")}`).join("\n\n");
  const contact=[p.personal.location,p.personal.phone,p.personal.email,p.personal.linkedin,p.personal.github,p.personal.portfolio].filter(Boolean).join(" | ");
- const downloadTxt=()=>download(`${p.personal.fullName.replace(/\s+/g,"_")}_${strategy.replace(/\W+/g,"_")}.txt`,makeText());
- const makeText=()=>`${p.personal.fullName}\n${contact}\n${cfg.headline}\n\nPROFESSIONAL SUMMARY\n${summary}\n\nCORE SKILLS\n${skills.join(" | ")}\n\nPROFESSIONAL EXPERIENCE\n${exp.map(e=>`${e.role} | ${e.company} | ${e.duration}\n${e.bullets.map(b=>"• "+b).join("\n")}`).join("\n\n")}\n\nSELECTED PROJECTS\n${projects.map(x=>`${x.name}\n${x.description}\n${x.bullets.map(b=>"• "+b).join("\n")}\nSkills: ${x.skills.join(", ")}`).join("\n\n")}\n\nEDUCATION\n${p.education.map(e=>`${e.degree} | ${e.institution} | ${e.cgpa} | ${e.graduation}`).join("\n")}`;
+ const preparedDate=new Date().toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
+
+ const ov=job.resumeOverrides||null;
+ const finalSummary=ov?ov.summary:autoSummary;
+ const finalSkills=ov?ov.skills:autoSkills;
+ const finalExperienceText=ov?ov.experienceText:autoExperienceText;
+ const finalProjectsText=ov?ov.projectsText:autoProjectsText;
+
+ const [editMode,setEditMode]=useState(false);
+ const [draft,setDraft]=useState(null);
+ const enterEdit=()=>{setDraft({summary:finalSummary,skillsText:finalSkills.join(" • "),experienceText:finalExperienceText,projectsText:finalProjectsText});setEditMode(true)};
+ const saveEdit=()=>{
+  updateJob(job.id,{resumeOverrides:{summary:draft.summary,skills:draft.skillsText.split("•").map(s=>s.trim()).filter(Boolean),experienceText:draft.experienceText,projectsText:draft.projectsText}});
+  setEditMode(false);notify("Resume edits saved.");
+ };
+ const resetToAuto=()=>{updateJob(job.id,{resumeOverrides:null});setEditMode(false);notify("Reverted to the auto-generated resume.")};
+
+ const fileBase=()=>`${(p.personal.fullName||"Resume").replace(/\s+/g,"_")}_${strategy.replace(/\W+/g,"_")}`;
+ const makeText=()=>`${p.personal.fullName||"Your Name"}\n${contact}\n${cfg.headline}\nPrepared: ${preparedDate}\n\nPROFESSIONAL SUMMARY\n${finalSummary}\n\nCORE SKILLS\n${finalSkills.join(" | ")}\n\nPROFESSIONAL EXPERIENCE\n${finalExperienceText}\n\nSELECTED PROJECTS\n${finalProjectsText}\n\nEDUCATION\n${p.education.map(e=>`${e.degree} | ${e.institution} | ${e.cgpa} | ${e.graduation}`).join("\n")}`;
+ const downloadTxt=()=>download(`${fileBase()}.txt`,makeText());
+
+ const downloadPDF=()=>{
+  const {jsPDF}=window.jspdf;
+  const doc=new jsPDF({unit:"pt",format:"a4"});
+  const pageWidth=doc.internal.pageSize.getWidth(), pageHeight=doc.internal.pageSize.getHeight();
+  const marginX=42, maxWidth=pageWidth-marginX*2, centerX=pageWidth/2, marginBottom=48;
+  let y=50;
+  const ensureSpace=(lineHeight=12)=>{if(y+lineHeight>pageHeight-marginBottom){doc.addPage();y=50;}};
+  const writeBlock=(text,size=9.5,lineHeight=12)=>{
+   doc.setFont("helvetica","normal");doc.setFontSize(size);
+   String(text||"").split("\n").forEach(para=>{
+    if(!para){ensureSpace(lineHeight/2);y+=lineHeight/2;return;}
+    doc.splitTextToSize(para,maxWidth).forEach(line=>{ensureSpace(lineHeight);doc.text(line,marginX,y);y+=lineHeight;});
+   });
+  };
+  const sectionTitle=title=>{
+   ensureSpace(20);
+   doc.setFont("helvetica","bold");doc.setFontSize(10.5);
+   doc.text(title.toUpperCase(),marginX,y);y+=4;
+   doc.setLineWidth(0.75);doc.line(marginX,y,marginX+maxWidth,y);y+=12;
+  };
+  doc.setFont("helvetica","bold");doc.setFontSize(18);
+  doc.text(p.personal.fullName||"Your Name",centerX,y,{align:"center"});y+=18;
+  doc.setFont("helvetica","normal");doc.setFontSize(9);
+  doc.text(contact||" ",centerX,y,{align:"center"});y+=13;
+  doc.setFont("helvetica","bold");doc.setFontSize(10);
+  doc.text(cfg.headline,centerX,y,{align:"center"});y+=12;
+  doc.setFont("helvetica","italic");doc.setFontSize(8);
+  doc.text(`Prepared: ${preparedDate}`,centerX,y,{align:"center"});y+=18;
+  sectionTitle("Professional Summary");writeBlock(finalSummary);y+=8;
+  sectionTitle("Core Skills");writeBlock(finalSkills.join(" • "));y+=8;
+  sectionTitle("Professional Experience");writeBlock(finalExperienceText);y+=8;
+  sectionTitle("Selected Projects");writeBlock(finalProjectsText);y+=8;
+  sectionTitle("Education");writeBlock(p.education.map(e=>`${e.degree} | ${e.institution} | ${e.cgpa} | ${e.graduation}`).join("\n"));
+  doc.save(`${fileBase()}.pdf`);
+ };
+
+ const downloadDOCX=async()=>{
+  const {Document,Packer,Paragraph,TextRun,AlignmentType}=window.docx;
+  const centered=(text,opts={})=>new Paragraph({alignment:AlignmentType.CENTER,spacing:{after:opts.after??60},children:[new TextRun({text,bold:!!opts.bold,italics:!!opts.italics,size:opts.size||20})]});
+  const heading=text=>new Paragraph({spacing:{before:220,after:80},border:{bottom:{color:"000000",space:1,style:"single",size:6}},children:[new TextRun({text:text.toUpperCase(),bold:true,size:20})]});
+  const body=text=>String(text||"").split("\n").map(line=>new Paragraph({spacing:{after:40},children:[new TextRun({text:line||" ",size:18})]}));
+  const children=[
+   centered(p.personal.fullName||"Your Name",{bold:true,size:32,after:60}),
+   centered(contact||" ",{size:16,after:60}),
+   centered(cfg.headline,{bold:true,size:18,after:40}),
+   centered(`Prepared: ${preparedDate}`,{italics:true,size:14,after:220}),
+   heading("Professional Summary"),...body(finalSummary),
+   heading("Core Skills"),...body(finalSkills.join(" • ")),
+   heading("Professional Experience"),...body(finalExperienceText),
+   heading("Selected Projects"),...body(finalProjectsText),
+   heading("Education"),...body(p.education.map(e=>`${e.degree} | ${e.institution} | ${e.cgpa} | ${e.graduation}`).join("\n")),
+  ];
+  const doc=new Document({sections:[{properties:{},children}]});
+  const blob=await Packer.toBlob(doc);
+  downloadBlob(`${fileBase()}.docx`,blob);
+ };
+
  const print=()=>window.print();
- const setStatus=status=>{setJobs(jobs.map(x=>x.id===job.id?{...x,status,selectedStrategy:strategy}:x));notify(`Status updated to ${status}.`)};
+ const setStatus=status=>{updateJob(job.id,{status,selectedStrategy:strategy});notify(`Status updated to ${status}.`)};
  return <section className="space-y-5">
-  <div className="flex flex-wrap justify-between gap-3"><div><h2 className="text-xl font-bold">Recruiter-Style ATS Resume</h2><p className="text-sm text-cyan-400">{job.title} · {job.company}</p><p className="text-xs text-slate-500 mt-1">One-page, single-column, text-first resume layout.</p></div><div className="no-print flex gap-2"><button onClick={downloadTxt} className="bg-slate-800 px-3 py-2 rounded text-xs">Download TXT</button><button onClick={print} className="bg-cyan-600 px-3 py-2 rounded text-xs">Print / Save PDF</button></div></div>
-  <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between items-center mb-3"><div><h3 className="font-semibold">Resume Strategy</h3><p className="text-xs text-slate-500">The system changes emphasis, not your facts.</p></div><span className="text-xs text-cyan-300">{cfg.label}</span></div><div className="grid md:grid-cols-4 gap-2">{Object.entries(ROLE_STRATEGIES).map(([k,v])=><button key={k} onClick={()=>setStrategy(k)} className={`p-3 rounded-lg border text-left text-xs ${strategy===k?'border-cyan-500 bg-cyan-950/50':'border-slate-800 bg-slate-950'}`}><b>{v.label}</b><span className="block text-slate-500 mt-1">{k}</span></button>)}</div></div>
+  <div className="flex flex-wrap justify-between gap-3"><div><h2 className="text-xl font-bold">Recruiter-Style ATS Resume{ov&&<span className="text-[10px] text-amber-300 font-normal ml-2">(manually edited)</span>}</h2><p className="text-sm text-cyan-400">{job.title} · {job.company}</p><p className="text-xs text-slate-500 mt-1">One-page, single-column, text-first resume layout.</p></div><div className="no-print flex flex-wrap gap-2"><button onClick={()=>editMode?setEditMode(false):enterEdit()} className="bg-amber-600 px-3 py-2 rounded text-xs">{editMode?"Cancel Edit":"Edit Content"}</button><button onClick={downloadTxt} className="bg-slate-800 px-3 py-2 rounded text-xs">TXT</button><button onClick={downloadPDF} className="bg-cyan-600 px-3 py-2 rounded text-xs">Download PDF</button><button onClick={downloadDOCX} className="bg-blue-600 px-3 py-2 rounded text-xs">Download DOCX</button><button onClick={print} className="bg-slate-800 px-3 py-2 rounded text-xs">Print</button></div></div>
+
+  {editMode&&draft&&<div className="no-print bg-slate-900 border border-amber-700 rounded-xl p-5 space-y-3">
+   <h3 className="font-semibold text-amber-300">Editing this resume's content</h3>
+   <p className="text-xs text-slate-500">Changes here apply only to this job's resume. Switching strategy below discards unsaved edits.</p>
+   <div><label className="text-xs text-slate-400">Professional Summary</label><textarea value={draft.summary} onChange={e=>setDraft({...draft,summary:e.target.value})} className="w-full h-24 bg-slate-950 border border-slate-700 rounded p-3 text-sm mt-1"/></div>
+   <div><label className="text-xs text-slate-400">Core Skills (separate with •)</label><textarea value={draft.skillsText} onChange={e=>setDraft({...draft,skillsText:e.target.value})} className="w-full h-16 bg-slate-950 border border-slate-700 rounded p-3 text-sm mt-1"/></div>
+   <div><label className="text-xs text-slate-400">Professional Experience</label><textarea value={draft.experienceText} onChange={e=>setDraft({...draft,experienceText:e.target.value})} className="w-full h-40 bg-slate-950 border border-slate-700 rounded p-3 text-sm font-mono mt-1"/></div>
+   <div><label className="text-xs text-slate-400">Selected Projects</label><textarea value={draft.projectsText} onChange={e=>setDraft({...draft,projectsText:e.target.value})} className="w-full h-32 bg-slate-950 border border-slate-700 rounded p-3 text-sm font-mono mt-1"/></div>
+   <div className="flex flex-wrap gap-2"><button onClick={saveEdit} className="bg-emerald-600 px-4 py-2 rounded text-xs">Save Edits</button><button onClick={()=>setEditMode(false)} className="bg-slate-800 px-4 py-2 rounded text-xs">Cancel</button>{ov&&<button onClick={resetToAuto} className="bg-red-900 px-4 py-2 rounded text-xs">Reset to Auto-generated</button>}</div>
+  </div>}
+
+  <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between items-center mb-3"><div><h3 className="font-semibold">Resume Strategy</h3><p className="text-xs text-slate-500">The system changes emphasis, not your facts.</p></div><span className="text-xs text-cyan-300">{cfg.label}</span></div><div className="grid md:grid-cols-4 gap-2">{Object.entries(ROLE_STRATEGIES).map(([k,v])=><button key={k} onClick={()=>{setStrategy(k);setEditMode(false)}} className={`p-3 rounded-lg border text-left text-xs ${strategy===k?'border-cyan-500 bg-cyan-950/50':'border-slate-800 bg-slate-950'}`}><b>{v.label}</b><span className="block text-slate-500 mt-1">{k}</span></button>)}</div></div>
   <div className="grid md:grid-cols-2 gap-4 no-print"><Block title={`Compatibility Analysis: ${a.score}%`}><div className="grid grid-cols-2 gap-2"><Metric label="Keyword Evidence" value={a.skillPct}/><Metric label="Experience" value={a.expScore}/><Metric label="Projects" value={a.projectScore}/><Metric label="Preference" value={a.prefScore}/></div><p className="text-xs text-emerald-300 mt-3">Matched: {a.matched.slice(0,10).join(", ")||"None"}</p><p className="text-xs text-amber-300 mt-2">Potential gaps: {a.missing.slice(0,8).join(", ")||"None detected"}</p></Block><Block title="ATS Quality"><CheckRow ok text="Single-column, standard section headings"/><CheckRow ok text="No graphics, tables, icons, sidebars, or decorative resume elements"/><CheckRow ok text="Plain-text contact information"/><CheckRow ok={a.missing.length<8} text="Job keywords reviewed without inventing qualifications"/><p className="text-[11px] text-slate-500 mt-3">Compatibility is an internal estimate, not a real employer ATS score.</p></Block></div>
   <div className="bg-white text-black max-w-[794px] mx-auto p-8 md:p-10 shadow-2xl rounded print-resume">
-    <header className="border-b pb-3 mb-4 text-center"><h1 className="text-2xl font-bold tracking-tight">{p.personal.fullName}</h1><p className="text-[10px] mt-1 leading-4">{contact}</p><p className="text-[12px] font-semibold mt-1">{cfg.headline}</p></header>
-    <ResumeSection title="PROFESSIONAL SUMMARY"><p className="text-[10.5px] leading-5">{summary}</p></ResumeSection>
-    <ResumeSection title="CORE SKILLS"><p className="text-[10.5px] leading-5">{skills.join(" • ")}</p></ResumeSection>
-    <ResumeSection title="PROFESSIONAL EXPERIENCE">{exp.map((e,i)=><div key={i} className="mb-3"><div className="flex justify-between text-[10.5px]"><b>{e.role}</b><b>{e.duration}</b></div><div className="text-[10.5px] font-semibold">{e.company} · {e.location}</div><ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{e.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
-    <ResumeSection title="SELECTED PROJECTS">{projects.map((x,i)=><div key={i} className="mb-3"><b className="text-[10.5px]">{x.name}</b><p className="text-[10px] leading-4">{x.description}</p><ul className="list-disc ml-5 text-[10px] leading-4">{x.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul><p className="text-[9.5px]"><b>Skills:</b> {x.skills.join(", ")}</p></div>)}</ResumeSection>
+    <header className="border-b pb-3 mb-4 text-center"><h1 className="text-2xl font-bold tracking-tight">{p.personal.fullName||"Your Name"}</h1><p className="text-[10px] mt-1 leading-4">{contact}</p><p className="text-[12px] font-semibold mt-1">{cfg.headline}</p><p className="text-[9px] text-gray-500 mt-1">Prepared: {preparedDate}</p></header>
+    <ResumeSection title="PROFESSIONAL SUMMARY"><p className="text-[10.5px] leading-5">{finalSummary}</p></ResumeSection>
+    <ResumeSection title="CORE SKILLS"><p className="text-[10.5px] leading-5">{finalSkills.join(" • ")}</p></ResumeSection>
+    <ResumeSection title="PROFESSIONAL EXPERIENCE">{ov?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{finalExperienceText}</pre>:exp.map((e,i)=><div key={i} className="mb-3"><div className="flex justify-between text-[10.5px]"><b>{e.role}</b><b>{e.duration}</b></div><div className="text-[10.5px] font-semibold">{e.company} · {e.location}</div><ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{e.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
+    <ResumeSection title="SELECTED PROJECTS">{ov?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{finalProjectsText}</pre>:projects.map((x,i)=><div key={i} className="mb-3"><b className="text-[10.5px]">{x.name}</b><p className="text-[10px] leading-4">{x.description}</p><ul className="list-disc ml-5 text-[10px] leading-4">{x.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul><p className="text-[9.5px]"><b>Skills:</b> {x.skills.join(", ")}</p></div>)}</ResumeSection>
     <ResumeSection title="EDUCATION">{p.education.map((e,i)=><p key={i} className="text-[10px] leading-4 mb-1"><b>{e.degree}</b><br/>{e.institution} · {e.cgpa} · {e.graduation}</p>)}</ResumeSection>
   </div>
   <div className="no-print flex flex-wrap gap-2 justify-end"><button onClick={()=>setStatus("Saved")} className="bg-slate-800 px-3 py-2 rounded text-xs">Save</button><button onClick={()=>setStatus("Awaiting Approval")} className="bg-amber-600 px-3 py-2 rounded text-xs">Send to Approval</button><button onClick={()=>setStatus("Applied")} className="bg-emerald-600 px-3 py-2 rounded text-xs">Mark Applied</button>{job.url&&<a href={job.url} target="_blank" rel="noopener" className="bg-cyan-700 px-3 py-2 rounded text-xs">Open Job</a>}</div>

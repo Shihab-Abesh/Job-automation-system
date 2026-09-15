@@ -65,4 +65,6 @@ sources:
     enabled: true
     folders:
       - inbox                # drop a JSON file here and it joins the feed
-      - fixtures             # sample data used by the offline test run
+      # fixtures/ is intentionally not read here: it's fake sample data with
+      # non-working URLs (see fixtures/sample-jobs.json). The offline test
+      # run reads it separately via tests/sources.yml, not this file.
