@@ -33,12 +33,18 @@ def terms(s: str | None) -> list[str]:
 def all_evidence(p: dict[str, Any]) -> str:
     sk = p.get("skills", {})
     parts: list[str] = []
-    for key in ("technical", "testing", "tools", "systems", "soft"):
-        parts += sk.get(key, [])
+    if isinstance(sk, list):
+        # New shape: [{"category": "...", "items": [...]}, ...]
+        for group in sk:
+            parts += group.get("items", [])
+    else:
+        # Old shape, kept for profiles exported before this changed.
+        for key in ("technical", "testing", "tools", "systems", "soft"):
+            parts += sk.get(key, [])
     for x in p.get("experience", []):
         parts += [x.get("role", ""), x.get("company", "")] + x.get("bullets", [])
     for x in p.get("projects", []):
-        parts += [x.get("name", ""), x.get("description", "")] + x.get("skills", []) + x.get("bullets", [])
+        parts += [x.get("name", ""), x.get("subtitle", "") or x.get("description", "")] + x.get("skills", []) + x.get("bullets", [])
     return " ".join(parts).lower()
 
 

@@ -40,31 +40,35 @@ const STORAGE_KEY="careerpilot_bd_v2_profile";
 const JOB_KEY="careerpilot_bd_v2_jobs";
 
 const DEFAULT_PROFILE={
- personal:{fullName:"",email:"",phone:"",location:"Dhaka, Bangladesh",linkedin:"",github:"",portfolio:""},
- education:[{degree:"Bachelor of Science in Computer Science & Engineering",institution:"American International University-Bangladesh (AIUB)",cgpa:"3.46 / 4.00",graduation:"Completed"}],
+ personal:{fullName:"",headline:"",location:"Dhaka, Bangladesh",phone:"",email:"",linkedin:"",github:"",portfolio:""},
+ education:[
+  {degree:"Bachelor of Science in Computer Science and Engineering",institution:"American International University-Bangladesh (AIUB), Dhaka",score:"CGPA 3.46 / 4.00",date:"Expected October 2026"}
+ ],
  experience:[{
    role:"Software Quality Assurance Intern",company:"Innolytic IT Ltd.",location:"Dhaka, Bangladesh",duration:"June 2026 – September 2026",
    bullets:[
-    "Performed manual testing on a university website rebuild project, covering UI and design verification, functional testing, form validation, responsive testing, cross-browser testing, and regression testing.",
-    "Verified backend behaviour through frontend actions and identified content display defects before client delivery.",
-    "Documented and reported defects with reproduction steps and screen recordings, and verified fixes before closure.",
-    "Participated in client requirement, Scrum, and project meetings with developers, designers, and the project manager.",
-    "Supported website migration verification and gained exposure to hosting, DNS configuration, domain registration, and website setup."
+    "Surfaced dozens of defects on a live university website rebuild by designing and executing functional test cases covering UI verification, form validation, responsive layouts and cross-browser behaviour, all reported before client delivery.",
+    "Prevented incorrect content reaching the client launch by verifying backend behaviour through frontend actions and escalating critical content-display defects to the development team.",
+    "Cut back-and-forth on fixes by documenting every defect with reproduction steps and screen recordings, then retesting and closing each fix after the developer round.",
+    "Protected released features from breakage by running regression testing on core pages and forms after each fix cycle.",
+    "Turned client needs into testable checks by taking part in requirement meetings, Scrum meetings and project meetings with developers, designers and the project manager."
    ],
    tags:["SQA","QA","IT","Information Systems","Application Support"]
  }],
  projects:[
-  {name:"Shipping Port Management System",description:"Academic system project covering ship registration, terminal operations, and shipment tracking.",bullets:["Prepared system requirements, UML diagrams, WBS, cost estimation using COCOMO, and risk analysis.","Designed functional test cases and performed system validation."],skills:["System Analysis","Requirements Analysis","UML","WBS","Risk Analysis","Functional Testing"],categories:["Information Systems","MIS","Business Analysis","SQA"]},
-  {name:"University Payroll Management System",description:"Relational database system project.",bullets:["Designed a relational database using Oracle with ER modeling and normalization.","Implemented SQL queries, joins, subqueries, triggers, procedures, and constraints while maintaining data integrity."],skills:["Oracle","SQL","PL/SQL","Database Design","ER Diagram","Normalization"],categories:["Information Systems","MIS","Data & Reporting","IT"]},
-  {name:"Shipping Port Management Web Application",description:"Dynamic web application with database-backed CRUD functionality.",bullets:["Built CRUD functionality using HTML, CSS, PHP, JavaScript, and MySQL.","Implemented form validation and database connectivity using phpMyAdmin."],skills:["HTML","CSS","PHP","JavaScript","MySQL","phpMyAdmin","Form Validation"],categories:["IT","Information Systems","Application Support"]}
+  {name:"Shipping Port Management System",subtitle:"Web Application (HTML, CSS, PHP, JavaScript, MySQL)",bullets:["Delivered a dynamic web application with full create, read, update and delete functionality for ship, terminal and shipment records.","Integrated a MySQL database through phpMyAdmin and implemented form validation and database connectivity in PHP."],skills:["HTML","CSS","PHP","JavaScript","MySQL","phpMyAdmin","Form Validation"],categories:["IT","Information Systems","Application Support"]},
+  {name:"Shipping Port Management System",subtitle:"Software Engineering Project",bullets:["Specified a port management system covering ship registration, terminal operations and shipment tracking, producing system requirements, UML diagrams, work breakdown structure, COCOMO cost estimation and risk analysis.","Validated the build against requirements by designing and running functional test cases at system level."],skills:["System Analysis","Requirements Analysis","UML","WBS","Risk Analysis","Functional Testing"],categories:["Information Systems","MIS","Business Analysis","SQA"]},
+  {name:"University Payroll Management System",subtitle:"Oracle Database Project",bullets:["Built a normalized relational database in Oracle from an ER diagram, enforcing data integrity through constraints and triggers.","Improved query performance by writing and tuning complex SQL with joins, subqueries, stored procedures and PL/SQL blocks."],skills:["Oracle","SQL","PL/SQL","Database Design","ER Diagram","Normalization"],categories:["Information Systems","MIS","Data & Reporting","IT"]}
  ],
- skills:{
-  technical:["SQL","PL/SQL","Oracle","MySQL","PHP","JavaScript","HTML","CSS"],
-  testing:["Manual Testing","Functional Testing","Regression Testing","UI Verification","Form Validation","Responsive Testing","Cross-Browser Testing","Defect Reporting","Test Case Design"],
-  tools:["Microsoft Office","Visual Studio Code","phpMyAdmin","Cisco Packet Tracer","Dia Diagram Editor"],
-  systems:["Information Systems","Database Management","System Analysis","Requirements Analysis","Data Integrity"],
-  soft:["Analytical Thinking","Problem Solving","Attention to Detail","Communication","Cross-functional Collaboration"]
- },
+ skills:[
+  {category:"Software Testing",items:["Manual Testing","Test Case Design","Test Execution","Functional Testing","UI and Design Verification","Form Validation","Responsive Testing","Cross-Browser Testing","Regression Testing","Smoke Testing","Defect Reporting","Bug Life Cycle","SDLC","STLC","Agile","Scrum"]},
+  {category:"Programming and Web",items:["PHP","JavaScript","C++","HTML","CSS"]},
+  {category:"Databases",items:["Oracle SQL","PL/SQL","MySQL","phpMyAdmin","ER Modelling","Normalization","Joins","Subqueries","Triggers","Stored Procedures","Constraints","Query Optimization"]},
+  {category:"Web and Hosting",items:["E-Commerce Website Setup","Domain Purchase and Registration","DNS Configuration","Hosting Panel Management","SSL Installation","Server Migration Verification"]},
+  {category:"Tools",items:["Visual Studio Code","Microsoft Office (Excel, Word)","Cisco Packet Tracer","Dia Diagram Editor","Git and GitHub"]},
+  {category:"Documentation",items:["Test Cases","Defect Reports","Requirement Documents","UML Diagrams","Work Breakdown Structure","COCOMO Cost Estimation","Risk Analysis"]}
+ ],
+ references:[],
  preferences:{
   categories:["Software Quality Assurance","Information Technology","Information Systems","MIS","Business Analysis","Application Support","Data & Reporting"],
   titles:["Software QA Engineer","Junior SQA Engineer","QA Analyst","Software Tester","MIS Executive","MIS Analyst","Information Systems Executive","Systems Analyst","IT Executive","IT Officer","Application Support Engineer","Junior Business Analyst","Business Systems Analyst","Junior Data Analyst","Reporting Analyst"],
@@ -74,14 +78,45 @@ const DEFAULT_PROFILE={
  }
 };
 
+function migrateProfile(raw){
+ if(!raw||typeof raw!=="object")return null;
+ const p={...raw};
+ p.personal={...DEFAULT_PROFILE.personal,...(raw.personal||{})};
+ p.education=(raw.education||[]).map(e=>({
+  degree:e.degree||"",
+  institution:e.institution||"",
+  score:e.score||e.cgpa||"",
+  date:e.date||e.graduation||""
+ }));
+ p.experience=(raw.experience||[]).map(e=>({role:e.role||"",company:e.company||"",location:e.location||"",duration:e.duration||"",bullets:e.bullets||[],tags:e.tags||[]}));
+ p.projects=(raw.projects||[]).map(x=>({
+  name:x.name||"",
+  subtitle:x.subtitle||"",
+  bullets:x.subtitle!==undefined&&x.subtitle!==""?(x.bullets||[]):[x.description,...(x.bullets||[])].filter(Boolean),
+  skills:x.skills||[],
+  categories:x.categories||[]
+ }));
+ if(Array.isArray(raw.skills)){
+  p.skills=raw.skills.map(g=>({category:g.category||"",items:g.items||[]}));
+ }else if(raw.skills&&typeof raw.skills==="object"){
+  const labels={technical:"Technical",testing:"Software Testing",tools:"Tools",systems:"Systems",soft:"Soft Skills"};
+  p.skills=Object.entries(raw.skills).map(([k,v])=>({category:labels[k]||k,items:v||[]}));
+ }else{
+  p.skills=[];
+ }
+ p.references=raw.references||[];
+ p.preferences={...DEFAULT_PROFILE.preferences,...(raw.preferences||{})};
+ return p;
+}
+
 const stopWords=new Set(("and or the a an to of in for with on at from by is are be as this that will can should experience knowledge skills skill requirements responsible preferred plus using use ability excellent strong good candidate job role position company years year").split(" "));
 function normalize(s){return (s||"").toLowerCase().replace(/[^a-z0-9+#./ ]/g," ")}
 function terms(s){return [...new Set(normalize(s).split(/\s+/).filter(x=>x.length>2&&!stopWords.has(x)))]}
 function allEvidence(p){
  return [
- ...p.skills.technical,...p.skills.testing,...p.skills.tools,...p.skills.systems,...p.skills.soft,
+ ...p.skills.flatMap(g=>g.items),
  ...p.experience.flatMap(x=>[x.role,x.company,...x.bullets]),
- ...p.projects.flatMap(x=>[x.name,x.description,...x.skills,...x.bullets])
+ ...p.projects.flatMap(x=>[x.name,x.subtitle||"",...(x.skills||[]),...x.bullets])
  ].join(" ").toLowerCase()
 }
 function analyzeJob(job,p){
@@ -94,7 +129,7 @@ function analyzeJob(job,p){
  const titlePref=p.preferences.titles.some(x=>normalize(job.title).includes(normalize(x))||normalize(x).includes(normalize(job.title)));
  const cat=(job.category||"").toLowerCase();
  const relevantExp=p.experience.filter(x=>[x.role,...x.tags].join(" ").toLowerCase().includes(cat)).length;
- const projectHits=p.projects.filter(x=>x.categories.some(c=>c.toLowerCase()===cat)||normalize([x.name,x.description,...x.skills,...x.bullets].join(" ")).split(" ").some(t=>raw.includes(t))).length;
+ const projectHits=p.projects.filter(x=>x.categories.some(c=>c.toLowerCase()===cat)||normalize([x.name,x.subtitle||"",...(x.skills||[]),...x.bullets].join(" ")).split(" ").some(t=>raw.includes(t))).length;
  const expScore=Math.min(100,relevantExp?85:45);
  const projectScore=Math.min(100,projectHits*35);
  const prefScore=titlePref||p.preferences.categories.some(c=>c.toLowerCase()===cat)?100:40;
@@ -102,37 +137,25 @@ function analyzeJob(job,p){
  return {score,skillPct,matched:[...new Set(matched)].slice(0,15),missing:[...new Set(missing)],expScore,projectScore,prefScore}
 }
 const ROLE_STRATEGIES={
-"Software Quality Assurance":{label:"SQA / QA Resume",headline:"Software Quality Assurance | Manual Testing | Web Validation",skills:["Manual Testing","Functional Testing","Regression Testing","UI Verification","Test Case Design","Defect Reporting","Responsive Testing","Cross-Browser Testing","SQL"]},
-"Information Technology":{label:"IT Resume",headline:"Information Technology | Application Support | Web & Database",skills:["Technical Support","Web Technologies","Database Management","SQL","HTML","CSS","JavaScript","PHP","DNS","Hosting","SSL"]},
-"Information Systems":{label:"Information Systems Resume",headline:"Information Systems | Systems Analysis | Database Management",skills:["Information Systems","System Analysis","Requirements Analysis","Database Management","SQL","Oracle","MySQL","UML","Risk Analysis","Functional Testing"]},
-"MIS":{label:"MIS Resume",headline:"Management Information Systems | SQL | Reporting | Data",skills:["MIS","SQL","Database Management","Oracle","MySQL","Data Management","Information Systems","System Analysis","Microsoft Office","Analytical Thinking"]},
-"Business Analysis":{label:"Business Analyst Resume",headline:"Business Analysis | Requirements | System Analysis | SQL",skills:["Requirements Analysis","System Analysis","UML","WBS","Risk Analysis","Stakeholder Communication","SQL","Process Understanding","Functional Testing","Analytical Thinking"]},
-"Application Support":{label:"Application Support Resume",headline:"Application Support | Web Applications | Database | Validation",skills:["Application Support","Web Applications","SQL","Database Management","Troubleshooting","Functional Testing","Defect Reporting","DNS","Hosting","SSL"]},
-"Data & Reporting":{label:"Data / Reporting Resume",headline:"Data & Reporting | SQL | Oracle | Database | Analytics",skills:["SQL","Oracle","MySQL","Database Design","Data Integrity","Data Management","Reporting","Analytical Thinking","Excel / Microsoft Office"]}
+"Software Quality Assurance":{label:"SQA / QA Resume",headline:"Software Quality Assurance | Manual Testing | Web Validation"},
+"Information Technology":{label:"IT Resume",headline:"Information Technology | Application Support | Web & Database"},
+"Information Systems":{label:"Information Systems Resume",headline:"Information Systems | Systems Analysis | Database Management"},
+"MIS":{label:"MIS Resume",headline:"Management Information Systems | SQL | Reporting | Data"},
+"Business Analysis":{label:"Business Analyst Resume",headline:"Business Analysis | Requirements | System Analysis | SQL"},
+"Application Support":{label:"Application Support Resume",headline:"Application Support | Web Applications | Database | Validation"},
+"Data & Reporting":{label:"Data / Reporting Resume",headline:"Data & Reporting | SQL | Oracle | Database | Analytics"}
 };
-function tailoredResume(job,p){
- const a=analyzeJob(job,p);
- const category=(job.category||"General");
- const relevantProjects=[...p.projects].sort((x,y)=>{
-  const xt=x.categories.includes(category)?2:0, yt=y.categories.includes(category)?2:0;
-  return yt-xt;
- }).slice(0,3);
- const jobWords=terms([job.title,job.description].join(" "));
- const skills=[...p.skills.testing,...p.skills.systems,...p.skills.technical,...p.skills.tools]
-  .filter(s=>jobWords.some(w=>normalize(s).includes(w)||w.includes(normalize(s).split(" ")[0])))
-  .concat([...p.skills.testing,...p.skills.systems,...p.skills.technical].filter(s=>!jobWords.some(w=>normalize(s).includes(w)||w.includes(normalize(s).split(" ")[0]))))
-  .filter((v,i,a)=>a.indexOf(v)===i).slice(0,12);
- const summaryMap={
-  "Software Quality Assurance":"Computer Science and Engineering graduate with hands-on SQA internship experience in manual testing, functional testing, regression testing, UI verification, defect reporting, and cross-functional collaboration.",
-  "Information Systems":"Computer Science and Engineering graduate with knowledge of information systems, relational databases, SQL, database design, and system analysis through academic projects and practical software quality experience.",
-  "MIS":"Computer Science and Engineering graduate with knowledge of SQL, relational databases, information systems, system analysis, and data management.",
-  "Information Technology":"Computer Science and Engineering graduate with practical exposure to web technologies, databases, software testing, website infrastructure, hosting, DNS configuration, and technical validation.",
-  "Business Analysis":"Computer Science and Engineering graduate with academic experience in requirements analysis, UML, WBS, risk analysis, system validation, and database-backed application projects.",
-  "Application Support":"Computer Science and Engineering graduate with exposure to web applications, databases, software validation, hosting, DNS, and technical troubleshooting.",
-  "Data & Reporting":"Computer Science and Engineering graduate with experience in SQL, Oracle, relational database design, data integrity, and analytical problem solving."
- };
- return {summary:summaryMap[category]||"Computer Science and Engineering graduate with a multidisciplinary background in software quality, information systems, databases, system analysis, and web technologies.",skills,relevantProjects,analysis:a}
-}
+function summaryFor(strategy){const m={
+"Software Quality Assurance":"Computer Science and Engineering graduate with hands-on Software Quality Assurance internship experience in manual, functional and regression testing of web applications. Experienced in UI verification, form validation, responsive and cross-browser testing, defect documentation, fix verification, and collaboration with development and project teams.",
+"Information Technology":"Computer Science and Engineering graduate with practical exposure to web applications, databases, software quality validation, website infrastructure, hosting, DNS configuration, SSL setup, and technical problem solving through internship and academic projects.",
+"Information Systems":"Computer Science and Engineering graduate with experience in information systems, relational databases, SQL, system analysis, requirements documentation, UML, risk analysis, and software validation through academic projects and practical QA experience.",
+"MIS":"Computer Science and Engineering graduate with a foundation in management information systems, SQL, relational databases, data management, system analysis, and analytical problem solving.",
+"Business Analysis":"Computer Science and Engineering graduate with academic experience in requirements analysis, UML, work breakdown structures, risk analysis, system validation, and database-backed application projects.",
+"Application Support":"Computer Science and Engineering graduate with practical experience validating web applications, documenting defects, verifying fixes, working with databases, and exposure to hosting, DNS, SSL, and website migration.",
+"Data & Reporting":"Computer Science and Engineering graduate with practical database experience in Oracle and MySQL, SQL queries, database design, data integrity, data management, and analytical problem solving."};return m[strategy]||m["Information Systems"]}
+function scoreBullet(b,job){return terms([job.title,job.description].join(" ")).filter(t=>normalize(b).includes(t)).length}
+function projectScore(x,strategy,job){return (x.categories.includes(strategy)?20:0)+terms([job.title,job.description].join(" ")).filter(t=>normalize([x.name,x.subtitle||"",...(x.skills||[]),...x.bullets].join(" ")).includes(t)).length}
+
 function download(filename,content,type="text/plain"){
  const blob=new Blob([content],{type}); downloadBlob(filename,blob);
 }
@@ -142,7 +165,7 @@ function downloadBlob(filename,blob){
 function csvEscape(v){return `"${String(v??"").replaceAll('"','""')}"`}
 
 function App(){
- const [profile,setProfile]=useState(()=>JSON.parse(localStorage.getItem(STORAGE_KEY)||"null")||DEFAULT_PROFILE);
+ const [profile,setProfile]=useState(()=>migrateProfile(JSON.parse(localStorage.getItem(STORAGE_KEY)||"null"))||DEFAULT_PROFILE);
  const [jobs,setJobs]=useState(()=>JSON.parse(localStorage.getItem(JOB_KEY)||"[]"));
  const [tab,setTab]=useState("dashboard");
  const [selected,setSelected]=useState(null);
@@ -160,7 +183,7 @@ function App(){
   setSelected(prev=>prev&&prev.id===id?{...prev,...patch}:prev);
  };
  const saveProfileJSON=()=>{
-  try{const obj=JSON.parse(profileText);setProfile(obj);setEditing(false);notify("Profile saved successfully.");}
+  try{const obj=migrateProfile(JSON.parse(profileText));setProfile(obj);setEditing(false);notify("Profile saved successfully.");}
   catch(e){alert("Invalid JSON. Please correct the profile data.");}
  };
  const addJob=e=>{
@@ -171,7 +194,7 @@ function App(){
  };
  const exportProfile=()=>download("careerpilot-profile.json",JSON.stringify(profile,null,2),"application/json");
  const exportJobs=()=>{const rows=[["Title","Company","Category","Location","Match","Status","Source","URL"],...jobs.map(j=>{const a=analyzeJob(j,profile);return[j.title,j.company,j.category,j.location,a.score,j.status,j.source,j.url]})];download("careerpilot-jobs.csv",rows.map(r=>r.map(csvEscape).join(",")).join("\n"),"text/csv")};
- const importProfile=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{setProfile(JSON.parse(r.result));notify("Profile imported.");}catch{alert("Invalid profile file.");}};r.readAsText(f)};
+ const importProfile=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{setProfile(migrateProfile(JSON.parse(r.result)));notify("Profile imported.");}catch{alert("Invalid profile file.");}};r.readAsText(f)};
  const visibleJobs=jobs.filter(j=>[j.title,j.company,j.category,j.location].join(" ").toLowerCase().includes(search.toLowerCase()));
  const stats=useMemo(()=>{const scores=jobs.map(j=>analyzeJob(j,profile).score);return{total:jobs.length,strong:scores.filter(x=>x>=80).length,review:jobs.filter(j=>j.status==="Awaiting Review").length,applied:jobs.filter(j=>j.status==="Applied").length}},[jobs,profile]);
  const nav=[["dashboard","Dashboard"],["profile","Master Profile"],["preferences","Career Preferences"],["add","Add Job"],["jobs","Job Analysis"],["tracker","Tracker"]];
@@ -192,8 +215,15 @@ function App(){
    </section>}
 
    {tab==="profile"&&<section className="space-y-4">
-    <div className="flex flex-wrap justify-between gap-2"><div><h2 className="text-xl font-bold">Master Profile</h2><p className="text-sm text-slate-400">This is your source of truth. Keep all information factual.</p></div><div className="flex gap-2"><button onClick={exportProfile} className="px-3 py-2 text-xs rounded bg-slate-800">Export Backup</button><label className="px-3 py-2 text-xs rounded bg-slate-800 cursor-pointer">Import Backup<input type="file" accept=".json" className="hidden" onChange={importProfile}/></label><button onClick={()=>{setProfileText(JSON.stringify(profile,null,2));setEditing(true)}} className="px-3 py-2 text-xs rounded bg-cyan-600">Edit Profile</button></div></div>
-    {!editing?<div className="space-y-4"><PersonalInfoForm p={profile} setProfile={setProfile}/><ProfileView p={profile}/></div>:<div className="space-y-3"><div className="bg-amber-950/40 border border-amber-800 p-3 rounded text-xs text-amber-200">Advanced editor: edit carefully. This version uses structured JSON so every part of the master profile can be changed.</div><textarea value={profileText} onChange={e=>setProfileText(e.target.value)} className="w-full h-[600px] bg-slate-900 border border-slate-700 rounded-xl p-4 font-mono text-xs"/><div className="flex gap-2"><button onClick={saveProfileJSON} className="px-4 py-2 bg-emerald-600 rounded">Save</button><button onClick={()=>setEditing(false)} className="px-4 py-2 bg-slate-800 rounded">Cancel</button></div></div>}
+    <div className="flex flex-wrap justify-between gap-2"><div><h2 className="text-xl font-bold">Master Profile</h2><p className="text-sm text-slate-400">This is your source of truth. Keep all information factual.</p></div><div className="flex gap-2"><button onClick={exportProfile} className="px-3 py-2 text-xs rounded bg-slate-800">Export Backup</button><label className="px-3 py-2 text-xs rounded bg-slate-800 cursor-pointer">Import Backup<input type="file" accept=".json" className="hidden" onChange={importProfile}/></label><button onClick={()=>{if(!editing)setProfileText(JSON.stringify(profile,null,2));setEditing(!editing)}} className="px-3 py-2 text-xs rounded bg-cyan-600">{editing?"Structured Editor":"Advanced JSON Editor"}</button></div></div>
+    {!editing?<div className="space-y-4">
+      <PersonalInfoForm p={profile} setProfile={setProfile}/>
+      <EducationEditor p={profile} setProfile={setProfile}/>
+      <ExperienceEditor p={profile} setProfile={setProfile}/>
+      <ProjectsEditor p={profile} setProfile={setProfile}/>
+      <SkillsEditor p={profile} setProfile={setProfile}/>
+      <ReferencesEditor p={profile} setProfile={setProfile}/>
+    </div>:<div className="space-y-3"><div className="bg-amber-950/40 border border-amber-800 p-3 rounded text-xs text-amber-200">Advanced editor: edit carefully. This version uses structured JSON so every part of the master profile can be changed at once (useful for bulk edits or restoring a backup).</div><textarea value={profileText} onChange={e=>setProfileText(e.target.value)} className="w-full h-[600px] bg-slate-900 border border-slate-700 rounded-xl p-4 font-mono text-xs"/><div className="flex gap-2"><button onClick={saveProfileJSON} className="px-4 py-2 bg-emerald-600 rounded">Save</button><button onClick={()=>setEditing(false)} className="px-4 py-2 bg-slate-800 rounded">Cancel</button></div></div>}
    </section>}
 
    {tab==="preferences"&&<Preferences p={profile} setProfile={setProfile} notify={notify}/>}
@@ -220,28 +250,140 @@ function App(){
 
 function Input({placeholder,value,set}){return <input placeholder={placeholder} value={value} onChange={e=>set(e.target.value)} className="bg-slate-950 border border-slate-700 rounded p-3 w-full text-sm"/>}
 function Metric({label,value}){return <div className="bg-slate-950 rounded p-2"><p className="text-slate-500">{label}</p><p className="font-bold">{value}%</p></div>}
+function Block({title,children}){return <div className="bg-slate-900 border border-slate-800 rounded-xl p-5"><h3 className="font-semibold mb-3">{title}</h3>{children}</div>}
+function EntryCard({children,onRemove,removeLabel}){return <div className="border border-slate-800 rounded-lg p-3 space-y-2 bg-slate-950/40">{children}<button onClick={onRemove} className="text-xs text-red-300 hover:text-red-200">{removeLabel||"Remove"}</button></div>}
+function AddButton({onClick,children}){return <button onClick={onClick} className="mt-3 bg-cyan-600 px-3 py-2 rounded text-xs">{children}</button>}
+
 function PersonalInfoForm({p,setProfile}){
  const set=(k,v)=>setProfile({...p,personal:{...p.personal,[k]:v}});
  return <Block title="Personal Information">
-  <p className="text-xs text-slate-500 mb-3">This is what appears in your resume header — your real name and links go here, not in the JSON editor below.</p>
+  <p className="text-xs text-slate-500 mb-3">This is what appears in your resume header — your real name, headline and links go here, not in the JSON editor.</p>
   <div className="grid md:grid-cols-2 gap-3">
    <Input placeholder="Full Name" value={p.personal.fullName} set={v=>set("fullName",v)}/>
-   <Input placeholder="Email" value={p.personal.email} set={v=>set("email",v)}/>
-   <Input placeholder="Phone" value={p.personal.phone} set={v=>set("phone",v)}/>
+   <Input placeholder="Professional Headline (e.g. Software QA Engineer (Manual) | PHP Web Developer)" value={p.personal.headline} set={v=>set("headline",v)}/>
    <Input placeholder="Location" value={p.personal.location} set={v=>set("location",v)}/>
+   <Input placeholder="Phone" value={p.personal.phone} set={v=>set("phone",v)}/>
+   <Input placeholder="Email" value={p.personal.email} set={v=>set("email",v)}/>
    <Input placeholder="LinkedIn URL" value={p.personal.linkedin} set={v=>set("linkedin",v)}/>
    <Input placeholder="GitHub URL" value={p.personal.github} set={v=>set("github",v)}/>
    <Input placeholder="Portfolio / Website URL" value={p.personal.portfolio} set={v=>set("portfolio",v)}/>
   </div>
  </Block>
 }
-function ProfileView({p}){return <div className="space-y-4">
- <Block title="Education">{p.education.map((x,i)=><div key={i} className="text-sm mb-3"><b>{x.degree}</b><br/><span className="text-slate-400">{x.institution} · {x.cgpa} · {x.graduation}</span></div>)}</Block>
- <Block title="Experience">{p.experience.map((x,i)=><div key={i} className="mb-5"><b>{x.role}</b><p className="text-sm text-cyan-400">{x.company} · {x.duration}</p><ul className="list-disc ml-5 mt-2 text-sm text-slate-300">{x.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</Block>
- <Block title="Projects">{p.projects.map((x,i)=><div key={i} className="mb-4"><b>{x.name}</b><p className="text-sm text-slate-400">{x.description}</p><p className="text-xs text-cyan-300 mt-1">{x.skills.join(" · ")}</p></div>)}</Block>
- <Block title="Skills">{Object.entries(p.skills).map(([k,v])=><p className="text-sm mb-2" key={k}><span className="capitalize text-slate-400">{k}:</span> {v.join(", ")}</p>)}</Block>
-</div>}
-function Block({title,children}){return <div className="bg-slate-900 border border-slate-800 rounded-xl p-5"><h3 className="font-semibold mb-3">{title}</h3>{children}</div>}
+
+function EducationEditor({p,setProfile}){
+ const items=p.education;
+ const update=(i,patch)=>setProfile({...p,education:items.map((x,idx)=>idx===i?{...x,...patch}:x)});
+ const add=()=>setProfile({...p,education:[...items,{degree:"",institution:"",score:"",date:""}]});
+ const remove=i=>setProfile({...p,education:items.filter((_,idx)=>idx!==i)});
+ return <Block title="Education">
+  <div className="space-y-3">
+   {items.map((x,i)=><EntryCard key={i} onRemove={()=>remove(i)} removeLabel="Remove this entry">
+    <div className="grid md:grid-cols-2 gap-2">
+     <Input placeholder="Degree (e.g. Bachelor of Science in ...)" value={x.degree} set={v=>update(i,{degree:v})}/>
+     <Input placeholder="Date (e.g. Expected October 2026, or 2021)" value={x.date} set={v=>update(i,{date:v})}/>
+    </div>
+    <div className="grid md:grid-cols-2 gap-2">
+     <Input placeholder="Institution" value={x.institution} set={v=>update(i,{institution:v})}/>
+     <Input placeholder="Score (e.g. CGPA 3.46 / 4.00)" value={x.score} set={v=>update(i,{score:v})}/>
+    </div>
+   </EntryCard>)}
+  </div>
+  <AddButton onClick={add}>Add Education Entry</AddButton>
+ </Block>
+}
+
+function ExperienceEditor({p,setProfile}){
+ const items=p.experience;
+ const update=(i,patch)=>setProfile({...p,experience:items.map((x,idx)=>idx===i?{...x,...patch}:x)});
+ const add=()=>setProfile({...p,experience:[...items,{role:"",company:"",location:"",duration:"",bullets:[],tags:[]}]});
+ const remove=i=>setProfile({...p,experience:items.filter((_,idx)=>idx!==i)});
+ return <Block title="Experience">
+  <div className="space-y-3">
+   {items.map((x,i)=><EntryCard key={i} onRemove={()=>remove(i)} removeLabel="Remove this entry">
+    <div className="grid md:grid-cols-2 gap-2">
+     <Input placeholder="Role" value={x.role} set={v=>update(i,{role:v})}/>
+     <Input placeholder="Company" value={x.company} set={v=>update(i,{company:v})}/>
+    </div>
+    <div className="grid md:grid-cols-2 gap-2">
+     <Input placeholder="Location" value={x.location} set={v=>update(i,{location:v})}/>
+     <Input placeholder="Duration (e.g. June 2026 - September 2026)" value={x.duration} set={v=>update(i,{duration:v})}/>
+    </div>
+    <div>
+     <label className="text-xs text-slate-400">Bullets (one per line)</label>
+     <textarea value={x.bullets.join("\n")} onChange={e=>update(i,{bullets:e.target.value.split("\n")})} className="w-full h-32 bg-slate-950 border border-slate-700 rounded p-3 text-sm mt-1"/>
+    </div>
+   </EntryCard>)}
+  </div>
+  <AddButton onClick={add}>Add Experience Entry</AddButton>
+ </Block>
+}
+
+function ProjectsEditor({p,setProfile}){
+ const items=p.projects;
+ const update=(i,patch)=>setProfile({...p,projects:items.map((x,idx)=>idx===i?{...x,...patch}:x)});
+ const add=()=>setProfile({...p,projects:[...items,{name:"",subtitle:"",bullets:[],skills:[],categories:[]}]});
+ const remove=i=>setProfile({...p,projects:items.filter((_,idx)=>idx!==i)});
+ return <Block title="Projects">
+  <div className="space-y-3">
+   {items.map((x,i)=><EntryCard key={i} onRemove={()=>remove(i)} removeLabel="Remove this project">
+    <div className="grid md:grid-cols-2 gap-2">
+     <Input placeholder="Project Name" value={x.name} set={v=>update(i,{name:v})}/>
+     <Input placeholder="Subtitle (e.g. Web Application (HTML, CSS, PHP))" value={x.subtitle} set={v=>update(i,{subtitle:v})}/>
+    </div>
+    <div>
+     <label className="text-xs text-slate-400">Bullets (one per line)</label>
+     <textarea value={x.bullets.join("\n")} onChange={e=>update(i,{bullets:e.target.value.split("\n")})} className="w-full h-24 bg-slate-950 border border-slate-700 rounded p-3 text-sm mt-1"/>
+    </div>
+    <Input placeholder="Skills used, comma separated (used for job matching, not printed)" value={(x.skills||[]).join(", ")} set={v=>update(i,{skills:v.split(",").map(s=>s.trim())})}/>
+   </EntryCard>)}
+  </div>
+  <AddButton onClick={add}>Add Project</AddButton>
+ </Block>
+}
+
+function SkillsEditor({p,setProfile}){
+ const groups=p.skills;
+ const update=(i,patch)=>setProfile({...p,skills:groups.map((g,idx)=>idx===i?{...g,...patch}:g)});
+ const add=()=>setProfile({...p,skills:[...groups,{category:"",items:[]}]});
+ const remove=i=>setProfile({...p,skills:groups.filter((_,idx)=>idx!==i)});
+ return <Block title="Skills">
+  <p className="text-xs text-slate-500 mb-3">Grouped like "Software Testing: Manual Testing, Test Case Design, ...". Add as many categories as you need — this is exactly what prints in Core Skills.</p>
+  <div className="space-y-3">
+   {groups.map((g,i)=><EntryCard key={i} onRemove={()=>remove(i)} removeLabel="Remove this category">
+    <Input placeholder="Category label (e.g. Software Testing)" value={g.category} set={v=>update(i,{category:v})}/>
+    <div>
+     <label className="text-xs text-slate-400">Items (comma separated)</label>
+     <textarea value={g.items.join(", ")} onChange={e=>update(i,{items:e.target.value.split(",").map(s=>s.trim())})} className="w-full h-16 bg-slate-950 border border-slate-700 rounded p-3 text-sm mt-1"/>
+    </div>
+   </EntryCard>)}
+  </div>
+  <AddButton onClick={add}>Add Skill Category</AddButton>
+ </Block>
+}
+
+function ReferencesEditor({p,setProfile}){
+ const items=p.references||[];
+ const update=(i,patch)=>setProfile({...p,references:items.map((x,idx)=>idx===i?{...x,...patch}:x)});
+ const add=()=>setProfile({...p,references:[...items,{name:"",title:"",email:"",phone:""}]});
+ const remove=i=>setProfile({...p,references:items.filter((_,idx)=>idx!==i)});
+ return <Block title="References">
+  <p className="text-xs text-slate-500 mb-3">Optional, and only for people who have agreed to be a reference. This stays in your browser unless you export your profile — leave it empty to omit the section entirely.</p>
+  <div className="space-y-3">
+   {items.map((x,i)=><EntryCard key={i} onRemove={()=>remove(i)} removeLabel="Remove this reference">
+    <div className="grid md:grid-cols-2 gap-2">
+     <Input placeholder="Name" value={x.name} set={v=>update(i,{name:v})}/>
+     <Input placeholder="Title / Relationship" value={x.title} set={v=>update(i,{title:v})}/>
+    </div>
+    <div className="grid md:grid-cols-2 gap-2">
+     <Input placeholder="Email" value={x.email} set={v=>update(i,{email:v})}/>
+     <Input placeholder="Phone" value={x.phone} set={v=>update(i,{phone:v})}/>
+    </div>
+   </EntryCard>)}
+  </div>
+  <AddButton onClick={add}>Add Reference</AddButton>
+ </Block>
+}
 
 function Preferences({p,setProfile,notify}){
  const [newTitle,setNewTitle]=useState("");
@@ -258,41 +400,43 @@ function ResumePanel({job,p,updateJob,notify}){
  const [strategy,setStrategy]=useState(ROLE_STRATEGIES[job.category]?job.category:"Information Systems");
  const cfg=ROLE_STRATEGIES[strategy];
  const a=analyzeJob({...job,category:strategy},p);
- const exp=[...p.experience].map(e=>({...e,bullets:[...e.bullets].sort((x,y)=>scoreBullet(y,job)-scoreBullet(x,job))}));
- const realSkills=[...p.skills.technical,...p.skills.testing,...p.skills.tools,...p.skills.systems,...p.skills.soft].filter((v,i,a)=>a.indexOf(v)===i);
- const autoSkills=[...cfg.skills,...realSkills].filter((v,i,a)=>a.indexOf(v)===i).filter(x=>realSkills.some(r=>normalize(r)===normalize(x)||normalize(r).includes(normalize(x))||normalize(x).includes(normalize(r)))).slice(0,14);
+ const exp=[...p.experience].map(e=>({...e,bullets:[...e.bullets].filter(Boolean).sort((x,y)=>scoreBullet(y,job)-scoreBullet(x,job))}));
  const projects=[...p.projects].sort((x,y)=>projectScore(y,strategy,job)-projectScore(x,strategy,job)).slice(0,3);
  const autoSummary=summaryFor(strategy);
- const autoExperienceText=exp.map(e=>`${e.role} | ${e.company} | ${e.duration}\n${e.bullets.map(b=>"• "+b).join("\n")}`).join("\n\n");
- const autoProjectsText=projects.map(x=>`${x.name}\n${x.description}\n${x.bullets.map(b=>"• "+b).join("\n")}\nSkills: ${x.skills.join(", ")}`).join("\n\n");
+ const autoHeadline=p.personal.headline||cfg.headline;
+ const autoExperienceText=exp.map(e=>`${e.role}, ${e.company} — ${[e.location,e.duration].filter(Boolean).join(" | ")}\n${e.bullets.map(b=>"• "+b).join("\n")}`).join("\n\n");
+ const autoProjectsText=projects.map(x=>`${x.name}${x.subtitle?", "+x.subtitle:""}\n${x.bullets.filter(Boolean).map(b=>"• "+b).join("\n")}`).join("\n\n");
  const contact=[p.personal.location,p.personal.phone,p.personal.email,p.personal.linkedin,p.personal.github,p.personal.portfolio].filter(Boolean).join(" | ");
- const preparedDate=new Date().toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
 
  const ov=job.resumeOverrides||null;
+ const finalHeadline=ov?ov.headline:autoHeadline;
  const finalSummary=ov?ov.summary:autoSummary;
- const finalSkills=ov?ov.skills:autoSkills;
  const finalExperienceText=ov?ov.experienceText:autoExperienceText;
  const finalProjectsText=ov?ov.projectsText:autoProjectsText;
 
  const [editMode,setEditMode]=useState(false);
  const [draft,setDraft]=useState(null);
- const enterEdit=()=>{setDraft({summary:finalSummary,skillsText:finalSkills.join(" • "),experienceText:finalExperienceText,projectsText:finalProjectsText});setEditMode(true)};
+ const enterEdit=()=>{setDraft({headline:finalHeadline||"",summary:finalSummary,experienceText:finalExperienceText,projectsText:finalProjectsText});setEditMode(true)};
  const saveEdit=()=>{
-  updateJob(job.id,{resumeOverrides:{summary:draft.summary,skills:draft.skillsText.split("•").map(s=>s.trim()).filter(Boolean),experienceText:draft.experienceText,projectsText:draft.projectsText}});
+  updateJob(job.id,{resumeOverrides:{headline:draft.headline,summary:draft.summary,experienceText:draft.experienceText,projectsText:draft.projectsText}});
   setEditMode(false);notify("Resume edits saved.");
  };
  const resetToAuto=()=>{updateJob(job.id,{resumeOverrides:null});setEditMode(false);notify("Reverted to the auto-generated resume.")};
 
  const fileBase=()=>`${(p.personal.fullName||"Resume").replace(/\s+/g,"_")}_${strategy.replace(/\W+/g,"_")}`;
- const makeText=()=>`${p.personal.fullName||"Your Name"}\n${contact}\n${cfg.headline}\nPrepared: ${preparedDate}\n\nPROFESSIONAL SUMMARY\n${finalSummary}\n\nCORE SKILLS\n${finalSkills.join(" | ")}\n\nPROFESSIONAL EXPERIENCE\n${finalExperienceText}\n\nSELECTED PROJECTS\n${finalProjectsText}\n\nEDUCATION\n${p.education.map(e=>`${e.degree} | ${e.institution} | ${e.cgpa} | ${e.graduation}`).join("\n")}`;
+ const skillsLines=p.skills.map(g=>`${g.category}: ${g.items.filter(Boolean).join(", ")}`).join("\n");
+ const educationLines=p.education.map(e=>`${e.degree}${e.date?" | "+e.date:""}\n${[e.institution,e.score].filter(Boolean).join(" | ")}`).join("\n\n");
+ const referenceLines=(p.references||[]).filter(r=>r.name).map(r=>`${r.name}\n${r.title}\n${[r.email,r.phone].filter(Boolean).join(" | ")}`).join("\n\n");
+
+ const makeText=()=>`${(p.personal.fullName||"Your Name").toUpperCase()}\n${finalHeadline?finalHeadline.toUpperCase()+"\n":""}${contact}\n\nPROFESSIONAL SUMMARY\n${finalSummary}\n\nCORE SKILLS\n${skillsLines}\n\nPROFESSIONAL EXPERIENCE\n${finalExperienceText}\n\nPROJECTS\n${finalProjectsText}\n\nEDUCATION\n${educationLines}${referenceLines?`\n\nREFERENCES\n${referenceLines}`:""}`;
  const downloadTxt=()=>download(`${fileBase()}.txt`,makeText());
 
  const downloadPDF=()=>{
   const {jsPDF}=window.jspdf;
   const doc=new jsPDF({unit:"pt",format:"a4"});
   const pageWidth=doc.internal.pageSize.getWidth(), pageHeight=doc.internal.pageSize.getHeight();
-  const marginX=42, maxWidth=pageWidth-marginX*2, centerX=pageWidth/2, marginBottom=48;
-  let y=50;
+  const marginX=42, maxWidth=pageWidth-marginX*2, marginBottom=48;
+  let y=52;
   const ensureSpace=(lineHeight=12)=>{if(y+lineHeight>pageHeight-marginBottom){doc.addPage();y=50;}};
   const writeBlock=(text,size=9.5,lineHeight=12)=>{
    doc.setFont("helvetica","normal");doc.setFontSize(size);
@@ -301,44 +445,103 @@ function ResumePanel({job,p,updateJob,notify}){
     doc.splitTextToSize(para,maxWidth).forEach(line=>{ensureSpace(lineHeight);doc.text(line,marginX,y);y+=lineHeight;});
    });
   };
+  const writeTwoCol=(left,right,size=10.2)=>{
+   ensureSpace(13);
+   doc.setFont("helvetica","bold");doc.setFontSize(size);
+   doc.text(left,marginX,y);
+   if(right){doc.setFont("helvetica","normal");doc.setFontSize(9);doc.text(right,marginX+maxWidth,y,{align:"right"});}
+   y+=13;
+  };
   const sectionTitle=title=>{
    ensureSpace(20);
    doc.setFont("helvetica","bold");doc.setFontSize(10.5);
    doc.text(title.toUpperCase(),marginX,y);y+=4;
    doc.setLineWidth(0.75);doc.line(marginX,y,marginX+maxWidth,y);y+=12;
   };
-  doc.setFont("helvetica","bold");doc.setFontSize(18);
-  doc.text(p.personal.fullName||"Your Name",centerX,y,{align:"center"});y+=18;
+  doc.setFont("helvetica","bold");doc.setFontSize(19);
+  doc.text((p.personal.fullName||"YOUR NAME").toUpperCase(),marginX,y);y+=16;
+  if(finalHeadline){doc.setFont("helvetica","bold");doc.setFontSize(10);doc.text(finalHeadline.toUpperCase(),marginX,y);y+=13;}
   doc.setFont("helvetica","normal");doc.setFontSize(9);
-  doc.text(contact||" ",centerX,y,{align:"center"});y+=13;
-  doc.setFont("helvetica","bold");doc.setFontSize(10);
-  doc.text(cfg.headline,centerX,y,{align:"center"});y+=12;
-  doc.setFont("helvetica","italic");doc.setFontSize(8);
-  doc.text(`Prepared: ${preparedDate}`,centerX,y,{align:"center"});y+=18;
+  doc.text(contact||" ",marginX,y);y+=16;
+
   sectionTitle("Professional Summary");writeBlock(finalSummary);y+=8;
-  sectionTitle("Core Skills");writeBlock(finalSkills.join(" • "));y+=8;
-  sectionTitle("Professional Experience");writeBlock(finalExperienceText);y+=8;
-  sectionTitle("Selected Projects");writeBlock(finalProjectsText);y+=8;
-  sectionTitle("Education");writeBlock(p.education.map(e=>`${e.degree} | ${e.institution} | ${e.cgpa} | ${e.graduation}`).join("\n"));
+
+  sectionTitle("Core Skills");
+  p.skills.forEach(g=>writeBlock(`${g.category}: ${g.items.filter(Boolean).join(", ")}`));
+  y+=8;
+
+  sectionTitle("Professional Experience");
+  if(ov){writeBlock(finalExperienceText);}
+  else{exp.forEach(e=>{writeTwoCol(`${e.role}, ${e.company}`,[e.location,e.duration].filter(Boolean).join(" | "));e.bullets.forEach(b=>writeBlock("• "+b));y+=4;});}
+  y+=4;
+
+  sectionTitle("Projects");
+  if(ov){writeBlock(finalProjectsText);}
+  else{projects.forEach(x=>{ensureSpace(13);doc.setFont("helvetica","bold");doc.setFontSize(10.2);doc.text(x.name+(x.subtitle?`, ${x.subtitle}`:""),marginX,y);y+=13;x.bullets.filter(Boolean).forEach(b=>writeBlock("• "+b));y+=4;});}
+  y+=4;
+
+  sectionTitle("Education");
+  p.education.forEach(e=>{writeTwoCol(e.degree,e.date);writeBlock([e.institution,e.score].filter(Boolean).join(" | "));y+=4;});
+
+  const refs=(p.references||[]).filter(r=>r.name);
+  if(refs.length){
+   y+=4;sectionTitle("References");
+   refs.forEach(r=>{
+    ensureSpace(12);doc.setFont("helvetica","bold");doc.setFontSize(9.5);doc.text(r.name,marginX,y);y+=12;
+    writeBlock(r.title,9);
+    writeBlock([r.email,r.phone].filter(Boolean).join(" | "),9);
+    y+=6;
+   });
+  }
   doc.save(`${fileBase()}.pdf`);
  };
 
  const downloadDOCX=async()=>{
-  const {Document,Packer,Paragraph,TextRun,AlignmentType}=window.docx;
-  const centered=(text,opts={})=>new Paragraph({alignment:AlignmentType.CENTER,spacing:{after:opts.after??60},children:[new TextRun({text,bold:!!opts.bold,italics:!!opts.italics,size:opts.size||20})]});
+  const {Document,Packer,Paragraph,TextRun,TabStopType,TabStopPosition}=window.docx;
+  const para=(text,opts={})=>new Paragraph({spacing:{after:opts.after??60},children:[new TextRun({text,bold:!!opts.bold,size:opts.size||20})]});
   const heading=text=>new Paragraph({spacing:{before:220,after:80},border:{bottom:{color:"000000",space:1,style:"single",size:6}},children:[new TextRun({text:text.toUpperCase(),bold:true,size:20})]});
-  const body=text=>String(text||"").split("\n").map(line=>new Paragraph({spacing:{after:40},children:[new TextRun({text:line||" ",size:18})]}));
-  const children=[
-   centered(p.personal.fullName||"Your Name",{bold:true,size:32,after:60}),
-   centered(contact||" ",{size:16,after:60}),
-   centered(cfg.headline,{bold:true,size:18,after:40}),
-   centered(`Prepared: ${preparedDate}`,{italics:true,size:14,after:220}),
-   heading("Professional Summary"),...body(finalSummary),
-   heading("Core Skills"),...body(finalSkills.join(" • ")),
-   heading("Professional Experience"),...body(finalExperienceText),
-   heading("Selected Projects"),...body(finalProjectsText),
-   heading("Education"),...body(p.education.map(e=>`${e.degree} | ${e.institution} | ${e.cgpa} | ${e.graduation}`).join("\n")),
-  ];
+  const bodyLines=text=>String(text||"").split("\n").map(line=>new Paragraph({spacing:{after:40},children:[new TextRun({text:line||" ",size:18})]}));
+  const twoCol=(l,r)=>new Paragraph({tabStops:[{type:TabStopType.RIGHT,position:TabStopPosition.MAX}],spacing:{after:20},children:[new TextRun({text:l,bold:true,size:20}),new TextRun({text:"\t"+(r||""),size:18})]});
+
+  const children=[para(p.personal.fullName?p.personal.fullName.toUpperCase():"YOUR NAME",{bold:true,size:32,after:40})];
+  if(finalHeadline)children.push(para(finalHeadline.toUpperCase(),{bold:true,size:20,after:40}));
+  children.push(para(contact||" ",{size:16,after:200}));
+
+  children.push(heading("Professional Summary"),...bodyLines(finalSummary));
+
+  children.push(heading("Core Skills"));
+  p.skills.forEach(g=>children.push(new Paragraph({spacing:{after:40},children:[new TextRun({text:`${g.category}: `,bold:true,size:18}),new TextRun({text:g.items.filter(Boolean).join(", "),size:18})]})));
+
+  children.push(heading("Professional Experience"));
+  if(ov){children.push(...bodyLines(finalExperienceText));}
+  else{exp.forEach(e=>{
+   children.push(twoCol(`${e.role}, ${e.company}`,[e.location,e.duration].filter(Boolean).join(" | ")));
+   e.bullets.forEach(b=>children.push(new Paragraph({spacing:{after:30},children:[new TextRun({text:"• "+b,size:18})]})));
+  });}
+
+  children.push(heading("Projects"));
+  if(ov){children.push(...bodyLines(finalProjectsText));}
+  else{projects.forEach(x=>{
+   children.push(new Paragraph({spacing:{after:20},children:[new TextRun({text:x.name+(x.subtitle?`, ${x.subtitle}`:""),bold:true,size:20})]}));
+   x.bullets.filter(Boolean).forEach(b=>children.push(new Paragraph({spacing:{after:30},children:[new TextRun({text:"• "+b,size:18})]})));
+  });}
+
+  children.push(heading("Education"));
+  p.education.forEach(e=>{
+   children.push(twoCol(e.degree,e.date));
+   children.push(new Paragraph({spacing:{after:60},children:[new TextRun({text:[e.institution,e.score].filter(Boolean).join(" | "),size:18})]}));
+  });
+
+  const refs=(p.references||[]).filter(r=>r.name);
+  if(refs.length){
+   children.push(heading("References"));
+   refs.forEach(r=>{
+    children.push(new Paragraph({spacing:{after:10},children:[new TextRun({text:r.name,bold:true,size:18})]}));
+    children.push(new Paragraph({spacing:{after:10},children:[new TextRun({text:r.title,size:16})]}));
+    children.push(new Paragraph({spacing:{after:100},children:[new TextRun({text:[r.email,r.phone].filter(Boolean).join(" | "),size:16})]}));
+   });
+  }
+
   const doc=new Document({sections:[{properties:{},children}]});
   const blob=await Packer.toBlob(doc);
   downloadBlob(`${fileBase()}.docx`,blob);
@@ -346,42 +549,34 @@ function ResumePanel({job,p,updateJob,notify}){
 
  const print=()=>window.print();
  const setStatus=status=>{updateJob(job.id,{status,selectedStrategy:strategy});notify(`Status updated to ${status}.`)};
+ const refs=(p.references||[]).filter(r=>r.name);
  return <section className="space-y-5">
   <div className="flex flex-wrap justify-between gap-3"><div><h2 className="text-xl font-bold">Recruiter-Style ATS Resume{ov&&<span className="text-[10px] text-amber-300 font-normal ml-2">(manually edited)</span>}</h2><p className="text-sm text-cyan-400">{job.title} · {job.company}</p><p className="text-xs text-slate-500 mt-1">One-page, single-column, text-first resume layout.</p></div><div className="no-print flex flex-wrap gap-2"><button onClick={()=>editMode?setEditMode(false):enterEdit()} className="bg-amber-600 px-3 py-2 rounded text-xs">{editMode?"Cancel Edit":"Edit Content"}</button><button onClick={downloadTxt} className="bg-slate-800 px-3 py-2 rounded text-xs">TXT</button><button onClick={downloadPDF} className="bg-cyan-600 px-3 py-2 rounded text-xs">Download PDF</button><button onClick={downloadDOCX} className="bg-blue-600 px-3 py-2 rounded text-xs">Download DOCX</button><button onClick={print} className="bg-slate-800 px-3 py-2 rounded text-xs">Print</button></div></div>
 
   {editMode&&draft&&<div className="no-print bg-slate-900 border border-amber-700 rounded-xl p-5 space-y-3">
    <h3 className="font-semibold text-amber-300">Editing this resume's content</h3>
-   <p className="text-xs text-slate-500">Changes here apply only to this job's resume. Switching strategy below discards unsaved edits.</p>
+   <p className="text-xs text-slate-500">Changes here apply only to this job's resume. Core Skills, Education and References always come straight from your Master Profile. Switching strategy below discards unsaved edits.</p>
+   <div><label className="text-xs text-slate-400">Headline</label><input value={draft.headline} onChange={e=>setDraft({...draft,headline:e.target.value})} className="w-full bg-slate-950 border border-slate-700 rounded p-3 text-sm mt-1"/></div>
    <div><label className="text-xs text-slate-400">Professional Summary</label><textarea value={draft.summary} onChange={e=>setDraft({...draft,summary:e.target.value})} className="w-full h-24 bg-slate-950 border border-slate-700 rounded p-3 text-sm mt-1"/></div>
-   <div><label className="text-xs text-slate-400">Core Skills (separate with •)</label><textarea value={draft.skillsText} onChange={e=>setDraft({...draft,skillsText:e.target.value})} className="w-full h-16 bg-slate-950 border border-slate-700 rounded p-3 text-sm mt-1"/></div>
    <div><label className="text-xs text-slate-400">Professional Experience</label><textarea value={draft.experienceText} onChange={e=>setDraft({...draft,experienceText:e.target.value})} className="w-full h-40 bg-slate-950 border border-slate-700 rounded p-3 text-sm font-mono mt-1"/></div>
-   <div><label className="text-xs text-slate-400">Selected Projects</label><textarea value={draft.projectsText} onChange={e=>setDraft({...draft,projectsText:e.target.value})} className="w-full h-32 bg-slate-950 border border-slate-700 rounded p-3 text-sm font-mono mt-1"/></div>
+   <div><label className="text-xs text-slate-400">Projects</label><textarea value={draft.projectsText} onChange={e=>setDraft({...draft,projectsText:e.target.value})} className="w-full h-32 bg-slate-950 border border-slate-700 rounded p-3 text-sm font-mono mt-1"/></div>
    <div className="flex flex-wrap gap-2"><button onClick={saveEdit} className="bg-emerald-600 px-4 py-2 rounded text-xs">Save Edits</button><button onClick={()=>setEditMode(false)} className="bg-slate-800 px-4 py-2 rounded text-xs">Cancel</button>{ov&&<button onClick={resetToAuto} className="bg-red-900 px-4 py-2 rounded text-xs">Reset to Auto-generated</button>}</div>
   </div>}
 
   <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between items-center mb-3"><div><h3 className="font-semibold">Resume Strategy</h3><p className="text-xs text-slate-500">The system changes emphasis, not your facts.</p></div><span className="text-xs text-cyan-300">{cfg.label}</span></div><div className="grid md:grid-cols-4 gap-2">{Object.entries(ROLE_STRATEGIES).map(([k,v])=><button key={k} onClick={()=>{setStrategy(k);setEditMode(false)}} className={`p-3 rounded-lg border text-left text-xs ${strategy===k?'border-cyan-500 bg-cyan-950/50':'border-slate-800 bg-slate-950'}`}><b>{v.label}</b><span className="block text-slate-500 mt-1">{k}</span></button>)}</div></div>
   <div className="grid md:grid-cols-2 gap-4 no-print"><Block title={`Compatibility Analysis: ${a.score}%`}><div className="grid grid-cols-2 gap-2"><Metric label="Keyword Evidence" value={a.skillPct}/><Metric label="Experience" value={a.expScore}/><Metric label="Projects" value={a.projectScore}/><Metric label="Preference" value={a.prefScore}/></div><p className="text-xs text-emerald-300 mt-3">Matched: {a.matched.slice(0,10).join(", ")||"None"}</p><p className="text-xs text-amber-300 mt-2">Potential gaps: {a.missing.slice(0,8).join(", ")||"None detected"}</p></Block><Block title="ATS Quality"><CheckRow ok text="Single-column, standard section headings"/><CheckRow ok text="No graphics, tables, icons, sidebars, or decorative resume elements"/><CheckRow ok text="Plain-text contact information"/><CheckRow ok={a.missing.length<8} text="Job keywords reviewed without inventing qualifications"/><p className="text-[11px] text-slate-500 mt-3">Compatibility is an internal estimate, not a real employer ATS score.</p></Block></div>
   <div className="bg-white text-black max-w-[794px] mx-auto p-8 md:p-10 shadow-2xl rounded print-resume">
-    <header className="border-b pb-3 mb-4 text-center"><h1 className="text-2xl font-bold tracking-tight">{p.personal.fullName||"Your Name"}</h1><p className="text-[10px] mt-1 leading-4">{contact}</p><p className="text-[12px] font-semibold mt-1">{cfg.headline}</p><p className="text-[9px] text-gray-500 mt-1">Prepared: {preparedDate}</p></header>
+    <header className="border-b pb-3 mb-4"><h1 className="text-3xl font-black tracking-wide">{(p.personal.fullName||"YOUR NAME").toUpperCase()}</h1>{finalHeadline&&<p className="text-[12px] font-bold text-sky-700 mt-1 tracking-wide">{finalHeadline.toUpperCase()}</p>}<p className="text-[10px] mt-1 leading-4">{contact}</p></header>
     <ResumeSection title="PROFESSIONAL SUMMARY"><p className="text-[10.5px] leading-5">{finalSummary}</p></ResumeSection>
-    <ResumeSection title="CORE SKILLS"><p className="text-[10.5px] leading-5">{finalSkills.join(" • ")}</p></ResumeSection>
-    <ResumeSection title="PROFESSIONAL EXPERIENCE">{ov?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{finalExperienceText}</pre>:exp.map((e,i)=><div key={i} className="mb-3"><div className="flex justify-between text-[10.5px]"><b>{e.role}</b><b>{e.duration}</b></div><div className="text-[10.5px] font-semibold">{e.company} · {e.location}</div><ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{e.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
-    <ResumeSection title="SELECTED PROJECTS">{ov?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{finalProjectsText}</pre>:projects.map((x,i)=><div key={i} className="mb-3"><b className="text-[10.5px]">{x.name}</b><p className="text-[10px] leading-4">{x.description}</p><ul className="list-disc ml-5 text-[10px] leading-4">{x.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul><p className="text-[9.5px]"><b>Skills:</b> {x.skills.join(", ")}</p></div>)}</ResumeSection>
-    <ResumeSection title="EDUCATION">{p.education.map((e,i)=><p key={i} className="text-[10px] leading-4 mb-1"><b>{e.degree}</b><br/>{e.institution} · {e.cgpa} · {e.graduation}</p>)}</ResumeSection>
+    <ResumeSection title="CORE SKILLS"><div className="space-y-1">{p.skills.map((g,i)=><p key={i} className="text-[10px] leading-4"><b>{g.category}:</b> {g.items.filter(Boolean).join(", ")}</p>)}</div></ResumeSection>
+    <ResumeSection title="PROFESSIONAL EXPERIENCE">{ov?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{finalExperienceText}</pre>:exp.map((e,i)=><div key={i} className="mb-3"><div className="flex justify-between text-[10.5px]"><b>{e.role}, {e.company}</b><span>{[e.location,e.duration].filter(Boolean).join(" | ")}</span></div><ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{e.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
+    <ResumeSection title="PROJECTS">{ov?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{finalProjectsText}</pre>:projects.map((x,i)=><div key={i} className="mb-3"><p className="text-[10.5px]"><b>{x.name}</b>{x.subtitle&&<span>, {x.subtitle}</span>}</p><ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{x.bullets.filter(Boolean).map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
+    <ResumeSection title="EDUCATION">{p.education.map((e,i)=><div key={i} className="mb-2"><div className="flex justify-between text-[10.5px]"><b>{e.degree}</b><span>{e.date}</span></div><p className="text-[10px] leading-4">{[e.institution,e.score].filter(Boolean).join(" | ")}</p></div>)}</ResumeSection>
+    {refs.length>0&&<ResumeSection title="REFERENCES"><div className="grid grid-cols-2 gap-4">{refs.map((r,i)=><div key={i} className="text-[10px] leading-4"><p className="font-bold text-[10.5px]">{r.name}</p><p>{r.title}</p><p>{[r.email,r.phone].filter(Boolean).join(" | ")}</p></div>)}</div></ResumeSection>}
   </div>
   <div className="no-print flex flex-wrap gap-2 justify-end"><button onClick={()=>setStatus("Saved")} className="bg-slate-800 px-3 py-2 rounded text-xs">Save</button><button onClick={()=>setStatus("Awaiting Approval")} className="bg-amber-600 px-3 py-2 rounded text-xs">Send to Approval</button><button onClick={()=>setStatus("Applied")} className="bg-emerald-600 px-3 py-2 rounded text-xs">Mark Applied</button>{job.url&&<a href={job.url} target="_blank" rel="noopener" className="bg-cyan-700 px-3 py-2 rounded text-xs">Open Job</a>}</div>
  </section>
 }
-function scoreBullet(b,job){return terms([job.title,job.description].join(" ")).filter(t=>normalize(b).includes(t)).length}
-function projectScore(x,strategy,job){return (x.categories.includes(strategy)?20:0)+terms([job.title,job.description].join(" ")).filter(t=>normalize([x.name,x.description,...x.skills,...x.bullets].join(" ")).includes(t)).length}
-function summaryFor(strategy){const m={
-"Software Quality Assurance":"Computer Science and Engineering graduate with hands-on Software Quality Assurance internship experience in manual, functional and regression testing of web applications. Experienced in UI verification, form validation, responsive and cross-browser testing, defect documentation, fix verification, and collaboration with development and project teams.",
-"Information Technology":"Computer Science and Engineering graduate with practical exposure to web applications, databases, software quality validation, website infrastructure, hosting, DNS configuration, SSL setup, and technical problem solving through internship and academic projects.",
-"Information Systems":"Computer Science and Engineering graduate with experience in information systems, relational databases, SQL, system analysis, requirements documentation, UML, risk analysis, and software validation through academic projects and practical QA experience.",
-"MIS":"Computer Science and Engineering graduate with a foundation in management information systems, SQL, relational databases, data management, system analysis, and analytical problem solving.",
-"Business Analysis":"Computer Science and Engineering graduate with academic experience in requirements analysis, UML, work breakdown structures, risk analysis, system validation, and database-backed application projects.",
-"Application Support":"Computer Science and Engineering graduate with practical experience validating web applications, documenting defects, verifying fixes, working with databases, and exposure to hosting, DNS, SSL, and website migration.",
-"Data & Reporting":"Computer Science and Engineering graduate with practical database experience in Oracle and MySQL, SQL queries, database design, data integrity, data management, and analytical problem solving."};return m[strategy]||m["Information Systems"]}
 function ResumeSection({title,children}){return <section className="mb-4"><h2 className="text-[10.5px] tracking-widest font-bold border-b border-black pb-1 mb-2">{title}</h2>{children}</section>}
 function CheckRow({ok,text}){return <p className="text-xs flex gap-2 items-start"><span className={ok?'text-emerald-400':'text-amber-400'}>{ok?'✓':'!'}</span>{text}</p>}
 
