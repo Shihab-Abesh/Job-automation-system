@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-15T07:19:11+00:00",
+ "generatedAt": "2026-09-15T15:28:35+00:00",
  "meta": {
   "queries": [
    "software quality assurance",
@@ -23,7 +23,7 @@
     "errors": []
    },
    "rss": {
-    "found": 19,
+    "found": 20,
     "errors": [
      "RemoteOK: empty response"
     ]
@@ -38,12 +38,12 @@
    }
   },
   "counts": {
-   "total": 20,
-   "new": 0,
+   "total": 21,
+   "new": 1,
    "expired": 0,
    "duplicatesFolded": 5,
    "priorityA": 0,
-   "priorityB": 6,
+   "priorityB": 7,
    "priorityC": 14
   },
   "filters": {
@@ -54,7 +54,7 @@
    "drop_expired": true
   },
   "blockedUrls": [],
-  "ranAt": "2026-09-15T07:19:11+00:00"
+  "ranAt": "2026-09-15T15:28:35+00:00"
  },
  "jobs": [
   {
@@ -83,7 +83,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:14+00:00"
     }
    ],
    "matchScore": 65,
@@ -125,7 +125,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vonage-aem-developer",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:14+00:00"
     }
    ],
    "matchScore": 65,
@@ -167,7 +167,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-manager-security-operations-center-emea",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:14+00:00"
     }
    ],
    "matchScore": 64,
@@ -209,12 +209,54 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:15+00:00"
     }
    ],
    "matchScore": 64,
    "scoreParts": {
     "keyword": 9,
+    "experience": 85,
+    "projects": 100,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Keeper Security: Bilingual Channel Account Manager, Arabic (MEA) - UK",
+   "company": "Unknown company",
+   "description": "Headquarters: Remote, UK\nDescription\nKeeper is hiring a driven, Arabic speaking Channel Account Manager to join the Keeper Global Channel Sales team. Qualified candidates must permanently reside in the UK (London). This is a fully remote position for those residing in London.\nKeeper's cybersecurity software is trusted by millions of people and thousands of organisations, globally. Keeper is published in 23 languages and is sold in over 150 countries. Join one of the fastest-growing cybersecurity companies and be responsible for building pipeline and channel revenue with high performance partners.\nAbout Keeper\nKeeper Security is one of the fastest-growing cybersecurity software companies that protects thousands of organisations and millions of people in over 150 countries. Keeper is a pioneer of zero-knowledge and zero-trust security built for any IT environment. Its core offering, KeeperPAM®, is an AI-enabled, cloud-native platform that protects all users, devices and infrastructure from cyber attacks. Recognised for its innovation in the Gartner Magic Quadrant for Privileged Access Management (PAM), Keeper secures passwords and passkeys, infrastructure secrets, remote connections and endpoints with role-based enforcement policies, least privilege and just-in-time access. Learn why Keeper is trusted by leading organisations to defend against modern adversaries at KeeperSecurity.com .\nAbout the Role\nThe Arabic speaking Channel Account Manager, MEA will report to our Director of Channel, EMEA carrying a primary focus on building pipeline and channel revenue with existing channel partners. There will also be a heavy focus sourcing strategic new channel relationships. This position requires the candidate to be extremely motivated, results-driven and have a good network within the channel ecosystem.\nResponsibilities\nResponsible for the day-to-day recruitment and relationship management of channel partners to include value added resellers, distributors, systems integrators and strategic software partners (primarily Turkey & Middle East and Africa)\nAct as a liaison between Keeper and assigned channel partners and Ingram Micro MEA.\nBuild, maintain, and manage relationships with current and prospective channel partners\nEstablish productive, professional relationships with key sales and channel personnel in assigned partner accounts\nCoordinate the involvement of Keeper personnel, including support, service, and management resources, in order to meet partner performance objectives and partners’ expectations\nSell through partner organizations to end users in coordination with partner sales resources\nMeet assigned targets for profitable sales volume and strategic objectives in assigned partner accounts\nManage direct/channel conflict by fostering excellent communication between the channel and direct sales teams\nEnsure partner compliance with Channel Partner programs and agreements\nParticipate in a partner planning process that develops mutual performance objectives, financial targets, and critical milestones associated with a productive partner relationship\nIdentify partner GTM &/or services offerings; working with partner sales resources, marketing, etc. develop & launch offerings to point of incremental joint revenue achievement\nBuild relationships with technology vendors to identify mutual greenfield opportunities with shared partners\nMaintain channel opportunity registrations in Salesforce.com and assist the direct sales team in closing channel generated leads\nPlan and execute on Channel Marketing activities and events to support brand awareness and demand generation with the Strategic Partner group\nAbility to travel to and from customer meetings (locally and nationally) & rent and/or operate a vehicle on behalf of the company\nRequirements\n5+ years of security SaaS channel sales experience\nMust be bilingual, English and Arabic (both verbal and written)\nProven success driving revenue growth via channel partners\nGood understanding of Partner Incentive programs and PRM tools\nStrong interpersonal skills and ability to excel in a team oriented atmosphere\nStrong written/verbal communications skills\nExtremely motivated and goal-oriented\nMust want a career-oriented environment that is both fun and professional\nYou share our values, and work in accordance with those values\nWillingness to travel up to 50%\nKeeper is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.\nKeeper Candidate Privacy Notice\nThis notice explains how Keeper Security processes your personal data during recruitment. Depending on the role and location, the Controller of personal data (the organization responsible for determining why and how personal data is processed) will be Keeper Security Inc. (US), Keeper Security EMEA Ltd. (Ireland), or Keeper Security APAC K.K (Japan).\n1. Data We Collect\nInformation You provide:\nContact details, CV/resume, cover letter\nEmployment history, qualifications, work eligibility\nApplication responses and uploaded documents\nInformation We generate:\nInterview notes, assessments, communications\nScheduling information\nInformation From Others:\nRecruiter/referral information who submit your profile\nReferences (with your consent, before final offer)\nPublic professional profiles\nBackground verification (post offer)\nVoluntary Diversity and Equal Opportunity Information\nWe may ask you to voluntarily provide diversity information including race/ethnicity, gender, disability status and veteran status (US). Providing this information is optional and Keeper collects this data in order to comply with EEOC and similar requirements\n2. How We Use Your Data\nAssess your application and suitability\nManage interviews and recruitment workflow\nConsider you for other/future roles (we may seek your consent to keep your information on our systems beyond the retention period specified)\nComply with employment law obligations\n3. Legal Basis\nLegitimate Interests (recruitment management, security and integrity of the hiring process)\nContracting steps (for progressed candidates)\nLegal and regulatory compliance obligations; explicit consent where required\n4. Who We Share Information With\nInternal:\nHR, hiring managers, interviewers*, IT support for system administration\n*Note - diversity and equal opportunity data is not shared with hiring managers.\nThird Parties:\nService providers who assist with:\nApplicant tracking, recruitment systems and assessment providers\nBackground verification vendors (post offer)\nRecruitment agencies (where applicable)\nTools to support communication, collaboration and to securely store your data\nKeeper ensures that all our third parties are contractually bound to protect your personal data with adequate safeguards in place.\n5. International Transfers\nYour data may be accessed by Keeper entities globally as needed for the purposes of hiring and decision making. We protect any such data transfer between Keeper entities using appropriate safeguards under applicable data protection laws.\n6. Security\nWe implement appropriate technical and organizational measures to protect your data, consistent with our industry leading security standards.\n7. Retention\nWe keep your data for 24 months from your last application activity, then delete or anonymize it.\nExceptions:\nYou opt into our talent database for further retention by providing consent (extended retention)\nYou're hired (transfers to employee records)\n8. Your Rights\nYou have the following rights and can contact us at the email below to exercise them:\nAccess, correct, or delete your data, subject to applicable law and retention requirements\nObject to or restrict processing\nWithdraw consent (where applicable)\nRequest data portability\nLodge a complaint with your data protection authority\nIf you become an employee, your rights regarding your employee record are governed by our internal Employee Privacy Notice and certain data will be retained as required under relevant laws such as employment or tax law.\nWhen you request access to your personal data, some information may be redacted if it includes the personal data of other individuals or information that we must protect in order to preserve their privacy rights.\n9. Automated Decisions\nKeeper does not make hiring decisions using solely automated processing.\n10. Contact - Candidates can send privacy questions to: privacy@keepersecurity.com\nTo apply: https://weworkremotely.com/remote-jobs/keeper-security-bilingual-channel-account-manager-arabic-mea-uk",
+   "category": "Information Systems",
+   "location": "Remote",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/keeper-security-bilingual-channel-account-manager-arabic-mea-uk",
+   "status": "Awaiting Review",
+   "id": "7c4018f5-f96b-4fe2-8676-ff2c86dd412e",
+   "createdAt": "2026-09-15T15:28:14+00:00",
+   "requiredSkills": "keeper, security, bilingual, channel, account, arabic, mea, headquarters, remote, description, hiring, driven",
+   "postedAt": "2026-09-15",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "fe6abd7871a826b1",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/keeper-security-bilingual-channel-account-manager-arabic-mea-uk",
+     "found_at": "2026-09-15T15:28:14+00:00"
+    }
+   ],
+   "matchScore": 64,
+   "scoreParts": {
+    "keyword": 8,
     "experience": 85,
     "projects": 100,
     "preference": 100
@@ -251,7 +293,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/platform-sh-billing-systems-architect",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:14+00:00"
     }
    ],
    "matchScore": 64,
@@ -293,7 +335,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/ignition-inc-mac-msp-help-desk-guru-work-from-home",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:15+00:00"
     }
    ],
    "matchScore": 63,
@@ -335,7 +377,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-engineering-manager-notifications",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:14+00:00"
     }
    ],
    "matchScore": 55,
@@ -377,7 +419,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-devops-engineer-3",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:15+00:00"
     }
    ],
    "matchScore": 55,
@@ -419,7 +461,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-critical-situation-manager",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:15+00:00"
     }
    ],
    "matchScore": 54,
@@ -461,7 +503,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/databricks-cyber-security-gtm-leader",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:14+00:00"
     }
    ],
    "matchScore": 54,
@@ -503,7 +545,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/datadog-developer-advocate-service-management",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:14+00:00"
     }
    ],
    "matchScore": 54,
@@ -545,7 +587,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/fastly-senior-sre-networks",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:14+00:00"
     }
    ],
    "matchScore": 54,
@@ -587,12 +629,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-senior-professional-services-devops-engineer",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:14+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:14+00:00"
     }
    ],
    "matchScore": 54,
@@ -634,7 +676,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager-sled",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:15+00:00"
     }
    ],
    "matchScore": 54,
@@ -676,12 +718,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-application-security-engineer-ii",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:15+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/temporal-technologies-senior-application-security-engineer",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:15+00:00"
     }
    ],
    "matchScore": 54,
@@ -723,7 +765,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zenara-health-devops-security-engineer-ai-native-healthcare-saas",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:15+00:00"
     }
    ],
    "matchScore": 54,
@@ -765,7 +807,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-evergreen-sales-development-representative",
-     "found_at": "2026-09-15T07:18:48+00:00"
+     "found_at": "2026-09-15T15:28:14+00:00"
     }
    ],
    "matchScore": 53,
@@ -807,7 +849,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/uilm",
-     "found_at": "2026-09-15T07:19:11+00:00"
+     "found_at": "2026-09-15T15:28:35+00:00"
     }
    ],
    "matchScore": 48,
@@ -849,7 +891,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/careers/",
-     "found_at": "2026-09-15T07:19:11+00:00"
+     "found_at": "2026-09-15T15:28:35+00:00"
     }
    ],
    "matchScore": 36,
@@ -891,7 +933,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/manufacturing-engineering",
-     "found_at": "2026-09-15T07:19:11+00:00"
+     "found_at": "2026-09-15T15:28:35+00:00"
     }
    ],
    "matchScore": 36,
