@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-15T15:28:35+00:00",
+ "generatedAt": "2026-09-16T08:22:47+00:00",
  "meta": {
   "queries": [
    "software quality assurance",
@@ -23,7 +23,7 @@
     "errors": []
    },
    "rss": {
-    "found": 20,
+    "found": 19,
     "errors": [
      "RemoteOK: empty response"
     ]
@@ -38,12 +38,12 @@
    }
   },
   "counts": {
-   "total": 21,
-   "new": 1,
+   "total": 20,
+   "new": 0,
    "expired": 0,
    "duplicatesFolded": 5,
    "priorityA": 0,
-   "priorityB": 7,
+   "priorityB": 6,
    "priorityC": 14
   },
   "filters": {
@@ -54,7 +54,7 @@
    "drop_expired": true
   },
   "blockedUrls": [],
-  "ranAt": "2026-09-15T15:28:35+00:00"
+  "ranAt": "2026-09-16T08:22:47+00:00"
  },
  "jobs": [
   {
@@ -83,54 +83,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-15T15:28:14+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 65,
    "scoreParts": {
     "keyword": 10,
-    "experience": 85,
-    "projects": 100,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "rss"
-  },
-  {
-   "title": "Vonage: AEM Developer",
-   "company": "Unknown company",
-   "description": "Headquarters: Remote\nJoin Vonage and help us innovate cloud communications for businesses worldwide!\nWhy this role matters:\nWe are seeking an experienced and technically skilled Senior AEM Developer to join our digital engineering team. In this role, you will lead the design, development, and implementation of enterprise-level web applications using Adobe Experience Manager (AEM / AEM as a Cloud Service). You will collaborate closely with product owners, UI/UX designers, and front-end developers to deliver high-performing, scalable, and secure digital experiences.\nYour key responsibilities:\nTechnical Design & Development: Design and develop custom AEM components, templates, dialogs, schedulers, workflows, and OSGi services using Java, HTL/Sightly, and Sling Models.\nArchitecture & Implementation: Build robust multi-site, multi-lingual, and multi-channel publishing solutions leveraging AEM WCM, DAM (Digital Asset Management), and MSM (Multi-Site Manager).\nCloud & Modernization: Guide migration efforts and work extensively with AEM as a Cloud Service, Dispatcher configurations, and modern deployment pipelines.\nIntegrations: Integrate AEM with third-party systems and enterprise services, including CRM, analytics (Adobe Analytics/Target), and headless content APIs.\nCode Quality & Mentorship: Conduct rigorous code reviews, enforce best practices in software development (TDD, CI/CD), and mentor junior-to-mid-level developers.\nPerformance Optimization: Troubleshoot and optimize application performance, caching strategies (Dispatcher cache flush), and security compliance.\nAI : Demonstrate the usage of AI Agents and code assistants to improve the productivity across the software development lifecycle, by reducing boilerplate coding, automating repetitive tasks, accelerating code reviews, and reducing time-to-market for new features.\nAgile Delivery: Participate actively in Agile/Scrum ceremonies, translating business requirements into technical execution plans and accurate estimates.\nWhat you'll bring\nRequired:\nExperience:\n5+ years of total software development experience.\n3+ to 5+ years of hands-on technical experience specifically with Adobe Experience Manager (AEM 6.x and AEM as a Cloud Service) .\nCore AEM Expertise:\nDeep understanding of the underlying AEM framework, including Apache Sling, Apache Felix (OSGi), JCR (Java Content Repository), and CRX.\nProficiency in building Touch UI components using Granite UI, HTL (HTML Template Language), and Sling Models.\nExperience configuring Dispatchers, replication agents, and cloud manager pipelines.\nBackend & Frontend Technologies:\nAdvanced proficiency in Core Java / J2EE , web services (REST) a nd enterprise design patterns.\nSolid front-end foundation: HTML5, CSS3, modern JavaScript (ES6+), SCSS, Tailwind CSS, and responsive design frameworks (e.g., Bootstrap, React, or Vue).\nDevOps & Tooling:\nExperience with build automation and version control tools: Maven, Webpack, Babel, Git, Jenkins, and Adobe Cloud Manager.\nFamiliarity with unit testing frameworks (JUnit, Mockito).\nMethodologies:\nStrong background working in Agile/Scrum development environments.\nExcellent problem-solving skills with the ability to articulate complex technical concepts to non-technical stakeholders.\nExperience we consider a plus:\nAdobe-certified expert credentials (e.g., Adobe Certified Expert – AEM Sites Developer).\nExperience with headless content delivery (AEM Content Services / GraphQL).\nHands-on exposure to Adobe Experience Cloud ecosystem tools (Adobe Target, Adobe Analytics, Adobe Campaign).\nHow you’ll benefit:\nAttractive Discretionary Time Off\nPrivate Medical Insurance with optional dependent coverage\nEducational Assistance Reimbursement Program\nOpportunities for reimbursement for conferences, trainings, and other personal development events\nMaternity and Paternity Leave\nAsk recruiter for country specific information\n#LI-NN1\nThere’s no perfect candidate. You don't need all the preferred qualifications to make a valuable impact on our team. Our employees and customers come from diverse backgrounds, so if you're passionate about what you could achieve at Vonage, we'd love to hear from you.\nTo learn how we process your personal data during the recruitment process, please refer to our Privacy Notice .\nWho we are:\nVonage is a global cloud communications leader. And your talent will further help brands - such as Airbnb, Viber, WhatsApp, and Snapchat - accelerate their digital transformation through our fully programmable-based unified communications, contact center solutions, and communications APIs. Ready to innovate? Then join us today.\nNote: The purpose of this profile is to provide a general summary of essential responsibilities for the position and is not meant as an exhaustive list. Assignments may differ for individuals within the same role based on business conditions, departmental need or geographic location.\nTo apply: https://weworkremotely.com/remote-jobs/vonage-aem-developer",
-   "category": "Information Systems",
-   "location": "Remote",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/vonage-aem-developer",
-   "status": "Awaiting Review",
-   "id": "af607e12-3f7c-4446-9d2b-7cfd2291c7ba",
-   "createdAt": "2026-09-15T06:23:44+00:00",
-   "requiredSkills": "vonage, aem, headquarters, remote, help, innovate, cloud, communications, businesses, worldwide, why, matters",
-   "postedAt": "2026-09-05",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "56f2db340df963ad",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/vonage-aem-developer",
-     "found_at": "2026-09-15T15:28:14+00:00"
-    }
-   ],
-   "matchScore": 65,
-   "scoreParts": {
-    "keyword": 11,
     "experience": 85,
     "projects": 100,
     "preference": 100
@@ -167,7 +125,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-manager-security-operations-center-emea",
-     "found_at": "2026-09-15T15:28:14+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 64,
@@ -209,7 +167,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager",
-     "found_at": "2026-09-15T15:28:15+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 64,
@@ -251,7 +209,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-bilingual-channel-account-manager-arabic-mea-uk",
-     "found_at": "2026-09-15T15:28:14+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 64,
@@ -293,7 +251,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/platform-sh-billing-systems-architect",
-     "found_at": "2026-09-15T15:28:14+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 64,
@@ -335,7 +293,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/ignition-inc-mac-msp-help-desk-guru-work-from-home",
-     "found_at": "2026-09-15T15:28:15+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 63,
@@ -377,7 +335,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-engineering-manager-notifications",
-     "found_at": "2026-09-15T15:28:14+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 55,
@@ -419,7 +377,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-devops-engineer-3",
-     "found_at": "2026-09-15T15:28:15+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 55,
@@ -461,7 +419,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-critical-situation-manager",
-     "found_at": "2026-09-15T15:28:15+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 54,
@@ -503,7 +461,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/databricks-cyber-security-gtm-leader",
-     "found_at": "2026-09-15T15:28:14+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 54,
@@ -545,7 +503,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/datadog-developer-advocate-service-management",
-     "found_at": "2026-09-15T15:28:14+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 54,
@@ -587,7 +545,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/fastly-senior-sre-networks",
-     "found_at": "2026-09-15T15:28:14+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 54,
@@ -629,12 +587,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-senior-professional-services-devops-engineer",
-     "found_at": "2026-09-15T15:28:14+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer",
-     "found_at": "2026-09-15T15:28:14+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 54,
@@ -676,7 +634,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager-sled",
-     "found_at": "2026-09-15T15:28:15+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 54,
@@ -718,12 +676,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-application-security-engineer-ii",
-     "found_at": "2026-09-15T15:28:15+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/temporal-technologies-senior-application-security-engineer",
-     "found_at": "2026-09-15T15:28:15+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 54,
@@ -765,7 +723,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zenara-health-devops-security-engineer-ai-native-healthcare-saas",
-     "found_at": "2026-09-15T15:28:15+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 54,
@@ -807,7 +765,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-evergreen-sales-development-representative",
-     "found_at": "2026-09-15T15:28:14+00:00"
+     "found_at": "2026-09-16T08:22:26+00:00"
     }
    ],
    "matchScore": 53,
@@ -849,7 +807,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/uilm",
-     "found_at": "2026-09-15T15:28:35+00:00"
+     "found_at": "2026-09-16T08:22:46+00:00"
     }
    ],
    "matchScore": 48,
@@ -891,7 +849,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/careers/",
-     "found_at": "2026-09-15T15:28:35+00:00"
+     "found_at": "2026-09-16T08:22:46+00:00"
     }
    ],
    "matchScore": 36,
@@ -933,7 +891,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/manufacturing-engineering",
-     "found_at": "2026-09-15T15:28:35+00:00"
+     "found_at": "2026-09-16T08:22:46+00:00"
     }
    ],
    "matchScore": 36,

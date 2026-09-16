@@ -20,7 +20,7 @@
    "errors": []
   },
   "rss": {
-   "found": 20,
+   "found": 19,
    "errors": [
     "RemoteOK: empty response"
    ]
@@ -35,12 +35,12 @@
   }
  },
  "counts": {
-  "total": 21,
-  "new": 1,
+  "total": 20,
+  "new": 0,
   "expired": 0,
   "duplicatesFolded": 5,
   "priorityA": 0,
-  "priorityB": 7,
+  "priorityB": 6,
   "priorityC": 14
  },
  "filters": {
@@ -51,5 +51,5 @@
   "drop_expired": true
  },
  "blockedUrls": [],
- "ranAt": "2026-09-15T15:28:35+00:00"
+ "ranAt": "2026-09-16T08:22:47+00:00"
 }
