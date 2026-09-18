@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-18T08:03:24+00:00",
+ "generatedAt": "2026-09-18T14:48:52+00:00",
  "meta": {
   "queries": [
    "software quality assurance",
@@ -54,7 +54,7 @@
    "drop_expired": true
   },
   "blockedUrls": [],
-  "ranAt": "2026-09-18T08:03:24+00:00"
+  "ranAt": "2026-09-18T14:48:52+00:00"
  },
  "jobs": [
   {
@@ -83,7 +83,7 @@
     {
      "source": "Brain Station 23 careers",
      "url": "https://brainstation-23.com/software-testing-as-service/",
-     "found_at": "2026-09-18T08:03:21+00:00"
+     "found_at": "2026-09-18T14:48:50+00:00"
     }
    ],
    "matchScore": 69,
@@ -125,7 +125,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 65,
@@ -167,7 +167,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-manager-security-operations-center-emea",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 64,
@@ -209,7 +209,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 64,
@@ -251,7 +251,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-bilingual-channel-account-manager-arabic-mea-uk",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 64,
@@ -293,7 +293,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/platform-sh-billing-systems-architect",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 64,
@@ -335,7 +335,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/ignition-inc-mac-msp-help-desk-guru-work-from-home",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 63,
@@ -377,7 +377,7 @@
     {
      "source": "Brain Station 23 careers",
      "url": "https://brainstation-23.com/data-engineering-services",
-     "found_at": "2026-09-18T08:03:21+00:00"
+     "found_at": "2026-09-18T14:48:50+00:00"
     }
    ],
    "matchScore": 59,
@@ -419,7 +419,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-engineering-manager-notifications",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 55,
@@ -461,7 +461,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-devops-engineer-3",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 55,
@@ -503,12 +503,12 @@
     {
      "source": "Brain Station 23 careers",
      "url": "https://brainstation-23.com/adobe-experience-manager-aem/",
-     "found_at": "2026-09-18T08:03:21+00:00"
+     "found_at": "2026-09-18T14:48:50+00:00"
     },
     {
      "source": "Brain Station 23 careers",
      "url": "https://brainstation-23.com/essential-questions-to-ask-an-aem-implementation-partner/",
-     "found_at": "2026-09-18T08:03:21+00:00"
+     "found_at": "2026-09-18T14:48:50+00:00"
     }
    ],
    "matchScore": 54,
@@ -550,7 +550,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-critical-situation-manager",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 54,
@@ -592,7 +592,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/datadog-developer-advocate-service-management",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 54,
@@ -634,7 +634,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/fastly-senior-sre-networks",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 54,
@@ -676,12 +676,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-senior-professional-services-devops-engineer",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 54,
@@ -723,7 +723,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager-sled",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 54,
@@ -765,12 +765,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-application-security-engineer-ii",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/temporal-technologies-senior-application-security-engineer",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 54,
@@ -812,7 +812,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-cloud-architect",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 54,
@@ -854,7 +854,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-evergreen-sales-development-representative",
-     "found_at": "2026-09-18T08:03:04+00:00"
+     "found_at": "2026-09-18T14:48:31+00:00"
     }
    ],
    "matchScore": 53,
@@ -896,7 +896,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/uilm",
-     "found_at": "2026-09-18T08:03:24+00:00"
+     "found_at": "2026-09-18T14:48:52+00:00"
     }
    ],
    "matchScore": 48,
@@ -938,7 +938,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/careers/",
-     "found_at": "2026-09-18T08:03:24+00:00"
+     "found_at": "2026-09-18T14:48:52+00:00"
     }
    ],
    "matchScore": 36,
@@ -980,7 +980,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/manufacturing-engineering",
-     "found_at": "2026-09-18T08:03:24+00:00"
+     "found_at": "2026-09-18T14:48:52+00:00"
     }
    ],
    "matchScore": 36,
