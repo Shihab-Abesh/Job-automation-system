@@ -20,7 +20,7 @@
    "errors": []
   },
   "rss": {
-   "found": 19,
+   "found": 18,
    "errors": [
     "RemoteOK: empty response"
    ]
@@ -35,13 +35,13 @@
   }
  },
  "counts": {
-  "total": 23,
+  "total": 22,
   "new": 0,
   "expired": 0,
   "duplicatesFolded": 11,
   "priorityA": 0,
   "priorityB": 7,
-  "priorityC": 16
+  "priorityC": 15
  },
  "filters": {
   "min_salary_bdt": 20000,
@@ -51,5 +51,5 @@
   "drop_expired": true
  },
  "blockedUrls": [],
- "ranAt": "2026-09-17T15:28:04+00:00"
+ "ranAt": "2026-09-18T08:03:24+00:00"
 }

@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-17T15:28:04+00:00",
+ "generatedAt": "2026-09-18T08:03:24+00:00",
  "meta": {
   "queries": [
    "software quality assurance",
@@ -23,7 +23,7 @@
     "errors": []
    },
    "rss": {
-    "found": 19,
+    "found": 18,
     "errors": [
      "RemoteOK: empty response"
     ]
@@ -38,13 +38,13 @@
    }
   },
   "counts": {
-   "total": 23,
+   "total": 22,
    "new": 0,
    "expired": 0,
    "duplicatesFolded": 11,
    "priorityA": 0,
    "priorityB": 7,
-   "priorityC": 16
+   "priorityC": 15
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -54,7 +54,7 @@
    "drop_expired": true
   },
   "blockedUrls": [],
-  "ranAt": "2026-09-17T15:28:04+00:00"
+  "ranAt": "2026-09-18T08:03:24+00:00"
  },
  "jobs": [
   {
@@ -83,7 +83,7 @@
     {
      "source": "Brain Station 23 careers",
      "url": "https://brainstation-23.com/software-testing-as-service/",
-     "found_at": "2026-09-17T15:28:00+00:00"
+     "found_at": "2026-09-18T08:03:21+00:00"
     }
    ],
    "matchScore": 69,
@@ -125,7 +125,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 65,
@@ -167,7 +167,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-manager-security-operations-center-emea",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 64,
@@ -209,7 +209,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 64,
@@ -251,7 +251,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-bilingual-channel-account-manager-arabic-mea-uk",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 64,
@@ -293,7 +293,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/platform-sh-billing-systems-architect",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 64,
@@ -335,7 +335,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/ignition-inc-mac-msp-help-desk-guru-work-from-home",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 63,
@@ -377,7 +377,7 @@
     {
      "source": "Brain Station 23 careers",
      "url": "https://brainstation-23.com/data-engineering-services",
-     "found_at": "2026-09-17T15:28:00+00:00"
+     "found_at": "2026-09-18T08:03:21+00:00"
     }
    ],
    "matchScore": 59,
@@ -419,7 +419,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-engineering-manager-notifications",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 55,
@@ -461,7 +461,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-devops-engineer-3",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 55,
@@ -503,12 +503,12 @@
     {
      "source": "Brain Station 23 careers",
      "url": "https://brainstation-23.com/adobe-experience-manager-aem/",
-     "found_at": "2026-09-17T15:28:00+00:00"
+     "found_at": "2026-09-18T08:03:21+00:00"
     },
     {
      "source": "Brain Station 23 careers",
      "url": "https://brainstation-23.com/essential-questions-to-ask-an-aem-implementation-partner/",
-     "found_at": "2026-09-17T15:28:00+00:00"
+     "found_at": "2026-09-18T08:03:21+00:00"
     }
    ],
    "matchScore": 54,
@@ -550,7 +550,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-critical-situation-manager",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 54,
@@ -592,7 +592,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/datadog-developer-advocate-service-management",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 54,
@@ -634,7 +634,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/fastly-senior-sre-networks",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 54,
@@ -676,12 +676,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-senior-professional-services-devops-engineer",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 54,
@@ -723,7 +723,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager-sled",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 54,
@@ -765,59 +765,17 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-application-security-engineer-ii",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/temporal-technologies-senior-application-security-engineer",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 54,
    "scoreParts": {
     "keyword": 8,
-    "experience": 45,
-    "projects": 100,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "rss"
-  },
-  {
-   "title": "Zenara Health: DevOps & Security Engineer - AI-Native Healthcare SaaS",
-   "company": "Unknown company",
-   "description": "Headquarters: India\nAbout the Company Zenara Health is a mental healthcare organization driven by technology, aiming to improve the accessibility and quality of mental wellness services. By integrating AI-driven platforms with professional clinical care, we deliver personalized and effective mental health solutions, creating a smooth digital experience for both patients and providers. We operate as a startup, distinct from a mere department.\nWhy This Role Exists This position serves as the company's foremost line of defense.\nYou will operate under the assumption that systems are constantly under threat, crafting infrastructure that is resilient, auditable, and inherently secure. You will be the most risk-aware individual in the startup — and that’s exactly what we require. While others concentrate on feature rollout, you will prioritize the security of patient data, regulatory compliance, and system integrity.\nAbout the Role If your understanding of DevOps is limited to \"I occasionally execute kubectl apply,\" this position is likely not for you.\nThis role is not suited for those who prioritize speed over safety or view security as an afterthought to be addressed later. At Zenara, safeguarding patient data and maintaining system integrity takes precedence over rapid deployment.\nOur team is in the process of developing a platform that manages clinical data, operates AI workflows, and processes insurance billing — all within a HIPAA-regulated environment catering to real psychiatric practices. Our infrastructure is operational; however, we lack an individual who will take ownership with a security-first perspective. We currently do not have a dedicated CI/CD owner, a comprehensive security posture, or monitoring that extends beyond simple uptime checks. If HIPAA auditors were to arrive tomorrow, we could withstand the scrutiny — but it wouldn’t be a pleasant experience.\nYou will be responsible for Zenara’s infrastructure, security posture, and compliance engineering — everything from the ground up. This includes CI/CD pipelines, HIPAA-compliant deployment automation, monitoring and alerting systems, cybersecurity measures and threat defense, access controls, and audit logging — the complete spectrum of \"essential elements that ensure the safe operation of a healthcare company.\"\nHowever, your role will go beyond mere maintenance. You will also develop infrastructure for our AI platform, encompassing model serving, scaling AI workloads, and supporting production AI pipelines. You will have a dual mandate: ensure the stability and security of the platform while also building the necessary infrastructure for AI at scale.\nThis represents a unique opportunity for greenfield infrastructure engineering within a healthcare AI company with genuine compliance obligations and real users. You will devise systems from fundamental principles, make architectural choices, establish best practices to guide us through growth and compliance audits, and serve as the ultimate security gatekeeper.\nWhat You Will Own 1. Cybersecurity & Threat Defense You will manage threat modeling, reduce attack surfaces, oversee intrusion detection, handle vulnerability management, and plan incident responses. You will be the final reviewer for infrastructure and security risks, possessing the authority to halt releases that do not satisfy security or compliance criteria. The security of patient data is non-negotiable.\n2. CI/CD and Deployment Automation You will design and implement CI/CD pipelines for all Zenara products, establishing deployment automation, managing environments, and setting quality thresholds. Your goal is to eliminate chaotic releases and establish a system that enables the team to deploy confidently and consistently — without compromising security.\n3. Security Posture and HIPAA Compliance You will develop and uphold a HIPAA-compliant security posture across all Zenara systems. This involves implementing access controls, managing secrets, maintaining audit logs, and enforcing encryption standards. You will ensure our adherence to regulatory requirements while avoiding bureaucratic slowdowns.\n4. Monitoring, Alerting, and Incident Response You will create monitoring and alerting capabilities to proactively identify issues before they affect users. You will establish incident response protocols, define service level objectives (SLOs), and monitor reliability metrics. You will lead the on-call rotation and develop runbooks for common incidents.\n5. AI Infrastructure Support You will address the AI infrastructure needs, including model serving, GPU provisioning (if necessary), and autoscaling for AI workloads. You will collaborate with the Head of AI to ensure that the infrastructure supports production AI efficiently and securely.\n6. Cloud Infrastructure Management You will oversee cloud infrastructure (AWS/Azure), focusing on cost optimization, reliability, disaster recovery, and capacity planning. You will make architectural decisions that find a balance between cost, performance, and compliance obligations.\n7. SOC 2 Readiness You will spearhead SOC 2 Type II preparedness as we approach fundraising, implementing necessary controls, organizing evidence collection, and liaising with auditors. You will ensure compliance becomes an integrated process rather than an ad-hoc measure.\n8. Security Incident Response You will take charge of security incident response, establishing procedures, conducting regular security evaluations, and responding to incidents as they arise. Your efforts will help the organization recognize security as an essential discipline rather than an afterthought.\nYour First 90 Days Week 1-2: Fully immerse yourself in the current infrastructure, deployment processes, and security posture. Identify the most significant security vulnerabilities and critical gaps. Build rapport through active listening and insightful inquiries.\nMonth 1: Set up basic monitoring and alerting systems. Outline the CI/CD roadmap. Begin documenting existing systems and security protocols. Establish communication channels with engineering leadership. Conduct initial threat assessments.\nMonth 2-3: Develop CI/CD pipelines for high-priority services with security gates. Implement secrets management and access controls. Create the first set of operational and security runbooks. Initiate SOC 2 gap analysis and planning for remediation. Introduce intrusion detection and vulnerability scanning.\nOngoing: Take on full ownership of infrastructure and security. Deliver reliable and secure systems. Establish compliance practices and enhance security standards. Assertively say “no” when risks are unacceptable. Inspire confidence in the CEO that infrastructure and security are in capable hands.\nValues & Vibe (Who You Are) You perceive infrastructure primarily through the lens of security and reliability , rather than merely uptime. You are the one who enters an unmanaged infrastructure landscape and brings order — not through an excess of tools, but through clarity, automation, and effective monitoring. For you, security is not a mere checklist; it shapes your worldview.\nYou possess an innate sense of paranoia — assuming systems are under threat and designing with that understanding. You find an infrastructure environment that functions like a black box, relying on heroic measures rather than standard practices, to be unacceptable. You recognize that healthcare compliance is mandatory and understand how to implement it practically, without hindering development speed.\nYou are hands-on enough to diagnose production issues, write Terraform modules, and review security configurations — yet you know that your primary responsibility lies in creating systems that are both reliable and secure, rather than solely reacting to incidents. You have successfully built infrastructure in regulated sectors while adhering to compliance constraints.\nYou have considered issues related to security threats, compliance frameworks, and disaster recovery — moving beyond the simplistic notion of \"we use AWS defaults.\" You understand the trade-offs between security, cost, developer experience, and compliance requirements. When faced with uncertainty, your choice will always be security.\nYou are comfortable saying “no” when risks are unacceptable, even if it delays feature deployment. This is not obstruction; it is part of your role.\nWhat Success Looks Like The infrastructure is both reliable and secure — the CEO no longer concerns themselves with outages or breaches.\nCI/CD pipelines are in place and delivering regularly — deployments become routine, low-risk, and security-gated.\nThe cybersecurity posture is robust — threat modeling is thorough, attack surfaces are minimized, and vulnerabilities are monitored for remediation.\nThe security posture is firm — access controls, audit trails, and secrets management are strictly enforced.\nMonitoring and alerting systems identify issues before they are reported by users.\nHIPAA compliance is systematic — we are audit-ready without frantic preparations.\nAI infrastructure supports production workloads reliably and cost-effectively.\nA security review process is established — any risky releases are identified and halted prior to shipping.\nIncident response is documented and efficient — problems are resolved swiftly.\nThe infrastructure and security posture are more robust, reliable, and compliant than upon your arrival.\nRequired - 5-10 years of experience in DevOps, SRE, or Platform Engineering — you have designed and maintained large-scale production infrastructure.\n- A strong security mindset: naturally cautious, detail-focused, and able to express concerns when risks are too high. For you, security is not merely a feature; it is a fundamental necessity.\n- Familiarity with HIPAA, SOC 2, or healthcare compliance frameworks — you comprehend BAAs, audit trails, and regulatory obligations. You have successfully implemented compliant systems.\n- Proficient in AWS or Azure with infrastructure-as-code (Terraform, Pulumi, or CloudFormation) — you handle infrastructure through programming rather than manual console operations.\n- CI/CD pipeline design and implementation (GitHub Actions, CircleCI, Jenkins, or similar) — you have developed deployment automation from the ground up.\n- Experience in container orchestration (Kubernetes, ECS, or equivalent) — you know how to deploy and scale applications in containers.\n- Skills in cybersecurity : including threat modeling, vulnerability assessment, intrusion detection, and incident response.\n- Strong English communication skills — You operate asynchronously and provide clear written documentation, incident reports, and architectural designs.\n- Experience in startup or high-growth environments — You have thrived in situations marked by uncertainty, constrained resources, and pressing deadlines.\nStrongly Preferred\n- Experience in supporting ML/AI infrastructure (model serving, GPU clusters)\n- Security expertise in healthcare SaaS (handling PHI, encryption at rest/transit, access auditing)\n- Background in penetration testing or security audits\n- Prior experience with SOC 2 or HITRUST certification processes\n- Knowledge of observability and monitoring tools (Datadog, Prometheus, Grafana, or similar)\nNice to Have\n- Understanding of FHIR/HL7 healthcare data standards\n- Production experience with Kubernetes\n- Acquainted with multi-tenant SaaS security strategies\n- Exposure to mental health or behavioral health sectors\n- Experience with cloud infrastructure cost optimization\n- Relevant security certifications (CISSP, CEH, or equivalent)\nSchedule\nEvening IST hours with 4–8 hours of daily overlap with US Pacific (9am–5pm PT). You are welcome to propose a schedule that works best for you — our emphasis is on overlap and team availability rather than rigid clock-in requirements. On-call availability is expected during key security incidents.\n- Salary between ₹22–35 LPA, based on your skills and responsibilities\n- Fully remote work options available throughout India\n- Provision for equipment allowance\n- Acknowledgment of culturally significant local holidays (India)\n- Flexible paid leave options\n- Direct and regular communication with the CEO — you will have direct access without any intermediaries\n- Opportunity to build infrastructure and security practices from the ground up\nTo apply: https://weworkremotely.com/remote-jobs/zenara-health-devops-security-engineer-ai-native-healthcare-saas",
-   "category": "MIS",
-   "location": "Remote",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/zenara-health-devops-security-engineer-ai-native-healthcare-saas",
-   "status": "Awaiting Review",
-   "id": "e43bfa0d-4bed-4924-8a5e-a04b40cb1a32",
-   "createdAt": "2026-09-15T06:23:44+00:00",
-   "requiredSkills": "zenara, health, devops, security, engineer, native, healthcare, saas, headquarters, india, about, mental",
-   "postedAt": "2026-08-18",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "4f103176d5a7a5bd",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/zenara-health-devops-security-engineer-ai-native-healthcare-saas",
-     "found_at": "2026-09-17T15:27:42+00:00"
-    }
-   ],
-   "matchScore": 54,
-   "scoreParts": {
-    "keyword": 7,
     "experience": 45,
     "projects": 100,
     "preference": 100
@@ -854,7 +812,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-cloud-architect",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 54,
@@ -896,7 +854,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-evergreen-sales-development-representative",
-     "found_at": "2026-09-17T15:27:42+00:00"
+     "found_at": "2026-09-18T08:03:04+00:00"
     }
    ],
    "matchScore": 53,
@@ -938,7 +896,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/uilm",
-     "found_at": "2026-09-17T15:28:03+00:00"
+     "found_at": "2026-09-18T08:03:24+00:00"
     }
    ],
    "matchScore": 48,
@@ -980,7 +938,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/careers/",
-     "found_at": "2026-09-17T15:28:03+00:00"
+     "found_at": "2026-09-18T08:03:24+00:00"
     }
    ],
    "matchScore": 36,
@@ -1022,7 +980,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/manufacturing-engineering",
-     "found_at": "2026-09-17T15:28:03+00:00"
+     "found_at": "2026-09-18T08:03:24+00:00"
     }
    ],
    "matchScore": 36,
