@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-18T14:48:52+00:00",
+ "generatedAt": "2026-09-19T07:53:41+00:00",
  "meta": {
   "queries": [
    "software quality assurance",
@@ -23,13 +23,13 @@
     "errors": []
    },
    "rss": {
-    "found": 18,
+    "found": 20,
     "errors": [
      "RemoteOK: empty response"
     ]
    },
    "careers": {
-    "found": 15,
+    "found": 6,
     "errors": []
    },
    "local": {
@@ -38,13 +38,13 @@
    }
   },
   "counts": {
-   "total": 22,
-   "new": 0,
+   "total": 20,
+   "new": 1,
    "expired": 0,
-   "duplicatesFolded": 11,
+   "duplicatesFolded": 6,
    "priorityA": 0,
-   "priorityB": 7,
-   "priorityC": 15
+   "priorityB": 6,
+   "priorityC": 14
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -53,52 +53,31 @@
    "retention_days": 45,
    "drop_expired": true
   },
-  "blockedUrls": [],
-  "ranAt": "2026-09-18T14:48:52+00:00"
+  "blockedUrls": [
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+quality+assurance&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+quality+assurance&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+engineer&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+engineer&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+tester&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+tester&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=manual+testing&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=manual+testing&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+analyst&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+analyst&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+executive&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+executive&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+officer&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+officer&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=information+systems+executive&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=information+systems+executive&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+officer&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+officer&pg=2",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+executive&pg=1",
+   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+executive&pg=2"
+  ],
+  "ranAt": "2026-09-19T07:53:41+00:00"
  },
  "jobs": [
-  {
-   "title": "QA Testing & Automation",
-   "company": "Brain Station 23",
-   "description": "QA Testing & Automation",
-   "category": "Software Quality Assurance",
-   "location": "Mohakhali, Dhaka",
-   "source": "Brain Station 23 careers",
-   "url": "https://brainstation-23.com/software-testing-as-service/",
-   "status": "Awaiting Review",
-   "id": "5b7513d0-4524-49f5-bd56-5a30f07a8ee9",
-   "createdAt": "2026-09-15T06:24:03+00:00",
-   "requiredSkills": "automation",
-   "postedAt": null,
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "",
-   "experienceText": "",
-   "area": "Mohakhali",
-   "distanceKm": 1.9,
-   "fingerprint": "e1f6edef8be96ebe",
-   "sources": [
-    {
-     "source": "Brain Station 23 careers",
-     "url": "https://brainstation-23.com/software-testing-as-service/",
-     "found_at": "2026-09-18T14:48:50+00:00"
-    }
-   ],
-   "matchScore": 69,
-   "scoreParts": {
-    "keyword": 50,
-    "experience": 85,
-    "projects": 35,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "careers"
-  },
   {
    "title": "CircleCI: Senior Software Engineer",
    "company": "Unknown company",
@@ -124,8 +103,13 @@
    "sources": [
     {
      "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
+     "found_at": "2026-09-19T07:53:22+00:00"
+    },
+    {
+     "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 65,
@@ -167,7 +151,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-manager-security-operations-center-emea",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 64,
@@ -209,7 +193,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 64,
@@ -251,7 +235,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-bilingual-channel-account-manager-arabic-mea-uk",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 64,
@@ -293,7 +277,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/platform-sh-billing-systems-architect",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 64,
@@ -335,7 +319,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/ignition-inc-mac-msp-help-desk-guru-work-from-home",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 63,
@@ -350,48 +334,6 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Data Engineering",
-   "company": "Brain Station 23",
-   "description": "Data Engineering",
-   "category": "Information Technology",
-   "location": "Mohakhali, Dhaka",
-   "source": "Brain Station 23 careers",
-   "url": "https://brainstation-23.com/data-engineering-services",
-   "status": "Awaiting Review",
-   "id": "a6b27f3a-7d29-476a-894b-13b1ebd55ce3",
-   "createdAt": "2026-09-15T06:24:03+00:00",
-   "requiredSkills": "engineering",
-   "postedAt": null,
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "",
-   "experienceText": "",
-   "area": "Mohakhali",
-   "distanceKm": 1.9,
-   "fingerprint": "eb2aa99905940018",
-   "sources": [
-    {
-     "source": "Brain Station 23 careers",
-     "url": "https://brainstation-23.com/data-engineering-services",
-     "found_at": "2026-09-18T14:48:50+00:00"
-    }
-   ],
-   "matchScore": 59,
-   "scoreParts": {
-    "keyword": 50,
-    "experience": 45,
-    "projects": 35,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "careers"
   },
   {
    "title": "Discord: Engineering Manager, Notifications",
@@ -419,7 +361,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-engineering-manager-notifications",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 55,
@@ -461,7 +403,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-devops-engineer-3",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 55,
@@ -476,53 +418,6 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Adobe Experience Manager",
-   "company": "Brain Station 23",
-   "description": "Adobe Experience Manager",
-   "category": "Information Technology",
-   "location": "Mohakhali, Dhaka",
-   "source": "Brain Station 23 careers",
-   "url": "https://brainstation-23.com/adobe-experience-manager-aem/",
-   "status": "Awaiting Review",
-   "id": "9e5e2e2c-739c-4a1f-a1f6-e32f7167e346",
-   "createdAt": "2026-09-15T06:24:03+00:00",
-   "requiredSkills": "adobe",
-   "postedAt": null,
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "",
-   "experienceText": "",
-   "area": "Mohakhali",
-   "distanceKm": 1.9,
-   "fingerprint": "780808aa85142f3f",
-   "sources": [
-    {
-     "source": "Brain Station 23 careers",
-     "url": "https://brainstation-23.com/adobe-experience-manager-aem/",
-     "found_at": "2026-09-18T14:48:50+00:00"
-    },
-    {
-     "source": "Brain Station 23 careers",
-     "url": "https://brainstation-23.com/essential-questions-to-ask-an-aem-implementation-partner/",
-     "found_at": "2026-09-18T14:48:50+00:00"
-    }
-   ],
-   "matchScore": 54,
-   "scoreParts": {
-    "keyword": 50,
-    "experience": 45,
-    "projects": 0,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "careers"
   },
   {
    "title": "Abnormal: Critical Situation Manager",
@@ -550,12 +445,54 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-critical-situation-manager",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 54,
    "scoreParts": {
     "keyword": 8,
+    "experience": 45,
+    "projects": 100,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "CircleCI: Security Operations Engineer",
+   "company": "Unknown company",
+   "description": "Headquarters: Ontario, Canada (Remote)\nSecurity Operations Engineer\nAbout the Team\nThe Security Operations team plays a critical role in protecting CircleCI’s infrastructure, product, and customer data against an evolving threat landscape. From incident response to hardening our cloud and CI/CD environments, the team works closely with engineering to keep CircleCI secure, resilient, and ready for what’s next.\nAbout the Role\nAs a Security Operations Engineer, you’ll play a key role in protecting CircleCI’s infrastructure, product, and customer data against an evolving threat landscape increasingly shaped by AI-driven attacks and AI-augmented defenses. This intermediate-level role offers the opportunity to take meaningful ownership of security challenges, work closely with Engineering as a trusted security partner, and expand your impact across the organization. You’ll contribute to our security roadmap while leveraging AI tooling to advance how we detect, respond to, and automate security threats across CircleCI.\nWhat You’ll Do:\nThreat Detection & Incident Response\nMonitor, investigate, and respond to security threats across CircleCI’s cloud and application environments, using security and AI-assisted tooling to improve detection and triage.\nParticipate in security risk assessments, incident response, post-incident reviews, and rotating on-call support, turning findings into stronger controls and processes.\nSecurity Engineering & Architecture\nBuild and maintain security tooling, controls, and automation across cloud, application, and CI/CD environments, following established security patterns and best practices.\nIdentify vulnerabilities and configuration risks, contribute to security runbooks and compliance requirements, and develop a growing understanding of CircleCI’s security architecture.\nAI & Security\nIncorporate AI-powered security tools into day-to-day workflows and help evaluate emerging technologies that can improve detection, response, and automation.\nStay current on AI-specific security threats and contribute to responsible approaches for using AI in security operations.\nCross-Team Partnership & Ownership\nPartner with Engineering teams to understand security needs, provide practical guidance, and translate technical risks into clear, actionable recommendations.\nContribute to security roadmap planning, technology evaluations, and team documentation while building strong relationships across Security and Engineering.\nWhat You’ll Bring:\n3+ years of security engineering or security operations experience, or equivalent demonstrated expertise.\nHands-on experience with cloud, application, and CI/CD security, ideally in AWS, GCP, or Azure environments.\nExperience with security incident response and common security tooling, including EDR, CNAPP, SASE, vulnerability scanners, and log analysis.\nAbility to build and maintain security automation and tooling, with experience in languages or technologies such as Go, Python, or Terraform.\nStrong security judgment and problem-solving skills, with the ability to assess risk, make recommendations, and take action when information is incomplete.\nHands-on experience using AI/ML-powered security tools in a production environment, with an understanding of where AI can improve security workflows and where human judgment remains essential.\nBonus Skills (Nice to Have)\nFamiliarity with AI-specific threat categories (prompt injection, model supply chain risks, LLM abuse patterns).\nExperience securing developer platforms, SaaS environments, or CI/CD infrastructure.\nRelevant certifications: CEH, AWS Security Specialty, Security+, or equivalent.\nContributions to team process improvement, security runbook development, or internal knowledge sharing.\nCanada Base Pay Range\n$127,500 — $159,500 CAD\nWe will ensure that individuals with disabilities are provided reasonable accommodation to participate in the job application or interview process, to perform essential job functions, and to receive other benefits and privileges of employment. Please contact us to request accommodation.\nAbout CircleCI\nCircleCI is the world’s largest continuous integration/continuous delivery (CI/CD) platform, and the hub where code moves from idea to delivery. As one of the most-used DevOps tools - processing more than 3 million jobs a day - CircleCI has unique access to data on how the most effective engineering teams work, and the tools to help software companies successfully leverage the power of AI into their commercial applications. Companies like Hinge, HuggingFace, and Samsung use us to improve engineering team productivity, release better products, and get to market faster.\nFounded in 2011 and headquartered in downtown San Francisco with a global, remote workforce, CircleCI is venture-backed by Base10, Greenspring Associates, Eleven Prime, IVP, Sapphire Ventures, Top Tier Capital Partners, Baseline Ventures, Threshold\nVentures, Scale Venture Partners, Owl Rock Capital, Next Equity Partners, Heavybit, and Harrison Metal Capital.\nCircleCI is an Equal Opportunity and Affirmative Action employer. We do not discriminate based upon race, religion, color, national origin, sexual orientation, gender, gender identity, gender expression, transgender status, sexual stereotypes, age, status as a protected veteran, status as an individual with a disability, or other applicable legally protected characteristics. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law.\nTo apply: https://weworkremotely.com/remote-jobs/circleci-security-operations-engineer",
+   "category": "Business Analysis",
+   "location": "Remote",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/circleci-security-operations-engineer",
+   "status": "Awaiting Review",
+   "id": "d62843bb-6290-40de-a778-ab93eb14dd7b",
+   "createdAt": "2026-09-19T07:53:22+00:00",
+   "requiredSkills": "circleci, security, engineer, headquarters, ontario, canada, remote, about, team, plays, critical, protecting",
+   "postedAt": "2026-09-19",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "fcc203d6dcadda2c",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/circleci-security-operations-engineer",
+     "found_at": "2026-09-19T07:53:22+00:00"
+    }
+   ],
+   "matchScore": 54,
+   "scoreParts": {
+    "keyword": 9,
     "experience": 45,
     "projects": 100,
     "preference": 100
@@ -592,7 +529,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/datadog-developer-advocate-service-management",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 54,
@@ -634,7 +571,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/fastly-senior-sre-networks",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 54,
@@ -676,12 +613,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-senior-professional-services-devops-engineer",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 54,
@@ -723,7 +660,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager-sled",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 54,
@@ -765,12 +702,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-application-security-engineer-ii",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/temporal-technologies-senior-application-security-engineer",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 54,
@@ -812,7 +749,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-cloud-architect",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 54,
@@ -854,7 +791,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-evergreen-sales-development-representative",
-     "found_at": "2026-09-18T14:48:31+00:00"
+     "found_at": "2026-09-19T07:53:22+00:00"
     }
    ],
    "matchScore": 53,
@@ -896,7 +833,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/uilm",
-     "found_at": "2026-09-18T14:48:52+00:00"
+     "found_at": "2026-09-19T07:53:40+00:00"
     }
    ],
    "matchScore": 48,
@@ -938,7 +875,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/careers/",
-     "found_at": "2026-09-18T14:48:52+00:00"
+     "found_at": "2026-09-19T07:53:40+00:00"
     }
    ],
    "matchScore": 36,
@@ -980,7 +917,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/manufacturing-engineering",
-     "found_at": "2026-09-18T14:48:52+00:00"
+     "found_at": "2026-09-19T07:53:40+00:00"
     }
    ],
    "matchScore": 36,

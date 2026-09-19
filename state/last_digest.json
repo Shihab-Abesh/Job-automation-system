@@ -20,13 +20,13 @@
    "errors": []
   },
   "rss": {
-   "found": 18,
+   "found": 20,
    "errors": [
     "RemoteOK: empty response"
    ]
   },
   "careers": {
-   "found": 15,
+   "found": 6,
    "errors": []
   },
   "local": {
@@ -35,13 +35,13 @@
   }
  },
  "counts": {
-  "total": 22,
-  "new": 0,
+  "total": 20,
+  "new": 1,
   "expired": 0,
-  "duplicatesFolded": 11,
+  "duplicatesFolded": 6,
   "priorityA": 0,
-  "priorityB": 7,
-  "priorityC": 15
+  "priorityB": 6,
+  "priorityC": 14
  },
  "filters": {
   "min_salary_bdt": 20000,
@@ -50,6 +50,27 @@
   "retention_days": 45,
   "drop_expired": true
  },
- "blockedUrls": [],
- "ranAt": "2026-09-18T14:48:52+00:00"
+ "blockedUrls": [
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+quality+assurance&pg=1",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+quality+assurance&pg=2",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+engineer&pg=1",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+engineer&pg=2",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+tester&pg=1",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+tester&pg=2",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=manual+testing&pg=1",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=manual+testing&pg=2",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+analyst&pg=1",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+analyst&pg=2",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+executive&pg=1",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+executive&pg=2",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+officer&pg=1",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+officer&pg=2",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=information+systems+executive&pg=1",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=information+systems+executive&pg=2",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+officer&pg=1",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+officer&pg=2",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+executive&pg=1",
+  "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+executive&pg=2"
+ ],
+ "ranAt": "2026-09-19T07:53:41+00:00"
 }
