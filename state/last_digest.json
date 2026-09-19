@@ -36,7 +36,7 @@
  },
  "counts": {
   "total": 20,
-  "new": 1,
+  "new": 0,
   "expired": 0,
   "duplicatesFolded": 6,
   "priorityA": 0,
@@ -72,5 +72,5 @@
   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+executive&pg=1",
   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+executive&pg=2"
  ],
- "ranAt": "2026-09-19T07:53:41+00:00"
+ "ranAt": "2026-09-19T14:11:45+00:00"
 }

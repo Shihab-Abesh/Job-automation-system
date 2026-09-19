@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-19T07:53:41+00:00",
+ "generatedAt": "2026-09-19T14:11:45+00:00",
  "meta": {
   "queries": [
    "software quality assurance",
@@ -39,7 +39,7 @@
   },
   "counts": {
    "total": 20,
-   "new": 1,
+   "new": 0,
    "expired": 0,
    "duplicatesFolded": 6,
    "priorityA": 0,
@@ -75,7 +75,7 @@
    "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+executive&pg=1",
    "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+executive&pg=2"
   ],
-  "ranAt": "2026-09-19T07:53:41+00:00"
+  "ranAt": "2026-09-19T14:11:45+00:00"
  },
  "jobs": [
   {
@@ -104,12 +104,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:26+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:27+00:00"
     }
    ],
    "matchScore": 65,
@@ -151,7 +151,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-manager-security-operations-center-emea",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:27+00:00"
     }
    ],
    "matchScore": 64,
@@ -193,7 +193,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:27+00:00"
     }
    ],
    "matchScore": 64,
@@ -235,7 +235,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-bilingual-channel-account-manager-arabic-mea-uk",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:26+00:00"
     }
    ],
    "matchScore": 64,
@@ -277,7 +277,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/platform-sh-billing-systems-architect",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:26+00:00"
     }
    ],
    "matchScore": 64,
@@ -319,7 +319,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/ignition-inc-mac-msp-help-desk-guru-work-from-home",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:27+00:00"
     }
    ],
    "matchScore": 63,
@@ -361,7 +361,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-engineering-manager-notifications",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:27+00:00"
     }
    ],
    "matchScore": 55,
@@ -403,7 +403,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-devops-engineer-3",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:27+00:00"
     }
    ],
    "matchScore": 55,
@@ -445,7 +445,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-critical-situation-manager",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:27+00:00"
     }
    ],
    "matchScore": 54,
@@ -487,7 +487,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-security-operations-engineer",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:26+00:00"
     }
    ],
    "matchScore": 54,
@@ -529,7 +529,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/datadog-developer-advocate-service-management",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:26+00:00"
     }
    ],
    "matchScore": 54,
@@ -571,7 +571,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/fastly-senior-sre-networks",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:27+00:00"
     }
    ],
    "matchScore": 54,
@@ -613,12 +613,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-senior-professional-services-devops-engineer",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:26+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:26+00:00"
     }
    ],
    "matchScore": 54,
@@ -660,7 +660,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager-sled",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:27+00:00"
     }
    ],
    "matchScore": 54,
@@ -702,12 +702,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-application-security-engineer-ii",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:27+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/temporal-technologies-senior-application-security-engineer",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:27+00:00"
     }
    ],
    "matchScore": 54,
@@ -749,7 +749,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-cloud-architect",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:26+00:00"
     }
    ],
    "matchScore": 54,
@@ -791,7 +791,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-evergreen-sales-development-representative",
-     "found_at": "2026-09-19T07:53:22+00:00"
+     "found_at": "2026-09-19T14:11:27+00:00"
     }
    ],
    "matchScore": 53,
@@ -833,7 +833,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/uilm",
-     "found_at": "2026-09-19T07:53:40+00:00"
+     "found_at": "2026-09-19T14:11:45+00:00"
     }
    ],
    "matchScore": 48,
@@ -875,7 +875,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/careers/",
-     "found_at": "2026-09-19T07:53:40+00:00"
+     "found_at": "2026-09-19T14:11:45+00:00"
     }
    ],
    "matchScore": 36,
@@ -917,7 +917,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/manufacturing-engineering",
-     "found_at": "2026-09-19T07:53:40+00:00"
+     "found_at": "2026-09-19T14:11:45+00:00"
     }
    ],
    "matchScore": 36,
