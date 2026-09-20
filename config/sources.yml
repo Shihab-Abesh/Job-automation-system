@@ -9,7 +9,11 @@
 sources:
 
   bdjobs:
-    enabled: true
+    # Off since Bdjobs moved behind Cloudflare bot protection: the old search URL now
+    # redirects to a page that answers automated clients with an empty response, so this
+    # source returned 0 postings while still spending ~4 s per query trying. Turning it
+    # back on is a one-word change if that ever gets fixed; run the probe command below.
+    enabled: false
     pages: 2
     fetch_details: true      # open each posting for the full requirement text
     detail_limit: 25         # per run, keeps the site load reasonable
@@ -35,6 +39,24 @@ sources:
     # queries = keep postings whose title matches one of your search queries
     # all     = keep every posting and let scoring sort them (noisy: it is a general board)
     relevance: queries
+
+  # Any board that publishes schema.org JobPosting data (the markup Google Jobs reads)
+  # can be added here with no new code. If a url contains {query} it is fetched once per
+  # search query; otherwise it is fetched once and filtered against your queries.
+  jsonld:
+    enabled: true
+    relevance: queries
+    sites:
+      - label: "BD Tech Jobs"
+        # Its ?search= box now returns a single result, so the homepage list (about 20
+        # postings, a handful of them fresh) is the reliable thing to read.
+        url: "https://www.bdtechjobs.com/"
+        location: "Dhaka, Bangladesh"
+        # The site keeps very old postings listed (some from 2021) and stamps every one of
+        # them with the same expiry date, so its own dates cannot say whether a job is live.
+        # Age is judged from the posting date instead, and the fake shared deadline is dropped.
+        max_age_days: 45
+        ignore_deadline: true
 
   email_alerts:
     enabled: false           # flip to true once IMAP_USER / IMAP_PASSWORD are set

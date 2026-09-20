@@ -10,7 +10,7 @@ credentials in the repo, and it never applies to anything on your behalf.
 
 ```
   ┌──────────────────────── runs on a schedule, free ─────────────────────────┐
-  │  Bdjobs      job-alert emails      RSS feeds      careers pages   inbox/  │
+  │  Job boards  job-alert emails      RSS feeds      careers pages   inbox/  │
   │      └────────────┴──────────┬─────────┴───────────────┴────────────┘     │
   │                     normalise, geocode, parse pay                         │
   │                              ▼                                            │
@@ -151,10 +151,72 @@ python -m backend.pipeline run
 python -m backend.pipeline stats
 ```
 
-**5. Delete the sample data**
+**5. Ignore `fixtures/`**
 
-`fixtures/sample-jobs.json` exists so the review page has something to show
-before your first real run. Remove it once Bdjobs is returning results.
+`fixtures/sample-jobs.json` is fake sample data (made-up companies and links) that
+only the offline tests read. Live runs do not read it.
+
+---
+
+## Where the jobs come from
+
+Every source is optional and switched on in `config/sources.yml`. All of them go
+through the same polite fetcher (robots.txt checked, one request at a time,
+cached between runs) and then the same dedupe and scoring.
+
+| Source | How it is read | Status |
+|---|---|---|
+| **BDRecruit** (bdrecruit.net) | its public WordPress API: the whole board in two requests | on, about 130 postings |
+| **BD Tech Jobs** (bdtechjobs.com) | schema.org `JobPosting` data on its homepage | on, a handful of fresh postings per run |
+| RSS feeds | any feed you list | on (We Work Remotely; RemoteOK's feed no longer exists) |
+| Company careers pages | the pages you list | on (Brain Station 23, Selise) |
+| Job-alert email | a Gmail label | off until you add credentials |
+| Bdjobs | selector scraping | **off**: it sits behind Cloudflare bot protection and answers automated requests with an empty page |
+
+Your search is not QA-only. The queries in `config/search.yml` cover software and
+CSE roles, MIS and information systems, management trainee (MTO) and MBA-style
+business roles, with QA as one area among several. A posting from a general board
+is kept when every word of one query appears in its title (so `management
+trainee` finds "Management Trainee Officer (MTO)", and `data analyst` also finds
+"Junior Data Analyst"). Set `relevance: all` on a source to keep everything.
+
+### Adding another board
+
+Look for schema.org markup. Open a listing page, view the source, and search for
+`application/ld+json` and `"JobPosting"`. If the page has them, no code is needed:
+add an entry under `jsonld.sites` in `config/sources.yml`.
+
+```yaml
+      - label: "Some Board"
+        url: "https://example.com/jobs?search={query}"   # {query} = one request per search query; omit it to fetch the page once
+        location: "Dhaka, Bangladesh"
+        max_age_days: 45        # skip postings older than this (some boards never remove old ones)
+        ignore_deadline: false  # true if the board stamps every posting with the same expiry date
+```
+
+A posting that has no URL of its own is skipped, because a link that does not lead
+to that job is worse than no job. If the site is WordPress, try
+`/wp-json/wp/v2/job_listing` (see `backend/sources/bdrecruit.py`); check that
+`robots.txt` allows it first.
+
+### What was checked and left out (September 2026)
+
+Twenty-two Bangladeshi sites were tested with the same honest User-Agent this
+project uses, plus about forty employer names against the public Greenhouse, Lever,
+Workable, Recruitee and Ashby APIs (none of them publish there).
+
+- **Blocked:** Bdjobs (Cloudflare bot wall).
+- **Down or unreachable:** chakri.com (HTTP 523), jobscircular.net, allbdjobs.com,
+  jobs.prothomalo.com, recruitingbasket.com (a stub page).
+- **Reachable, but no structured data.** Reading them would mean scraping markup,
+  which is exactly what broke Bdjobs: skill.jobs, shomvob.com, nextjobz.com.bd,
+  job.com.bd, techntalents.com, careerjet.com.bd (an aggregator with its own API terms).
+- **QA-only, and job links cannot be verified:** roadtocareer.net (every
+  `/jobs/<anything>` returns the same page).
+- **Not real job pages:** bdgovtjobs.com, ejobscircular.com, circularbd.com and
+  bengalinformer.com republish "Job Circular 2026" articles that link back to
+  themselves, not to the employer. jobsbd.works has no job API, onlinejobbd.com's feed
+  is seven weeks stale, and bdjobslive.com is not Bdjobs.
 
 ---
 
@@ -177,11 +239,7 @@ allowed, and takes five minutes to set up:
 
 The pipeline reads only that label, pulls the job cards out of the mail, and
 they flow through the same dedupe and scoring as everything else. A LinkedIn
-posting and the Bdjobs version of the same job merge into one row.
-
-Bdjobs is the one board this scrapes directly, politely: robots.txt respected,
-one request every four seconds, cached and revalidated between runs so a
-re-run costs the site almost nothing.
+posting and the BDRecruit version of the same job merge into one row.
 
 ---
 
@@ -275,8 +333,11 @@ click at the end is not.
 
 ## When a scraper breaks
 
-It will. Job boards redesign. Bdjobs selectors live in `config/sources.yml`,
-not in Python, and there is a command that tells you what to put there:
+It will. Job boards redesign. That is why BDRecruit and the JSON-LD boards are
+read from structured data rather than markup: they have nothing to break. Bdjobs
+is the one that does, and it is switched off (see above). Its selectors live in
+`config/sources.yml`, not in Python, and if it is ever worth turning back on there
+is a command that tells you what to put there:
 
 ```bash
 python -m backend.pipeline probe --source bdjobs --query "quality assurance"
@@ -297,7 +358,7 @@ feed keeps flowing while you fix the selectors.
 | Path | What it does |
 |---|---|
 | `backend/pipeline.py` | orchestration and CLI |
-| `backend/sources/` | one file per source, all optional |
+| `backend/sources/` | one file per source, all optional (`bdrecruit.py`, `jsonld_jobs.py`, `rss_feed.py`, ...) |
 | `backend/normalize.py` | company and title cleanup, BDT salary parsing, category inference |
 | `backend/geo.py` | Dhaka area lookup and distance, offline, no API key |
 | `backend/dedupe.py` | fingerprint, URL and near-match merging |
@@ -306,7 +367,7 @@ feed keeps flowing while you fix the selectors.
 | `backend/notify.py` | SMTP digest and webhook |
 | `web/` | approval queue and the sync shim for the dashboard |
 | `tools/` | form-filling helpers |
-| `tests/` | 27 tests, run with `pytest -q` |
+| `tests/` | 83 tests, run with `pytest -q` |
 
 ---
 

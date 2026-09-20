@@ -21,13 +21,15 @@ STATUSES = [
 
 # Category vocabulary must stay identical to Preferences in index.html.
 CATEGORIES = [
-    "Software Quality Assurance",
+    "Software Development",
     "Information Technology",
     "Information Systems",
     "MIS",
+    "Management & Business",
     "Business Analysis",
-    "Application Support",
     "Data & Reporting",
+    "Application Support",
+    "Software Quality Assurance",
 ]
 
 

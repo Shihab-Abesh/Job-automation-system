@@ -61,6 +61,14 @@ def test_company_falls_back_to_the_sites_own_field_then_the_link():
     ("Sr. Executive, MIS", ["MIS executive"], True),
     ("Territory Manager, Sales", ["QA engineer", "IT officer", "MIS executive"], False),
     ("Audit Officer", ["IT officer"], False),          # "it" must be a word, not a substring of "audit"
+    # management-trainee style roles: "trainee" must survive, or "management trainee" == "management"
+    ("Management Trainee (Marketing)", ["management trainee"], True),
+    ("Management Trainee Officer (MTO)", ["management trainee officer"], True),
+    ("MTO - Batch 2026", ["management trainee officer"], True),
+    ("Trainee Officer, Credit", ["trainee officer"], True),
+    ("Project Management Executive", ["management trainee"], False),
+    ("Data Operations Analyst", ["junior data analyst"], True),   # seniority-stripped fallback
+    ("Business Development Executive", ["business analyst"], False),
 ])
 def test_relevance_uses_the_titles_not_the_body(title, queries, expected):
     assert is_relevant(title, queries) is expected

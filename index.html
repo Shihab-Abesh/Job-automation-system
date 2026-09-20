@@ -77,12 +77,12 @@ const DEFAULT_PROFILE={
     "Protected released features from breakage by running regression testing on core pages and forms after each fix cycle.",
     "Turned client needs into testable checks by taking part in requirement meetings, Scrum meetings and project meetings with developers, designers and the project manager."
    ],
-   tags:["SQA","QA","IT","Information Systems","Application Support"]
+   tags:["Software Quality Assurance","Information Technology","Information Systems","Application Support"]
  }],
  projects:[
-  {name:"Shipping Port Management System",subtitle:"Web Application (HTML, CSS, PHP, JavaScript, MySQL)",bullets:["Delivered a dynamic web application with full create, read, update and delete functionality for ship, terminal and shipment records.","Integrated a MySQL database through phpMyAdmin and implemented form validation and database connectivity in PHP."],skills:["HTML","CSS","PHP","JavaScript","MySQL","phpMyAdmin","Form Validation"],categories:["IT","Information Systems","Application Support"]},
-  {name:"Shipping Port Management System",subtitle:"Software Engineering Project",bullets:["Specified a port management system covering ship registration, terminal operations and shipment tracking, producing system requirements, UML diagrams, work breakdown structure, COCOMO cost estimation and risk analysis.","Validated the build against requirements by designing and running functional test cases at system level."],skills:["System Analysis","Requirements Analysis","UML","WBS","Risk Analysis","Functional Testing"],categories:["Information Systems","MIS","Business Analysis","SQA"]},
-  {name:"University Payroll Management System",subtitle:"Oracle Database Project",bullets:["Built a normalized relational database in Oracle from an ER diagram, enforcing data integrity through constraints and triggers.","Improved query performance by writing and tuning complex SQL with joins, subqueries, stored procedures and PL/SQL blocks."],skills:["Oracle","SQL","PL/SQL","Database Design","ER Diagram","Normalization"],categories:["Information Systems","MIS","Data & Reporting","IT"]}
+  {name:"Shipping Port Management System",subtitle:"Web Application (HTML, CSS, PHP, JavaScript, MySQL)",bullets:["Delivered a dynamic web application with full create, read, update and delete functionality for ship, terminal and shipment records.","Integrated a MySQL database through phpMyAdmin and implemented form validation and database connectivity in PHP."],skills:["HTML","CSS","PHP","JavaScript","MySQL","phpMyAdmin","Form Validation"],categories:["Information Technology","Software Development","Information Systems","Application Support"]},
+  {name:"Shipping Port Management System",subtitle:"Software Engineering Project",bullets:["Specified a port management system covering ship registration, terminal operations and shipment tracking, producing system requirements, UML diagrams, work breakdown structure, COCOMO cost estimation and risk analysis.","Validated the build against requirements by designing and running functional test cases at system level."],skills:["System Analysis","Requirements Analysis","UML","WBS","Risk Analysis","Functional Testing"],categories:["Information Systems","MIS","Business Analysis","Management & Business","Software Quality Assurance"]},
+  {name:"University Payroll Management System",subtitle:"Oracle Database Project",bullets:["Built a normalized relational database in Oracle from an ER diagram, enforcing data integrity through constraints and triggers.","Improved query performance by writing and tuning complex SQL with joins, subqueries, stored procedures and PL/SQL blocks."],skills:["Oracle","SQL","PL/SQL","Database Design","ER Diagram","Normalization"],categories:["Information Systems","MIS","Data & Reporting","Information Technology"]}
  ],
  skills:[
   {category:"Software Testing",items:["Manual Testing","Test Case Design","Test Execution","Functional Testing","UI and Design Verification","Form Validation","Responsive Testing","Cross-Browser Testing","Regression Testing","Smoke Testing","Defect Reporting","Bug Life Cycle","SDLC","STLC","Agile","Scrum"]},
@@ -94,11 +94,12 @@ const DEFAULT_PROFILE={
  ],
  references:[],
  preferences:{
-  categories:["Software Quality Assurance","Information Technology","Information Systems","MIS","Business Analysis","Application Support","Data & Reporting"],
-  titles:["Software QA Engineer","Junior SQA Engineer","QA Analyst","Software Tester","MIS Executive","MIS Analyst","Information Systems Executive","Systems Analyst","IT Executive","IT Officer","Application Support Engineer","Junior Business Analyst","Business Systems Analyst","Junior Data Analyst","Reporting Analyst"],
+  categories:["Software Development","Information Technology","Information Systems","MIS","Management & Business","Business Analysis","Data & Reporting","Application Support","Software Quality Assurance"],
+  titles:["Software Engineer","Junior Software Engineer","Web Developer","PHP Developer","System Analyst","Systems Analyst","IT Executive","IT Officer","MIS Executive","MIS Officer","MIS Analyst","Information Systems Executive","Management Trainee Officer","Management Trainee","Trainee Officer","Graduate Trainee","Business Analyst","Business Systems Analyst","Business Development Executive","Marketing Executive","Operations Executive","Project Coordinator","Data Analyst","Reporting Analyst","Application Support Engineer","QA Engineer","Software Tester"],
   locations:["Dhaka, Bangladesh","Hybrid - Dhaka","Remote"],
-  excluded:["Senior Software Developer","Backend Developer","Full Stack Developer"],
-  minimumMatch:60
+  excluded:["Senior","Lead","Head of","Principal","Director","Manager","Architect"],
+  minimumMatch:60,
+  version:2
  }
 };
 
@@ -129,7 +130,22 @@ function migrateProfile(raw){
   p.skills=[];
  }
  p.references=raw.references||[];
- p.preferences={...DEFAULT_PROFILE.preferences,...(raw.preferences||{})};
+ const saved=raw.preferences||{};
+ p.preferences={...DEFAULT_PROFILE.preferences,...saved};
+ if((saved.version||1)<2){
+  // Version 1 only targeted QA/MIS roles. Widen it once to CSE, management-trainee and business
+  // roles, keeping everything the user already chose.
+  const union=(a,b)=>[...a,...b.filter(x=>!a.some(y=>String(y).toLowerCase()===x.toLowerCase()))];
+  const oldDefaultExcluded=["Senior Software Developer","Backend Developer","Full Stack Developer"];
+  const excludedUntouched=Array.isArray(saved.excluded)&&saved.excluded.length===oldDefaultExcluded.length&&oldDefaultExcluded.every(x=>saved.excluded.includes(x));
+  p.preferences={
+   ...p.preferences,
+   categories:union(p.preferences.categories,DEFAULT_PROFILE.preferences.categories),
+   titles:union(p.preferences.titles,DEFAULT_PROFILE.preferences.titles),
+   excluded:excludedUntouched||!saved.excluded?DEFAULT_PROFILE.preferences.excluded:p.preferences.excluded,
+   version:2
+  };
+ }
  return p;
 }
 
@@ -161,13 +177,15 @@ function analyzeJob(job,p){
  return {score,skillPct,matched:[...new Set(matched)].slice(0,15),missing:[...new Set(missing)],expScore,projectScore,prefScore}
 }
 const ROLE_STRATEGIES={
-"Software Quality Assurance":{label:"SQA / QA Resume",headline:"Software Quality Assurance | Manual Testing | Web Validation",keywords:["manual testing","test case","test execution","regression","functional testing","defect","quality assurance","bug","test plan","uat","sqa","tester","qa engineer","smoke testing","cross-browser","cross browser"]},
+"Software Development":{label:"Software Development Resume",headline:"Software Development | PHP | JavaScript | MySQL",keywords:["software engineer","software developer","software development","web developer","php developer","php","laravel","full stack","frontend","front end","backend","back end","programmer","application developer","java developer","python developer","node.js","react developer","android developer","flutter","asp.net"]},
 "Information Technology":{label:"IT Resume",headline:"Information Technology | Application Support | Web & Database",keywords:["it support","help desk","helpdesk","hosting","dns","ssl","network","hardware","troubleshoot","technical support","it officer","system admin","desktop support","it executive"]},
-"Information Systems":{label:"Information Systems Resume",headline:"Information Systems | Systems Analysis | Database Management",keywords:["information systems","systems analysis","system analyst","database design","requirements analysis","uml","er diagram","normalization"]},
+"Information Systems":{label:"Information Systems Resume",headline:"Information Systems | Systems Analysis | Database Management",keywords:["information systems","systems analysis","system analyst","systems analyst","database design","requirements analysis","uml","er diagram","normalization"]},
 "MIS":{label:"MIS Resume",headline:"Management Information Systems | SQL | Reporting | Data",keywords:["mis","management information system","mis executive","mis officer","daily report","monthly report","data entry","excel report"]},
+"Management & Business":{label:"Management Trainee / Business Resume",headline:"Management Trainee | Business & Operations | Analytical Problem Solving",keywords:["management trainee","trainee officer","mto","mba","business development","marketing executive","operations executive","project coordinator","sales executive","relationship officer","supply chain","human resource","graduate trainee"]},
 "Business Analysis":{label:"Business Analyst Resume",headline:"Business Analysis | Requirements | System Analysis | SQL",keywords:["business analyst","business analysis","requirements gathering","stakeholder","process improvement","bpmn","work breakdown","wbs"]},
+"Data & Reporting":{label:"Data / Reporting Resume",headline:"Data & Reporting | SQL | Oracle | Database | Analytics",keywords:["data analyst","data analytics","reporting analyst","dashboard","business intelligence","data management","analytics"]},
 "Application Support":{label:"Application Support Resume",headline:"Application Support | Web Applications | Database | Validation",keywords:["application support","production support","incident","ticket","l1 support","l2 support","support engineer"]},
-"Data & Reporting":{label:"Data / Reporting Resume",headline:"Data & Reporting | SQL | Oracle | Database | Analytics",keywords:["data analyst","data analytics","reporting analyst","dashboard","business intelligence","data management","analytics"]}
+"Software Quality Assurance":{label:"SQA / QA Resume",headline:"Software Quality Assurance | Manual Testing | Web Validation",keywords:["manual testing","test case","test execution","regression","functional testing","defect","quality assurance","bug","test plan","uat","sqa","tester","qa engineer","smoke testing","cross-browser","cross browser"]}
 };
 function summaryFor(strategy){const m={
 "Software Quality Assurance":"Computer Science and Engineering graduate with hands-on Software Quality Assurance internship experience in manual, functional and regression testing of web applications. Experienced in UI verification, form validation, responsive and cross-browser testing, defect documentation, fix verification, and collaboration with development and project teams.",
@@ -176,15 +194,24 @@ function summaryFor(strategy){const m={
 "MIS":"Computer Science and Engineering graduate with a foundation in management information systems, SQL, relational databases, data management, system analysis, and analytical problem solving.",
 "Business Analysis":"Computer Science and Engineering graduate with academic experience in requirements analysis, UML, work breakdown structures, risk analysis, system validation, and database-backed application projects.",
 "Application Support":"Computer Science and Engineering graduate with practical experience validating web applications, documenting defects, verifying fixes, working with databases, and exposure to hosting, DNS, SSL, and website migration.",
+"Software Development":"Computer Science and Engineering graduate with hands-on web development experience in PHP, JavaScript, HTML, CSS and MySQL, including a database-backed CRUD application, plus relational database design in Oracle SQL and PL/SQL. Brings practical exposure to the software delivery cycle from an internship on a live website rebuild, working in Agile and Scrum teams alongside developers, designers and project managers.",
+"Management & Business":"Computer Science and Engineering graduate whose software-company internship included client requirement meetings, Scrum and project meetings with developers, designers and project managers, and structured defect and requirement documentation. Academic projects covered work breakdown structures, COCOMO cost estimation and risk analysis. Combines analytical and technical skills with clear written communication, and is seeking a management trainee or business role.",
 "Data & Reporting":"Computer Science and Engineering graduate with practical database experience in Oracle and MySQL, SQL queries, database design, data integrity, data management, and analytical problem solving."};return m[strategy]||m["Information Systems"]}
 function scoreBullet(b,job){return terms([job.title,job.description].join(" ")).filter(t=>normalize(b).includes(t)).length}
 function projectScore(x,strategy,job){return (x.categories.includes(strategy)?20:0)+terms([job.title,job.description].join(" ")).filter(t=>normalize([x.name,x.subtitle||"",...(x.skills||[]),...x.bullets].join(" ")).includes(t)).length}
+function hasPhrase(text,phrase){
+ const p=normalize(phrase).trim();
+ if(!p)return false;
+ const esc=p.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+ // Short keys ("mis", "mba") must be whole words; longer ones only need to start a word so plurals match.
+ return new RegExp("(^|[^a-z0-9])"+esc+(p.length<=4?"($|[^a-z0-9])":"")).test(text);
+}
 function bestFitStrategy(job){
  const text=normalize([job.title,job.description].join(" "));
  const fallback=job.category&&ROLE_STRATEGIES[job.category]?job.category:"Information Systems";
  let best=fallback,bestScore=0;
  for(const [key,cfg] of Object.entries(ROLE_STRATEGIES)){
-  const s=(cfg.keywords||[]).filter(k=>text.includes(normalize(k))).length;
+  const s=(cfg.keywords||[]).filter(k=>hasPhrase(text,k)).length;
   if(s>bestScore){bestScore=s;best=key;}
  }
  return best;
@@ -208,7 +235,7 @@ function App(){
  const [selected,setSelected]=useState(null);
  const [editing,setEditing]=useState(false);
  const [toast,setToast]=useState("");
- const [jobForm,setJobForm]=useState({title:"",company:"",category:"Software Quality Assurance",location:"Dhaka, Bangladesh",source:"",url:"",description:""});
+ const [jobForm,setJobForm]=useState({title:"",company:"",category:"Information Technology",location:"Dhaka, Bangladesh",source:"",url:"",description:""});
  const [search,setSearch]=useState("");
  const [profileText,setProfileText]=useState("");
 
@@ -266,7 +293,7 @@ function App(){
   e.preventDefault();
   if(!jobForm.title||!jobForm.company||!jobForm.description)return alert("Please provide title, company, and full job description.");
   const j={...jobForm,id:crypto.randomUUID(),status:"Awaiting Review",createdAt:new Date().toISOString()};
-  setJobs([j,...jobs]);setJobForm({title:"",company:"",category:"Software Quality Assurance",location:"Dhaka, Bangladesh",source:"",url:"",description:""});setTab("jobs");notify("Job added and analyzed.");
+  setJobs([j,...jobs]);setJobForm({title:"",company:"",category:"Information Technology",location:"Dhaka, Bangladesh",source:"",url:"",description:""});setTab("jobs");notify("Job added and analyzed.");
  };
  const exportProfile=()=>download("careerpilot-profile.json",JSON.stringify(profile,null,2),"application/json");
  const exportJobs=()=>{const rows=[["Title","Company","Category","Location","Match","Status","Source","URL"],...jobs.map(j=>{const a=analyzeJob(j,profile);return[j.title,j.company,j.category,j.location,a.score,j.status,j.source,j.url]})];download("careerpilot-jobs.csv",rows.map(r=>r.map(csvEscape).join(",")).join("\n"),"text/csv")};
@@ -499,7 +526,7 @@ function ReferencesEditor({p,setProfile}){
 function Preferences({p,setProfile,notify}){
  const [newTitle,setNewTitle]=useState("");
  const toggle=(arr,v)=>arr.includes(v)?arr.filter(x=>x!==v):[...arr,v];
- const categories=["Software Quality Assurance","Information Technology","Information Systems","MIS","Business Analysis","Application Support","Data & Reporting"];
+ const categories=["Software Development","Information Technology","Information Systems","MIS","Management & Business","Business Analysis","Data & Reporting","Application Support","Software Quality Assurance"];
  return <section className="space-y-5"><div><h2 className="text-xl font-bold">Career Preferences</h2><p className="text-sm text-slate-400">Turn career areas on or off. Your job search and relevance analysis follow these preferences.</p></div>
  <Block title="Career Areas"><div className="grid md:grid-cols-2 gap-2">{categories.map(c=><label key={c} className="bg-slate-900 border border-slate-800 p-3 rounded cursor-pointer text-sm"><input type="checkbox" checked={p.preferences.categories.includes(c)} onChange={()=>setProfile({...p,preferences:{...p.preferences,categories:toggle(p.preferences.categories,c)}})} className="mr-2"/>{c}</label>)}</div></Block>
  <Block title="Target Job Titles"><div className="flex flex-wrap gap-2">{p.preferences.titles.map(t=><span key={t} className="bg-cyan-950 border border-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-xs">{t}<button className="ml-2 text-red-300" onClick={()=>setProfile({...p,preferences:{...p.preferences,titles:p.preferences.titles.filter(x=>x!==t)}})}>×</button></span>)}</div><div className="flex gap-2 mt-4"><input value={newTitle} onChange={e=>setNewTitle(e.target.value)} placeholder="Add job title" className="bg-slate-950 border border-slate-700 rounded p-2 flex-1 text-sm"/><button onClick={()=>{if(newTitle.trim()){setProfile({...p,preferences:{...p.preferences,titles:[...p.preferences.titles,newTitle.trim()]}});setNewTitle("");notify("Job title added.")}}} className="bg-cyan-600 px-3 rounded text-sm">Add</button></div></Block>

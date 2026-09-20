@@ -1,7 +1,7 @@
 # What the pipeline looks for and what it refuses to pass on to you.
 # Secrets never live here. They come from environment variables / GitHub Secrets.
 
-dashboard_url: "https://Shihab-Abesh.github.io/careerpilot-bd/"
+dashboard_url: "https://shihab-abesh.github.io/Job-automation-system/"
 
 paths:
   profile: config/profile.json
@@ -11,20 +11,39 @@ paths:
   http_cache: .cache/http
 
 # Leave empty to use preferences.titles from your master profile instead.
+# A posting is kept when every word of one of these appears in its title, so keep
+# them to two or more words ("data analyst", not "analyst"). Seniority prefixes
+# such as "junior" are optional: "data analyst" also finds "Junior Data Analyst".
 queries:
-  - "software quality assurance"
-  - "QA engineer"
-  - "software tester"
-  - "manual testing"
-  - "QA analyst"
+  # CSE / software
+  - "software engineer"
+  - "junior software engineer"
+  - "web developer"
+  - "PHP developer"
+  - "system analyst"
+  - "systems analyst"
+  - "IT officer"
+  - "IT executive"
+  - "data analyst"
+  # MIS / information systems
   - "MIS executive"
   - "MIS officer"
   - "information systems executive"
-  - "IT officer"
-  - "IT executive"
+  # Management trainee (MTO) and MBA-style business roles
+  - "management trainee officer"
+  - "management trainee"
+  - "trainee officer"
+  - "graduate trainee"
+  - "business analyst"
+  - "business development executive"
+  - "marketing executive"
+  - "operations executive"
+  - "project coordinator"
+  # QA and support, still covered but no longer the focus
+  - "QA engineer"
+  - "QA analyst"
+  - "software tester"
   - "application support engineer"
-  - "junior business analyst"
-  - "junior data analyst"
 
 filters:
   min_salary_bdt: 20000     # your floor

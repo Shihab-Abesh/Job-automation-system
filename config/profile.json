@@ -22,9 +22,8 @@
     "Supported website migration verification and gained exposure to hosting, DNS configuration, domain registration, and website setup."
    ],
    "tags": [
-    "SQA",
-    "QA",
-    "IT",
+    "Software Quality Assurance",
+    "Information Technology",
     "Information Systems",
     "Application Support"
    ]
@@ -50,7 +49,8 @@
     "Information Systems",
     "MIS",
     "Business Analysis",
-    "SQA"
+    "Management & Business",
+    "Software Quality Assurance"
    ]
   },
   {
@@ -72,7 +72,7 @@
     "Information Systems",
     "MIS",
     "Data & Reporting",
-    "IT"
+    "Information Technology"
    ]
   },
   {
@@ -92,7 +92,8 @@
     "Form Validation"
    ],
    "categories": [
-    "IT",
+    "Information Technology",
+    "Software Development",
     "Information Systems",
     "Application Support"
    ]
@@ -144,30 +145,44 @@
  },
  "preferences": {
   "categories": [
-   "Software Quality Assurance",
+   "Software Development",
    "Information Technology",
    "Information Systems",
    "MIS",
+   "Management & Business",
    "Business Analysis",
+   "Data & Reporting",
    "Application Support",
-   "Data & Reporting"
+   "Software Quality Assurance"
   ],
   "titles": [
-   "Software QA Engineer",
-   "Junior SQA Engineer",
-   "QA Analyst",
-   "Software Tester",
-   "MIS Executive",
-   "MIS Analyst",
-   "Information Systems Executive",
+   "Software Engineer",
+   "Junior Software Engineer",
+   "Web Developer",
+   "PHP Developer",
+   "System Analyst",
    "Systems Analyst",
    "IT Executive",
    "IT Officer",
-   "Application Support Engineer",
-   "Junior Business Analyst",
+   "MIS Executive",
+   "MIS Officer",
+   "MIS Analyst",
+   "Information Systems Executive",
+   "Management Trainee Officer",
+   "Management Trainee",
+   "Trainee Officer",
+   "Graduate Trainee",
+   "Business Analyst",
    "Business Systems Analyst",
-   "Junior Data Analyst",
-   "Reporting Analyst"
+   "Business Development Executive",
+   "Marketing Executive",
+   "Operations Executive",
+   "Project Coordinator",
+   "Data Analyst",
+   "Reporting Analyst",
+   "Application Support Engineer",
+   "QA Engineer",
+   "Software Tester"
   ],
   "locations": [
    "Dhaka, Bangladesh",
@@ -175,9 +190,13 @@
    "Remote"
   ],
   "excluded": [
-   "Senior Software Developer",
-   "Backend Developer",
-   "Full Stack Developer"
+   "Senior",
+   "Lead",
+   "Head of",
+   "Principal",
+   "Director",
+   "Manager",
+   "Architect"
   ],
   "minimumMatch": 60
  }

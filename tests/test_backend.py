@@ -59,6 +59,22 @@ def test_category_inference():
         == "Application Support"
 
 
+@pytest.mark.parametrize("title,body,expected", [
+    ("Management Trainee Officer (MTO)", "", "Management & Business"),
+    ("Business Development Executive", "", "Management & Business"),
+    ("Junior Software Engineer", "PHP and Laravel", "Software Development"),
+    ("Web Developer", "", "Software Development"),
+])
+def test_categories_are_not_only_qa_and_mis(title, body, expected):
+    assert infer_category(title, body) == expected
+
+
+def test_short_category_keys_need_whole_words():
+    """The bare substring "mis" used to fire on "commission" and "mission"."""
+    body = "Join our mission. Commission-based bonus. Promise of growth."
+    assert infer_category("Executive", body) != "MIS"
+
+
 def test_strip_html_drops_scripts():
     out = strip_html("<div>Keep<script>alert(1)</script><br>this</div>")
     assert "alert" not in out and "Keep" in out and "this" in out

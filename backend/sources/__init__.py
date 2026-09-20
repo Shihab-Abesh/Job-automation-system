@@ -13,6 +13,6 @@ def register(cls: Type[Source]) -> Type[Source]:
     return cls
 
 
-from . import bdjobs, bdrecruit, careers_page, email_alerts, local, rss_feed  # noqa: E402,F401
+from . import bdjobs, bdrecruit, careers_page, email_alerts, jsonld_jobs, local, rss_feed  # noqa: E402,F401
 
 __all__ = ["REGISTRY", "register", "Source"]

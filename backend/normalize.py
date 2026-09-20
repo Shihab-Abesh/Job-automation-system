@@ -45,6 +45,7 @@ ABBREVIATIONS = {
     "qa": "quality assurance",
     "qc": "quality control",
     "mis": "management information systems",
+    "mto": "management trainee officer",
     "erp": "enterprise resource planning",
     "dba": "database administrator",
     "ba": "business analyst",
@@ -175,9 +176,19 @@ def parse_salary(text: str | None) -> tuple[int | None, int | None, str]:
 
 
 # --------------------------------------------------------------------------
-# Category inference -> one of the seven buckets the UI already knows
+# Category inference -> one of the buckets the UI already knows (models.CATEGORIES)
 # --------------------------------------------------------------------------
 _CATEGORY_RULES: list[tuple[str, tuple[str, ...], int]] = [
+    ("Software Development",
+     ("software engineer", "software developer", "software development", "web developer",
+      "php developer", "full stack", "frontend", "front end", "backend", "back end",
+      "application developer", "programmer", "java developer", "python developer", "laravel",
+      "node.js", ".net", "react developer", "android developer", "flutter",
+      "mobile app developer"), 3),
+    ("Management & Business",
+     ("management trainee", "trainee officer", "business development", "marketing executive",
+      "operations executive", "project coordinator", "sales executive", "relationship officer",
+      "relationship manager", "supply chain", "human resource", "hr executive", "mba"), 2),
     ("Software Quality Assurance",
      ("quality assurance", "sqa", "software tester", "test engineer", "qa engineer",
       "qa analyst", "test case", "manual testing", "automation testing", "selenium",
@@ -203,6 +214,19 @@ _CATEGORY_RULES: list[tuple[str, tuple[str, ...], int]] = [
 ]
 
 
+def _key_in_title(key: str, hay_title: str) -> bool:
+    if f" {key} " in hay_title:
+        return True
+    # Longer keys also match a leading stem ("management information system" -> "...systems").
+    return len(key) > 4 and hay_title.strip().startswith(key)
+
+
+def _key_in_body(key: str, hay_body: str) -> bool:
+    # A bare substring test made "mis" fire on "commission" and "mission". Short keys must
+    # be whole words; longer ones must start a word so plurals still match.
+    return f" {key} " in hay_body if len(key) <= 4 else f" {key}" in hay_body
+
+
 def infer_category(title: str, description: str = "") -> str:
     hay_title = " " + normalize_title(title) + " "
     hay_body = " " + slug(description)[:4000] + " "
@@ -210,9 +234,9 @@ def infer_category(title: str, description: str = "") -> str:
     for cat, keys, weight in _CATEGORY_RULES:
         score = 0
         for k in keys:
-            if f" {k} " in hay_title or hay_title.strip().startswith(k):
+            if _key_in_title(k, hay_title):
                 score += 3 * weight
-            elif k in hay_body:
+            elif _key_in_body(k, hay_body):
                 score += weight
         if score > best_score:
             best, best_score = cat, score
