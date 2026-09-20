@@ -295,7 +295,7 @@ function App(){
    :sortBy==="priority"?((PRI_RANK[x.priority]??3)-(PRI_RANK[y.priority]??3))||(scoreOf(y)-scoreOf(x))
    :(scoreOf(y)-scoreOf(x)));
  const strongBar=(profile.preferences&&profile.preferences.strongMatch)||75;
- const nav=[["dashboard","Dashboard"],["profile","Master Profile"],["preferences","Career Preferences"],["add","Add Job"],["jobs","Job Analysis"],["tracker","Tracker"]];
+ const nav=[["dashboard","Dashboard"],["profile","Master Profile"],["preferences","Career Preferences"],["add","Add Job"],["jobs","Job Analysis"],["manual","Manual Sites"],["tracker","Tracker"]];
  return <div>
   <header className="no-print sticky top-0 z-30 border-b border-slate-800 bg-slate-950/95 backdrop-blur">
    <div className="max-w-7xl mx-auto px-4 py-3 flex flex-wrap gap-3 justify-between items-center">
@@ -349,6 +349,7 @@ function App(){
 
    {tab==="resume"&&selected&&<ResumePanel key={selected.id} job={selected} p={profile} updateJob={updateJob} notify={notify}/>}
    {tab==="resume"&&!selected&&<div className="text-slate-400">Select a job from Job Analysis first.</div>}
+   {tab==="manual"&&<ManualSites p={profile}/>}
    {tab==="tracker"&&<Tracker jobs={jobs} setJobs={setJobs}/>}
   </main>
   <footer className="no-print text-center text-xs text-slate-500 p-5 border-t border-slate-900">CareerPilot BD · Static GitHub Pages Edition · Your data remains in this browser unless you export it.</footer>
@@ -724,6 +725,63 @@ function ResumePanel({job,p,updateJob,notify}){
 function ResumeSection({title,children}){return <section className="mb-4"><h2 className="text-[10.5px] tracking-widest font-bold border-b border-black pb-1 mb-2">{title}</h2>{children}</section>}
 function CheckRow({ok,text}){return <p className="text-xs flex gap-2 items-start"><span className={ok?'text-emerald-400':'text-amber-400'}>{ok?'✓':'!'}</span>{text}</p>}
 
+const MANUAL_KEY="careerpilot_bd_v2_manual_checked";
+const localToday=()=>new Date().toLocaleDateString("en-CA");
+const daysSince=d=>Math.round((new Date(localToday())-new Date(d))/86400000);
+const isWebUrl=u=>typeof u==="string"&&(u.startsWith("https://")||u.startsWith("http://"));
+// Boards the pipeline cannot read (bot protection, no terms permission, no structured data).
+// The list lives in config/manual_sites.json so it can be edited without touching this file.
+function ManualSites({p}){
+ const titles=(p.preferences&&p.preferences.titles)||[];
+ const [data,setData]=useState(null);
+ const [failed,setFailed]=useState(false);
+ const [title,setTitle]=useState(titles[0]||"");
+ const [checked,setChecked]=useState(()=>{try{return JSON.parse(localStorage.getItem(MANUAL_KEY)||"{}")}catch{return {}}});
+ useEffect(()=>{
+  fetch("config/manual_sites.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(setData).catch(()=>setFailed(true));
+ },[]);
+ useEffect(()=>{try{localStorage.setItem(MANUAL_KEY,JSON.stringify(checked))}catch{}},[checked]);
+ const today=localToday();
+ const sites=((data&&data.sites)||[]).filter(s=>isWebUrl(s.url));
+ const automatic=((data&&data.automatic)||[]).filter(s=>isWebUrl(s.url));
+ const groups=[...new Set(sites.map(s=>s.group||"Other"))];
+ const doneToday=sites.filter(s=>checked[s.id]===today).length;
+ const toggle=id=>setChecked(c=>{const n={...c};if(n[id]===today)delete n[id];else n[id]=today;return n});
+ const searchLink=s=>isWebUrl(s.searchUrl)&&title?s.searchUrl.split("{query}").join(encodeURIComponent(title)):null;
+ return <section className="space-y-6">
+  <div><h2 className="text-xl font-bold">Manual Sites</h2><p className="text-sm text-slate-400 mt-1">Job sites the system cannot read for you, each with the honest reason. Open them yourself, then tick them off. Your ticks stay in this browser.</p></div>
+  {failed&&<div className="bg-amber-950/40 border border-amber-800 rounded-xl p-4 text-sm text-amber-200">Could not load config/manual_sites.json. Open the dashboard from its GitHub Pages address (or with start.bat) rather than double-clicking the file.</div>}
+  {!data&&!failed&&<div className="text-slate-400 text-sm">Loading the list...</div>}
+  {data&&<>
+   <div className="no-print flex flex-wrap items-center gap-3 text-xs bg-slate-900 border border-slate-800 rounded-xl p-4">
+    <label className="flex items-center gap-2 text-slate-300">Search these sites for
+     <select aria-label="Target title" value={title} onChange={e=>setTitle(e.target.value)} className="bg-slate-950 border border-slate-700 rounded px-2 py-2">{titles.map(t=><option key={t} value={t}>{t}</option>)}</select>
+    </label>
+    <span className="text-slate-500" data-testid="manual-progress">{doneToday} of {sites.length} checked today</span>
+   </div>
+   {groups.map(g=><div key={g} data-testid="manual-group">
+    <h3 className="font-semibold text-cyan-300 mb-2">{g}</h3>
+    <div className="grid lg:grid-cols-2 gap-3">{sites.filter(s=>(s.group||"Other")===g).map(s=>{
+     const last=checked[s.id];const isToday=last===today;const sl=searchLink(s);
+     return <div key={s.id} data-testid="manual-site" className={"border rounded-xl p-4 "+(isToday?"bg-emerald-950/30 border-emerald-900":"bg-slate-900 border-slate-800")}>
+      <div className="flex justify-between gap-3"><b>{s.name}</b><span className={"text-[11px] whitespace-nowrap "+(isToday?"text-emerald-300":"text-slate-500")}>{isToday?"Checked today":last?`Last checked ${last} (${daysSince(last)} days ago)`:"Never checked"}</span></div>
+      {s.note&&<p className="text-sm text-slate-300 mt-1">{s.note}</p>}
+      {s.why&&<p className="text-xs text-slate-500 mt-2"><span className="text-slate-400">Why not automatic:</span> {s.why}</p>}
+      <div className="flex flex-wrap gap-2 mt-3 text-xs">
+       {sl&&<a href={sl} target="_blank" rel="noopener noreferrer" className="bg-cyan-600 px-3 py-2 rounded">Search "{title}"</a>}
+       <a href={s.url} target="_blank" rel="noopener noreferrer" className="bg-slate-800 px-3 py-2 rounded text-cyan-300">Open site</a>
+       <button onClick={()=>toggle(s.id)} className="bg-slate-800 px-3 py-2 rounded">{isToday?"Undo":"Mark checked today"}</button>
+      </div>
+     </div>})}</div>
+   </div>)}
+   {automatic.length>0&&<div className="bg-slate-900 border border-slate-800 rounded-xl p-5">
+    <h3 className="font-semibold">Already checked for you</h3>
+    <p className="text-xs text-slate-400 mt-1">These arrive in Job Analysis by themselves twice a day, so there is nothing to do here.</p>
+    <ul className="mt-3 space-y-1 text-sm">{automatic.map(s=><li key={s.id}><a href={s.url} target="_blank" rel="noopener noreferrer" className="text-cyan-300 underline">{s.name}</a><span className="text-slate-500"> · {s.note}</span></li>)}</ul>
+   </div>}
+  </>}
+ </section>
+}
 function Tracker({jobs,setJobs}){const statuses=["Awaiting Review","Saved","Awaiting Approval","Applied","Interview","Rejected","Offer"];return <section><h2 className="text-xl font-bold mb-4">Application Tracker</h2><div className="space-y-3">{jobs.map(j=><div key={j.id} className="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-wrap justify-between gap-3"><div><b>{j.title}</b><p className="text-sm text-slate-400">{j.company}</p></div><select value={j.status} onChange={e=>setJobs(jobs.map(x=>x.id===j.id?{...x,status:e.target.value}:x))} className="bg-slate-950 border border-slate-700 rounded p-2 text-sm">{statuses.map(s=><option key={s}>{s}</option>)}</select></div>)}</div></section>}
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App/>);

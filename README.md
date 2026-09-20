@@ -229,6 +229,22 @@ Workable, Recruitee and Ashby APIs (none of them publish there).
   themselves, not to the employer. jobsbd.works has no job API, onlinejobbd.com's feed
   is seven weeks stale, and bdjobslive.com is not Bdjobs.
 
+### The Manual Sites tab
+
+Everything above that the system cannot read for you is listed in the dashboard's
+**Manual Sites** tab, so you can check those boards by hand. Each card says what the
+site is good for and, honestly, why it is not automatic. Bdjobs, LinkedIn and Indeed
+also get a **Search** button: pick a target title at the top and the button opens that
+site's own search for it. Tick **Mark checked today** and the card remembers, showing
+"Last checked ... (N days ago)" until you look again. Ticks live in your browser only.
+
+The list is `config/manual_sites.json`. To add a site, add an entry (`id`, `group`,
+`name`, `url`, `why`, `note`, and optionally `searchUrl` with `{query}` where the title
+goes); to drop one, delete its entry. Only links that work belong there: the sites
+above that were down or unreachable (chakri.com excepted, which may recover) were left
+out on purpose. `tests/test_manual_sites.py` keeps the file well formed and makes sure
+a site is never listed as manual while a source is fetching it automatically.
+
 ---
 
 ## About LinkedIn and Indeed
@@ -408,11 +424,12 @@ feed keeps flowing while you fix the selectors.
 | `backend/dedupe.py` | fingerprint, URL and near-match merging |
 | `backend/scoring.py`, `scoring.js` | the match score (same maths in both languages, tested against each other) and your rules |
 | `backend/health.py` | notices a source that has quietly stopped returning jobs |
+| `config/manual_sites.json` | the boards you check by hand, shown in the dashboard's Manual Sites tab |
 | `backend/store.py` | the feed and the ledger of what you have already decided |
 | `backend/notify.py` | GitHub issue, SMTP digest and webhook |
 | `web/` | approval queue and the sync shim for the dashboard |
 | `tools/` | form-filling helpers |
-| `tests/` | 150+ tests, run with `pytest -q` |
+| `tests/` | 170+ tests, run with `pytest -q` |
 
 ---
 

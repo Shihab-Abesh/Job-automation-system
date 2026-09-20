@@ -1,0 +1,108 @@
+{
+ "_note": "Sites the pipeline cannot read for you, so you check them by hand. Shown in the dashboard's Manual Sites tab. Edit freely: add an entry, or delete one. 'why' is the honest reason it is not automatic. 'searchUrl' is optional and {query} becomes the target title you pick. Checked September 2026.",
+ "sites": [
+  {
+   "id": "bdjobs", "group": "Big boards", "name": "Bdjobs", "url": "https://bdjobs.com/h/",
+   "searchUrl": "https://bdjobs.com/h/jobs/?txtsearch={query}&pg=1",
+   "why": "Cloudflare bot protection. Automated requests get an empty page, so the automatic source was switched off.",
+   "note": "The largest Bangladeshi board, strongest for corporate and MNC jobs."
+  },
+  {
+   "id": "linkedin", "group": "Big boards", "name": "LinkedIn Jobs", "url": "https://www.linkedin.com/jobs/",
+   "searchUrl": "https://www.linkedin.com/jobs/search/?keywords={query}&location=Bangladesh",
+   "why": "Its terms and robots.txt forbid automated access, so it is never scraped.",
+   "note": "Set a daily job alert and let it email you instead: the README explains the email route."
+  },
+  {
+   "id": "indeed", "group": "Big boards", "name": "Indeed", "url": "https://www.indeed.com/",
+   "searchUrl": "https://www.indeed.com/jobs?q={query}&l=Bangladesh",
+   "why": "Its terms forbid automated access and it answers bots with an error page, so it is never scraped.",
+   "note": "Also works well with a daily email alert."
+  },
+  {
+   "id": "nextjobz", "group": "Local boards", "name": "NextJobz (IT jobs)", "url": "https://nextjobz.com.bd/it-jobs",
+   "why": "No structured job data. Reading it would mean scraping page markup, which breaks whenever the site is redesigned.",
+   "note": "Software, network and IT roles from Bangladeshi companies."
+  },
+  {
+   "id": "skilljobs", "group": "Local boards", "name": "Skill.Jobs", "url": "https://skill.jobs/",
+   "why": "A script-driven page with no structured job data.",
+   "note": "A skill-first board with government job listings."
+  },
+  {
+   "id": "techntalents", "group": "Local boards", "name": "Techntalents", "url": "https://techntalents.com/",
+   "why": "No structured job data.",
+   "note": "IT jobs with automated CV screening."
+  },
+  {
+   "id": "jobcombd", "group": "Local boards", "name": "Job.com.bd", "url": "https://job.com.bd/",
+   "why": "No structured job data.",
+   "note": "Known for government circulars as well as private jobs."
+  },
+  {
+   "id": "shomvob", "group": "Local boards", "name": "Shomvob", "url": "https://shomvob.com/",
+   "why": "No structured job data.",
+   "note": "Mostly entry-level and skill-based jobs, less corporate."
+  },
+  {
+   "id": "chakri", "group": "Local boards", "name": "Chakri.com", "url": "https://chakri.com/",
+   "why": "The server returned an error (HTTP 523) when checked, so it may be down. It could work for you.",
+   "note": "A well-known board with circulars from many sectors."
+  },
+  {
+   "id": "careerjet", "group": "Local boards", "name": "Careerjet Bangladesh", "url": "https://www.careerjet.com.bd/",
+   "why": "An aggregator with its own partner terms for programmatic access.",
+   "note": "Useful as a second opinion: it collects postings from many sites."
+  },
+  {
+   "id": "roadtocareer", "group": "Local boards", "name": "Road to SDET (QA jobs)", "url": "https://roadtocareer.net/jobs",
+   "why": "QA and SDET jobs only, and its job links cannot be verified automatically (every address shows the same page).",
+   "note": "Worth a look if you want a QA role."
+  },
+  {
+   "id": "bdgovtjobs", "group": "Circular sites", "name": "BD Govt Jobs (private circulars)", "url": "https://bdgovtjobs.com/category/private-job/",
+   "why": "Republishes circulars as its own articles instead of linking to the employer, so its links are not real postings.",
+   "note": "Useful for bank, NGO and company management-trainee circulars. Follow the apply link inside each article."
+  },
+  {
+   "id": "jobsbdworks", "group": "Circular sites", "name": "JobsBD Works", "url": "https://jobsbd.works/",
+   "why": "Republishes circulars, and its job data is not exposed for software.",
+   "note": "Government, private, bank and NGO circulars."
+  },
+  {
+   "id": "ejobscircular", "group": "Circular sites", "name": "eJobsCircular", "url": "https://ejobscircular.com/",
+   "why": "Republishes circulars as its own articles.",
+   "note": "Organised by government, bank, company and NGO jobs."
+  },
+  {
+   "id": "circularbd", "group": "Circular sites", "name": "CircularBD", "url": "https://www.circularbd.com/",
+   "why": "Republishes circulars as its own articles.",
+   "note": "Government, bank, NGO and private vacancies."
+  },
+  {
+   "id": "bengalinformer", "group": "Circular sites", "name": "Bengal Informer (private circulars)", "url": "https://www.bengalinformer.com/jobs/privateCircular",
+   "why": "Republishes circulars as its own articles.",
+   "note": "Private-sector circulars including IT and pharma."
+  },
+  {
+   "id": "onlinejobbd", "group": "Circular sites", "name": "OnlineJobBD", "url": "https://onlinejobbd.com/",
+   "why": "Its job data is not exposed for software, and its feed had not updated since 1 August when checked.",
+   "note": "May be inactive. Low priority."
+  },
+  {
+   "id": "brainstation23", "group": "Company careers", "name": "Brain Station 23 careers", "url": "https://brainstation-23.easy.jobs/",
+   "why": "Its openings are drawn by a script on the easy.jobs hiring page, so there is no job data to read.",
+   "note": "A large Dhaka software company that hires developers, QA and analysts."
+  },
+  {
+   "id": "innolytic", "group": "Company careers", "name": "Innolytic IT Ltd. careers", "url": "https://www.google.com/search?q=Innolytic+IT+Ltd+Dhaka+careers",
+   "why": "The careers address in the config no longer resolves, so this is a search instead.",
+   "note": "Where you interned. Worth asking them directly, too."
+  }
+ ],
+ "automatic": [
+  {"id": "bdrecruit", "name": "BDRecruit", "url": "https://bdrecruit.net/", "note": "Read through its public WordPress API."},
+  {"id": "bdtechjobs", "name": "BD Tech Jobs", "url": "https://www.bdtechjobs.com/", "note": "Read from the schema.org job data on its homepage."},
+  {"id": "weworkremotely", "name": "We Work Remotely", "url": "https://weworkremotely.com/", "note": "Six category feeds, limited to jobs anyone worldwide may take."}
+ ]
+}
