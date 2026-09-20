@@ -64,6 +64,8 @@ def test_category_inference():
     ("Business Development Executive", "", "Management & Business"),
     ("Junior Software Engineer", "PHP and Laravel", "Software Development"),
     ("Web Developer", "", "Software Development"),
+    ("Executive – MIS", "", "MIS"),               # "MIS" is not the first word of the title
+    ("Assistant Manager, MIS", "", "MIS"),
 ])
 def test_categories_are_not_only_qa_and_mis(title, body, expected):
     assert infer_category(title, body) == expected
