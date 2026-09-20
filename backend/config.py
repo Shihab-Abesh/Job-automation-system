@@ -14,6 +14,7 @@ DEFAULTS: dict[str, Any] = {
         "output": "data/jobs.json",
         "ledger": "state/ledger.json",
         "digest": "state/last_digest.json",
+        "health": "state/source_health.json",
         "http_cache": ".cache/http",
     },
     "queries": [],

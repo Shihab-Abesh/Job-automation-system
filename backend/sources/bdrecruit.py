@@ -74,6 +74,7 @@ class BDRecruitSource(Source):
 
         jobs: list[Job] = []
         seen = 0
+        self.raw_count = 0
         for page in range(1, max_pages + 1):
             url = f"{api}?per_page={per_page}&page={page}&orderby=date&order=desc&_fields={FIELDS}"
             try:
@@ -94,6 +95,7 @@ class BDRecruitSource(Source):
                 self.note_error(f"{self.label}: unexpected response shape")
                 break
 
+            self.raw_count += len(items)
             for item in items:
                 job = self._build(item)
                 if job is None:

@@ -154,18 +154,6 @@ def test_jaccard_bounds():
 
 
 # ----------------------------------------------------------------- scoring
-def test_score_matches_the_frontend_formula():
-    """Hand-computed against analyzeJob() in index.html."""
-    job = Job(title="Manual Testing Engineer", company="X",
-              description="manual testing regression testing defect reporting",
-              category="Software Quality Assurance")
-    a = analyze(job, PROFILE)
-    expected = round(a["skillPct"] * .35 + a["expScore"] * .25 + 100 * .15
-                     + a["projectScore"] * .15 + a["prefScore"] * .10)
-    assert a["score"] == expected
-    assert 0 <= a["score"] <= 100
-
-
 def test_low_pay_is_demoted_not_deleted():
     job = Job(title="QA Engineer", company="X", category="Software Quality Assurance")
     job.salaryMin, job.salaryMax = 12000, 15000

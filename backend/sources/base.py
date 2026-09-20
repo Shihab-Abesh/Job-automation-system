@@ -21,6 +21,10 @@ class Source:
         self.fetcher = fetcher
         self.config = config or {}
         self.errors: list[str] = []
+        # How many postings the site actually served, before relevance and age filters.
+        # None means the source does not track it. Zero from a site that normally lists
+        # jobs is the sign of a block or a redesign, which the health check watches for.
+        self.raw_count: int | None = None
 
     def collect(self, queries: list[str]) -> list[Job]:
         raise NotImplementedError

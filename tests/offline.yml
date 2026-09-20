@@ -5,6 +5,7 @@ paths:
   output: state/test-jobs.json
   ledger: state/test-ledger.json
   digest: state/test-digest.json
+  health: state/test-health.json
   http_cache: .cache/http
 queries: ["quality assurance"]
 filters:

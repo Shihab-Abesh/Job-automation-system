@@ -20,6 +20,7 @@ body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",san
 <body class="bg-slate-950 text-slate-100 min-h-screen">
 <div id="root"></div>
 <script src="feed-sync.js"></script>
+<script src="scoring.js"></script>
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -97,8 +98,10 @@ const DEFAULT_PROFILE={
   categories:["Software Development","Information Technology","Information Systems","MIS","Management & Business","Business Analysis","Data & Reporting","Application Support","Software Quality Assurance"],
   titles:["Software Engineer","Junior Software Engineer","Web Developer","PHP Developer","System Analyst","Systems Analyst","IT Executive","IT Officer","MIS Executive","MIS Officer","MIS Analyst","Information Systems Executive","Management Trainee Officer","Management Trainee","Trainee Officer","Graduate Trainee","Business Analyst","Business Systems Analyst","Business Development Executive","Marketing Executive","Operations Executive","Project Coordinator","Data Analyst","Reporting Analyst","Application Support Engineer","QA Engineer","Software Tester"],
   locations:["Dhaka, Bangladesh","Hybrid - Dhaka","Remote"],
-  excluded:["Senior","Lead","Head of","Principal","Director","Manager","Architect"],
+  excluded:["Senior","Sr","Staff","Lead","Head of","Principal","Director","Manager","Architect"],
   minimumMatch:60,
+  strongMatch:75,
+  experienceYears:0,
   version:2
  }
 };
@@ -149,33 +152,7 @@ function migrateProfile(raw){
  return p;
 }
 
-const stopWords=new Set(("and or the a an to of in for with on at from by is are be as this that will can should experience knowledge skills skill requirements responsible preferred plus using use ability excellent strong good candidate job role position company years year").split(" "));
-function normalize(s){return (s||"").toLowerCase().replace(/[^a-z0-9+#./ ]/g," ")}
-function terms(s){return [...new Set(normalize(s).split(/\s+/).filter(x=>x.length>2&&!stopWords.has(x)))]}
-function allEvidence(p){
- return [
- ...p.skills.flatMap(g=>g.items),
- ...p.experience.flatMap(x=>[x.role,x.company,...x.bullets]),
- ...p.projects.flatMap(x=>[x.name,x.subtitle||"",...(x.skills||[]),...x.bullets])
- ].join(" ").toLowerCase()
-}
-function analyzeJob(job,p){
- const text=[job.title,job.description,job.requiredSkills||""].join(" ");
- const raw=terms(text);
- const evidence=allEvidence(p);
- const matched=raw.filter(t=>evidence.includes(t));
- const missing=raw.filter(t=>!evidence.includes(t)).slice(0,12);
- const skillPct=raw.length?Math.round((matched.length/raw.length)*100):0;
- const titlePref=p.preferences.titles.some(x=>normalize(job.title).includes(normalize(x))||normalize(x).includes(normalize(job.title)));
- const cat=(job.category||"").toLowerCase();
- const relevantExp=p.experience.filter(x=>[x.role,...x.tags].join(" ").toLowerCase().includes(cat)).length;
- const projectHits=p.projects.filter(x=>x.categories.some(c=>c.toLowerCase()===cat)||normalize([x.name,x.subtitle||"",...(x.skills||[]),...x.bullets].join(" ")).split(" ").some(t=>raw.includes(t))).length;
- const expScore=Math.min(100,relevantExp?85:45);
- const projectScore=Math.min(100,projectHits*35);
- const prefScore=titlePref||p.preferences.categories.some(c=>c.toLowerCase()===cat)?100:40;
- const score=Math.round(skillPct*.35+expScore*.25+100*.15+projectScore*.15+prefScore*.10);
- return {score,skillPct,matched:[...new Set(matched)].slice(0,15),missing:[...new Set(missing)],expScore,projectScore,prefScore}
-}
+/* Scoring (normalize, terms, analyzeJob) lives in scoring.js so the pipeline and this page share one formula. */
 const ROLE_STRATEGIES={
 "Software Development":{label:"Software Development Resume",headline:"Software Development | PHP | JavaScript | MySQL",keywords:["software engineer","software developer","software development","web developer","php developer","php","laravel","full stack","frontend","front end","backend","back end","programmer","application developer","java developer","python developer","node.js","react developer","android developer","flutter","asp.net"]},
 "Information Technology":{label:"IT Resume",headline:"Information Technology | Application Support | Web & Database",keywords:["it support","help desk","helpdesk","hosting","dns","ssl","network","hardware","troubleshoot","technical support","it officer","system admin","desktop support","it executive"]},
@@ -238,6 +215,10 @@ function App(){
  const [jobForm,setJobForm]=useState({title:"",company:"",category:"Information Technology",location:"Dhaka, Bangladesh",source:"",url:"",description:""});
  const [search,setSearch]=useState("");
  const [profileText,setProfileText]=useState("");
+ const [fCat,setFCat]=useState("all");
+ const [fSrc,setFSrc]=useState("all");
+ const [fPri,setFPri]=useState("all");
+ const [sortBy,setSortBy]=useState("best");
 
  useEffect(()=>{
   if(!cryptoKey||!profile)return;
@@ -276,7 +257,8 @@ function App(){
  const stats=useMemo(()=>{
   if(!profile)return{total:0,strong:0,review:0,applied:0};
   const scores=jobs.map(j=>analyzeJob(j,profile).score);
-  return{total:jobs.length,strong:scores.filter(x=>x>=80).length,review:jobs.filter(j=>j.status==="Awaiting Review").length,applied:jobs.filter(j=>j.status==="Applied").length};
+  const bar=(profile.preferences&&profile.preferences.strongMatch)||75;
+  return{total:jobs.length,strong:scores.filter(x=>x>=bar).length,review:jobs.filter(j=>j.status==="Awaiting Review").length,applied:jobs.filter(j=>j.status==="Applied").length};
  },[jobs,profile]);
  if(vaultStatus!=="unlocked"){
   return <LockScreen mode={vaultStatus} onCreate={createVault} onUnlock={unlockVault} error={lockError}/>;
@@ -298,7 +280,21 @@ function App(){
  const exportProfile=()=>download("careerpilot-profile.json",JSON.stringify(profile,null,2),"application/json");
  const exportJobs=()=>{const rows=[["Title","Company","Category","Location","Match","Status","Source","URL"],...jobs.map(j=>{const a=analyzeJob(j,profile);return[j.title,j.company,j.category,j.location,a.score,j.status,j.source,j.url]})];download("careerpilot-jobs.csv",rows.map(r=>r.map(csvEscape).join(",")).join("\n"),"text/csv")};
  const importProfile=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{setProfile(migrateProfile(JSON.parse(r.result)));notify("Profile imported.");}catch{alert("Invalid profile file.");}};r.readAsText(f)};
- const visibleJobs=jobs.filter(j=>[j.title,j.company,j.category,j.location].join(" ").toLowerCase().includes(search.toLowerCase()));
+ const PRI_RANK={A:0,B:1,C:2};
+ const scoreOf=j=>analyzeJob(j,profile).score;
+ const sourceOf=j=>j.source||"Added by hand";
+ const categoryOptions=[...new Set(jobs.map(j=>j.category).filter(Boolean))].sort();
+ const sourceOptions=[...new Set(jobs.map(sourceOf))].sort();
+ const visibleJobs=jobs
+  .filter(j=>[j.title,j.company,j.category,j.location].join(" ").toLowerCase().includes(search.toLowerCase()))
+  .filter(j=>fCat==="all"||j.category===fCat)
+  .filter(j=>fSrc==="all"||sourceOf(j)===fSrc)
+  .filter(j=>fPri==="all"||(j.priority||"-")===fPri)
+  .sort((x,y)=>sortBy==="newest"?(y.createdAt||"").localeCompare(x.createdAt||"")
+   :sortBy==="deadline"?(x.deadline||"9999").localeCompare(y.deadline||"9999")
+   :sortBy==="priority"?((PRI_RANK[x.priority]??3)-(PRI_RANK[y.priority]??3))||(scoreOf(y)-scoreOf(x))
+   :(scoreOf(y)-scoreOf(x)));
+ const strongBar=(profile.preferences&&profile.preferences.strongMatch)||75;
  const nav=[["dashboard","Dashboard"],["profile","Master Profile"],["preferences","Career Preferences"],["add","Add Job"],["jobs","Job Analysis"],["tracker","Tracker"]];
  return <div>
   <header className="no-print sticky top-0 z-30 border-b border-slate-800 bg-slate-950/95 backdrop-blur">
@@ -312,7 +308,7 @@ function App(){
   <main className="max-w-7xl mx-auto p-4 md:p-6">
    {tab==="dashboard"&&<section className="space-y-6">
     <div className="bg-gradient-to-r from-cyan-900/40 to-slate-900 border border-slate-800 rounded-2xl p-6"><h2 className="text-2xl font-bold">Welcome, {profile.personal.fullName||"Candidate"}</h2><p className="text-slate-400 mt-2">One master profile. Multiple career paths. Job-specific, truthful resume tailoring.</p><p className="text-xs text-amber-300 mt-3">Static GitHub Pages edition: this app stores data in your browser. It does not automatically apply to jobs.</p></div>
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">{[["Jobs",stats.total],["Strong Match (80+)",stats.strong],["Awaiting Review",stats.review],["Applied",stats.applied]].map(x=><div key={x[0]} className="bg-slate-900 border border-slate-800 rounded-xl p-4"><p className="text-xs text-slate-400">{x[0]}</p><p className="text-2xl font-bold mt-1">{x[1]}</p></div>)}</div>
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">{[["Jobs",stats.total],[`Strong Match (${strongBar}+)`,stats.strong],["Awaiting Review",stats.review],["Applied",stats.applied]].map(x=><div key={x[0]} className="bg-slate-900 border border-slate-800 rounded-xl p-4"><p className="text-xs text-slate-400">{x[0]}</p><p className="text-2xl font-bold mt-1">{x[1]}</p></div>)}</div>
     <div className="bg-slate-900 border border-slate-800 rounded-xl p-5"><h3 className="font-semibold">Active Career Areas</h3><div className="flex flex-wrap gap-2 mt-3">{profile.preferences.categories.map(c=><span className="bg-cyan-950 text-cyan-300 border border-cyan-800 px-3 py-1 rounded-full text-xs" key={c}>{c}</span>)}</div></div>
    </section>}
 
@@ -338,7 +334,16 @@ function App(){
    </form></section>}
 
    {tab==="jobs"&&<section><div className="flex flex-wrap justify-between gap-3 mb-4"><div><h2 className="text-xl font-bold">Job Analysis & Resume Queue</h2><p className="text-sm text-slate-400">Scores are explainable estimates, not a claim about any employer's ATS.</p></div><div className="flex gap-2"><input placeholder="Search jobs..." value={search} onChange={e=>setSearch(e.target.value)} className="bg-slate-900 border border-slate-700 rounded px-3 text-sm"/><button onClick={exportJobs} className="bg-slate-800 px-3 py-2 rounded text-xs">Export CSV</button></div></div>
-    <div className="grid lg:grid-cols-2 gap-4">{visibleJobs.map(j=>{const a=analyzeJob(j,profile);return <div key={j.id} className="bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between gap-4"><div><h3 className="font-bold">{j.title}</h3><p className="text-sm text-cyan-400">{j.company} · {j.category}</p><p className="text-xs text-slate-400">{j.location}</p></div><div className="text-right"><p className="text-3xl font-bold text-cyan-400">{a.score}%</p><p className="text-[10px] text-slate-400">COMPATIBILITY</p></div></div><div className="grid grid-cols-3 gap-2 text-xs mt-4"><Metric label="Keyword" value={a.skillPct}/><Metric label="Experience" value={a.expScore}/><Metric label="Projects" value={a.projectScore}/></div><div className="flex gap-2 mt-4"><button onClick={()=>{setSelected(j);setTab("resume")}} className="bg-cyan-600 px-3 py-2 rounded text-xs">View Analysis & Resume</button><button onClick={()=>setJobs(jobs.filter(x=>x.id!==j.id))} className="bg-slate-800 px-3 py-2 rounded text-xs">Delete</button></div></div>})}</div>
+    <div className="no-print flex flex-wrap items-center gap-2 mb-4 text-xs" data-testid="job-filters">
+     <select aria-label="Filter by category" value={fCat} onChange={e=>setFCat(e.target.value)} className="bg-slate-900 border border-slate-700 rounded px-2 py-2"><option value="all">All categories</option>{categoryOptions.map(c=><option key={c} value={c}>{c}</option>)}</select>
+     <select aria-label="Filter by source" value={fSrc} onChange={e=>setFSrc(e.target.value)} className="bg-slate-900 border border-slate-700 rounded px-2 py-2"><option value="all">All sources</option>{sourceOptions.map(s=><option key={s} value={s}>{s}</option>)}</select>
+     <select aria-label="Filter by priority" value={fPri} onChange={e=>setFPri(e.target.value)} className="bg-slate-900 border border-slate-700 rounded px-2 py-2"><option value="all">Any priority</option><option value="A">A: strong</option><option value="B">B: worth a look</option><option value="C">C: read the note first</option></select>
+     <select aria-label="Sort jobs" value={sortBy} onChange={e=>setSortBy(e.target.value)} className="bg-slate-900 border border-slate-700 rounded px-2 py-2"><option value="best">Sort: best match</option><option value="priority">Sort: priority</option><option value="newest">Sort: newest</option><option value="deadline">Sort: deadline soonest</option></select>
+     <span className="text-slate-500" data-testid="job-count">{visibleJobs.length} of {jobs.length} jobs</span>
+     {(fCat!=="all"||fSrc!=="all"||fPri!=="all"||search)&&<button onClick={()=>{setFCat("all");setFSrc("all");setFPri("all");setSearch("")}} className="text-cyan-400 underline">Clear filters</button>}
+    </div>
+    <div className="grid lg:grid-cols-2 gap-4">{visibleJobs.map(j=>{const a=analyzeJob(j,profile);const meta=[sourceOf(j),j.salaryText,j.deadline?`Apply by ${j.deadline}`:null].filter(Boolean).join(" · ");return <div key={j.id} className="bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between gap-4"><div><h3 className="font-bold">{j.priority&&<span title="Priority from the discovery pipeline" className={"mr-2 text-[10px] px-2 py-0.5 rounded-full align-middle "+(j.priority==="A"?"bg-emerald-900 text-emerald-300":j.priority==="B"?"bg-cyan-900 text-cyan-300":"bg-slate-800 text-slate-400")}>{j.priority}</span>}{j.title}</h3><p className="text-sm text-cyan-400">{j.company} · {j.category}</p><p className="text-xs text-slate-400">{j.location}</p><p className="text-xs text-slate-500 mt-1">{meta}</p>{j.gateNotes&&j.gateNotes.length>0&&<p className="text-xs text-amber-300 mt-1">{j.gateNotes[0]}</p>}</div><div className="text-right"><p className="text-3xl font-bold text-cyan-400">{a.score}%</p><p className="text-[10px] text-slate-400">COMPATIBILITY</p></div></div><div className="grid grid-cols-3 gap-2 text-xs mt-4"><Metric label="Title fit" value={a.titleFit}/><Metric label="Level fit" value={a.levelFit}/><Metric label="Skills" value={a.skillFit}/></div><div className="flex gap-2 mt-4"><button onClick={()=>{setSelected(j);setTab("resume")}} className="bg-cyan-600 px-3 py-2 rounded text-xs">View Analysis & Resume</button>{j.url&&<a href={j.url} target="_blank" rel="noopener noreferrer" className="bg-slate-800 px-3 py-2 rounded text-xs text-cyan-300">Open posting</a>}<button onClick={()=>setJobs(jobs.filter(x=>x.id!==j.id))} className="bg-slate-800 px-3 py-2 rounded text-xs">Delete</button></div></div>})}</div>
+    {jobs.length>0&&!visibleJobs.length&&<div className="text-slate-400 bg-slate-900 border border-slate-800 rounded-xl p-8 text-center">No jobs match these filters.</div>}
     {!jobs.length&&<div className="text-slate-400 bg-slate-900 border border-slate-800 rounded-xl p-8 text-center">No jobs yet. Add a real job description to begin.</div>}
    </section>}
 
@@ -703,7 +708,7 @@ function ResumePanel({job,p,updateJob,notify}){
   </div>}
 
   <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between items-center mb-3"><div><h3 className="font-semibold">Resume Strategy</h3><p className="text-xs text-slate-500">Auto-picked from this job's title and description — pick a different one any time.</p></div><span className="text-xs text-cyan-300">{cfg.label}</span></div><div className="grid md:grid-cols-4 gap-2">{Object.entries(ROLE_STRATEGIES).map(([k,v])=><button key={k} onClick={()=>{setStrategy(k);setEditMode(false);updateJob(job.id,{selectedStrategy:k})}} className={`p-3 rounded-lg border text-left text-xs ${strategy===k?'border-cyan-500 bg-cyan-950/50':'border-slate-800 bg-slate-950'}`}><b>{v.label}</b>{k===recommended&&<span className="ml-1 text-[9px] text-emerald-400">(recommended)</span>}<span className="block text-slate-500 mt-1">{k}</span></button>)}</div></div>
-  <div className="grid md:grid-cols-2 gap-4 no-print"><Block title={`Compatibility Analysis: ${a.score}%`}><div className="grid grid-cols-2 gap-2"><Metric label="Keyword Evidence" value={a.skillPct}/><Metric label="Experience" value={a.expScore}/><Metric label="Projects" value={a.projectScore}/><Metric label="Preference" value={a.prefScore}/></div><p className="text-xs text-emerald-300 mt-3">Matched: {a.matched.slice(0,10).join(", ")||"None"}</p><p className="text-xs text-amber-300 mt-2">Potential gaps: {a.missing.slice(0,8).join(", ")||"None detected"}</p></Block><Block title="ATS Quality"><CheckRow ok text="Single-column, standard section headings"/><CheckRow ok text="No graphics, tables, icons, sidebars, or decorative resume elements"/><CheckRow ok text="Plain-text contact information"/><CheckRow ok={a.missing.length<8} text="Job keywords reviewed without inventing qualifications"/><p className="text-[11px] text-slate-500 mt-3">Compatibility is an internal estimate, not a real employer ATS score.</p></Block></div>
+  <div className="grid md:grid-cols-2 gap-4 no-print"><Block title={`Compatibility Analysis: ${a.score}%`}><div className="grid grid-cols-2 gap-2"><Metric label="Title fit" value={a.titleFit}/><Metric label="Level fit" value={a.levelFit}/><Metric label="Skills" value={a.skillFit}/><Metric label="Preference" value={a.prefFit}/></div><p className="text-xs text-emerald-300 mt-3">Matched: {a.matched.slice(0,10).join(", ")||"None"}</p><p className="text-xs text-amber-300 mt-2">Potential gaps: {a.missing.slice(0,8).join(", ")||"None detected"}</p></Block><Block title="ATS Quality"><CheckRow ok text="Single-column, standard section headings"/><CheckRow ok text="No graphics, tables, icons, sidebars, or decorative resume elements"/><CheckRow ok text="Plain-text contact information"/><CheckRow ok={a.missing.length<8} text="Job keywords reviewed without inventing qualifications"/><p className="text-[11px] text-slate-500 mt-3">Compatibility is an internal estimate, not a real employer ATS score.</p></Block></div>
   <div className="bg-white text-black max-w-[794px] mx-auto p-8 md:p-10 shadow-2xl rounded print-resume">
     <header className="border-b pb-3 mb-4"><h1 className="text-3xl font-black tracking-wide">{(p.personal.fullName||"YOUR NAME").toUpperCase()}</h1>{finalHeadline&&<p className="text-[12px] font-bold text-sky-700 mt-1 tracking-wide">{finalHeadline.toUpperCase()}</p>}<p className="text-[10px] mt-1 leading-4">{contact}</p></header>
     <ResumeSection title="PROFESSIONAL SUMMARY"><p className="text-[10.5px] leading-5">{finalSummary}</p></ResumeSection>

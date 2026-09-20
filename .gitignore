@@ -7,3 +7,4 @@ state/test-*.json
 config/profile.local.json
 .env
 state/run.log
+.claude/

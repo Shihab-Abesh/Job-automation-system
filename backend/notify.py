@@ -131,3 +131,79 @@ def send_webhook(jobs: list[Job], cfg: dict[str, Any], dashboard_url: str = "") 
     except Exception as exc:
         log.error("webhook failed: %s", exc)
         return False
+
+
+# --------------------------------------------------------------------------
+# GitHub issue: a notification that needs no secrets
+# --------------------------------------------------------------------------
+def _github_post(path: str, payload: dict[str, Any]) -> dict[str, Any] | None:
+    """POST to the GitHub API as the workflow. None when not running inside Actions."""
+    token = os.environ.get("GITHUB_TOKEN", "")
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    if not (token and repo):
+        return None
+    req = urllib.request.Request(
+        f"https://api.github.com/repos/{repo}/{path}",
+        data=json.dumps(payload).encode(),
+        headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json",
+                 "X-GitHub-Api-Version": "2022-11-28", "Content-Type": "application/json",
+                 "User-Agent": "careerpilot-bd"},
+        method="POST")
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return json.loads(r.read().decode() or "{}")
+
+
+def _cell(text: str) -> str:
+    return " ".join(str(text or "").replace("|", "/").split())
+
+
+def _markdown_digest(jobs: list[Job], dashboard_url: str, mention: str) -> str:
+    who = f"@{mention.lstrip('@')} " if mention else ""
+    rows = ["| Match | Job | Where | Pay | Apply by |", "|---|---|---|---|---|"]
+    for j in jobs[:25]:
+        title = _cell(f"{j.title} - {j.company}")
+        rows.append(f"| **{j.priority}** {j.matchScore}% | [{title}]({j.url}) | "
+                    f"{_cell(j.area or j.location)} | {_cell(j.salaryText or 'not stated')} | "
+                    f"{_cell(j.deadline or '-')} |")
+    more = f"\n...and {len(jobs) - 25} more in the dashboard." if len(jobs) > 25 else ""
+    link = f"\n[Review and approve in CareerPilot]({dashboard_url})" if dashboard_url else ""
+    notes = [f"- **{_cell(j.title)}**: {_cell(j.gateNotes[0])}" for j in jobs[:25] if j.gateNotes]
+    caveats = ("\n\nWorth checking first:\n" + "\n".join(notes[:8])) if notes else ""
+    return (f"{who}{len(jobs)} new {'match' if len(jobs) == 1 else 'matches'}. "
+            f"Nothing has been applied to; every one of these is waiting on you.\n\n"
+            + "\n".join(rows) + more + caveats + link)
+
+
+def open_issue(title: str, body: str, labels: list[str] | None = None) -> bool:
+    try:
+        made = _github_post("issues", {"title": title[:250], "body": body[:60000], "labels": labels or []})
+    except Exception as exc:
+        log.error("github issue failed: %s", exc)
+        return False
+    if made is None:
+        log.info("github issue skipped: not running inside GitHub Actions")
+        return False
+    log.info("opened issue #%s", made.get("number"))
+    return True
+
+
+def source_problem_body(alert: dict[str, Any], mention: str = "") -> str:
+    who = f"@{mention.lstrip('@')} " if mention else ""
+    detail = "\n".join(f"- {e}" for e in alert.get("errors", [])) or "- the site served no postings"
+    return (f"{who}The **{alert['source']}** source has produced no postings for {alert['streak']} runs "
+            f"in a row, which usually means the site changed or started blocking automated requests.\n\n"
+            f"{detail}\n\nThe rest of the feed is unaffected. Switch the source off in "
+            f"`config/sources.yml` or fix it. This will not be reported again until it has recovered "
+            f"and failed again.")
+
+
+def send_github_issue(jobs: list[Job], cfg: dict[str, Any], dashboard_url: str = "") -> bool:
+    """Open one issue listing the new matches. GitHub then notifies the @mentioned owner
+    by email and in the mobile app, with no app password to create or leak. Note that
+    issues on a public repository are public: this lists public job postings only."""
+    if not jobs:
+        return False
+    top = jobs[0]
+    title = f"{len(jobs)} new job {'match' if len(jobs) == 1 else 'matches'}: {top.title} at {top.company}"
+    return open_issue(title, _markdown_digest(jobs, dashboard_url, cfg.get("mention", "")),
+                      cfg.get("labels", ["new-jobs"]))

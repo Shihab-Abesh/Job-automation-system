@@ -57,6 +57,29 @@ AREAS: dict[str, tuple[float, float]] = {
 
 REMOTE = re.compile(r"\b(remote|work from home|wfh|anywhere|hybrid)\b", re.I)
 
+_BANGLADESH = re.compile(
+    r"\b(bangladesh|dhaka|chattogram|chittagong|sylhet|khulna|rajshahi|gazipur|narayanganj|"
+    r"cox'?s bazar|mymensingh|rangpur|barisal|barishal|comilla|cumilla|bogura|bogra)\b", re.I)
+# Countries a Dhaka-based applicant cannot simply take a job in. Whole words only, so "oman"
+# does not fire inside "Romania". Kept to names that are unambiguous in a location field.
+_ABROAD = re.compile(
+    r"\b(united kingdom|uk|england|scotland|wales|united states|usa|us|canada|australia|new zealand|"
+    r"germany|france|netherlands|belgium|spain|portugal|italy|ireland|sweden|norway|denmark|finland|"
+    r"switzerland|austria|poland|romania|turkey|singapore|malaysia|indonesia|thailand|vietnam|"
+    r"philippines|japan|china|hong kong|south korea|india|pakistan|nepal|sri lanka|maldives|uae|"
+    r"united arab emirates|dubai|abu dhabi|saudi arabia|qatar|kuwait|oman|bahrain|egypt|nigeria|"
+    r"kenya|south africa|brazil|mexico)\b", re.I)
+
+
+def foreign_country(location_text: str | None) -> str | None:
+    """The country a posting is based in when it is clearly not Bangladesh, else None."""
+    text = location_text or ""
+    if _BANGLADESH.search(text):
+        return None
+    match = _ABROAD.search(text)
+    return match.group(0).upper() if match and len(match.group(0)) <= 3 else (match.group(0).title() if match else None)
+
+
 # Longest names first so "gulshan 1" wins over "gulshan".
 _ORDERED = sorted(AREAS, key=len, reverse=True)
 

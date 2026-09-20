@@ -5,7 +5,8 @@ careers pages directly is often the highest-signal source you have.
 """
 from __future__ import annotations
 
-from urllib.parse import urljoin
+import re
+from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
@@ -41,9 +42,9 @@ class CareersPageSource(Source):
                 if not a or not a.get("href"):
                     continue
                 title = clean_ws(a.get_text(" "))
-                if not self._looks_like_a_job(title):
-                    continue
                 link = urljoin(url, a["href"])
+                if not self._looks_like_a_job(title, link, url):
+                    continue
                 blurb = strip_html(str(node))[:1200]
                 lo, hi, stext = parse_salary(blurb)
                 jobs.append(self.make_job(
@@ -58,12 +59,22 @@ class CareersPageSource(Source):
                 ))
         return jobs
 
-    @staticmethod
-    def _looks_like_a_job(title: str) -> bool:
-        if not (4 < len(title) < 90):
+    # Whole words, so "Engineering" (a department) is not "engineer" (a role).
+    _ROLE = re.compile(
+        r"\b(engineer|developer|analyst|officer|executive|manager|intern|assistant|specialist|"
+        r"administrator|coordinator|associate|tester|architect|designer|consultant|trainee|"
+        r"qa|sqa|mis)\b", re.I)
+    # A posting lives at a job-like address; a marketing page does not.
+    _JOB_PATH = re.compile(r"career|/jobs?[/\-_.]|/jobs?$|position|vacanc|opening|apply|recruit|hiring", re.I)
+
+    @classmethod
+    def _looks_like_a_job(cls, title: str, link: str = "", page_url: str = "") -> bool:
+        """A link on a careers page is only a job if its text names a role AND its address
+        looks like a posting. Otherwise service pages ("QA Testing & Automation"), products
+        ("Adobe Experience Manager") and department links ("Engineering") become fake jobs,
+        which is worse than finding none."""
+        if not (4 < len(title) < 90) or not cls._ROLE.search(title):
             return False
-        keys = ("engineer", "developer", "analyst", "officer", "executive", "manager",
-                "intern", "assistant", "specialist", "administrator", "support",
-                "qa", "sqa", "tester", "mis", "coordinator", "associate", "lead")
-        low = title.lower()
-        return any(k in low for k in keys)
+        if link.rstrip("/") == page_url.rstrip("/"):          # the careers page linking to itself
+            return False
+        return bool(cls._JOB_PATH.search(urlparse(link).path))

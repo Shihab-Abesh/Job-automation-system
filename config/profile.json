@@ -191,6 +191,8 @@
   ],
   "excluded": [
    "Senior",
+   "Sr",
+   "Staff",
    "Lead",
    "Head of",
    "Principal",
@@ -198,6 +200,8 @@
    "Manager",
    "Architect"
   ],
-  "minimumMatch": 60
+  "minimumMatch": 60,
+  "strongMatch": 75,
+  "experienceYears": 0
  }
 }

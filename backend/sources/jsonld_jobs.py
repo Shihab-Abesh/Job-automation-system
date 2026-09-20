@@ -167,6 +167,7 @@ class JSONLDSource(Source):
         filter_by_queries = str(self.config.get("relevance", "queries")).lower() != "all" and bool(queries)
         jobs: list[Job] = []
         seen_urls: set[str] = set()
+        self.raw_count = 0
 
         for site in self.config.get("sites", []):
             template = site.get("url")
@@ -192,6 +193,7 @@ class JSONLDSource(Source):
                     self.note_error(f"{label}: empty or refused response for {url}")
                     continue
                 postings = extract_postings(body)
+                self.raw_count += len(postings)
                 for posting in postings:
                     job = self._build(posting, site, label, url, single=len(postings) == 1)
                     if job is None or job.url in seen_urls:

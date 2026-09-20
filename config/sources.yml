@@ -69,15 +69,30 @@ sources:
 
   rss:
     enabled: true
+    # queries = keep items whose title matches one of your search queries (default)
+    # all     = keep everything
+    relevance: queries
     feeds:
-      # Any board that publishes a feed for a saved search goes here.
-      # Remote-friendly feeds that are open by design:
-      - url: "https://remoteok.com/remote-qa-jobs.rss"
-        label: "RemoteOK"
-        location: "Remote"
-      - url: "https://weworkremotely.com/categories/remote-devops-sysadmin-jobs.rss"
+      # Any board that publishes a feed goes here. These are We Work Remotely categories.
+      # Titles read "Company: Role", and each item says who may apply, so jobs limited to
+      # "USA Only" and the like are dropped rather than shown as if you could take them.
+      # (RemoteOK is gone: its feed returns HTTP 410.)
+      - &wwr
+        url: "https://weworkremotely.com/categories/remote-programming-jobs.rss"
         label: "We Work Remotely"
         location: "Remote"
+        title_format: "company: role"
+        regions: ["anywhere", "worldwide", "asia", "apac", "south asia", "bangladesh"]
+      - <<: *wwr
+        url: "https://weworkremotely.com/categories/remote-full-stack-programming-jobs.rss"
+      - <<: *wwr
+        url: "https://weworkremotely.com/categories/remote-devops-sysadmin-jobs.rss"
+      - <<: *wwr
+        url: "https://weworkremotely.com/categories/remote-management-and-finance-jobs.rss"
+      - <<: *wwr
+        url: "https://weworkremotely.com/categories/remote-sales-and-marketing-jobs.rss"
+      - <<: *wwr
+        url: "https://weworkremotely.com/categories/remote-product-jobs.rss"
 
   careers:
     enabled: true

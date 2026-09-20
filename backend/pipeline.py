@@ -21,7 +21,8 @@ from .fetcher import Fetcher
 from .geo import resolve
 from .models import Job, now_iso
 from .normalize import clean_ws, infer_category
-from .notify import select, send_email, send_webhook
+from .health import update as update_health
+from .notify import open_issue, select, send_email, send_github_issue, send_webhook, source_problem_body
 from .scoring import score_job
 from .sources import REGISTRY
 from .store import Store
@@ -71,7 +72,7 @@ def collect(cfg: dict[str, Any], queries: list[str], fetcher: Fetcher) -> tuple[
             found, src.errors = [], src.errors + [str(exc)]
         log.info("  %s returned %s postings", src.label, len(found))
         jobs.extend(found)
-        report[sid] = {"found": len(found), "errors": src.errors}
+        report[sid] = {"found": len(found), "errors": src.errors, "raw": src.raw_count}
     return jobs, report
 
 
@@ -162,9 +163,20 @@ def run(cfg_path: str, dry_run: bool = False, force_notify: bool = False) -> int
         picks = select(jobs, new_fps, ncfg["webhook"].get("min_priority", "A"))
         if send_webhook(picks, ncfg["webhook"], cfg.get("dashboard_url", "")):
             notified += [j.fingerprint for j in picks]
+    gcfg = ncfg.get("github_issue", {})
+    if gcfg.get("enabled"):
+        picks = select(jobs, new_fps, gcfg.get("min_priority", "B"))
+        if send_github_issue(picks, gcfg, cfg.get("dashboard_url", "")):
+            notified += [j.fingerprint for j in picks]
     if notified:
         store.mark_notified(notified)
         store.save(jobs, meta)
+
+    for alert in update_health(paths["health"], source_report):
+        log.warning("source %s has returned nothing for %s runs in a row", alert["source"], alert["streak"])
+        if gcfg.get("enabled"):
+            open_issue(f"Source problem: {alert['source']} has returned nothing for {alert['streak']} runs",
+                       source_problem_body(alert, gcfg.get("mention", "")), ["source-problem"])
 
     Path(paths["digest"]).parent.mkdir(parents=True, exist_ok=True)
     Path(paths["digest"]).write_text(json.dumps(meta, indent=1), encoding="utf-8")

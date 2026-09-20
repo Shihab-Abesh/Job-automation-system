@@ -104,6 +104,7 @@ review.html           the approval queue
 review.css
 review.js
 feed-sync.js
+scoring.js            the match score, loaded by index.html
 .nojekyll
 backend/              the pipeline
 config/               what to search for, and your profile
@@ -122,9 +123,19 @@ skills, experience, projects and preferences, and the repo is public. The backen
 formula the dashboard uses, so the number in your email is the number on
 screen.
 
-**3. Add secrets**
+**3. Notifications (works with no secrets)**
 
-Settings → Secrets and variables → Actions:
+Each run that finds new matches (priority B or better) opens **one issue** in your
+repository listing them, and GitHub notifies you by email and in the mobile app
+because the issue @mentions you. There is nothing to set up. If a source stops
+working (a site changes or starts blocking automated requests), it opens a
+`source-problem` issue after four runs in a row, once, instead of the feed quietly
+getting thinner. Both are under `notify.github_issue` in `config/search.yml`.
+
+Issues on a public repository are public. They list public job postings only, never
+your decisions about them. Set `enabled: false` if you would rather they did not.
+
+**Optional: email and phone push.** Settings → Secrets and variables → Actions:
 
 | Secret | What it is | Needed for |
 |---|---|---|
@@ -262,14 +273,37 @@ to six, and the merged row carries both its Bdjobs and its LinkedIn link.
 
 ---
 
+## How the match score works
+
+Every job gets a score out of 100, the same number in the dashboard and in the
+notification (`scoring.js` and `backend/scoring.py` are the same maths, and
+`tests/test_parity.py` fails if they ever disagree).
+
+| Part | Weight | What it asks |
+|---|---|---|
+| Title fit | 40% | How much of one of your target titles does the job title cover? |
+| Level fit | 25% | Does the job suit your experience? Trainee, junior or 0-1 years is full marks; senior, lead, manager or 5+ years is nearly none. |
+| Skills | 25% | How many of your listed skills does the posting mention? Six or more is full marks. |
+| Preference | 10% | Is the job's category one you have switched on? |
+
+Set `preferences.experienceYears` in `config/profile.json` (default 0, a fresher) and
+the level part moves with it. A management-trainee role with no tech keywords still
+scores well, because it is exactly the kind of job you are looking for; a senior
+engineer role scores poorly however many skills it mentions.
+
+The earlier formula scored nearly every job 53-56, because three of its four parts
+were the same for almost every job. If a percentage cannot tell a good match from
+a poor one it is decoration.
+
 ## Your rules, and what they do
 
-From `config/search.yml`:
+From `config/search.yml` and `config/profile.json`:
 
 ```yaml
 filters:
   min_salary_bdt: 20000
   max_distance_km: 10       # from Tejgaon
+  allow_abroad: false       # a posting based in another country is demoted unless it is remote
 ```
 
 A job that fails one of these is **demoted, never deleted**. It drops to
@@ -277,13 +311,23 @@ priority C with a note saying why, and stays in the feed where you can see it:
 
 > Starts at Tk 15,000, below your Tk 20,000 floor.
 > Gazipur is about 26.4 km out, past your 10 km limit.
+> Based in United Kingdom, outside Bangladesh.
+> Title matches your excluded list (Senior).
 
 Deleting would be worse. Plenty of postings say "Negotiable" and pay fine, and
 a job that lists no area is often perfectly close. Those get a note too, not a
-silent drop.
+silent drop. The excluded-title list matches whole words, so `Lead` demotes "Team
+Lead" but not "Leadership Trainee Program".
 
-Priority A means strong match and no rule broken. B means worth a look. C means
-read the note first.
+**Priority A** is a score of `strongMatch` or more (75) with no rule broken.
+**B** is `minimumMatch` (60) or more. **C** is anything below that, or anything a
+rule demoted: read the note first. Both bars are in `preferences` in
+`config/profile.json`.
+
+The dashboard's job list can be filtered by category, source and priority, and
+sorted by best match, priority, newest or soonest deadline. Each card shows where
+the job came from, the pay, the deadline, why it was demoted if it was, and a
+link to the real posting.
 
 ---
 
@@ -362,12 +406,13 @@ feed keeps flowing while you fix the selectors.
 | `backend/normalize.py` | company and title cleanup, BDT salary parsing, category inference |
 | `backend/geo.py` | Dhaka area lookup and distance, offline, no API key |
 | `backend/dedupe.py` | fingerprint, URL and near-match merging |
-| `backend/scoring.py` | port of `analyzeJob()` from `index.html`, plus your rules |
+| `backend/scoring.py`, `scoring.js` | the match score (same maths in both languages, tested against each other) and your rules |
+| `backend/health.py` | notices a source that has quietly stopped returning jobs |
 | `backend/store.py` | the feed and the ledger of what you have already decided |
-| `backend/notify.py` | SMTP digest and webhook |
+| `backend/notify.py` | GitHub issue, SMTP digest and webhook |
 | `web/` | approval queue and the sync shim for the dashboard |
 | `tools/` | form-filling helpers |
-| `tests/` | 83 tests, run with `pytest -q` |
+| `tests/` | 150+ tests, run with `pytest -q` |
 
 ---
 

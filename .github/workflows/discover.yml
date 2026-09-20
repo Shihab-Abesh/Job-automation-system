@@ -12,11 +12,13 @@ on:
         type: boolean
         default: false
 
-# contents: commit the feed. pages + id-token: publish it.
+# contents: commit the feed. pages + id-token: publish it. issues: announce new matches
+# (and broken sources) as an issue, which notifies you with no secrets to set up.
 permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
 
 concurrency:
   group: pages
@@ -55,6 +57,7 @@ jobs:
           IMAP_USER: ${{ secrets.IMAP_USER }}
           IMAP_PASSWORD: ${{ secrets.IMAP_PASSWORD }}
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           python -m backend.pipeline run \
             ${{ inputs.dry_run && '--dry-run' || '' }}
@@ -68,7 +71,7 @@ jobs:
         run: |
           git config user.name  "careerpilot-bot"
           git config user.email "actions@github.com"
-          git add data/jobs.json state/ledger.json state/last_digest.json
+          git add data/jobs.json state/ledger.json state/last_digest.json state/source_health.json
           if git diff --staged --quiet; then
             echo "No feed changes."
           else

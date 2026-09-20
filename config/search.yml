@@ -49,6 +49,7 @@ filters:
   min_salary_bdt: 20000     # your floor
   max_distance_km: 10       # from Tejgaon
   allow_remote: true
+  allow_abroad: false       # a posting based in another country is demoted unless it is remote
   retention_days: 45        # drop stale postings after this
   drop_expired: true        # and drop anything past its deadline
 
@@ -67,6 +68,15 @@ notify:
     user_env: SMTP_USER
     password_env: SMTP_PASSWORD
     min_priority: B         # B and above. Set to A if the digest gets noisy.
+  # Works with no secrets at all. Each run that finds new matches opens one issue listing
+  # them, and GitHub notifies you (email and the mobile app) because you are @mentioned.
+  # Issues on a public repository are public: this lists public job postings only, never
+  # your decisions about them. Set enabled: false if you would rather it did not.
+  github_issue:
+    enabled: true
+    mention: "Shihab-Abesh"
+    min_priority: B
+    labels: ["new-jobs"]
   webhook:
     enabled: false
     url_env: WEBHOOK_URL
