@@ -29,43 +29,47 @@
  "sources": {
   "bdrecruit": {
    "found": 17,
-   "errors": []
+   "errors": [],
+   "raw": 132
   },
   "jsonld": {
    "found": 3,
-   "errors": []
+   "errors": [],
+   "raw": 20
   },
   "rss": {
-   "found": 21,
-   "errors": [
-    "RemoteOK: empty response"
-   ]
+   "found": 13,
+   "errors": [],
+   "raw": 182
   },
   "careers": {
-   "found": 15,
-   "errors": []
+   "found": 0,
+   "errors": [],
+   "raw": null
   },
   "local": {
    "found": 0,
-   "errors": []
+   "errors": [],
+   "raw": null
   }
  },
  "counts": {
-  "total": 40,
-  "new": 17,
+  "total": 26,
+  "new": 9,
   "expired": 0,
-  "duplicatesFolded": 16,
-  "priorityA": 0,
-  "priorityB": 6,
-  "priorityC": 34
+  "duplicatesFolded": 7,
+  "priorityA": 9,
+  "priorityB": 4,
+  "priorityC": 13
  },
  "filters": {
   "min_salary_bdt": 20000,
   "max_distance_km": 10,
   "allow_remote": true,
   "retention_days": 45,
-  "drop_expired": true
+  "drop_expired": true,
+  "allow_abroad": false
  },
  "blockedUrls": [],
- "ranAt": "2026-09-20T15:55:58+00:00"
+ "ranAt": "2026-09-20T18:12:35+00:00"
 }
