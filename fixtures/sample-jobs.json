@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Junior SQA Engineer",
+    "company": "Innolytic IT Ltd.",
+    "location": "Dhanmondi, Dhaka",
+    "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1288411&ln=1",
+    "source": "Bdjobs",
+    "deadline": "30 Oct 2026",
+    "salary": "Tk. 22,000 - 28,000 (Monthly)",
+    "description": "We are looking for a Junior SQA Engineer. Responsibilities include manual testing of web applications, writing test cases, functional testing, regression testing, cross-browser testing and defect reporting in Jira. Knowledge of SQL and API testing with Postman is a plus. Fresh graduates in CSE are encouraged to apply."
+  },
+  {
+    "title": "Software Quality Assurance Engineer (Manual Testing)",
+    "company": "Innolytic I.T. Limited",
+    "location": "Dhanmondi, Dhaka",
+    "url": "https://www.linkedin.com/comm/jobs/view/3899221144?trk=eml-alert",
+    "source": "LinkedIn alert",
+    "description": "Manual testing of web applications, test case design, functional and regression testing, cross browser testing, defect reporting using Jira. SQL knowledge required."
+  },
+  {
+    "title": "MIS Executive",
+    "company": "Square Pharmaceuticals PLC",
+    "location": "Tejgaon, Dhaka",
+    "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290002",
+    "source": "Bdjobs",
+    "deadline": "20 Oct 2026",
+    "salary": "Tk. 25,000 - 30,000",
+    "description": "Prepare management information system reports, maintain databases using SQL, produce daily and monthly reporting for management, ensure data integrity, support requirement analysis with Microsoft Office and Excel."
+  },
+  {
+    "title": "QA Engineer",
+    "company": "Far Away Tech Ltd.",
+    "location": "Gazipur",
+    "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290555",
+    "source": "Bdjobs",
+    "salary": "Tk. 15,000",
+    "description": "Manual testing and regression testing of software products. Test case design and defect reporting."
+  },
+  {
+    "title": "Senior Backend Developer",
+    "company": "Fintech BD Ltd.",
+    "location": "Gulshan 1, Dhaka",
+    "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1290777",
+    "source": "Bdjobs",
+    "salary": "Tk. 90,000",
+    "description": "Node.js microservices, Kubernetes, distributed systems. Five years of experience required."
+  },
+  {
+    "title": "IT Support Officer",
+    "company": "BRAC Bank PLC",
+    "location": "Mohakhali, Dhaka",
+    "url": "https://jobs.bdjobs.com/jobdetails.asp?id=1291200",
+    "source": "Bdjobs",
+    "deadline": "15 Oct 2026",
+    "salary": "Negotiable",
+    "description": "Provide application support and technical support to internal users, troubleshoot web applications, basic SQL queries, database management support, hosting and DNS understanding, documentation of incidents."
+  },
+  {
+    "title": "Junior Data Analyst",
+    "company": "Shopfront Commerce",
+    "location": "Banani, Dhaka",
+    "url": "https://example.com/careers/junior-data-analyst",
+    "source": "Careers page",
+    "salary": "Tk 24,000 - 32,000",
+    "description": "Build reports and dashboards, write SQL queries against MySQL, support data integrity checks, produce analytics for the commercial team, Excel and Microsoft Office."
+  }
+]

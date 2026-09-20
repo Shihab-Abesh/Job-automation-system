@@ -1,0 +1,34 @@
+name: Publish site
+
+# Pages source is set to "GitHub Actions", so pushes you make by hand need a
+# workflow to publish them. The discovery workflow publishes its own runs.
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "data/**"
+      - "state/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
