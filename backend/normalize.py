@@ -123,12 +123,14 @@ def normalize_title(title: str, drop_seniority: bool = False) -> str:
 # Salary
 # --------------------------------------------------------------------------
 _NUM = r"(\d[\d,\.]*)"
+# The currency marker can sit on either side of the number: "Tk 25,000" or "25000৳".
 _SAL_RANGE = re.compile(
-    rf"(?:tk|bdt|taka|৳)?\.?\s*{_NUM}\s*(k|thousand|lakh|lac)?\s*(?:-|to|–|—)\s*"
+    rf"(?:tk|bdt|taka|৳)?\.?\s*{_NUM}\s*(k|thousand|lakh|lac)?\s*(?:(?:tk|bdt|taka)\b|৳)?\s*(?:-|to|–|—)\s*"
     rf"(?:tk|bdt|taka|৳)?\.?\s*{_NUM}\s*(k|thousand|lakh|lac)?",
     re.I,
 )
 _SAL_SINGLE = re.compile(rf"(?:tk|bdt|taka|৳)\.?\s*{_NUM}\s*(k|thousand|lakh|lac)?", re.I)
+_SAL_SINGLE_SUFFIX = re.compile(rf"{_NUM}\s*(k|thousand|lakh|lac)?\s*(?:(?:tk|bdt|taka)\b|৳)", re.I)
 _NEGOTIABLE = re.compile(r"negotiab|as per (company )?polic|industry standard|competitive", re.I)
 
 
@@ -161,11 +163,12 @@ def parse_salary(text: str | None) -> tuple[int | None, int | None, str]:
             lo, hi = hi, lo
         if lo:
             return lo, hi, f"Tk {lo:,}" + (f" - {hi:,}" if hi else "")
-    m = _SAL_SINGLE.search(t)
-    if m:
-        v = _to_taka(m.group(1), m.group(2))
-        if v:
-            return v, None, f"Tk {v:,}"
+    for single in (_SAL_SINGLE, _SAL_SINGLE_SUFFIX):
+        m = single.search(t)
+        if m:
+            v = _to_taka(m.group(1), m.group(2))
+            if v:
+                return v, None, f"Tk {v:,}"
     if _NEGOTIABLE.search(t):
         return None, None, "Negotiable"
     return None, None, ""

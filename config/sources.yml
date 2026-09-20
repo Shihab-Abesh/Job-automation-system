@@ -25,6 +25,17 @@ sources:
       deadline: "div.dead-text, .deadline, .job-deadline"
       link_contains: "jobdetail"
 
+  bdrecruit:
+    enabled: true
+    # bdrecruit.net is WordPress, so jobs come from its public REST API (robots.txt
+    # allows it). No selectors to maintain, and the whole board is two requests.
+    api_url: "https://bdrecruit.net/wp-json/wp/v2/job_listing"
+    per_page: 100
+    max_pages: 3             # 300 postings is well past what the site lists at once
+    # queries = keep postings whose title matches one of your search queries
+    # all     = keep every posting and let scoring sort them (noisy: it is a general board)
+    relevance: queries
+
   email_alerts:
     enabled: false           # flip to true once IMAP_USER / IMAP_PASSWORD are set
     imap_host: imap.gmail.com

@@ -37,6 +37,9 @@ def test_sqa_expands_to_match_the_long_form():
     ("Tk. 20,000 - 25,000 (Monthly)", 20000, 25000),
     ("Salary: Tk 18k", 18000, None),
     ("Tk. 1.2 lakh", 120000, None),
+    ("25000৳ - 40000৳ / month", 25000, 40000),      # symbol after the number
+    ("150000৳ / month", 150000, None),
+    ("20,000 Tk - 25,000 Tk", 20000, 25000),
     ("Negotiable", None, None),
     ("", None, None),
 ])
