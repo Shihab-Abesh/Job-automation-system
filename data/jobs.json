@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-19T14:11:45+00:00",
+ "generatedAt": "2026-09-20T08:23:19+00:00",
  "meta": {
   "queries": [
    "software quality assurance",
@@ -23,13 +23,13 @@
     "errors": []
    },
    "rss": {
-    "found": 20,
+    "found": 21,
     "errors": [
      "RemoteOK: empty response"
     ]
    },
    "careers": {
-    "found": 6,
+    "found": 15,
     "errors": []
    },
    "local": {
@@ -38,13 +38,13 @@
    }
   },
   "counts": {
-   "total": 20,
+   "total": 23,
    "new": 0,
    "expired": 0,
-   "duplicatesFolded": 6,
+   "duplicatesFolded": 13,
    "priorityA": 0,
-   "priorityB": 6,
-   "priorityC": 14
+   "priorityB": 7,
+   "priorityC": 16
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -53,31 +53,52 @@
    "retention_days": 45,
    "drop_expired": true
   },
-  "blockedUrls": [
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+quality+assurance&pg=1",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+quality+assurance&pg=2",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+engineer&pg=1",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+engineer&pg=2",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+tester&pg=1",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=software+tester&pg=2",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=manual+testing&pg=1",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=manual+testing&pg=2",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+analyst&pg=1",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=QA+analyst&pg=2",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+executive&pg=1",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+executive&pg=2",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+officer&pg=1",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=MIS+officer&pg=2",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=information+systems+executive&pg=1",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=information+systems+executive&pg=2",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+officer&pg=1",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+officer&pg=2",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+executive&pg=1",
-   "https://jobs.bdjobs.com/jobsearch.asp?txtsearch=IT+executive&pg=2"
-  ],
-  "ranAt": "2026-09-19T14:11:45+00:00"
+  "blockedUrls": [],
+  "ranAt": "2026-09-20T08:23:19+00:00"
  },
  "jobs": [
+  {
+   "title": "QA Testing & Automation",
+   "company": "Brain Station 23",
+   "description": "QA Testing & Automation",
+   "category": "Software Quality Assurance",
+   "location": "Mohakhali, Dhaka",
+   "source": "Brain Station 23 careers",
+   "url": "https://brainstation-23.com/software-testing-as-service/",
+   "status": "Awaiting Review",
+   "id": "0136805c-73e0-43fc-bb95-dab016054262",
+   "createdAt": "2026-09-15T06:24:03+00:00",
+   "requiredSkills": "automation",
+   "postedAt": null,
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "",
+   "experienceText": "",
+   "area": "Mohakhali",
+   "distanceKm": 1.9,
+   "fingerprint": "e1f6edef8be96ebe",
+   "sources": [
+    {
+     "source": "Brain Station 23 careers",
+     "url": "https://brainstation-23.com/software-testing-as-service/",
+     "found_at": "2026-09-20T08:23:16+00:00"
+    }
+   ],
+   "matchScore": 69,
+   "scoreParts": {
+    "keyword": 50,
+    "experience": 85,
+    "projects": 35,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "careers"
+  },
   {
    "title": "CircleCI: Senior Software Engineer",
    "company": "Unknown company",
@@ -104,12 +125,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-09-19T14:11:26+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-19T14:11:27+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 65,
@@ -151,7 +172,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-manager-security-operations-center-emea",
-     "found_at": "2026-09-19T14:11:27+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 64,
@@ -193,7 +214,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager",
-     "found_at": "2026-09-19T14:11:27+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 64,
@@ -235,7 +256,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-bilingual-channel-account-manager-arabic-mea-uk",
-     "found_at": "2026-09-19T14:11:26+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 64,
@@ -277,7 +298,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/platform-sh-billing-systems-architect",
-     "found_at": "2026-09-19T14:11:26+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 64,
@@ -319,7 +340,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/ignition-inc-mac-msp-help-desk-guru-work-from-home",
-     "found_at": "2026-09-19T14:11:27+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 63,
@@ -334,6 +355,48 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Data Engineering",
+   "company": "Brain Station 23",
+   "description": "Data Engineering",
+   "category": "Information Technology",
+   "location": "Mohakhali, Dhaka",
+   "source": "Brain Station 23 careers",
+   "url": "https://brainstation-23.com/data-engineering-services",
+   "status": "Awaiting Review",
+   "id": "22b9d542-7194-455b-8a5e-57f37fa6014a",
+   "createdAt": "2026-09-15T06:24:03+00:00",
+   "requiredSkills": "engineering",
+   "postedAt": null,
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "",
+   "experienceText": "",
+   "area": "Mohakhali",
+   "distanceKm": 1.9,
+   "fingerprint": "eb2aa99905940018",
+   "sources": [
+    {
+     "source": "Brain Station 23 careers",
+     "url": "https://brainstation-23.com/data-engineering-services",
+     "found_at": "2026-09-20T08:23:16+00:00"
+    }
+   ],
+   "matchScore": 59,
+   "scoreParts": {
+    "keyword": 50,
+    "experience": 45,
+    "projects": 35,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "careers"
   },
   {
    "title": "Discord: Engineering Manager, Notifications",
@@ -361,7 +424,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-engineering-manager-notifications",
-     "found_at": "2026-09-19T14:11:27+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 55,
@@ -403,7 +466,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-devops-engineer-3",
-     "found_at": "2026-09-19T14:11:27+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 55,
@@ -418,6 +481,53 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Adobe Experience Manager",
+   "company": "Brain Station 23",
+   "description": "Adobe Experience Manager",
+   "category": "Information Technology",
+   "location": "Mohakhali, Dhaka",
+   "source": "Brain Station 23 careers",
+   "url": "https://brainstation-23.com/adobe-experience-manager-aem/",
+   "status": "Awaiting Review",
+   "id": "eee0077a-ca25-407c-9d64-ae64d8d8c07c",
+   "createdAt": "2026-09-15T06:24:03+00:00",
+   "requiredSkills": "adobe",
+   "postedAt": null,
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "",
+   "experienceText": "",
+   "area": "Mohakhali",
+   "distanceKm": 1.9,
+   "fingerprint": "780808aa85142f3f",
+   "sources": [
+    {
+     "source": "Brain Station 23 careers",
+     "url": "https://brainstation-23.com/adobe-experience-manager-aem/",
+     "found_at": "2026-09-20T08:23:16+00:00"
+    },
+    {
+     "source": "Brain Station 23 careers",
+     "url": "https://brainstation-23.com/essential-questions-to-ask-an-aem-implementation-partner/",
+     "found_at": "2026-09-20T08:23:16+00:00"
+    }
+   ],
+   "matchScore": 54,
+   "scoreParts": {
+    "keyword": 50,
+    "experience": 45,
+    "projects": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "careers"
   },
   {
    "title": "Abnormal: Critical Situation Manager",
@@ -445,7 +555,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-critical-situation-manager",
-     "found_at": "2026-09-19T14:11:27+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 54,
@@ -487,7 +597,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-security-operations-engineer",
-     "found_at": "2026-09-19T14:11:26+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 54,
@@ -528,8 +638,13 @@
    "sources": [
     {
      "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/datadog-developer-advocate-service-management-emea",
+     "found_at": "2026-09-20T08:22:58+00:00"
+    },
+    {
+     "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/datadog-developer-advocate-service-management",
-     "found_at": "2026-09-19T14:11:26+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 54,
@@ -571,7 +686,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/fastly-senior-sre-networks",
-     "found_at": "2026-09-19T14:11:27+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 54,
@@ -613,12 +728,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-senior-professional-services-devops-engineer",
-     "found_at": "2026-09-19T14:11:26+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer",
-     "found_at": "2026-09-19T14:11:26+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 54,
@@ -660,7 +775,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/keeper-security-associate-account-manager-sled",
-     "found_at": "2026-09-19T14:11:27+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 54,
@@ -702,12 +817,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-application-security-engineer-ii",
-     "found_at": "2026-09-19T14:11:27+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/temporal-technologies-senior-application-security-engineer",
-     "found_at": "2026-09-19T14:11:27+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 54,
@@ -749,7 +864,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-cloud-architect",
-     "found_at": "2026-09-19T14:11:26+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 54,
@@ -791,7 +906,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/huntress-evergreen-sales-development-representative",
-     "found_at": "2026-09-19T14:11:27+00:00"
+     "found_at": "2026-09-20T08:22:58+00:00"
     }
    ],
    "matchScore": 53,
@@ -833,7 +948,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/uilm",
-     "found_at": "2026-09-19T14:11:45+00:00"
+     "found_at": "2026-09-20T08:23:19+00:00"
     }
    ],
    "matchScore": 48,
@@ -875,7 +990,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/careers/",
-     "found_at": "2026-09-19T14:11:45+00:00"
+     "found_at": "2026-09-20T08:23:19+00:00"
     }
    ],
    "matchScore": 36,
@@ -917,7 +1032,7 @@
     {
      "source": "Selise careers",
      "url": "https://selisegroup.com/manufacturing-engineering",
-     "found_at": "2026-09-19T14:11:45+00:00"
+     "found_at": "2026-09-20T08:23:19+00:00"
     }
    ],
    "matchScore": 36,
