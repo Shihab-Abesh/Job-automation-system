@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-21T08:29:27+00:00",
+ "generatedAt": "2026-09-21T16:44:41+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 13,
+    "found": 14,
     "errors": [],
-    "raw": 120
+    "raw": 126
    },
    "jsonld": {
     "found": 3,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 13,
+    "found": 14,
     "errors": [],
-    "raw": 183
+    "raw": 184
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 22,
-   "new": 0,
+   "total": 24,
+   "new": 2,
    "expired": 0,
    "duplicatesFolded": 7,
    "priorityA": 8,
    "priorityB": 4,
-   "priorityC": 10
+   "priorityC": 12
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-09-21T08:29:27+00:00"
+  "ranAt": "2026-09-21T16:44:41+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-09-21T08:28:46+00:00"
+     "found_at": "2026-09-21T16:44:01+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,12 +145,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026-2",
-     "found_at": "2026-09-21T08:28:44+00:00"
+     "found_at": "2026-09-21T16:43:58+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026",
-     "found_at": "2026-09-21T08:28:44+00:00"
+     "found_at": "2026-09-21T16:43:58+00:00"
     }
    ],
    "matchScore": 83,
@@ -193,7 +193,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/nagad-limited/career/executive-mis/2026",
-     "found_at": "2026-09-21T08:28:44+00:00"
+     "found_at": "2026-09-21T16:43:58+00:00"
     }
    ],
    "matchScore": 83,
@@ -236,12 +236,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-operations-analyst-commure/",
-     "found_at": "2026-09-21T08:28:44+00:00"
+     "found_at": "2026-09-21T16:43:58+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-data-operations-analyst-commure/",
-     "found_at": "2026-09-21T08:28:44+00:00"
+     "found_at": "2026-09-21T16:43:58+00:00"
     }
    ],
    "matchScore": 81,
@@ -284,7 +284,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-new-zealand-dairy-products-bd-limited-2/",
-     "found_at": "2026-09-21T08:28:44+00:00"
+     "found_at": "2026-09-21T16:43:58+00:00"
     }
    ],
    "matchScore": 79,
@@ -326,7 +326,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/radiant-care-limited/career/management-trainee-officer/2026",
-     "found_at": "2026-09-21T08:28:44+00:00"
+     "found_at": "2026-09-21T16:43:58+00:00"
     }
    ],
    "matchScore": 79,
@@ -368,7 +368,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-full-stack-business-remote-colombia",
-     "found_at": "2026-09-21T08:28:46+00:00"
+     "found_at": "2026-09-21T16:44:01+00:00"
     }
    ],
    "matchScore": 75,
@@ -410,7 +410,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job-in-bd/twelve-clothing-limited/career/mto-research-and-development/2026",
-     "found_at": "2026-09-21T08:28:44+00:00"
+     "found_at": "2026-09-21T16:43:58+00:00"
     }
    ],
    "matchScore": 75,
@@ -452,7 +452,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/hr-sarahbeauty-uttara-dhaka-bangladesh-full-time-digital-marketing-media-buying-executive/",
-     "found_at": "2026-09-21T08:28:46+00:00"
+     "found_at": "2026-09-21T16:44:00+00:00"
     }
    ],
    "matchScore": 74,
@@ -495,7 +495,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-shops-foodpanda/",
-     "found_at": "2026-09-21T08:28:44+00:00"
+     "found_at": "2026-09-21T16:43:58+00:00"
     }
    ],
    "matchScore": 73,
@@ -538,7 +538,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/reddit-backend-software-engineer-pdp-experience",
-     "found_at": "2026-09-21T08:28:46+00:00"
+     "found_at": "2026-09-21T16:44:01+00:00"
     }
    ],
    "matchScore": 71,
@@ -580,7 +580,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-09-21T08:28:50+00:00"
+     "found_at": "2026-09-21T16:44:05+00:00"
     }
    ],
    "matchScore": 66,
@@ -622,7 +622,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-09-21T08:28:46+00:00"
+     "found_at": "2026-09-21T16:44:00+00:00"
     }
    ],
    "matchScore": 79,
@@ -664,7 +664,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/epyllion-group/career/management-trainee-mt/2026",
-     "found_at": "2026-09-21T08:28:44+00:00"
+     "found_at": "2026-09-21T16:43:58+00:00"
     }
    ],
    "matchScore": 75,
@@ -706,7 +706,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-09-21T08:28:50+00:00"
+     "found_at": "2026-09-21T16:44:05+00:00"
     }
    ],
    "matchScore": 61,
@@ -749,7 +749,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/evident-change-senior-full-stack-software-engineer",
-     "found_at": "2026-09-21T08:28:46+00:00"
+     "found_at": "2026-09-21T16:44:01+00:00"
     }
    ],
    "matchScore": 61,
@@ -792,12 +792,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/22",
-     "found_at": "2026-09-21T08:28:46+00:00"
+     "found_at": "2026-09-21T16:44:01+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/21",
-     "found_at": "2026-09-21T08:28:46+00:00"
+     "found_at": "2026-09-21T16:44:01+00:00"
     }
    ],
    "matchScore": 61,
@@ -841,7 +841,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-09-21T08:28:50+00:00"
+     "found_at": "2026-09-21T16:44:05+00:00"
     }
    ],
    "matchScore": 61,
@@ -857,6 +857,94 @@
     "Title matches your excluded list (Staff)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Senior Full-Stack Developer - Marketplace Web & Mobile Platform",
+   "company": "Adventure Travel 365",
+   "description": "Headquarters: Phoenix, Arizona\nURL: https://adventuretravel365.com/\nSenior Full-Stack Developer - Marketplace Web & Mobile Platform\nWe have a big idea, and we’re looking for a top-notch Senior Full-Stack Developer to help us bring it to life.\nWe’re building a new contractor referral and services marketplace, think Thumbtack or Angi , where clients can easily find and connect with contractors and service providers. The vision includes both an interactive web platform and mobile app, with everything from user accounts and referrals to job tracking, payments, advertising, and more.\nThis is a fully remote, full-time, ongoing position, and we’re open to applicants worldwide.\nThere are a lot of moving pieces, which is exactly why we’re looking for someone who has built something like this before and gets excited about taking a platform from an idea to a working product, then continuing to grow it with us.\nWhat You’ll Help Us Build\nThe platform will have two main sides: clients looking for services and contractors/vendors looking for business.\nSome of the functionality we’re planning includes:\nClient and contractor/vendor accounts and profiles\nContractor listings, categories, search, and filtering\nService requests, inquiries, referrals, and lead management\nJob and project tracking\nClient and vendor dashboards\nOnline payments and transaction tracking\nReviews and ratings\nNotifications and communications\nBanner advertising and paid promotional opportunities\nAdmin tools for managing the platform\nReporting and analytics\nSecure management of user, job, and transaction data\nAnd probably more! We have a strong vision for where we want this to go, but we also want the right developer to help us determine the smartest way to build it.\nThis will be an evolving platform, so we’re looking for someone who wants to grow with it, not simply complete a checklist of features.\nWho We’re Looking For\nWe’d love to find someone with strong experience in full-stack web and mobile development , especially someone who has worked on a marketplace, booking platform, service-provider network, or another multi-user platform.\nYou should be comfortable with:\nFull-stack web development\nMobile or cross-platform app development\nStrong front-end and back-end development\nMulti-user marketplace platforms\nUser authentication and account management\nPayment gateway integrations\nDatabases and APIs\nThird-party integrations\nDashboards and reporting\nSecure, scalable application architecture\nCloud hosting and deployment\nTesting, maintenance, and optimization\nUsing modern AI-powered development tools and integrating AI capabilities into web and mobile applications\nIf you’ve worked on something similar to Thumbtack, Angi, TaskRabbit, Upwork, or another two-sided marketplace , we definitely want to hear about it.\nMore Than Just Coding\nWe’re not looking for someone who simply waits for a list of instructions and starts coding.\nWe want someone who can look at the big picture, ask the right questions, recommend the best technical approach, flag potential challenges, and help turn our ideas into a platform that’s intuitive, scalable, and built to grow.\nYou’ll also be expected to study established platforms like Thumbtack and Angi , understand how their user journeys and marketplace functionality work from both the client and service-provider sides, and use those learnings to help us determine the best approach for our own platform.\nYou should be able to take the project through planning, architecture, development, testing, launch, and beyond , while communicating clearly with a non-technical team along the way.\nStrong spoken and written English communication skills are important. You should be comfortable discussing ideas, explaining technical decisions clearly, and communicating regularly with a non-technical team.\nThis is not a short-term build-and-leave project. We’re looking for someone who can stay with the platform as it grows, helping us continually improve, expand, and maintain it over time.\nInterested? Tell Us About Yourself\nPlease send us:\nA quick introduction\nYour resume or LinkedIn profile\nYour portfolio and links to websites/apps you’ve built\nExamples of marketplaces, booking platforms, referral systems, or payment-enabled platforms you’ve worked on\nWhat you personally worked on for those projects\nYour experience using AI in development\nWhat technologies/frameworks you’d recommend for a project like this and why\nYour availability\nA short video introduction would be great, too! Nothing overly formal, just a quick introduction so we can get to know you, hear about your experience, and get a feel for how you communicate.\nMost importantly, show us what you’ve built. If you’ve helped create a multi-sided marketplace similar to Thumbtack or Angi, tell us about it. We’d love to see it.\nTo apply: https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
+   "status": "Awaiting Review",
+   "id": "a386fddf-a93a-4a9b-8eb6-ac7d2dd2bb21",
+   "createdAt": "2026-09-21T16:44:05+00:00",
+   "requiredSkills": "senior, full, stack, marketplace, mobile, platform, headquarters, phoenix, arizona, url, https, //adventuretravel365.com/",
+   "postedAt": "2026-09-21",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "cb1ff69a593341b1",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
+     "found_at": "2026-09-21T16:44:05+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Sr. Executive / Asst. Brand Manager – Marketing",
+   "company": "Chery Bangladesh",
+   "description": "Company Name: Chery Bangladesh\nCompany: Asian Motorspex Ltd.\nApplication Deadline: 28 September 2026\nJob Summary\nChery Bangladesh is looking for a dynamic Sr. Executive / Assistant Brand Manager – Marketing to support brand growth through digital marketing, social media, CRM, content development, consumer insights, PR, and integrated campaigns. The role will work closely with creative, sales, and other internal teams to strengthen customer engagement, improve lead conversion, and execute impactful automotive marketing initiatives.\nKey Responsibilities\nDevelop and manage digital content plans and social media calendars aligned with brand objectives.\nManage day-to-day social media, content publishing, and community engagement.\nDevelop consumer profiles and translate customer insights into marketing actions.\nManage and improve the CRM and lead-to-sales funnel to strengthen lead quality, follow-up, and conversion.\nTrack industry sales, automotive trends, consumer behavior, and lifestyle trends to identify opportunities.\nDevelop content briefs, concepts, drafts, and scripts with the in-house creative and cinematography team.\nManage PR, influencer/KOL, and customer testimonial initiatives, including customer outreach and story development.\nSupport product launches, events, and integrated brand campaigns.\nRequirements\n2–5 years of experience in Brand Marketing, Digital Marketing, Social Media, CRM, or related fields.\nStrong understanding of digital content, social media, CRM, and consumer engagement.\nStrong content writing, scripting, and storytelling skills.\nGood understanding of automotive, consumer, and lifestyle trends.\nStrong communication, coordination, and project management skills.\nExperience with automotive brands is an advantage.\nCompensation & Benefits\nCompetitive salary and benefits.\nMobile allowance.\nLunch partially subsidized.\nOpportunity to work with a growing automotive business.\nCareer growth and professional development opportunities.\nMake Your ATS-Friendly CV",
+   "category": "Information Technology",
+   "location": "Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/jobs-in-bd/chery-bangladesh/career/sr-executive-asst-brand-manager-marketing/2026",
+   "status": "Awaiting Review",
+   "id": "2f6599fa-3fa1-4c81-9b2a-630389a04115",
+   "createdAt": "2026-09-21T16:43:58+00:00",
+   "requiredSkills": "sr., executive, asst., brand, marketing, name, chery, bangladesh, asian, motorspex, deadline, september",
+   "postedAt": "2026-09-21",
+   "deadline": "2026-09-29",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Full Time",
+   "experienceText": "2 Years",
+   "area": "",
+   "distanceKm": null,
+   "fingerprint": "9af6a0d3660edb34",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/jobs-in-bd/chery-bangladesh/career/sr-executive-asst-brand-manager-marketing/2026",
+     "found_at": "2026-09-21T16:43:58+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting",
+    "Title matches your excluded list (Sr)",
+    "Title matches your excluded list (Manager)"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Senior Software Engineer, remote",
@@ -884,7 +972,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-09-21T08:28:50+00:00"
+     "found_at": "2026-09-21T16:44:05+00:00"
     }
    ],
    "matchScore": 57,
@@ -927,7 +1015,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/19",
-     "found_at": "2026-09-21T08:28:46+00:00"
+     "found_at": "2026-09-21T16:44:01+00:00"
     }
    ],
    "matchScore": 57,
@@ -971,7 +1059,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/imigo-global-remote-executive-manager-visa-services-business-development/",
-     "found_at": "2026-09-21T08:28:46+00:00"
+     "found_at": "2026-09-21T16:44:00+00:00"
     }
    ],
    "matchScore": 57,
@@ -1016,12 +1104,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-09-21T08:28:54+00:00"
+     "found_at": "2026-09-21T16:44:09+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-21T08:28:54+00:00"
+     "found_at": "2026-09-21T16:44:09+00:00"
     }
    ],
    "matchScore": 53,
