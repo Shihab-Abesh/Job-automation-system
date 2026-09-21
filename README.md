@@ -311,6 +311,50 @@ The earlier formula scored nearly every job 53-56, because three of its four par
 were the same for almost every job. If a percentage cannot tell a good match from
 a poor one it is decoration.
 
+## Recruiter keywords and the Key Skills line
+
+Open any job's resume and the **Recruiter Keywords** panel reads the job post and lists
+the terms a recruiter or an ATS screens for. Paste a fuller post into the box at the
+bottom of the panel (or into **Add Job**, where a live preview appears as you paste) and
+everything re-reads. It works on the post you give it, in your browser, with no account
+and nothing sent anywhere.
+
+**How a keyword is found.** `keywords.js` holds about 400 skills across software, testing,
+IT support, MIS and data, business and management, soft skills and degrees, each with the
+ways people really write it ("MS Excel", "Microsoft Excel", "Advanced Excel"). A small
+extra reader adds terms the list does not know: acronyms that repeat, and phrases after
+"experience with". The post's headings decide how much a line matters:
+
+| Tier | Where it was found |
+|---|---|
+| Must-have | under Requirements / Qualifications, near "must" or "required", or in the job title |
+| Important | in the duties |
+| Nice to have | under Preferred, or marked "a plus" |
+
+Company blurbs, benefits and equal-opportunity boilerplate are ignored, so a company that
+"loves Agile" in its About section does not make Agile a requirement.
+
+**What goes on your resume.** A **Key Skills** row is added as the first line of Core
+Skills, in the post's own wording, because an ATS matches strings ("Test Cases" does not
+find "Test Case Design"). It holds only skills that your own profile backs:
+
+| Colour | Meaning | On the resume? |
+|---|---|---|
+| Green | you list it as a skill, a project's tech, a degree or a job title | yes, click to leave one off |
+| Dashed blue | only mentioned inside a sentence of your experience, or an experience tag | no, click to add it if it is really a skill of yours |
+| Dashed amber | nowhere in your profile | no, click only if you genuinely have it |
+
+Nothing is added just because the post asks for it: a resume that claims JIRA or Selenium
+you have never used gets you an interview you then fail. The amber chips are the useful
+part: they are the must-haves to learn, or to add to your Master Profile if you already
+have them (once they are in your profile, every future job recognises them). Your clicks
+are saved per job. The row appears in the preview, PDF, DOCX and TXT, and bullets and
+projects that use the post's keywords move to the top.
+
+**The numbers.** *Resume keyword match* counts a keyword only when the resume uses the
+post's exact wording, before and after the Key Skills row. It is a simple-ATS estimate,
+not any employer's real score, and it leaves degrees out (the Education section shows those).
+
 ## Your rules, and what they do
 
 From `config/search.yml` and `config/profile.json`:
@@ -424,12 +468,13 @@ feed keeps flowing while you fix the selectors.
 | `backend/dedupe.py` | fingerprint, URL and near-match merging |
 | `backend/scoring.py`, `scoring.js` | the match score (same maths in both languages, tested against each other) and your rules |
 | `backend/health.py` | notices a source that has quietly stopped returning jobs |
+| `keywords.js` | reads a job post for recruiter keywords and decides which are yours (runs in the browser, tested under Node) |
 | `config/manual_sites.json` | the boards you check by hand, shown in the dashboard's Manual Sites tab |
 | `backend/store.py` | the feed and the ledger of what you have already decided |
 | `backend/notify.py` | GitHub issue, SMTP digest and webhook |
 | `web/` | approval queue and the sync shim for the dashboard |
 | `tools/` | form-filling helpers |
-| `tests/` | 170+ tests, run with `pytest -q` |
+| `tests/` | 180+ tests, run with `pytest -q` (`tests/js/` holds the ones for the browser code, run by Node) |
 
 ---
 

@@ -17,6 +17,9 @@
   // dropped, so removing a source (like the old sample fixtures) actually
   // cleans itself out of a browser that already synced it.
   const ACTIVE_STATUSES = new Set(["Saved", "Awaiting Approval", "Applied", "Interview", "Offer"]);
+  // Things only this browser knows about a job. The feed never has them, so a sync that rebuilt each
+  // job from the feed alone would silently throw away your resume edits and keyword choices.
+  const LOCAL_FIELDS = ["selectedStrategy", "resumeOverrides", "resumeKeywords", "pastedDescription"];
 
   const read = (key, fallback) => {
     try { return JSON.parse(localStorage.getItem(key) || fallback); } catch { return JSON.parse(fallback); }
@@ -39,11 +42,15 @@
         const decided = decisions[incoming.fingerprint];
         if (!existing) added++;
         known.delete(incoming.fingerprint);
+        const kept = {};
+        for (const field of LOCAL_FIELDS) {
+          if (existing && existing[field] !== undefined) kept[field] = existing[field];
+        }
         return {
           ...incoming,
+          ...kept,
           id: (existing && existing.id) || incoming.id,
           status: (decided && decided.status) || (existing && existing.status) || incoming.status,
-          selectedStrategy: existing && existing.selectedStrategy,
         };
       }).concat([...known.values()].filter((j) => ACTIVE_STATUSES.has(j.status)), loose);
 
