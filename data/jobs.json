@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-20T18:12:36+00:00",
+ "generatedAt": "2026-09-21T08:29:27+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 17,
+    "found": 13,
     "errors": [],
-    "raw": 132
+    "raw": 120
    },
    "jsonld": {
     "found": 3,
@@ -43,7 +43,7 @@
    "rss": {
     "found": 13,
     "errors": [],
-    "raw": 182
+    "raw": 183
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 26,
-   "new": 9,
+   "total": 22,
+   "new": 0,
    "expired": 0,
    "duplicatesFolded": 7,
-   "priorityA": 9,
+   "priorityA": 8,
    "priorityB": 4,
-   "priorityC": 13
+   "priorityC": 10
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-09-20T18:12:35+00:00"
+  "ranAt": "2026-09-21T08:29:27+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-09-20T18:11:54+00:00"
+     "found_at": "2026-09-21T08:28:46+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,12 +145,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026-2",
-     "found_at": "2026-09-20T18:11:52+00:00"
+     "found_at": "2026-09-21T08:28:44+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026",
-     "found_at": "2026-09-20T18:11:52+00:00"
+     "found_at": "2026-09-21T08:28:44+00:00"
     }
    ],
    "matchScore": 83,
@@ -193,7 +193,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/nagad-limited/career/executive-mis/2026",
-     "found_at": "2026-09-20T18:11:52+00:00"
+     "found_at": "2026-09-21T08:28:44+00:00"
     }
    ],
    "matchScore": 83,
@@ -236,12 +236,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-operations-analyst-commure/",
-     "found_at": "2026-09-20T18:11:52+00:00"
+     "found_at": "2026-09-21T08:28:44+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-data-operations-analyst-commure/",
-     "found_at": "2026-09-20T18:11:52+00:00"
+     "found_at": "2026-09-21T08:28:44+00:00"
     }
    ],
    "matchScore": 81,
@@ -256,46 +256,6 @@
     "Pay not stated, worth asking before you invest time",
     "Exact area not stated in the posting"
    ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Business Development Executive",
-   "company": "First4freelancers",
-   "description": "Company: First4freelancers\nJob Location: Suvastu Muskan Tower, Gulshan 1, Dhaka\nEmployment Type: Full-time, Onsite\nVacancy: 01\nWorking Hours: 6:30 PM – 3:30 AM (Bangladesh Time)\nWorking Days: Monday to Friday\nWeekly Holidays: Saturday & Sunday\nSalary: BDT 20,000-27,000 per month, based on skills and experience\nAbout the Role\nFM-US is looking for motivated and confident Business Development Executives to join its growing team. This role is suited for individuals who enjoy communicating with people, researching businesses, and building long-term client relationships.\nThe selected candidate will work with U.S.-based companies in the property preservation and facilities management industry , helping identify potential clients, generate leads, and build long-term business partnerships.\nKey Responsibilities\nResearch and identify potential clients in the U.S. market.\nBuild and maintain a qualified lead database.\nContact prospective clients through phone calls, emails, and LinkedIn.\nPresent company services professionally.\nSchedule meetings with decision-makers.\nFollow up with prospects and maintain regular communication.\nUpdate the CRM/lead database with accurate information.\nAssist with vendor registrations and partnership opportunities.\nAchieve monthly business development targets.\nRequirements\nExcellent spoken and written English communication skills.\nConfidence in communicating with international clients over the phone.\nStrong internet research and lead generation skills.\nSelf-motivated, organized, and target-oriented.\nBasic knowledge of Microsoft Excel or Google Sheets.\nAbility to work independently and as part of a team.\nPreferred Qualifications\nPrevious experience in Business Development, Sales, Lead Generation, Customer Support, Telemarketing, or a similar role is an advantage.\nCandidates with experience working in the USA, UK, Canada, Australia, or other international markets will receive additional consideration.\nExperience using LinkedIn, Apollo, CRM software, or other lead generation tools is a plus.\nFresh graduates and freshers with excellent English communication skills are highly encouraged to apply. Training will be provided to the right candidates.\nCompensation & Benefits\nSalary: BDT 20,000-27,000 per month, based on skills and experience.\nBDT 20,000 per month during the first 2 months of the training period.\nThe training period may be accelerated based on performance.\nPerformance-based incentives.\nMonday to Friday work schedule.\nSaturday & Sunday as weekly holidays.\nOpportunity to work with international clients.\nHands-on training and career growth opportunities.\nFriendly and professional work environment.\nHow to Apply\nInterested candidates are requested to send their updated CV to: career@first4freelancers.com.bd\nOffice Location: Suvastu Muskan Tower, Gulshan 1, Dhaka\nWorking Hours: 6:30 PM – 3:30 AM (Bangladesh Time)\nWeekly Holidays: Saturday & Sunday\nMake Your CV ATS-Friendly! Click the image below to create your professional CV. ⬇️",
-   "category": "Management & Business",
-   "location": "Suvastu Muskan Tower, Gulshan 1, Dhaka",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/jobs-in-bd/first4freelancers/career/business-development-executive/2026",
-   "status": "Awaiting Review",
-   "id": "780e5175-9b10-41ed-8c34-5d98e83774c5",
-   "createdAt": "2026-09-20T15:55:35+00:00",
-   "requiredSkills": "business, development, executive, first4freelancers, location, suvastu, muskan, tower, gulshan, dhaka, employment, type",
-   "postedAt": "2026-08-21",
-   "deadline": "2026-09-20",
-   "salaryMin": 20000,
-   "salaryMax": 27000,
-   "salaryText": "Tk 20,000 - 27,000",
-   "employmentType": "Full Time, On-site",
-   "experienceText": "Freshers",
-   "area": "Gulshan 1",
-   "distanceKm": 2.9,
-   "fingerprint": "246a84e2bb4193d5",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/jobs-in-bd/first4freelancers/career/business-development-executive/2026",
-     "found_at": "2026-09-20T18:11:54+00:00"
-    }
-   ],
-   "matchScore": 79,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [],
    "discoveredBy": "bdrecruit"
   },
   {
@@ -324,7 +284,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-new-zealand-dairy-products-bd-limited-2/",
-     "found_at": "2026-09-20T18:11:52+00:00"
+     "found_at": "2026-09-21T08:28:44+00:00"
     }
    ],
    "matchScore": 79,
@@ -366,7 +326,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/radiant-care-limited/career/management-trainee-officer/2026",
-     "found_at": "2026-09-20T18:11:52+00:00"
+     "found_at": "2026-09-21T08:28:44+00:00"
     }
    ],
    "matchScore": 79,
@@ -408,7 +368,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-full-stack-business-remote-colombia",
-     "found_at": "2026-09-20T18:11:54+00:00"
+     "found_at": "2026-09-21T08:28:46+00:00"
     }
    ],
    "matchScore": 75,
@@ -450,7 +410,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job-in-bd/twelve-clothing-limited/career/mto-research-and-development/2026",
-     "found_at": "2026-09-20T18:11:52+00:00"
+     "found_at": "2026-09-21T08:28:44+00:00"
     }
    ],
    "matchScore": 75,
@@ -492,7 +452,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/hr-sarahbeauty-uttara-dhaka-bangladesh-full-time-digital-marketing-media-buying-executive/",
-     "found_at": "2026-09-20T18:11:54+00:00"
+     "found_at": "2026-09-21T08:28:46+00:00"
     }
    ],
    "matchScore": 74,
@@ -535,7 +495,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-shops-foodpanda/",
-     "found_at": "2026-09-20T18:11:52+00:00"
+     "found_at": "2026-09-21T08:28:44+00:00"
     }
    ],
    "matchScore": 73,
@@ -578,7 +538,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/reddit-backend-software-engineer-pdp-experience",
-     "found_at": "2026-09-20T18:11:54+00:00"
+     "found_at": "2026-09-21T08:28:46+00:00"
     }
    ],
    "matchScore": 71,
@@ -620,7 +580,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-09-20T18:11:58+00:00"
+     "found_at": "2026-09-21T08:28:50+00:00"
     }
    ],
    "matchScore": 66,
@@ -635,48 +595,6 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Executive – Airport Operations",
-   "company": "US-Bangla Airlines",
-   "description": "Location: Chattogram & Cox’s Bazar\nJob Type: On-site\nEmployment Type: Full-Time / Permanent\nSalary: BDT 35,000 Gross Monthly\nExperience: 0-3 years of relevant experience\nAge: Maximum 28 years\nApplication Deadline: September 20, 2026\nJob Overview\nThe Airport Operations Executive is responsible for the safe, efficient, and on-time execution of customer services and airport and ground operations. The role involves coordination with internal departments, ground handling agents, regulatory authorities, and service providers while maintaining compliance with company policies, aviation regulations, and customer service standards.\nKey Responsibilities\nAssist passengers during check-in, boarding, and baggage handling.\nVerify tickets, passports, and travel documents.\nProvide assistance to VIP/CIP and passengers requiring assistance.\nPerform load control and trim sheet preparation.\nCoordinate with Civil Aviation Authority and other service providers.\nHandle flight operations, ensuring safety, punctuality, and customer satisfaction.\nPrepare operational reports and manage lost or mishandled baggage cases.\nRespond efficiently to delays, cancellations, or other operational challenges.\nMaintain security and safety standards.\nRequired Competencies\nCore Competencies\nSafety Awareness and Compliance\nCustomer Service Excellence\nProfessional Integrity and Ethical Conduct\nTeam Collaboration\nAdaptability and Continuous Learning\nFunctional Competencies\nCustomer Service Excellence\nAirport & Ground Operations Management\nAviation Safety & Regulatory Compliance\nOperational Coordination & Problem Solving\nAbility to Manage Stress\nExcellent Communication Skills in English and Bengali\nEducational Qualification & Experience\nBachelor’s degree in any discipline from a reputed university.\nAny training or certification related to airport operations, passenger services, or hospitality management will be an added advantage.\n0–3 years of relevant experience.\nHeight & Physical Fitness Requirements\nDue to the nature of the job:\nMale: Minimum height 167.64 cm (5’6′′)\nFemale: Minimum height 160 cm (5’3′′)\nWeight: Must be proportionate to Body Mass Index (BMI 18.5–25.0).\nAge: Maximum 28 years.\nEyesight: 6/6 vision; no color blindness accepted.\nCompensation & Benefits\nMonthly gross salary of BDT 35,000\n2 festival bonuses\nPick and drop service to/from the airport, subject to location of residence\nFree meal\nMedical insurance\nFree air ticket as per company policy\nApplication Information\nApplication Deadline: September 20, 2026\nEmployment Type: Full-Time / Permanent\nJob Location: Chattogram & Cox’s Bazar\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Chattogram, Cox's Bazar",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/jobs-in-bd/us-bangla-airlines/career/executive-airport-operations/2026",
-   "status": "Awaiting Review",
-   "id": "b6ff45e0-2a8f-4167-ae3b-999c2be48a7e",
-   "createdAt": "2026-09-20T15:55:32+00:00",
-   "requiredSkills": "executive, airport, location, chattogram, cox, bazar, type, employment, full, time, permanent, salary",
-   "postedAt": "2026-09-14",
-   "deadline": "2026-09-21",
-   "salaryMin": 35000,
-   "salaryMax": null,
-   "salaryText": "Tk 35,000",
-   "employmentType": "Full Time, Permanent",
-   "experienceText": "Freshers",
-   "area": "Chattogram",
-   "distanceKm": 211.4,
-   "fingerprint": "23ce69c48a4637a1",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/jobs-in-bd/us-bangla-airlines/career/executive-airport-operations/2026",
-     "found_at": "2026-09-20T18:11:52+00:00"
-    }
-   ],
-   "matchScore": 83,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Chattogram is about 211.4 km out, past your 10 km limit"
-   ],
-   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Junior Data Analyst – Night Shift (Only Female – Work From Home)",
@@ -704,7 +622,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-09-20T18:11:54+00:00"
+     "found_at": "2026-09-21T08:28:46+00:00"
     }
    ],
    "matchScore": 79,
@@ -746,7 +664,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/epyllion-group/career/management-trainee-mt/2026",
-     "found_at": "2026-09-20T18:11:52+00:00"
+     "found_at": "2026-09-21T08:28:44+00:00"
     }
    ],
    "matchScore": 75,
@@ -759,50 +677,6 @@
    "priority": "C",
    "gateNotes": [
     "Gazipur is about 26.4 km out, past your 10 km limit"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Senior Software Engineer",
-   "company": "Nagad Limited",
-   "description": "Position: Senior Software Engineer – Software Development\nLocation: Dhaka, Bangladesh\nJob Type: On-site\nEmployment Type: Full-time\nSalary: Negotiable\nExperience: At least 3 years\nApplication Deadline: September 20, 2026\nJob Highlights\nDesign and develop robust, scalable, high-performing software solutions.\nTranslate business requirements into effective technical implementations.\nOptimize application performance.\nEnsure seamless software releases and deployments.\nResponsibilities\nAnalyze business and technical requirements and translate them into clear, effective, scalable, and secure technical solutions.\nLead the technical design and implementation of complex software solutions, applications, APIs, services, and integrations.\nContribute to and, where assigned, own application architecture, component design, integration patterns, technical standards, and solution design decisions.\nAnalyze existing applications and systems to identify opportunities for modernization, optimization, performance improvement, scalability, maintainability, and technical debt reduction.\nDevelop, enhance, and maintain production-grade software applications following SDLC, coding standards, engineering methodologies, and organizational best practices.\nLead or facilitate technical design reviews, code reviews, and implementation reviews to ensure quality, maintainability, security, and adherence to approved standards.\nBreak complex requirements into technical deliverables, provide development estimates, identify dependencies and technical risks, and support delivery planning.\nDevelop and integrate APIs, microservices, and enterprise systems while ensuring interoperability, reliability, security, scalability, and data consistency.\nDrive resolution of complex software defects and production incidents through structured root-cause analysis, corrective actions, and preventive measures.\nProvide Level 3 operational support and act as a technical point of contact for assigned applications, services, and integrations.\nAnalyze application performance, logs, metrics, database behavior, and production trends to identify and resolve reliability, scalability, and performance issues.\nDrive improvements in application observability, monitoring, alerting, error handling, resilience, and availability.\nLead or support CI/CD, deployment automation, release management, rollback, and post-release validation activities to improve deployment quality and reduce operational risk.\nEnsure secure software development practices are implemented and that identified vulnerabilities, security findings, audit observations, and compliance requirements are addressed within agreed timelines.\nEnsure transactional applications follow appropriate practices for transaction integrity, idempotency, error handling, auditability, reconciliation, data protection, and service availability.\nConduct research and development (R&D) on emerging technologies, software frameworks, engineering tools, and industry best practices and assess their applicability to organizational needs.\nIdentify and drive technical debt reduction, reusable components, engineering automation, modernization, and continuous improvement initiatives.\nMentor Software Engineers through technical guidance, code reviews, design reviews, knowledge sharing, problem-solving, and development of engineering capabilities.\nMaintain and review technical documentation, architecture diagrams, API specifications, design documents, operational procedures, and other approved development artifacts.\nCollaborate with business stakeholders, product/project teams, QA, security, infrastructure, operations, and other technical teams to ensure timely and high-quality delivery.\nSupport Agile development practices including backlog refinement, sprint planning, estimation, technical discussions, retrospectives, and delivery tracking.\nRequirements\nEducation\nBachelor’s degree in Computer Science, Software Engineering, Information Technology, or a related field.\nExperience\nAt least 3 years of relevant software development experience, with demonstrated experience delivering production-grade software solutions.\nExperience in Banks, Financial Technology (Fintech) Startups, Manufacturing (FMCG), telecommunications, E-commerce, or Groups of Companies.\nTechnical Skills\nStrong hands-on experience in backend development using Java and frameworks such as Spring and/or Micronaut.\nStrong experience in frontend development using React for web applications and Flutter for mobile applications.\nStrong knowledge of database design, data modeling, SQL, query optimization, and database performance troubleshooting.\nStrong knowledge of microservices architecture, RESTful APIs, API integration, authentication, authorization, resilience, and secure API design.\nStrong understanding of application security, secure coding, data protection, encryption, vulnerability remediation, and security-by-design principles.\nExperience with software architecture, design patterns, integration patterns, scalability, high availability, and maintainable application design.\nStrong knowledge of Git, branching strategies, pull requests, code review, and collaborative software development practices.\nPractical experience with CI/CD pipelines, automated builds, automated testing, deployment automation, and release management.\nExperience with application monitoring, logging, observability, metrics, alerting, incident troubleshooting, and production support.\nStrong understanding of software testing strategies, including unit, integration, regression, API, performance, and reliability testing.\nAbility to perform technical analysis, estimate development effort, assess technical risks, identify dependencies, and propose practical solutions.\nAbility to diagnose complex production and architectural problems and conduct structured root-cause analysis.\nAbility to review code and technical designs and provide constructive technical guidance to other engineers.\nAbility to mentor engineers and promote engineering standards, knowledge sharing, and continuous improvement.\nStrong communication, stakeholder management, collaboration, and technical documentation skills.\nAbility to work independently, make sound technical decisions, and take ownership of assigned systems or technical deliverables.\nAbility to evaluate emerging technologies and determine their practical applicability to organizational requirements.\nUnderstanding of financial technology or transaction-processing environments, including transaction integrity, idempotency, reconciliation, auditability, data protection, and high availability, is preferred.\nAdditional Requirements\nStrong problem-solving skills and attention to detail.\nEffective communication and collaboration abilities.\nAdaptability to changing project requirements and priorities.\nAbility to work both independently and as part of a team.\nEagerness to learn and stay updated with emerging technologies and best practices.\nSkills & Expertise\nAPI Integration\nAutomated Testing\nFlutter\nGit\nJava\nRESTful API\nSpring Framework\nSQL\nCompensation & Other Benefits\nProvident fund\nMedical allowance\nMobile bill\nWeekly 2 holidays\nInsurance\nYearly salary review\n2 festival bonuses\nSalary: Negotiable\nApplication Deadline: September 20, 2026\nMake Your ATS-Friendly CV",
-   "category": "Software Development",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/jobs-in-bd/nagad-limited/career/senior-software-engineer/2026",
-   "status": "Awaiting Review",
-   "id": "19a89eca-cbe4-469c-a397-bade80c514fe",
-   "createdAt": "2026-09-20T15:55:32+00:00",
-   "requiredSkills": "senior, engineer, development, location, dhaka, bangladesh, type, employment, full, time, salary, negotiable",
-   "postedAt": "2026-09-10",
-   "deadline": "2026-09-21",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Full Time, On-site",
-   "experienceText": "3 Years",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "9983555f1f0ae164",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/jobs-in-bd/nagad-limited/career/senior-software-engineer/2026",
-     "found_at": "2026-09-20T18:11:52+00:00"
-    }
-   ],
-   "matchScore": 73,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 83,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting",
-    "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -832,7 +706,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-09-20T18:11:58+00:00"
+     "found_at": "2026-09-21T08:28:50+00:00"
     }
    ],
    "matchScore": 61,
@@ -875,7 +749,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/evident-change-senior-full-stack-software-engineer",
-     "found_at": "2026-09-20T18:11:54+00:00"
+     "found_at": "2026-09-21T08:28:46+00:00"
     }
    ],
    "matchScore": 61,
@@ -904,7 +778,7 @@
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-09-20",
+   "postedAt": "2026-09-21",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -918,12 +792,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/22",
-     "found_at": "2026-09-20T18:11:54+00:00"
+     "found_at": "2026-09-21T08:28:46+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/21",
-     "found_at": "2026-09-20T18:11:54+00:00"
+     "found_at": "2026-09-21T08:28:46+00:00"
     }
    ],
    "matchScore": 61,
@@ -967,7 +841,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-09-20T18:11:58+00:00"
+     "found_at": "2026-09-21T08:28:50+00:00"
     }
    ],
    "matchScore": 61,
@@ -1010,7 +884,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-09-20T18:11:58+00:00"
+     "found_at": "2026-09-21T08:28:50+00:00"
     }
    ],
    "matchScore": 57,
@@ -1039,7 +913,7 @@
    "id": "40278252-6f0e-49d6-8441-47ef0b48a724",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, team, field, nation., required, python, docker, kubernetes, aws",
-   "postedAt": "2026-09-20",
+   "postedAt": "2026-09-21",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1053,7 +927,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/19",
-     "found_at": "2026-09-20T18:11:54+00:00"
+     "found_at": "2026-09-21T08:28:46+00:00"
     }
    ],
    "matchScore": 57,
@@ -1097,7 +971,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/imigo-global-remote-executive-manager-visa-services-business-development/",
-     "found_at": "2026-09-20T18:11:54+00:00"
+     "found_at": "2026-09-21T08:28:46+00:00"
     }
    ],
    "matchScore": 57,
@@ -1113,50 +987,6 @@
     "Exact area not stated in the posting",
     "Based in United Kingdom, outside Bangladesh",
     "Title matches your excluded list (Manager)"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Business Analyst to Director",
-   "company": "Walton Hi-Tech Industries PLC",
-   "description": "Vacancy: 01\nAge: 25–34 years\nLocation: Corporate Office, Dhaka\nSalary: Negotiable\nExperience: At least 5 years\nApplication Deadline: 20 September 2026\nKey Responsibilities\nWork closely with senior management to identify business needs and develop data-driven strategies and solutions.\nAnalyze business performance, market trends, operational challenges, and cross-functional data to identify insights and improvement opportunities.\nConduct comprehensive business feasibility studies covering technical, operational, financial, market, and commercial feasibility for new projects, products, investments, and business initiatives.\nPrepare feasibility reports, cost-benefit analyses, business cases, and investment recommendations; evaluate project viability based on cost, expected return, risks, resources, timelines, and potential business impact.\nLead business process improvement initiatives to enhance efficiency, productivity, and cost-effectiveness.\nSupport budgeting, forecasting, financial planning, and performance analysis; develop and monitor KPIs, dashboards, MIS, and business performance reports.\nCollaborate with Production, Sales, Supply Chain, Finance, Marketing, and other cross-functional teams to present analytical findings and strategic recommendations to senior management.\nCoordinate with internal and external stakeholders on business expansion, new projects, and strategic initiatives.\nEducational Requirements\nBBA/MBA in AIS, MIS, Finance, Banking, Marketing, or a relevant discipline.\nB.Sc. in Engineering (EEE/ME/IP or relevant discipline).\nExperience & Industry Requirements\nThe applicants should have experience in the following business area(s):\nComputer Hardware/Network Companies\nElectronic Equipment/Home Appliances\nAdditional Requirements\nAge: At least 25 years.\nProficiency in MS Excel, Power BI/Tableau, MIS, business reporting tools, and statistical data analysis.\nKnowledge of feasibility analysis, financial analysis, cost-benefit analysis, and business process analysis.\nStrong analytical, problem-solving, and critical-thinking skills.\nExcellent presentation and documentation skills.\nAbility to interpret complex datasets and convert insights into actionable business recommendations.\nCompensation & Other Benefits\nT/A\nMobile Bill\nTour Allowance\nCredit Card\nMedical Allowance\nPerformance Bonus\nProfit Share\nProvident Fund\nInsurance\nPartially Subsidized Lunch\nYearly Salary Review\n2 Festival Bonuses\nApplication Process\nInterested candidates are requested to send their updated CV to nayemi42452@waltonplc.com , mentioning the name of the position applied for in the subject line.\nApplication Deadline: 20 September 2026\nMake Your ATS-Friendly CV",
-   "category": "Business Analysis",
-   "location": "Corporate Office, Dhaka",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/jobs-in-bd/walton-hi-tech-industries-plc/career/business-analyst-to-director/2026",
-   "status": "Awaiting Review",
-   "id": "97e49321-a165-46c9-9562-383ccbdf59de",
-   "createdAt": "2026-09-20T15:55:32+00:00",
-   "requiredSkills": "business, analyst, director, vacancy, location, corporate, dhaka, salary, negotiable, least, deadline, september",
-   "postedAt": "2026-09-15",
-   "deadline": "2026-09-21",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Full Time",
-   "experienceText": "5 Years",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "1c4d66528fc25c5a",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/jobs-in-bd/walton-hi-tech-industries-plc/career/business-analyst-to-director/2026",
-     "found_at": "2026-09-20T18:11:52+00:00"
-    }
-   ],
-   "matchScore": 57,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting",
-    "Title matches your excluded list (Director)"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -1186,12 +1016,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-09-20T18:12:03+00:00"
+     "found_at": "2026-09-21T08:28:54+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-20T18:12:03+00:00"
+     "found_at": "2026-09-21T08:28:54+00:00"
     }
    ],
    "matchScore": 53,
