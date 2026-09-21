@@ -163,8 +163,20 @@ const ROLE_STRATEGIES={
 "Business Analysis":{label:"Business Analyst Resume",headline:"Business Analysis | Requirements | System Analysis | SQL",keywords:["business analyst","business analysis","requirements gathering","stakeholder","process improvement","bpmn","work breakdown","wbs"]},
 "Data & Reporting":{label:"Data / Reporting Resume",headline:"Data & Reporting | SQL | Oracle | Database | Analytics",keywords:["data analyst","data analytics","reporting analyst","dashboard","business intelligence","data management","analytics"]},
 "Application Support":{label:"Application Support Resume",headline:"Application Support | Web Applications | Database | Validation",keywords:["application support","production support","incident","ticket","l1 support","l2 support","support engineer"]},
-"Software Quality Assurance":{label:"SQA / QA Resume",headline:"Software Quality Assurance | Manual Testing | Web Validation",keywords:["manual testing","test case","test execution","regression","functional testing","defect","quality assurance","bug","test plan","uat","sqa","tester","qa engineer","smoke testing","cross-browser","cross browser"]}
+"Software Quality Assurance":{label:"SQA / QA Resume",headline:"Software Quality Assurance | Manual Testing | Web Validation",keywords:["manual testing","test case","test execution","regression","functional testing","defect","quality assurance","bug","test plan","uat","sqa","tester","qa engineer","smoke testing","cross-browser","cross browser"]},
+"General":{label:"General Resume (any field)",headline:"",keywords:[]}
 };
+// For a job that fits none of the fixed strategies, in any field: a summary made only from your profile,
+// the job title, and the keywords you pressed Add for. It states nothing you have not already written.
+function generalSummary(p,job,skills){
+ const edu=(p.education||[])[0]||{},exp=(p.experience||[])[0]||{};
+ const field=(edu.degree||"").replace(/^.*?\bin\s+/i,"").trim();
+ const who=field?`${field} graduate`:"Graduate";
+ const where=exp.role&&exp.company?` with ${exp.role} experience at ${exp.company}`:exp.role?` with ${exp.role} experience`:"";
+ const strengths=skills.length?` Strengths include ${skills.slice(0,6).join(", ")}.`:"";
+ const goal=job.title?` Seeking the ${job.title} position${job.company?` at ${job.company}`:""}.`:"";
+ return `${who}${where}.${strengths}${goal}`;
+}
 function summaryFor(strategy){const m={
 "Software Quality Assurance":"Computer Science and Engineering graduate with hands-on Software Quality Assurance internship experience in manual, functional and regression testing of web applications. Experienced in UI verification, form validation, responsive and cross-browser testing, defect documentation, fix verification, and collaboration with development and project teams.",
 "Information Technology":"Computer Science and Engineering graduate with practical exposure to web applications, databases, software quality validation, website infrastructure, hosting, DNS configuration, SSL setup, and technical problem solving through internship and academic projects.",
@@ -187,7 +199,8 @@ function hasPhrase(text,phrase){
 }
 function bestFitStrategy(job){
  const text=normalize([job.title,job.description].join(" "));
- const fallback=job.category&&ROLE_STRATEGIES[job.category]?job.category:"Information Systems";
+ // A job outside every fixed field gets the General resume, not a guess at some other field's.
+ const fallback=job.category&&ROLE_STRATEGIES[job.category]?job.category:"General";
  let best=fallback,bestScore=0;
  for(const [key,cfg] of Object.entries(ROLE_STRATEGIES)){
   const s=(cfg.keywords||[]).filter(k=>hasPhrase(text,k)).length;
@@ -329,10 +342,10 @@ function App(){
    {tab==="preferences"&&<Preferences p={profile} setProfile={setProfile} notify={notify}/>}
    {tab==="add"&&<section className="max-w-3xl"><h2 className="text-xl font-bold mb-2">Add Job for Analysis</h2><p className="text-sm text-slate-400 mb-4">Paste the complete job description. The system calculates a transparent compatibility analysis using your master profile.</p><form onSubmit={addJob} className="bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-3">
     <div className="grid md:grid-cols-2 gap-3"><Input placeholder="Job Title *" value={jobForm.title} set={v=>setJobForm({...jobForm,title:v})}/><Input placeholder="Company *" value={jobForm.company} set={v=>setJobForm({...jobForm,company:v})}/></div>
-    <div className="grid md:grid-cols-2 gap-3"><select value={jobForm.category} onChange={e=>setJobForm({...jobForm,category:e.target.value})} className="bg-slate-950 border border-slate-700 rounded p-3">{profile.preferences.categories.map(c=><option key={c}>{c}</option>)}</select><Input placeholder="Location" value={jobForm.location} set={v=>setJobForm({...jobForm,location:v})}/></div>
+    <div className="grid md:grid-cols-2 gap-3"><select value={jobForm.category} onChange={e=>setJobForm({...jobForm,category:e.target.value})} className="bg-slate-950 border border-slate-700 rounded p-3" aria-label="Job category">{[...profile.preferences.categories,"Other"].map(c=><option key={c}>{c}</option>)}</select><Input placeholder="Location" value={jobForm.location} set={v=>setJobForm({...jobForm,location:v})}/></div>
     <div className="grid md:grid-cols-2 gap-3"><Input placeholder="Source (Bdjobs, company site, LinkedIn...)" value={jobForm.source} set={v=>setJobForm({...jobForm,source:v})}/><Input placeholder="Application URL" value={jobForm.url} set={v=>setJobForm({...jobForm,url:v})}/></div>
     <textarea required placeholder="Paste the FULL job description here *" value={jobForm.description} onChange={e=>setJobForm({...jobForm,description:e.target.value})} className="w-full h-56 bg-slate-950 border border-slate-700 rounded p-3"/>
-    <KeywordPreview title={jobForm.title} text={jobForm.description} p={profile}/>
+    <KeywordPreview title={jobForm.title} company={jobForm.company} text={jobForm.description} p={profile}/>
     <button className="bg-cyan-600 px-5 py-2 rounded font-semibold">Analyze & Add to Queue</button>
    </form></section>}
 
@@ -553,19 +566,21 @@ function ResumePanel({job,p,updateJob,notify}){
  const a=analyzeJob({...view,category:strategy},p);
 
  // Recruiter keywords: read from the post, then checked against what the profile really says.
- const rk={enabled:true,off:[],claimed:[],...(job.resumeKeywords||{})};
+ // Choices belong to this one job, so every job's resume is tailored on its own.
+ const rk=normalizeDecisions(job.resumeKeywords);
  const setRk=patch=>updateJob(job.id,{resumeKeywords:{...rk,...patch}});
  const evidence=useMemo(()=>keywordEvidence(p),[p]);
- const found=useMemo(()=>extractKeywords(jd,job.title),[jd,job.title]);
+ const found=useMemo(()=>extractKeywords(jd,job.title,job.company),[jd,job.title,job.company]);
  const kws=useMemo(()=>annotateKeywords(found,evidence),[found,evidence]);
- const keyItems=rk.enabled?pickForResume(kws,{off:rk.off,claimed:rk.claimed}).map(k=>k.display):[];
+ // Only what you pressed Add for.
+ const keyItems=rk.enabled?pickForResume(kws,rk).map(k=>k.display):[];
  // "Key Skills" is a normal row of Core Skills, so the preview, PDF, DOCX and TXT all pick it up.
  const skillRows=[...(keyItems.length?[{category:"Key Skills",items:keyItems}]:[]),...p.skills];
 
  const exp=[...p.experience].map(e=>({...e,bullets:[...e.bullets].filter(Boolean).sort((x,y)=>scoreBullet(y,view,found)-scoreBullet(x,view,found))}));
  const projects=[...p.projects].sort((x,y)=>projectScore(y,strategy,view,found)-projectScore(x,strategy,view,found)).slice(0,3);
- const autoSummary=summaryFor(strategy);
- const autoHeadline=p.personal.headline||cfg.headline;
+ const autoSummary=strategy==="General"?generalSummary(p,job,keyItems):summaryFor(strategy);
+ const autoHeadline=p.personal.headline||(strategy==="General"?job.title:cfg.headline);
  const autoExperienceText=exp.map(e=>`${e.role}, ${e.company} — ${[e.location,e.duration].filter(Boolean).join(" | ")}\n${e.bullets.map(b=>"• "+b).join("\n")}`).join("\n\n");
  const autoProjectsText=projects.map(x=>`${x.name}${x.subtitle?", "+x.subtitle:""}\n${x.bullets.filter(Boolean).map(b=>"• "+b).join("\n")}`).join("\n\n");
  const contact=[p.personal.location,p.personal.phone,p.personal.email,p.personal.linkedin,p.personal.github,p.personal.portfolio].filter(Boolean).join(" | ");
@@ -730,7 +745,7 @@ function ResumePanel({job,p,updateJob,notify}){
   </div>}
 
   <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between items-center mb-3"><div><h3 className="font-semibold">Resume Strategy</h3><p className="text-xs text-slate-500">Auto-picked from this job's title and description — pick a different one any time.</p></div><span className="text-xs text-cyan-300">{cfg.label}</span></div><div className="grid md:grid-cols-4 gap-2">{Object.entries(ROLE_STRATEGIES).map(([k,v])=><button key={k} onClick={()=>{setStrategy(k);setEditMode(false);updateJob(job.id,{selectedStrategy:k})}} className={`p-3 rounded-lg border text-left text-xs ${strategy===k?'border-cyan-500 bg-cyan-950/50':'border-slate-800 bg-slate-950'}`}><b>{v.label}</b>{k===recommended&&<span className="ml-1 text-[9px] text-emerald-400">(recommended)</span>}<span className="block text-slate-500 mt-1">{k}</span></button>)}</div></div>
-  <KeywordPanel job={job} jd={jd} kws={kws} rk={rk} setRk={setRk} updateJob={updateJob} coverBefore={coverBefore} coverNow={coverNow}/>
+  <KeywordPanel job={job} jd={jd} kws={kws} rk={rk} setRk={setRk} updateJob={updateJob} coverBefore={coverBefore} coverNow={coverNow} keyCount={pickForResume(kws,rk).length}/>
   <div className="grid md:grid-cols-2 gap-4 no-print"><Block title={`Compatibility Analysis: ${a.score}%`}><div className="grid grid-cols-2 gap-2"><Metric label="Title fit" value={a.titleFit}/><Metric label="Level fit" value={a.levelFit}/><Metric label="Skills" value={a.skillFit}/><Metric label="Preference" value={a.prefFit}/></div><p className="text-xs text-emerald-300 mt-3">Matched: {a.matched.slice(0,10).join(", ")||"None"}</p><p className="text-xs text-amber-300 mt-2">Potential gaps: {a.missing.slice(0,8).join(", ")||"None detected"}</p></Block><Block title="ATS Quality"><CheckRow ok text="Single-column, standard section headings"/><CheckRow ok text="No graphics, tables, icons, sidebars, or decorative resume elements"/><CheckRow ok text="Plain-text contact information"/><CheckRow ok={a.missing.length<8} text="Job keywords reviewed without inventing qualifications"/><p className="text-[11px] text-slate-500 mt-3">Compatibility is an internal estimate, not a real employer ATS score.</p></Block></div>
   <div className="bg-white text-black max-w-[794px] mx-auto p-8 md:p-10 shadow-2xl rounded print-resume">
     <header className="border-b pb-3 mb-4"><h1 className="text-3xl font-black tracking-wide">{(p.personal.fullName||"YOUR NAME").toUpperCase()}</h1>{finalHeadline&&<p className="text-[12px] font-bold text-sky-700 mt-1 tracking-wide">{finalHeadline.toUpperCase()}</p>}<p className="text-[10px] mt-1 leading-4">{contact}</p></header>
@@ -750,76 +765,86 @@ const KW_TIERS=[
  ["important","Important","Named in the day-to-day duties."],
  ["nice","Nice to have","Marked preferred, or a plus."]
 ];
-const KW_CHIP_STYLE={
- on:"bg-emerald-900/50 text-emerald-200 border-emerald-700",
- have:"bg-emerald-900/30 text-emerald-300 border-emerald-800",
- off:"bg-slate-900 text-slate-500 border-slate-700 line-through",
- prose:"bg-cyan-950/40 text-cyan-300 border-cyan-700 border-dashed",
- claimed:"bg-cyan-900/60 text-cyan-100 border-cyan-500",
- missing:"bg-amber-950/30 text-amber-300 border-amber-800 border-dashed"
+const KW_EVIDENCE={
+ skills:{label:"In your profile",cls:"text-emerald-300",pill:"bg-emerald-900/40 text-emerald-200 border-emerald-800"},
+ prose:{label:"Only in your experience text",cls:"text-cyan-300",pill:"bg-cyan-950/40 text-cyan-300 border-cyan-700 border-dashed"},
+ none:{label:"Not in your profile",cls:"text-amber-300",pill:"bg-slate-900 text-slate-300 border-slate-700"}
 };
-const KW_CHIP_HINT={
- on:"Already in your profile, so it is on the resume. Click to leave it off.",
- have:"You have this (see Education).",
- off:"Left off the resume. Click to add it back.",
- prose:"Only mentioned inside your experience text, not listed as a skill. Click to add it if it really is a skill of yours.",
- claimed:"You confirmed this skill for this resume. Click to undo.",
- missing:"Not in your profile, so it is not on the resume. Click only if you genuinely have this skill."
-};
-function kwState(k,rk){
- if(k.kind==="degree")return k.have?"have":"missing";
- if(rk&&rk.claimed.includes(k.key))return "claimed";
- if(k.evidence==="skills")return rk&&rk.off.includes(k.key)?"off":"on";
- return k.evidence==="prose"?"prose":"missing";
+const kwDecision=(k,rk)=>rk.added.includes(k.key)?"added":rk.skipped.includes(k.key)?"skipped":"undecided";
+const kwToggle=(list,key)=>list.includes(key)?list.filter(x=>x!==key):[...list,key];
+
+// One keyword you decide on. Nothing reaches the resume until you press Add.
+function KeywordCard({k,rk,onAdd,onSkip}){
+ const d=kwDecision(k,rk);
+ const grade=k.evidence||"none";
+ const ev=KW_EVIDENCE[grade];
+ const box={added:"bg-emerald-950/40 border-emerald-700",skipped:"bg-slate-950 border-slate-800 opacity-60",undecided:"bg-slate-950 border-slate-700"}[d];
+ return <div data-testid="kw-item" data-key={k.key} data-decision={d} data-evidence={grade} className={"border rounded-lg p-2.5 flex flex-col gap-1.5 "+box}>
+  <span className={"text-sm font-medium "+(d==="skipped"?"line-through text-slate-500":"text-slate-100")}>{k.display}{k.source==="mined"&&<span className="opacity-60" title="Found in this post itself, not in the built-in skill list">*</span>}</span>
+  <span className={"text-[10.5px] "+ev.cls} data-testid="kw-evidence">{ev.label}{d==="added"&&grade!=="skills"?" · you added it, so keep it only if it is true":""}</span>
+  <div className="flex gap-1.5">
+   <button type="button" data-testid="kw-add" aria-pressed={d==="added"} onClick={onAdd} className={"px-2.5 py-1 rounded text-[11px] border "+(d==="added"?"bg-emerald-600 border-emerald-500 text-white":"bg-slate-900 border-slate-700 text-slate-200 hover:bg-slate-800")}>{d==="added"?"✓ Added":"Add"}</button>
+   <button type="button" data-testid="kw-skip" aria-pressed={d==="skipped"} onClick={onSkip} className={"px-2.5 py-1 rounded text-[11px] border "+(d==="skipped"?"bg-slate-700 border-slate-500 text-white":"bg-slate-900 border-slate-700 text-slate-300 hover:bg-slate-800")}>{d==="skipped"?"✕ Not added":"Not add"}</button>
+  </div>
+ </div>
 }
-function KeywordChip({k,rk,onClick}){
- const state=kwState(k,rk);
- const Tag=onClick?"button":"span";
- return <Tag type={onClick?"button":undefined} onClick={onClick} title={KW_CHIP_HINT[state]} data-testid="kw-chip" data-state={state} data-key={k.key} className={"inline-flex items-center gap-1 border rounded-full px-2.5 py-1 text-[11px] "+KW_CHIP_STYLE[state]+(onClick?" cursor-pointer hover:brightness-125":"")}>
-  {(state==="on"||state==="claimed"||state==="have")&&<span aria-hidden="true">✓</span>}{k.display}{k.source==="mined"&&<span className="opacity-60" title="Found in the post but not in the built-in skill list">*</span>}
- </Tag>
+// A read-only keyword (degrees in the panel, everything in the Add Job preview).
+function KeywordPill({k}){
+ const grade=k.evidence||"none";
+ return <span data-testid="kw-chip" data-key={k.key} data-state={grade} title={KW_EVIDENCE[grade].label} className={"inline-flex items-center border rounded-full px-2.5 py-1 text-[11px] "+KW_EVIDENCE[grade].pill}>{grade==="skills"&&<span aria-hidden="true" className="mr-1">✓</span>}{k.display}{k.source==="mined"&&<span className="opacity-60">*</span>}</span>
 }
 function KeywordLegend(){
  return <p className="text-[11px] text-slate-500">
-  <span className="text-emerald-300">Green</span> is yours. <span className="text-cyan-300">Dashed blue</span> is only mentioned in your experience text. <span className="text-amber-300">Dashed amber</span> is not in your profile: leave those off unless you genuinely have the skill. Nothing is added to the resume just because the post asks for it.
+  <span className="text-emerald-300">In your profile</span>: you list it as a skill, a project's tech or a job title. <span className="text-cyan-300">Only in your experience text</span>: a sentence mentions it but no skill line does. <span className="text-amber-300">Not in your profile</span>: it appears nowhere in what you wrote. That note is information for you: you decide, and only what you press Add for reaches the resume. * marks a term read from this post itself.
  </p>
 }
-function KeywordGroups({kws,rk,clickFor,all}){
- return <div className="space-y-3">{KW_TIERS.map(([tier,label,hint])=>{
-  const list=kws.filter(k=>k.tier===tier);
-  if(!list.length)return null;
-  const shown=all?list:list.slice(0,14);
-  return <div key={tier} data-testid={"kw-tier-"+tier}>
-   <p className="text-xs"><b className="text-slate-200">{label}</b> <span className="text-slate-500">({list.length}) {hint}</span></p>
-   <div className="flex flex-wrap gap-1.5 mt-1.5">{shown.map(k=><KeywordChip key={k.key} k={k} rk={rk} onClick={clickFor&&clickFor(k)}/>)}{list.length>shown.length&&<span className="text-[11px] text-slate-500 self-center">+{list.length-shown.length} more</span>}</div>
-  </div>})}</div>
-}
-function KeywordPanel({job,jd,kws,rk,setRk,updateJob,coverBefore,coverNow}){
+function KeywordPanel({job,jd,kws,rk,setRk,updateJob,coverBefore,coverNow,keyCount}){
  const [all,setAll]=useState(false);
+ const addable=kws.filter(k=>k.kind!=="degree");
+ const degrees=kws.filter(k=>k.kind==="degree");
+ const inProfile=addable.filter(k=>k.evidence==="skills");
+ const mustHaves=addable.filter(k=>k.tier==="must");
+ const nAdded=addable.filter(k=>rk.added.includes(k.key)).length;
+ const nSkipped=addable.filter(k=>rk.skipped.includes(k.key)).length;
+ const toggleAdd=k=>setRk({added:kwToggle(rk.added,k.key),skipped:rk.skipped.filter(x=>x!==k.key)});
+ const toggleSkip=k=>setRk({skipped:kwToggle(rk.skipped,k.key),added:rk.added.filter(x=>x!==k.key)});
+ const addMany=list=>{const keys=list.map(k=>k.key);setRk({added:[...new Set([...rk.added,...keys])],skipped:rk.skipped.filter(x=>!keys.includes(x))})};
  const pct=c=>c.total?Math.round(100*c.found/c.total):0;
- const mine=kws.filter(k=>k.kind!=="degree"&&(k.evidence==="skills"||rk.claimed.includes(k.key))).length;
- const clickFor=k=>{
-  if(k.kind==="degree")return undefined;
-  const id=k.key;
-  if(rk.claimed.includes(id))return ()=>setRk({claimed:rk.claimed.filter(x=>x!==id)});
-  if(k.evidence==="skills")return ()=>setRk({off:rk.off.includes(id)?rk.off.filter(x=>x!==id):[...rk.off,id]});
-  return ()=>setRk({claimed:[...rk.claimed,id]});
- };
+ const truncated=KW_TIERS.some(([t])=>addable.filter(k=>k.tier===t).length>12);
+ const btn="px-3 py-1.5 rounded text-xs border border-slate-700 bg-slate-950 hover:bg-slate-800 text-slate-200";
  return <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-4" data-testid="keyword-panel">
   <div className="flex flex-wrap justify-between gap-3">
-   <div><h3 className="font-semibold">Recruiter Keywords</h3><p className="text-xs text-slate-500 mt-1">The terms this job post screens for. The ones you already have go into the resume's Key Skills line, worded the way the post words them, so an ATS search finds them.</p></div>
-   <label className="flex items-center gap-2 text-xs text-slate-300 self-start"><input type="checkbox" data-testid="kw-enabled" checked={rk.enabled} onChange={e=>setRk({enabled:e.target.checked})}/> Add the Key Skills line</label>
+   <div><h3 className="font-semibold">Recruiter Keywords for this job</h3>
+    <p className="text-xs text-cyan-400 mt-0.5">{job.title}{job.company?" · "+job.company:""}</p>
+    <p className="text-xs text-slate-500 mt-1">Read from this job post, whatever the field. Nothing is on the resume until you press <b className="text-slate-300">Add</b>; <b className="text-slate-300">Not add</b> keeps it off. Your choices belong to this job's resume only, so every job has its own.</p></div>
+   <label className="flex items-center gap-2 text-xs text-slate-300 self-start"><input type="checkbox" data-testid="kw-enabled" checked={rk.enabled} onChange={e=>setRk({enabled:e.target.checked})}/> Show the Key Skills line</label>
   </div>
   {jd.trim().length<200&&<p className="text-xs text-amber-300" data-testid="kw-thin">This post has very little text ({jd.trim().length} characters), so few keywords can be read from it. Open the box at the bottom and paste the full job description.</p>}
   {kws.length===0?<p className="text-sm text-amber-300" data-testid="kw-empty">No recognisable keywords found in this post. Paste the full job description below.</p>:<>
    <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs">
-    <div className="bg-slate-950 rounded p-2"><p className="text-slate-500">Keywords in the post</p><p className="font-bold text-lg" data-testid="kw-total">{kws.length}</p></div>
-    <div className="bg-slate-950 rounded p-2"><p className="text-slate-500">Already yours</p><p className="font-bold text-lg text-emerald-300" data-testid="kw-mine">{mine}</p></div>
-    <div className="bg-slate-950 rounded p-2"><p className="text-slate-500" title="A keyword counts only when the resume uses the post's exact wording, which is how simple ATS filters search. Before and after the Key Skills row.">Resume keyword match</p><p className="font-bold text-lg" data-testid="kw-cover">{pct(coverBefore)}% <span className="text-slate-500">→</span> <span className="text-cyan-300">{pct(coverNow)}%</span></p></div>
+    <div className="bg-slate-950 rounded p-2"><p className="text-slate-500">Keywords in the post</p><p className="font-bold text-lg" data-testid="kw-total">{addable.length}</p></div>
+    <div className="bg-slate-950 rounded p-2"><p className="text-slate-500">Added to this resume</p><p className="font-bold text-lg text-emerald-300" data-testid="kw-added">{nAdded}</p></div>
+    <div className="bg-slate-950 rounded p-2"><p className="text-slate-500">Resume keyword match</p><p className="font-bold text-lg" data-testid="kw-cover">{pct(coverBefore)}% <span className="text-slate-500">→</span> <span className="text-cyan-300">{pct(coverNow)}%</span></p></div>
     <div className="bg-slate-950 rounded p-2"><p className="text-slate-500">Must-haves covered</p><p className="font-bold text-lg" data-testid="kw-must">{coverNow.mustFound} of {coverNow.mustTotal}</p></div>
    </div>
-   <KeywordGroups kws={kws} rk={rk} clickFor={clickFor} all={all}/>
-   {KW_TIERS.some(([t])=>kws.filter(k=>k.tier===t).length>14)&&<button onClick={()=>setAll(!all)} className="text-xs text-cyan-400 underline">{all?"Show fewer":"Show every keyword"}</button>}
+   <div className="flex flex-wrap items-center gap-2">
+    <button type="button" data-testid="kw-add-mine" onClick={()=>addMany(inProfile)} disabled={!inProfile.length} className={btn+(inProfile.length?"":" opacity-40 cursor-not-allowed")}>Add all in my profile ({inProfile.length})</button>
+    <button type="button" data-testid="kw-add-must" onClick={()=>addMany(mustHaves)} disabled={!mustHaves.length} className={btn+(mustHaves.length?"":" opacity-40 cursor-not-allowed")}>Add all must-haves ({mustHaves.length})</button>
+    <button type="button" data-testid="kw-clear" onClick={()=>setRk({added:[],skipped:[]})} className={btn}>Clear all choices</button>
+    <span className="text-xs text-slate-500" data-testid="kw-counts">{nAdded} added · {nSkipped} not added · {addable.length-nAdded-nSkipped} still to decide</span>
+   </div>
+   {keyCount>15&&<p className="text-xs text-amber-300" data-testid="kw-long">The Key Skills line has {keyCount} items. Recruiters skim about 10 to 15, so consider Not add for the weakest.</p>}
+   <div className="space-y-4">{KW_TIERS.map(([tier,label,hint])=>{
+    const list=addable.filter(k=>k.tier===tier);
+    if(!list.length)return null;
+    const shown=all?list:list.slice(0,12);
+    return <div key={tier} data-testid={"kw-tier-"+tier}>
+     <p className="text-xs"><b className="text-slate-200">{label}</b> <span className="text-slate-500">({list.length}) {hint}</span></p>
+     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 mt-2">{shown.map(k=><KeywordCard key={k.key} k={k} rk={rk} onAdd={()=>toggleAdd(k)} onSkip={()=>toggleSkip(k)}/>)}</div>
+     {list.length>shown.length&&<p className="text-[11px] text-slate-500 mt-1">+{list.length-shown.length} more in this group</p>}
+    </div>})}</div>
+   {truncated&&<button type="button" onClick={()=>setAll(!all)} className="text-xs text-cyan-400 underline">{all?"Show fewer":"Show every keyword"}</button>}
+   {degrees.length>0&&<div data-testid="kw-degrees"><p className="text-xs"><b className="text-slate-200">Education the post asks for</b> <span className="text-slate-500">Your Education section shows these; they are not added to Key Skills.</span></p><div className="flex flex-wrap gap-1.5 mt-1.5">{degrees.map(k=><KeywordPill key={k.key} k={k}/>)}</div></div>}
    <KeywordLegend/>
   </>}
   <details className="text-xs" data-testid="kw-jd-box">
@@ -831,15 +856,15 @@ function KeywordPanel({job,jd,kws,rk,setRk,updateJob,coverBefore,coverNow}){
  </div>
 }
 // Shown under the description box on Add Job, before the job is even saved.
-function KeywordPreview({title,text,p}){
+function KeywordPreview({title,company,text,p}){
  const deferred=React.useDeferredValue(text);
  const evidence=useMemo(()=>keywordEvidence(p),[p]);
- const kws=useMemo(()=>deferred&&deferred.trim().length>=40?annotateKeywords(extractKeywords(deferred,title),evidence):[],[deferred,title,evidence]);
+ const kws=useMemo(()=>deferred&&deferred.trim().length>=40?annotateKeywords(extractKeywords(deferred,title,company),evidence):[],[deferred,title,company,evidence]);
  if(!kws.length)return null;
  const mine=kws.filter(k=>k.kind!=="degree"&&k.evidence==="skills").length;
  return <div className="border border-slate-800 rounded-lg p-4 space-y-3 bg-slate-950/40" data-testid="keyword-preview">
-  <p className="text-sm"><b>{kws.length} recruiter keywords</b> found in this post, <span className="text-emerald-300">{mine} already in your profile</span>. Open its resume after adding and the ones you have go in automatically.</p>
-  <KeywordGroups kws={kws} rk={null} clickFor={null} all={false}/>
+  <p className="text-sm"><b>{kws.length} recruiter keywords</b> found in this post, <span className="text-emerald-300">{mine} already in your profile</span>. After adding the job, open its resume and press Add for the ones you want on it.</p>
+  {KW_TIERS.map(([tier,label])=>{const list=kws.filter(k=>k.tier===tier);return list.length?<div key={tier}><p className="text-xs text-slate-400">{label} ({list.length})</p><div className="flex flex-wrap gap-1.5 mt-1">{list.slice(0,18).map(k=><KeywordPill key={k.key} k={k}/>)}{list.length>18&&<span className="text-[11px] text-slate-500 self-center">+{list.length-18} more</span>}</div></div>:null})}
   <KeywordLegend/>
  </div>
 }

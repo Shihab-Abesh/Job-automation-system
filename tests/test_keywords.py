@@ -24,12 +24,20 @@ def test_browser_code_passes_its_node_tests(script):
     assert run.returncode == 0, "\n".join(failures) or run.stderr
 
 
-def test_the_dashboard_uses_keywords_without_bypassing_the_profile_check():
+def test_the_dashboard_puts_only_what_the_user_added_on_the_resume():
     html = (ROOT / "index.html").read_text(encoding="utf-8")
     assert '<script src="keywords.js"></script>' in html
-    # the resume line comes only from pickForResume, which requires profile evidence or a claim
-    assert "pickForResume(kws,{off:rk.off,claimed:rk.claimed})" in html
+    # the resume line comes only from pickForResume, which returns exactly the keywords pressed Add for
+    assert html.count("pickForResume(") >= 2
+    assert "pickForResume(kws,rk)" in html
+    assert "normalizeDecisions(job.resumeKeywords)" in html
     assert 'category:"Key Skills"' in html
+    # every keyword has an Add and a Not add button, and choices are stored on the job (a separate resume each)
+    assert 'data-testid="kw-add"' in html and 'data-testid="kw-skip"' in html
+    assert "resumeKeywords:{...rk,...patch}" in html
+    # a job outside every fixed field gets the General resume rather than another field's
+    assert '"General":{label:' in html and ':"General";' in html
+    assert '"Other"' in html
     # every export reads the same rows, so PDF, DOCX, TXT and the preview cannot disagree
     assert html.count("skillRows.") + html.count("skillRows)") >= 3
     # keywords.js must load after scoring.js and before the app script that uses it

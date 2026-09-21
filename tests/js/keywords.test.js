@@ -5,7 +5,7 @@ const assert = require("assert");
 
 const ROOT = path.resolve(__dirname, "..", "..");
 const api = new Function(fs.readFileSync(path.join(ROOT, "keywords.js"), "utf8") +
-  "\nreturn {extractKeywords,keywordEvidence,annotateKeywords,pickForResume,keywordCoverage,keywordHits,kwBuild};")();
+  "\nreturn {extractKeywords,keywordEvidence,annotateKeywords,pickForResume,keywordCoverage,keywordHits,kwBuild,normalizeDecisions};")();
 
 const profile = {
   skills: [
@@ -170,22 +170,90 @@ test("results are ordered most important first", () => {
   assert.strictEqual(k[0].tier, "must");
 });
 
-// ------------------------------------------------------------------ terms the lexicon does not know
-test("the miner picks up a phrase after 'experience with', and repeated acronyms", () => {
-  const k = read("Requirements\nExperience with Meta Ads Manager.\nThe RCM team owns billing.\nRCM reporting is daily.");
-  const names = k.filter(x => x.source === "mined").map(x => x.name);
-  assert.ok(names.includes("Meta Ads Manager"), names.join());
-  assert.ok(names.includes("RCM"), names.join());
+// ------------------------------------------------------------------ any field: terms read from the post itself
+const mined = (text, title = "", company = "") => api.extractKeywords(text, title, company).filter(k => k.source === "mined").map(k => k.display);
+const shown = (text, title = "", company = "") => api.extractKeywords(text, title, company).map(k => k.display);
+
+test("a nursing post, a field the built-in list barely knows, still yields its own terms", () => {
+  const post = "Staff Nurse\nRequirements\nDiploma in Nursing from a recognised institute.\nExperience in wound care, IV therapy and patient assessment.\nKnowledge of infection control and medication administration.";
+  const m = mined(post);
+  for (const want of ["Wound Care", "IV Therapy", "Patient Assessment", "Medication Administration"]) assert.ok(m.includes(want), `${want} missing from ${m}`);
+  assert.ok(shown(post).includes("Infection Control"), "the built-in list still contributes");
 });
 
-test("the miner is conservative: one-off acronyms and filler phrases are not keywords", () => {
-  const k = read("Requirements\nKnowledge of the company culture and good team spirit.\nOur HQ is in ZZQ.");
-  assert.deepStrictEqual(k.filter(x => x.source === "mined").map(x => x.name), []);
+test("a factory-maintenance post: what the job is actually about", () => {
+  const post = "Technician\nEducational Qualifications\nDiploma\nAdditional Requirements\nKnowledge of mechanical and electrical systems, preventive maintenance, calibration, and servicing.\nHands-on experience in machine changeovers and cleaning & sanitation.\nUnderstanding of GMP, hygiene, machine safety and contamination prevention.";
+  const all = shown(post);
+  for (const want of ["Preventive Maintenance", "Calibration", "GMP", "Machine Changeovers", "Sanitation", "Machine Safety", "Contamination Prevention"]) assert.ok(all.includes(want), `${want} missing from ${all}`);
+});
+
+test("a legal post", () => {
+  const post = "Legal Manager\nRequirements\nLL.B degree.\nExperience in corporate governance, competition law and dispute resolution.\nKey Responsibilities\nReview commercial contracts and advise on employment law.";
+  const all = shown(post);
+  for (const want of ["Corporate Governance", "Competition Law", "Dispute Resolution", "Commercial Contracts", "Employment Law"]) assert.ok(all.includes(want), `${want} missing from ${all}`);
+});
+
+test("extraction never depends on the candidate: a post gives the same keywords for everyone", () => {
+  const post = "Requirements\nExperience in wound care and patient assessment.\nPython and SQL";
+  assert.deepStrictEqual(api.extractKeywords(post, "T"), api.extractKeywords(post, "T"));
+  const a = api.annotateKeywords(api.extractKeywords(post, "T"), api.keywordEvidence(profile));
+  const b = api.annotateKeywords(api.extractKeywords(post, "T"), api.keywordEvidence({ skills: [], education: [], experience: [], projects: [] }));
+  assert.deepStrictEqual(a.map(k => k.key), b.map(k => k.key), "the profile changed which keywords were found");
+  assert.ok(a.some(k => k.evidence !== "none") && b.every(k => k.evidence === "none"), "only the evidence grade may differ");
+});
+
+test("a lone ordinary word needs the post to point at it", () => {
+  assert.ok(mined("Requirements\nStorytelling").includes("Storytelling"), "a short requirement line counts");
+  assert.ok(mined("Requirements\nExperience with storytelling and mentoring.").includes("Storytelling"), "so does 'experience with'");
+  assert.ok(!mined("Duties\nWe value storytelling. Storytelling is fun.").includes("Storytelling"), "repeating alone is not enough");
+});
+
+test("sentences are not requirement bullets: a verb phrase is not a keyword", () => {
+  const m = mined("Requirements\nThe RCM team owns billing.\nOur HQ is in ZZQ.");
+  assert.ok(!m.some(x => /billing|ZZQ/i.test(x)), m.join());
+});
+
+test("job-post boilerplate, titles, places and the company name are never keywords", () => {
+  const m = mined("Requirements\nATS Friendly CV in PDF format.\nReporting to the Assistant Manager and Legal Director.\nExperience with delivery in Dhaka, Gulshan and Chattogram.\nExperience with Acme Corp customers.", "", "Acme Corp");
+  for (const bad of [/ats|friendly/i, /assistant|manager|director/i, /dhaka|gulshan|chattogram/i, /acme/i]) assert.ok(!m.some(x => bad.test(x)), `${bad} leaked into ${m}`);
+});
+
+test("generic nouns alone are not keywords", () => {
+  const m = mined("Duties\nOperations, performance, planning, management and training are all part of this. Operations and performance matter.");
+  assert.deepStrictEqual(m, []);
+});
+
+test("a spelled-out term and its abbreviation are one keyword, not two", () => {
+  const k = api.extractKeywords("Requirements\nBachelor of Business Administration (BBA) from a reputed university.");
+  assert.ok(k.some(x => x.key === "bba" && x.source === "lexicon"));
+  assert.ok(!k.some(x => x.source === "mined" && /bba/i.test(x.display)));
 });
 
 test("acronyms the lexicon already handled do not come back in pieces", () => {
-  const names = read("Requirements\nCI/CD pipelines and MS Excel").filter(x => x.source === "mined").map(x => x.name);
+  const names = mined("Requirements\nCI/CD pipelines and MS Excel");
   for (const bad of ["CI", "CD", "MS"]) assert.ok(!names.includes(bad), `${bad} leaked`);
+});
+
+test("a repeated acronym the list does not know is a keyword", () => {
+  assert.ok(mined("Requirements\nThe RCM process is daily.\nRCM reporting is weekly.").includes("RCM"));
+});
+
+test("at most 14 terms come from the post itself", () => {
+  const post = "Requirements\n" + Array.from({ length: 40 }, (_, i) => `Experience with zorblax${String.fromCharCode(97 + (i % 26))}${String.fromCharCode(97 + ((i * 7) % 26))} handling.`).join("\n");
+  assert.ok(mined(post).length <= 14);
+});
+
+test("the reader copes with real mixed-field posts: most yield a useful list", () => {
+  const feed = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "jobs.json"), "utf8")).jobs.filter(j => (j.description || "").length > 1500);
+  assert.ok(feed.length >= 8, "the committed feed has too few long posts to test on");
+  let useful = 0;
+  for (const j of feed) {
+    const k = api.extractKeywords(j.description, j.title, j.company);
+    assert.strictEqual(new Set(k.map(x => x.key)).size, k.length, `${j.title}: duplicate keys`);
+    assert.ok(k.every(x => x.display && x.display === x.display.trim()), `${j.title}: blank or untrimmed keyword`);
+    if (k.length >= 5) useful++;
+  }
+  assert.ok(useful / feed.length >= 0.9, `only ${useful} of ${feed.length} long posts gave 5+ keywords`);
 });
 
 // ------------------------------------------------------------------ what counts as yours
@@ -217,42 +285,57 @@ test("annotateKeywords accepts a plain string as skills evidence", () => {
   assert.strictEqual(by(k, "docker").evidence, "none");
 });
 
-// ------------------------------------------------------------------ the resume line: never invents
-test("pickForResume adds only skills the candidate lists", () => {
+// ------------------------------------------------------------------ the resume line: you decide
+test("nothing is on the resume until you press Add", () => {
   const k = read(QA_POST, "QA Engineer");
-  const picked = api.pickForResume(k).map(x => x.key);
-  for (const yes of ["manual testing", "regression testing", "scrum"]) assert.ok(picked.includes(yes), `${yes} missing from ${picked}`);
-  for (const no of ["jira", "selenium", "communication skills"]) assert.ok(!picked.includes(no), `${no} was added without being claimed`);
+  assert.deepStrictEqual(api.pickForResume(k, api.normalizeDecisions(undefined)), []);
+  assert.deepStrictEqual(api.pickForResume(k, {}), []);
+  assert.deepStrictEqual(api.pickForResume(k), []);
 });
 
-test("a claimed skill is added, and only that one", () => {
+test("Add puts exactly that keyword on the resume", () => {
   const k = read(QA_POST, "QA Engineer");
-  const picked = api.pickForResume(k, { claimed: ["jira"] }).map(x => x.key);
-  assert.ok(picked.includes("jira") && !picked.includes("selenium"));
+  assert.deepStrictEqual(api.pickForResume(k, { added: ["manual testing"] }).map(x => x.key), ["manual testing"]);
 });
 
-test("prose-only skills need a claim too", () => {
-  const k = read("Requirements\nBackend development");
-  assert.ok(!api.pickForResume(k).length);
-  assert.strictEqual(api.pickForResume(k, { claimed: ["back end"] }).length, 1);
+test("what the profile says never decides: a skill you lack can be added, one you have can be left off", () => {
+  const k = read(QA_POST, "QA Engineer");
+  assert.strictEqual(by(k, "jira").evidence, "none");
+  assert.strictEqual(by(k, "manual testing").evidence, "skills");
+  const picked = api.pickForResume(k, { added: ["jira"] }).map(x => x.key);
+  assert.deepStrictEqual(picked, ["jira"], "adding is the user's call, in either direction");
+  assert.deepStrictEqual(api.pickForResume(k, { added: [], skipped: ["manual testing"] }), []);
 });
 
-test("'off' removes a skill; degrees never appear", () => {
-  const k = read("Requirements\nBachelor of Science in Computer Science\nPHP and SQL");
-  assert.ok(by(k, "computer science").have);
-  const picked = api.pickForResume(k, { off: ["php"] }).map(x => x.key);
-  assert.ok(!picked.includes("php") && picked.includes("sql"));
-  assert.ok(!picked.includes("computer science") && !picked.includes("bachelor's degree"));
+test("added keywords keep the order a recruiter would care about", () => {
+  const k = read(QA_POST, "QA Engineer");
+  const asked = ["scrum", "jira", "manual testing"];
+  const picked = api.pickForResume(k, { added: asked }).map(x => x.key);
+  assert.deepStrictEqual(picked, k.filter(x => asked.includes(x.key)).map(x => x.key));
 });
 
-test("the line is capped at 14, soft skills at 4", () => {
+test("degrees are shown but never added, and keys from another post are ignored", () => {
+  const k = read("Requirements\nBachelor of Science in Computer Science\nPHP");
+  assert.deepStrictEqual(api.pickForResume(k, { added: ["computer science", "php", "not-in-this-post"] }).map(x => x.key), ["php"]);
+});
+
+test("there is no cap: everything you add is on the line", () => {
   const tech = ["PHP", "Python", "Java", "SQL", "MySQL", "HTML", "CSS", "Git", "GitHub", "Docker", "Linux", "Scrum", "Agile", "Kanban", "Selenium", "Cypress"];
-  const soft = ["Communication Skills", "Teamwork", "Problem Solving", "Time Management", "Critical Thinking", "Multitasking"];
-  const kws = api.extractKeywords("Requirements\n" + [...tech, ...soft].join(", "));
-  const all = api.annotateKeywords(kws, [...tech, ...soft].join(" "));
-  const picked = api.pickForResume(all);
-  assert.strictEqual(picked.length, 14);
-  assert.ok(picked.filter(k => k.kind === "soft").length <= 4);
+  const k = api.annotateKeywords(api.extractKeywords("Requirements\n" + tech.join(", ")), "");
+  assert.strictEqual(api.pickForResume(k, { added: k.map(x => x.key) }).length, tech.length);
+});
+
+test("saved choices: defaults, and older saves carry over", () => {
+  assert.deepStrictEqual(api.normalizeDecisions(undefined), { enabled: true, added: [], skipped: [] });
+  assert.deepStrictEqual(api.normalizeDecisions(null), { enabled: true, added: [], skipped: [] });
+  assert.deepStrictEqual(api.normalizeDecisions({ enabled: false, added: ["a"], skipped: ["b"] }), { enabled: false, added: ["a"], skipped: ["b"] });
+  // the first version stored `claimed` (added by hand) and `off` (left out of an automatic list)
+  assert.deepStrictEqual(api.normalizeDecisions({ enabled: true, off: ["php"], claimed: ["jira"] }), { enabled: true, added: ["jira"], skipped: ["php"] });
+});
+
+test("saved choices: junk and contradictions are cleaned up", () => {
+  assert.deepStrictEqual(api.normalizeDecisions({ added: ["a", "a", 7, null, "b"], skipped: ["b", "c"] }), { enabled: true, added: ["a", "b"], skipped: ["c"] });
+  assert.deepStrictEqual(api.normalizeDecisions({ added: "nope", skipped: {} }), { enabled: true, added: [], skipped: [] });
 });
 
 // ------------------------------------------------------------------ measuring it

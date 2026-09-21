@@ -6,18 +6,22 @@
    How it works
      1. The post is cut into lines and sentences. Headings ("Requirements", "Preferred",
         "Responsibilities", "Benefits") decide how much a line matters.
-     2. A curated lexicon of about 400 skills (software, testing, IT support, MIS and data,
-        business and management, soft skills, degrees) is matched against every line. Each entry
-        lists the ways people actually write it ("MS Excel", "Microsoft Excel", "Advanced Excel"),
-        and the wording the post used is what gets printed, because that is what an ATS matches.
-     3. A small miner adds terms the lexicon does not know: acronyms that repeat, and phrases
-        after "knowledge of / experience with". It is deliberately conservative.
+     2. A curated lexicon of about 550 skills across many fields (software, testing, IT, MIS and
+        data, business, banking, legal, engineering and maintenance, NGO, HR, sales, media,
+        health, education, soft skills, degrees) is matched against every line. Each entry lists
+        the ways people actually write it ("MS Excel", "Microsoft Excel", "Advanced Excel"), and
+        the wording the post used is what gets printed, because that is what an ATS matches.
+     3. No list can hold every field, so the rest is read from the post itself: runs of
+        meaningful words between stop words and punctuation ("preventive maintenance", "dispute
+        resolution"), kept only when the post signals they matter (they repeat, follow
+        "experience with", or are a short requirement line). Nothing here assumes a field.
      4. Each keyword gets a tier: must-have (under a requirements heading, near "must" or
         "required", or in the job title), important (in the duties), or nice-to-have ("a plus",
         "preferred").
 
-   The rule that matters: a keyword is only ever *proposed* for the resume when the candidate's own
-   profile backs it (annotateKeywords sets `have`). Nothing is added because the post wants it.
+   The rule that matters: the candidate decides. Every keyword starts undecided; it is on the resume
+   only after they press Add (pickForResume). annotateKeywords records whether their own profile backs
+   each one (skills / prose / none) so the choice is informed, but that never decides for them.
 */
 
 // One entry per line: Canonical|alias|alias. The first name is what the entry is called.
@@ -113,8 +117,8 @@ Software Development|Software Engineering
 Web Development|Web Application Development|Web Applications|Web Application
 Mobile App Development|Mobile Application Development|App Development|Mobile Development
 Full Stack|Full Stack Development|Full Stack Developer
-Front End|Frontend|Front End Development
-Back End|Backend|Back End Development
+Front End|Frontend|Front End Development|Frontend Development
+Back End|Backend|Back End Development|Backend Development
 Responsive Design|Responsive Web Design
 UI/UX|UX Design|UI Design|User Interface|User Experience|UI UX
 Figma
@@ -342,6 +346,157 @@ Visio|MS Visio
 Adobe Illustrator|Illustrator
 Adobe Premiere|Premiere Pro
 Canva
+AutoCAD|Auto CAD
+SolidWorks
+Revit
+ETABS
+STAAD Pro|STAAD
+SketchUp
+3D Modeling|3D Modelling
+CAD|Computer Aided Design
+MS Project|Microsoft Project|Primavera
+Structural Analysis|Structural Design
+Site Supervision|Site Management|Construction Supervision
+Quantity Surveying|Bill of Quantities|BOQ
+Construction Management
+Cost Estimation|Project Estimation
+Electrical Maintenance
+Programmable Logic Controller|PLC Programming
+SCADA
+Circuit Design
+Power Systems
+Preventive Maintenance
+Predictive Maintenance
+Machine Maintenance|Equipment Maintenance
+Calibration
+HVAC
+Quality Control|=QC
+Quality Management System|QMS
+GMP|Good Manufacturing Practice|Good Manufacturing Practices
+HACCP
+Lean Manufacturing
+5S
+Kaizen
+Total Productive Maintenance|TPM
+Production Planning
+Production Management|Production Supervision
+Occupational Health and Safety|OHS|Health and Safety|HSE|EHS
+Fire Safety
+Lockout Tagout|LOTO
+Safety Compliance
+Welding
+CNC
+Technical Drawing|Engineering Drawing
+Warehouse Management|Warehousing
+Import and Export|Import Export|Customs Clearance|Shipping Documentation|Freight Forwarding
+Letter of Credit|=LC
+Merchandising|Merchandiser|Knit Merchandising
+Buying House
+Garments|Apparel|RMG|Readymade Garments
+Textile
+Cost Control|Costing
+Credit Analysis|Credit Assessment|Credit Appraisal
+Credit Risk|Credit Risk Management
+Loan Processing|Loan Disbursement|Loan Recovery
+SME Banking|SME Financing
+Trade Finance
+Retail Banking
+Treasury
+Financial Planning|Financial Planning and Analysis|FP&A
+Cash Flow|Cash Management
+IFRS|International Financial Reporting Standards
+GAAP
+Bank Reconciliation
+Investment Analysis|Portfolio Management
+Insurance|Underwriting|Claims Processing
+Chartered Accountant|Chartered Accountancy|ACCA|CFA|CMA|ICAB
+Financial Audit|External Audit
+Cost Accounting|Management Accounting
+Legal Advisory|Legal Advice|Legal Support
+Contract Drafting|Contract Review|Contract Management|Commercial Contracts
+Commercial Law
+Employment Law|Labour Law|Labor Law
+Corporate Law|Company Law
+Intellectual Property|Trademark
+Litigation|Dispute Resolution|Arbitration
+Legal Research
+Regulatory Affairs
+Data Protection
+Legal Drafting|Drafting
+Lesson Planning
+Curriculum Development|Curriculum Design
+Classroom Management
+Teaching|Teaching Experience
+Student Assessment
+E-Learning|Online Teaching
+Training and Development|Training Delivery|Corporate Training|Learning and Development
+Research Methodology
+Patient Care
+Clinical Research|Clinical Trials
+Nursing|Nursing Care
+Pharmacovigilance
+Medical Representative|Medical Sales
+First Aid
+Infection Control
+Graphic Design
+Video Editing
+Adobe After Effects|After Effects
+Adobe InDesign|InDesign
+Motion Graphics
+Photography
+Proofreading|Copy Editing
+Content Strategy
+Public Relations|=PR
+Media Buying|Media Planning
+Google Ads|Google AdWords|Meta Ads|Meta Ads Manager|Facebook Ads|PPC
+Influencer Marketing
+Brand Strategy|Brand Communication|Marketing Communications|Corporate Communications
+Event Management|Event Planning
+Monitoring and Evaluation|M&E|MEAL
+Grant Writing|Proposal Writing|Proposal Development|Fundraising
+Project Cycle Management
+Community Development|Community Mobilization|Community Engagement
+Needs Assessment
+Program Management|Programme Management|Programme Coordination
+Donor Reporting|Donor Relations
+Advocacy
+Emergency Response|Disaster Management|Humanitarian
+Capacity Building
+Survey Design|Data Collection|Field Data Collection
+KoBo|KoboToolbox|ODK
+Employee Relations
+Employee Engagement
+Performance Management|Performance Appraisal
+Onboarding|Employee Onboarding
+Talent Management|Succession Planning
+Compensation and Benefits|C&B
+HRIS
+Office Administration|Office Management
+Records Management|Record Keeping
+Travel Coordination|Travel Management|Travel Booking
+Visa Processing|Visa Services
+Front Desk|Front Office|Reception
+Appointment Scheduling|Calendar Management
+Meeting Minutes|Minutes of Meeting|Minute Taking
+Territory Management|Territory Sales
+Distributor Management|Channel Management|Distribution Management
+Trade Marketing|Visual Merchandising|Retail Merchandising
+Sales Forecasting|Demand Planning|Forecasting
+Pricing Strategy|Pricing
+Retail Management|Store Management|Shop Management
+Point of Sale|POS
+After Sales Service|Aftersales
+Customer Retention
+Customer Acquisition
+Telesales|Telemarketing|Tele Sales
+Field Sales
+Product Knowledge
+Housekeeping
+Food Safety
+Hospitality|Hospitality Management|Hotel Management
+Driving License|Driving Licence
+Physical Security|Security Management
+Airport Operations|Ground Handling
 #!soft
 Communication Skills|Communication|Written Communication|Verbal Communication|Written and Verbal Communication|Interpersonal Communication|Business Communication
 Teamwork|Team Player|Team Work|Collaboration
@@ -381,6 +536,17 @@ Finance
 Economics
 Mathematics
 Diploma|Diploma in Engineering
+SSC|Secondary School Certificate
+HSC|Higher Secondary Certificate
+Civil Engineering
+Mechanical Engineering
+Textile Engineering
+Chemical Engineering
+Pharmacy|Bachelor of Pharmacy|B.Pharm
+LLB|LL.B|LL.B Degree|Bachelor of Laws|LLM
+Mass Communication|Journalism
+Public Administration
+Agriculture
 `;
 
 // ---------------------------------------------------------------- matching
@@ -502,53 +668,167 @@ function kwRecord(map,key,proto,display,weight,tier,inTitle){
  return r;
 }
 
-// ---------------------------------------------------------------- terms the lexicon does not know
+// ---------------------------------------------------------------- terms from the post itself
+//
+// The lexicon knows common skills, but every field has terms no list will ever hold (calibration,
+// dispute resolution, wound care, checkweighers...). So the rest is read from the post: runs of
+// meaningful words between stop words and punctuation, kept only when the post signals they matter.
+// Nothing here depends on the candidate's field, or on the job's.
 
 const KW_LEAD=/^(?:(?:strong|good|solid|excellent|basic|working|hands[- ]on|proven|demonstrated|in[- ]depth|thorough|sound|advanced|practical|prior|relevant|deep|fluent|proficient|extensive|previous)\s+)*(?:knowledge|understanding|experience|proficiency|expertise|skills?|familiarity|command|background|exposure|competenc(?:y|ies)|ability|capabilit(?:y|ies))\s+(?:of|in|with|on|using|around)\s+(?:(?:the|a|an|any|using)\s+)?/i;
-const KW_HEAD_NOUN=/\b(analysis|analytics|management|testing|development|design|planning|reporting|writing|research|strategy|administration|coordination|documentation|modeling|modelling|optimization|integration|automation|deployment|troubleshooting|forecasting|negotiation|engineering|security|compliance|auditing|accounting|budgeting|reconciliation|operations|monitoring|validation|verification|migration|maintenance)$/i;
-const KW_JUNK=/\b(years?|degree|candidates?|applicants?|salary|age|gender|bangladesh|dhaka|compan(?:y|ies)|ability|opportunit\w*|environment|position|role|job|work|good|strong|excellent|must|should|will|able|willing|responsible|required|preferred|following|relevant|similar|other|various|multiple|different|day|time|per|new|high|full|part|etc|skills?|knowledge|experience|understanding|tools?|systems?|team|teams)\b/i;
-const KW_ACR_STOP=new Set("USA UK UAE BD BDT TK CV PDF MD AM PM ASAP FAQ PLC LTD LLC INC CEO CFO CTO COO HQ NYSE ARR YOY EMEA APAC US EU ID OK NO YES II III IV SR JR EEO CGPA GPA NID HR OR AND THE FOR NOT ALL ANY BSC MSC PHD SSC HSC MT MTO GM AGM DGM VP SVP EVP".split(" "));
+const KW_ACR_STOP=new Set("USA UK UAE BD BDT TK CV PDF MD AM PM ASAP FAQ PLC LTD LLC INC CEO CFO CTO COO HQ NYSE ARR YOY EMEA APAC US EU ID OK NO YES II III IV SR JR EEO CGPA GPA NID HR OR AND THE FOR NOT ALL ANY BSC MSC PHD SSC HSC MT MTO GM AGM DGM VP SVP EVP CA&C P&C".split(" "));
 // Legal boilerplate ("recruiting, hiring, placement...") is not a list of skills.
 const KW_EEO=/equal (?:employment )?opportunity|non-?discriminat|without regard to|protected (?:class|status|veteran)|affirmative action|reasonable accommodations?/i;
-// A short line with no closing punctuation reads as a heading, even one we do not recognise.
 // Whole-line headings written as sentences ("What you'll need"), which the title-case rule misses.
 const KW_HEADING_PHRASE=/^(?:what (?:you(?:'ll| will)?(?: be)? (?:need|bring|do|doing)|we(?:'re| are) looking for)|who you are|about you|your (?:profile|background|skills)|(?:the )?(?:role|job|position)|(?:nice|good) to have|bonus points?|must[- ]haves?|responsibilities|requirements|qualifications|key skills|how we work|why (?:join|work)\b.*)\??$/i;
+// A short line with no closing punctuation reads as a heading, even one we do not recognise.
 const KW_HEADINGISH=/^[A-Z][^.!?,;:]{0,58}$/;
+
+// Words that never make a keyword on their own: grammar, and the vocabulary every job post shares.
+const KW_STOP=new Set((`
+a an the and or but nor so yet for of in on at to from by with without within into onto over under about above below
+between among through during before after as than then that this these those it its they them their we our us you
+your he she his her i me my who whom whose which what when where why how all any each every both either neither some
+such no not only own same other another more most less least few many much several various also just very too can
+could may might must shall should will would do does did done doing be am is are was were been being have has had
+having get gets got getting make makes made making let up down out off again further once here there while if
+because until against per via etc ie eg vs plus
+candidate candidates applicant applicants job jobs role roles position positions responsibility responsibilities
+duty duties requirement requirements qualification qualifications skill skills ability abilities able knowledge
+experience experiences experienced year years month months minimum maximum preferred preferably desirable required
+advantage strong good excellent great solid proven demonstrated relevant related similar equivalent including
+include includes included well working work works worked team teams member members company companies organization
+organisation department office environment opportunity opportunities benefit benefits salary compensation package
+apply applying application applications submit send email resume cv contact address deadline joining join looking
+seeking hiring hire new high higher highly effective efficient efficiently successful successfully willing eager
+passionate motivated dynamic growing leading leader based across general specific overall main major key necessary
+appropriate proper properly regular regularly timely accurate accurately detailed various day daily weekly monthly
+annual full part time fulltime parttime available availability level levels ensure ensures ensuring provide
+provides providing perform performs performing prepare prepares preparing maintain maintains maintaining manage
+manages managing develop develops developing support supports supporting assist assists assisting conduct
+conducts conducting coordinate coordinates coordinating review reviews reviewing identify identifies identifying
+participate participates participating collaborate collaborates collaborating monitor monitors monitoring handle
+handles handling create creates creating implement implements implementing execute executes executing deliver
+delivers delivering follow follows following report reports submit submits lead leads leading drive drives driving
+oversee oversees overseeing advise advises advising communicate communicates communicating attend attends
+contribute contributes contributing achieve achieves achieving understand understands understanding use uses
+using used utilize utilizes need needs needed want wants find finds ability like likes take takes taking keep keeps
+help helps helping build builds building set sets setting run runs running act acts acting place places placed
+give gives giving ensure related regarding respect respective concerned relevant under upon per one two three four
+five six seven eight nine ten first second third also however therefore thus hence today
+male female both gender age aged nationality bangladeshi vacancy vacancies negotiable taka bdt tk hrs hour hours
+shift shifts limited ltd plc inc corp llc pvt co
+culture values mission vision spirit people person individuals individual professional professionals
+ats friendly additional information designation location reputed university universities institution institute
+public private remuneration allowance allowances bonus bonuses festival appraisal mindset positive negotiable
+industry industries sector sectors familiarity capability capabilities commitment integrity confidentiality
+manager managers executive executives officer officers assistant director directors head supervisor supervisors
+senior junior sr jr deputy associate enhance enhancing improve improving increase increasing
+operations operational performance coordination presentation planning management reporting training regulations
+regulation employment procedures procedure departments department production engineering manufacturing selling
+territory execution implementation messaging factory factories process processes system systems
+relationship relationships relation relations education software certification certifications confirmation
+orientation productivity agility promotions telecommunication distribution technology technologies usd
+considered favourably favorably
+writing development testing design analysis building reading speaking
+`).split(/\s+/).filter(Boolean));
+// Places and the like: never skills.
+const KW_PLACES=new Set("dhaka dhanmondi gulshan banani uttara mirpur mohakhali motijheel tejgaon badda gazipur narayanganj savar chattogram chittagong khulna rajshahi sylhet barishal barisal rangpur mymensingh comilla cumilla bogura bogra jashore jessore cox bazar bangladesh mirsarai nsez beza epz asia europe america africa london singapore malaysia india pakistan usa".split(" "));
 
 function kwCased(s){return s.split(" ").map(w=>/^[A-Z0-9&+]+$/.test(w)||w.length<3?w:w[0].toUpperCase()+w.slice(1)).join(" ")}
 
-function kwMinePhrases(seg,entries,covered){
- const m=KW_LEAD.exec(seg);
- if(!m)return [];
- let rest=seg.slice(m[0].length).split(/\s+(?:to|for|that|which|who|when|while|where|so that)\s+/i)[0];
- rest=rest.replace(/[().]/g," ").replace(/\s+/g," ");
- const out=[];
- for(let piece of rest.split(/\s*(?:,|;|\/|&|\band\b|\bor\b)\s*/i)){
-  piece=piece.trim().replace(/^(?:the|a|an|any|using|use of|good|strong)\s+/i,"").replace(/[.:]+$/,"");
-  const words=piece.split(" ");
-  if(words.length<1||words.length>4||piece.length<3||piece.length>40)continue;
-  if(KW_JUNK.test(piece)||/^\d/.test(piece))continue;
-  const acronym=/^[A-Z][A-Z0-9&+]{1,6}$/.test(piece)&&!KW_ACR_STOP.has(piece);
-  const title=words.length>=2&&words.every(w=>/^[A-Z]/.test(w)||/^(?:of|and|the|for|in|to)$/.test(w));
-  const head=words.length>=2&&KW_HEAD_NOUN.test(piece);
-  if(!(acronym||title||head))continue;
-  if(covered(piece))continue;
-  out.push(kwCased(piece));
+// A phrase and its plural are one keyword.
+function kwStem(phrase){return phrase.replace(/ies$/,"y").replace(/([^s])s$/,"$1")}
+function kwTrimWord(w){return w.replace(/^[^A-Za-z0-9+#]+|[^A-Za-z0-9+#]+$/g,"").replace(/'s$/i,"")}
+function kwIsAcronym(w){return /^[A-Z][A-Z0-9&+]{1,6}$/.test(w)&&!KW_ACR_STOP.has(w)}
+function kwInnerCaps(w){return /^[a-z]+[A-Z]/.test(w)||/^[A-Z][a-z]+[A-Z]/.test(w)}
+// A lone word only counts when it looks like a thing rather than a quality: "calibration", not "commercial".
+function kwNounish(w){return w.length>=6&&/(tion|sion|ment|ance|ence|ity|ing|ship|ology|ics|ism|ure|age|ery|ory|ist|ware)s?$/i.test(w)}
+
+const KW_BREAK=/[,;:()\[\]{}"|!?•–—\/]|\s[&+]\s|\.(?:\s|$)/;
+
+// One run of meaningful words: remember it, and how the post used it.
+function kwNote(run,ctx,gen,skip){
+ if(run.length>4)return;
+ const ws=run.map(r=>r.w),lo=ws.map(w=>w.toLowerCase());
+ if(lo.some(w=>skip.has(w)))return;
+ const one=ws.length===1;
+ const shape=one?(kwIsAcronym(ws[0])||kwInnerCaps(ws[0])):(run.every(r=>/^[A-Z0-9]/.test(r.w))&&!(run[0].first&&run.length<2));
+ if(one&&!(shape||kwNounish(ws[0])))return;
+ const key="m:"+kwStem(lo.join(" "));
+ let g=gen.get(key);
+ if(!g){g={key,forms:new Map(),count:0,weights:[],tier:"nice",leadIn:false,shortReq:false,shape:false,words:ws.length,order:gen.size};gen.set(key,g);}
+ g.count++;g.weights.push(ctx.weight);
+ const shown=kwCased(ws.join(" "));
+ g.forms.set(shown,(g.forms.get(shown)||0)+1);
+ if(kwRank(ctx.tier)<kwRank(g.tier))g.tier=ctx.tier;
+ g.leadIn=g.leadIn||ctx.leadIn;
+ g.shortReq=g.shortReq||(ctx.short&&ctx.tier!=="important");
+ g.shape=g.shape||shape;
+}
+
+function kwCollect(seg,hits,tier,weight,gen,skip){
+ // Terms the lexicon already found are blanked first, so nothing is counted twice and "CI/CD" or
+ // "MS Excel" do not leave "CI", "CD" and "MS" behind.
+ // Every spelling of a found term is blanked, not just the longest: "Bachelor of Business Administration
+ // (BBA)" must not leave "BBA" behind.
+ let text=kwNorm(seg);
+ for(const h of hits)for(const a of h.entry.aliases){
+  if(!a.reG)a.reG=new RegExp(a.re.source,a.re.flags+"g");
+  text=text.replace(a.reG," | ");
  }
- return out;
+ // short: a bullet that is itself the term ("Structural analysis"), not a sentence with a verb in it
+ const ctx={tier,weight,leadIn:KW_LEAD.test(seg),short:seg.split(/\s+/).length<=4&&!/^(?:the|our|we|you|your|it|they|this|that|these|those|he|she|there|as|if|when|while|for|i)\b/i.test(seg)};
+ let first=true;
+ for(const part of text.split(KW_BREAK)){
+  let run=[];
+  const flush=()=>{if(run.length)kwNote(run,ctx,gen,skip);run=[];};
+  for(const raw of part.split(/\s+/)){
+   const w=kwTrimWord(raw);
+   if(!w)continue;
+   const bad=w.length<2||KW_STOP.has(w.toLowerCase())||/^\d+$/.test(w)||(/^\d/.test(w)&&!/^\d+[A-Za-z]{1,3}$/.test(w));
+   if(bad){flush();first=false;continue;}
+   run.push({w,first});
+   first=false;
+  }
+  flush();
+ }
+}
+
+// Keep a run only when the post signals that it matters.
+function kwAccept(g){
+ // A lone ordinary word ("calibration", "storytelling") proves nothing by repeating; it needs the post to
+ // point at it: "experience with X", or a short requirement line.
+ if(g.words===1&&!g.shape)return g.leadIn||g.shortReq;
+ if(g.count>=2)return true;                       // a phrase, an acronym or a named tool said more than once
+ return g.leadIn||g.shortReq;                     // "experience with X", or a short requirement line
+}
+
+function kwGeneral(gen,limit){
+ const accepted=[...gen.values()].filter(kwAccept).sort((a,b)=>b.words-a.words);
+ const kept=[];
+ for(const g of accepted){
+  const inner=" "+g.key.slice(2)+" ";
+  // "maintenance" is dropped when "preventive maintenance" was said just as often.
+  if(kept.some(o=>o.words>g.words&&(" "+o.key.slice(2)+" ").includes(inner)&&o.count>=g.count))continue;
+  kept.push(g);
+ }
+ return kept.map(g=>{
+  const shown=[...g.forms.entries()].sort((a,b)=>b[1]-a[1])[0][0];
+  const score=[...g.weights].sort((a,b)=>b-a).slice(0,3).reduce((a,b)=>a+b,0)+(g.words>=2?1:0)+(g.shape?1:0);
+  return {key:g.key,name:shown,display:shown,kind:"tech",source:"mined",count:g.count,score,tier:g.tier,inTitle:false,order:g.order};
+ }).sort((a,b)=>b.score-a.score||a.order-b.order).slice(0,limit);
 }
 
 // ---------------------------------------------------------------- the main entry point
 
-function extractKeywords(text,title){
+// text: the post. title: the job title (a keyword in it is a must-have). company: skipped as a keyword.
+function extractKeywords(text,title,company){
  const {entries}=kwBuild();
  const map=new Map();
- const acronyms=new Map();
- const coveredCache=new Map();
- const covered=phrase=>{
-  if(!coveredCache.has(phrase))coveredCache.set(phrase,entries.some(e=>e.aliases.some(a=>a.reAny.test(kwNorm(phrase)))));
-  return coveredCache.get(phrase);
- };
+ const gen=new Map();
+ const skip=new Set(KW_PLACES);
+ for(const w of String(company||"").toLowerCase().split(/[^a-z0-9]+/))if(w.length>=3)skip.add(w);
  const lexProto=e=>({name:e.name,kind:e.kind,source:"lexicon"});
 
  for(const h of kwHits(title||"",entries))kwRecord(map,h.entry.key,lexProto(h.entry),h.alias.display,3,"must",true);
@@ -573,36 +853,12 @@ function extractKeywords(text,title){
   const tier=pref||sec==="preferred"?"nice":(req||sec==="required")?"must":"important";
   const weight=tier==="must"?3:tier==="nice"?1:(sec==="duties"?2:1);
   for(const hit of hits)kwRecord(map,hit.entry.key,lexProto(hit.entry),hit.alias.display,weight,tier,false);
-
-  const leadIn=KW_LEAD.test(seg);
-  for(const phrase of kwMinePhrases(seg,entries,covered)){
-   kwRecord(map,"m:"+phrase.toLowerCase(),{name:phrase,kind:"tech",source:"mined"},phrase,weight,tier,false);
-  }
-  // Acronyms that keep coming up (KYC, RCM...) are what a recruiter searches for; one-offs are noise.
-  // Terms the lexicon already found are blanked first, so "CI/CD" and "MS Excel" do not leave "CI", "CD", "MS".
-  let residual=kwNorm(seg);
-  for(const hit of hits)residual=residual.replace(new RegExp(hit.alias.re.source,hit.alias.re.flags+"g")," ");
-  for(const a of residual.match(/\b[A-Z][A-Z0-9]{1,5}\b/g)||[]){
-   if(KW_ACR_STOP.has(a)||covered(a))continue;
-   const r=acronyms.get(a)||{n:0,weight:0,tier:"nice",leadIn:false};
-   r.n++;r.weight=Math.max(r.weight,weight);
-   if(kwRank(tier)<kwRank(r.tier))r.tier=tier;
-   r.leadIn=r.leadIn||leadIn;
-   acronyms.set(a,r);
-  }
- }
- for(const [a,r] of acronyms){
-  if(r.n<2&&!r.leadIn)continue;
-  if(map.has("m:"+a.toLowerCase()))continue;
-  const rec=kwRecord(map,"m:"+a.toLowerCase(),{name:a,kind:"tech",source:"mined"},a,r.weight,r.tier,false);
-  rec.count=r.n;rec.score=r.weight+Math.min(2,r.n-1);
+  kwCollect(seg,hits,tier,weight,gen,skip);
  }
 
- // Keep the miner modest: at most 8 terms the lexicon did not know, best first.
- const all=[...map.values()];
- const mined=all.filter(k=>k.source==="mined").sort((x,y)=>y.score-x.score||x.order-y.order).slice(0,8);
- const keep=new Set(mined);
- return all.filter(k=>k.source==="lexicon"||keep.has(k))
+ // At most 14 terms from the post itself, best first; the lexicon's are all kept.
+ for(const g of kwGeneral(gen,14))map.set(g.key,g);
+ return [...map.values()]
   .sort((x,y)=>y.score-x.score||kwRank(x.tier)-kwRank(y.tier)||x.order-y.order)
   .map(({order,...k})=>k);
 }
@@ -652,23 +908,23 @@ function annotateKeywords(kws,evidence){
  });
 }
 
-// What goes on the resume: keywords the candidate lists as skills, plus any they have personally
-// confirmed ("claimed") for this one job, in the order a recruiter would care about them. A keyword
-// found only in prose, or not found at all, is never added on its own. Degrees stay out (the
-// Education section already shows them) and soft skills are capped so the line stays about hard skills.
-function pickForResume(kws,opts){
- const {off=[],claimed=[],max=14,softMax=4}=opts||{};
- const offSet=new Set(off),claimedSet=new Set(claimed),out=[];
- let soft=0;
- for(const k of kws){
-  if(k.kind==="degree"||offSet.has(k.key))continue;
-  const listed=k.evidence?k.evidence==="skills":!!k.have;
-  if(!(listed||claimedSet.has(k.key)))continue;
-  if(k.kind==="soft"){if(soft>=softMax)continue;soft++;}
-  out.push(k);
-  if(out.length>=max)break;
- }
- return out;
+// The candidate decides. Every keyword starts undecided and is on the resume only after they press
+// Add for it; Not add keeps it off. `evidence` (skills / prose / none) is shown beside each keyword so the
+// choice is informed, but it never decides for them. Degrees are shown and never added: the Education
+// section already carries them, and no keyword line can supply one.
+function pickForResume(kws,decisions){
+ const added=new Set((decisions&&decisions.added)||[]);
+ return kws.filter(k=>k.kind!=="degree"&&added.has(k.key));
+}
+
+// A job's saved keyword choices. Older saves used `claimed` (added by hand) and `off` (left out of an
+// automatic list); the automatic list is gone, so `claimed` carries over as added and `off` as not added.
+function normalizeDecisions(saved){
+ const s=saved||{};
+ const list=v=>Array.isArray(v)?[...new Set(v.filter(x=>typeof x==="string"))]:[];
+ const added=list(s.added!==undefined?s.added:s.claimed);
+ const skipped=list(s.skipped!==undefined?s.skipped:s.off).filter(k=>!added.includes(k));
+ return {enabled:s.enabled!==false,added,skipped};
 }
 
 // How many of the post's keywords a piece of text contains, overall and among the must-haves.

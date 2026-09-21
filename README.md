@@ -311,49 +311,57 @@ The earlier formula scored nearly every job 53-56, because three of its four par
 were the same for almost every job. If a percentage cannot tell a good match from
 a poor one it is decoration.
 
-## Recruiter keywords and the Key Skills line
+## Recruiter keywords: you decide, per job
 
-Open any job's resume and the **Recruiter Keywords** panel reads the job post and lists
-the terms a recruiter or an ATS screens for. Paste a fuller post into the box at the
-bottom of the panel (or into **Add Job**, where a live preview appears as you paste) and
-everything re-reads. It works on the post you give it, in your browser, with no account
-and nothing sent anywhere.
+Open any job's resume and the **Recruiter Keywords** panel lists the terms that job post
+screens for. Nothing is on the resume until you decide: every keyword has an **Add** and a
+**Not add** button. Add puts it on that job's resume; Not add keeps it off. Paste a fuller post
+into the box at the bottom of the panel (or into **Add Job**, where a live preview appears as
+you paste) and everything re-reads. It runs in your browser, with no account, and nothing
+is sent anywhere.
 
-**How a keyword is found.** `keywords.js` holds about 400 skills across software, testing,
-IT support, MIS and data, business and management, soft skills and degrees, each with the
-ways people really write it ("MS Excel", "Microsoft Excel", "Advanced Excel"). A small
-extra reader adds terms the list does not know: acronyms that repeat, and phrases after
-"experience with". The post's headings decide how much a line matters:
+**Any job, any field.** Nothing here is tied to your profile or to tech. Add Job accepts any
+category (choose **Other**), and the reader works from the post itself:
 
-| Tier | Where it was found |
-|---|---|
-| Must-have | under Requirements / Qualifications, near "must" or "required", or in the job title |
-| Important | in the duties |
-| Nice to have | under Preferred, or marked "a plus" |
+- `keywords.js` holds about 550 skills across software, testing, IT, MIS and data, business,
+  banking, legal, engineering and maintenance, factory work, NGO, HR, sales, media, health
+  and education, plus soft skills and degrees, each with the ways people really write it
+  ("MS Excel", "Microsoft Excel", "Advanced Excel").
+- No list can hold every field, so the rest is read from the post: runs of meaningful words
+  between stop words and punctuation ("wound care", "preventive maintenance", "dispute
+  resolution"), kept only when the post signals they matter (they repeat, follow "experience
+  with", or are a short requirement line). Those are marked with a `*`. A nursing, legal or
+  factory post gives its own terms, not tech ones.
+- Company blurbs, benefits, place names, job titles, the company's own name and
+  equal-opportunity boilerplate are ignored.
 
-Company blurbs, benefits and equal-opportunity boilerplate are ignored, so a company that
-"loves Agile" in its About section does not make Agile a requirement.
+**Which ones matter.** The post's headings decide the tier: **must-have** (under Requirements,
+near "must" or "required", or in the job title), **important** (in the duties), **nice to have**
+("preferred", "a plus").
 
-**What goes on your resume.** A **Key Skills** row is added as the first line of Core
-Skills, in the post's own wording, because an ATS matches strings ("Test Cases" does not
-find "Test Case Design"). It holds only skills that your own profile backs:
+**Your profile is shown, never decisive.** Under each keyword a note says whether your own
+profile backs it: *In your profile* (you list it as a skill, a project's tech or a job title),
+*Only in your experience text* (a sentence mentions it but no skill line does) or *Not in your
+profile*. That is information for you, not a rule: press Add for what is true and useful. If you
+add something your profile does not back, the card reminds you to keep it only if it is true,
+because a resume that claims JIRA or Selenium you have never used gets you an interview you
+then fail. Degrees are shown but never added; your Education section already carries them.
 
-| Colour | Meaning | On the resume? |
-|---|---|---|
-| Green | you list it as a skill, a project's tech, a degree or a job title | yes, click to leave one off |
-| Dashed blue | only mentioned inside a sentence of your experience, or an experience tag | no, click to add it if it is really a skill of yours |
-| Dashed amber | nowhere in your profile | no, click only if you genuinely have it |
+**What the resume gets.** Exactly the keywords you pressed Add for, as the first row of Core Skills
+(**Key Skills**), in the post's own wording, because an ATS matches strings ("Test Cases" does not
+find "Test Case Design"). It appears in the preview, PDF, DOCX and TXT. Bullets and projects that
+use the post's keywords move to the top. Shortcuts: **Add all in my profile**, **Add all
+must-haves**, **Clear all choices**. Choices are saved on that job, so every job has its own
+tailored resume, and they survive reloads and feed updates.
 
-Nothing is added just because the post asks for it: a resume that claims JIRA or Selenium
-you have never used gets you an interview you then fail. The amber chips are the useful
-part: they are the must-haves to learn, or to add to your Master Profile if you already
-have them (once they are in your profile, every future job recognises them). Your clicks
-are saved per job. The row appears in the preview, PDF, DOCX and TXT, and bullets and
-projects that use the post's keywords move to the top.
+**Jobs outside your fields.** A job that fits none of the fixed resume strategies gets the **General
+Resume (any field)**: the headline is the job title and the summary is built only from your profile
+(degree, internship, institution), the job title and the keywords you added. It never borrows another
+field's summary.
 
-**The numbers.** *Resume keyword match* counts a keyword only when the resume uses the
-post's exact wording, before and after the Key Skills row. It is a simple-ATS estimate,
-not any employer's real score, and it leaves degrees out (the Education section shows those).
+**The numbers.** *Resume keyword match* counts a keyword only when the resume uses the post's exact
+wording, and shows it before and after your additions. It is a simple-ATS estimate, not any employer's
+real score, and it leaves degrees out.
 
 ## Your rules, and what they do
 
@@ -468,7 +476,7 @@ feed keeps flowing while you fix the selectors.
 | `backend/dedupe.py` | fingerprint, URL and near-match merging |
 | `backend/scoring.py`, `scoring.js` | the match score (same maths in both languages, tested against each other) and your rules |
 | `backend/health.py` | notices a source that has quietly stopped returning jobs |
-| `keywords.js` | reads a job post for recruiter keywords and decides which are yours (runs in the browser, tested under Node) |
+| `keywords.js` | reads a job post for recruiter keywords in any field; you choose which go on the resume (runs in the browser, tested under Node) |
 | `config/manual_sites.json` | the boards you check by hand, shown in the dashboard's Manual Sites tab |
 | `backend/store.py` | the feed and the ledger of what you have already decided |
 | `backend/notify.py` | GitHub issue, SMTP digest and webhook |
