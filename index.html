@@ -103,6 +103,7 @@ const DEFAULT_PROFILE={
   minimumMatch:60,
   strongMatch:75,
   experienceYears:0,
+  expectedSalaryMin:null,
   version:2
  }
 };
@@ -553,6 +554,7 @@ function Preferences({p,setProfile,notify}){
  <Block title="Career Areas"><div className="grid md:grid-cols-2 gap-2">{categories.map(c=><label key={c} className="bg-slate-900 border border-slate-800 p-3 rounded cursor-pointer text-sm"><input type="checkbox" checked={p.preferences.categories.includes(c)} onChange={()=>setProfile({...p,preferences:{...p.preferences,categories:toggle(p.preferences.categories,c)}})} className="mr-2"/>{c}</label>)}</div></Block>
  <Block title="Target Job Titles"><div className="flex flex-wrap gap-2">{p.preferences.titles.map(t=><span key={t} className="bg-cyan-950 border border-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-xs">{t}<button className="ml-2 text-red-300" onClick={()=>setProfile({...p,preferences:{...p.preferences,titles:p.preferences.titles.filter(x=>x!==t)}})}>×</button></span>)}</div><div className="flex gap-2 mt-4"><input value={newTitle} onChange={e=>setNewTitle(e.target.value)} placeholder="Add job title" className="bg-slate-950 border border-slate-700 rounded p-2 flex-1 text-sm"/><button onClick={()=>{if(newTitle.trim()){setProfile({...p,preferences:{...p.preferences,titles:[...p.preferences.titles,newTitle.trim()]}});setNewTitle("");notify("Job title added.")}}} className="bg-cyan-600 px-3 rounded text-sm">Add</button></div></Block>
  <Block title="Search Guardrails"><p className="text-sm text-slate-400 mb-2">Excluded roles are kept out of your preferred targets.</p><textarea value={p.preferences.excluded.join("\n")} onChange={e=>setProfile({...p,preferences:{...p.preferences,excluded:e.target.value.split("\n").map(x=>x.trim()).filter(Boolean)}})} className="w-full h-24 bg-slate-950 border border-slate-700 rounded p-3 text-sm"/></Block>
+ <Block title="Expected Salary"><p className="text-sm text-slate-400 mb-2">Optional. Used only to compare a job's advertised pay against what you're looking for, in the Job Requirements panel. Leave it blank and nothing is assumed.</p><div className="flex items-center gap-2 text-sm"><span className="text-slate-400">Tk</span><input type="number" min="0" step="1000" aria-label="Expected minimum monthly salary" value={p.preferences.expectedSalaryMin??""} onChange={e=>setProfile({...p,preferences:{...p.preferences,expectedSalaryMin:e.target.value===""?null:Math.max(0,Number(e.target.value))}})} placeholder="e.g. 30000" className="bg-slate-950 border border-slate-700 rounded p-2 w-40"/><span className="text-slate-400">per month, minimum</span></div></Block>
  </section>
 }
 
@@ -572,6 +574,7 @@ function ResumePanel({job,p,updateJob,notify}){
  const evidence=useMemo(()=>keywordEvidence(p),[p]);
  const found=useMemo(()=>extractKeywords(jd,job.title,job.company),[jd,job.title,job.company]);
  const kws=useMemo(()=>annotateKeywords(found,evidence),[found,evidence]);
+ const requirements=useMemo(()=>analyzeRequirements(kws,jd,job.title,job,p),[kws,jd,job,p]);
  // Only what you pressed Add for, each slotted into the Master Profile category it actually belongs
  // to (Databases, Software Testing, Legal, ...) rather than dumped in one flat list. A field with no
  // matching category of its own gets a new one, named after that field.
@@ -747,6 +750,7 @@ function ResumePanel({job,p,updateJob,notify}){
   </div>}
 
   <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between items-center mb-3"><div><h3 className="font-semibold">Resume Strategy</h3><p className="text-xs text-slate-500">Auto-picked from this job's title and description — pick a different one any time.</p></div><span className="text-xs text-cyan-300">{cfg.label}</span></div><div className="grid md:grid-cols-4 gap-2">{Object.entries(ROLE_STRATEGIES).map(([k,v])=><button key={k} onClick={()=>{setStrategy(k);setEditMode(false);updateJob(job.id,{selectedStrategy:k})}} className={`p-3 rounded-lg border text-left text-xs ${strategy===k?'border-cyan-500 bg-cyan-950/50':'border-slate-800 bg-slate-950'}`}><b>{v.label}</b>{k===recommended&&<span className="ml-1 text-[9px] text-emerald-400">(recommended)</span>}<span className="block text-slate-500 mt-1">{k}</span></button>)}</div></div>
+  <RequirementsPanel req={requirements}/>
   <KeywordPanel job={job} jd={jd} kws={kws} rk={rk} setRk={setRk} updateJob={updateJob} coverBefore={coverBefore} coverNow={coverNow} keyCount={addedKw.length}/>
   <div className="grid md:grid-cols-2 gap-4 no-print"><Block title={`Compatibility Analysis: ${a.score}%`}><div className="grid grid-cols-2 gap-2"><Metric label="Title fit" value={a.titleFit}/><Metric label="Level fit" value={a.levelFit}/><Metric label="Skills" value={a.skillFit}/><Metric label="Preference" value={a.prefFit}/></div><p className="text-xs text-emerald-300 mt-3">Matched: {a.matched.slice(0,10).join(", ")||"None"}</p><p className="text-xs text-amber-300 mt-2">Potential gaps: {a.missing.slice(0,8).join(", ")||"None detected"}</p></Block><Block title="ATS Quality"><CheckRow ok text="Single-column, standard section headings"/><CheckRow ok text="No graphics, tables, icons, sidebars, or decorative resume elements"/><CheckRow ok text="Plain-text contact information"/><CheckRow ok={a.missing.length<8} text="Job keywords reviewed without inventing qualifications"/><p className="text-[11px] text-slate-500 mt-3">Compatibility is an internal estimate, not a real employer ATS score.</p></Block></div>
   <div className="bg-white text-black max-w-[794px] mx-auto p-8 md:p-10 shadow-2xl rounded print-resume">
@@ -782,7 +786,7 @@ function KeywordCard({k,rk,onAdd,onSkip}){
  const ev=KW_EVIDENCE[grade];
  const box={added:"bg-emerald-950/40 border-emerald-700",skipped:"bg-slate-950 border-slate-800 opacity-60",undecided:"bg-slate-950 border-slate-700"}[d];
  return <div data-testid="kw-item" data-key={k.key} data-decision={d} data-evidence={grade} className={"border rounded-lg p-2.5 flex flex-col gap-1.5 "+box}>
-  <span className={"text-sm font-medium "+(d==="skipped"?"line-through text-slate-500":"text-slate-100")}>{k.display}{k.source==="mined"&&<span className="opacity-60" title="Found in this post itself, not in the built-in skill list">*</span>}</span>
+  <span className={"text-sm font-medium "+(d==="skipped"?"line-through text-slate-500":"text-slate-100")}>{k.display}{k.source==="mined"&&<span className="opacity-60" title="Found in this post itself, not in the built-in skill list">*</span>}{k.hardRequirement&&<span data-testid="kw-years" title="The post states a specific number of years for this, not just a bare mention" className="ml-1.5 text-[9.5px] px-1.5 py-0.5 rounded border border-amber-700 text-amber-300 bg-amber-950/40 align-middle">{k.yearsRequired}+ yrs</span>}</span>
   <span className={"text-[10.5px] "+ev.cls} data-testid="kw-evidence">{ev.label}{d==="added"&&grade!=="skills"?" · you added it, so keep it only if it is true":""}</span>
   <div className="flex gap-1.5">
    <button type="button" data-testid="kw-add" aria-pressed={d==="added"} onClick={onAdd} className={"px-2.5 py-1 rounded text-[11px] border "+(d==="added"?"bg-emerald-600 border-emerald-500 text-white":"bg-slate-900 border-slate-700 text-slate-200 hover:bg-slate-800")}>{d==="added"?"✓ Added":"Add"}</button>
@@ -799,6 +803,49 @@ function KeywordLegend(){
  return <p className="text-[11px] text-slate-500">
   <span className="text-emerald-300">In your profile</span>: you list it as a skill, a project's tech or a job title. <span className="text-cyan-300">Only in your experience text</span>: a sentence mentions it but no skill line does. <span className="text-amber-300">Not in your profile</span>: it appears nowhere in what you wrote. That note is information for you: you decide, and only what you press Add for reaches the resume. * marks a term read from this post itself.
  </p>
+}
+/* ---- Job Requirements: eleven groups from analyzeRequirements (keywords.js), read-only ---- */
+const REQ_STATE_STYLE={
+ match:{cls:"text-emerald-300",dot:"bg-emerald-400"},
+ partial:{cls:"text-cyan-300",dot:"bg-cyan-400"},
+ gap:{cls:"text-amber-300",dot:"bg-amber-400"},
+ unknown:{cls:"text-slate-400",dot:"bg-slate-500"}
+};
+function ReqCompare({compare}){
+ if(!compare)return null;
+ const s=REQ_STATE_STYLE[compare.state]||REQ_STATE_STYLE.unknown;
+ return <p className={"text-xs flex gap-2 items-start mt-1 "+s.cls} data-testid="req-compare" data-state={compare.state}><span className={"mt-1 w-1.5 h-1.5 rounded-full shrink-0 "+s.dot}/>{compare.note}</p>
+}
+// A skill-list group (Domain / Certifications / Language). Required/Preferred/Tools stay a one-line
+// summary here — their full, decidable list is one scroll down in Recruiter Keywords, so this does
+// not repeat it.
+function ReqSkillGroup({title,group,hint}){
+ if(!group||!group.items.length)return null;
+ return <div data-testid={"req-"+title.toLowerCase().replace(/[^a-z]+/g,"-")}>
+  <p className="text-xs"><b className="text-slate-200">{title}</b> <span className="text-slate-500">{group.matched} of {group.total} in your profile{hint?" · "+hint:""}</span></p>
+  <div className="flex flex-wrap gap-1.5 mt-1.5">{group.items.map(k=><KeywordPill key={k.key} k={k}/>)}</div>
+ </div>
+}
+function RequirementsPanel({req}){
+ if(!req)return null;
+ const any=req.education||req.experience||req.location||req.salary||req.responsibilities.items.length||req.domain.items.length||req.certifications.items.length||req.language.items.length;
+ if(!any)return <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5" data-testid="requirements-panel"><h3 className="font-semibold">Job Requirements</h3><p className="text-xs text-slate-500 mt-1">This post didn't say enough to break down — see Recruiter Keywords below for what it does mention.</p></div>;
+ return <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-4" data-testid="requirements-panel">
+  <div><h3 className="font-semibold">Job Requirements</h3><p className="text-xs text-slate-500 mt-1">What this post actually asks for, compared against your Master Profile. Read-only — decide what goes on the resume in Recruiter Keywords below.</p></div>
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-xs">
+   <div className="bg-slate-950 rounded p-2" data-testid="req-required"><p className="text-slate-500">Required</p><p className="font-bold text-lg">{req.required.matched} <span className="text-slate-500 text-xs font-normal">of {req.required.total}</span></p></div>
+   <div className="bg-slate-950 rounded p-2" data-testid="req-preferred"><p className="text-slate-500">Preferred</p><p className="font-bold text-lg">{req.preferred.matched} <span className="text-slate-500 text-xs font-normal">of {req.preferred.total}</span></p></div>
+   <div className="bg-slate-950 rounded p-2" data-testid="req-tools"><p className="text-slate-500">Tools/Technologies</p><p className="font-bold text-lg">{req.tools.matched} <span className="text-slate-500 text-xs font-normal">of {req.tools.total}</span></p></div>
+  </div>
+  {req.responsibilities.items.length>0&&<div data-testid="req-responsibilities"><p className="text-xs"><b className="text-slate-200">Responsibilities</b> <span className="text-slate-500">what the role actually involves day to day</span></p><ul className="list-disc ml-4 mt-1.5 text-xs text-slate-300 space-y-0.5">{req.responsibilities.items.map((r,i)=><li key={i}>{r}</li>)}</ul></div>}
+  {req.education&&<div data-testid="req-education"><p className="text-xs"><b className="text-slate-200">Education</b> <span className="text-slate-500">{req.education.items.map(k=>k.display).join(", ")}</span></p><ReqCompare compare={req.education.compare}/></div>}
+  {req.experience&&<div data-testid="req-experience"><p className="text-xs"><b className="text-slate-200">Experience</b> <span className="text-slate-500">{req.experience.text}</span></p><ReqCompare compare={req.experience.compare}/></div>}
+  <ReqSkillGroup title="Domain knowledge" group={req.domain}/>
+  <ReqSkillGroup title="Certifications" group={req.certifications}/>
+  <ReqSkillGroup title="Language" group={req.language}/>
+  {req.location&&<div data-testid="req-location"><p className="text-xs"><b className="text-slate-200">Location</b> <span className="text-slate-500">{req.location.text}{req.location.distanceKm!=null?` · ${req.location.distanceKm} km from your area`:""}</span></p><ReqCompare compare={req.location.compare}/></div>}
+  {req.salary&&<div data-testid="req-salary"><p className="text-xs"><b className="text-slate-200">Salary</b> <span className="text-slate-500">{req.salary.text||"not stated"}</span></p><ReqCompare compare={req.salary.compare}/></div>}
+ </div>
 }
 function KeywordPanel({job,jd,kws,rk,setRk,updateJob,coverBefore,coverNow,keyCount}){
  const [all,setAll]=useState(false);

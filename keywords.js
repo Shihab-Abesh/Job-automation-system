@@ -176,7 +176,8 @@ SSL|SSL Certificates|TLS
 #!group IT Support & Networking
 Networking|Computer Networking|Network Administration
 TCP/IP
-Cisco|CCNA|CCNP
+Cisco
+CCNA|CCNP!cert
 Active Directory
 VPN
 Firewall|Firewalls
@@ -249,12 +250,14 @@ Process Improvement|Continuous Improvement
 Root Cause Analysis|RCA
 Documentation|Technical Documentation
 SOP|Standard Operating Procedures|Standard Operating Procedure
-ITIL
-ISO 27001
-ISO 9001
-Six Sigma|Lean Six Sigma|Lean Management
-PMP
-PRINCE2
+ITIL!cert
+ISO 27001!cert
+ISO 9001!cert
+Six Sigma|Lean Six Sigma!cert
+Lean Management
+PMP!cert
+PRINCE2!cert
+Certified Scrum Master|CSM|Scrum Master Certification!cert
 #!group IT Support & Networking
 Technical Support|Tech Support
 Troubleshooting|Trouble Shooting
@@ -356,11 +359,16 @@ Leadership|Leadership Skills|Leadership Development
 Decision Making|Strategic Thinking
 Sales Targets|Sales Target|Target Achievement|Achieving Targets
 #!group Banking & Finance
-Banking|Financial Services
-FMCG
-Fintech|Mobile Financial Services|MFS
-E-Commerce|Ecommerce
+Banking|Financial Services!domain
+FMCG!domain
+Fintech|Mobile Financial Services|MFS!domain
+E-Commerce|Ecommerce!domain
 KYC|AML|Know Your Customer
+JAIBB|AIBB!cert
+#!group Industry Knowledge
+Telecom|Telecommunications!domain
+Pharmaceutical|Pharma Industry!domain
+Real Estate!domain
 #!group Office & Productivity Tools
 Microsoft Office|MS Office|Office Suite|Microsoft Office Suite|MS Office Suite
 MS Word|Microsoft Word|=Word
@@ -425,8 +433,8 @@ Import and Export|Import Export|Customs Clearance|Shipping Documentation|Freight
 Letter of Credit|=LC
 Merchandising|Merchandiser|Knit Merchandising
 Buying House
-Garments|Apparel|RMG|Readymade Garments
-Textile
+Garments|Apparel|RMG|Readymade Garments!domain
+Textile!domain
 #!group Banking & Finance
 Cost Control|Costing
 Credit Analysis|Credit Assessment|Credit Appraisal
@@ -442,8 +450,8 @@ IFRS|International Financial Reporting Standards
 GAAP
 Bank Reconciliation
 Investment Analysis|Portfolio Management
-Insurance|Underwriting|Claims Processing
-Chartered Accountant|Chartered Accountancy|ACCA|CFA|CMA|ICAB
+Insurance|Underwriting|Claims Processing!domain
+Chartered Accountant|Chartered Accountancy|ACCA|CFA|CMA|ICAB!cert
 Financial Audit|External Audit
 Cost Accounting|Management Accounting
 #!group Legal
@@ -468,6 +476,7 @@ E-Learning|Online Teaching
 Training and Development|Training Delivery|Corporate Training|Learning and Development
 Research Methodology
 #!group Healthcare
+Healthcare|Healthcare Industry|Health Sector!domain
 Patient Care
 Clinical Research|Clinical Trials
 Nursing|Nursing Care
@@ -492,6 +501,7 @@ Influencer Marketing
 Brand Strategy|Brand Communication|Marketing Communications|Corporate Communications
 Event Management|Event Planning
 #!group NGO & Development
+NGO|Non-Government Organization|Development Sector|INGO!domain
 Monitoring and Evaluation|M&E|MEAL
 Grant Writing|Proposal Writing|Proposal Development|Fundraising
 Project Cycle Management
@@ -537,7 +547,7 @@ Product Knowledge
 #!group Hospitality & Security
 Housekeeping
 Food Safety
-Hospitality|Hospitality Management|Hotel Management
+Hospitality|Hospitality Management|Hotel Management!domain
 Driving License|Driving Licence
 Physical Security|Security Management
 Airport Operations|Ground Handling
@@ -562,8 +572,10 @@ Organizational Skills|Organisational Skills
 Presentation Skills|Presentations|Public Speaking
 Report Writing|Business Writing|Technical Writing
 Research Skills
-English Proficiency|Fluent English|Good English|English Language|English Communication|Command of English|Command in English|Proficiency in English
-Bangla
+English Proficiency|Fluent English|Good English|English Language|English Communication|Command of English|Command in English|Proficiency in English!lang
+Bangla!lang
+Hindi!lang
+Arabic!lang
 Emotional Intelligence
 Conflict Resolution
 Mentoring|Coaching
@@ -624,14 +636,19 @@ function kwBuild(){
   if(line.startsWith("#!group ")){group=line.slice(8).trim();continue;}
   if(line.startsWith("#!")){kind=line.slice(2).trim();continue;}
   if(line[0]==="#")continue;
-  const aliases=line.split("|").map(a=>a.trim()).filter(Boolean).map(a=>{
+  // A line may end in "!cert" / "!domain" / "!lang" to mark what it is for the Job Requirements
+  // panel, on top of its ordinary kind/group. Most lines carry no tag at all.
+  const tagged=/^(.*)!(cert|domain|lang)$/.exec(line);
+  const tag=tagged?tagged[2]:null;
+  const body=tagged?tagged[1]:line;
+  const aliases=body.split("|").map(a=>a.trim()).filter(Boolean).map(a=>{
    const cs=a[0]==="=",display=cs?a.slice(1):a;
    return {display,cs,low:kwNorm(display).toLowerCase(),re:kwPhraseRegex(display,cs),reAny:kwPhraseRegex(display,false)};
   });
   // Longest wording first, so the most specific alias in a line is the one reported.
   const name=aliases[0].display;
   aliases.sort((x,y)=>y.low.length-x.low.length);
-  const entry={key:name.toLowerCase(),name,kind,group,aliases};
+  const entry={key:name.toLowerCase(),name,kind,group,tag,aliases};
   KW.entries.push(entry);KW.byKey.set(entry.key,entry);
  }
  return KW;
@@ -649,6 +666,24 @@ const KW_HEADINGS=[
 const KW_LABEL_SKIP=/^(location|employment(?: type| status)?|vacanc(?:y|ies)|no\.? of vacanc\w+|salary|deadline|application deadline|age|gender|department|job nature|job type|headquarters|url|category|posted|published|apply(?: before| by)?|workplace|working (?:days|hours))$/i;
 const KW_CUE_PREF=/\b(prefer(?:red|ably)?|nice to have|good to have|a plus|plus point|bonus|advantage|desirable|optional|an asset|not mandatory)\b/i;
 const KW_CUE_REQ=/\b(must|required|requirement|mandatory|essential|minimum|need(?:s|ed)? to|should have|proficien(?:t|cy)|strong (?:knowledge|understanding|experience|command|background)|hands[- ]on|expert(?:ise)?|solid (?:knowledge|understanding|experience))\b/i;
+// "Minimum 3 years professional Python development experience required" vs "Python preferred": a
+// bare skill mention says nothing about how much experience it wants; a number does, and it is a
+// harder bar than any cue word, whichever heading it sits under. Applied per segment (the same
+// bullet-sized unit tier/weight already use), not per character position: a segment is normally one
+// bullet about one thing, so a years count found in it governs every skill that bullet names. A
+// bullet that names an age range instead ("22-30 years") is excluded, or every skill in a post that
+// also states an age limit would wrongly read as a multi-year requirement.
+// A range can be written with an en dash or em dash ("12–15 years"), not only a hyphen, usually from
+// pasting out of Word or Google Docs. Missing that meant "12–15" fell through to matching just "15".
+const KW_YEARS_NEAR_RE=/(\d+)\s*(?:\+|[–—-]\s*\d+|to\s*\d+)?\s*(?:years?|yrs?)\b/i;
+const KW_AGE_RE=/\bage(?:d)?\b|\byears?\s+old\b/i;
+function kwYearsNear(seg){
+ if(KW_AGE_RE.test(seg))return null;
+ const m=KW_YEARS_NEAR_RE.exec(seg);
+ if(!m)return null;
+ const n=Number(m[1]);
+ return (n>=1&&n<=25)?n:null;         // an experience bar is realistically 1-25 years
+}
 
 function kwSegments(text){
  const out=[];
@@ -704,14 +739,17 @@ function kwHits(seg,entries){
 }
 
 function kwRank(t){return t==="must"?0:t==="important"?1:2}
-function kwRecord(map,key,proto,display,weight,tier,inTitle){
+function kwRecord(map,key,proto,display,weight,tier,inTitle,years){
  let r=map.get(key);
- if(!r){r={...proto,key,display,count:0,score:0,tier:"nice",inTitle:false,order:map.size};map.set(key,r);}
+ if(!r){r={...proto,key,display,count:0,score:0,tier:"nice",inTitle:false,order:map.size,hardRequirement:false,yearsRequired:null};map.set(key,r);}
  r.count++;
  if(r.count<=3)r.score+=weight;
  if(kwRank(tier)<kwRank(r.tier))r.tier=tier;
  if(inTitle){if(!r.inTitle){r.score+=3;r.inTitle=true;}r.tier="must";}
  if(proto.source==="lexicon"&&display.length>r.display.length)r.display=display;
+ // A specific number of years said near THIS mention outranks a bare cue word: "3+ years of Python"
+ // is a harder bar than "Python preferred", whichever heading either sentence happens to sit under.
+ if(years!=null){r.hardRequirement=true;r.yearsRequired=r.yearsRequired!=null?Math.max(r.yearsRequired,years):years;}
  return r;
 }
 
@@ -865,7 +903,7 @@ function kwGeneral(gen,limit){
   const score=[...g.weights].sort((a,b)=>b-a).slice(0,3).reduce((a,b)=>a+b,0)+(g.words>=2?1:0)+(g.shape?1:0);
   // No lexicon entry to say which field this belongs to, so it gets its own catch-all category
   // rather than a guess that might be wrong.
-  return {key:g.key,name:shown,display:shown,kind:"tech",group:"Additional Skills",source:"mined",count:g.count,score,tier:g.tier,inTitle:false,order:g.order};
+  return {key:g.key,name:shown,display:shown,kind:"tech",group:"Additional Skills",tag:null,source:"mined",count:g.count,score,tier:g.tier,inTitle:false,order:g.order,hardRequirement:false,yearsRequired:null};
  }).sort((a,b)=>b.score-a.score||a.order-b.order).slice(0,limit);
 }
 
@@ -878,7 +916,7 @@ function extractKeywords(text,title,company){
  const gen=new Map();
  const skip=new Set(KW_PLACES);
  for(const w of String(company||"").toLowerCase().split(/[^a-z0-9]+/))if(w.length>=3)skip.add(w);
- const lexProto=e=>({name:e.name,kind:e.kind,group:e.group,source:"lexicon"});
+ const lexProto=e=>({name:e.name,kind:e.kind,group:e.group,tag:e.tag,source:"lexicon"});
 
  for(const h of kwHits(title||"",entries))kwRecord(map,h.entry.key,lexProto(h.entry),h.alias.display,3,"must",true);
 
@@ -901,7 +939,8 @@ function extractKeywords(text,title,company){
   const pref=KW_CUE_PREF.test(seg),req=KW_CUE_REQ.test(seg);
   const tier=pref||sec==="preferred"?"nice":(req||sec==="required")?"must":"important";
   const weight=tier==="must"?3:tier==="nice"?1:(sec==="duties"?2:1);
-  for(const hit of hits)kwRecord(map,hit.entry.key,lexProto(hit.entry),hit.alias.display,weight,tier,false);
+  const years=kwYearsNear(seg);
+  for(const hit of hits)kwRecord(map,hit.entry.key,lexProto(hit.entry),hit.alias.display,weight,tier,false,years);
   kwCollect(seg,hits,tier,weight,gen,skip);
  }
 
@@ -1053,4 +1092,160 @@ function keywordCoverage(kws,text){
 function keywordHits(text,kws){
  const t=kwNorm(text);
  return kws.reduce((n,k)=>n+(kwFoundNorm(k,t)?1:0),0);
+}
+
+// ==================================================================
+// Job Requirements: eleven structured groups, compared against the Master Profile
+// ==================================================================
+//
+// extractKeywords/annotateKeywords already found every skill and graded it against the profile.
+// analyzeRequirements re-slices that SAME list by kind/tag rather than re-reading the post, so this
+// panel and the Recruiter Keywords panel can never disagree about what a term is or whether it's
+// yours. The only genuinely new reading it does is for the four groups that are not a skill list at
+// all: Responsibilities (the duty sentences themselves), Experience (the role's stated years, not a
+// per-skill one), and Location/Salary (logistics, not skills).
+//
+// Every comparison is one of a few honest states, never invented:
+//   match    the profile clearly satisfies this
+//   partial  satisfies part of it, or satisfies it weakly (evidence is "prose", not "skills")
+//   gap      the profile does not support this, or falls short of a stated number
+//   unknown  there is nothing to compare against (a field left blank), or nothing was said
+
+function kwYearsFirst(text){
+ const t=String(text||"");
+ if(KW_AGE_RE.test(t))return null;
+ const m=KW_YEARS_NEAR_RE.exec(t);
+ return m?Number(m[1]):null;
+}
+
+// The duty sentences themselves (not a keyword bag): what the job actually involves day to day.
+function extractResponsibilities(text,limit=8){
+ const {entries}=kwBuild();
+ let section="other",out=[];
+ for(const raw of kwSegments(String(text||"").slice(0,60000))){
+  let seg=raw,sec=section;
+  const h=kwHeading(seg,kwHits(seg,entries).length>0);
+  if(h){
+   if(h.skip)continue;
+   seg=h.rest;
+   if(h.inline)sec=h.type;else{section=sec=h.type;}
+   if(!seg)continue;
+  }
+  if(sec==="duties"&&seg.length>=8)out.push(seg);
+ }
+ return [...new Set(out)].slice(0,limit);
+}
+
+// A "Location: ..." / "Salary: ..." line, exactly as the post wrote it — the one thing every
+// Bangladeshi job circular states in a predictable, labelled line. This is the fallback for a
+// hand-pasted post; a job the pipeline discovered already has this parsed properly (see below).
+function kwLabelledLine(text,labelRe){
+ for(const raw of kwSegments(String(text||"").slice(0,20000))){
+  const m=/^([^:]{2,40}):\s*(.+)$/.exec(raw.trim());
+  if(m&&labelRe.test(m[1].trim()))return m[2].trim();
+ }
+ return null;
+}
+const KW_LOCATION_LABEL=/^location$/i;
+const KW_SALARY_LABEL=/^(salary|compensation|remuneration|pay|package)$/i;
+const KW_EXPERIENCE_LABEL=/^experience$/i;
+
+function extractLocationText(text,job){
+ if(job&&(job.area||job.location))return {text:job.area||job.location,distanceKm:job.distanceKm??null,remote:/remote/i.test(job.employmentType||"")};
+ const line=kwLabelledLine(text,KW_LOCATION_LABEL);
+ return line?{text:line,distanceKm:null,remote:/remote/i.test(line)}:null;
+}
+function extractSalaryText(text,job){
+ if(job&&(job.salaryMin!=null||job.salaryMax!=null||job.salaryText))
+  return {text:job.salaryText||"",min:job.salaryMin??null,max:job.salaryMax??null};
+ const line=kwLabelledLine(text,KW_SALARY_LABEL);
+ if(!line)return null;
+ const nums=(line.match(/[\d,]{3,}/g)||[]).map(n=>Number(n.replace(/,/g,""))).filter(n=>n>=1000);
+ return {text:line,min:nums[0]??null,max:nums[1]??nums[0]??null};
+}
+// The role's OWN stated years requirement ("Experience: At least 2 years"), not any one skill's.
+// Prefers the backend's already-parsed field (a real posting's structured data); a hand-pasted post
+// falls back to a labelled line, then to the clearest years phrase in the title or opening text.
+function extractExperienceText(text,title,job){
+ const stated=job&&job.experienceText;
+ if(stated)return stated;
+ const line=kwLabelledLine(text,KW_EXPERIENCE_LABEL);
+ if(line)return line;
+ if(/fresher/i.test(String(text||"").slice(0,800)))return "Freshers welcome";
+ const m=KW_YEARS_NEAR_RE.exec((title||"")+" "+String(text||"").slice(0,800));
+ return m?m[0]:null;
+}
+
+// One comparison result: never a claim the profile did not earn.
+const reqState=(state,note)=>({state,note});
+
+function compareEducation(items){
+ if(!items.length)return null;
+ const have=items.filter(k=>k.evidence==="skills");
+ return {items,compare:have.length
+  ?reqState("match",`Your ${have[0].display} in your Master Profile satisfies this.`)
+  :reqState("gap",`No degree in your Master Profile matches ${items.map(k=>k.display).join(" / ")}.`)};
+}
+
+function compareExperience(text,years){
+ if(!text)return null;
+ const required=kwYearsFirst(text);
+ if(required==null){
+  const fresherOk=/fresher/i.test(text);
+  return {text,requiredYears:null,haveYears:years,
+   compare:fresherOk?reqState("match","States freshers are welcome; you have no professional experience to declare, which is fine here."):reqState("unknown","No specific number of years is stated.")};
+ }
+ const have=Number(years)||0;
+ return {text,requiredYears:required,haveYears:have,compare:have>=required
+  ?reqState("match",`Asks for ${required}+ years; you have ${have}.`)
+  :reqState("gap",`Asks for ${required}+ years; you have ${have}${have===0?", as a fresher":""}.`)};
+}
+
+function compareLocation(loc,profile){
+ if(!loc)return null;
+ const yours=(profile.preferences&&profile.preferences.locations)||[];
+ if(loc.remote)return {...loc,compare:reqState("match","A remote role, so location is not a constraint.")};
+ if(typeof loc.distanceKm==="number"){
+  return {...loc,compare:loc.distanceKm<=10
+   ?reqState("match",`${loc.distanceKm} km from your area.`)
+   :reqState("gap",`${loc.distanceKm} km from your area, further than the usual 10 km comfort range.`)};
+ }
+ const norm=kwNorm(loc.text||"").toLowerCase();
+ const matches=yours.some(y=>norm.includes(kwNorm(y).toLowerCase())||kwNorm(y).toLowerCase().includes(norm));
+ return {...loc,compare:matches
+  ?reqState("match",`Matches one of your preferred locations (${yours.join(", ")}).`)
+  :reqState("unknown",`Your preferred locations are ${yours.join(", ")||"not set"}; this could not be compared automatically.`)};
+}
+
+function compareSalary(sal,profile){
+ if(!sal)return null;
+ const expect=profile.preferences&&profile.preferences.expectedSalaryMin;
+ if(!expect)return {...sal,compare:reqState("unknown","You haven't set an expected salary in Career Preferences, so this can't be compared.")};
+ if(sal.min==null&&sal.max==null)return {...sal,compare:reqState("unknown",`Listed as "${sal.text||"not stated"}", with no number to compare.`)};
+ const top=sal.max??sal.min;
+ return {...sal,compare:top>=expect
+  ?reqState("match",`Up to ${top.toLocaleString()} Tk meets your ${expect.toLocaleString()} Tk minimum.`)
+  :reqState("gap",`Up to ${top.toLocaleString()} Tk falls short of your ${expect.toLocaleString()} Tk minimum.`)};
+}
+
+// kws: the SAME annotated list the Recruiter Keywords panel already computed for this job — nothing
+// here is re-read from the post except the four groups above that are not a skill list at all.
+function analyzeRequirements(kws,text,title,job,profile){
+ const notDegree=kws.filter(k=>k.kind!=="degree");
+ const untagged=notDegree.filter(k=>!k.tag&&k.kind!=="soft");
+ const withCount=items=>({items,matched:items.filter(k=>k.evidence==="skills").length,total:items.length});
+
+ return {
+  required:withCount(notDegree.filter(k=>k.tier==="must"||k.tier==="important")),
+  preferred:withCount(notDegree.filter(k=>k.tier==="nice")),
+  responsibilities:{items:extractResponsibilities(text)},
+  education:compareEducation(kws.filter(k=>k.kind==="degree")),
+  experience:compareExperience(extractExperienceText(text,title,job),profile.preferences&&profile.preferences.experienceYears),
+  tools:withCount(untagged),
+  domain:withCount(notDegree.filter(k=>k.tag==="domain")),
+  certifications:withCount(notDegree.filter(k=>k.tag==="cert")),
+  language:withCount(notDegree.filter(k=>k.tag==="lang")),
+  location:compareLocation(extractLocationText(text,job),profile),
+  salary:compareSalary(extractSalaryText(text,job),profile)
+ };
 }

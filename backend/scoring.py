@@ -38,7 +38,9 @@ ABBREV = {
 }
 SENIOR_RE = re.compile(r"\b(senior|sr|lead|principal|staff|head|director|architect|manager|chief|vp)\b", re.I)
 JUNIOR_RE = re.compile(r"\b(junior|jr|trainee|intern|internship|fresher|freshers|graduate|entry)\b", re.I)
-YEARS_RE = re.compile(r"(\d+)\s*(?:\+|-\s*\d+|to\s*\d+)?\s*(?:years?|yrs?)\b", re.I)
+# A range can be written with an en dash or em dash ("12–15 years"), not only a hyphen, usually from
+# pasting out of Word or Google Docs. Missing that meant "12–15" fell through to matching just "15".
+YEARS_RE = re.compile(r"(\d+)\s*(?:\+|[–—-]\s*\d+|to\s*\d+)?\s*(?:years?|yrs?)\b", re.I)
 
 
 def normalize(s: str | None) -> str:

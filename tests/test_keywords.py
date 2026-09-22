@@ -16,7 +16,7 @@ NODE = shutil.which("node")
 
 
 @pytest.mark.skipif(NODE is None, reason="Node is not installed")
-@pytest.mark.parametrize("script", ["keywords.test.js", "feed_sync.test.js"])
+@pytest.mark.parametrize("script", ["keywords.test.js", "feed_sync.test.js", "requirements.test.js"])
 def test_browser_code_passes_its_node_tests(script):
     run = subprocess.run([NODE, str(ROOT / "tests" / "js" / script)],
                          capture_output=True, text=True, encoding="utf-8", timeout=120)
@@ -72,3 +72,27 @@ def test_every_lexicon_entry_has_a_field_group_for_placing_it_on_the_resume():
         if kind != "degree" and not group:
             missing.append(line)
     assert not missing, f"no #!group set before: {missing[:5]}"
+
+
+def test_the_dashboard_wires_the_requirements_panel_and_the_new_preference():
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    # analyzeRequirements is fed the SAME annotated keyword list the Recruiter Keywords panel uses,
+    # so the two panels can never disagree about what a term is or whether the profile backs it
+    assert "analyzeRequirements(kws,jd,job.title,job,p)" in html
+    assert '<RequirementsPanel req={requirements}/>' in html
+    # the salary comparison needs a real preference to compare against, defaulting to "not set"
+    assert "expectedSalaryMin:null" in html
+    assert 'aria-label="Expected minimum monthly salary"' in html
+    # the hard-requirement badge sits right where the Add/Not add decision is made, not only in the
+    # read-only panel above it
+    assert 'data-testid="kw-years"' in html
+
+
+def test_years_regex_understands_en_dash_ranges_the_same_way_everywhere():
+    """A real posting wrote '12–15 years' with an en dash, not a hyphen, and every copy of this
+    regex (scoring.js, keywords.js, backend/scoring.py) must take the lower bound, not fall through
+    to matching the second number alone."""
+    pattern = r"(\d+)\s*(?:\+|[–—-]\s*\d+|to\s*\d+)?\s*(?:years?|yrs?)\b"
+    for path in ("scoring.js", "keywords.js", "backend/scoring.py"):
+        src = (ROOT / path).read_text(encoding="utf-8")
+        assert pattern in src, f"{path} still has the narrower, hyphen-only years pattern"

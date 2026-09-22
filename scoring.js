@@ -30,7 +30,9 @@ function allEvidence(p){
 const ABBREV={mto:"management trainee officer",sqa:"software quality assurance",qa:"quality assurance",mis:"management information systems",it:"information technology",ba:"business analyst"};
 const SENIOR_RE=/\b(senior|sr|lead|principal|staff|head|director|architect|manager|chief|vp)\b/i;
 const JUNIOR_RE=/\b(junior|jr|trainee|intern|internship|fresher|freshers|graduate|entry)\b/i;
-const YEARS_RE=/(\d+)\s*(?:\+|-\s*\d+|to\s*\d+)?\s*(?:years?|yrs?)\b/i;
+// A range can be written with an en dash or em dash ("12–15 years"), not only a hyphen, usually from
+// pasting out of Word or Google Docs. Missing that meant "12–15" fell through to matching just "15".
+const YEARS_RE=/(\d+)\s*(?:\+|[–—-]\s*\d+|to\s*\d+)?\s*(?:years?|yrs?)\b/i;
 
 // Abbreviations are expanded for titles only: in a description "it" is a pronoun.
 function words(s,expand){

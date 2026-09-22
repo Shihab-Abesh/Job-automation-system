@@ -369,6 +369,43 @@ field's summary.
 wording, and shows it before and after your additions. It is a simple-ATS estimate, not any employer's
 real score, and it leaves degrees out.
 
+## Job Requirements: telling "preferred" from "required"
+
+Keyword matching alone cannot tell "Python preferred" apart from "minimum 3 years professional
+Python development experience required" — both just mention Python. Above the Recruiter Keywords
+panel, the **Job Requirements** panel reads the same post and does that distinguishing, per skill,
+then checks each requirement group against your Master Profile.
+
+**The hard-requirement badge.** Whenever a specific number of years is stated close to a skill,
+that skill gets a `3+ yrs` badge — right on its card in Recruiter Keywords, not only in this panel
+— regardless of which heading it sits under. A skill named without a number stays a plain mention.
+This looks at one bullet at a time (the same unit the existing must/preferred tiering already uses),
+so a single bullet that mixes a hard-quantified skill with an unrelated soft one ("3+ years of
+Python, familiarity with Docker a plus") will read both as hard; write or read one requirement per
+line for the clean case. An age range ("22–30 years") is recognised and excluded, so it is never
+mistaken for a skill's experience requirement.
+
+**The eleven groups.** Required and Preferred are a quick roll-up across every skill (their full,
+decidable list is one scroll down, in Recruiter Keywords — this panel does not repeat it).
+Tools/Technologies, Domain knowledge, Certifications and Language break the same skills down by
+what kind of thing they are. Responsibilities are the actual duty sentences, not a keyword bag.
+Education, Experience, Location and Salary are compared directly:
+
+| Group | Compared against |
+|---|---|
+| Education | whether any degree in your Master Profile matches a required one |
+| Experience | the role's own stated years (its own field, not any one skill's) vs. your `experienceYears` |
+| Location | a feed job's own resolved distance, or your preferred locations for a hand-added one |
+| Salary | a new, optional **Expected Salary** in Career Preferences vs. the job's advertised pay |
+
+Every comparison is one of four honest states — match, partial, gap, or unknown — and unknown means
+exactly that: Salary says so plainly until you set an expected minimum, rather than guessing one.
+A group with nothing to show is left off the panel entirely, and a post that says close to nothing
+at all is told to you plainly rather than shown as a wall of empty sections.
+
+This is wording- and proximity-based, not real language understanding, so treat it as a second
+opinion: a mixed bullet (above) or an unusually phrased requirement can still be misread.
+
 ## Your rules, and what they do
 
 From `config/search.yml` and `config/profile.json`:
@@ -482,13 +519,13 @@ feed keeps flowing while you fix the selectors.
 | `backend/dedupe.py` | fingerprint, URL and near-match merging |
 | `backend/scoring.py`, `scoring.js` | the match score (same maths in both languages, tested against each other) and your rules |
 | `backend/health.py` | notices a source that has quietly stopped returning jobs |
-| `keywords.js` | reads a job post for recruiter keywords in any field; you choose which go on the resume (runs in the browser, tested under Node) |
+| `keywords.js` | reads a job post for recruiter keywords in any field, tells a bare mention from a quantified requirement, and builds the eleven-group Job Requirements comparison; you choose which keywords go on the resume (runs in the browser, tested under Node) |
 | `config/manual_sites.json` | the boards you check by hand, shown in the dashboard's Manual Sites tab |
 | `backend/store.py` | the feed and the ledger of what you have already decided |
 | `backend/notify.py` | GitHub issue, SMTP digest and webhook |
 | `web/` | approval queue and the sync shim for the dashboard |
 | `tools/` | form-filling helpers |
-| `tests/` | 180+ tests, run with `pytest -q` (`tests/js/` holds the ones for the browser code, run by Node) |
+| `tests/` | 185+ tests, run with `pytest -q` (`tests/js/` holds the ones for the browser code, run by Node) |
 
 ---
 
