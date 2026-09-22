@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-21T16:44:41+00:00",
+ "generatedAt": "2026-09-22T08:10:11+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 14,
+    "found": 13,
     "errors": [],
-    "raw": 126
+    "raw": 123
    },
    "jsonld": {
     "found": 3,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 24,
-   "new": 2,
+   "total": 23,
+   "new": 1,
    "expired": 0,
    "duplicatesFolded": 7,
-   "priorityA": 8,
-   "priorityB": 4,
-   "priorityC": 12
+   "priorityA": 9,
+   "priorityB": 3,
+   "priorityC": 11
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-09-21T16:44:41+00:00"
+  "ranAt": "2026-09-22T08:10:11+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-09-21T16:44:01+00:00"
+     "found_at": "2026-09-22T08:09:31+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,12 +145,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026-2",
-     "found_at": "2026-09-21T16:43:58+00:00"
+     "found_at": "2026-09-22T08:09:28+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026",
-     "found_at": "2026-09-21T16:43:58+00:00"
+     "found_at": "2026-09-22T08:09:28+00:00"
     }
    ],
    "matchScore": 83,
@@ -164,6 +164,48 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Probationary Officer & Trainee Assistant Officer",
+   "company": "Midland Bank PLC",
+   "description": "Midland Bank PLC intends to recruit young, energetic, and talented resources with a good academic background and a strong learning mindset who will share its vision and execute its mission for growth.\nRewarding Start\nProbationers will be offered an attractive monthly remuneration package during the one-year probation period .\nSuccessful probationers will be absorbed into the regular cadre according to the policy of the Bank.\nApplication Deadline: 20 October 2026 | Website: Midland Bank PLC official recruitment portal shown in the job announcement.\n_\nProbationary Officer (PO) | Midland Bank PLC\nNature of Job: On Probation\nLocation: Anywhere in Bangladesh\nVacancy: Not specified\nEmployment Type: Full-time\nAge: Maximum 32 years as of 20 October 2026\nExperience: Nil\nApplication Deadline: 20 October 2026\nEducational Qualification\nMaster’s Degree from any recognized university.\nMinimum CGPA 3.00 in graduation/post-graduation.\nMinimum GPA 4.50 in SSC/HSC/equivalent.\nAdditional Requirements\nMust be a Bangladeshi citizen.\nStrong communication and interpersonal skills.\nCustomer-oriented mindset.\nAnalytical and problem-solving ability.\nProficiency in MS Office and digital tools.\nWillingness to work in a dynamic banking environment.\nCompensation & Other Benefits\nProbationers will be offered an attractive monthly remuneration package during the one-year probation period .\nSuccessful probationers will be absorbed into the regular cadre according to the policy of the Bank.\nImportant Note\nSelected candidates will be required to execute a surety bond committing to serve Midland Bank PLC for a minimum period of five (5) years from the date of joining.\nOnly shortlisted candidates will be contacted.\nAny form of persuasion or undue influence will result in immediate disqualification.\nMidland Bank PLC reserves the right to accept or reject any application without assigning any reason whatsoever.\nApply for Probationary Officer\n_\nTrainee Assistant Officer (TAO) | Midland Bank PLC\nNature of Job: On Probation\nLocation: Anywhere in Bangladesh\nVacancy: Not specified\nEmployment Type: Full-time\nAge: Maximum 32 years as of 20 October 2026\nExperience: Nil\nApplication Deadline: 20 October 2026\nEducational Qualification\nMaster’s Degree from any recognized university.\nMinimum CGPA 2.75 in graduation/post-graduation.\nMinimum GPA 4.00 in SSC/HSC/equivalent.\nAdditional Requirements\nMust be a Bangladeshi citizen.\nStrong communication and interpersonal skills.\nCustomer-oriented mindset.\nAnalytical and problem-solving ability.\nProficiency in MS Office and digital tools.\nWillingness to work in a dynamic banking environment.\nCompensation & Other Benefits\nProbationers will be offered an attractive monthly remuneration package during the one-year probation period .\nSuccessful probationers will be absorbed into the regular cadre according to the policy of the Bank.\nImportant Note\nSelected candidates will be required to execute a surety bond committing to serve Midland Bank PLC for a minimum period of five (5) years from the date of joining.\nOnly shortlisted candidates will be contacted.\nAny form of persuasion or undue influence will result in immediate disqualification.\nMidland Bank PLC reserves the right to accept or reject any application without assigning any reason whatsoever.\nApply for Trainee Assistant Officer\n_\nMake Your ATS-Friendly CV",
+   "category": "Information Technology",
+   "location": "Anywhere in Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
+   "status": "Awaiting Review",
+   "id": "53c232d3-60b6-4c7e-841a-7dc0ad67e266",
+   "createdAt": "2026-09-22T08:09:28+00:00",
+   "requiredSkills": "probationary, officer, trainee, assistant, midland, bank, plc, intends, recruit, young, energetic, talented",
+   "postedAt": "2026-09-22",
+   "deadline": "2026-10-20",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "8bd65ce5480a4cc5",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
+     "found_at": "2026-09-22T08:09:28+00:00"
+    }
+   ],
+   "matchScore": 83,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -193,7 +235,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/nagad-limited/career/executive-mis/2026",
-     "found_at": "2026-09-21T16:43:58+00:00"
+     "found_at": "2026-09-22T08:09:28+00:00"
     }
    ],
    "matchScore": 83,
@@ -236,12 +278,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-operations-analyst-commure/",
-     "found_at": "2026-09-21T16:43:58+00:00"
+     "found_at": "2026-09-22T08:09:28+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-data-operations-analyst-commure/",
-     "found_at": "2026-09-21T16:43:58+00:00"
+     "found_at": "2026-09-22T08:09:28+00:00"
     }
    ],
    "matchScore": 81,
@@ -284,7 +326,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-new-zealand-dairy-products-bd-limited-2/",
-     "found_at": "2026-09-21T16:43:58+00:00"
+     "found_at": "2026-09-22T08:09:28+00:00"
     }
    ],
    "matchScore": 79,
@@ -326,7 +368,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/radiant-care-limited/career/management-trainee-officer/2026",
-     "found_at": "2026-09-21T16:43:58+00:00"
+     "found_at": "2026-09-22T08:09:28+00:00"
     }
    ],
    "matchScore": 79,
@@ -368,7 +410,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-full-stack-business-remote-colombia",
-     "found_at": "2026-09-21T16:44:01+00:00"
+     "found_at": "2026-09-22T08:09:31+00:00"
     }
    ],
    "matchScore": 75,
@@ -410,7 +452,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job-in-bd/twelve-clothing-limited/career/mto-research-and-development/2026",
-     "found_at": "2026-09-21T16:43:58+00:00"
+     "found_at": "2026-09-22T08:09:28+00:00"
     }
    ],
    "matchScore": 75,
@@ -423,49 +465,6 @@
    "priority": "A",
    "gateNotes": [
     "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Digital Marketing & Media Buying Executive",
-   "company": "Sarah Beauty Glamour",
-   "description": "About the Role\nAdhoras Glow is looking for a Digital Marketing & Media Buying Executive who will be responsible for managing the company’s overall digital communication, with a strong focus on lead generation, online sales, social media management, and paid media campaigns. The ideal candidate should have practical knowledge of social media platforms, digital advertising, content publishing, and basic video production/editing. Experience in beauty/cosmetics, FMCG, or digital marketing will be highly preferred.\nKey Responsibilities\n• Plan, execute, and optimize paid media campaigns for lead generation and online sales.\n• Manage advertising campaigns across Facebook, Instagram, TikTok, Google, and other relevant platforms.\n• Monitor campaign performance, analyze data, and optimize campaigns for better ROI, leads, and conversions.\n• Manage Adhoras Glow’s overall social media communication and content publishing.\n• Develop and maintain a content posting calendar.\n• Coordinate with content/creative teams to ensure timely delivery of digital assets.\n• Understand social media trends and recommend relevant content formats and ideas.\n• Have basic hands-on knowledge of video shooting, photography, and video editing for social media content.\n• Assist in creating Reels, short videos, product videos, and other digital content.\n• Monitor audience engagement, comments, messages, and overall social media performance.\n• Track leads and online sales generated through digital campaigns.\n• Prepare regular campaign and social media performance reports.\n• Continuously explore new digital marketing opportunities, platforms, trends, and content formats.\nRequirements\n• Minimum 1 year of relevant work experience.\n• Experience in beauty products/cosmetics, FMCG, or digital marketing is preferred.\n• Practical knowledge of Meta Ads Manager and paid social media campaigns.\n• Good understanding of Facebook, Instagram, TikTok, YouTube, and other social media platforms.\n• Basic understanding of lead generation, conversion, retargeting, and online sales campaigns.\n• Basic working knowledge of video shooting and video editing.\n• Good understanding of social media content creation and publishing.\n• Ability to analyze campaign performance and make data-driven decisions.\n• Good communication and coordination skills.\n• Creative mindset with an understanding of current social media trends.\nPreferred Skills\n• Meta Ads / Facebook Ads\n• Lead Generation\n• E-commerce & Online Sales\n• Social Media Management\n• Content Planning & Publishing\n• Basic Video Shooting\n• Basic Video Editing\n• Social Media Analytics\n• Campaign Optimization\n• Trend Research\n• Copywriting / Caption Writing\nKey Performance Areas (KPIs)\n• Quality and volume of leads generated\n• Online sales and conversion rate\n• ROAS / advertising efficiency\n• Social media growth and engagement\n• Content consistency and performance\n• Campaign optimization and reporting\n• Overall digital communication performance\nSalary: Negotiable based on experience and expertise.",
-   "category": "Data & Reporting",
-   "location": "Uttara, Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/hr-sarahbeauty-uttara-dhaka-bangladesh-full-time-digital-marketing-media-buying-executive/",
-   "status": "Awaiting Review",
-   "id": "5796461b-19ef-4f61-9c57-4d2d0faff672",
-   "createdAt": "2026-09-20T15:55:35+00:00",
-   "requiredSkills": "digital, marketing, media, buying, executive, about, adhoras, glow, looking, who, managing, overall",
-   "postedAt": "2026-08-13",
-   "deadline": "2026-09-21",
-   "salaryMin": 15000,
-   "salaryMax": 25000,
-   "salaryText": "Tk 15,000 - 25,000",
-   "employmentType": "Full Time",
-   "experienceText": "1 Year",
-   "area": "Uttara",
-   "distanceKm": 12.5,
-   "fingerprint": "c1582fdf8fb18277",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/hr-sarahbeauty-uttara-dhaka-bangladesh-full-time-digital-marketing-media-buying-executive/",
-     "found_at": "2026-09-21T16:44:00+00:00"
-    }
-   ],
-   "matchScore": 74,
-   "scoreParts": {
-    "title": 100,
-    "level": 80,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Starts at Tk 15,000, below your Tk 20,000 floor",
-    "Uttara is about 12.5 km out, past your 10 km limit"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -495,7 +494,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-shops-foodpanda/",
-     "found_at": "2026-09-21T16:43:58+00:00"
+     "found_at": "2026-09-22T08:09:28+00:00"
     }
    ],
    "matchScore": 73,
@@ -538,7 +537,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/reddit-backend-software-engineer-pdp-experience",
-     "found_at": "2026-09-21T16:44:01+00:00"
+     "found_at": "2026-09-22T08:09:31+00:00"
     }
    ],
    "matchScore": 71,
@@ -580,7 +579,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-09-21T16:44:05+00:00"
+     "found_at": "2026-09-22T08:09:35+00:00"
     }
    ],
    "matchScore": 66,
@@ -622,7 +621,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-09-21T16:44:00+00:00"
+     "found_at": "2026-09-22T08:09:30+00:00"
     }
    ],
    "matchScore": 79,
@@ -664,7 +663,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/epyllion-group/career/management-trainee-mt/2026",
-     "found_at": "2026-09-21T16:43:58+00:00"
+     "found_at": "2026-09-22T08:09:28+00:00"
     }
    ],
    "matchScore": 75,
@@ -706,7 +705,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-09-21T16:44:05+00:00"
+     "found_at": "2026-09-22T08:09:35+00:00"
     }
    ],
    "matchScore": 61,
@@ -749,7 +748,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/evident-change-senior-full-stack-software-engineer",
-     "found_at": "2026-09-21T16:44:01+00:00"
+     "found_at": "2026-09-22T08:09:31+00:00"
     }
    ],
    "matchScore": 61,
@@ -778,7 +777,7 @@
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-09-21",
+   "postedAt": "2026-09-22",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -792,12 +791,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/22",
-     "found_at": "2026-09-21T16:44:01+00:00"
+     "found_at": "2026-09-22T08:09:31+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/21",
-     "found_at": "2026-09-21T16:44:01+00:00"
+     "found_at": "2026-09-22T08:09:31+00:00"
     }
    ],
    "matchScore": 61,
@@ -841,7 +840,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-09-21T16:44:05+00:00"
+     "found_at": "2026-09-22T08:09:35+00:00"
     }
    ],
    "matchScore": 61,
@@ -884,7 +883,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-09-21T16:44:05+00:00"
+     "found_at": "2026-09-22T08:09:35+00:00"
     }
    ],
    "matchScore": 57,
@@ -927,7 +926,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/chery-bangladesh/career/sr-executive-asst-brand-manager-marketing/2026",
-     "found_at": "2026-09-21T16:43:58+00:00"
+     "found_at": "2026-09-22T08:09:28+00:00"
     }
    ],
    "matchScore": 57,
@@ -972,7 +971,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-09-21T16:44:05+00:00"
+     "found_at": "2026-09-22T08:09:35+00:00"
     }
    ],
    "matchScore": 57,
@@ -1001,7 +1000,7 @@
    "id": "40278252-6f0e-49d6-8441-47ef0b48a724",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, team, field, nation., required, python, docker, kubernetes, aws",
-   "postedAt": "2026-09-21",
+   "postedAt": "2026-09-22",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1015,7 +1014,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/19",
-     "found_at": "2026-09-21T16:44:01+00:00"
+     "found_at": "2026-09-22T08:09:31+00:00"
     }
    ],
    "matchScore": 57,
@@ -1032,51 +1031,6 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "jsonld"
-  },
-  {
-   "title": "Executive Manager – Visa Services & Business Development",
-   "company": "Imigo Global Limited",
-   "description": "Imigo Global Limited is a growing UK-based travel company currently focusing on Visa Services and Travel Assistance, with a long-term vision to develop a technology-driven Online Travel Agency (OTA) offering flights, hotels, holidays and other travel services. We are looking for an ambitious, organised and proactive Executive Manager to join our growing team and work closely with the Managing Director.\nThe Role:\nThe successful candidate will initially take responsibility for the development and management of Imigo’s Visa Services division, while gradually supporting the planning and development of the company’s future OTA platform. This is an excellent opportunity for someone who wants to join a growing company at an early stage and play a key role in building its operations and future direction.\nKey Responsibilities:\n* Business Development:\nIdentify and develop new B2C and B2B opportunities\nBuild relationships with travel agencies, consultants and business partners\nDevelop referral and partnership opportunities\nSupport sales growth and revenue generation\nResearch new travel services and commercial opportunities\nPrepare business development reports for the Managing Director.\n* Visa Services:\nManage the day-to-day Visa Services operation\nCoordinate Visa Specialists and support staff\nMonitor customer enquiries and application progress\nEnsure cases are handled efficiently and professionally\nDevelop and maintain Visa service procedures and SOPs\nMonitor service quality and customer satisfaction\nIdentify new Visa service opportunities and destinations\nMaintain up-to-date knowledge of relevant Visa application processes\nDevelop partnerships with relevant travel and Visa service providers\n* Team & Operations:\nCoordinate the day-to-day activities of the team\nSet and monitor operational targets\nTrack leads, customers, applications and sales\nImprove internal processes and workflows\nAssist with recruitment and staff training\nPrepare weekly and monthly management reports\nEnsure staff follow company procedures and customer service standards\n* Future OTA Development:\nAs Imigo grows, the successful candidate will gradually become involved in the development of the company’s future OTA platform, including:\nResearching OTA business models\nIdentifying flight, hotel and travel suppliers\nResearching GDS/API solutions\nSupporting technology requirements and product planning\nCoordinating with developers and technology partners\nHelping define customer and booking workflows\nSupporting the launch and testing of the future Imigo OTA\nWho We Are Looking For:\n* We are looking for someone who is:\nHighly organised and responsible\nProactive and able to take initiative\nCommercially minded\nConfident communicating with customers and business partners\nStrong in administration and operations\nGood at problem-solving\nComfortable managing multiple responsibilities\nInterested in travel, tourism and technology\nAble to work independently and as part of a growing team\nComfortable working directly with the Managing Director\nExperience\nExperience in any of the following would be an advantage:\nVisa services\nTravel agency\nTravel consultancy\nBusiness development\nTravel operations\nCustomer service management\nSales\nTour operations\nB2B partnerships\nOTA / travel technology\nGDS or travel booking systems\nCRM systems\nTravel industry experience is desirable, but we are also open to candidates with strong business development and management experience who are willing to learn the travel industry.\n🌱 Why Join Imigo?\nYou will be joining Imigo at an exciting early stage. Initially, your focus will be on helping us build a strong and professional Visa Services business. As the company grows, you will have the opportunity to take a leading role in developing future OTA platform.\nYou will work closely with the Managing Director and have the opportunity to influence:\nBusiness strategy\nOperations\nTeam development\nPartnerships\nNew services\nTechnology development\nFuture OTA growth\nThis is a role for someone who wants to build something, not simply maintain an existing operation.\n📩 How to Apply\nIf you have the perfect blend expertise, we want to hear from you! Please send your CV along with a short introduction explaining:\nYour relevant experience\nWhy you want to join Imigo Global\nHow you could contribute to developing our Visa Services business\nApply directly or send your CV and a cover letter outlining your Schengen visa handling experience to info@imigo.co.uk",
-   "category": "Management & Business",
-   "location": "United Kingdom",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/imigo-global-remote-executive-manager-visa-services-business-development/",
-   "status": "Awaiting Review",
-   "id": "fb6a6cef-ffb1-4858-b902-b053a32ecf68",
-   "createdAt": "2026-09-20T15:55:35+00:00",
-   "requiredSkills": "executive, visa, services, business, development, imigo, global, limited, growing, based, travel, currently",
-   "postedAt": "2026-08-10",
-   "deadline": "2026-09-21",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote",
-   "experienceText": "3 Years",
-   "area": "",
-   "distanceKm": null,
-   "fingerprint": "96e275b5fb7b9f0f",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/imigo-global-remote-executive-manager-visa-services-business-development/",
-     "found_at": "2026-09-21T16:44:00+00:00"
-    }
-   ],
-   "matchScore": 57,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting",
-    "Based in United Kingdom, outside Bangladesh",
-    "Title matches your excluded list (Manager)"
-   ],
-   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Senior Software Engineer",
@@ -1104,12 +1058,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-09-21T16:44:09+00:00"
+     "found_at": "2026-09-22T08:09:39+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-21T16:44:09+00:00"
+     "found_at": "2026-09-22T08:09:39+00:00"
     }
    ],
    "matchScore": 53,
