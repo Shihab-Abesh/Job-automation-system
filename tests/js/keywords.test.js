@@ -5,7 +5,7 @@ const assert = require("assert");
 
 const ROOT = path.resolve(__dirname, "..", "..");
 const api = new Function(fs.readFileSync(path.join(ROOT, "keywords.js"), "utf8") +
-  "\nreturn {extractKeywords,keywordEvidence,annotateKeywords,pickForResume,keywordCoverage,keywordHits,kwBuild,normalizeDecisions};")();
+  "\nreturn {extractKeywords,keywordEvidence,annotateKeywords,pickForResume,keywordCoverage,keywordHits,kwBuild,normalizeDecisions,placeKeywords};")();
 
 const profile = {
   skills: [
@@ -336,6 +336,97 @@ test("saved choices: defaults, and older saves carry over", () => {
 test("saved choices: junk and contradictions are cleaned up", () => {
   assert.deepStrictEqual(api.normalizeDecisions({ added: ["a", "a", 7, null, "b"], skipped: ["b", "c"] }), { enabled: true, added: ["a", "b"], skipped: ["c"] });
   assert.deepStrictEqual(api.normalizeDecisions({ added: "nope", skipped: {} }), { enabled: true, added: [], skipped: [] });
+});
+
+// ------------------------------------------------------------------ where an added keyword lands
+const rows = (...pairs) => pairs.map(([category, items]) => ({ category, items }));
+const cat = (placed, name) => placed.find(g => g.category === name);
+// Looks a keyword up by what the lexicon calls it, not by a guessed key: entry.key is its FIRST
+// listed alias, which is not always the wording a test would expect ("Commercial Contracts" is
+// filed under the key "contract drafting").
+const entryFor = alias => api.kwBuild().entries.find(e => e.aliases.some(a => a.low === alias.toLowerCase()));
+
+test("every lexicon entry has a real field group, not the 'General' default", () => {
+  const { entries } = api.kwBuild();
+  const bad = entries.filter(e => e.kind !== "degree" && (!e.group || e.group === "General"));
+  assert.deepStrictEqual(bad.map(e => e.name), []);
+});
+
+test("an added keyword joins the existing category it belongs to", () => {
+  const post = "Requirements\nGood knowledge of SQL and MySQL.\nExperience with JIRA for bug tracking.";
+  const k = api.annotateKeywords(api.extractKeywords(post), "");
+  const placed = api.placeKeywords(rows(["Databases", ["Oracle SQL"]], ["Tools", ["Git and GitHub"]]), api.pickForResume(k, { added: ["mysql", "jira"] }));
+  assert.ok(cat(placed, "Databases").items.includes("MySQL"), JSON.stringify(placed));
+  assert.strictEqual(cat(placed, "Databases").items.length, 2, "MySQL joined Databases, nothing else moved");
+  assert.ok(cat(placed, "Software Testing"), "JIRA is neither a database nor a generic tool, so it gets its own category");
+  assert.ok(!cat(placed, "Tools").items.includes("JIRA"));
+});
+
+test("a field with no matching category gets a new one named after it", () => {
+  const post = "Requirements\nLL.B degree.\nExperience in dispute resolution and commercial contracts.";
+  const k = api.annotateKeywords(api.extractKeywords(post, "Legal Manager"), "");
+  const added = api.pickForResume(k, { added: [entryFor("dispute resolution").key, entryFor("commercial contracts").key] });
+  assert.strictEqual(added.length, 2, "both keywords were actually found and picked");
+  const placed = api.placeKeywords(rows(["Databases", ["MySQL"]]), added);
+  assert.strictEqual(cat(placed, "Legal").items.length, 2, JSON.stringify(placed));
+  assert.strictEqual(placed.length, 2, "Databases is untouched, Legal is the only addition");
+});
+
+test("two mined terms with no known field still share one category, not two", () => {
+  // Neither phrase is in the lexicon (mined has no field to place them by), but they must not each
+  // spawn their own "Additional Skills" category.
+  const post = "Requirements\nExperience in wound care and patient assessment.";
+  const k = api.annotateKeywords(api.extractKeywords(post), "");
+  const added = api.pickForResume(k, { added: ["m:wound care", "m:patient assessment"] });
+  assert.strictEqual(added.length, 2, "both terms were mined and picked");
+  assert.ok(added.every(x => x.source === "mined" && x.group === "Additional Skills"));
+  const placed = api.placeKeywords([], added);
+  assert.strictEqual(placed.length, 1, JSON.stringify(placed));
+  assert.strictEqual(placed[0].category, "Additional Skills");
+  assert.deepStrictEqual(placed[0].items.sort(), ["Patient Assessment", "Wound Care"]);
+});
+
+test("matching is by shared field words, not an exact label: 'Databases' fits 'Databases: Oracle...'", () => {
+  const k = api.annotateKeywords(api.extractKeywords("Requirements\nMySQL"), "");
+  const mysql = by(k, "mysql");
+  assert.ok(mysql, "MySQL should have been found");
+  const placed = api.placeKeywords(rows(["Databases: Oracle SQL, PL/SQL", []]), [mysql]);
+  assert.strictEqual(placed.length, 1);
+  assert.ok(placed[0].items.includes("MySQL"));
+});
+
+test("a keyword already sitting in a category, in any of its wordings, is not duplicated anywhere", () => {
+  const k = api.annotateKeywords(api.extractKeywords("Requirements\nMicrosoft Excel"), "");
+  const excel = by(k, "excel");
+  assert.ok(excel);
+  const placed = api.placeKeywords(rows(["Tools", ["Advanced Excel", "Git"]]), [excel]);
+  assert.deepStrictEqual(placed, rows(["Tools", ["Advanced Excel", "Git"]]), "already listed as 'Advanced Excel'; 'Microsoft Excel' must not be added beside it");
+});
+
+test("a mined term with no lexicon group gets its own catch-all category", () => {
+  const k = api.extractKeywords("Requirements\nExperience with zorblaxian widget tuning.");
+  const mined = k.find(x => x.source === "mined");
+  assert.ok(mined, "the miner should have found something here");
+  const placed = api.placeKeywords([], [mined]);
+  assert.strictEqual(placed[0].category, "Additional Skills");
+});
+
+test("placeKeywords never mutates the profile's own skill rows", () => {
+  const post = "Requirements\nMySQL";
+  const k = api.annotateKeywords(api.extractKeywords(post), "");
+  const original = rows(["Databases", ["Oracle SQL"]]);
+  const snapshot = JSON.parse(JSON.stringify(original));
+  api.placeKeywords(original, api.pickForResume(k, { added: ["mysql"] }));
+  assert.deepStrictEqual(original, snapshot);
+});
+
+test("order within a category follows the order the keywords were added in", () => {
+  const k = api.annotateKeywords(api.extractKeywords(QA_POST, "QA Engineer"), "");
+  const added = api.pickForResume(k, { added: ["scrum", "jira", "manual testing"] });
+  const placed = api.placeKeywords([], added);
+  const testing = cat(placed, "Software Testing");
+  assert.deepStrictEqual(testing.items, added.filter(x => ["jira", "manual testing"].includes(x.key)).map(x => x.display), JSON.stringify(placed));
+  assert.ok(cat(placed, "Project Management & Methodology").items.includes("Scrum"), "Scrum lands in its own group, not Software Testing");
 });
 
 // ------------------------------------------------------------------ measuring it

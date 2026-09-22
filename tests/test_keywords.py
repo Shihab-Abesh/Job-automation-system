@@ -28,10 +28,11 @@ def test_the_dashboard_puts_only_what_the_user_added_on_the_resume():
     html = (ROOT / "index.html").read_text(encoding="utf-8")
     assert '<script src="keywords.js"></script>' in html
     # the resume line comes only from pickForResume, which returns exactly the keywords pressed Add for
-    assert html.count("pickForResume(") >= 2
+    assert html.count("pickForResume(") >= 1
     assert "pickForResume(kws,rk)" in html
     assert "normalizeDecisions(job.resumeKeywords)" in html
-    assert 'category:"Key Skills"' in html
+    # added keywords are slotted into the profile's own categories (placeKeywords), not one flat list
+    assert "placeKeywords(p.skills,addedKw)" in html
     # every keyword has an Add and a Not add button, and choices are stored on the job (a separate resume each)
     assert 'data-testid="kw-add"' in html and 'data-testid="kw-skip"' in html
     assert "resumeKeywords:{...rk,...patch}" in html
@@ -50,3 +51,24 @@ def test_feed_sync_keeps_every_field_the_dashboard_stores_on_a_job():
     for field in ("resumeOverrides", "resumeKeywords", "pastedDescription", "selectedStrategy"):
         assert f'"{field}"' in sync, f"feed-sync.js would drop {field}"
         assert field in html, f"{field} is no longer used by the dashboard; remove it from feed-sync.js"
+
+
+def test_every_lexicon_entry_has_a_field_group_for_placing_it_on_the_resume():
+    """placeKeywords needs a real `group` on every entry, or an added keyword has nowhere sensible to go."""
+    js = (ROOT / "keywords.js").read_text(encoding="utf-8")
+    start = js.index("const KW_LEXICON=`") + len("const KW_LEXICON=`")
+    end = js.index("`;", start)
+    group, kind, missing = None, None, []
+    for raw in js[start:end].split("\n"):
+        line = raw.strip()
+        if not line:
+            continue
+        if line.startswith("#!group "):
+            group = line[len("#!group "):].strip()
+            continue
+        if line.startswith("#!"):
+            kind = line[2:].strip()
+            continue
+        if kind != "degree" and not group:
+            missing.append(line)
+    assert not missing, f"no #!group set before: {missing[:5]}"

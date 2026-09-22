@@ -29,6 +29,7 @@
 // "#!kind" switches the kind for the lines below: tech (default), soft, degree.
 const KW_LEXICON=`
 #!tech
+#!group Programming Languages
 JavaScript|ECMAScript|Java Script
 TypeScript
 Python
@@ -50,9 +51,11 @@ Perl
 VBA|Visual Basic
 Bash|Shell Scripting|Shell Script
 PowerShell
+#!group Databases
 SQL
 PL/SQL
 T-SQL
+#!group Web Development
 HTML|HTML5
 CSS|CSS3
 SASS|SCSS
@@ -76,11 +79,14 @@ WordPress
 WooCommerce
 Shopify
 Magento
+#!group Mobile Development
 Flutter
 React Native
 Android|Android Development
 iOS|iOS Development
+#!group Web Development
 Redux
+#!group Databases
 MySQL
 PostgreSQL|Postgres
 Oracle|Oracle Database|Oracle DB
@@ -101,6 +107,7 @@ Stored Procedures|Stored Procedure
 Query Optimization|Query Tuning|Performance Tuning
 Data Warehouse|Data Warehousing
 ETL
+#!group Software Development
 REST API|RESTful API|REST APIs|RESTful APIs|RESTful|=REST|Web API|Web APIs
 =API|=APIs|API Integration|API Development
 GraphQL
@@ -120,14 +127,18 @@ Full Stack|Full Stack Development|Full Stack Developer
 Front End|Frontend|Front End Development|Frontend Development
 Back End|Backend|Back End Development|Backend Development
 Responsive Design|Responsive Web Design
+#!group UI/UX & Design
 UI/UX|UX Design|UI Design|User Interface|User Experience|UI UX
 Figma
 Adobe Photoshop|Photoshop
 Adobe XD|=XD
+#!group Marketing & Communications
 SEO|Search Engine Optimization|Search Engine Optimisation
+#!group Software Development
 Debugging|Code Review
 Version Control
 Form Validation|Input Validation
+#!group Data Science & AI
 Artificial Intelligence|=AI
 Machine Learning|=ML
 Deep Learning
@@ -139,6 +150,7 @@ NumPy
 TensorFlow
 PyTorch
 Scikit-learn|Sklearn
+#!group DevOps & Cloud
 Git
 GitHub
 GitLab
@@ -151,14 +163,17 @@ AWS|Amazon Web Services
 Azure|Microsoft Azure
 Google Cloud|GCP
 Cloud Computing
+#!group IT Support & Networking
 Linux
 Unix
 Windows Server
 Nginx
 Apache|Apache Server
+#!group Web Hosting & Domains
 cPanel|Web Hosting|Hosting Panel|Hosting Management|Hosting Services
 DNS
 SSL|SSL Certificates|TLS
+#!group IT Support & Networking
 Networking|Computer Networking|Network Administration
 TCP/IP
 Cisco|CCNA|CCNP
@@ -167,6 +182,7 @@ VPN
 Firewall|Firewalls
 Virtualization|Virtualisation|VMware|Hyper-V
 Cybersecurity|Cyber Security|Information Security|Network Security
+#!group Software Testing
 Manual Testing
 Automation Testing|Test Automation|Automated Testing
 Selenium|Selenium WebDriver
@@ -203,12 +219,14 @@ TestRail
 STLC|Software Testing Life Cycle
 Quality Assurance|=QA|=SQA|Software Quality Assurance|QA Testing
 Software Testing
+#!group Project Management & Methodology
 Agile|Agile Methodology|Agile Methodologies
 Scrum
 Kanban
 Waterfall
 SDLC|Software Development Life Cycle
 Sprint Planning
+#!group Business Analysis
 SRS|Software Requirements Specification
 Requirements Gathering|Requirement Gathering|Requirements Analysis|Requirement Analysis|Requirements Elicitation
 Use Cases|Use Case
@@ -224,6 +242,7 @@ Prototyping
 System Analysis|Systems Analysis
 System Design|Systems Design
 Feasibility Study
+#!group Process & Quality Management
 Risk Analysis|Risk Assessment|Risk Management
 Change Management
 Process Improvement|Continuous Improvement
@@ -236,6 +255,7 @@ ISO 9001
 Six Sigma|Lean Six Sigma|Lean Management
 PMP
 PRINCE2
+#!group IT Support & Networking
 Technical Support|Tech Support
 Troubleshooting|Trouble Shooting
 Help Desk|Helpdesk|Service Desk
@@ -251,6 +271,7 @@ L1 Support|L2 Support|Level 1 Support|Level 2 Support
 Application Support|Production Support
 CCTV
 Server Migration
+#!group MIS & Data Analysis
 MIS|Management Information System|Management Information Systems
 =Excel|MS Excel|Microsoft Excel|Advanced Excel|Excel Formulas|Excel Formula|Excel Reports
 VLOOKUP|HLOOKUP|XLOOKUP|Lookup Functions
@@ -281,8 +302,10 @@ Google Analytics
 Data Governance
 Data Quality
 Master Data
+#!group Business & Sales
 Business Development
 Sales|Sales Strategy|Sales Management|B2B Sales|Direct Sales
+#!group Marketing & Communications
 Marketing|Marketing Strategy|Marketing Campaigns|Campaign Management
 Digital Marketing
 Social Media Marketing|Social Media Management|Social Media
@@ -290,10 +313,12 @@ Content Writing|Content Creation|Copywriting|Content Marketing
 Email Marketing
 Market Research
 Brand Management|Branding
+#!group Business & Sales
 CRM|Customer Relationship Management|Salesforce
 Customer Service|Customer Support|Customer Care|Customer Experience
 Client Relationship|Client Management|Client Handling|Client Communication
 Account Management|Key Account Management
+#!group Operations & Supply Chain
 Supply Chain|Supply Chain Management|SCM
 Logistics
 Procurement|Purchasing|Sourcing
@@ -302,6 +327,7 @@ Operations Management|Operational Excellence|Operations Planning
 Project Management|Project Coordination|Project Planning
 Stakeholder Management|Stakeholder Communication|Stakeholder Engagement
 Vendor Management|Vendor Coordination|Supplier Management
+#!group Finance & Accounting
 Budgeting|Budget Management|Budget Planning
 Financial Analysis|Financial Reporting|Financial Modeling|Financial Modelling|Financial Statements|Financial Statement
 Accounting|Accounts Payable|Accounts Receivable
@@ -310,10 +336,12 @@ Tally
 QuickBooks
 Auditing|Internal Audit|Audit
 Taxation|VAT|Tax
+#!group Human Resources
 Human Resources|=HR|HR Management
 Recruitment|Talent Acquisition|Recruiting
 Payroll
 Compliance|Regulatory Compliance
+#!group Business & Sales
 Business Strategy|Strategic Planning|Strategy Development
 Business Analysis|Business Analytics
 Market Analysis|Competitor Analysis|Competitive Analysis
@@ -327,11 +355,13 @@ Team Management|Team Leadership|People Management
 Leadership|Leadership Skills|Leadership Development
 Decision Making|Strategic Thinking
 Sales Targets|Sales Target|Target Achievement|Achieving Targets
+#!group Banking & Finance
 Banking|Financial Services
 FMCG
 Fintech|Mobile Financial Services|MFS
 E-Commerce|Ecommerce
 KYC|AML|Know Your Customer
+#!group Office & Productivity Tools
 Microsoft Office|MS Office|Office Suite|Microsoft Office Suite|MS Office Suite
 MS Word|Microsoft Word|=Word
 MS PowerPoint|Microsoft PowerPoint|PowerPoint
@@ -346,6 +376,7 @@ Visio|MS Visio
 Adobe Illustrator|Illustrator
 Adobe Premiere|Premiere Pro
 Canva
+#!group Engineering & Construction
 AutoCAD|Auto CAD
 SolidWorks
 Revit
@@ -360,6 +391,7 @@ Site Supervision|Site Management|Construction Supervision
 Quantity Surveying|Bill of Quantities|BOQ
 Construction Management
 Cost Estimation|Project Estimation
+#!group Maintenance & Manufacturing
 Electrical Maintenance
 Programmable Logic Controller|PLC Programming
 SCADA
@@ -387,6 +419,7 @@ Safety Compliance
 Welding
 CNC
 Technical Drawing|Engineering Drawing
+#!group Logistics & Trade
 Warehouse Management|Warehousing
 Import and Export|Import Export|Customs Clearance|Shipping Documentation|Freight Forwarding
 Letter of Credit|=LC
@@ -394,6 +427,7 @@ Merchandising|Merchandiser|Knit Merchandising
 Buying House
 Garments|Apparel|RMG|Readymade Garments
 Textile
+#!group Banking & Finance
 Cost Control|Costing
 Credit Analysis|Credit Assessment|Credit Appraisal
 Credit Risk|Credit Risk Management
@@ -412,6 +446,7 @@ Insurance|Underwriting|Claims Processing
 Chartered Accountant|Chartered Accountancy|ACCA|CFA|CMA|ICAB
 Financial Audit|External Audit
 Cost Accounting|Management Accounting
+#!group Legal
 Legal Advisory|Legal Advice|Legal Support
 Contract Drafting|Contract Review|Contract Management|Commercial Contracts
 Commercial Law
@@ -423,6 +458,7 @@ Legal Research
 Regulatory Affairs
 Data Protection
 Legal Drafting|Drafting
+#!group Education & Training
 Lesson Planning
 Curriculum Development|Curriculum Design
 Classroom Management
@@ -431,6 +467,7 @@ Student Assessment
 E-Learning|Online Teaching
 Training and Development|Training Delivery|Corporate Training|Learning and Development
 Research Methodology
+#!group Healthcare
 Patient Care
 Clinical Research|Clinical Trials
 Nursing|Nursing Care
@@ -438,6 +475,7 @@ Pharmacovigilance
 Medical Representative|Medical Sales
 First Aid
 Infection Control
+#!group Media & Creative
 Graphic Design
 Video Editing
 Adobe After Effects|After Effects
@@ -446,12 +484,14 @@ Motion Graphics
 Photography
 Proofreading|Copy Editing
 Content Strategy
+#!group Marketing & Communications
 Public Relations|=PR
 Media Buying|Media Planning
 Google Ads|Google AdWords|Meta Ads|Meta Ads Manager|Facebook Ads|PPC
 Influencer Marketing
 Brand Strategy|Brand Communication|Marketing Communications|Corporate Communications
 Event Management|Event Planning
+#!group NGO & Development
 Monitoring and Evaluation|M&E|MEAL
 Grant Writing|Proposal Writing|Proposal Development|Fundraising
 Project Cycle Management
@@ -464,6 +504,7 @@ Emergency Response|Disaster Management|Humanitarian
 Capacity Building
 Survey Design|Data Collection|Field Data Collection
 KoBo|KoboToolbox|ODK
+#!group Human Resources
 Employee Relations
 Employee Engagement
 Performance Management|Performance Appraisal
@@ -471,6 +512,7 @@ Onboarding|Employee Onboarding
 Talent Management|Succession Planning
 Compensation and Benefits|C&B
 HRIS
+#!group Administration
 Office Administration|Office Management
 Records Management|Record Keeping
 Travel Coordination|Travel Management|Travel Booking
@@ -478,6 +520,7 @@ Visa Processing|Visa Services
 Front Desk|Front Office|Reception
 Appointment Scheduling|Calendar Management
 Meeting Minutes|Minutes of Meeting|Minute Taking
+#!group Sales & Retail
 Territory Management|Territory Sales
 Distributor Management|Channel Management|Distribution Management
 Trade Marketing|Visual Merchandising|Retail Merchandising
@@ -491,6 +534,7 @@ Customer Acquisition
 Telesales|Telemarketing|Tele Sales
 Field Sales
 Product Knowledge
+#!group Hospitality & Security
 Housekeeping
 Food Safety
 Hospitality|Hospitality Management|Hotel Management
@@ -498,6 +542,7 @@ Driving License|Driving Licence
 Physical Security|Security Management
 Airport Operations|Ground Handling
 #!soft
+#!group Soft Skills
 Communication Skills|Communication|Written Communication|Verbal Communication|Written and Verbal Communication|Interpersonal Communication|Business Communication
 Teamwork|Team Player|Team Work|Collaboration
 Problem Solving|Troubleshooting Skills
@@ -523,6 +568,7 @@ Emotional Intelligence
 Conflict Resolution
 Mentoring|Coaching
 #!degree
+#!group Education
 Bachelor's Degree|Bachelor Degree|Bachelor of Science|Bachelor|BSc|B.Sc|Undergraduate Degree|Graduation
 Master's Degree|Masters|MSc|M.Sc|Master of Science|Postgraduate
 MBA|Master of Business Administration
@@ -571,10 +617,11 @@ const KW={entries:null,byKey:null};
 function kwBuild(){
  if(KW.entries)return KW;
  KW.entries=[];KW.byKey=new Map();
- let kind="tech";
+ let kind="tech",group="General";
  for(const raw of KW_LEXICON.split("\n")){
   const line=raw.trim();
   if(!line)continue;
+  if(line.startsWith("#!group ")){group=line.slice(8).trim();continue;}
   if(line.startsWith("#!")){kind=line.slice(2).trim();continue;}
   if(line[0]==="#")continue;
   const aliases=line.split("|").map(a=>a.trim()).filter(Boolean).map(a=>{
@@ -584,7 +631,7 @@ function kwBuild(){
   // Longest wording first, so the most specific alias in a line is the one reported.
   const name=aliases[0].display;
   aliases.sort((x,y)=>y.low.length-x.low.length);
-  const entry={key:name.toLowerCase(),name,kind,aliases};
+  const entry={key:name.toLowerCase(),name,kind,group,aliases};
   KW.entries.push(entry);KW.byKey.set(entry.key,entry);
  }
  return KW;
@@ -816,7 +863,9 @@ function kwGeneral(gen,limit){
  return kept.map(g=>{
   const shown=[...g.forms.entries()].sort((a,b)=>b[1]-a[1])[0][0];
   const score=[...g.weights].sort((a,b)=>b-a).slice(0,3).reduce((a,b)=>a+b,0)+(g.words>=2?1:0)+(g.shape?1:0);
-  return {key:g.key,name:shown,display:shown,kind:"tech",source:"mined",count:g.count,score,tier:g.tier,inTitle:false,order:g.order};
+  // No lexicon entry to say which field this belongs to, so it gets its own catch-all category
+  // rather than a guess that might be wrong.
+  return {key:g.key,name:shown,display:shown,kind:"tech",group:"Additional Skills",source:"mined",count:g.count,score,tier:g.tier,inTitle:false,order:g.order};
  }).sort((a,b)=>b.score-a.score||a.order-b.order).slice(0,limit);
 }
 
@@ -829,7 +878,7 @@ function extractKeywords(text,title,company){
  const gen=new Map();
  const skip=new Set(KW_PLACES);
  for(const w of String(company||"").toLowerCase().split(/[^a-z0-9]+/))if(w.length>=3)skip.add(w);
- const lexProto=e=>({name:e.name,kind:e.kind,source:"lexicon"});
+ const lexProto=e=>({name:e.name,kind:e.kind,group:e.group,source:"lexicon"});
 
  for(const h of kwHits(title||"",entries))kwRecord(map,h.entry.key,lexProto(h.entry),h.alias.display,3,"must",true);
 
@@ -925,6 +974,63 @@ function normalizeDecisions(saved){
  const added=list(s.added!==undefined?s.added:s.claimed);
  const skipped=list(s.skipped!==undefined?s.skipped:s.off).filter(k=>!added.includes(k));
  return {enabled:s.enabled!==false,added,skipped};
+}
+
+// ---------------------------------------------------------------- where an added keyword lands
+//
+// Every lexicon entry carries a `group` — its own field ("Databases", "Software Testing", "Legal",
+// "Marketing & Communications"...), set by the #!group lines in KW_LEXICON. A word mined from the
+// post itself (no lexicon entry) gets "Additional Skills". placeKeywords uses that to slot an added
+// keyword into the Master Profile category it actually belongs to, not a single flat list:
+//   1. Already sitting in some category, under any of its wordings? Leave it there, add nothing.
+//   2. Otherwise, whichever existing category's own label shares the most real words with the
+//      keyword's group gets it ("Databases" keyword -> a category called "Databases", or one that
+//      says "Database Design"; "Web Hosting & Domains" keyword -> "Web and Hosting" over a merely
+//      "Web"-flavoured category, because it shares two words, not one).
+//   3. Nothing fits: a new category named after the keyword's field is created (and reused by the
+//      next added keyword from the same field).
+
+// Deliberately NOT the miner's KW_STOP: that list is aggressive by design and excludes ordinary
+// domain nouns ("software", "testing", "development", "analysis", "management"...) so they are never
+// mined as a keyword on their own — but those are exactly the words a category label is made of. This
+// is just grammar, so "Databases" and "Software Testing" still share a real word with themselves.
+const KW_LABEL_STOP=new Set("and the for with into onto from your our this that these those a an of in on at by to".split(" "));
+function kwLabelWords(s){
+ return new Set(kwNorm(s).toLowerCase().split(/[^a-z0-9]+/).filter(w=>w.length>=3&&!KW_LABEL_STOP.has(w)).map(kwStem));
+}
+// How many real words a keyword's field and a category label have in common. A count, not a yes/no,
+// because a label can share one word with several categories at once ("Web Hosting & Domains" shares
+// "web" with "Programming and Web" too, but shares both "web" and "hosting" with "Web and Hosting" —
+// the stronger match has to win, or a boolean test would file it under the wrong one of the two).
+function kwGroupScore(group,categoryLabel){
+ if(!group||!categoryLabel)return 0;
+ const g=kwLabelWords(group);
+ let n=0;
+ for(const w of kwLabelWords(categoryLabel))if(g.has(w))n++;
+ return n;
+}
+function kwSameText(a,b){return kwNorm(a).toLowerCase()===kwNorm(b).toLowerCase()}
+// True if this keyword, in any wording the lexicon recognises for it, is already one of the items.
+function kwAlreadyListed(k,items){
+ if((items||[]).some(it=>kwSameText(it,k.display)))return true;
+ if(k.source!=="lexicon")return false;
+ const entry=kwBuild().byKey.get(k.key);
+ return !!entry&&(items||[]).some(it=>entry.aliases.some(a=>a.low===kwNorm(it).toLowerCase()));
+}
+
+// rows: the Master Profile's skill groups ([{category,items}]). added: keywords to place, in the
+// order they should appear within whichever category they land in. Returns a new array; rows is
+// never mutated, so the profile itself is untouched.
+function placeKeywords(rows,added){
+ const out=(rows||[]).map(g=>({category:g.category,items:[...(g.items||[])]}));
+ for(const k of added||[]){
+  if(out.some(g=>kwAlreadyListed(k,g.items)))continue;
+  let target=null,best=0;
+  for(const g of out){const s=kwGroupScore(k.group,g.category);if(s>best){best=s;target=g;}}
+  if(!target){target={category:k.group||"Additional Skills",items:[]};out.push(target);}
+  if(!target.items.some(it=>kwSameText(it,k.display)))target.items.push(k.display);
+ }
+ return out;
 }
 
 // How many of the post's keywords a piece of text contains, overall and among the must-haves.

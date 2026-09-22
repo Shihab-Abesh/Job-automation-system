@@ -347,9 +347,15 @@ add something your profile does not back, the card reminds you to keep it only i
 because a resume that claims JIRA or Selenium you have never used gets you an interview you
 then fail. Degrees are shown but never added; your Education section already carries them.
 
-**What the resume gets.** Exactly the keywords you pressed Add for, as the first row of Core Skills
-(**Key Skills**), in the post's own wording, because an ATS matches strings ("Test Cases" does not
-find "Test Case Design"). It appears in the preview, PDF, DOCX and TXT. Bullets and projects that
+**Where an added keyword goes.** Not into one flat list: each keyword you Add joins the Core Skills
+category it actually belongs to, in the post's own wording, because an ATS matches strings ("Test
+Cases" does not find "Test Case Design"). Add JIRA on a QA job and it lands at the end of your
+existing **Software Testing** line; add AutoCAD on an engineering job and a new **Engineering &
+Construction** category appears, because nothing in your profile fits it yet. A keyword already
+sitting in some category, under any wording your profile uses for it, is left alone there rather
+than added a second time. This is a wording match, so it is not perfect: an unusual category name
+may not attract the keyword you would expect, and you can always move it yourself afterwards in
+Master Profile → Skills. It appears in the preview, PDF, DOCX and TXT. Bullets and projects that
 use the post's keywords move to the top. Shortcuts: **Add all in my profile**, **Add all
 must-haves**, **Clear all choices**. Choices are saved on that job, so every job has its own
 tailored resume, and they survive reloads and feed updates.

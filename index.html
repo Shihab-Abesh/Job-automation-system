@@ -572,10 +572,12 @@ function ResumePanel({job,p,updateJob,notify}){
  const evidence=useMemo(()=>keywordEvidence(p),[p]);
  const found=useMemo(()=>extractKeywords(jd,job.title,job.company),[jd,job.title,job.company]);
  const kws=useMemo(()=>annotateKeywords(found,evidence),[found,evidence]);
- // Only what you pressed Add for.
- const keyItems=rk.enabled?pickForResume(kws,rk).map(k=>k.display):[];
- // "Key Skills" is a normal row of Core Skills, so the preview, PDF, DOCX and TXT all pick it up.
- const skillRows=[...(keyItems.length?[{category:"Key Skills",items:keyItems}]:[]),...p.skills];
+ // Only what you pressed Add for, each slotted into the Master Profile category it actually belongs
+ // to (Databases, Software Testing, Legal, ...) rather than dumped in one flat list. A field with no
+ // matching category of its own gets a new one, named after that field.
+ const addedKw=rk.enabled?pickForResume(kws,rk):[];
+ const keyItems=addedKw.map(k=>k.display);
+ const skillRows=placeKeywords(p.skills,addedKw);
 
  const exp=[...p.experience].map(e=>({...e,bullets:[...e.bullets].filter(Boolean).sort((x,y)=>scoreBullet(y,view,found)-scoreBullet(x,view,found))}));
  const projects=[...p.projects].sort((x,y)=>projectScore(y,strategy,view,found)-projectScore(x,strategy,view,found)).slice(0,3);
@@ -607,7 +609,7 @@ function ResumePanel({job,p,updateJob,notify}){
 
  const plainText=rows=>`${(p.personal.fullName||"Your Name").toUpperCase()}\n${finalHeadline?finalHeadline.toUpperCase()+"\n":""}${contact}\n\nPROFESSIONAL SUMMARY\n${finalSummary}\n\nCORE SKILLS\n${skillsOf(rows)}\n\nPROFESSIONAL EXPERIENCE\n${finalExperienceText}\n\nPROJECTS\n${finalProjectsText}\n\nEDUCATION\n${educationLines}${referenceLines?`\n\nREFERENCES\n${referenceLines}`:""}`;
  const makeText=()=>plainText(skillRows);
- // How much of the post's keyword list the finished resume contains, with and without the Key Skills row.
+ // How much of the post's keyword list the finished resume contains, with and without your chosen keywords.
  const coverBefore=keywordCoverage(kws,plainText(p.skills));
  const coverNow=keywordCoverage(kws,plainText(skillRows));
  const downloadTxt=()=>download(`${fileBase()}.txt`,makeText());
@@ -745,7 +747,7 @@ function ResumePanel({job,p,updateJob,notify}){
   </div>}
 
   <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between items-center mb-3"><div><h3 className="font-semibold">Resume Strategy</h3><p className="text-xs text-slate-500">Auto-picked from this job's title and description — pick a different one any time.</p></div><span className="text-xs text-cyan-300">{cfg.label}</span></div><div className="grid md:grid-cols-4 gap-2">{Object.entries(ROLE_STRATEGIES).map(([k,v])=><button key={k} onClick={()=>{setStrategy(k);setEditMode(false);updateJob(job.id,{selectedStrategy:k})}} className={`p-3 rounded-lg border text-left text-xs ${strategy===k?'border-cyan-500 bg-cyan-950/50':'border-slate-800 bg-slate-950'}`}><b>{v.label}</b>{k===recommended&&<span className="ml-1 text-[9px] text-emerald-400">(recommended)</span>}<span className="block text-slate-500 mt-1">{k}</span></button>)}</div></div>
-  <KeywordPanel job={job} jd={jd} kws={kws} rk={rk} setRk={setRk} updateJob={updateJob} coverBefore={coverBefore} coverNow={coverNow} keyCount={pickForResume(kws,rk).length}/>
+  <KeywordPanel job={job} jd={jd} kws={kws} rk={rk} setRk={setRk} updateJob={updateJob} coverBefore={coverBefore} coverNow={coverNow} keyCount={addedKw.length}/>
   <div className="grid md:grid-cols-2 gap-4 no-print"><Block title={`Compatibility Analysis: ${a.score}%`}><div className="grid grid-cols-2 gap-2"><Metric label="Title fit" value={a.titleFit}/><Metric label="Level fit" value={a.levelFit}/><Metric label="Skills" value={a.skillFit}/><Metric label="Preference" value={a.prefFit}/></div><p className="text-xs text-emerald-300 mt-3">Matched: {a.matched.slice(0,10).join(", ")||"None"}</p><p className="text-xs text-amber-300 mt-2">Potential gaps: {a.missing.slice(0,8).join(", ")||"None detected"}</p></Block><Block title="ATS Quality"><CheckRow ok text="Single-column, standard section headings"/><CheckRow ok text="No graphics, tables, icons, sidebars, or decorative resume elements"/><CheckRow ok text="Plain-text contact information"/><CheckRow ok={a.missing.length<8} text="Job keywords reviewed without inventing qualifications"/><p className="text-[11px] text-slate-500 mt-3">Compatibility is an internal estimate, not a real employer ATS score.</p></Block></div>
   <div className="bg-white text-black max-w-[794px] mx-auto p-8 md:p-10 shadow-2xl rounded print-resume">
     <header className="border-b pb-3 mb-4"><h1 className="text-3xl font-black tracking-wide">{(p.personal.fullName||"YOUR NAME").toUpperCase()}</h1>{finalHeadline&&<p className="text-[12px] font-bold text-sky-700 mt-1 tracking-wide">{finalHeadline.toUpperCase()}</p>}<p className="text-[10px] mt-1 leading-4">{contact}</p></header>
@@ -816,8 +818,8 @@ function KeywordPanel({job,jd,kws,rk,setRk,updateJob,coverBefore,coverNow,keyCou
   <div className="flex flex-wrap justify-between gap-3">
    <div><h3 className="font-semibold">Recruiter Keywords for this job</h3>
     <p className="text-xs text-cyan-400 mt-0.5">{job.title}{job.company?" · "+job.company:""}</p>
-    <p className="text-xs text-slate-500 mt-1">Read from this job post, whatever the field. Nothing is on the resume until you press <b className="text-slate-300">Add</b>; <b className="text-slate-300">Not add</b> keeps it off. Your choices belong to this job's resume only, so every job has its own.</p></div>
-   <label className="flex items-center gap-2 text-xs text-slate-300 self-start"><input type="checkbox" data-testid="kw-enabled" checked={rk.enabled} onChange={e=>setRk({enabled:e.target.checked})}/> Show the Key Skills line</label>
+    <p className="text-xs text-slate-500 mt-1">Read from this job post, whatever the field. Nothing is on the resume until you press <b className="text-slate-300">Add</b>; <b className="text-slate-300">Not add</b> keeps it off. An added keyword joins the Core Skills category it fits — Databases, Software Testing, Legal, whatever the post calls for — or gets a new category of its own if none fits. Your choices belong to this job's resume only, so every job has its own.</p></div>
+   <label className="flex items-center gap-2 text-xs text-slate-300 self-start"><input type="checkbox" data-testid="kw-enabled" checked={rk.enabled} onChange={e=>setRk({enabled:e.target.checked})}/> Add my chosen keywords to Core Skills</label>
   </div>
   {jd.trim().length<200&&<p className="text-xs text-amber-300" data-testid="kw-thin">This post has very little text ({jd.trim().length} characters), so few keywords can be read from it. Open the box at the bottom and paste the full job description.</p>}
   {kws.length===0?<p className="text-sm text-amber-300" data-testid="kw-empty">No recognisable keywords found in this post. Paste the full job description below.</p>:<>
@@ -833,7 +835,7 @@ function KeywordPanel({job,jd,kws,rk,setRk,updateJob,coverBefore,coverNow,keyCou
     <button type="button" data-testid="kw-clear" onClick={()=>setRk({added:[],skipped:[]})} className={btn}>Clear all choices</button>
     <span className="text-xs text-slate-500" data-testid="kw-counts">{nAdded} added · {nSkipped} not added · {addable.length-nAdded-nSkipped} still to decide</span>
    </div>
-   {keyCount>15&&<p className="text-xs text-amber-300" data-testid="kw-long">The Key Skills line has {keyCount} items. Recruiters skim about 10 to 15, so consider Not add for the weakest.</p>}
+   {keyCount>15&&<p className="text-xs text-amber-300" data-testid="kw-long">{keyCount} keywords are added so far. Recruiters skim about 10 to 15 in Core Skills, so consider Not add for the weakest.</p>}
    <div className="space-y-4">{KW_TIERS.map(([tier,label,hint])=>{
     const list=addable.filter(k=>k.tier===tier);
     if(!list.length)return null;
@@ -844,7 +846,7 @@ function KeywordPanel({job,jd,kws,rk,setRk,updateJob,coverBefore,coverNow,keyCou
      {list.length>shown.length&&<p className="text-[11px] text-slate-500 mt-1">+{list.length-shown.length} more in this group</p>}
     </div>})}</div>
    {truncated&&<button type="button" onClick={()=>setAll(!all)} className="text-xs text-cyan-400 underline">{all?"Show fewer":"Show every keyword"}</button>}
-   {degrees.length>0&&<div data-testid="kw-degrees"><p className="text-xs"><b className="text-slate-200">Education the post asks for</b> <span className="text-slate-500">Your Education section shows these; they are not added to Key Skills.</span></p><div className="flex flex-wrap gap-1.5 mt-1.5">{degrees.map(k=><KeywordPill key={k.key} k={k}/>)}</div></div>}
+   {degrees.length>0&&<div data-testid="kw-degrees"><p className="text-xs"><b className="text-slate-200">Education the post asks for</b> <span className="text-slate-500">Your Education section shows these; they are never added to Core Skills.</span></p><div className="flex flex-wrap gap-1.5 mt-1.5">{degrees.map(k=><KeywordPill key={k.key} k={k}/>)}</div></div>}
    <KeywordLegend/>
   </>}
   <details className="text-xs" data-testid="kw-jd-box">
