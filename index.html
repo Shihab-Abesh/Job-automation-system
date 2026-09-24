@@ -23,13 +23,16 @@ body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",san
 <script src="scoring.js"></script>
 <script src="keywords.js"></script>
 <script src="applypack.js"></script>
+<script src="resumedoc.js"></script>
+<script src="resumefiles.js"></script>
+<script src="versions.js"></script>
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script src="https://unpkg.com/jspdf@2.5.2/dist/jspdf.umd.min.js"></script>
 <script src="https://unpkg.com/docx@8.5.0/build/index.umd.js"></script>
 <script type="text/babel">
-const {useState,useEffect,useMemo}=React;
+const {useState,useEffect,useMemo,useRef}=React;
 
 /*
  CAREERPILOT BD - GitHub Pages Static Edition
@@ -42,6 +45,9 @@ const {useState,useEffect,useMemo}=React;
 const STORAGE_KEY="careerpilot_bd_v2_profile";
 const VAULT_KEY="careerpilot_bd_v2_vault";
 const JOB_KEY="careerpilot_bd_v2_jobs";
+// Recorded resume versions hold your phone, email and the exact wording you sent, so unlike the job
+// list they are encrypted with the vault password, under their own key ({iv,data}).
+const VERSIONS_KEY="careerpilot_bd_v2_versions";
 
 /* Password-derived encryption for the profile only (name, contact links,
    resume content). Job listings stay unencrypted so review.html keeps
@@ -236,6 +242,14 @@ function App(){
  const [fSrc,setFSrc]=useState("all");
  const [fPri,setFPri]=useState("all");
  const [sortBy,setSortBy]=useState("best");
+ // Recorded resume versions (versions.js). They live only in memory while the vault is unlocked and are
+ // written back encrypted. versionsReady stays false if the stored copy could not be read, so a failed
+ // read can never be overwritten by an empty list.
+ const [versions,setVersions]=useState([]);
+ const [versionsReady,setVersionsReady]=useState(false);
+ const [versionsError,setVersionsError]=useState("");
+ const [openVersion,setOpenVersion]=useState(null);
+ const versionsSeq=useRef(0);
 
  useEffect(()=>{
   if(!cryptoKey||!profile)return;
@@ -245,6 +259,21 @@ function App(){
    localStorage.setItem(VAULT_KEY,JSON.stringify({...vault,iv:enc.iv,data:enc.data}));
   })();
  },[profile,cryptoKey]);
+ useEffect(()=>{
+  if(!cryptoKey||!versionsReady)return;
+  const n=++versionsSeq.current;
+  (async()=>{
+   try{
+    const enc=await encryptJSON(cryptoKey,versions);
+    if(n!==versionsSeq.current)return;          // a newer save is already on its way
+    localStorage.setItem(VERSIONS_KEY,JSON.stringify(enc));
+    setVersionsError("");
+   }catch(e){
+    const m="Could not save your recorded versions ("+(e&&e.name==="QuotaExceededError"?"browser storage is full; export them and delete old ones":"storage error")+"). Export them now so nothing is lost.";
+    setVersionsError(m);notify(m);
+   }
+  })();
+ },[versions,cryptoKey,versionsReady]);
  useEffect(()=>localStorage.setItem(JOB_KEY,JSON.stringify(jobs)),[jobs]);
  const notify=m=>{setToast(m);setTimeout(()=>setToast(""),3500)};
  const createVault=async password=>{
@@ -254,6 +283,7 @@ function App(){
   const enc=await encryptJSON(key,initial);
   localStorage.setItem(VAULT_KEY,JSON.stringify({salt:saltB64,iv:enc.iv,data:enc.data}));
   localStorage.removeItem(STORAGE_KEY);
+  setVersions([]);setVersionsError("");setVersionsReady(true);
   setCryptoKey(key);setProfile(initial);setVaultStatus("unlocked");
   if(existing)notify("Existing profile data in this browser was encrypted with your new password.");
  };
@@ -263,10 +293,17 @@ function App(){
    const vault=JSON.parse(localStorage.getItem(VAULT_KEY));
    const {key}=await deriveKey(password,vault.salt);
    const decrypted=await decryptJSON(key,vault.iv,vault.data);
+   // The password is right (the profile decrypted). Read the recorded versions with the same key.
+   let loaded=[],ready=true,vError="";
+   try{
+    const raw=localStorage.getItem(VERSIONS_KEY);
+    if(raw){const s=JSON.parse(raw);loaded=normalizeVersions(await decryptJSON(key,s.iv,s.data));}
+   }catch(e){ready=false;vError="Your recorded versions could not be read, so nothing is shown and nothing will be overwritten. They are still stored in this browser; restoring an export will bring them back.";}
+   setVersions(loaded);setVersionsReady(ready);setVersionsError(vError);
    setCryptoKey(key);setProfile(migrateProfile(decrypted)||DEFAULT_PROFILE);setVaultStatus("unlocked");
   }catch(e){setLockError("Incorrect password.");}
  };
- const lockVault=()=>{setCryptoKey(null);setProfile(null);setVaultStatus("locked");setTab("dashboard");};
+ const lockVault=()=>{setCryptoKey(null);setProfile(null);setVersions([]);setVersionsReady(false);setVersionsError("");setOpenVersion(null);setVaultStatus("locked");setTab("dashboard");};
  // Hooks must run unconditionally on every render, so this stays above the
  // early return below (which only happens while locked/setting up) — moving
  // it after that return caused React to see a different hook count between
@@ -284,6 +321,28 @@ function App(){
   setJobs(prev=>prev.map(x=>x.id===id?{...x,...patch}:x));
   setSelected(prev=>prev&&prev.id===id?{...prev,...patch}:prev);
  };
+ // Records what the resume and the Application Pack hold right now. The same content is never recorded
+ // twice in a row for one job; the caller shows the message either way.
+ const recordVersion=c=>{
+  if(!versionsReady)return {ok:false,message:"Your recorded versions could not be opened, so this one was not recorded. See the warning in the Applications tab."};
+  const v=makeVersion(c);
+  const r=addVersion(versions,v);
+  if(!r.added)return {ok:true,added:false,version:versions.find(x=>x.id===r.duplicateOf)};
+  setVersions(r.list);
+  return {ok:true,added:true,version:v};
+ };
+ const updateVersion=(id,patch)=>setVersions(prev=>prev.map(v=>v.id===id?{...v,...patch,updatedAt:new Date().toISOString()}:v));
+ const deleteVersion=id=>setVersions(prev=>prev.filter(v=>v.id!==id));
+ const importVersions=list=>{
+  if(!versionsReady){
+   // Restoring an export is the way out of an unreadable store: keep the unreadable copy aside first,
+   // then let saving resume.
+   try{const raw=localStorage.getItem(VERSIONS_KEY);if(raw)localStorage.setItem(VERSIONS_KEY+"_unreadable",raw)}catch(e){}
+   setVersionsReady(true);setVersionsError("");
+  }
+  const before=versions.length;const merged=mergeVersions(versions,list);setVersions(merged);return {added:merged.length-before,total:merged.length};
+ };
+ const openApplications=id=>{setOpenVersion(id||null);setTab("applications")};
  const saveProfileJSON=()=>{
   try{const obj=migrateProfile(JSON.parse(profileText));setProfile(obj);setEditing(false);notify("Profile saved successfully.");}
   catch(e){alert("Invalid JSON. Please correct the profile data.");}
@@ -314,7 +373,7 @@ function App(){
    :sortBy==="salary"?(salaryTop(y)-salaryTop(x))||(scoreOf(y)-scoreOf(x))
    :(scoreOf(y)-scoreOf(x)));
  const strongBar=(profile.preferences&&profile.preferences.strongMatch)||75;
- const nav=[["dashboard","Dashboard"],["profile","Master Profile"],["preferences","Career Preferences"],["add","Add Job"],["jobs","Job Analysis"],["manual","Manual Sites"],["tracker","Tracker"]];
+ const nav=[["dashboard","Dashboard"],["profile","Master Profile"],["preferences","Career Preferences"],["add","Add Job"],["jobs","Job Analysis"],["manual","Manual Sites"],["tracker","Tracker"],["applications","Applications"]];
  return <div>
   <header className="no-print sticky top-0 z-30 border-b border-slate-800 bg-slate-950/95 backdrop-blur">
    <div className="max-w-7xl mx-auto px-4 py-3 flex flex-wrap gap-3 justify-between items-center">
@@ -367,10 +426,11 @@ function App(){
     {!jobs.length&&<div className="text-slate-400 bg-slate-900 border border-slate-800 rounded-xl p-8 text-center">No jobs yet. Add a real job description to begin.</div>}
    </section>}
 
-   {tab==="resume"&&selected&&<ResumePanel key={selected.id} job={selected} p={profile} updateJob={updateJob} notify={notify}/>}
+   {tab==="resume"&&selected&&<ResumePanel key={selected.id} job={selected} p={profile} updateJob={updateJob} notify={notify} versions={versions} recordVersion={recordVersion} openApplications={openApplications}/>}
    {tab==="resume"&&!selected&&<div className="text-slate-400">Select a job from Job Analysis first.</div>}
    {tab==="manual"&&<ManualSites p={profile}/>}
-   {tab==="tracker"&&<Tracker jobs={jobs} setJobs={setJobs}/>}
+   {tab==="tracker"&&<Tracker jobs={jobs} setJobs={setJobs} versions={versions} versionsReady={versionsReady} openApplications={openApplications}/>}
+   {tab==="applications"&&<ApplicationsPanel versions={versions} ready={versionsReady} error={versionsError} jobs={jobs} openId={openVersion} setOpenId={setOpenVersion} onUpdate={updateVersion} onDelete={deleteVersion} onImport={importVersions} openJob={j=>{setSelected(j);setTab("resume")}} notify={notify}/>}
   </main>
   <footer className="no-print text-center text-xs text-slate-500 p-5 border-t border-slate-900">CareerPilot BD · Static GitHub Pages Edition · Your data remains in this browser unless you export it.</footer>
  </div>
@@ -561,7 +621,7 @@ function Preferences({p,setProfile,notify}){
  </section>
 }
 
-function ResumePanel({job,p,updateJob,notify}){
+function ResumePanel({job,p,updateJob,notify,versions,recordVersion,openApplications}){
  // The text the pipeline found, unless a fuller post was pasted in the keyword box below.
  const jd=job.pastedDescription!=null?job.pastedDescription:(job.description||"");
  const view={...job,description:jd};
@@ -610,16 +670,15 @@ function ResumePanel({job,p,updateJob,notify}){
  };
  const resetToAuto=()=>{updateJob(job.id,{resumeOverrides:null});setEditMode(false);notify("Reverted to the auto-generated resume.")};
 
- const fileBase=()=>`${(p.personal.fullName||"Resume").replace(/\s+/g,"_")}_${strategy.replace(/\W+/g,"_")}`;
- const skillsOf=rows=>rows.map(g=>`${g.category}: ${g.items.filter(Boolean).join(", ")}`).join("\n");
- const educationLines=p.education.map(e=>`${e.degree}${e.date?" | "+e.date:""}\n${[e.institution,e.score].filter(Boolean).join(" | ")}`).join("\n\n");
- const referenceLines=(p.references||[]).filter(r=>r.name).map(r=>`${r.name}\n${r.title}\n${[r.email,r.phone].filter(Boolean).join(" | ")}`).join("\n\n");
-
- const plainText=rows=>`${(p.personal.fullName||"Your Name").toUpperCase()}\n${finalHeadline?finalHeadline.toUpperCase()+"\n":""}${contact}\n\nPROFESSIONAL SUMMARY\n${finalSummary}\n\nCORE SKILLS\n${skillsOf(rows)}\n\nPROFESSIONAL EXPERIENCE\n${finalExperienceText}\n\nPROJECTS\n${finalProjectsText}\n\nEDUCATION\n${educationLines}${referenceLines?`\n\nREFERENCES\n${referenceLines}`:""}`;
- const makeText=()=>plainText(skillRows);
+ // One plain document holds everything the resume shows. The preview, the PDF, the DOCX, the TXT and the
+ // version recorded when you apply are all rendered from it, so they cannot disagree.
+ const docFor=rows=>buildResumeDoc({profile:p,headline:finalHeadline,contact,summary:finalSummary,skillRows:rows,experience:exp,projects,
+  overridden:!!ov,experienceText:finalExperienceText,projectsText:finalProjectsText});
+ const doc=docFor(skillRows);
+ const makeText=()=>resumeDocToText(doc);
  // How much of the post's keyword list the finished resume contains, with and without your chosen keywords.
- const coverBefore=keywordCoverage(kws,plainText(p.skills));
- const coverNow=keywordCoverage(kws,plainText(skillRows));
+ const coverBefore=keywordCoverage(kws,resumeDocToText(docFor(p.skills)));
+ const coverNow=keywordCoverage(kws,resumeDocToText(doc));
  // Application Pack: built from the same keywords, requirements and Add choices as everything above,
  // saved per job only where you edit it, so a fresh choice or a new post regenerates the rest.
  const pack=buildApplicationPack({profile:p,job,kws,addedKw,text:jd,requirements,coverBefore,coverNow,score:a.score});
@@ -630,127 +689,29 @@ function ResumePanel({job,p,updateJob,notify}){
   email:apSaved.email!=null?apSaved.email:pack.email.text,
   recruiter:apSaved.recruiter!=null?apSaved.recruiter:pack.recruiter.text
  };
- const downloadTxt=()=>download(`${fileBase()}.txt`,makeText());
+ // Every download carries the same name as the file the Application Pack suggests: resume_company_role_date.
+ const fileStem=pack.filename.replace(/\.pdf$/i,"");
+ const downloadTxt=()=>download(`${fileStem}.txt`,makeText());
+ const downloadPDF=()=>renderResumePDF(doc,`${fileStem}.pdf`);
+ const downloadDOCX=()=>renderResumeDOCX(doc,`${fileStem}.docx`);
 
- const downloadPDF=()=>{
-  const {jsPDF}=window.jspdf;
-  const doc=new jsPDF({unit:"pt",format:"a4"});
-  const pageWidth=doc.internal.pageSize.getWidth(), pageHeight=doc.internal.pageSize.getHeight();
-  const marginX=42, maxWidth=pageWidth-marginX*2, marginBottom=48;
-  let y=52;
-  const ensureSpace=(lineHeight=12)=>{if(y+lineHeight>pageHeight-marginBottom){doc.addPage();y=50;}};
-  const writeBlock=(text,size=9.5,lineHeight=12)=>{
-   doc.setFont("helvetica","normal");doc.setFontSize(size);
-   String(text||"").split("\n").forEach(para=>{
-    if(!para){ensureSpace(lineHeight/2);y+=lineHeight/2;return;}
-    doc.splitTextToSize(para,maxWidth).forEach(line=>{ensureSpace(lineHeight);doc.text(line,marginX,y);y+=lineHeight;});
-   });
-  };
-  const writeTwoCol=(left,right,size=10.2)=>{
-   ensureSpace(13);
-   doc.setFont("helvetica","bold");doc.setFontSize(size);
-   doc.text(left,marginX,y);
-   if(right){doc.setFont("helvetica","normal");doc.setFontSize(9);doc.text(right,marginX+maxWidth,y,{align:"right"});}
-   y+=13;
-  };
-  const sectionTitle=title=>{
-   ensureSpace(20);
-   doc.setFont("helvetica","bold");doc.setFontSize(10.5);
-   doc.text(title.toUpperCase(),marginX,y);y+=4;
-   doc.setLineWidth(0.75);doc.line(marginX,y,marginX+maxWidth,y);y+=12;
-  };
-  doc.setFont("helvetica","bold");doc.setFontSize(19);
-  doc.text((p.personal.fullName||"YOUR NAME").toUpperCase(),marginX,y);y+=16;
-  if(finalHeadline){doc.setFont("helvetica","bold");doc.setFontSize(10);doc.text(finalHeadline.toUpperCase(),marginX,y);y+=13;}
-  doc.setFont("helvetica","normal");doc.setFontSize(9);
-  doc.text(contact||" ",marginX,y);y+=16;
-
-  sectionTitle("Professional Summary");writeBlock(finalSummary);y+=8;
-
-  sectionTitle("Core Skills");
-  skillRows.forEach(g=>writeBlock(`${g.category}: ${g.items.filter(Boolean).join(", ")}`));
-  y+=8;
-
-  sectionTitle("Professional Experience");
-  if(ov){writeBlock(finalExperienceText);}
-  else{exp.forEach(e=>{writeTwoCol(`${e.role}, ${e.company}`,[e.location,e.duration].filter(Boolean).join(" | "));e.bullets.forEach(b=>writeBlock("• "+b));y+=4;});}
-  y+=4;
-
-  sectionTitle("Projects");
-  if(ov){writeBlock(finalProjectsText);}
-  else{projects.forEach(x=>{ensureSpace(13);doc.setFont("helvetica","bold");doc.setFontSize(10.2);doc.text(x.name+(x.subtitle?`, ${x.subtitle}`:""),marginX,y);y+=13;x.bullets.filter(Boolean).forEach(b=>writeBlock("• "+b));y+=4;});}
-  y+=4;
-
-  sectionTitle("Education");
-  p.education.forEach(e=>{writeTwoCol(e.degree,e.date);writeBlock([e.institution,e.score].filter(Boolean).join(" | "));y+=4;});
-
-  const refs=(p.references||[]).filter(r=>r.name);
-  if(refs.length){
-   y+=4;sectionTitle("References");
-   refs.forEach(r=>{
-    ensureSpace(12);doc.setFont("helvetica","bold");doc.setFontSize(9.5);doc.text(r.name,marginX,y);y+=12;
-    writeBlock(r.title,9);
-    writeBlock([r.email,r.phone].filter(Boolean).join(" | "),9);
-    y+=6;
-   });
-  }
-  doc.save(`${fileBase()}.pdf`);
+ // Sent versions: a snapshot of this resume, cover letter, email and keywords exactly as they stand.
+ const mine=versionsForJob(versions,job);
+ const snapshot=()=>recordVersion({job:{...job,description:jd},doc,strategy,strategyLabel:cfg.label,keywordsAdded:addedKw.map(k=>k.display),
+  pack:packTexts,salary:pack.salary,report:pack.report,description:jd,fileName:pack.filename});
+ const versionNote=(r,lead)=>!r.ok?`${lead}${lead?" but ":""}${r.message}`
+  :r.added?`${lead}${lead?". ":""}Recorded exactly this resume, cover letter, email and keywords. Find it under Applications.`
+  :`${lead}${lead?". ":""}Nothing has changed since the version recorded on ${formatDay(r.version.appliedOn)}, so no new one was added.`;
+ const recordNow=()=>notify(versionNote(snapshot(),""));
+ const markApplied=()=>{
+  const r=snapshot();
+  updateJob(job.id,{status:"Applied",selectedStrategy:strategy});
+  notify(versionNote(r,"Marked Applied"));
  };
-
- const downloadDOCX=async()=>{
-  const {Document,Packer,Paragraph,TextRun,TabStopType,TabStopPosition}=window.docx;
-  const para=(text,opts={})=>new Paragraph({spacing:{after:opts.after??60},children:[new TextRun({text,bold:!!opts.bold,size:opts.size||20})]});
-  const heading=text=>new Paragraph({spacing:{before:220,after:80},border:{bottom:{color:"000000",space:1,style:"single",size:6}},children:[new TextRun({text:text.toUpperCase(),bold:true,size:20})]});
-  const bodyLines=text=>String(text||"").split("\n").map(line=>new Paragraph({spacing:{after:40},children:[new TextRun({text:line||" ",size:18})]}));
-  const twoCol=(l,r)=>new Paragraph({tabStops:[{type:TabStopType.RIGHT,position:TabStopPosition.MAX}],spacing:{after:20},children:[new TextRun({text:l,bold:true,size:20}),new TextRun({text:"\t"+(r||""),size:18})]});
-
-  const children=[para(p.personal.fullName?p.personal.fullName.toUpperCase():"YOUR NAME",{bold:true,size:32,after:40})];
-  if(finalHeadline)children.push(para(finalHeadline.toUpperCase(),{bold:true,size:20,after:40}));
-  children.push(para(contact||" ",{size:16,after:200}));
-
-  children.push(heading("Professional Summary"),...bodyLines(finalSummary));
-
-  children.push(heading("Core Skills"));
-  skillRows.forEach(g=>children.push(new Paragraph({spacing:{after:40},children:[new TextRun({text:`${g.category}: `,bold:true,size:18}),new TextRun({text:g.items.filter(Boolean).join(", "),size:18})]})));
-
-  children.push(heading("Professional Experience"));
-  if(ov){children.push(...bodyLines(finalExperienceText));}
-  else{exp.forEach(e=>{
-   children.push(twoCol(`${e.role}, ${e.company}`,[e.location,e.duration].filter(Boolean).join(" | ")));
-   e.bullets.forEach(b=>children.push(new Paragraph({spacing:{after:30},children:[new TextRun({text:"• "+b,size:18})]})));
-  });}
-
-  children.push(heading("Projects"));
-  if(ov){children.push(...bodyLines(finalProjectsText));}
-  else{projects.forEach(x=>{
-   children.push(new Paragraph({spacing:{after:20},children:[new TextRun({text:x.name+(x.subtitle?`, ${x.subtitle}`:""),bold:true,size:20})]}));
-   x.bullets.filter(Boolean).forEach(b=>children.push(new Paragraph({spacing:{after:30},children:[new TextRun({text:"• "+b,size:18})]})));
-  });}
-
-  children.push(heading("Education"));
-  p.education.forEach(e=>{
-   children.push(twoCol(e.degree,e.date));
-   children.push(new Paragraph({spacing:{after:60},children:[new TextRun({text:[e.institution,e.score].filter(Boolean).join(" | "),size:18})]}));
-  });
-
-  const refs=(p.references||[]).filter(r=>r.name);
-  if(refs.length){
-   children.push(heading("References"));
-   refs.forEach(r=>{
-    children.push(new Paragraph({spacing:{after:10},children:[new TextRun({text:r.name,bold:true,size:18})]}));
-    children.push(new Paragraph({spacing:{after:10},children:[new TextRun({text:r.title,size:16})]}));
-    children.push(new Paragraph({spacing:{after:100},children:[new TextRun({text:[r.email,r.phone].filter(Boolean).join(" | "),size:16})]}));
-   });
-  }
-
-  const doc=new Document({sections:[{properties:{},children}]});
-  const blob=await Packer.toBlob(doc);
-  downloadBlob(`${fileBase()}.docx`,blob);
- };
+ const appliedLike=["Applied","Interview","Rejected","Offer"].includes(job.status);
 
  const print=()=>window.print();
  const setStatus=status=>{updateJob(job.id,{status,selectedStrategy:strategy});notify(`Status updated to ${status}.`)};
- const refs=(p.references||[]).filter(r=>r.name);
  return <section className="space-y-5">
   <div className="flex flex-wrap justify-between gap-3"><div><h2 className="text-xl font-bold">Recruiter-Style ATS Resume{ov&&<span className="text-[10px] text-amber-300 font-normal ml-2">(manually edited)</span>}</h2><p className="text-sm text-cyan-400">{job.title} · {job.company}</p><p className="text-xs text-slate-500 mt-1">One-page, single-column, text-first resume layout.</p></div><div className="no-print flex flex-wrap gap-2"><button onClick={()=>editMode?setEditMode(false):enterEdit()} className="bg-amber-600 px-3 py-2 rounded text-xs">{editMode?"Cancel Edit":"Edit Content"}</button><button onClick={downloadTxt} className="bg-slate-800 px-3 py-2 rounded text-xs">TXT</button><button onClick={downloadPDF} className="bg-cyan-600 px-3 py-2 rounded text-xs">Download PDF</button><button onClick={downloadDOCX} className="bg-blue-600 px-3 py-2 rounded text-xs">Download DOCX</button><button onClick={print} className="bg-slate-800 px-3 py-2 rounded text-xs">Print</button></div></div>
 
@@ -768,17 +729,12 @@ function ResumePanel({job,p,updateJob,notify}){
   <RequirementsPanel req={requirements}/>
   <KeywordPanel job={job} jd={jd} kws={kws} rk={rk} setRk={setRk} updateJob={updateJob} coverBefore={coverBefore} coverNow={coverNow} keyCount={addedKw.length}/>
   <div className="grid md:grid-cols-2 gap-4 no-print"><Block title={`Compatibility Analysis: ${a.score}%`}><div className="grid grid-cols-2 gap-2"><Metric label="Title fit" value={a.titleFit}/><Metric label="Level fit" value={a.levelFit}/><Metric label="Skills" value={a.skillFit}/><Metric label="Preference" value={a.prefFit}/></div><p className="text-xs text-emerald-300 mt-3">Matched: {a.matched.slice(0,10).join(", ")||"None"}</p><p className="text-xs text-amber-300 mt-2">Potential gaps: {a.missing.slice(0,8).join(", ")||"None detected"}</p></Block><Block title="ATS Quality"><CheckRow ok text="Single-column, standard section headings"/><CheckRow ok text="No graphics, tables, icons, sidebars, or decorative resume elements"/><CheckRow ok text="Plain-text contact information"/><CheckRow ok={a.missing.length<8} text="Job keywords reviewed without inventing qualifications"/><p className="text-[11px] text-slate-500 mt-3">Compatibility is an internal estimate, not a real employer ATS score.</p></Block></div>
-  <div className="bg-white text-black max-w-[794px] mx-auto p-8 md:p-10 shadow-2xl rounded print-resume">
-    <header className="border-b pb-3 mb-4"><h1 className="text-3xl font-black tracking-wide">{(p.personal.fullName||"YOUR NAME").toUpperCase()}</h1>{finalHeadline&&<p className="text-[12px] font-bold text-sky-700 mt-1 tracking-wide">{finalHeadline.toUpperCase()}</p>}<p className="text-[10px] mt-1 leading-4">{contact}</p></header>
-    <ResumeSection title="PROFESSIONAL SUMMARY"><p className="text-[10.5px] leading-5">{finalSummary}</p></ResumeSection>
-    <ResumeSection title="CORE SKILLS"><div className="space-y-1" data-testid="core-skills">{skillRows.map((g,i)=><p key={i} className="text-[10px] leading-4"><b>{g.category}:</b> {g.items.filter(Boolean).join(", ")}</p>)}</div></ResumeSection>
-    <ResumeSection title="PROFESSIONAL EXPERIENCE">{ov?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{finalExperienceText}</pre>:exp.map((e,i)=><div key={i} className="mb-3"><div className="flex justify-between text-[10.5px]"><b>{e.role}, {e.company}</b><span>{[e.location,e.duration].filter(Boolean).join(" | ")}</span></div><ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{e.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
-    <ResumeSection title="PROJECTS">{ov?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{finalProjectsText}</pre>:projects.map((x,i)=><div key={i} className="mb-3"><p className="text-[10.5px]"><b>{x.name}</b>{x.subtitle&&<span>, {x.subtitle}</span>}</p><ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{x.bullets.filter(Boolean).map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
-    <ResumeSection title="EDUCATION">{p.education.map((e,i)=><div key={i} className="mb-2"><div className="flex justify-between text-[10.5px]"><b>{e.degree}</b><span>{e.date}</span></div><p className="text-[10px] leading-4">{[e.institution,e.score].filter(Boolean).join(" | ")}</p></div>)}</ResumeSection>
-    {refs.length>0&&<ResumeSection title="REFERENCES"><div className="grid grid-cols-2 gap-4">{refs.map((r,i)=><div key={i} className="text-[10px] leading-4"><p className="font-bold text-[10.5px]">{r.name}</p><p>{r.title}</p><p>{[r.email,r.phone].filter(Boolean).join(" | ")}</p></div>)}</div></ResumeSection>}
-  </div>
+  <ResumePreview doc={doc}/>
   <ApplicationPack job={job} pack={pack} texts={packTexts} saved={apSaved} setAp={setAp} notify={notify}/>
-  <div className="no-print flex flex-wrap gap-2 justify-end"><button onClick={()=>setStatus("Saved")} className="bg-slate-800 px-3 py-2 rounded text-xs">Save</button><button onClick={()=>setStatus("Awaiting Approval")} className="bg-amber-600 px-3 py-2 rounded text-xs">Send to Approval</button><button onClick={()=>setStatus("Applied")} className="bg-emerald-600 px-3 py-2 rounded text-xs">Mark Applied</button>{job.url&&<a href={job.url} target="_blank" rel="noopener" className="bg-cyan-700 px-3 py-2 rounded text-xs">Open Job</a>}</div>
+  <div className="no-print space-y-2">
+   <div className="flex flex-wrap gap-2 justify-end"><button onClick={()=>setStatus("Saved")} className="bg-slate-800 px-3 py-2 rounded text-xs">Save</button><button onClick={()=>setStatus("Awaiting Approval")} className="bg-amber-600 px-3 py-2 rounded text-xs">Send to Approval</button>{appliedLike&&<button data-testid="record-version" onClick={recordNow} title="Records this resume, cover letter, email and keywords exactly as they are now" className="bg-slate-800 border border-emerald-700 text-emerald-300 px-3 py-2 rounded text-xs">Record current version</button>}<button data-testid="mark-applied" onClick={markApplied} title="Marks the job Applied and records exactly what this resume, cover letter and email say now" className="bg-emerald-600 px-3 py-2 rounded text-xs">Mark Applied</button>{job.url&&<a href={job.url} target="_blank" rel="noopener" className="bg-cyan-700 px-3 py-2 rounded text-xs">Open Job</a>}</div>
+   <p data-testid="versions-line" className="text-[11px] text-slate-500 text-right">{mine.length?<>{mine.length} recorded version{mine.length===1?"":"s"} for this job, latest {formatDay(mine[0].appliedOn)}. <button onClick={()=>openApplications(mine[0].id)} className="text-cyan-400 underline">View in Applications</button></>:"Nothing recorded for this job yet. Mark Applied keeps a copy of exactly what this resume, cover letter and email say."}</p>
+  </div>
  </section>
 }
 /* ---- Recruiter keywords (extraction lives in keywords.js) ---- */
@@ -1005,6 +961,116 @@ function ApplicationPack({job,pack,texts,saved,setAp,notify}){
  </div>
 }
 function ResumeSection({title,children}){return <section className="mb-4"><h2 className="text-[10.5px] tracking-widest font-bold border-b border-black pb-1 mb-2">{title}</h2>{children}</section>}
+// The resume as a page. It draws a resume document (resumedoc.js), the same object the PDF, DOCX and TXT
+// are made from, so this is what those files say. Also used to show a recorded version.
+function ResumePreview({doc:d}){
+ return <div className="bg-white text-black max-w-[794px] mx-auto p-8 md:p-10 shadow-2xl rounded print-resume">
+  <header className="border-b pb-3 mb-4"><h1 className="text-3xl font-black tracking-wide">{(d.name||"YOUR NAME").toUpperCase()}</h1>{d.headline&&<p className="text-[12px] font-bold text-sky-700 mt-1 tracking-wide">{d.headline.toUpperCase()}</p>}<p className="text-[10px] mt-1 leading-4">{d.contact}</p></header>
+  <ResumeSection title="PROFESSIONAL SUMMARY"><p className="text-[10.5px] leading-5">{d.summary}</p></ResumeSection>
+  <ResumeSection title="CORE SKILLS"><div className="space-y-1" data-testid="core-skills">{d.skillRows.map((g,i)=><p key={i} className="text-[10px] leading-4"><b>{g.category}:</b> {g.items.join(", ")}</p>)}</div></ResumeSection>
+  <ResumeSection title="PROFESSIONAL EXPERIENCE">{d.overridden?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{d.experienceText}</pre>:d.experience.map((e,i)=><div key={i} className="mb-3"><div className="flex justify-between text-[10.5px]"><b>{e.title}</b><span>{e.meta}</span></div><ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{e.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
+  <ResumeSection title="PROJECTS">{d.overridden?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{d.projectsText}</pre>:d.projects.map((x,i)=><div key={i} className="mb-3"><p className="text-[10.5px]"><b>{x.name||x.title}</b>{x.subtitle&&<span>, {x.subtitle}</span>}</p><ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{x.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
+  <ResumeSection title="EDUCATION">{d.education.map((e,i)=><div key={i} className="mb-2"><div className="flex justify-between text-[10.5px]"><b>{e.degree}</b><span>{e.date}</span></div><p className="text-[10px] leading-4">{e.detail}</p></div>)}</ResumeSection>
+  {d.references.length>0&&<ResumeSection title="REFERENCES"><div className="grid grid-cols-2 gap-4">{d.references.map((r,i)=><div key={i} className="text-[10px] leading-4"><p className="font-bold text-[10.5px]">{r.name}</p><p>{r.title}</p><p>{r.contact}</p></div>)}</div></ResumeSection>}
+ </div>
+}
+
+/* ---- Applications: the recorded versions (versions.js) ---- */
+const versionStem=v=>(v.fileName||`resume_${v.appliedOn}`).replace(/\.(pdf|docx|txt)$/i,"");
+const rupees=n=>Number(n).toLocaleString("en-US")+" Tk";
+
+function VersionDetail({v,prev,job,onUpdate,openJob,notify}){
+ const [note,setNote]=useState(v.note||"");
+ const d=diffVersions(prev,v);
+ const posted=v.salary.postedText||(v.salary.postedMin!=null?rupees(v.salary.postedMin)+(v.salary.postedMax!=null&&v.salary.postedMax!==v.salary.postedMin?" to "+rupees(v.salary.postedMax):""):"not stated");
+ const texts=[["cover","Cover letter",v.pack.coverLetter],["email","Email draft",v.pack.email],["recruiter","Recruiter / LinkedIn message",v.pack.recruiter]];
+ return <div data-testid="version-detail" className="mt-4 border-t border-slate-800 pt-4 space-y-4">
+  <div className="text-xs text-slate-400 space-y-1">
+   <p>Recorded {new Date(v.appliedAt).toLocaleString()} when you pressed Mark Applied or Record current version. It is the copy the app held then; it cannot know what you actually attached or typed into an email, so compare it with what you really sent.</p>
+   <p>Pay in the post: <span className="text-slate-200">{posted}</span> · Suggested ask: <span className="text-slate-200">{v.salary.suggested!=null?rupees(v.salary.suggested):"none"}</span>{v.salary.note&&<span className="text-slate-500"> ({v.salary.note})</span>}</p>
+   {v.report.matchAfter!=null&&<p>Keyword match: {v.report.matchBefore}/100 before, {v.report.matchAfter}/100 after your Add choices{v.report.roleFit!=null&&<> · Role fit {v.report.roleFit}%</>}</p>}
+   {v.report.gaps.length>0&&<div><p>Gaps the report listed:</p><ul className="list-disc ml-5 text-amber-200">{v.report.gaps.map((g,i)=><li key={i}>{g}</li>)}</ul></div>}
+  </div>
+  <div><label className="text-xs text-slate-400">Your note (interview date, who replied, what to remember)</label>
+   <textarea data-testid="version-note" value={note} onChange={e=>setNote(e.target.value)} onBlur={()=>{if(note!==(v.note||""))onUpdate(v.id,{note})}} className="w-full h-16 bg-slate-950 border border-slate-700 rounded p-2 text-sm mt-1"/></div>
+  <div><p className="text-xs font-semibold text-slate-300 mb-1">Compared with the previous version for this job</p>
+   {d.first?<p data-testid="version-diff" className="text-xs text-slate-400">This is the first version recorded for this job.</p>
+    :d.identical?<p data-testid="version-diff" className="text-xs text-slate-400">Identical to the previous version.</p>
+    :<div data-testid="version-diff" className="text-xs space-y-0.5">{d.changed.length>0&&<p className="text-slate-200">Changed: {d.changed.join(", ")}</p>}{d.keywordsAdded.length>0&&<p className="text-emerald-300">Keywords added: {d.keywordsAdded.join(", ")}</p>}{d.keywordsRemoved.length>0&&<p className="text-amber-300">Keywords removed: {d.keywordsRemoved.join(", ")}</p>}</div>}
+  </div>
+  <div><p className="text-xs font-semibold text-slate-300 mb-2">Resume, as recorded</p><div data-testid="version-preview"><ResumePreview doc={v.doc}/></div></div>
+  {texts.map(([id,label,text])=><div key={id}><div className="flex items-center gap-2 mb-1"><p className="text-xs font-semibold text-slate-300">{label}, as recorded</p><button type="button" data-testid={"version-copy-"+id} onClick={()=>copyText(text,notify,label)} className={packBtn}>Copy</button></div><pre data-testid={"version-"+id} className="whitespace-pre-wrap font-sans text-xs bg-slate-950 border border-slate-800 rounded p-3 text-slate-200">{text||"(empty)"}</pre></div>)}
+  <details><summary className="text-xs text-slate-400 cursor-pointer">The job post as it was when recorded</summary><pre data-testid="version-description" className="whitespace-pre-wrap font-sans text-xs bg-slate-950 border border-slate-800 rounded p-3 mt-2 text-slate-300 max-h-80 overflow-auto">{v.description||"(not kept)"}</pre></details>
+  <div className="flex flex-wrap gap-2 text-xs">{job?<button onClick={()=>openJob(job)} className={packBtn}>Open this job</button>:<span className="text-slate-500">This job is no longer in your list; the record above is still complete.</span>}{v.url&&<a href={v.url} target="_blank" rel="noopener noreferrer" className={packBtn+" text-cyan-300"}>Open application page</a>}</div>
+ </div>
+}
+
+function ApplicationsPanel({versions,ready,error,jobs,openId,setOpenId,onUpdate,onDelete,onImport,openJob,notify}){
+ const [q,setQ]=useState("");
+ const [confirmId,setConfirmId]=useState(null);
+ const list=sortNewest(versions).filter(v=>[v.company,v.title,v.fileName,v.strategyLabel,v.keywordsAdded.join(" "),v.note].join(" ").toLowerCase().includes(q.trim().toLowerCase()));
+ const jobFor=v=>jobs.find(j=>(v.jobId&&j.id===v.jobId)||(v.jobFingerprint&&j.fingerprint===v.jobFingerprint));
+ const kb=Math.max(1,Math.round(versionsStorageBytes(versions)/1024));
+ const exportAll=()=>download(`careerpilot-applications-${vnLocalDate(new Date())}.json`,JSON.stringify({app:"careerpilot-bd",kind:"recorded-versions",exportedAt:new Date().toISOString(),versions},null,2),"application/json");
+ const importFile=e=>{
+  const f=e.target.files[0];e.target.value="";
+  if(!f)return;
+  const r=new FileReader();
+  r.onload=()=>{
+   try{
+    const data=JSON.parse(r.result);
+    const raw=Array.isArray(data)?data:(data&&Array.isArray(data.versions)?data.versions:null);
+    if(!raw)throw new Error("no versions");
+    const valid=normalizeVersions(raw).length;
+    const res=onImport(raw);
+    const skipped=raw.length-valid,already=valid-res.added;
+    notify(`Imported ${res.added} new version${res.added===1?"":"s"}${already>0?`, ${already} already here`:""}${skipped>0?`, ${skipped} skipped as not valid`:""}.`);
+   }catch(err){notify("That file is not a CareerPilot applications export.")}
+  };
+  r.readAsText(f);
+ };
+ return <section className="space-y-4" data-testid="applications-panel">
+  <div><h2 className="text-xl font-bold">Applications</h2><p className="text-sm text-slate-400">The resume, cover letter, email and keywords exactly as they were when you pressed Mark Applied (or Record current version), one entry per version. If an interview comes, this is the wording the employer received.</p></div>
+  {error&&<div data-testid="versions-error" className="bg-red-950/40 border border-red-800 text-red-200 text-xs rounded-lg p-3">{error}</div>}
+  <div className="no-print flex flex-wrap items-center gap-2 text-xs">
+   <input data-testid="versions-search" aria-label="Search recorded versions" placeholder="Search company, role, keyword, note..." value={q} onChange={e=>setQ(e.target.value)} className="bg-slate-900 border border-slate-700 rounded px-3 py-2 w-72"/>
+   <button data-testid="versions-export" onClick={exportAll} disabled={!versions.length} className="bg-slate-800 px-3 py-2 rounded disabled:opacity-40">Export JSON</button>
+   <label className="bg-slate-800 px-3 py-2 rounded cursor-pointer">Import JSON<input data-testid="versions-import" type="file" accept=".json,application/json" className="hidden" onChange={importFile}/></label>
+   <span data-testid="versions-storage" className="text-slate-500">{versions.length} version{versions.length===1?"":"s"} · about {kb} KB of the browser's roughly 5 MB, shared with your jobs and profile</span>
+  </div>
+  <p className="text-[11px] text-slate-500">These are stored encrypted with your vault password, and that password cannot be recovered. Export now and then. The export file is <b className="text-slate-300">not</b> encrypted (it holds your phone and email), so keep it somewhere private.</p>
+  {!list.length&&<div data-testid="versions-empty" className="text-slate-400 bg-slate-900 border border-slate-800 rounded-xl p-8 text-center">{versions.length?"No recorded version matches that search.":"Nothing recorded yet. Open a job's resume and press Mark Applied to keep a copy of exactly what it says."}</div>}
+  <div className="space-y-3">{list.map(v=>{
+   const sameJob=versionsForJob(versions,{id:v.jobId,fingerprint:v.jobFingerprint});
+   const at=sameJob.findIndex(x=>x.id===v.id);
+   const prev=sameJob[at+1]||null;
+   const job=jobFor(v);
+   const open=openId===v.id;
+   return <div key={v.id} data-testid="version-card" data-id={v.id} className={"bg-slate-900 border rounded-xl p-4 "+(open?"border-cyan-700":"border-slate-800")}>
+    <div className="flex flex-wrap justify-between gap-3">
+     <div className="min-w-0">
+      <p className="font-bold">{v.title||"Untitled role"} <span className="text-cyan-400 font-normal">· {v.company||"Unknown company"}</span></p>
+      <p className="text-xs text-slate-400 mt-0.5">Applied {formatDay(v.appliedOn)}{sameJob.length>1?` · version ${sameJob.length-at} of ${sameJob.length} for this job`:""}{job&&<> · <span data-testid="version-status" className="text-slate-300">{job.status}</span></>}</p>
+      <p className="text-xs text-slate-500 mt-1">File <code className="text-slate-300" data-testid="version-file">{v.fileName||"(none)"}</code> · Strategy <span className="text-slate-300" data-testid="version-strategy">{v.strategyLabel||v.strategy||"-"}</span></p>
+      <p className="text-xs mt-1.5 flex flex-wrap gap-1" data-testid="version-keywords"><span className="text-slate-500 mr-1">Keywords added</span>{v.keywordsAdded.length?v.keywordsAdded.map(k=><span key={k} className="bg-emerald-950/50 text-emerald-200 border border-emerald-800 px-2 py-0.5 rounded-full">{k}</span>):<span className="text-slate-500">none</span>}</p>
+      {v.note&&<p className="text-xs text-amber-200 mt-1.5" data-testid="version-note-preview">Note: {v.note}</p>}
+     </div>
+     <div className="no-print flex flex-wrap items-start gap-1.5">
+      <button data-testid="version-open" onClick={()=>setOpenId(open?null:v.id)} className={packBtn+" text-cyan-300"}>{open?"Hide":"View"}</button>
+      <button data-testid="version-pdf" onClick={()=>renderResumePDF(v.doc,versionStem(v)+".pdf")} className={packBtn}>PDF</button>
+      <button data-testid="version-docx" onClick={()=>renderResumeDOCX(v.doc,versionStem(v)+".docx")} className={packBtn}>DOCX</button>
+      <button data-testid="version-txt" onClick={()=>download(versionStem(v)+".txt",resumeDocToText(v.doc))} className={packBtn}>TXT</button>
+      {confirmId===v.id
+       ?<><button data-testid="version-delete-confirm" onClick={()=>{onDelete(v.id);setConfirmId(null);notify("Version deleted.")}} className="px-2.5 py-1 rounded text-[11px] bg-red-800 text-white">Delete for good</button><button onClick={()=>setConfirmId(null)} className={packBtn}>Keep</button></>
+       :<button data-testid="version-delete" onClick={()=>setConfirmId(v.id)} className={packBtn+" text-red-300"}>Delete</button>}
+     </div>
+    </div>
+    {open&&<VersionDetail key={v.id} v={v} prev={prev} job={job} onUpdate={onUpdate} openJob={openJob} notify={notify}/>}
+   </div>})}
+  </div>
+ </section>
+}
+
 function CheckRow({ok,text}){return <p className="text-xs flex gap-2 items-start"><span className={ok?'text-emerald-400':'text-amber-400'}>{ok?'✓':'!'}</span>{text}</p>}
 
 const MANUAL_KEY="careerpilot_bd_v2_manual_checked";
@@ -1064,7 +1130,16 @@ function ManualSites({p}){
   </>}
  </section>
 }
-function Tracker({jobs,setJobs}){const statuses=["Awaiting Review","Saved","Awaiting Approval","Applied","Interview","Rejected","Offer"];return <section><h2 className="text-xl font-bold mb-4">Application Tracker</h2><div className="space-y-3">{jobs.map(j=><div key={j.id} className="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-wrap justify-between gap-3"><div><b>{j.title}</b><p className="text-sm text-slate-400">{j.company}</p></div><select value={j.status} onChange={e=>setJobs(jobs.map(x=>x.id===j.id?{...x,status:e.target.value}:x))} className="bg-slate-950 border border-slate-700 rounded p-2 text-sm">{statuses.map(s=><option key={s}>{s}</option>)}</select></div>)}</div></section>}
+function Tracker({jobs,setJobs,versions,versionsReady,openApplications}){
+ const statuses=["Awaiting Review","Saved","Awaiting Approval","Applied","Interview","Rejected","Offer"];
+ const appliedLike=["Applied","Interview","Rejected","Offer"];
+ return <section><h2 className="text-xl font-bold mb-4">Application Tracker</h2><div className="space-y-3">{jobs.map(j=>{
+  const mine=versionsForJob(versions,j);
+  return <div key={j.id} className="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-wrap justify-between gap-3"><div><b>{j.title}</b><p className="text-sm text-slate-400">{j.company}</p>
+   {mine.length>0&&<button data-testid="tracker-versions" onClick={()=>openApplications(mine[0].id)} className="text-xs text-cyan-400 underline mt-1">{mine.length} recorded version{mine.length===1?"":"s"}</button>}
+   {versionsReady&&!mine.length&&appliedLike.includes(j.status)&&<p data-testid="no-version-nudge" className="text-xs text-amber-300 mt-1 max-w-md">No version recorded for this application. Open this job's resume and press Record current version to keep a copy; it will hold what the resume says now, which may differ from what you sent earlier.</p>}
+  </div><select value={j.status} onChange={e=>setJobs(jobs.map(x=>x.id===j.id?{...x,status:e.target.value}:x))} className="bg-slate-950 border border-slate-700 rounded p-2 text-sm">{statuses.map(s=><option key={s}>{s}</option>)}</select></div>})}</div></section>
+}
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
 </script>

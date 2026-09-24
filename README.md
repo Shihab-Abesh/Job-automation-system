@@ -455,6 +455,47 @@ now recognised as the multitasking skill.
 **Not done, on purpose.** It does not rewrite bullets into action-task-result form, and it does not
 enforce a page count; both would mean inventing or trimming facts without you.
 
+## Sent versions: exactly what you applied with
+
+Press **Mark Applied** on a job's resume and the dashboard keeps a copy of everything that application
+held at that moment: the resume, the keywords you pressed Add for, the strategy, the cover letter, the
+email and the recruiter message (with any edits you had made), the pay the post offered and the figure
+suggested, the tailoring report, and the job post itself. Each copy is a **version**, listed in the
+**Applications** tab as, for example, *QA Engineer, Zorblax Ltd, applied 22 Sep 2026, file
+`resume_zorblax-ltd_qa-engineer_2026-09-22.pdf`, keywords added Postman, API Testing, strategy QA*.
+Weeks later, when an interview call comes, open it and read the exact claims and wording the employer
+received, and download the same PDF, DOCX or TXT again. The PDF you get from history is
+byte-for-byte the one the resume view produced when you applied (the browser test compares them), even
+after you have since changed your profile, the strategy or the post.
+
+- **What "sent" means here.** The page records what it held when you pressed the button. It cannot see
+  what you actually attached or typed into an email, so the wording says *recorded*, not *sent*. If
+  you sent something different, edit before you press it.
+- **Only real changes are kept.** Pressing again with nothing changed says so and adds nothing; an
+  edited cover letter, a new keyword, a different strategy or a changed profile line is a new version.
+  Each version shows what changed against the previous one for the same job (Summary, Core skills,
+  Cover letter, Keywords added, ...). The **Record current version** button (shown once a job is
+  Applied, Interview, Rejected or Offer) records a job you applied to before this existed; it holds what
+  the resume says *now*.
+- **Your note.** Add a note to any version (interview date, who replied). Search finds a version by
+  company, role, keyword, file name or note.
+- **Private.** Versions hold your phone number and the wording you sent, so unlike the job list they are
+  **encrypted with your vault password** (AES-256-GCM, under their own storage key) and are readable
+  only while unlocked. There is no password recovery. Use **Export JSON** now and then; the export
+  file is **not** encrypted, so keep it somewhere private. **Import JSON** merges by id: nothing is lost
+  or doubled, a malformed record is skipped, and a note edited later wins.
+- **Safe failure.** If the stored history cannot be read (for example after restoring only part of
+  your browser data), the page says so, shows nothing, and never overwrites it. Importing an export
+  restores it, and the unreadable copy is kept aside under `careerpilot_bd_v2_versions_unreadable`.
+- **Limits.** Browsers allow about 5 MB of storage in total, shared with your jobs and profile. A
+  version is around 10 KB with the job post, so dozens fit; the Applications tab shows how much is
+  used, and warns instead of failing silently if the browser refuses a save.
+- **Downloads are now named like the file the Application Pack suggests**, `resume_company_role_date`,
+  instead of `Name_Strategy`. The PDF, DOCX, TXT and on-screen resume are all drawn from one resume
+  document (`resumedoc.js`), checked against the old output for identical content.
+
+The **Tracker** flags any Applied job that has no recorded version, so a missing record is visible.
+
 ## Your rules, and what they do
 
 From `config/search.yml` and `config/profile.json`:
@@ -569,6 +610,8 @@ feed keeps flowing while you fix the selectors.
 | `backend/scoring.py`, `scoring.js` | the match score (same maths in both languages, tested against each other) and your rules |
 | `backend/health.py` | notices a source that has quietly stopped returning jobs |
 | `applypack.js` | builds the Application Pack (cover letter, email, recruiter message, salary suggestion, checklist, tailoring report) from your profile and the post; never sends anything (runs in the browser, tested under Node) |
+| `resumedoc.js`, `resumefiles.js` | the resume as plain data, and the browser code that draws it as PDF and DOCX; the screen, the downloads and every recorded version come from this one document (tested under Node) |
+| `versions.js` | records, compares, merges and validates the versions kept for each application; stored encrypted by the dashboard (tested under Node) |
 | `keywords.js` | reads a job post for recruiter keywords in any field, tells a bare mention from a quantified requirement, and builds the eleven-group Job Requirements comparison; you choose which keywords go on the resume (runs in the browser, tested under Node) |
 | `config/manual_sites.json` | the boards you check by hand, shown in the dashboard's Manual Sites tab |
 | `backend/store.py` | the feed and the ledger of what you have already decided |

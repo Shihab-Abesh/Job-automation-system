@@ -16,7 +16,8 @@ NODE = shutil.which("node")
 
 
 @pytest.mark.skipif(NODE is None, reason="Node is not installed")
-@pytest.mark.parametrize("script", ["keywords.test.js", "feed_sync.test.js", "requirements.test.js", "applypack.test.js"])
+@pytest.mark.parametrize("script", ["keywords.test.js", "feed_sync.test.js", "requirements.test.js", "applypack.test.js", "resumedoc.test.js",
+                                    "versions.test.js"])
 def test_browser_code_passes_its_node_tests(script):
     run = subprocess.run([NODE, str(ROOT / "tests" / "js" / script)],
                          capture_output=True, text=True, encoding="utf-8", timeout=120)
@@ -39,8 +40,8 @@ def test_the_dashboard_puts_only_what_the_user_added_on_the_resume():
     # a job outside every fixed field gets the General resume rather than another field's
     assert '"General":{label:' in html and ':"General";' in html
     assert '"Other"' in html
-    # every export reads the same rows, so PDF, DOCX, TXT and the preview cannot disagree
-    assert html.count("skillRows.") + html.count("skillRows)") >= 3
+    # every export reads the same rows (through the one resume document), so PDF, DOCX, TXT and the preview cannot disagree
+    assert "const doc=docFor(skillRows);" in html and "skillRows:rows" in html
     # keywords.js must load after scoring.js and before the app script that uses it
     assert html.index("scoring.js") < html.index("keywords.js") < html.index('<script type="text/babel">')
 
@@ -118,3 +119,56 @@ def test_the_pack_never_sends_anything():
     src = (ROOT / "applypack.js").read_text(encoding="utf-8")
     for forbidden in ("fetch(", "XMLHttpRequest", "mailto:", "window.open", "sendBeacon", "location.href"):
         assert forbidden not in src, f"applypack.js must not contain {forbidden}"
+
+
+def test_the_dashboard_renders_every_resume_output_from_one_document():
+    """Preview, PDF, DOCX, TXT and the recorded version all come from buildResumeDoc, so they cannot disagree."""
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    assert html.index("applypack.js") < html.index("resumedoc.js") < html.index("resumefiles.js") < html.index("versions.js")         < html.index('<script type="text/babel">')
+    assert "const doc=docFor(skillRows);" in html
+    assert "resumeDocToText(doc)" in html and "renderResumePDF(doc," in html and "renderResumeDOCX(doc," in html
+    assert "<ResumePreview doc={doc}/>" in html
+    # the PDF/DOCX code lives in resumefiles.js now; the dashboard must not carry a second copy that could drift
+    assert "new jsPDF" not in html and "new Document(" not in html
+    # every download is named like the file the Application Pack suggests
+    assert "const fileStem=pack.filename" in html
+    files = (ROOT / "resumefiles.js").read_text(encoding="utf-8")
+    # a renderer reads only the document it is given, never the live profile
+    for live in ("p.personal", "p.education", "p.references", "profile"):
+        assert live not in files.replace("your current profile", ""), f"resumefiles.js must not read {live}"
+
+
+def test_recorded_versions_are_encrypted_and_never_overwritten_after_a_failed_read():
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    sync = (ROOT / "feed-sync.js").read_text(encoding="utf-8")
+    assert 'const VERSIONS_KEY="careerpilot_bd_v2_versions";' in html
+    # written only as the vault-encrypted {iv,data} blob, under a key of its own, never plain
+    assert "encryptJSON(cryptoKey,versions)" in html
+    assert "localStorage.setItem(VERSIONS_KEY,JSON.stringify(enc))" in html
+    assert "JSON.stringify(versions))" not in html.replace("JSON.stringify({app:", "")
+    # not a per-job field: the unencrypted job list and the feed sync never carry it
+    assert "versions" not in sync and "resumeVersions" not in html
+    # a store that could not be read is left alone: saving waits for versionsReady, and the unlock only sets it on success
+    assert "if(!cryptoKey||!versionsReady)return;" in html
+    assert "setVersions(loaded);setVersionsReady(ready);setVersionsError(vError);" in html
+    assert "ready=false;vError=" in html
+    # locking forgets them from memory
+    assert "setVersions([]);setVersionsReady(false)" in html
+
+
+def test_marking_applied_records_the_version_and_the_history_has_its_own_tab():
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    assert 'data-testid="mark-applied" onClick={markApplied}' in html
+    assert 'data-testid="record-version" onClick={recordNow}' in html
+    assert "keywordsAdded:addedKw.map(k=>k.display)" in html and "pack:packTexts" in html and "fileName:pack.filename" in html
+    assert '["applications","Applications"]' in html and "<ApplicationsPanel " in html
+    # an applied job with nothing recorded is flagged in the Tracker
+    assert 'data-testid="no-version-nudge"' in html
+
+
+def test_the_document_and_version_modules_are_pure():
+    """No DOM, storage or network in the modules Node tests: the storage lives in index.html."""
+    for name in ("resumedoc.js", "versions.js"):
+        src = (ROOT / name).read_text(encoding="utf-8")
+        for forbidden in ("fetch(", "XMLHttpRequest", "localStorage", "sessionStorage", "document.", "window.", "sendBeacon"):
+            assert forbidden not in src, f"{name} must not contain {forbidden}"
