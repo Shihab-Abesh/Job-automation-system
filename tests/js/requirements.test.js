@@ -145,6 +145,17 @@ test("Education compares against the profile's real degrees: match when one fits
   assert.strictEqual(none, null, "no degree was asked for, so the group is omitted");
 });
 
+test("Education: a level is not a field, so a CSE degree only partly meets 'Bachelor degree in Business Administration'", () => {
+  const state = post => analyze(post).education.compare.state;
+  assert.strictEqual(state("Requirements\nBachelor degree in Business Administration required."), "partial");
+  assert.strictEqual(state("Requirements\nBachelor degree required."), "match", "level alone is met");
+  assert.strictEqual(state("Requirements\nBachelor degree in Computer Science required."), "match", "level and field both met");
+  assert.strictEqual(state("Requirements\nMBA required."), "gap");
+  assert.strictEqual(state("Requirements\nMaster's degree in Computer Science required."), "partial", "the field fits but not the level");
+  const note = analyze("Requirements\nBachelor degree in Business Administration required.").education.compare.note;
+  assert.ok(/level fits/.test(note) && /Business Administration/.test(note), note);
+});
+
 test("Experience: role-level years vs. your stated experienceYears, plus a fresher-friendly post and an unstated one", () => {
   const gap = analyze(FULL_POST, "Software Engineer", {}, { ...profile, preferences: { ...profile.preferences, experienceYears: 1 } }).experience;
   assert.strictEqual(gap.compare.state, "gap");

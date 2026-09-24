@@ -16,7 +16,7 @@ NODE = shutil.which("node")
 
 
 @pytest.mark.skipif(NODE is None, reason="Node is not installed")
-@pytest.mark.parametrize("script", ["keywords.test.js", "feed_sync.test.js", "requirements.test.js"])
+@pytest.mark.parametrize("script", ["keywords.test.js", "feed_sync.test.js", "requirements.test.js", "applypack.test.js"])
 def test_browser_code_passes_its_node_tests(script):
     run = subprocess.run([NODE, str(ROOT / "tests" / "js" / script)],
                          capture_output=True, text=True, encoding="utf-8", timeout=120)
@@ -48,7 +48,7 @@ def test_the_dashboard_puts_only_what_the_user_added_on_the_resume():
 def test_feed_sync_keeps_every_field_the_dashboard_stores_on_a_job():
     sync = (ROOT / "feed-sync.js").read_text(encoding="utf-8")
     html = (ROOT / "index.html").read_text(encoding="utf-8")
-    for field in ("resumeOverrides", "resumeKeywords", "pastedDescription", "selectedStrategy"):
+    for field in ("resumeOverrides", "resumeKeywords", "pastedDescription", "selectedStrategy", "applicationPack"):
         assert f'"{field}"' in sync, f"feed-sync.js would drop {field}"
         assert field in html, f"{field} is no longer used by the dashboard; remove it from feed-sync.js"
 
@@ -96,3 +96,25 @@ def test_years_regex_understands_en_dash_ranges_the_same_way_everywhere():
     for path in ("scoring.js", "keywords.js", "backend/scoring.py"):
         src = (ROOT / path).read_text(encoding="utf-8")
         assert pattern in src, f"{path} still has the narrower, hyphen-only years pattern"
+
+
+def test_the_dashboard_wires_the_application_pack():
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    # applypack.js loads after keywords.js (it reuses keywordHits / extractResponsibilities) and before the app
+    assert html.index("keywords.js") < html.index("applypack.js") < html.index('<script type="text/babel">')
+    # built from the SAME keywords, requirements and Add choices the other panels use
+    assert "buildApplicationPack({profile:p,job,kws,addedKw,text:jd,requirements,coverBefore,coverNow,score:a.score})" in html
+    assert "<ApplicationPack " in html
+    # edits are kept per job, and can be reset to what was generated
+    assert "updateJob(job.id,{applicationPack:{...apSaved,...patch}})" in html
+    assert 'data-testid={"pack-"+id+"-reset"}' in html
+    # a resume shows the most relevant experience first, and salary is a sort option
+    assert "rankExperience(p.experience,found)" in html
+    assert '<option value="salary">Sort: highest salary</option>' in html
+
+
+def test_the_pack_never_sends_anything():
+    """It is text to copy. No fetch, no mailto, no form post, no window.open anywhere in the module."""
+    src = (ROOT / "applypack.js").read_text(encoding="utf-8")
+    for forbidden in ("fetch(", "XMLHttpRequest", "mailto:", "window.open", "sendBeacon", "location.href"):
+        assert forbidden not in src, f"applypack.js must not contain {forbidden}"

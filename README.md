@@ -406,6 +406,55 @@ at all is told to you plainly rather than shown as a wall of empty sections.
 This is wording- and proximity-based, not real language understanding, so treat it as a second
 opinion: a mixed bullet (above) or an unusually phrased requirement can still be misread.
 
+## Application Pack: everything for one application
+
+Below each resume, the **Application Pack** collects what you need to apply for that one job:
+a tailoring report, an expected-salary suggestion, a cover letter, an email draft, a
+recruiter/LinkedIn message, a checklist and a suggested file name. **Nothing is sent for you**:
+there is no send button and the code never contacts anyone. You read it, copy it, and send it yourself.
+
+**How it is written.** There is no AI model behind this page, so every sentence is one of three
+things: a template filled with a fact from your Master Profile, a line quoted from the post, or an
+**[EDIT THIS: ...]** placeholder where only you know the answer. It never rewords one of your
+bullets (that is where invented claims creep in) and it never says anything about a company that the
+post did not say. Edits you make are saved per job, **Reset to generated** brings the original back,
+and a feed refresh never wipes them.
+
+**Cover letter.** Three short paragraphs, 120-180 words, no "I am excited to apply".
+1. The post's own biggest asks (built-in skills first, not employer jargon), then which of them are
+   already in your profile; if none is, a placeholder rather than a claim.
+2. Two real bullets from your resume that hold the most of the post's keywords, shortened only at the
+   end of a clause. If the post asks for multitasking, the letter says so and draws both examples
+   from your actual work experience, so it shows the skill instead of naming it.
+3. A duty from the post, quoted **only** when it contains something really in your profile, then a
+   placeholder for why this company draws you (nothing about a company is knowable from a post that
+   does not say it).
+A degree that is only *expected* is written as "student (degree expected ...)", never "graduate".
+A profile with few matching bullets gives a short letter and says so; nothing is added to pad it.
+
+**Expected salary field.** Your **Expected Salary** in Career Preferences against the post's stated
+pay: it suggests the higher of your minimum and the post's own minimum, never above the post's
+maximum, and says plainly when the post's ceiling is below your minimum or pay is unstated. With no
+expected salary set it offers no figure at all. Job Analysis also has **Sort: highest salary**.
+
+**Tailoring report.** Keywords added (only what you pressed Add for), **important gaps** (must-haves not
+in your profile, with `3+ yrs` where the post quantifies it, and any Education, Experience,
+Location or Salary gap), and an estimated match before and after. That match is keyword coverage of
+your resume, not any employer's score.
+
+**Checklist and documents.** The checklist ticks itself: resume, cover letter (needed only if the post
+asks), email, recruiter message, application link or email address, the deadline (warns if passed),
+documents the post names (photograph, NID, transcripts, experience certificate, ...), and whether every
+**[EDIT THIS]** is filled in.
+
+**Also changed.** Your resume now lists the most relevant experience first. **Education** now says
+*partial* when a degree meets the level but not the named field: a CSE bachelor's does not meet
+"Bachelor degree in Business Administration", and the panel no longer says it does. "Multi-tasking" is
+now recognised as the multitasking skill.
+
+**Not done, on purpose.** It does not rewrite bullets into action-task-result form, and it does not
+enforce a page count; both would mean inventing or trimming facts without you.
+
 ## Your rules, and what they do
 
 From `config/search.yml` and `config/profile.json`:
@@ -519,13 +568,14 @@ feed keeps flowing while you fix the selectors.
 | `backend/dedupe.py` | fingerprint, URL and near-match merging |
 | `backend/scoring.py`, `scoring.js` | the match score (same maths in both languages, tested against each other) and your rules |
 | `backend/health.py` | notices a source that has quietly stopped returning jobs |
+| `applypack.js` | builds the Application Pack (cover letter, email, recruiter message, salary suggestion, checklist, tailoring report) from your profile and the post; never sends anything (runs in the browser, tested under Node) |
 | `keywords.js` | reads a job post for recruiter keywords in any field, tells a bare mention from a quantified requirement, and builds the eleven-group Job Requirements comparison; you choose which keywords go on the resume (runs in the browser, tested under Node) |
 | `config/manual_sites.json` | the boards you check by hand, shown in the dashboard's Manual Sites tab |
 | `backend/store.py` | the feed and the ledger of what you have already decided |
 | `backend/notify.py` | GitHub issue, SMTP digest and webhook |
 | `web/` | approval queue and the sync shim for the dashboard |
 | `tools/` | form-filling helpers |
-| `tests/` | 185+ tests, run with `pytest -q` (`tests/js/` holds the ones for the browser code, run by Node) |
+| `tests/` | 190+ tests, run with `pytest -q` (`tests/js/` holds the ones for the browser code, run by Node) |
 
 ---
 

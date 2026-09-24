@@ -22,6 +22,7 @@ body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",san
 <script src="feed-sync.js"></script>
 <script src="scoring.js"></script>
 <script src="keywords.js"></script>
+<script src="applypack.js"></script>
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -297,6 +298,7 @@ function App(){
  const exportJobs=()=>{const rows=[["Title","Company","Category","Location","Match","Status","Source","URL"],...jobs.map(j=>{const a=analyzeJob(j,profile);return[j.title,j.company,j.category,j.location,a.score,j.status,j.source,j.url]})];download("careerpilot-jobs.csv",rows.map(r=>r.map(csvEscape).join(",")).join("\n"),"text/csv")};
  const importProfile=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{setProfile(migrateProfile(JSON.parse(r.result)));notify("Profile imported.");}catch{alert("Invalid profile file.");}};r.readAsText(f)};
  const PRI_RANK={A:0,B:1,C:2};
+ const salaryTop=j=>j.salaryMax??j.salaryMin??-1;      // pay not stated sorts last
  const scoreOf=j=>analyzeJob(j,profile).score;
  const sourceOf=j=>j.source||"Added by hand";
  const categoryOptions=[...new Set(jobs.map(j=>j.category).filter(Boolean))].sort();
@@ -309,6 +311,7 @@ function App(){
   .sort((x,y)=>sortBy==="newest"?(y.createdAt||"").localeCompare(x.createdAt||"")
    :sortBy==="deadline"?(x.deadline||"9999").localeCompare(y.deadline||"9999")
    :sortBy==="priority"?((PRI_RANK[x.priority]??3)-(PRI_RANK[y.priority]??3))||(scoreOf(y)-scoreOf(x))
+   :sortBy==="salary"?(salaryTop(y)-salaryTop(x))||(scoreOf(y)-scoreOf(x))
    :(scoreOf(y)-scoreOf(x)));
  const strongBar=(profile.preferences&&profile.preferences.strongMatch)||75;
  const nav=[["dashboard","Dashboard"],["profile","Master Profile"],["preferences","Career Preferences"],["add","Add Job"],["jobs","Job Analysis"],["manual","Manual Sites"],["tracker","Tracker"]];
@@ -355,7 +358,7 @@ function App(){
      <select aria-label="Filter by category" value={fCat} onChange={e=>setFCat(e.target.value)} className="bg-slate-900 border border-slate-700 rounded px-2 py-2"><option value="all">All categories</option>{categoryOptions.map(c=><option key={c} value={c}>{c}</option>)}</select>
      <select aria-label="Filter by source" value={fSrc} onChange={e=>setFSrc(e.target.value)} className="bg-slate-900 border border-slate-700 rounded px-2 py-2"><option value="all">All sources</option>{sourceOptions.map(s=><option key={s} value={s}>{s}</option>)}</select>
      <select aria-label="Filter by priority" value={fPri} onChange={e=>setFPri(e.target.value)} className="bg-slate-900 border border-slate-700 rounded px-2 py-2"><option value="all">Any priority</option><option value="A">A: strong</option><option value="B">B: worth a look</option><option value="C">C: read the note first</option></select>
-     <select aria-label="Sort jobs" value={sortBy} onChange={e=>setSortBy(e.target.value)} className="bg-slate-900 border border-slate-700 rounded px-2 py-2"><option value="best">Sort: best match</option><option value="priority">Sort: priority</option><option value="newest">Sort: newest</option><option value="deadline">Sort: deadline soonest</option></select>
+     <select aria-label="Sort jobs" value={sortBy} onChange={e=>setSortBy(e.target.value)} className="bg-slate-900 border border-slate-700 rounded px-2 py-2"><option value="best">Sort: best match</option><option value="priority">Sort: priority</option><option value="newest">Sort: newest</option><option value="deadline">Sort: deadline soonest</option><option value="salary">Sort: highest salary</option></select>
      <span className="text-slate-500" data-testid="job-count">{visibleJobs.length} of {jobs.length} jobs</span>
      {(fCat!=="all"||fSrc!=="all"||fPri!=="all"||search)&&<button onClick={()=>{setFCat("all");setFSrc("all");setFPri("all");setSearch("")}} className="text-cyan-400 underline">Clear filters</button>}
     </div>
@@ -582,7 +585,9 @@ function ResumePanel({job,p,updateJob,notify}){
  const keyItems=addedKw.map(k=>k.display);
  const skillRows=placeKeywords(p.skills,addedKw);
 
- const exp=[...p.experience].map(e=>({...e,bullets:[...e.bullets].filter(Boolean).sort((x,y)=>scoreBullet(y,view,found)-scoreBullet(x,view,found))}));
+ // Most relevant experience first (by how many of the post's keywords each entry holds), and within
+ // each entry the most relevant bullets first.
+ const exp=rankExperience(p.experience,found).map(e=>({...e,bullets:[...e.bullets].filter(Boolean).sort((x,y)=>scoreBullet(y,view,found)-scoreBullet(x,view,found))}));
  const projects=[...p.projects].sort((x,y)=>projectScore(y,strategy,view,found)-projectScore(x,strategy,view,found)).slice(0,3);
  const autoSummary=strategy==="General"?generalSummary(p,job,keyItems):summaryFor(strategy);
  const autoHeadline=p.personal.headline||(strategy==="General"?job.title:cfg.headline);
@@ -615,6 +620,16 @@ function ResumePanel({job,p,updateJob,notify}){
  // How much of the post's keyword list the finished resume contains, with and without your chosen keywords.
  const coverBefore=keywordCoverage(kws,plainText(p.skills));
  const coverNow=keywordCoverage(kws,plainText(skillRows));
+ // Application Pack: built from the same keywords, requirements and Add choices as everything above,
+ // saved per job only where you edit it, so a fresh choice or a new post regenerates the rest.
+ const pack=buildApplicationPack({profile:p,job,kws,addedKw,text:jd,requirements,coverBefore,coverNow,score:a.score});
+ const apSaved=job.applicationPack||{};
+ const setAp=patch=>updateJob(job.id,{applicationPack:{...apSaved,...patch}});
+ const packTexts={
+  coverLetter:apSaved.coverLetter!=null?apSaved.coverLetter:pack.coverLetter.text,
+  email:apSaved.email!=null?apSaved.email:pack.email.text,
+  recruiter:apSaved.recruiter!=null?apSaved.recruiter:pack.recruiter.text
+ };
  const downloadTxt=()=>download(`${fileBase()}.txt`,makeText());
 
  const downloadPDF=()=>{
@@ -762,6 +777,7 @@ function ResumePanel({job,p,updateJob,notify}){
     <ResumeSection title="EDUCATION">{p.education.map((e,i)=><div key={i} className="mb-2"><div className="flex justify-between text-[10.5px]"><b>{e.degree}</b><span>{e.date}</span></div><p className="text-[10px] leading-4">{[e.institution,e.score].filter(Boolean).join(" | ")}</p></div>)}</ResumeSection>
     {refs.length>0&&<ResumeSection title="REFERENCES"><div className="grid grid-cols-2 gap-4">{refs.map((r,i)=><div key={i} className="text-[10px] leading-4"><p className="font-bold text-[10.5px]">{r.name}</p><p>{r.title}</p><p>{[r.email,r.phone].filter(Boolean).join(" | ")}</p></div>)}</div></ResumeSection>}
   </div>
+  <ApplicationPack job={job} pack={pack} texts={packTexts} saved={apSaved} setAp={setAp} notify={notify}/>
   <div className="no-print flex flex-wrap gap-2 justify-end"><button onClick={()=>setStatus("Saved")} className="bg-slate-800 px-3 py-2 rounded text-xs">Save</button><button onClick={()=>setStatus("Awaiting Approval")} className="bg-amber-600 px-3 py-2 rounded text-xs">Send to Approval</button><button onClick={()=>setStatus("Applied")} className="bg-emerald-600 px-3 py-2 rounded text-xs">Mark Applied</button>{job.url&&<a href={job.url} target="_blank" rel="noopener" className="bg-cyan-700 px-3 py-2 rounded text-xs">Open Job</a>}</div>
  </section>
 }
@@ -915,6 +931,77 @@ function KeywordPreview({title,company,text,p}){
   <p className="text-sm"><b>{kws.length} recruiter keywords</b> found in this post, <span className="text-emerald-300">{mine} already in your profile</span>. After adding the job, open its resume and press Add for the ones you want on it.</p>
   {KW_TIERS.map(([tier,label])=>{const list=kws.filter(k=>k.tier===tier);return list.length?<div key={tier}><p className="text-xs text-slate-400">{label} ({list.length})</p><div className="flex flex-wrap gap-1.5 mt-1">{list.slice(0,18).map(k=><KeywordPill key={k.key} k={k}/>)}{list.length>18&&<span className="text-[11px] text-slate-500 self-center">+{list.length-18} more</span>}</div></div>:null})}
   <KeywordLegend/>
+ </div>
+}
+/* ---- Application Pack (generation lives in applypack.js). Nothing here sends anything anywhere. ---- */
+function fallbackCopy(text,done){
+ const t=document.createElement("textarea");t.value=text;t.style.position="fixed";t.style.opacity="0";
+ document.body.appendChild(t);t.select();
+ try{document.execCommand("copy");done()}catch(e){}
+ document.body.removeChild(t);
+}
+function copyText(text,notify,label){
+ const done=()=>notify&&notify((label||"Text")+" copied.");
+ if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(text).then(done,()=>fallbackCopy(text,done));
+ else fallbackCopy(text,done);
+}
+const PACK_STATE={done:{icon:"✓",cls:"text-emerald-300"},todo:{icon:"○",cls:"text-amber-300"},info:{icon:"•",cls:"text-slate-400"},warn:{icon:"!",cls:"text-red-300"}};
+const packBtn="px-2.5 py-1 rounded text-[11px] border border-slate-700 bg-slate-900 hover:bg-slate-800 text-slate-200";
+
+function PackPart({id,label,generated,value,setValue,resetValue,counter,rows,notify}){
+ const edited=value!==generated;
+ const left=apCountPlaceholders(value);
+ return <div data-testid={"pack-"+id} className="space-y-1.5">
+  <div className="flex flex-wrap items-center justify-between gap-2">
+   <p className="text-xs"><b className="text-slate-200">{label}</b> <span className={"ml-1 "+counter.cls} data-testid={"pack-"+id+"-count"}>{counter.text}</span>{left>0&&<span className="ml-2 text-amber-300" data-testid={"pack-"+id+"-left"}>{left} [EDIT THIS] left</span>}{edited&&<span className="ml-2 text-cyan-300" data-testid={"pack-"+id+"-edited"}>edited</span>}</p>
+   <div className="flex gap-1.5">
+    <button type="button" data-testid={"pack-"+id+"-copy"} onClick={()=>copyText(value,notify,label)} className={packBtn}>Copy</button>
+    {edited&&<button type="button" data-testid={"pack-"+id+"-reset"} onClick={resetValue} className={packBtn}>Reset to generated</button>}
+   </div>
+  </div>
+  <textarea data-testid={"pack-"+id+"-text"} aria-label={label} rows={rows} value={value} onChange={e=>setValue(e.target.value)} className="w-full bg-slate-950 border border-slate-700 rounded p-3 text-xs leading-5"/>
+ </div>
+}
+function ApplicationPack({job,pack,texts,saved,setAp,notify}){
+ const rep=pack.report;
+ const bodyWords=coverLetterBodyWords(texts.coverLetter);
+ const okWords=bodyWords>=120&&bodyWords<=180;
+ const recChars=texts.recruiter.length;
+ const checklist=buildChecklist({job,texts,docs:pack.docs,filename:pack.filename,needsCoverLetter:pack.needsCoverLetter,applyEmail:pack.applyEmail});
+ const reset=key=>()=>setAp({[key]:undefined});
+ return <div className="no-print bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-5" data-testid="application-pack">
+  <div><h3 className="font-semibold">Application Pack</h3>
+   <p className="text-xs text-cyan-400 mt-0.5">{job.title}{job.company?" · "+job.company:""}</p>
+   <p className="text-xs text-slate-500 mt-1">Built from your Master Profile and this post. Every line is your own fact, a quote from the post, or an <b className="text-slate-300">[EDIT THIS]</b> where only you know the answer. <b className="text-slate-300">Nothing is sent for you</b>: read it, copy it, send it yourself.</p></div>
+
+  <div className="bg-slate-950 rounded-lg p-3 space-y-2 text-xs" data-testid="pack-report">
+   <p><b className="text-slate-200">Keywords added</b> {rep.keywordsAdded.length?<span data-testid="pack-added" className="text-emerald-300">{rep.keywordsAdded.join(", ")}</span>:<span className="text-slate-500" data-testid="pack-added">none yet: press Add in Recruiter Keywords above</span>}</p>
+   <div><p><b className="text-slate-200">Important gaps</b></p>{rep.gaps.length?<ul className="list-disc ml-4 mt-1 text-amber-200 space-y-0.5" data-testid="pack-gaps">{rep.gaps.map((g,i)=><li key={i}>{g}</li>)}</ul>:<p className="text-slate-500 mt-1" data-testid="pack-gaps">None found in the requirements this post states.</p>}</div>
+   <p data-testid="pack-match"><b className="text-slate-200">Estimated match</b> before <b>{rep.matchBefore}/100</b> → after <b className="text-cyan-300">{rep.matchAfter}/100</b> <span className="text-slate-500">(keyword coverage of your resume, not an employer's score)</span>{rep.roleFit!=null&&<span className="text-slate-400"> · role fit {rep.roleFit}/100</span>}</p>
+  </div>
+
+  <div data-testid="pack-salary" className="text-xs">
+   <p><b className="text-slate-200">Expected salary field</b> {pack.salary.amount!=null&&<><b className="text-cyan-300" data-testid="pack-salary-amount">{pack.salary.amount.toLocaleString("en-US")} Tk</b> <button type="button" data-testid="pack-salary-copy" onClick={()=>copyText(String(pack.salary.amount),notify,"Salary")} className={packBtn+" ml-1"}>Copy</button></>}</p>
+   <p className="text-slate-400 mt-0.5" data-testid="pack-salary-note">{pack.salary.note}</p>
+  </div>
+
+  <PackPart id="cover" label="Cover letter" generated={pack.coverLetter.text} value={texts.coverLetter} setValue={v=>setAp({coverLetter:v})} resetValue={reset("coverLetter")} rows={17} notify={notify}
+   counter={{text:`${bodyWords} words (target 120-180)`,cls:okWords?"text-emerald-300":"text-amber-300"}}/>
+  {pack.coverLetter.notes.length>0&&texts.coverLetter===pack.coverLetter.text&&<ul className="text-[11px] text-slate-500 list-disc ml-4" data-testid="pack-cover-notes">{pack.coverLetter.notes.map((n,i)=><li key={i}>{n}</li>)}</ul>}
+  <PackPart id="email" label="Email draft" generated={pack.email.text} value={texts.email} setValue={v=>setAp({email:v})} resetValue={reset("email")} rows={15} notify={notify}
+   counter={{text:`${apWords(texts.email)} words`,cls:"text-slate-400"}}/>
+  <PackPart id="recruiter" label="Recruiter / LinkedIn message" generated={pack.recruiter.text} value={texts.recruiter} setValue={v=>setAp({recruiter:v})} resetValue={reset("recruiter")} rows={4} notify={notify}
+   counter={{text:`${recChars} of 300 characters`,cls:recChars<=300?"text-emerald-300":"text-amber-300"}}/>
+
+  <div data-testid="pack-checklist"><p className="text-xs"><b className="text-slate-200">Checklist</b></p>
+   <ul className="mt-1.5 space-y-1">{checklist.map(i=>{const s=PACK_STATE[i.state];return <li key={i.key} data-testid={"check-"+i.key} data-state={i.state} className="text-xs flex gap-2 items-start"><span className={"w-4 shrink-0 text-center "+s.cls}>{s.icon}</span><span><span className="text-slate-200">{i.label}</span> <span className="text-slate-500">{i.note}</span></span></li>})}</ul>
+  </div>
+
+  <div className="flex flex-wrap items-center gap-2 text-xs" data-testid="pack-file">
+   <span className="text-slate-400">Suggested file name</span><code className="bg-slate-950 border border-slate-800 rounded px-2 py-1 text-slate-200" data-testid="pack-filename">{pack.filename}</code>
+   <button type="button" data-testid="pack-filename-copy" onClick={()=>copyText(pack.filename,notify,"File name")} className={packBtn}>Copy</button>
+   {job.url&&<a href={job.url} target="_blank" rel="noopener noreferrer" className={packBtn+" text-cyan-300"} data-testid="pack-open">Open application page</a>}
+  </div>
  </div>
 }
 function ResumeSection({title,children}){return <section className="mb-4"><h2 className="text-[10.5px] tracking-widest font-bold border-b border-black pb-1 mb-2">{title}</h2>{children}</section>}

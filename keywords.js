@@ -559,7 +559,7 @@ Problem Solving|Troubleshooting Skills
 Analytical Skills|Analytical Thinking|Analytical Ability|Analytical Mindset
 Critical Thinking
 Time Management
-Multitasking
+Multitasking|Multi Tasking|Multiple Priorities|Multiple Projects|Multiple Tasks
 Attention to Detail|Detail Oriented|Detail Orientation
 Adaptability|Adaptable
 Self Motivated|Self Starter|Proactive|Initiative
@@ -1179,12 +1179,27 @@ function extractExperienceText(text,title,job){
 // One comparison result: never a claim the profile did not earn.
 const reqState=(state,note)=>({state,note});
 
+// A level ("Bachelor's degree") is not a field ("Business Administration"). A post that asks for both
+// is not satisfied by a degree that only meets the level: a CSE bachelor's does not meet "Bachelor's
+// degree in Business Administration", and saying it did would be false reassurance. That case is
+// "partial": the level fits, the named field does not.
+const KW_DEGREE_LEVELS=new Set(["bachelor's degree","master's degree","diploma","ssc","hsc"]);
 function compareEducation(items){
  if(!items.length)return null;
- const have=items.filter(k=>k.evidence==="skills");
- return {items,compare:have.length
-  ?reqState("match",`Your ${have[0].display} in your Master Profile satisfies this.`)
-  :reqState("gap",`No degree in your Master Profile matches ${items.map(k=>k.display).join(" / ")}.`)};
+ const levels=items.filter(k=>KW_DEGREE_LEVELS.has(k.key)),fields=items.filter(k=>!KW_DEGREE_LEVELS.has(k.key));
+ const haveLevel=levels.filter(k=>k.evidence==="skills"),haveField=fields.filter(k=>k.evidence==="skills");
+ const names=list=>list.map(k=>k.display).join(" / ");
+ let compare;
+ if(!fields.length)compare=haveLevel.length
+  ?reqState("match",`Your ${haveLevel[0].display} in your Master Profile satisfies this.`)
+  :reqState("gap",`No degree in your Master Profile matches ${names(levels)}.`);
+ else if(haveField.length)compare=(!levels.length||haveLevel.length)
+  ?reqState("match",`Your ${names(haveField)} degree in your Master Profile satisfies this.`)
+  :reqState("partial",`Your ${names(haveField)} degree fits the field, but not the level the post asks for (${names(levels)}).`);
+ else compare=haveLevel.length
+  ?reqState("partial",`Your degree level fits (${haveLevel[0].display}), but none of the named fields (${names(fields)}) matches your Master Profile.`)
+  :reqState("gap",`No degree in your Master Profile matches ${names(items)}.`);
+ return {items,compare};
 }
 
 function compareExperience(text,years){

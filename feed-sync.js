@@ -19,7 +19,7 @@
   const ACTIVE_STATUSES = new Set(["Saved", "Awaiting Approval", "Applied", "Interview", "Offer"]);
   // Things only this browser knows about a job. The feed never has them, so a sync that rebuilt each
   // job from the feed alone would silently throw away your resume edits and keyword choices.
-  const LOCAL_FIELDS = ["selectedStrategy", "resumeOverrides", "resumeKeywords", "pastedDescription"];
+  const LOCAL_FIELDS = ["selectedStrategy", "resumeOverrides", "resumeKeywords", "pastedDescription", "applicationPack"];
 
   const read = (key, fallback) => {
     try { return JSON.parse(localStorage.getItem(key) || fallback); } catch { return JSON.parse(fallback); }
