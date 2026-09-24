@@ -26,6 +26,7 @@ body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",san
 <script src="resumedoc.js"></script>
 <script src="resumefiles.js"></script>
 <script src="versions.js"></script>
+<script src="privatedata.js"></script>
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -48,6 +49,14 @@ const JOB_KEY="careerpilot_bd_v2_jobs";
 // Recorded resume versions hold your phone, email and the exact wording you sent, so unlike the job
 // list they are encrypted with the vault password, under their own key ({iv,data}).
 const VERSIONS_KEY="careerpilot_bd_v2_versions";
+// Your own words for one job (the hand-edited resume text and the edited cover letter, email and recruiter
+// message, privatedata.js) get the same treatment, keyed by job id. The job record itself stays unencrypted.
+const PRIVATE_KEY="careerpilot_bd_v2_private";
+const NO_VERSIONS=[];
+const NO_PRIVATE={};
+const NO_PRIV_ENTRY={};
+const VERSIONS_UNREADABLE="Your recorded versions could not be read, so nothing is shown and nothing will be overwritten. They are still stored in this browser; restoring an export will bring them back, or you can start fresh (the unreadable copy is kept aside).";
+const PRIVATE_UNREADABLE="Your saved resume and pack edits could not be read, so the resume and pack show their generated text and edits made now will not be saved. The unreadable copy is still stored in this browser; you can start fresh (it is kept aside) to make edits stick again.";
 
 /* Password-derived encryption for the profile only (name, contact links,
    resume content). Job listings stay unencrypted so review.html keeps
@@ -70,6 +79,60 @@ async function encryptJSON(key,obj){
 async function decryptJSON(key,ivB64,dataB64){
  const plain=await crypto.subtle.decrypt({name:"AES-GCM",iv:b64ToBuf(ivB64)},key,b64ToBuf(dataB64));
  return JSON.parse(new TextDecoder().decode(plain));
+}
+
+/* A small encrypted store kept in localStorage as {iv,data} and opened with the vault key: the recorded
+   versions and your private per-job edits use it. Two rules keep it safe. It is never written until it has
+   been opened successfully, so a copy that cannot be read is never replaced by an empty one. And a copy
+   that cannot be read is kept aside (never deleted) before anything replaces it. */
+async function readVaultStore(key,storageKey,normalize,empty){
+ try{
+  const raw=localStorage.getItem(storageKey);
+  if(!raw)return {value:empty,ready:true};
+  const s=JSON.parse(raw);
+  return {value:normalize(await decryptJSON(key,s.iv,s.data)),ready:true};
+ }catch(e){return {value:empty,ready:false}}
+}
+// Moves a stored copy to <key>_unreadable (or a dated name if that is taken). False if it could not be kept.
+function stashUnreadable(storageKey){
+ try{
+  const raw=localStorage.getItem(storageKey);
+  if(raw==null)return true;
+  let name=storageKey+"_unreadable";
+  const taken=localStorage.getItem(name);
+  if(taken!=null&&taken!==raw)name+="_"+Date.now();
+  localStorage.setItem(name,raw);
+  localStorage.removeItem(storageKey);
+  return true;
+ }catch(e){return false}
+}
+function useVaultStore(storageKey,cryptoKey,empty,noun,advice,notify){
+ const [value,setValue]=useState(empty);
+ const [ready,setReady]=useState(false);
+ const [error,setError]=useState("");
+ const seq=useRef(0);
+ useEffect(()=>{
+  if(!cryptoKey||!ready)return;
+  const n=++seq.current;
+  (async()=>{
+   try{
+    const enc=await encryptJSON(cryptoKey,value);
+    if(n!==seq.current)return;          // a newer save is already on its way
+    localStorage.setItem(storageKey,JSON.stringify(enc));
+    setError("");
+   }catch(e){
+    const m=`Could not save your ${noun} (${e&&e.name==="QuotaExceededError"?"browser storage is full":"storage error"}). ${advice}`;
+    setError(m);notify(m);
+   }
+  })();
+ },[value,cryptoKey,ready]);
+ return {
+  value,setValue,ready,error,
+  open:o=>{setValue(o.value);setReady(o.ready);setError(o.error||"")},
+  close:()=>{setValue(empty);setReady(false);setError("")},
+  // Give up on an unreadable copy: keep it aside, then start empty and let saving resume.
+  startFresh:()=>{if(!stashUnreadable(storageKey))return false;setValue(empty);setReady(true);setError("");return true}
+ };
 }
 
 const DEFAULT_PROFILE={
@@ -242,14 +305,14 @@ function App(){
  const [fSrc,setFSrc]=useState("all");
  const [fPri,setFPri]=useState("all");
  const [sortBy,setSortBy]=useState("best");
- // Recorded resume versions (versions.js). They live only in memory while the vault is unlocked and are
- // written back encrypted. versionsReady stays false if the stored copy could not be read, so a failed
- // read can never be overwritten by an empty list.
- const [versions,setVersions]=useState([]);
- const [versionsReady,setVersionsReady]=useState(false);
- const [versionsError,setVersionsError]=useState("");
  const [openVersion,setOpenVersion]=useState(null);
- const versionsSeq=useRef(0);
+ const notify=m=>{setToast(m);setTimeout(()=>setToast(""),3500)};
+ // Two encrypted stores, both opened at unlock and written back encrypted (see useVaultStore):
+ // recorded resume versions (versions.js) and your private per-job edits (privatedata.js).
+ const vStore=useVaultStore(VERSIONS_KEY,cryptoKey,NO_VERSIONS,"recorded versions","Export them now, then delete old ones, so nothing is lost.",notify);
+ const pStore=useVaultStore(PRIVATE_KEY,cryptoKey,NO_PRIVATE,"saved resume and pack edits","Free some space by deleting old recorded versions or jobs. Until then, edits made now are held only until you lock or close this page.",notify);
+ const versions=vStore.value,setVersions=vStore.setValue,versionsReady=vStore.ready,versionsError=vStore.error;
+ const privateData=pStore.value;
 
  useEffect(()=>{
   if(!cryptoKey||!profile)return;
@@ -259,23 +322,26 @@ function App(){
    localStorage.setItem(VAULT_KEY,JSON.stringify({...vault,iv:enc.iv,data:enc.data}));
   })();
  },[profile,cryptoKey]);
- useEffect(()=>{
-  if(!cryptoKey||!versionsReady)return;
-  const n=++versionsSeq.current;
-  (async()=>{
-   try{
-    const enc=await encryptJSON(cryptoKey,versions);
-    if(n!==versionsSeq.current)return;          // a newer save is already on its way
-    localStorage.setItem(VERSIONS_KEY,JSON.stringify(enc));
-    setVersionsError("");
-   }catch(e){
-    const m="Could not save your recorded versions ("+(e&&e.name==="QuotaExceededError"?"browser storage is full; export them and delete old ones":"storage error")+"). Export them now so nothing is lost.";
-    setVersionsError(m);notify(m);
-   }
-  })();
- },[versions,cryptoKey,versionsReady]);
  useEffect(()=>localStorage.setItem(JOB_KEY,JSON.stringify(jobs)),[jobs]);
- const notify=m=>{setToast(m);setTimeout(()=>setToast(""),3500)};
+ // Opens the private store and moves what older versions of this page left on the job records into it.
+ // The plain copy is removed from the job list only after the encrypted copy is safely written, so a
+ // failed write never loses an edit; in that case the plain copy stays and the move is tried again next time.
+ const openPrivateStore=async key=>{
+  const r=await readVaultStore(key,PRIVATE_KEY,normalizePrivate,NO_PRIVATE);
+  let data=r.value,error=r.ready?"":PRIVATE_UNREADABLE,moved=0;
+  if(r.ready){
+   const legacy=splitPrivate(jobs);
+   if(legacy.count){
+    data=mergePrivate(data,legacy.moved);
+    try{
+     localStorage.setItem(PRIVATE_KEY,JSON.stringify(await encryptJSON(key,data)));
+     setJobs(legacy.jobs);moved=legacy.count;
+    }catch(e){error="Your saved resume and pack edits could not be moved into the encrypted vault (browser storage may be full). They are still where they were and will be moved the next time you unlock.";}
+   }
+  }
+  return {value:data,ready:r.ready,error,moved};
+ };
+ const announceMove=n=>{if(n)notify(`Moved your saved resume and pack edits for ${n} job${n===1?"":"s"} into the encrypted vault.`)};
  const createVault=async password=>{
   const {key,saltB64}=await deriveKey(password);
   const existing=migrateProfile(JSON.parse(localStorage.getItem(STORAGE_KEY)||"null"));
@@ -283,9 +349,14 @@ function App(){
   const enc=await encryptJSON(key,initial);
   localStorage.setItem(VAULT_KEY,JSON.stringify({salt:saltB64,iv:enc.iv,data:enc.data}));
   localStorage.removeItem(STORAGE_KEY);
-  setVersions([]);setVersionsError("");setVersionsReady(true);
+  // A brand new vault has a new key, so stores left by an old one cannot be read; keep them aside.
+  stashUnreadable(VERSIONS_KEY);stashUnreadable(PRIVATE_KEY);
+  vStore.open({value:NO_VERSIONS,ready:true,error:""});
+  const pr=await openPrivateStore(key);
+  pStore.open(pr);
   setCryptoKey(key);setProfile(initial);setVaultStatus("unlocked");
   if(existing)notify("Existing profile data in this browser was encrypted with your new password.");
+  else announceMove(pr.moved);
  };
  const unlockVault=async password=>{
   setLockError("");
@@ -293,17 +364,16 @@ function App(){
    const vault=JSON.parse(localStorage.getItem(VAULT_KEY));
    const {key}=await deriveKey(password,vault.salt);
    const decrypted=await decryptJSON(key,vault.iv,vault.data);
-   // The password is right (the profile decrypted). Read the recorded versions with the same key.
-   let loaded=[],ready=true,vError="";
-   try{
-    const raw=localStorage.getItem(VERSIONS_KEY);
-    if(raw){const s=JSON.parse(raw);loaded=normalizeVersions(await decryptJSON(key,s.iv,s.data));}
-   }catch(e){ready=false;vError="Your recorded versions could not be read, so nothing is shown and nothing will be overwritten. They are still stored in this browser; restoring an export will bring them back.";}
-   setVersions(loaded);setVersionsReady(ready);setVersionsError(vError);
+   // The password is right (the profile decrypted). Open the other two stores with the same key.
+   const v=await readVaultStore(key,VERSIONS_KEY,normalizeVersions,NO_VERSIONS);
+   vStore.open({value:v.value,ready:v.ready,error:v.ready?"":VERSIONS_UNREADABLE});
+   const pr=await openPrivateStore(key);
+   pStore.open(pr);
    setCryptoKey(key);setProfile(migrateProfile(decrypted)||DEFAULT_PROFILE);setVaultStatus("unlocked");
+   announceMove(pr.moved);
   }catch(e){setLockError("Incorrect password.");}
  };
- const lockVault=()=>{setCryptoKey(null);setProfile(null);setVersions([]);setVersionsReady(false);setVersionsError("");setOpenVersion(null);setVaultStatus("locked");setTab("dashboard");};
+ const lockVault=()=>{setCryptoKey(null);setProfile(null);vStore.close();pStore.close();setOpenVersion(null);setVaultStatus("locked");setTab("dashboard");};
  // Hooks must run unconditionally on every render, so this stays above the
  // early return below (which only happens while locked/setting up) — moving
  // it after that return caused React to see a different hook count between
@@ -334,14 +404,13 @@ function App(){
  const updateVersion=(id,patch)=>setVersions(prev=>prev.map(v=>v.id===id?{...v,...patch,updatedAt:new Date().toISOString()}:v));
  const deleteVersion=id=>setVersions(prev=>prev.filter(v=>v.id!==id));
  const importVersions=list=>{
-  if(!versionsReady){
-   // Restoring an export is the way out of an unreadable store: keep the unreadable copy aside first,
-   // then let saving resume.
-   try{const raw=localStorage.getItem(VERSIONS_KEY);if(raw)localStorage.setItem(VERSIONS_KEY+"_unreadable",raw)}catch(e){}
-   setVersionsReady(true);setVersionsError("");
-  }
+  // Restoring an export is one way out of an unreadable store: keep the unreadable copy aside, then let saving resume.
+  if(!versionsReady&&!vStore.startFresh())return {added:0,total:0,blocked:true};
   const before=versions.length;const merged=mergeVersions(versions,list);setVersions(merged);return {added:merged.length-before,total:merged.length};
  };
+ // Your own words for one job live in the encrypted private store, never on the job record.
+ const setPrivateFor=(jobId,patch)=>pStore.setValue(prev=>withPrivate(prev,jobId,patch));
+ const deleteJob=j=>{setJobs(jobs.filter(x=>x.id!==j.id));pStore.setValue(prev=>dropPrivate(prev,j.id))};
  const openApplications=id=>{setOpenVersion(id||null);setTab("applications")};
  const saveProfileJSON=()=>{
   try{const obj=migrateProfile(JSON.parse(profileText));setProfile(obj);setEditing(false);notify("Profile saved successfully.");}
@@ -421,16 +490,16 @@ function App(){
      <span className="text-slate-500" data-testid="job-count">{visibleJobs.length} of {jobs.length} jobs</span>
      {(fCat!=="all"||fSrc!=="all"||fPri!=="all"||search)&&<button onClick={()=>{setFCat("all");setFSrc("all");setFPri("all");setSearch("")}} className="text-cyan-400 underline">Clear filters</button>}
     </div>
-    <div className="grid lg:grid-cols-2 gap-4">{visibleJobs.map(j=>{const a=analyzeJob(j,profile);const meta=[sourceOf(j),j.salaryText,j.deadline?`Apply by ${j.deadline}`:null].filter(Boolean).join(" · ");return <div key={j.id} className="bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between gap-4"><div><h3 className="font-bold">{j.priority&&<span title="Priority from the discovery pipeline" className={"mr-2 text-[10px] px-2 py-0.5 rounded-full align-middle "+(j.priority==="A"?"bg-emerald-900 text-emerald-300":j.priority==="B"?"bg-cyan-900 text-cyan-300":"bg-slate-800 text-slate-400")}>{j.priority}</span>}{j.title}</h3><p className="text-sm text-cyan-400">{j.company} · {j.category}</p><p className="text-xs text-slate-400">{j.location}</p><p className="text-xs text-slate-500 mt-1">{meta}</p>{j.gateNotes&&j.gateNotes.length>0&&<p className="text-xs text-amber-300 mt-1">{j.gateNotes[0]}</p>}</div><div className="text-right"><p className="text-3xl font-bold text-cyan-400">{a.score}%</p><p className="text-[10px] text-slate-400">COMPATIBILITY</p></div></div><div className="grid grid-cols-3 gap-2 text-xs mt-4"><Metric label="Title fit" value={a.titleFit}/><Metric label="Level fit" value={a.levelFit}/><Metric label="Skills" value={a.skillFit}/></div><div className="flex gap-2 mt-4"><button onClick={()=>{setSelected(j);setTab("resume")}} className="bg-cyan-600 px-3 py-2 rounded text-xs">View Analysis & Resume</button>{j.url&&<a href={j.url} target="_blank" rel="noopener noreferrer" className="bg-slate-800 px-3 py-2 rounded text-xs text-cyan-300">Open posting</a>}<button onClick={()=>setJobs(jobs.filter(x=>x.id!==j.id))} className="bg-slate-800 px-3 py-2 rounded text-xs">Delete</button></div></div>})}</div>
+    <div className="grid lg:grid-cols-2 gap-4">{visibleJobs.map(j=>{const a=analyzeJob(j,profile);const meta=[sourceOf(j),j.salaryText,j.deadline?`Apply by ${j.deadline}`:null].filter(Boolean).join(" · ");return <div key={j.id} className="bg-slate-900 border border-slate-800 rounded-xl p-5"><div className="flex justify-between gap-4"><div><h3 className="font-bold">{j.priority&&<span title="Priority from the discovery pipeline" className={"mr-2 text-[10px] px-2 py-0.5 rounded-full align-middle "+(j.priority==="A"?"bg-emerald-900 text-emerald-300":j.priority==="B"?"bg-cyan-900 text-cyan-300":"bg-slate-800 text-slate-400")}>{j.priority}</span>}{j.title}</h3><p className="text-sm text-cyan-400">{j.company} · {j.category}</p><p className="text-xs text-slate-400">{j.location}</p><p className="text-xs text-slate-500 mt-1">{meta}</p>{j.gateNotes&&j.gateNotes.length>0&&<p className="text-xs text-amber-300 mt-1">{j.gateNotes[0]}</p>}</div><div className="text-right"><p className="text-3xl font-bold text-cyan-400">{a.score}%</p><p className="text-[10px] text-slate-400">COMPATIBILITY</p></div></div><div className="grid grid-cols-3 gap-2 text-xs mt-4"><Metric label="Title fit" value={a.titleFit}/><Metric label="Level fit" value={a.levelFit}/><Metric label="Skills" value={a.skillFit}/></div><div className="flex gap-2 mt-4"><button onClick={()=>{setSelected(j);setTab("resume")}} className="bg-cyan-600 px-3 py-2 rounded text-xs">View Analysis & Resume</button>{j.url&&<a href={j.url} target="_blank" rel="noopener noreferrer" className="bg-slate-800 px-3 py-2 rounded text-xs text-cyan-300">Open posting</a>}<button onClick={()=>deleteJob(j)} className="bg-slate-800 px-3 py-2 rounded text-xs">Delete</button></div></div>})}</div>
     {jobs.length>0&&!visibleJobs.length&&<div className="text-slate-400 bg-slate-900 border border-slate-800 rounded-xl p-8 text-center">No jobs match these filters.</div>}
     {!jobs.length&&<div className="text-slate-400 bg-slate-900 border border-slate-800 rounded-xl p-8 text-center">No jobs yet. Add a real job description to begin.</div>}
    </section>}
 
-   {tab==="resume"&&selected&&<ResumePanel key={selected.id} job={selected} p={profile} updateJob={updateJob} notify={notify} versions={versions} recordVersion={recordVersion} openApplications={openApplications}/>}
+   {tab==="resume"&&selected&&<ResumePanel key={selected.id} job={selected} p={profile} updateJob={updateJob} notify={notify} versions={versions} recordVersion={recordVersion} openApplications={openApplications} priv={privateData[selected.id]||NO_PRIV_ENTRY} setPriv={patch=>setPrivateFor(selected.id,patch)} privReady={pStore.ready} privError={pStore.error} onPrivStartFresh={()=>{if(pStore.startFresh())notify("Started fresh. The unreadable copy is kept aside in this browser.");else notify("Could not keep the unreadable copy aside (browser storage is full), so nothing was discarded.")}}/>}
    {tab==="resume"&&!selected&&<div className="text-slate-400">Select a job from Job Analysis first.</div>}
    {tab==="manual"&&<ManualSites p={profile}/>}
    {tab==="tracker"&&<Tracker jobs={jobs} setJobs={setJobs} versions={versions} versionsReady={versionsReady} openApplications={openApplications}/>}
-   {tab==="applications"&&<ApplicationsPanel versions={versions} ready={versionsReady} error={versionsError} jobs={jobs} openId={openVersion} setOpenId={setOpenVersion} onUpdate={updateVersion} onDelete={deleteVersion} onImport={importVersions} openJob={j=>{setSelected(j);setTab("resume")}} notify={notify}/>}
+   {tab==="applications"&&<ApplicationsPanel versions={versions} ready={versionsReady} error={versionsError} onStartFresh={()=>{if(vStore.startFresh())notify("Started fresh. The unreadable copy is kept aside in this browser.");else notify("Could not keep the unreadable copy aside (browser storage is full), so nothing was discarded.")}} jobs={jobs} openId={openVersion} setOpenId={setOpenVersion} onUpdate={updateVersion} onDelete={deleteVersion} onImport={importVersions} openJob={j=>{setSelected(j);setTab("resume")}} notify={notify}/>}
   </main>
   <footer className="no-print text-center text-xs text-slate-500 p-5 border-t border-slate-900">CareerPilot BD · Static GitHub Pages Edition · Your data remains in this browser unless you export it.</footer>
  </div>
@@ -621,7 +690,7 @@ function Preferences({p,setProfile,notify}){
  </section>
 }
 
-function ResumePanel({job,p,updateJob,notify,versions,recordVersion,openApplications}){
+function ResumePanel({job,p,updateJob,notify,versions,recordVersion,openApplications,priv,setPriv,privReady,privError,onPrivStartFresh}){
  // The text the pipeline found, unless a fuller post was pasted in the keyword box below.
  const jd=job.pastedDescription!=null?job.pastedDescription:(job.description||"");
  const view={...job,description:jd};
@@ -655,7 +724,7 @@ function ResumePanel({job,p,updateJob,notify,versions,recordVersion,openApplicat
  const autoProjectsText=projects.map(x=>`${x.name}${x.subtitle?", "+x.subtitle:""}\n${x.bullets.filter(Boolean).map(b=>"• "+b).join("\n")}`).join("\n\n");
  const contact=[p.personal.location,p.personal.phone,p.personal.email,p.personal.linkedin,p.personal.github,p.personal.portfolio].filter(Boolean).join(" | ");
 
- const ov=job.resumeOverrides||null;
+ const ov=priv.resumeOverrides||null;
  const finalHeadline=ov?ov.headline:autoHeadline;
  const finalSummary=ov?ov.summary:autoSummary;
  const finalExperienceText=ov?ov.experienceText:autoExperienceText;
@@ -665,10 +734,10 @@ function ResumePanel({job,p,updateJob,notify,versions,recordVersion,openApplicat
  const [draft,setDraft]=useState(null);
  const enterEdit=()=>{setDraft({headline:finalHeadline||"",summary:finalSummary,experienceText:finalExperienceText,projectsText:finalProjectsText});setEditMode(true)};
  const saveEdit=()=>{
-  updateJob(job.id,{resumeOverrides:{headline:draft.headline,summary:draft.summary,experienceText:draft.experienceText,projectsText:draft.projectsText}});
+  setPriv({resumeOverrides:{headline:draft.headline,summary:draft.summary,experienceText:draft.experienceText,projectsText:draft.projectsText}});
   setEditMode(false);notify("Resume edits saved.");
  };
- const resetToAuto=()=>{updateJob(job.id,{resumeOverrides:null});setEditMode(false);notify("Reverted to the auto-generated resume.")};
+ const resetToAuto=()=>{setPriv({resumeOverrides:null});setEditMode(false);notify("Reverted to the auto-generated resume.")};
 
  // One plain document holds everything the resume shows. The preview, the PDF, the DOCX, the TXT and the
  // version recorded when you apply are all rendered from it, so they cannot disagree.
@@ -680,10 +749,10 @@ function ResumePanel({job,p,updateJob,notify,versions,recordVersion,openApplicat
  const coverBefore=keywordCoverage(kws,resumeDocToText(docFor(p.skills)));
  const coverNow=keywordCoverage(kws,resumeDocToText(doc));
  // Application Pack: built from the same keywords, requirements and Add choices as everything above,
- // saved per job only where you edit it, so a fresh choice or a new post regenerates the rest.
+ // kept (encrypted, per job) only where you edit it, so a fresh choice or a new post regenerates the rest.
  const pack=buildApplicationPack({profile:p,job,kws,addedKw,text:jd,requirements,coverBefore,coverNow,score:a.score});
- const apSaved=job.applicationPack||{};
- const setAp=patch=>updateJob(job.id,{applicationPack:{...apSaved,...patch}});
+ const apSaved=priv.applicationPack||{};
+ const setAp=patch=>setPriv({applicationPack:{...apSaved,...patch}});
  const packTexts={
   coverLetter:apSaved.coverLetter!=null?apSaved.coverLetter:pack.coverLetter.text,
   email:apSaved.email!=null?apSaved.email:pack.email.text,
@@ -713,6 +782,7 @@ function ResumePanel({job,p,updateJob,notify,versions,recordVersion,openApplicat
  const print=()=>window.print();
  const setStatus=status=>{updateJob(job.id,{status,selectedStrategy:strategy});notify(`Status updated to ${status}.`)};
  return <section className="space-y-5">
+  {privError&&<div data-testid="private-error" className="no-print bg-red-950/40 border border-red-800 text-red-200 text-xs rounded-lg p-3 flex flex-wrap items-center gap-3"><span className="flex-1 min-w-[240px]">{privError}</span>{!privReady&&<button data-testid="private-start-fresh" onClick={onPrivStartFresh} className="px-3 py-1.5 rounded bg-red-900 text-white">Start fresh</button>}</div>}
   <div className="flex flex-wrap justify-between gap-3"><div><h2 className="text-xl font-bold">Recruiter-Style ATS Resume{ov&&<span className="text-[10px] text-amber-300 font-normal ml-2">(manually edited)</span>}</h2><p className="text-sm text-cyan-400">{job.title} · {job.company}</p><p className="text-xs text-slate-500 mt-1">One-page, single-column, text-first resume layout.</p></div><div className="no-print flex flex-wrap gap-2"><button onClick={()=>editMode?setEditMode(false):enterEdit()} className="bg-amber-600 px-3 py-2 rounded text-xs">{editMode?"Cancel Edit":"Edit Content"}</button><button onClick={downloadTxt} className="bg-slate-800 px-3 py-2 rounded text-xs">TXT</button><button onClick={downloadPDF} className="bg-cyan-600 px-3 py-2 rounded text-xs">Download PDF</button><button onClick={downloadDOCX} className="bg-blue-600 px-3 py-2 rounded text-xs">Download DOCX</button><button onClick={print} className="bg-slate-800 px-3 py-2 rounded text-xs">Print</button></div></div>
 
   {editMode&&draft&&<div className="no-print bg-slate-900 border border-amber-700 rounded-xl p-5 space-y-3">
@@ -1005,7 +1075,7 @@ function VersionDetail({v,prev,job,onUpdate,openJob,notify}){
  </div>
 }
 
-function ApplicationsPanel({versions,ready,error,jobs,openId,setOpenId,onUpdate,onDelete,onImport,openJob,notify}){
+function ApplicationsPanel({versions,ready,error,onStartFresh,jobs,openId,setOpenId,onUpdate,onDelete,onImport,openJob,notify}){
  const [q,setQ]=useState("");
  const [confirmId,setConfirmId]=useState(null);
  const list=sortNewest(versions).filter(v=>[v.company,v.title,v.fileName,v.strategyLabel,v.keywordsAdded.join(" "),v.note].join(" ").toLowerCase().includes(q.trim().toLowerCase()));
@@ -1023,6 +1093,7 @@ function ApplicationsPanel({versions,ready,error,jobs,openId,setOpenId,onUpdate,
     if(!raw)throw new Error("no versions");
     const valid=normalizeVersions(raw).length;
     const res=onImport(raw);
+    if(res.blocked){notify("Could not keep the unreadable copy aside (browser storage is full), so nothing was imported.");return;}
     const skipped=raw.length-valid,already=valid-res.added;
     notify(`Imported ${res.added} new version${res.added===1?"":"s"}${already>0?`, ${already} already here`:""}${skipped>0?`, ${skipped} skipped as not valid`:""}.`);
    }catch(err){notify("That file is not a CareerPilot applications export.")}
@@ -1031,7 +1102,7 @@ function ApplicationsPanel({versions,ready,error,jobs,openId,setOpenId,onUpdate,
  };
  return <section className="space-y-4" data-testid="applications-panel">
   <div><h2 className="text-xl font-bold">Applications</h2><p className="text-sm text-slate-400">The resume, cover letter, email and keywords exactly as they were when you pressed Mark Applied (or Record current version), one entry per version. If an interview comes, this is the wording the employer received.</p></div>
-  {error&&<div data-testid="versions-error" className="bg-red-950/40 border border-red-800 text-red-200 text-xs rounded-lg p-3">{error}</div>}
+  {error&&<div data-testid="versions-error" className="bg-red-950/40 border border-red-800 text-red-200 text-xs rounded-lg p-3 flex flex-wrap items-center gap-3"><span className="flex-1 min-w-[240px]">{error}</span>{!ready&&<button data-testid="versions-start-fresh" onClick={onStartFresh} className="px-3 py-1.5 rounded bg-red-900 text-white">Start fresh</button>}</div>}
   <div className="no-print flex flex-wrap items-center gap-2 text-xs">
    <input data-testid="versions-search" aria-label="Search recorded versions" placeholder="Search company, role, keyword, note..." value={q} onChange={e=>setQ(e.target.value)} className="bg-slate-900 border border-slate-700 rounded px-3 py-2 w-72"/>
    <button data-testid="versions-export" onClick={exportAll} disabled={!versions.length} className="bg-slate-800 px-3 py-2 rounded disabled:opacity-40">Export JSON</button>

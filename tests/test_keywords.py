@@ -17,7 +17,7 @@ NODE = shutil.which("node")
 
 @pytest.mark.skipif(NODE is None, reason="Node is not installed")
 @pytest.mark.parametrize("script", ["keywords.test.js", "feed_sync.test.js", "requirements.test.js", "applypack.test.js", "resumedoc.test.js",
-                                    "versions.test.js"])
+                                    "versions.test.js", "privatedata.test.js"])
 def test_browser_code_passes_its_node_tests(script):
     run = subprocess.run([NODE, str(ROOT / "tests" / "js" / script)],
                          capture_output=True, text=True, encoding="utf-8", timeout=120)
@@ -49,9 +49,15 @@ def test_the_dashboard_puts_only_what_the_user_added_on_the_resume():
 def test_feed_sync_keeps_every_field_the_dashboard_stores_on_a_job():
     sync = (ROOT / "feed-sync.js").read_text(encoding="utf-8")
     html = (ROOT / "index.html").read_text(encoding="utf-8")
-    for field in ("resumeOverrides", "resumeKeywords", "pastedDescription", "selectedStrategy", "applicationPack"):
+    for field in ("resumeKeywords", "pastedDescription", "selectedStrategy"):
         assert f'"{field}"' in sync, f"feed-sync.js would drop {field}"
         assert field in html, f"{field} is no longer used by the dashboard; remove it from feed-sync.js"
+    # The hand-edited resume and the edited pack are NOT job fields any more (they live in the encrypted vault). They
+    # stay in this list only so a browser that has not unlocked since the change does not lose them to a sync before
+    # they are moved; the dashboard never writes them to a job.
+    for legacy in ("resumeOverrides", "applicationPack"):
+        assert f'"{legacy}"' in sync, f"a sync before the move would drop {legacy} from an older job record"
+        assert "updateJob(job.id,{" + legacy not in html, f"{legacy} must not be written to a job"
 
 
 def test_every_lexicon_entry_has_a_field_group_for_placing_it_on_the_resume():
@@ -107,7 +113,7 @@ def test_the_dashboard_wires_the_application_pack():
     assert "buildApplicationPack({profile:p,job,kws,addedKw,text:jd,requirements,coverBefore,coverNow,score:a.score})" in html
     assert "<ApplicationPack " in html
     # edits are kept per job, and can be reset to what was generated
-    assert "updateJob(job.id,{applicationPack:{...apSaved,...patch}})" in html
+    assert "setPriv({applicationPack:{...apSaved,...patch}})" in html
     assert 'data-testid={"pack-"+id+"-reset"}' in html
     # a resume shows the most relevant experience first, and salary is a sort option
     assert "rankExperience(p.experience,found)" in html
@@ -142,18 +148,43 @@ def test_recorded_versions_are_encrypted_and_never_overwritten_after_a_failed_re
     html = (ROOT / "index.html").read_text(encoding="utf-8")
     sync = (ROOT / "feed-sync.js").read_text(encoding="utf-8")
     assert 'const VERSIONS_KEY="careerpilot_bd_v2_versions";' in html
-    # written only as the vault-encrypted {iv,data} blob, under a key of its own, never plain
-    assert "encryptJSON(cryptoKey,versions)" in html
-    assert "localStorage.setItem(VERSIONS_KEY,JSON.stringify(enc))" in html
+    # both encrypted stores share one implementation: written only as the vault-encrypted {iv,data} blob, never plain
+    assert "const enc=await encryptJSON(cryptoKey,value);" in html
+    assert "localStorage.setItem(storageKey,JSON.stringify(enc))" in html
     assert "JSON.stringify(versions))" not in html.replace("JSON.stringify({app:", "")
+    assert "useVaultStore(VERSIONS_KEY,cryptoKey," in html
     # not a per-job field: the unencrypted job list and the feed sync never carry it
     assert "versions" not in sync and "resumeVersions" not in html
-    # a store that could not be read is left alone: saving waits for versionsReady, and the unlock only sets it on success
-    assert "if(!cryptoKey||!versionsReady)return;" in html
-    assert "setVersions(loaded);setVersionsReady(ready);setVersionsError(vError);" in html
-    assert "ready=false;vError=" in html
-    # locking forgets them from memory
-    assert "setVersions([]);setVersionsReady(false)" in html
+    # a store that could not be read is left alone: saving waits for `ready`, and opening only sets it on success
+    assert "if(!cryptoKey||!ready)return;" in html
+    assert "return {value:empty,ready:false}" in html
+    assert "vStore.open({value:v.value,ready:v.ready,error:v.ready?\"\":VERSIONS_UNREADABLE});" in html
+    # an unreadable copy is kept aside, never deleted, before anything replaces it
+    assert "localStorage.setItem(name,raw);\n  localStorage.removeItem(storageKey);" in html
+    # locking forgets everything from memory
+    assert "vStore.close();pStore.close();" in html
+
+
+def test_your_own_words_for_a_job_live_only_in_the_encrypted_vault():
+    """The hand-edited resume and the edited cover letter/email/recruiter message must never touch the job record."""
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    assert '<script src="privatedata.js"></script>' in html
+    assert html.index("versions.js") < html.index("privatedata.js") < html.index('<script type="text/babel">')
+    assert 'const PRIVATE_KEY="careerpilot_bd_v2_private";' in html
+    assert "useVaultStore(PRIVATE_KEY,cryptoKey," in html
+    # ResumePanel reads and writes them through the vault, not through updateJob / the job record
+    assert "const ov=priv.resumeOverrides||null;" in html
+    assert "const apSaved=priv.applicationPack||{};" in html
+    assert "setPriv({resumeOverrides:" in html and "setPriv({applicationPack:" in html
+    assert "job.resumeOverrides" not in html and "job.applicationPack" not in html
+    assert "updateJob(job.id,{resumeOverrides" not in html and "updateJob(job.id,{applicationPack" not in html
+    # older records are moved into the vault at unlock/creation, and stripped only after the encrypted copy is written
+    assert "splitPrivate(jobs)" in html and "mergePrivate(data,legacy.moved)" in html
+    assert html.index("localStorage.setItem(PRIVATE_KEY,JSON.stringify(await encryptJSON(key,data)))") < html.index("setJobs(legacy.jobs)")
+    # deleting a job deletes its private edits
+    assert "dropPrivate(prev,j.id)" in html and "onClick={()=>deleteJob(j)}" in html
+    # an unreadable private store is never overwritten, and the resume view says so
+    assert 'data-testid="private-error"' in html and 'data-testid="private-start-fresh"' in html
 
 
 def test_marking_applied_records_the_version_and_the_history_has_its_own_tab():
@@ -168,7 +199,7 @@ def test_marking_applied_records_the_version_and_the_history_has_its_own_tab():
 
 def test_the_document_and_version_modules_are_pure():
     """No DOM, storage or network in the modules Node tests: the storage lives in index.html."""
-    for name in ("resumedoc.js", "versions.js"):
+    for name in ("resumedoc.js", "versions.js", "privatedata.js"):
         src = (ROOT / name).read_text(encoding="utf-8")
         for forbidden in ("fetch(", "XMLHttpRequest", "localStorage", "sessionStorage", "document.", "window.", "sendBeacon"):
             assert forbidden not in src, f"{name} must not contain {forbidden}"

@@ -18,7 +18,10 @@
   // cleans itself out of a browser that already synced it.
   const ACTIVE_STATUSES = new Set(["Saved", "Awaiting Approval", "Applied", "Interview", "Offer"]);
   // Things only this browser knows about a job. The feed never has them, so a sync that rebuilt each
-  // job from the feed alone would silently throw away your resume edits and keyword choices.
+  // job from the feed alone would silently throw away your keyword choices and strategy.
+  // resumeOverrides and applicationPack are LEGACY here: the dashboard now keeps them in the encrypted vault
+  // (privatedata.js) and moves them off the job record when you unlock. They stay listed only so a sync that
+  // runs before that first unlock does not throw away edits an older page left on a record.
   const LOCAL_FIELDS = ["selectedStrategy", "resumeOverrides", "resumeKeywords", "pastedDescription", "applicationPack"];
 
   const read = (key, fallback) => {

@@ -417,8 +417,9 @@ there is no send button and the code never contacts anyone. You read it, copy it
 things: a template filled with a fact from your Master Profile, a line quoted from the post, or an
 **[EDIT THIS: ...]** placeholder where only you know the answer. It never rewords one of your
 bullets (that is where invented claims creep in) and it never says anything about a company that the
-post did not say. Edits you make are saved per job, **Reset to generated** brings the original back,
-and a feed refresh never wipes them.
+post did not say. Edits you make are saved per job, **encrypted in your vault** (see *What is
+encrypted, and what is not* below), **Reset to generated** brings the original back, and a feed refresh
+never wipes them.
 
 **Cover letter.** Three short paragraphs, 120-180 words, no "I am excited to apply".
 1. The post's own biggest asks (built-in skills first, not employer jargon), then which of them are
@@ -454,6 +455,33 @@ now recognised as the multitasking skill.
 
 **Not done, on purpose.** It does not rewrite bullets into action-task-result form, and it does not
 enforce a page count; both would mean inventing or trimming facts without you.
+
+## What is encrypted, and what is not
+
+The dashboard keeps everything in your browser's storage. There is no server holding your data.
+
+| Where | What | Protection |
+|---|---|---|
+| Vault (`careerpilot_bd_v2_vault`) | your Master Profile: name, phone, email, links, experience, projects, skills | encrypted with your password |
+| Recorded versions (`careerpilot_bd_v2_versions`) | the resume, cover letter, email and keywords you applied with | encrypted with the same password |
+| Private edits (`careerpilot_bd_v2_private`) | your hand-edited resume text, and your edited cover letter, email and recruiter message, per job | encrypted with the same password |
+| Job list (`careerpilot_bd_v2_jobs`) | the job posts (public), their status, your keyword Add / Not add choices, the strategy you picked, any post text you pasted | **not** encrypted, on purpose: it is public post text, and the approval queue page reads it without a password |
+
+Encryption is AES-256-GCM with a key derived from your password (PBKDF2, 200,000 rounds). Everything encrypted
+is decrypted in memory only while the dashboard is unlocked, and Lock forgets it. **There is no password
+recovery**, so export your profile and your recorded versions now and then.
+
+*Moved from the job list.* Older versions of the dashboard kept your hand-edited resume and edited pack on
+the job record, unencrypted. The first time you unlock after this change they are moved into the vault, and
+they are removed from the job list only **after** the encrypted copy has been written, so a failed write
+(for example a full browser) loses nothing: the plain copy stays and the move is tried again next unlock. If
+an old cached copy of the page writes them back later, the next unlock moves them again, and the newer vault
+copy wins. Deleting a job deletes its private edits too.
+
+*If a store cannot be read* (a damaged copy, or one left by an earlier vault), the page says so, shows the
+generated text instead of your edits, and refuses to overwrite it. **Start fresh** keeps the unreadable copy
+aside under `..._unreadable` and lets saving resume. If the browser is full, a toast and a banner say so
+instead of failing silently.
 
 ## Sent versions: exactly what you applied with
 
@@ -611,6 +639,7 @@ feed keeps flowing while you fix the selectors.
 | `backend/health.py` | notices a source that has quietly stopped returning jobs |
 | `applypack.js` | builds the Application Pack (cover letter, email, recruiter message, salary suggestion, checklist, tailoring report) from your profile and the post; never sends anything (runs in the browser, tested under Node) |
 | `resumedoc.js`, `resumefiles.js` | the resume as plain data, and the browser code that draws it as PDF and DOCX; the screen, the downloads and every recorded version come from this one document (tested under Node) |
+| `privatedata.js` | moves your hand-edited resume and edited pack off the job records into the encrypted vault, and merges, validates and updates them per job (tested under Node) |
 | `versions.js` | records, compares, merges and validates the versions kept for each application; stored encrypted by the dashboard (tested under Node) |
 | `keywords.js` | reads a job post for recruiter keywords in any field, tells a bare mention from a quantified requirement, and builds the eleven-group Job Requirements comparison; you choose which keywords go on the resume (runs in the browser, tested under Node) |
 | `config/manual_sites.json` | the boards you check by hand, shown in the dashboard's Manual Sites tab |
