@@ -28,7 +28,7 @@
  ],
  "sources": {
   "bdrecruit": {
-   "found": 15,
+   "found": 14,
    "errors": [],
    "raw": 134
   },
@@ -40,7 +40,7 @@
   "rss": {
    "found": 12,
    "errors": [],
-   "raw": 185
+   "raw": 184
   },
   "careers": {
    "found": 0,
@@ -54,13 +54,13 @@
   }
  },
  "counts": {
-  "total": 24,
+  "total": 23,
   "new": 0,
   "expired": 0,
   "duplicatesFolded": 6,
   "priorityA": 10,
   "priorityB": 3,
-  "priorityC": 11
+  "priorityC": 10
  },
  "filters": {
   "min_salary_bdt": 20000,
@@ -71,5 +71,5 @@
   "allow_abroad": false
  },
  "blockedUrls": [],
- "ranAt": "2026-09-23T15:15:51+00:00"
+ "ranAt": "2026-09-24T08:03:16+00:00"
 }

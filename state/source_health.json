@@ -1,27 +1,27 @@
 {
  "bdrecruit": {
   "alerted": false,
-  "last_ok": "2026-09-23",
+  "last_ok": "2026-09-24",
   "streak": 0
  },
  "careers": {
   "alerted": false,
-  "last_ok": "2026-09-23",
+  "last_ok": "2026-09-24",
   "streak": 0
  },
  "jsonld": {
   "alerted": false,
-  "last_ok": "2026-09-23",
+  "last_ok": "2026-09-24",
   "streak": 0
  },
  "local": {
   "alerted": false,
-  "last_ok": "2026-09-23",
+  "last_ok": "2026-09-24",
   "streak": 0
  },
  "rss": {
   "alerted": false,
-  "last_ok": "2026-09-23",
+  "last_ok": "2026-09-24",
   "streak": 0
  }
 }
