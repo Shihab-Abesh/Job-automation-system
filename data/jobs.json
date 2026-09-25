@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-24T15:40:25+00:00",
+ "generatedAt": "2026-09-25T08:27:53+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,7 +31,7 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 14,
+    "found": 13,
     "errors": [],
     "raw": 140
    },
@@ -41,7 +41,7 @@
     "raw": 20
    },
    "rss": {
-    "found": 12,
+    "found": 10,
     "errors": [],
     "raw": 185
    },
@@ -57,11 +57,11 @@
    }
   },
   "counts": {
-   "total": 23,
+   "total": 21,
    "new": 0,
    "expired": 0,
-   "duplicatesFolded": 6,
-   "priorityA": 10,
+   "duplicatesFolded": 5,
+   "priorityA": 8,
    "priorityB": 3,
    "priorityC": 10
   },
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-09-24T15:40:25+00:00"
+  "ranAt": "2026-09-25T08:27:53+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-09-24T15:39:38+00:00"
+     "found_at": "2026-09-25T08:27:11+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,12 +145,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026-2",
-     "found_at": "2026-09-24T15:39:36+00:00"
+     "found_at": "2026-09-25T08:27:06+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026",
-     "found_at": "2026-09-24T15:39:36+00:00"
+     "found_at": "2026-09-25T08:27:09+00:00"
     }
    ],
    "matchScore": 83,
@@ -193,7 +193,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-09-24T15:39:36+00:00"
+     "found_at": "2026-09-25T08:27:06+00:00"
     }
    ],
    "matchScore": 83,
@@ -235,7 +235,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/nagad-limited/career/executive-mis/2026",
-     "found_at": "2026-09-24T15:39:36+00:00"
+     "found_at": "2026-09-25T08:27:06+00:00"
     }
    ],
    "matchScore": 83,
@@ -278,12 +278,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-operations-analyst-commure/",
-     "found_at": "2026-09-24T15:39:36+00:00"
+     "found_at": "2026-09-25T08:27:06+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-data-operations-analyst-commure/",
-     "found_at": "2026-09-24T15:39:36+00:00"
+     "found_at": "2026-09-25T08:27:06+00:00"
     }
    ],
    "matchScore": 81,
@@ -297,48 +297,6 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Management Trainee Officer",
-   "company": "New Zealand Dairy Products (BD) Limited",
-   "description": "Application Deadline: September 24, 2026\nEmployment Type: Full-time\nWork Assignment: Anywhere in Bangladesh\nAbout the Company\nNew Zealand Dairy Products (BD) Limited is one of the leading food manufacturing companies in Bangladesh. The company started in 1992 and offers quality products at affordable prices, with a brand portfolio including Diploma, Red Cow, Farmland, Doodles, Poppers, and BelleAme Biscuit.\nJob Responsibilities\nAchieve monthly primary and secondary sales targets.\nEnsure sales growth and explore untapped markets.\nLead the sales team (SR/Sales Officer) and assess sales performance according to KPI.\nManage distributors and ensure availability of products in the assigned territory.\nAnalyze sales data to understand sales trends and competition.\nJob Requirements\nBachelor’s degree from any recognized university with good CGPA.\nCandidates from a Business background will be preferred.\nStrong communication skills and good command over MS Office.\nMentality to work anywhere in Bangladesh.\nWhat We Offer\nAttractive salary package.\nFast career growth.\nOn-the-job and off-the-job training.\nOutstanding work environment.\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Anywhere in Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/management-trainee-officer-new-zealand-dairy-products-bd-limited-2/",
-   "status": "Awaiting Review",
-   "id": "7d6889a0-eaa5-42e1-8292-3c266219fec0",
-   "createdAt": "2026-09-20T15:55:32+00:00",
-   "requiredSkills": "trainee, officer, deadline, september, 2026, employment, type, full, time, work, assignment, anywhere",
-   "postedAt": "2026-09-09",
-   "deadline": "2026-09-25",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full Time",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "f0a5530af97d7680",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/management-trainee-officer-new-zealand-dairy-products-bd-limited-2/",
-     "found_at": "2026-09-24T15:39:37+00:00"
-    }
-   ],
-   "matchScore": 79,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -368,7 +326,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/radiant-care-limited/career/management-trainee-officer/2026",
-     "found_at": "2026-09-24T15:39:36+00:00"
+     "found_at": "2026-09-25T08:27:06+00:00"
     }
    ],
    "matchScore": 79,
@@ -410,7 +368,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-marketing-emami-bangladesh-limited/",
-     "found_at": "2026-09-24T15:39:36+00:00"
+     "found_at": "2026-09-25T08:27:06+00:00"
     }
    ],
    "matchScore": 75,
@@ -426,48 +384,6 @@
     "Exact area not stated in the posting"
    ],
    "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Software Development Engineer II Full Stack - Business (Remote @ Colombia)",
-   "company": "OfferUp",
-   "description": "Headquarters: Remote @ Colombia\nAbout the role:\nThe OfferUp Business team owns the platforms that power every business vertical on our marketplace; Storefronts, Auto Dealers, Services, Rentals, and Jobs. Our customers aren't casually browsing; they're running businesses on top of what we build, so every feature we ship has a direct, measurable impact on their livelihood and on OfferUp's revenue. We operate the full stack end-to-end: including microservices that handle some of the highest RPS and TPS in the company, and integrations with partners like Stripe and Shopify. We move fast, instrument everything, and treat experimentation as a first-class part of the workflow. We've barely scratched the surface of what these verticals can become, and the roadmap is wide open for someone who wants to help shape it.\nAt many organizations, your role begins and ends with the code. On our team, we’re different. You own a feature from concept to fruition. Your responsibilities will include everything from writing well architected and thoroughly tested code, to rolling out the feature by analyzing metrics. You also get to take ownership beyond your technical area by working with cross-functional team members.\nAs a Full Stack Software Engineer II on the Business team, you'll be a proven contributor who ships features end-to-end across the stack. From the React components our business customers interact with, to the Java services and data pipelines behind them. You'll take real ownership of the work you deliver, raise the quality of the code around you, and grow into a high-performing, reliable contributor on the team.\nHere’s more of what you will get to do:\nDesign, build, and deploy new user experiences and backend services across our five business verticals, using React, TypeScript, GraphQL, Node.js, and Java\nOwn features end-to-end: plan, design, develop, deploy, measure, and iterate\nBreak down complex engineering problems into achievable tasks and deliver them within committed timeframes\nWork collaboratively with cross-functional teams (Product, Design, Data, Business stakeholders) to design and implement new features\nContribute to A/B tests and use experimentation results to decide what ships\nActively participate in code reviews and enforce good patterns, testing, and edge-case handling\nCoach and mentor junior team members, new hires, and interns\nCreate shared components, utilities, and services that improve team velocity across the stack\nMaintain and improve the runbooks, alerting, and monitoring for the features you ship\nParticipate in a reasonable on-call rotation with the rest of the team\nUse AI coding tools (Claude Code, Cursor, Copilot, and similar) to increase your daily development velocity and code quality\nBecome a subject matter expert in one or more of the team's sub-domains\nYou’ll thrive in this role if you have:\n2+ years of professional software engineering experience\nDemonstrated ability to own the delivery of multiple features end-to-end (plan, design, develop, and deploy) with high efficiency, including breaking down engineering problems into achievable tasks\nStrong coding skills across the full stack:\nReact, TypeScript, HTML, CSS, and modern web tooling; good grasp of responsive design, performance, and cross-browser compatibility\nJava and a working understanding of microservices and distributed-systems fundamentals\nExperience building and integrating with REST or GraphQL APIs\nGood knowledge of data structures and object-oriented design\nHands-on experience using AI coding tools (Claude Code, Cursor, Copilot, or similar) in a real engineering workflow, and a point of view on when they help and when they don't\nFollows good coding patterns, writes appropriate tests, considers trade-offs, and actively seeks out edge cases\nComfortable giving and receiving feedback in code reviews\nA bias toward shipping, learning from production, and iterating quickly\nAn insatiable desire and ability to learn\nBS or MS in Computer Science, or equivalent practical experience\nHelpful, but not required:\nFluency in any other modern OOO programming language\nExperience with Agile development\nExperience with AWS Cloud infrastructure\nExperience around any of the following: web package managers, Bower, bundler system, NodeJS, Python, webpack\nExperience with A/B testing platforms (Statsig, LaunchDarkly, Optimizely) and analytics warehouses (BigQuery, Snowflake)\nExperience consuming or integrating LLM-based APIs (e.g., Bedrock, Vertex AI, OpenAI)\nFamiliarity with AWS cloud infrastructure and CI/CD pipelines\nAbout OfferUp:\nOfferUp is dedicated to creating the simplest and most trusted way for people to buy, sell, and connect in their local communities. One of the top local marketplace apps for local buyers and sellers in the U.S., OfferUp makes it easy for people to discover more of what they need—from great deals and secondhand goods to jobs, services, home rentals, and more—right in their own communities. Our trusted platform empowers millions to connect, thrive, and move life forward.\nAvailable on iOS and Android, OfferUp has consistently ranked among the top shopping apps. Founded in 2011 and based in Bellevue, WA, OfferUp serves local markets nationwide and was used by more than 1 in 6 adults in the U.S. in 2024. OfferUp is backed by leading investors, including Andreessen Horowitz, Warburg Pincus, GGV Capital, T. Rowe Price, and Coatue Management. https://about.offerup.com\nMore About OfferUp At a Glance\nTop 10 Shopping app in the App Store and Google Play Store for three years\n15%+ of adults in several major markets use OfferUp every month (LA, Miami, Phoenix, Seattle, Las Vegas, Riverside, Orlando)\nOfferUp works directly with nearly 2000 US law enforcement agencies to build trust in local communities\nOfferUp is unleashing the power of local, and we’ve built a dynamic team to do it. To learn more about working at OfferUp, check out https://about.offerup.com/people\nOfferUp provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, religion, sex, national origin, age, disability, or genetics. In addition to federal law requirements, OfferUp complies with applicable state and local laws governing nondiscrimination in employment in every location in which the company has facilities. This policy applies to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, transfer, leaves of absence, compensation, and training.\nOfferUp expressly prohibits any form of workplace harassment based on race, color, religion, gender, sexual orientation, gender identity or expression, national origin, age, genetic information, disability, or veteran status. Improper interference with the ability of OfferUp’s employees to perform their job duties may result in discipline up to and including discharge.\nTo apply: https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-full-stack-business-remote-colombia",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-full-stack-business-remote-colombia",
-   "status": "Awaiting Review",
-   "id": "2864e2af-9bef-467f-8f9b-808e75bd6639",
-   "createdAt": "2026-09-20T18:11:54+00:00",
-   "requiredSkills": "development, engineer, full, stack, business, remote, colombia, headquarters, about, offerup, team, owns",
-   "postedAt": "2026-08-26",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "f390dada1560565a",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-full-stack-business-remote-colombia",
-     "found_at": "2026-09-24T15:39:38+00:00"
-    }
-   ],
-   "matchScore": 75,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "rss"
   },
   {
    "title": "MTO – Research and Development",
@@ -495,7 +411,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job-in-bd/twelve-clothing-limited/career/mto-research-and-development/2026",
-     "found_at": "2026-09-24T15:39:36+00:00"
+     "found_at": "2026-09-25T08:27:06+00:00"
     }
    ],
    "matchScore": 75,
@@ -537,7 +453,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-shops-foodpanda/",
-     "found_at": "2026-09-24T15:39:36+00:00"
+     "found_at": "2026-09-25T08:27:06+00:00"
     }
    ],
    "matchScore": 73,
@@ -580,7 +496,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/reddit-backend-software-engineer-pdp-experience",
-     "found_at": "2026-09-24T15:39:38+00:00"
+     "found_at": "2026-09-25T08:27:11+00:00"
     }
    ],
    "matchScore": 71,
@@ -622,7 +538,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-09-24T15:39:42+00:00"
+     "found_at": "2026-09-25T08:27:15+00:00"
     }
    ],
    "matchScore": 66,
@@ -664,7 +580,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-09-24T15:39:37+00:00"
+     "found_at": "2026-09-25T08:27:09+00:00"
     }
    ],
    "matchScore": 79,
@@ -706,7 +622,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-09-24T15:39:42+00:00"
+     "found_at": "2026-09-25T08:27:15+00:00"
     }
    ],
    "matchScore": 61,
@@ -735,7 +651,7 @@
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-09-24",
+   "postedAt": "2026-09-25",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -749,12 +665,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/22",
-     "found_at": "2026-09-24T15:39:37+00:00"
+     "found_at": "2026-09-25T08:27:10+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/21",
-     "found_at": "2026-09-24T15:39:37+00:00"
+     "found_at": "2026-09-25T08:27:10+00:00"
     }
    ],
    "matchScore": 61,
@@ -798,7 +714,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-09-24T15:39:42+00:00"
+     "found_at": "2026-09-25T08:27:15+00:00"
     }
    ],
    "matchScore": 61,
@@ -841,7 +757,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-09-24T15:39:42+00:00"
+     "found_at": "2026-09-25T08:27:15+00:00"
     }
    ],
    "matchScore": 57,
@@ -884,7 +800,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/chery-bangladesh/career/sr-executive-asst-brand-manager-marketing/2026",
-     "found_at": "2026-09-24T15:39:36+00:00"
+     "found_at": "2026-09-25T08:27:06+00:00"
     }
    ],
    "matchScore": 57,
@@ -929,7 +845,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-09-24T15:39:42+00:00"
+     "found_at": "2026-09-25T08:27:15+00:00"
     }
    ],
    "matchScore": 57,
@@ -958,7 +874,7 @@
    "id": "40278252-6f0e-49d6-8441-47ef0b48a724",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, team, field, nation., required, python, docker, kubernetes, aws",
-   "postedAt": "2026-09-24",
+   "postedAt": "2026-09-25",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -972,7 +888,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/19",
-     "found_at": "2026-09-24T15:39:37+00:00"
+     "found_at": "2026-09-25T08:27:10+00:00"
     }
    ],
    "matchScore": 57,
@@ -1016,7 +932,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/arogga/career/senior-executive-assistant-manager-lab-operations/2026",
-     "found_at": "2026-09-24T15:39:36+00:00"
+     "found_at": "2026-09-25T08:27:06+00:00"
     }
    ],
    "matchScore": 53,
@@ -1060,12 +976,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-09-24T15:39:46+00:00"
+     "found_at": "2026-09-25T08:27:19+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-24T15:39:46+00:00"
+     "found_at": "2026-09-25T08:27:19+00:00"
     }
    ],
    "matchScore": 53,

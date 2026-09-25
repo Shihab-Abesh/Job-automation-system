@@ -28,7 +28,7 @@
  ],
  "sources": {
   "bdrecruit": {
-   "found": 14,
+   "found": 13,
    "errors": [],
    "raw": 140
   },
@@ -38,7 +38,7 @@
    "raw": 20
   },
   "rss": {
-   "found": 12,
+   "found": 10,
    "errors": [],
    "raw": 185
   },
@@ -54,11 +54,11 @@
   }
  },
  "counts": {
-  "total": 23,
+  "total": 21,
   "new": 0,
   "expired": 0,
-  "duplicatesFolded": 6,
-  "priorityA": 10,
+  "duplicatesFolded": 5,
+  "priorityA": 8,
   "priorityB": 3,
   "priorityC": 10
  },
@@ -71,5 +71,5 @@
   "allow_abroad": false
  },
  "blockedUrls": [],
- "ranAt": "2026-09-24T15:40:25+00:00"
+ "ranAt": "2026-09-25T08:27:53+00:00"
 }
