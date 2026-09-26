@@ -38,9 +38,9 @@
    "raw": 20
   },
   "rss": {
-   "found": 11,
+   "found": 12,
    "errors": [],
-   "raw": 183
+   "raw": 182
   },
   "careers": {
    "found": 0,
@@ -55,9 +55,9 @@
  },
  "counts": {
   "total": 24,
-  "new": 1,
+  "new": 0,
   "expired": 0,
-  "duplicatesFolded": 5,
+  "duplicatesFolded": 6,
   "priorityA": 8,
   "priorityB": 3,
   "priorityC": 13
@@ -71,5 +71,5 @@
   "allow_abroad": false
  },
  "blockedUrls": [],
- "ranAt": "2026-09-26T08:14:35+00:00"
+ "ranAt": "2026-09-26T14:50:38+00:00"
 }
