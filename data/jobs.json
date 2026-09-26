@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-25T15:42:59+00:00",
+ "generatedAt": "2026-09-26T08:14:35+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -33,7 +33,7 @@
    "bdrecruit": {
     "found": 15,
     "errors": [],
-    "raw": 147
+    "raw": 146
    },
    "jsonld": {
     "found": 3,
@@ -41,7 +41,7 @@
     "raw": 20
    },
    "rss": {
-    "found": 10,
+    "found": 11,
     "errors": [],
     "raw": 183
    },
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 23,
-   "new": 2,
+   "total": 24,
+   "new": 1,
    "expired": 0,
    "duplicatesFolded": 5,
    "priorityA": 8,
    "priorityB": 3,
-   "priorityC": 12
+   "priorityC": 13
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-09-25T15:42:59+00:00"
+  "ranAt": "2026-09-26T08:14:35+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-09-25T15:42:16+00:00"
+     "found_at": "2026-09-26T08:13:51+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,12 +145,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026-2",
-     "found_at": "2026-09-25T15:42:12+00:00"
+     "found_at": "2026-09-26T08:13:49+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026",
-     "found_at": "2026-09-25T15:42:15+00:00"
+     "found_at": "2026-09-26T08:13:50+00:00"
     }
    ],
    "matchScore": 83,
@@ -193,7 +193,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-09-25T15:42:12+00:00"
+     "found_at": "2026-09-26T08:13:49+00:00"
     }
    ],
    "matchScore": 83,
@@ -235,7 +235,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/nagad-limited/career/executive-mis/2026",
-     "found_at": "2026-09-25T15:42:12+00:00"
+     "found_at": "2026-09-26T08:13:49+00:00"
     }
    ],
    "matchScore": 83,
@@ -278,12 +278,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-operations-analyst-commure/",
-     "found_at": "2026-09-25T15:42:12+00:00"
+     "found_at": "2026-09-26T08:13:49+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-data-operations-analyst-commure/",
-     "found_at": "2026-09-25T15:42:12+00:00"
+     "found_at": "2026-09-26T08:13:49+00:00"
     }
    ],
    "matchScore": 81,
@@ -326,7 +326,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/radiant-care-limited/career/management-trainee-officer/2026",
-     "found_at": "2026-09-25T15:42:12+00:00"
+     "found_at": "2026-09-26T08:13:49+00:00"
     }
    ],
    "matchScore": 79,
@@ -368,7 +368,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-marketing-emami-bangladesh-limited/",
-     "found_at": "2026-09-25T15:42:12+00:00"
+     "found_at": "2026-09-26T08:13:49+00:00"
     }
    ],
    "matchScore": 75,
@@ -411,7 +411,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job-in-bd/twelve-clothing-limited/career/mto-research-and-development/2026",
-     "found_at": "2026-09-25T15:42:12+00:00"
+     "found_at": "2026-09-26T08:13:49+00:00"
     }
    ],
    "matchScore": 75,
@@ -453,7 +453,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-shops-foodpanda/",
-     "found_at": "2026-09-25T15:42:12+00:00"
+     "found_at": "2026-09-26T08:13:49+00:00"
     }
    ],
    "matchScore": 73,
@@ -496,7 +496,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/reddit-backend-software-engineer-pdp-experience",
-     "found_at": "2026-09-25T15:42:16+00:00"
+     "found_at": "2026-09-26T08:13:51+00:00"
     }
    ],
    "matchScore": 71,
@@ -538,7 +538,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-09-25T15:42:20+00:00"
+     "found_at": "2026-09-26T08:13:55+00:00"
     }
    ],
    "matchScore": 66,
@@ -580,7 +580,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-09-25T15:42:15+00:00"
+     "found_at": "2026-09-26T08:13:50+00:00"
     }
    ],
    "matchScore": 79,
@@ -622,7 +622,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/brac-it/career/lead-senior-software-engineer-net/2026",
-     "found_at": "2026-09-25T15:42:12+00:00"
+     "found_at": "2026-09-26T08:13:49+00:00"
     }
    ],
    "matchScore": 73,
@@ -667,7 +667,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-09-25T15:42:20+00:00"
+     "found_at": "2026-09-26T08:13:55+00:00"
     }
    ],
    "matchScore": 61,
@@ -696,7 +696,7 @@
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-09-25",
+   "postedAt": "2026-09-26",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -710,12 +710,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/22",
-     "found_at": "2026-09-25T15:42:15+00:00"
+     "found_at": "2026-09-26T08:13:50+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/21",
-     "found_at": "2026-09-25T15:42:15+00:00"
+     "found_at": "2026-09-26T08:13:50+00:00"
     }
    ],
    "matchScore": 61,
@@ -759,7 +759,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-09-25T15:42:20+00:00"
+     "found_at": "2026-09-26T08:13:55+00:00"
     }
    ],
    "matchScore": 61,
@@ -802,7 +802,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-09-25T15:42:20+00:00"
+     "found_at": "2026-09-26T08:13:55+00:00"
     }
    ],
    "matchScore": 57,
@@ -845,7 +845,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/chery-bangladesh/career/sr-executive-asst-brand-manager-marketing/2026",
-     "found_at": "2026-09-25T15:42:12+00:00"
+     "found_at": "2026-09-26T08:13:49+00:00"
     }
    ],
    "matchScore": 57,
@@ -863,6 +863,49 @@
     "Title matches your excluded list (Manager)"
    ],
    "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Senior Software Engineer - Platform",
+   "company": "Dremio",
+   "description": "Headquarters: Portugal - Remote\nBe Part of Building the Future\nDremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost. Learn more at www.dremio.com.\nAbout the role\nThe Observability and Core Services team owns the platform foundation that Dremio is built on — and that every product team depends on to ship. As a core member, you'll design and deliver the critical building blocks: telemetry, messaging, KV store and persistence, application frameworks, caching, coordination, and events and audit services, along with Dremio's growing integration with the SAP platform. When these systems are rock-solid, the whole engineering org moves faster.\nYou'll work at the intersection of DevOps/SRE and application development — designing solutions that are highly scalable and genuinely easy to use — while collaborating with core product teams to ship safely and partnering with Field teams to support customers at enterprise scale.\nThis is also where Dremio's hardest distributed systems problems live. You'll tackle consistent persistence, distributed caching, networking, containerized services, private links, Terraform-driven infrastructure, and access control at scale. The scope is broad by design: we believe the best platform engineers are the ones who can hold the full picture and own problems end-to-end.\nYou'll grow by taking on complex challenges, shipping high-quality systems at massive scale, and building the kind of foundational work that compounds across everything Dremio builds.\nWhat you'll be doing\nBuild and own an observability platform that ingests customer telemetry — events, logs, and traces — using OpenTelemetry and industry best practices\nDeliver dashboarding and visualization capabilities that give Support and Field teams real-time visibility into system health, emerging issues, and trends — and help customers stay resilient at scale\nDesign and implement a notification and alerting system driven by telemetry data and heuristics with AI agents and lakehouse intelligence\nWrite infrastructure-as-code with Helm and Terraform to simplify deployment and operations within Dremio Software\nBuild and maintain application frameworks that standardize development across teams — tackling cross-cutting challenges like dependency injection and role-based access control at scale\nPartner with our SRE and DevOps teams to define best practices and deliver standardized solutions for common engineering workflows\nEngage directly with the developer community to understand their pain points and turn those insights into platform improvements\nHelp define and deliver roadmap and integration milestones with SAP HANA/BDC platform to deliver a cohesive experience\nWhat we're looking for\nBachelor's, Master's, or higher in Computer Science or a related field\n5+ years of software engineering experience\n2+ years experience using Java\n2+ years hands-on with infrastructure-as-code (Helm, Terraform, or equivalent)\nDeep experience with a major cloud platform ( AWS , Azure, or GCP)\nHands-on with OpenTelemetry or comparable observability platforms\nExperience with Kubernetes and Docker\nSolid understanding of networking fundamentals (TCP/IP, DNS, HTTP)\nDesire to learn new technologies and proven problem solver\nBonus points if you have\nExperience building SaaS microservices and distributed systems\nHands-on with multi-threaded or asynchronous programming models\nProficient with NoSQL databases (MongoDB, RocksDB) or Redis\nBackground in CI/CD tooling (Jenkins, ArgoCD)\nOther programming languages such as C++, Go, Python, Node.js, Rust, etc\nExperience in query processing, distributed systems, concurrency control, data replication, or storage systems\nJava GC/heap tuning, Apache Arrow, SQL operators, or data-path optimization\nWhat we value\nAt Dremio, we hold ourselves to high standards when it comes to People, Thinking, and Action. Our Gnarlies (that's what we call our employees) communicate with clarity, drive accountability, and are respectful towards each other. We confront brutal facts and focus on results while operating with a sense of urgency and building a \"flywheel\". People who like to jump in and drive momentum will thrive in our #GnarlyLife.\nDremio is an equal opportunity employer supporting workforce diversity. We do not discriminate on the basis of race, religion, color, national origin, gender identity, sexual orientation, age, marital status, protected veteran status, disability status, or any other unlawful factor.\nDremio is committed to providing any necessary accommodations for individuals with disabilities within our application and interview process. To request accommodation due to a disability, please inform your recruiter.\nDremio has policies in place to protect the personal information that employees and applicants disclose to us. Please click here to review the privacy notice.\nImportant Security Notice for Candidates\nAt Dremio, we uphold trust and transparency as paramount values in all our interactions with customers, partners, employees, and the general public. We have been targeted by individuals creating fake domains similar to ours to scam prospects and candidates. Please note that all official communications from us will be from an @dremio.com domain. If you suspect you've been targeted by a scam, it's imperative to report the incident to your local law enforcement agencies. For more information about this type of scam, please refer to Dremio's official statement here .\nDremio is not responsible for any fees related to unsolicited resumes and will not pay fees to any third-party agency or company that does not have a signed agreement with the Company.\nTo apply: https://weworkremotely.com/remote-jobs/dremio-senior-software-engineer-platform",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/dremio-senior-software-engineer-platform",
+   "status": "Awaiting Review",
+   "id": "e9ccbf41-de2d-41e7-a6ff-e12df950ff6a",
+   "createdAt": "2026-09-26T08:13:55+00:00",
+   "requiredSkills": "senior, engineer, platform, headquarters, portugal, remote, building, future, dremio, unified, lakehouse, self",
+   "postedAt": "2026-09-26",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "b197eab9290f1712",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/dremio-senior-software-engineer-platform",
+     "found_at": "2026-09-26T08:13:55+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Senior Software Engineer, remote",
@@ -890,7 +933,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-09-25T15:42:20+00:00"
+     "found_at": "2026-09-26T08:13:55+00:00"
     }
    ],
    "matchScore": 57,
@@ -919,7 +962,7 @@
    "id": "40278252-6f0e-49d6-8441-47ef0b48a724",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, team, field, nation., required, python, docker, kubernetes, aws",
-   "postedAt": "2026-09-25",
+   "postedAt": "2026-09-26",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -933,7 +976,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/19",
-     "found_at": "2026-09-25T15:42:15+00:00"
+     "found_at": "2026-09-26T08:13:50+00:00"
     }
    ],
    "matchScore": 57,
@@ -977,7 +1020,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/arogga/career/senior-executive-assistant-manager-lab-operations/2026",
-     "found_at": "2026-09-25T15:42:12+00:00"
+     "found_at": "2026-09-26T08:13:49+00:00"
     }
    ],
    "matchScore": 53,
@@ -1021,12 +1064,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-09-25T15:42:24+00:00"
+     "found_at": "2026-09-26T08:13:59+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-25T15:42:24+00:00"
+     "found_at": "2026-09-26T08:13:59+00:00"
     }
    ],
    "matchScore": 53,
@@ -1069,7 +1112,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rancon-motorbikes-limited/career/assistant-manager-senior-executive-marketing/2026",
-     "found_at": "2026-09-25T15:42:12+00:00"
+     "found_at": "2026-09-26T08:13:49+00:00"
     }
    ],
    "matchScore": 53,
