@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-26T14:50:38+00:00",
+ "generatedAt": "2026-09-27T08:51:40+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 15,
+    "found": 14,
     "errors": [],
-    "raw": 146
+    "raw": 141
    },
    "jsonld": {
     "found": 3,
@@ -43,7 +43,7 @@
    "rss": {
     "found": 12,
     "errors": [],
-    "raw": 182
+    "raw": 183
    },
    "careers": {
     "found": 0,
@@ -57,11 +57,11 @@
    }
   },
   "counts": {
-   "total": 24,
-   "new": 0,
+   "total": 23,
+   "new": 1,
    "expired": 0,
    "duplicatesFolded": 6,
-   "priorityA": 8,
+   "priorityA": 7,
    "priorityB": 3,
    "priorityC": 13
   },
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-09-26T14:50:38+00:00"
+  "ranAt": "2026-09-27T08:51:39+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-09-26T14:49:54+00:00"
+     "found_at": "2026-09-27T08:51:01+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,12 +145,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026-2",
-     "found_at": "2026-09-26T14:49:52+00:00"
+     "found_at": "2026-09-27T08:50:59+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026",
-     "found_at": "2026-09-26T14:49:53+00:00"
+     "found_at": "2026-09-27T08:51:00+00:00"
     }
    ],
    "matchScore": 83,
@@ -164,6 +164,49 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Management Trainee Officer (MTO)",
+   "company": "FCI Group",
+   "description": "Position: Management Trainee Officer (MTO) – Production\nLocation: Dhaka (Savar EPZ)\nEmployment Type: Full-time\nExperience: Freshers are encouraged to apply.\nAge: 22–25 Years\nSalary: Negotiable\nApplication Deadline: 9 October 2026\nJob Overview\nFCI Group is looking for energetic Textile Engineering graduates, preferably IPE, to join its Management Trainee Officer (MTO) Program in the Production department. The program offers structured job rotation and hands-on training in garment operations, productivity, quality, and efficiency while developing future production leaders.\nResponsibilities\nLearn and understand the end-to-end garment production process.\nSupport the production team in achieving daily production targets and efficiency.\nMonitor production output, manpower, quality, and line performance.\nAssist in identifying production bottlenecks and supporting improvement actions.\nPrepare and maintain daily production reports and data.\nSupport Lean, 5S, Kaizen, and productivity improvement initiatives.\nAssist with day-to-day production operations and assigned tasks.\nParticipate in meetings, training sessions, workshops, and other learning opportunities.\nObserve and learn from experienced staff members and senior management.\nGain knowledge of company policies, procedures, and operational processes.\nMaintain proper notes and communicate effectively with Managers and Supervisors.\nFulfill the learning objectives and goals set for the traineeship.\nPerform other duties assigned by Production Management.\nEducational Requirements\nBachelor of Science (BSc) in Industrial & Production Engineering (IPE) or Textile Engineering.\nMaster of Science (MSc) in Industrial & Production Engineering (IPE) or Textile Engineering.\nMinimum CGPA: 3.00.\nExperience Requirements\nAt most 1 year of experience.\nExperience in the Garments business area will be considered.\nFreshers are encouraged to apply.\nAdditional Requirements\nAge: 22–25 years.\nSelf-driven and assertive individual with business acumen.\nInterpersonal, initiative, analytical thinking, conflict resolution, decision-making, and leadership abilities.\nMust be a team player.\nAbility to multitask and work under pressure.\nAbility to act with integrity, professionalism, and confidentiality.\nExcellent written and oral communication skills.\nLeadership potential and ability to work in a factory environment.\nWhat You’ll Gain\nJob rotation across key production operations.\nOn-the-job training and mentorship.\nCareer development opportunities.\nPractical exposure to garment operations, productivity, quality, and efficiency.\nOpportunities to participate in training sessions, workshops, and other learning activities.\nCompensation & Benefits\nService Benefit\nProvident Fund\nTwo Festival Bonuses\nEarned Leave Encashment\nYearly Salary Review\nFully Subsidized Breakfast & Lunch Facilities\nMobile Allowance\nGroup Life Insurance\nHealth Insurance\nHajj Leave: Up to 35 Days\nUmrah Leave: Up to 15 Days\nApplication Process\nInterested candidates are requested to apply through the provided application process/BDJobs QR code.\nApplication Deadline: 9 October 2026.",
+   "category": "Management & Business",
+   "location": "Savar EPZ, Dhaka",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/jobs-in-bd/fci-group/career/management-trainee-officer-mto/2026",
+   "status": "Awaiting Review",
+   "id": "691420cc-6982-405e-9557-409635214e0d",
+   "createdAt": "2026-09-27T08:50:59+00:00",
+   "requiredSkills": "trainee, officer, mto, location, dhaka, savar, epz, employment, type, full, time, freshers",
+   "postedAt": "2026-09-27",
+   "deadline": "2026-10-10",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Full Time",
+   "experienceText": "Freshers",
+   "area": "Savar",
+   "distanceKm": 16.6,
+   "fingerprint": "0cdbfdd8d724bc58",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/jobs-in-bd/fci-group/career/management-trainee-officer-mto/2026",
+     "found_at": "2026-09-27T08:50:59+00:00"
+    }
+   ],
+   "matchScore": 83,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Savar is about 16.6 km out, past your 10 km limit"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -193,7 +236,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-09-26T14:49:51+00:00"
+     "found_at": "2026-09-27T08:50:59+00:00"
     }
    ],
    "matchScore": 83,
@@ -206,49 +249,6 @@
    "priority": "A",
    "gateNotes": [
     "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Executive – MIS",
-   "company": "Nagad Limited",
-   "description": "Position: Executive – MIS (Customer Demography & Information Management)\nLocation: Dhaka\nEmployment Type: Full-time\nVacancy: 1\nSalary: Negotiable\nExperience: At least 1 year\nApplication Deadline: 26 September 2026\nJob Highlights\nDrive Customer Demography & Information Management operations through KYC/DKYC data reconciliation, analysis, ESSAU reporting, and timely issue escalation, contributing to data accuracy, operational efficiency, and smooth day-to-day operations.\nResponsibilities & Context\nPerform regular reconciliation of Uddokta, Merchant, and Customer KYC data and ensure identified discrepancies are properly recorded and escalated.\nIdentify, analyze, and report KYC-related data mismatches, missing information, duplicate records, and processing discrepancies within the defined timeline.\nPrepare periodic reconciliation and KYC analysis reports, highlighting key trends, recurring issues, backlog, and operational gaps for corrective action and process improvement.\nPrepare reports for internal stakeholders related to Uddokta, Merchant, and Customer DKYC processed.\nPrepare and submit Uddokta, Merchant, and Customer DKYC processing reports within the defined timeline through proper validation and reconciliation.\nAnalyze document processing data and highlight processing volume, backlog, rejection trends, discrepancies, and critical operational issues to relevant internal stakeholders.\nPrepare, validate, and circulate the daily ESSAU calculation report to relevant departments.\nIdentify and escalate critical data-related and system accessibility issues to the concerned unit and pursue resolution.\nProvide timely operational support for assigned activities and reporting.\nEducational Qualifications\nBachelor/Honors.\nBachelor’s degree in Business Administration, Finance, Statistics, Computer Science, or equivalent.\nExperience Requirements\nAt least 1 year of experience.\nExperience in the following business areas:\nBanks\nFinancial Technology (Fintech) Startup\nTelecommunication\n1–3 years of experience in MIS, Data Analysis, Reconciliation, Reporting, Operations, or a similar role is preferred.\nExperience in MFS, Banking, Fintech, or related industries will be an added advantage.\nAdditional Requirements\nStrong attention to detail and data accuracy.\nAbility to work under pressure and meet deadlines.\nProactive in identifying and resolving data and system issues.\nStrong sense of confidentiality and data integrity.\nSkills & Expertise\nData Analysis\nMicrosoft Excel\nMicrosoft PowerPoint\nMIS\nMS Office\nAnalytical Skills\nReconciliation\nProblem-Solving Skills\nReporting\nStakeholder Coordination\nCompensation & Other Benefits\nProvident Fund\n2 Weekly Holidays\nMobile Bill Allowance\nMedical Insurance Coverage\n2 Annual Festival Bonuses\nYearly Salary Review\nWorkplace\nWork at office\nMake Your ATS-Friendly CV",
-   "category": "MIS",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/jobs-in-bd/nagad-limited/career/executive-mis/2026",
-   "status": "Awaiting Review",
-   "id": "287dc79a-bafb-4b49-8dd9-ff5987d3d077",
-   "createdAt": "2026-09-20T15:55:32+00:00",
-   "requiredSkills": "executive, mis, customer, demography, location, dhaka, employment, type, full, time, vacancy, salary",
-   "postedAt": "2026-09-17",
-   "deadline": "2026-09-27",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Full Time",
-   "experienceText": "1 Year",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "fa050d20dacda59a",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/jobs-in-bd/nagad-limited/career/executive-mis/2026",
-     "found_at": "2026-09-26T14:49:52+00:00"
-    }
-   ],
-   "matchScore": 83,
-   "scoreParts": {
-    "title": 100,
-    "level": 80,
-    "skills": 50,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -278,12 +278,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-operations-analyst-commure/",
-     "found_at": "2026-09-26T14:49:52+00:00"
+     "found_at": "2026-09-27T08:50:59+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-data-operations-analyst-commure/",
-     "found_at": "2026-09-26T14:49:52+00:00"
+     "found_at": "2026-09-27T08:50:59+00:00"
     }
    ],
    "matchScore": 81,
@@ -297,48 +297,6 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Management Trainee Officer",
-   "company": "Radiant Care Limited",
-   "description": "Position: Management Trainee Officer – Sales\nLocation: Anywhere in Bangladesh\nEmployment Type: Full-time\nApplication Deadline: 26 September 2026\nAbout the Company\nRadiant Care Limited is a fast-growing FMCG company specializing in the manufacturing and marketing of high-quality toiletries and hygiene products. Radiant Care Limited is looking for fresh graduates to join as Management Trainee Officer – Sales and begin their career in FMCG sales.\nEducational Qualification\nGraduation and Post-Graduation in any subject from a Public University.\nSalary & Benefits\nAttractive salary to start the sales career\nProvident Fund\nGratuity\nLeave Fare Assistance (LFA)\nCommunication Allowance\nMedical Benefits\nGroup Life Insurance\nApplication Process\nInterested candidates are requested to send their updated CV with a recent photograph to: Email: hrm.rcl@radiant.com.bd\nSubject: Application for Management Trainee Officer-Sales\nApplication Deadline: 26 September 2026\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Anywhere in Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/jobs-in-bd/radiant-care-limited/career/management-trainee-officer/2026",
-   "status": "Awaiting Review",
-   "id": "fc3e8720-ca85-4dda-afad-77027c13bc7f",
-   "createdAt": "2026-09-20T15:55:32+00:00",
-   "requiredSkills": "trainee, officer, sales, location, anywhere, bangladesh, employment, type, full, time, deadline, september",
-   "postedAt": "2026-09-16",
-   "deadline": "2026-09-27",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full Time",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "ba0cc688cc68077a",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/jobs-in-bd/radiant-care-limited/career/management-trainee-officer/2026",
-     "found_at": "2026-09-26T14:49:52+00:00"
-    }
-   ],
-   "matchScore": 79,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -368,7 +326,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-marketing-emami-bangladesh-limited/",
-     "found_at": "2026-09-26T14:49:51+00:00"
+     "found_at": "2026-09-27T08:50:59+00:00"
     }
    ],
    "matchScore": 75,
@@ -411,7 +369,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job-in-bd/twelve-clothing-limited/career/mto-research-and-development/2026",
-     "found_at": "2026-09-26T14:49:52+00:00"
+     "found_at": "2026-09-27T08:50:59+00:00"
     }
    ],
    "matchScore": 75,
@@ -453,7 +411,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-shops-foodpanda/",
-     "found_at": "2026-09-26T14:49:52+00:00"
+     "found_at": "2026-09-27T08:50:59+00:00"
     }
    ],
    "matchScore": 73,
@@ -496,7 +454,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/reddit-backend-software-engineer-pdp-experience",
-     "found_at": "2026-09-26T14:49:54+00:00"
+     "found_at": "2026-09-27T08:51:01+00:00"
     }
    ],
    "matchScore": 71,
@@ -538,7 +496,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-09-26T14:49:54+00:00"
+     "found_at": "2026-09-27T08:51:01+00:00"
     }
    ],
    "matchScore": 66,
@@ -580,7 +538,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-09-26T14:49:53+00:00"
+     "found_at": "2026-09-27T08:51:00+00:00"
     }
    ],
    "matchScore": 79,
@@ -622,7 +580,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/brac-it/career/lead-senior-software-engineer-net/2026",
-     "found_at": "2026-09-26T14:49:51+00:00"
+     "found_at": "2026-09-27T08:50:59+00:00"
     }
    ],
    "matchScore": 73,
@@ -667,7 +625,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-09-26T14:49:58+00:00"
+     "found_at": "2026-09-27T08:51:05+00:00"
     }
    ],
    "matchScore": 61,
@@ -696,7 +654,7 @@
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-09-26",
+   "postedAt": "2026-09-27",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -710,12 +668,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/22",
-     "found_at": "2026-09-26T14:49:54+00:00"
+     "found_at": "2026-09-27T08:51:01+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/21",
-     "found_at": "2026-09-26T14:49:54+00:00"
+     "found_at": "2026-09-27T08:51:01+00:00"
     }
    ],
    "matchScore": 61,
@@ -759,7 +717,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-09-26T14:49:58+00:00"
+     "found_at": "2026-09-27T08:51:05+00:00"
     }
    ],
    "matchScore": 61,
@@ -802,7 +760,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-09-26T14:49:58+00:00"
+     "found_at": "2026-09-27T08:51:05+00:00"
     }
    ],
    "matchScore": 57,
@@ -845,7 +803,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/chery-bangladesh/career/sr-executive-asst-brand-manager-marketing/2026",
-     "found_at": "2026-09-26T14:49:51+00:00"
+     "found_at": "2026-09-27T08:50:59+00:00"
     }
    ],
    "matchScore": 57,
@@ -890,7 +848,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-software-engineer-platform",
-     "found_at": "2026-09-26T14:49:58+00:00"
+     "found_at": "2026-09-27T08:51:05+00:00"
     }
    ],
    "matchScore": 57,
@@ -933,7 +891,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-09-26T14:49:58+00:00"
+     "found_at": "2026-09-27T08:51:05+00:00"
     }
    ],
    "matchScore": 57,
@@ -962,7 +920,7 @@
    "id": "40278252-6f0e-49d6-8441-47ef0b48a724",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, team, field, nation., required, python, docker, kubernetes, aws",
-   "postedAt": "2026-09-26",
+   "postedAt": "2026-09-27",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -976,7 +934,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/19",
-     "found_at": "2026-09-26T14:49:54+00:00"
+     "found_at": "2026-09-27T08:51:01+00:00"
     }
    ],
    "matchScore": 57,
@@ -1020,7 +978,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/arogga/career/senior-executive-assistant-manager-lab-operations/2026",
-     "found_at": "2026-09-26T14:49:51+00:00"
+     "found_at": "2026-09-27T08:50:59+00:00"
     }
    ],
    "matchScore": 53,
@@ -1064,12 +1022,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-09-26T14:50:02+00:00"
+     "found_at": "2026-09-27T08:51:09+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-26T14:50:02+00:00"
+     "found_at": "2026-09-27T08:51:09+00:00"
     }
    ],
    "matchScore": 53,
@@ -1112,7 +1070,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rancon-motorbikes-limited/career/assistant-manager-senior-executive-marketing/2026",
-     "found_at": "2026-09-26T14:49:51+00:00"
+     "found_at": "2026-09-27T08:50:59+00:00"
     }
    ],
    "matchScore": 53,
