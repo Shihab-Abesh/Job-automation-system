@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-27T15:29:52+00:00",
+ "generatedAt": "2026-09-28T09:15:51+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 12,
+    "found": 13,
     "errors": [],
-    "raw": 183
+    "raw": 185
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 24,
-   "new": 1,
+   "total": 25,
+   "new": 2,
    "expired": 0,
    "duplicatesFolded": 6,
    "priorityA": 8,
    "priorityB": 3,
-   "priorityC": 13
+   "priorityC": 14
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-09-27T15:29:51+00:00"
+  "ranAt": "2026-09-28T09:15:51+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-09-27T15:29:11+00:00"
+     "found_at": "2026-09-28T09:15:12+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,12 +145,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026-2",
-     "found_at": "2026-09-27T15:29:09+00:00"
+     "found_at": "2026-09-28T09:15:10+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026",
-     "found_at": "2026-09-27T15:29:11+00:00"
+     "found_at": "2026-09-28T09:15:11+00:00"
     }
    ],
    "matchScore": 83,
@@ -193,7 +193,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/fci-group/career/management-trainee-officer-mto/2026",
-     "found_at": "2026-09-27T15:29:09+00:00"
+     "found_at": "2026-09-28T09:15:10+00:00"
     }
    ],
    "matchScore": 83,
@@ -236,7 +236,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-09-27T15:29:09+00:00"
+     "found_at": "2026-09-28T09:15:10+00:00"
     }
    ],
    "matchScore": 83,
@@ -278,12 +278,12 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-operations-analyst-commure/",
-     "found_at": "2026-09-27T15:29:09+00:00"
+     "found_at": "2026-09-28T09:15:10+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-data-operations-analyst-commure/",
-     "found_at": "2026-09-27T15:29:09+00:00"
+     "found_at": "2026-09-28T09:15:11+00:00"
     }
    ],
    "matchScore": 81,
@@ -326,7 +326,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-09-27T15:29:09+00:00"
+     "found_at": "2026-09-28T09:15:10+00:00"
     }
    ],
    "matchScore": 79,
@@ -368,7 +368,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-marketing-emami-bangladesh-limited/",
-     "found_at": "2026-09-27T15:29:09+00:00"
+     "found_at": "2026-09-28T09:15:10+00:00"
     }
    ],
    "matchScore": 75,
@@ -411,7 +411,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job-in-bd/twelve-clothing-limited/career/mto-research-and-development/2026",
-     "found_at": "2026-09-27T15:29:09+00:00"
+     "found_at": "2026-09-28T09:15:10+00:00"
     }
    ],
    "matchScore": 75,
@@ -453,7 +453,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-shops-foodpanda/",
-     "found_at": "2026-09-27T15:29:09+00:00"
+     "found_at": "2026-09-28T09:15:11+00:00"
     }
    ],
    "matchScore": 73,
@@ -471,18 +471,18 @@
    "discoveredBy": "bdrecruit"
   },
   {
-   "title": "Backend Software Engineer, PDP Experience",
-   "company": "Reddit",
-   "description": "Headquarters: Remote - United States\nReddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internet’s largest sources of information. For more information, visit www.redditinc.com .\nThe PDP Experience team is responsible for one of the highest traffic pages on the platform: the Comments page. We know that conversations are the lifeblood of Reddit, so we strive to ensure viewing content and the surrounding conversation is appealing, intuitive and delightful. This is a high impact role where you will drive related technical & product strategy, operations, architecture, and execution for one of the largest sites in the world.\nWhat You’ll Do:\nWork cross-functionally with product, design, and other engineering counterparts to execute on product and business strategy and build novel products and features that our users will love.\nContribute to the full development cycle: technical design, development, test, experimentation, analysis, and launch. You’ll be reviewing code and design docs, giving feedback on product specs and mocks.\nContribute meaningfully to team strategy. We give everyone a seat at the table and encourage active participation in planning for the future. Don’t just come along for the ride.\nParticipate with a team of thoughtful, fast-moving, and motivated engineers. Contribute to standards that improve developer workflows, and recommend best practices.\nMove fast while balancing quality. We can’t afford extensive processes, and we also can’t afford show-stopping bugs. We need someone who can balance speed with quality while quickly building brand-new products.\nContinuously learn and improve your technical and non-technical abilities.\nWho You Might Be:\nBS degree in Computer Science, a similar technical field of study or equivalent practical experience\nMinimum of 3+ years of post-internship, full-time, hands-on, professional software development experience in large-scale distributed systems.\n3+ years of software development experience in one or more general-purpose programming languages; Go, Python, Rust, Ruby.\nExperienced with GraphQL, REST, HTTP, Thrift or gRPC basics, and the ability to design and implement maintainable APIs.\nStrong organizational skills, the ability to prioritize tasks and keep projects on schedule.\nEntrepreneurial spirit. You are self-directed, innovative, and biased towards action in fast-paced environments. You love to build new things and thrive in ambiguity and even failure.\nExcellent communication skills. You collaborate effectively with teams in a fully remote environment and discuss complex topics with technical and non-technical audiences.\nBenefits:\nComprehensive Healthcare Benefits and Income Replacement Programs\n401k with Employer Match\nGlobal Benefit programs that fit your lifestyle, from workspace to professional development to caregiving support\nFamily Planning Support\nGender-Affirming Care\nMental Health & Coaching Benefits\nFlexible Vacation & Paid Volunteer Time Off\nGenerous Paid Parental Leave\nPay Transparency:\nThis job posting may span more than one career level.\nIn addition to base salary, this job is eligible to receive equity in the form of restricted stock units, and depending on the position offered, it may also be eligible to receive a commission. Additionally, Reddit offers a wide range of benefits to U.S.-based employees, including medical, dental, and vision insurance, 401(k) program with employer match, generous time off for vacation, and parental leave. To learn more, please visit https://www.redditinc.com/careers/ .\nTo provide greater transparency to candidates, we share base salary ranges for all US-based job postings regardless of state. We set standard base pay ranges for all roles based on function, level, and country location, benchmarked against similar stage growth companies. Final offer amounts are determined by multiple factors including, skills, depth of work experience and relevant licenses/credentials, and may vary from the amounts listed below.\nThe base salary range for this position is:\n$164,000 — $229,000 USD\nIn select roles and locations, the interviews will be recorded, transcribed and summarized by artificial intelligence (AI). You will have the opportunity to opt out of recording, transcription and summarization prior to any scheduled interviews.\nDuring the interview, we will collect the following categories of personal information: Identifiers, Professional and Employment-Related Information, Sensory Information (audio/video recording), and any other categories of personal information you choose to share with us. We will use this information to evaluate your application for employment or an independent contractor role, as applicable. We will not sell your personal information or disclose it to any third party for their marketing purposes. We will delete any recording of your interview promptly after making a hiring decision. For more information about how we will handle your personal information, including our retention of it, please refer to our Candidate Privacy Policy for Potential Employees and Contractors .\nReddit is proud to be an equal opportunity employer, and is committed to building a workforce representative of the diverse communities we serve. Reddit is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If, due to a disability, you need an accommodation during the interview process, please let your recruiter know.\nTo apply: https://weworkremotely.com/remote-jobs/reddit-backend-software-engineer-pdp-experience",
+   "title": "Software Engineer - Developer Experience",
+   "company": "Dremio",
+   "description": "Headquarters: Portugal - Remote\nBe Part of Building the Future\nDremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost. Learn more at www.dremio.com.\nAbout the role\nIn this role you will get opportunities to implement and maintain CI/CD systems and developer productivity solutions. You will be responsible for both regularly scheduled work as well as on-demand break-fix work to support Dremio’s CI/CD system, identifying areas of improvement, and implementing changes to increase efficiency and effectiveness of those systems.\nBring your industry experience to improve the efficiency and scale of Dremio’s infrastructure via innovation on tooling and methodologies. You should have empathy for developers and a passion for engineering productivity.\nWhat you’ll be doing\nSolve problems for fellow Dremio engineers by:\nLeveraging and contributing to playbooks to implement solutions to unblock them\nIdentifying short term workarounds and documenting them\nAutomating processes where manual processes exist.\nWorking on infrastructure across all major clouds (AWS, GCP, Azure).\nManaging access to key infrastructure.\nBuild and maintain CI/CD pipelines and associated systems to increase organizational efficiency.\nAutomate local development workflows.\nAnalyze performance bottlenecks, root cause issues, file defects, follow up with developers, and document resolutions.\nClear focus on keeping our development branches ‘green’.\nRelease engineering - automating processes to push software to delivery endpoints.\nReport out on the status, reliability and robustness of our CI/CD systems.\nActively participate in code reviews.\nWhat we’re looking for\nB.S. or M.S in Computer Science or in a related technical field\n1+ years of experience on large scale distributed systems\nComfortable navigating the fast moving, unstructured nature of a hyper-growth startup.\nDemonstrable Knowledge and Experience with at least one cloud platform (AWS, Azure, GCP)\nBasic understanding of cloud networking and cloud architecture.\nProficiency in any of Java/C++/Python/Go\nKnowledge of Maven or similar build environments\nHands on experience in pipeline automation using CI/CD tools like Jenkins\nExperience in Infrastructure as Code\nExperience with Terraform, BASH, Docker, Jenkins, and Kubernetes\nAbility to write technical reports, effectively summarizing key data\nPassion for learning and then delivering solutions using latest technologies\nStrong Affinity for collaboration and teamwork\nBonus points if you have\nWorking knowledge in data lakes and data warehousing\nProficient with SQL\nWhat we value\nAt Dremio, we hold ourselves to high standards when it comes to People, Thinking, and Action. Our Gnarlies (that's what we call our employees) communicate with clarity, drive accountability, and are respectful towards each other. We confront brutal facts and focus on results while operating with a sense of urgency and building a \"flywheel\". People who like to jump in and drive momentum will thrive in our #GnarlyLife.\nDremio is an equal opportunity employer supporting workforce diversity. We do not discriminate on the basis of race, religion, color, national origin, gender identity, sexual orientation, age, marital status, protected veteran status, disability status, or any other unlawful factor.\nDremio is committed to providing any necessary accommodations for individuals with disabilities within our application and interview process. To request accommodation due to a disability, please inform your recruiter.\nDremio has policies in place to protect the personal information that employees and applicants disclose to us. Please click here to review the privacy notice.\nImportant Security Notice for Candidates\nAt Dremio, we uphold trust and transparency as paramount values in all our interactions with customers, partners, employees, and the general public. We have been targeted by individuals creating fake domains similar to ours to scam prospects and candidates. Please note that all official communications from us will be from an @dremio.com domain. If you suspect you've been targeted by a scam, it's imperative to report the incident to your local law enforcement agencies. For more information about this type of scam, please refer to Dremio's official statement here .\nDremio is not responsible for any fees related to unsolicited resumes and will not pay fees to any third-party agency or company that does not have a signed agreement with the Company.\nTo apply: https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
    "category": "Software Development",
    "location": "Remote (Anywhere in the World)",
    "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/reddit-backend-software-engineer-pdp-experience",
+   "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
    "status": "Awaiting Review",
-   "id": "dc2b09ca-64bb-4a40-918f-63c0fd5c132a",
-   "createdAt": "2026-09-20T18:11:54+00:00",
-   "requiredSkills": "engineer, pdp, headquarters, remote, united, states, reddit, community, communities., shared, interests, passion",
-   "postedAt": "2026-08-29",
+   "id": "83b1b004-efc4-4549-8d34-d4fe9b495ac3",
+   "createdAt": "2026-09-28T09:15:16+00:00",
+   "requiredSkills": "engineer, headquarters, portugal, remote, building, future, dremio, unified, lakehouse, platform, self, service",
+   "postedAt": "2026-09-28",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -491,12 +491,12 @@
    "experienceText": "",
    "area": "Remote",
    "distanceKm": 0.0,
-   "fingerprint": "7fdcbaf398af49af",
+   "fingerprint": "fd0906b805f5256c",
    "sources": [
     {
      "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/reddit-backend-software-engineer-pdp-experience",
-     "found_at": "2026-09-27T15:29:11+00:00"
+     "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
+     "found_at": "2026-09-28T09:15:16+00:00"
     }
    ],
    "matchScore": 71,
@@ -538,7 +538,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-09-27T15:29:11+00:00"
+     "found_at": "2026-09-28T09:15:12+00:00"
     }
    ],
    "matchScore": 66,
@@ -580,7 +580,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-09-27T15:29:11+00:00"
+     "found_at": "2026-09-28T09:15:11+00:00"
     }
    ],
    "matchScore": 79,
@@ -622,7 +622,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/brac-it/career/lead-senior-software-engineer-net/2026",
-     "found_at": "2026-09-27T15:29:09+00:00"
+     "found_at": "2026-09-28T09:15:10+00:00"
     }
    ],
    "matchScore": 73,
@@ -667,7 +667,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-09-27T15:29:16+00:00"
+     "found_at": "2026-09-28T09:15:16+00:00"
     }
    ],
    "matchScore": 61,
@@ -685,6 +685,50 @@
    "discoveredBy": "rss"
   },
   {
+   "title": "Senior Staff Software Engineer - Query Execution",
+   "company": "Dremio",
+   "description": "Headquarters: Portugal - Remote\nBe Part of Building the Future\nDremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost. Learn more at www.dremio.com.\nAbout the role\nDremio’s Query Execution team builds the runtime responsible for executing analytical queries at scale. The team sits between query planning and table scans, owning the systems that turn query plans into efficient, reliable execution.\nAs a Senior Staff Software Engineer, you’ll work on query operators, expression evaluation, memory management, execution scheduling, runtime planning, and performance optimization. Your work will directly affect query performance, scalability, and reliability across Dremio’s cloud data platform.\nWhat you’ll be doing\nBuild the execution engine: Design, implement, test, and support query operators, expression evaluation, execution scheduling, runtime planning, and resource management.\nImprove runtime performance: Optimize vectorized processing, concurrency, parallelism, memory usage, data exchange, and disk spilling.\nDiagnose difficult problems: Investigate query correctness and performance issues using query profiles, profiling tools, telemetry, benchmarks, logs, and production data.\nOptimize Java and the JVM: Improve CPU utilization, allocation behavior, garbage collection, thread behavior, and other runtime characteristics.\nCollaborate across the query engine: Work with Query Planner, Datalake, Product, Support, and field engineering teams on end-to-end query improvements.\nUse AI-assisted development tools: Apply AI tools to code comprehension, debugging, test generation, documentation, and incident analysis.\nApply engineering judgment: Validate AI-generated code and recommendations through review, testing, benchmarking, and engineering judgment.\nRaise the engineering bar: Participate in design and code reviews, contribute to technical direction, and mentor other engineers.\nWhat we’re looking for\nSoftware engineering experience: 5+ years developing production software, preferably in database systems, query execution, distributed systems, or related areas.\nProgramming skills: Strong Java skills; experience with C++ is a plus.\nComputer science fundamentals: Strong foundation in data structures, algorithms, concurrency, multithreaded programming, and asynchronous programming.\nDatabase and distributed systems knowledge: Understanding of database internals, query processing, distributed execution, and performance optimization.\nPerformance engineering experience: Experience profiling and optimizing CPU, memory, garbage collection, thread behavior, or other runtime characteristics.\nProblem-solving ability: Ability to solve ambiguous technical problems and work effectively across team boundaries.\nEngineering judgment: Ability to evaluate tradeoffs, validate solutions rigorously, and make sound decisions when working with unfamiliar or AI-assisted implementations.\nCommunication and ownership: Strong communication skills, a sense of ownership, and a commitment to delivering high-quality software.\nBonus points if you have\nQuery engines: Distributed query engines, database engines, or large-scale data processing systems.\nExecution techniques: Vectorized execution, query operators, expression evaluation, code generation, or runtime optimization.\nRuntime systems: JVM profiling, memory management, caching, networking, data exchange, execution scheduling, or disk spilling.\nData platforms: Apache Arrow, Apache Iceberg, Parquet, Avro, Spark, Hadoop, or cloud object stores.\nOpen source: Contributing to open-source projects.\nWhat we value\nAt Dremio, we hold ourselves to high standards when it comes to People, Thinking, and Action. Our Gnarlies (that's what we call our employees) communicate with clarity, drive accountability, and are respectful towards each other. We confront brutal facts and focus on results while operating with a sense of urgency and building a \"flywheel\". People who like to jump in and drive momentum will thrive in our #GnarlyLife.\nDremio is an equal opportunity employer supporting workforce diversity. We do not discriminate on the basis of race, religion, color, national origin, gender identity, sexual orientation, age, marital status, protected veteran status, disability status, or any other unlawful factor.\nDremio is committed to providing any necessary accommodations for individuals with disabilities within our application and interview process. To request accommodation due to a disability, please inform your recruiter.\nDremio has policies in place to protect the personal information that employees and applicants disclose to us. Please click here to review the privacy notice.\nImportant Security Notice for Candidates\nAt Dremio, we uphold trust and transparency as paramount values in all our interactions with customers, partners, employees, and the general public. We have been targeted by individuals creating fake domains similar to ours to scam prospects and candidates. Please note that all official communications from us will be from an @dremio.com domain. If you suspect you've been targeted by a scam, it's imperative to report the incident to your local law enforcement agencies. For more information about this type of scam, please refer to Dremio's official statement here .\nDremio is not responsible for any fees related to unsolicited resumes and will not pay fees to any third-party agency or company that does not have a signed agreement with the Company.\nTo apply: https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
+   "status": "Awaiting Review",
+   "id": "b605ce77-e7e5-49d3-be5c-5cd269652aee",
+   "createdAt": "2026-09-28T09:15:16+00:00",
+   "requiredSkills": "senior, staff, engineer, query, execution, headquarters, portugal, remote, building, future, dremio, unified",
+   "postedAt": "2026-09-28",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "1a29b5df8429f795",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
+     "found_at": "2026-09-28T09:15:16+00:00"
+    }
+   ],
+   "matchScore": 61,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)",
+    "Title matches your excluded list (Staff)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
    "title": "Senior Software Engineer (Full stack)",
    "company": "Field Nation",
    "description": "Senior Software Engineer (Full stack) position at Field Nation. Required skills: Php, MySQL, Node.Js, React, React-Native.",
@@ -696,7 +740,7 @@
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-09-27",
+   "postedAt": "2026-09-28",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -710,12 +754,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/22",
-     "found_at": "2026-09-27T15:29:11+00:00"
+     "found_at": "2026-09-28T09:15:12+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/21",
-     "found_at": "2026-09-27T15:29:11+00:00"
+     "found_at": "2026-09-28T09:15:12+00:00"
     }
    ],
    "matchScore": 61,
@@ -759,7 +803,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-09-27T15:29:16+00:00"
+     "found_at": "2026-09-28T09:15:16+00:00"
     }
    ],
    "matchScore": 61,
@@ -802,7 +846,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-09-27T15:29:16+00:00"
+     "found_at": "2026-09-28T09:15:16+00:00"
     }
    ],
    "matchScore": 57,
@@ -845,7 +889,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/chery-bangladesh/career/sr-executive-asst-brand-manager-marketing/2026",
-     "found_at": "2026-09-27T15:29:09+00:00"
+     "found_at": "2026-09-28T09:15:10+00:00"
     }
    ],
    "matchScore": 57,
@@ -890,7 +934,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-software-engineer-platform",
-     "found_at": "2026-09-27T15:29:16+00:00"
+     "found_at": "2026-09-28T09:15:16+00:00"
     }
    ],
    "matchScore": 57,
@@ -933,7 +977,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-09-27T15:29:16+00:00"
+     "found_at": "2026-09-28T09:15:16+00:00"
     }
    ],
    "matchScore": 57,
@@ -962,7 +1006,7 @@
    "id": "40278252-6f0e-49d6-8441-47ef0b48a724",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, team, field, nation., required, python, docker, kubernetes, aws",
-   "postedAt": "2026-09-27",
+   "postedAt": "2026-09-28",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -976,7 +1020,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/19",
-     "found_at": "2026-09-27T15:29:11+00:00"
+     "found_at": "2026-09-28T09:15:12+00:00"
     }
    ],
    "matchScore": 57,
@@ -1020,7 +1064,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/arogga/career/senior-executive-assistant-manager-lab-operations/2026",
-     "found_at": "2026-09-27T15:29:09+00:00"
+     "found_at": "2026-09-28T09:15:10+00:00"
     }
    ],
    "matchScore": 53,
@@ -1064,12 +1108,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-09-27T15:29:19+00:00"
+     "found_at": "2026-09-28T09:15:20+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer",
-     "found_at": "2026-09-27T15:29:19+00:00"
+     "found_at": "2026-09-28T09:15:20+00:00"
     }
    ],
    "matchScore": 53,
@@ -1112,7 +1156,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rancon-motorbikes-limited/career/assistant-manager-senior-executive-marketing/2026",
-     "found_at": "2026-09-27T15:29:09+00:00"
+     "found_at": "2026-09-28T09:15:10+00:00"
     }
    ],
    "matchScore": 53,
