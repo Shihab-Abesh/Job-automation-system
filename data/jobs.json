@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-09-30T16:36:54+00:00",
+ "generatedAt": "2026-10-01T09:41:44+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 17,
+    "found": 12,
     "errors": [],
-    "raw": 149
+    "raw": 116
    },
    "jsonld": {
     "found": 3,
@@ -43,7 +43,7 @@
    "rss": {
     "found": 16,
     "errors": [],
-    "raw": 190
+    "raw": 195
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 28,
+   "total": 24,
    "new": 0,
    "expired": 0,
-   "duplicatesFolded": 8,
-   "priorityA": 8,
+   "duplicatesFolded": 7,
+   "priorityA": 5,
    "priorityB": 4,
-   "priorityC": 16
+   "priorityC": 15
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-09-30T16:36:54+00:00"
+  "ranAt": "2026-10-01T09:41:44+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-09-30T16:36:14+00:00"
+     "found_at": "2026-10-01T09:41:05+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,17 +145,17 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026-3",
-     "found_at": "2026-09-30T16:36:12+00:00"
+     "found_at": "2026-10-01T09:41:03+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026-2",
-     "found_at": "2026-09-30T16:36:13+00:00"
+     "found_at": "2026-10-01T09:41:03+00:00"
     },
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026",
-     "found_at": "2026-09-30T16:36:13+00:00"
+     "found_at": "2026-10-01T09:41:05+00:00"
     }
    ],
    "matchScore": 83,
@@ -198,7 +198,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/fci-group/career/management-trainee-officer-mto/2026",
-     "found_at": "2026-09-30T16:36:12+00:00"
+     "found_at": "2026-10-01T09:41:03+00:00"
     }
    ],
    "matchScore": 83,
@@ -241,7 +241,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-09-30T16:36:12+00:00"
+     "found_at": "2026-10-01T09:41:03+00:00"
     }
    ],
    "matchScore": 83,
@@ -254,54 +254,6 @@
    "priority": "A",
    "gateNotes": [
     "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Data Operations Analyst",
-   "company": "Commure",
-   "description": "Location: Dhaka, Bangladesh\nEmployment Type: Full Time\nDepartment: Global Operations\nAbout Commure\nAt Commure, we’re building the AI Operating System for healthcare, the foundation that defines how care is delivered, documented, and financed. Our platform spans the full care journey: Ambient AI and Dictation, intelligent Agents, and autonomous RCM processing, all on a single AI-native platform integrated with 60+ EHRs.\nHealthcare carries a $1 trillion administrative burden, and Commure is focused on transforming it. Today, 500,000+ clinicians across 500+ healthcare organizations nationwide trust Commure to handle $25B+ in annual claims and support over 200 million patient interactions.\nAbout the Role\nWe are looking for a Data Operations Analyst to join our RCM Global Operations team. This individual will be responsible for ensuring the accuracy and reliability of key processes and data, supporting the mission to improve the efficiency and effectiveness of healthcare providers. This is a high-impact role requiring extreme attention to detail, a focus on quality, and the ability to work across different functions to maintain the highest standards. The role requires a commitment to excellence, the ability to handle ambiguity, and a passion for continuous improvement.\nKey Responsibilities\nQuality Assurance & Documentation\nConduct quality assurance checks on operational processes, ensuring that all details are correct and there are zero errors.\nProcess Adherence\nFollow detailed processes meticulously and ensure documentation is comprehensive and up-to-date.\nData Analysis\nAnalyze large datasets and perform quality checks using SQL and other tools to identify discrepancies, optimize processes, and support business decisions.\nInstruction Creation\nWrite detailed instructions and process documents, ranging from simple to complex, to guide internal teams effectively.\nCommunication\nCommunicate clearly and effectively in both written and verbal formats, ensuring that complex topics are explained in an easily understandable manner.\nCross-Team Collaboration\nWork closely with different teams, such as Product, Engineering, Sales, and Account Management, to uphold quality standards and solve emerging issues.\nRequirements\nBachelor’s degree in Computer Science, Data Science, Mathematics, Statistics, Economics, or a related field, or equivalent work experience.\nAbility to spot discrepancies and ensure accuracy in all aspects of the role.\nExperience with SQL for data querying and analysis, including working with large datasets to maintain data integrity.\nStrong documentation skills with the ability to create, maintain, and follow detailed process documentation.\nExcellent written and verbal communication skills, with the ability to explain complex topics clearly.\nA mindset of taking full ownership of responsibilities and a commitment to high-quality output.\nAbility to thrive in a fast-paced, dynamic environment and manage ambiguity effectively.\nWork Details\nShift: Night Shift, 10:00 PM – 7:00 AM BST\nWorkdays: Monday to Friday\nInformation Security Requirement\nEmployees will act in accordance with Commure’s information security policies, including protecting assets from unauthorized access, disclosure, modification, destruction, or interference. Employees will report confirmed or potential security events or other risks to the information security office and will be required to attest to these requirements upon hire and annually.\nOfficial Communication\nAll official communication from Commure will come exclusively from email addresses ending in @commure.com . Emails from other domains are not affiliated with the organization.\nMake Your ATS-Friendly CV",
-   "category": "Data & Reporting",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/data-operations-analyst-commure/",
-   "status": "Awaiting Review",
-   "id": "ae0e9639-3047-4743-80fe-801bce6ffc11",
-   "createdAt": "2026-09-20T15:55:32+00:00",
-   "requiredSkills": "analyst, location, dhaka, bangladesh, employment, type, full, time, department, global, about, commure",
-   "postedAt": "2026-09-16",
-   "deadline": "2026-10-16",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full Time",
-   "experienceText": "2 Years",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "ff7822b23dd7a7e9",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/data-operations-analyst-commure/",
-     "found_at": "2026-09-30T16:36:13+00:00"
-    },
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/senior-data-operations-analyst-commure/",
-     "found_at": "2026-09-30T16:36:13+00:00"
-    }
-   ],
-   "matchScore": 81,
-   "scoreParts": {
-    "title": 100,
-    "level": 55,
-    "skills": 67,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -331,7 +283,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-09-30T16:36:12+00:00"
+     "found_at": "2026-10-01T09:41:03+00:00"
     }
    ],
    "matchScore": 79,
@@ -348,108 +300,23 @@
    "discoveredBy": "bdrecruit"
   },
   {
-   "title": "Management Trainee – Marketing",
-   "company": "Emami Bangladesh Limited",
-   "description": "Employment Type: Permanent\nApplication Deadline: 30 September 2026\nJob Requirements\nB.B.A. from a reputed university/institute with a decent academic record.\nFreshers are highly encouraged to apply.\nCompensation & Benefits\nAttractive salary package.\nFast-track career growth.\nProfessional work environment.\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/management-trainee-marketing-emami-bangladesh-limited/",
-   "status": "Awaiting Review",
-   "id": "52bd0d53-3d3a-4675-b86f-2383ac408921",
-   "createdAt": "2026-09-23T08:11:42+00:00",
-   "requiredSkills": "trainee, marketing, employment, type, permanent, deadline, september, 2026, b.b.a., reputed, university/institute, decent",
-   "postedAt": "2026-09-23",
-   "deadline": "2026-10-01",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Permanent",
-   "experienceText": "Freshers",
-   "area": "",
-   "distanceKm": null,
-   "fingerprint": "bd96b2a5e9f0a13e",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/management-trainee-marketing-emami-bangladesh-limited/",
-     "found_at": "2026-09-30T16:36:12+00:00"
-    }
-   ],
-   "matchScore": 75,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "MTO – Research and Development",
-   "company": "Twelve Clothing Limited",
-   "description": "Location: Kawran Bazar, Dhaka\nEmployment Type: Full-time\nApplication Deadline: 30 September 2026\nAbout Twelve Clothing Limited\nTwelve Clothing Limited is a concern of TEAM Group and a leading fashion brand known for its commitment to quality, innovation, and excellence in the apparel industry.\nKey Responsibilities\nResearch current fashion trends through market surveys and analyze internal sales data and other brands’ product-wise prices and details.\nProcess bills for design sample purchases.\nAssist in generating future collection requirements along with the Category and Design team.\nAssist in managing the Garment, Fabric & Accessories Archive.\nPrepare presentations or reports on other brands’ product details using available software.\nWork closely with the Design, Merchandising, and Sales departments to support trendy materials, trims, and style developments.\nSupport and closely follow up with the Sales Department and Outlet Managers regarding customer feedback.\nPrepare monthly and daily reports for the Department Head.\nRequirements\nGraduation in Fashion Designing, Apparel Merchandising, Textile Engineering, or any other relevant field.\nKnowledge of Design, Fabric, Accessories, Sampling, Merchandising, and Production Processes.\nGood communication skills.\nGood computer skills, including Microsoft Office, Excel, and PowerPoint.\nAbility to handle user-oriented development software.\nBenefits\nCompetitive salary\nProfessional development opportunities\nFestival Bonus\nYearly Salary Review\nAlternative Saturday\nHow to Apply\nInterested candidates are requested to send their resume to: Email: tw_hr@twelvebd.com\nSubject Line: Mention the position name\nApplication Deadline: 30 September 2026\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Kawran Bazar, Dhaka",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job-in-bd/twelve-clothing-limited/career/mto-research-and-development/2026",
-   "status": "Awaiting Review",
-   "id": "ed762a23-1d21-42a2-bf4d-80d130db1b01",
-   "createdAt": "2026-09-20T15:55:32+00:00",
-   "requiredSkills": "mto, research, development, location, kawran, bazar, dhaka, employment, type, full, time, deadline",
-   "postedAt": "2026-09-17",
-   "deadline": "2026-10-01",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Full Time",
-   "experienceText": "",
-   "area": "Kawran Bazar",
-   "distanceKm": 1.4,
-   "fingerprint": "5e7ddb324cf3cc5e",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job-in-bd/twelve-clothing-limited/career/mto-research-and-development/2026",
-     "found_at": "2026-09-30T16:36:13+00:00"
-    }
-   ],
-   "matchScore": 75,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Business Performance Analyst (Shops)",
+   "title": "Business Performance Analyst",
    "company": "foodpanda",
-   "description": "Position: Business Performance Analyst (Shops) – Quick Commerce\nJob Ref ID: JR0085714\nLocation: Dhaka, Bangladesh\nJob Type: On-site\nEmployment Type: Full-Time\nAbout the Role\nWe are looking for a data-driven operations professional with a strong background in Business Performance or Business Analytics. This role owns the operational performance of foodpanda’s Quick Commerce Shops portfolio by analysing KPIs, identifying root causes, building dashboards, and leading cross-functional improvement initiatives to deliver measurable business impact. The role is expected to independently own operational outcomes across the Shops portfolio, lead cross-functional initiatives, manage complex operational projects with minimal supervision, and proactively identify opportunities to improve operational performance at scale.\nKey Responsibilities\nShops Performance Management\nOwn the operational performance of the QC Shops portfolio across Bangladesh.\nMonitor, analyze, and improve operational performance across key business and fulfillment metrics, including:\nItem Not Found (InF)\nVendor Offline Rate\nVendor Fail Rate\nPerfect Fulfillment Rate (PFR)\nOrder Acceptance Rate\nCancellation Rate\nReplacement Offered %\nPicker Utilisation\nOrchestration SKU Coverage & Stock\nAssortment availability\nIdentify operational risks and recurring performance issues through data analysis.\nPerform root cause analyses and develop structured action plans to improve vendor performance.\nPartner closely with Account Managers to implement operational improvement initiatives for underperforming vendors.\nConduct joint vendor visits where required to validate operational issues and ensure agreed actions are implemented.\nMeasure, monitor, and report the business impact of operational improvement initiatives.\nStrategic Retail Partner Expansion\nLead the operational execution of strategic retail partner launches from planning through post-launch stabilization.\nCoordinate operational readiness across Operations, Commercial, Account Management, and partner teams.\nManage launch timelines, dependencies, risks, and stakeholder communication.\nCoordinate picker onboarding, training, deployment, and operational readiness for new strategic partner launches.\nEnsure operational processes and SOPs are successfully implemented before and after launch.\nMonitor launch performance and drive corrective actions where required.\nContinuously improve the operating model for strategic retail partners as the business scales.\nPicker Operations & Inventory Coordination\nCoordinate operational readiness of foodpanda picker teams supporting Shops operations.\nMonitor picker training-to-deployment readiness.\nIdentify stores, categories, and SKUs requiring inventory verification based on operational data.\nDefine inventory count priorities and provide clear guidance to picker teams on execution.\nMonitor inventory check completion, quality, and follow-up actions.\nPartner with Account Managers and picker teams to improve stock accuracy, assortment availability, and InF performance.\nField Operations & Store Excellence\nConduct regular field visits to partner stores to validate operational performance, identify root causes, and ensure sustainable improvements are embedded across the vendor network.\nObserve fulfillment processes, including picking, packing, and order handover.\nValidate compliance with operational SOPs and foodpanda standards.\nDeliver operational coaching and guidance to vendor teams and picker teams.\nDocument findings, assign corrective actions, and ensure timely follow-up.\nSupport live operational escalations where required while maintaining focus on long-term operational improvement.\nData Analytics & Business Performance\nAnalyze operational datasets to identify trends, risks, and opportunities for improvement.\nBuild and maintain operational dashboards and recurring reports using Microsoft Excel or Google Sheets to support faster decision-making and proactive performance management.\nSupport analysis using SQL, Looker, or other business intelligence tools where applicable.\nPrepare weekly and monthly business reviews for leadership.\nTranslate data into actionable recommendations and measurable improvement plans.\nTrack the effectiveness of operational initiatives and continuously optimize performance.\nOperational Excellence & Regional Collaboration\nPartner with Regional Operations teams to identify best practices, operating models, and successful initiatives across Delivery Hero markets.\nEvaluate, localize, and implement regional initiatives within Bangladesh.\nMeasure adoption and business impact of implemented initiatives, sharing learnings and recommendations where appropriate.\nSupport the rollout of new operational tools, product features, and process improvements.\nCoordinate cross-functionally with Commercial, Account Management, Product, Logistics, and Data teams.\nDevelop and continuously improve operational SOPs, playbooks, trackers, and training materials.\nIndependently lead operational improvement projects from problem identification and solution design through implementation, stakeholder alignment, and impact measurement.\nAct as the operational subject matter expert supporting the Account Management team in driving vendor performance improvements.\nQualifications\nBachelor’s degree in Business, Engineering, Supply Chain, Operations Management, Economics, Data Analytics, or a related discipline.\n4-5 years of experience in Business Performance, Business Analytics, Performance Management, Operations Analytics, Marketplace Analytics, E-commerce Operations, or Quick Commerce.\nExperience owning KPIs and performance reporting is strongly preferred.\nAdvanced Excel / Google Sheets skills, including Pivot, XLOOKUP, and INDEX-MATCH.\nExperience building dashboards and performance reports.\nStrong data analysis and KPI management skills.\nExcellent written and verbal communication skills in English and Bangla.\nDemonstrated experience managing operational performance and delivering measurable business improvements.\nExperience with SQL, Looker, Tableau, or similar business intelligence tools is preferred.\nExperience working with supermarkets, grocery retailers, marketplaces, or FMCG partners is preferred.\nStrong analytical, project management, and stakeholder management skills.\nAbility to thrive in a fast-paced and rapidly changing operational environment.\nWhat We’re Looking For\nStrong ownership and accountability.\nHighly analytical with excellent problem-solving skills.\nAbility to independently manage multiple operational priorities.\nStrong project management and execution capability.\nComfortable working with both operational data and field execution.\nExcellent stakeholder management and cross-functional collaboration skills.\nHigh attention to detail and operational discipline.\nStrong communication and influencing skills.\nPassion for continuous improvement and operational excellence.\nWillingness to spend time in the field to understand operational challenges firsthand.\nA collaborative mindset with a bias for action and delivering measurable results.\nDemonstrated ability to influence stakeholders and drive operational improvements without direct authority.\nAbout foodpanda\nfoodpanda is part of the Delivery Hero Group, a local delivery platform operating in around 65 countries worldwide. Headquartered in Berlin, Germany, Delivery Hero has been listed on the Frankfurt Stock Exchange since 2017 and is part of the MDAX stock market index.\nMake Your ATS-Friendly CV",
+   "description": "Company: foodpanda\nPosition: Business Performance Analyst (Shops) – Qcommerce\nJob Ref ID: JR0085714\nLocation: Dhaka, Bangladesh\nEmployment Type: Full-time\nWorkplace: On-site\nAbout The Role\nfoodpanda is looking for a data-driven operations professional with experience in Business Performance or Business Analytics to manage the operational performance of its Quick Commerce Shops portfolio across Bangladesh. The role focuses on KPI analysis, root cause identification, dashboard development, operational improvement initiatives, strategic retail partner launches, picker operations, inventory coordination, field execution, and cross-functional project management.\nKey Responsibilities\nShops Performance Management\nOwn the operational performance of the QC Shops portfolio across Bangladesh.\nMonitor, analyse, and improve key business and fulfilment metrics including Item Not Found (InF), Vendor Offline Rate, Vendor Fail Rate, Perfect Fulfilment Rate (PFR), Order Acceptance Rate, Cancellation Rate, Replacement Offered %, Picker Utilisation, Orchestration SKU Coverage, stock, and assortment availability.\nIdentify operational risks and recurring performance issues through data analysis.\nConduct root cause analysis and develop structured action plans to improve vendor performance.\nPartner with Account Managers to implement operational improvement initiatives for underperforming vendors.\nConduct joint vendor visits where required to validate operational issues and ensure agreed actions are implemented.\nMeasure, monitor, and report the business impact of operational improvement initiatives.\nStrategic Retail Partner Expansion\nLead operational execution of strategic retail partner launches from planning through post-launch stabilisation.\nCoordinate operational readiness across Operations, Commercial, Account Management, and partner teams.\nManage launch timelines, dependencies, risks, and stakeholder communication.\nCoordinate picker onboarding, training, deployment, and operational readiness for new strategic partner launches.\nEnsure operational processes and SOPs are implemented before and after launch.\nMonitor launch performance and drive corrective actions where required.\nContinuously improve the operating model for strategic retail partners as the business scales.\nPicker Operations & Inventory Coordination\nCoordinate operational readiness of foodpanda picker teams supporting Shops operations.\nMonitor picker training to deployment readiness.\nIdentify stores, categories, and SKUs requiring inventory verification based on operational data.\nDefine inventory count priorities and provide clear guidance to picker teams.\nMonitor inventory check completion, quality, and follow-up actions.\nPartner with Account Managers and picker teams to improve stock accuracy, assortment availability, and InF performance.\nField Operations & Store Excellence\nConduct regular field visits to partner stores to validate operational performance and identify root causes.\nObserve fulfilment processes including picking, packing, and order handover.\nValidate compliance with operational SOPs and foodpanda standards.\nProvide operational coaching and guidance to vendor and picker teams.\nDocument findings, assign corrective actions, and ensure timely follow-up.\nSupport live operational escalations while maintaining focus on long-term operational improvement.\nData Analytics & Business Performance\nAnalyse operational datasets to identify trends, risks, and improvement opportunities.\nBuild and maintain operational dashboards and recurring reports using Microsoft Excel or Google Sheets.\nSupport analysis using SQL, Looker, or other business intelligence tools where applicable.\nPrepare weekly and monthly business reviews for leadership.\nTranslate data into actionable recommendations and measurable improvement plans.\nTrack the effectiveness of operational initiatives and continuously optimise performance.\nOperational Excellence & Regional Collaboration\nPartner with Regional Operations teams to identify best practices, operating models, and successful initiatives across Delivery Hero markets.\nEvaluate, localise, and implement regional initiatives within Bangladesh.\nMeasure adoption and business impact of implemented initiatives.\nSupport the rollout of new operational tools, product features, and process improvements.\nCoordinate with Commercial, Account Management, Product, Logistics, and Data teams.\nDevelop and continuously improve operational SOPs, playbooks, trackers, and training materials.\nIndependently lead operational improvement projects from problem identification and solution design through implementation, stakeholder alignment, and impact measurement.\nAct as the operational subject matter expert supporting the Account Management team in driving vendor performance improvements.\nRequirements & Qualifications\nEducation\nBachelor’s degree in Business, Engineering, Supply Chain, Operations Management, Economics, Data Analytics, or a related discipline.\nExperience\n4 to 5 years of experience in Business Performance, Business Analytics, Performance Management, Operations Analytics, Marketplace Analytics, E-commerce Operations, or Quick Commerce.\nExperience owning KPIs and performance reporting is strongly preferred.\nExperience working with supermarkets, grocery retailers, marketplaces, or FMCG partners is preferred.\nTechnical Skills\nAdvanced knowledge of Excel or Google Sheets, including Pivot Tables, XLOOKUP, and INDEX-MATCH.\nExperience building dashboards and performance reports.\nStrong data analysis and KPI management skills.\nExperience with SQL, Looker, Tableau, or similar business intelligence tools is preferred.\nAdditional Requirements\nExcellent written and verbal communication skills in English and Bangla.\nDemonstrated experience managing operational performance and delivering measurable business improvements.\nStrong analytical, project management, and stakeholder management skills.\nAbility to work effectively in a fast-paced and rapidly changing operational environment.\nSkills & Competencies\nBusiness Performance Analysis\nBusiness Analytics\nKPI Management\nOperations Analytics\nData Analysis\nDashboard Development\nAdvanced Excel\nGoogle Sheets\nSQL\nLooker\nTableau\nProject Management\nStakeholder Management\nOperational Excellence\nRoot Cause Analysis\nProcess Improvement\nWhat We’re Looking For\nStrong ownership and accountability.\nExcellent problem-solving and analytical abilities.\nAbility to independently manage multiple operational priorities.\nStrong project management and execution capabilities.\nAbility to work with both operational data and field execution.\nExcellent stakeholder management and cross-functional collaboration skills.\nHigh attention to detail and operational discipline.\nStrong communication and influencing skills.\nPassion for continuous improvement and operational excellence.\nWillingness to spend time in the field to understand operational challenges firsthand.\nCollaborative mindset with a bias for action and measurable results.\nAbility to influence stakeholders and drive operational improvements without direct authority.\nMake Your ATS-Friendly CV",
    "category": "Data & Reporting",
    "location": "Dhaka, Bangladesh",
    "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/business-performance-analyst-shops-foodpanda/",
+   "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
    "status": "Awaiting Review",
    "id": "b562b455-58af-412a-8186-555fa68f96cd",
    "createdAt": "2026-09-20T15:55:32+00:00",
-   "requiredSkills": "business, performance, analyst, shops, quick, commerce, ref, jr0085714, location, dhaka, bangladesh, type",
-   "postedAt": "2026-09-16",
-   "deadline": "2026-10-16",
+   "requiredSkills": "business, performance, analyst, foodpanda, shops, qcommerce, ref, jr0085714, location, dhaka, bangladesh, employment",
+   "postedAt": "2026-10-01",
+   "deadline": "2026-10-31",
    "salaryMin": null,
    "salaryMax": null,
    "salaryText": "",
-   "employmentType": "Full Time, On-site",
+   "employmentType": "Full Time",
    "experienceText": "4 Years",
    "area": "Dhaka (area not stated)",
    "distanceKm": null,
@@ -457,8 +324,8 @@
    "sources": [
     {
      "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/business-performance-analyst-shops-foodpanda/",
-     "found_at": "2026-09-30T16:36:13+00:00"
+     "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
+     "found_at": "2026-10-01T09:41:03+00:00"
     }
    ],
    "matchScore": 73,
@@ -501,7 +368,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-09-30T16:36:18+00:00"
+     "found_at": "2026-10-01T09:41:09+00:00"
     }
    ],
    "matchScore": 71,
@@ -543,7 +410,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-09-30T16:36:22+00:00"
+     "found_at": "2026-10-01T09:41:13+00:00"
     }
    ],
    "matchScore": 66,
@@ -585,7 +452,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-09-30T16:36:14+00:00"
+     "found_at": "2026-10-01T09:41:05+00:00"
     }
    ],
    "matchScore": 66,
@@ -627,7 +494,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/air-astra/career/executive-ground-operations/2026",
-     "found_at": "2026-09-30T16:36:12+00:00"
+     "found_at": "2026-10-01T09:41:03+00:00"
     }
    ],
    "matchScore": 83,
@@ -670,7 +537,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-09-30T16:36:13+00:00"
+     "found_at": "2026-10-01T09:41:05+00:00"
     }
    ],
    "matchScore": 79,
@@ -683,51 +550,6 @@
    "priority": "C",
    "gateNotes": [
     "Pay tops out at Tk 13,000, below your Tk 20,000 floor"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Lead / Senior Software Engineer, .NET",
-   "company": "BRAC IT",
-   "description": "Department: Managed Service\nLocation: Dhaka\nWorkplace Type: On-site\nEmployment Type: Full-time\nExperience: 8+ Years\nNumber of Vacancies: 1\nApplication Deadline: 30 September 2026\nKey Responsibilities\nLead the design, development, deployment, and maintenance of enterprise-grade full-stack applications using .NET technologies and modern front-end frameworks.\nProvide technical leadership and mentorship to development teams, ensuring adherence to coding standards and best practices.\nArchitect scalable, secure, high-performance solutions aligned with business and technical requirements.\nCollaborate with Product Owners, Business Analysts, Architects, QA teams, and stakeholders to deliver quality software solutions.\nDesign and develop robust RESTful APIs, microservices, and distributed systems.\nConduct code reviews, enforce development standards, and ensure high code quality through automated testing and CI/CD practices.\nDrive technical discussions, solution design sessions, and architectural decision-making.\nOptimize application performance, scalability, security, and database efficiency.\nTroubleshoot complex production issues and provide root cause analysis and resolution.\nEnsure compliance with security standards, regulatory requirements, and enterprise governance policies.\nLead Agile ceremonies, sprint planning, estimation, and technical backlog management.\nEvaluate emerging technologies and recommend improvements to enhance product quality and development efficiency.\nSupport DevOps initiatives, release management, and continuous delivery processes.\nWork closely with business stakeholders to translate requirements into scalable technical solutions.\nRequired Skills & Experience\nTechnical Skills\n8+ years of professional experience in software development, with at least 2–3 years in a technical leadership role.\nProven experience leading full-stack development teams and delivering enterprise-scale applications.\nExpert-level proficiency in .NET Core / .NET 6/7/8, C#, ASP.NET MVC, and Web API.\nStrong hands-on experience with modern front-end frameworks such as Angular and/or React.\nAdvanced knowledge of JavaScript/TypeScript, HTML5, CSS3, Bootstrap, and Tailwind CSS.\nStrong expertise in SQL Server, PostgreSQL, and Oracle Database.\nExtensive experience with Entity Framework Core, LINQ, Stored Procedures, and database optimization.\nStrong understanding of Microservices Architecture, RESTful APIs, and API Security, including OAuth2 and JWT.\nHands-on experience with Clean Architecture, Domain-Driven Design (DDD), and SOLID Principles.\nExperience with Azure DevOps, Git, GitHub Actions, and CI/CD pipelines.\nKnowledge of Docker, Kubernetes, and cloud platforms such as Azure/AWS will be an advantage.\nStrong understanding of Agile/Scrum methodologies and Software Development Life Cycle (SDLC).\nExperience in Banking, Financial Services, FinTech, or Enterprise Application Development is preferred.\nStrong leadership, mentoring, stakeholder management, and problem-solving skills.\nPreferred Domain Experience\nBanking & Financial Services\nDigital Banking Platforms\nFinTech Solutions\nEnterprise Resource Planning (ERP)\nLarge-Scale Enterprise Applications\nPreferred Skills Highlighted\nStrong expertise in C#, .NET Core, .NET 6/7/8, ASP.NET MVC, and Web API.\nStrong command of Microservices, RESTful APIs, and distributed system architecture.\nExpertise in SQL Server, PostgreSQL, Oracle, EF Core, LINQ, and database optimization.\nHands-on experience with scalable full-stack applications using Angular and/or React.\nSolid understanding of Clean Architecture, DDD, SOLID, and enterprise design principles.\nProven technical leadership experience.\nInterview Process\nTechnical/Functional Interview (Online)\nHR Interview (Online)\nOffer\nMake Your ATS-Friendly CV",
-   "category": "Software Development",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/jobs-in-bd/brac-it/career/lead-senior-software-engineer-net/2026",
-   "status": "Awaiting Review",
-   "id": "589a6639-f3d0-402a-aef8-02a35d487d4d",
-   "createdAt": "2026-09-25T15:42:12+00:00",
-   "requiredSkills": "lead, senior, engineer, .net, department, managed, service, location, dhaka, workplace, type, employment",
-   "postedAt": "2026-09-25",
-   "deadline": "2026-10-01",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full Time, On-site",
-   "experienceText": "2 Years",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "94e3fb51239e36e9",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/jobs-in-bd/brac-it/career/lead-senior-software-engineer-net/2026",
-     "found_at": "2026-09-30T16:36:12+00:00"
-    }
-   ],
-   "matchScore": 73,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 83,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting",
-    "Title matches your excluded list (Senior)",
-    "Title matches your excluded list (Lead)"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -757,7 +579,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-09-30T16:36:14+00:00"
+     "found_at": "2026-10-01T09:41:05+00:00"
     }
    ],
    "matchScore": 61,
@@ -800,7 +622,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-09-30T16:36:18+00:00"
+     "found_at": "2026-10-01T09:41:09+00:00"
     }
    ],
    "matchScore": 61,
@@ -830,7 +652,7 @@
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-09-30",
+   "postedAt": "2026-10-01",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -844,12 +666,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/22",
-     "found_at": "2026-09-30T16:36:14+00:00"
+     "found_at": "2026-10-01T09:41:05+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/21",
-     "found_at": "2026-09-30T16:36:14+00:00"
+     "found_at": "2026-10-01T09:41:05+00:00"
     }
    ],
    "matchScore": 61,
@@ -893,7 +715,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-09-30T16:36:14+00:00"
+     "found_at": "2026-10-01T09:41:05+00:00"
     }
    ],
    "matchScore": 61,
@@ -936,7 +758,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-09-30T16:36:18+00:00"
+     "found_at": "2026-10-01T09:41:09+00:00"
     }
    ],
    "matchScore": 57,
@@ -979,7 +801,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-09-30T16:36:18+00:00"
+     "found_at": "2026-10-01T09:41:09+00:00"
     }
    ],
    "matchScore": 57,
@@ -1008,7 +830,7 @@
    "id": "40278252-6f0e-49d6-8441-47ef0b48a724",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, team, field, nation., required, python, docker, kubernetes, aws",
-   "postedAt": "2026-09-30",
+   "postedAt": "2026-10-01",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1022,7 +844,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/19",
-     "found_at": "2026-09-30T16:36:14+00:00"
+     "found_at": "2026-10-01T09:41:05+00:00"
     }
    ],
    "matchScore": 57,
@@ -1066,7 +888,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-09-30T16:36:18+00:00"
+     "found_at": "2026-10-01T09:41:09+00:00"
     }
    ],
    "matchScore": 57,
@@ -1109,7 +931,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bangladesh/rancon-global-trucks-limited-jac-motors/career/sr-executive-mis/2026",
-     "found_at": "2026-09-30T16:36:12+00:00"
+     "found_at": "2026-10-01T09:41:03+00:00"
     }
    ],
    "matchScore": 57,
@@ -1153,7 +975,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-09-30T16:36:18+00:00"
+     "found_at": "2026-10-01T09:41:09+00:00"
     }
    ],
    "matchScore": 57,
@@ -1196,7 +1018,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/arogga/career/senior-executive-assistant-manager-lab-operations/2026",
-     "found_at": "2026-09-30T16:36:12+00:00"
+     "found_at": "2026-10-01T09:41:03+00:00"
     }
    ],
    "matchScore": 53,
@@ -1240,7 +1062,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-application-security",
-     "found_at": "2026-09-30T16:36:22+00:00"
+     "found_at": "2026-10-01T09:41:13+00:00"
     }
    ],
    "matchScore": 53,
@@ -1283,7 +1105,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rancon-motorbikes-limited/career/assistant-manager-senior-executive-marketing/2026",
-     "found_at": "2026-09-30T16:36:12+00:00"
+     "found_at": "2026-10-01T09:41:03+00:00"
     }
    ],
    "matchScore": 53,
