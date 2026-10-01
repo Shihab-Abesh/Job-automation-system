@@ -69,6 +69,10 @@ function educationLabel(profile){
  const e=((profile&&profile.education)||[])[0];
  if(!e||!e.degree)return "";
  const field=apField(e.degree)||e.degree;
+ // The current schema keeps "expected graduation" apart from the enrolment date (e.date might read
+ // "May 2022 - Present", which says nothing about whether the degree is finished). An older profile
+ // has no such field and encoded this in `date` instead ("Expected October 2026"); still honoured below.
+ if(e.expectedGraduation)return `${field} student (degree expected ${e.expectedGraduation})`;
  const date=String(e.date||"");
  if(/expected/i.test(date)){
   const when=date.replace(/expected/i,"").trim();

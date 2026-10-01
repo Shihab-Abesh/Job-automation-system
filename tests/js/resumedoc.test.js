@@ -34,14 +34,36 @@ test("builds a plain, JSON-safe document from the resume's parts", () => {
   assert.strictEqual(d.name, "Test Person");
   assert.strictEqual(d.headline, "QA Engineer | SQL");
   assert.deepStrictEqual(d.skillRows, [{ category: "Testing", items: ["Manual Testing", "SQL"] }]);
-  assert.strictEqual(d.experience[0].title, "QA Intern, Innolytic IT Ltd.");
-  assert.strictEqual(d.experience[0].meta, "Dhaka | Jan 2026 - Mar 2026");
+  // the role, company AND location sit together on the header's left side; only the duration sits on the right
+  assert.strictEqual(d.experience[0].title, "QA Intern, Innolytic IT Ltd., Dhaka");
+  assert.strictEqual(d.experience[0].meta, "Jan 2026 - Mar 2026");
+  assert.strictEqual(d.experience[0].priorTitle, "");
+  assert.strictEqual(d.experience[0].priorDuration, "");
   assert.deepStrictEqual(d.experience[0].bullets, ["Did a thing.", "Did another."]);
   assert.strictEqual(d.projects[0].title, "Payroll System, Oracle Project");
   assert.strictEqual(d.projects[1].title, "Solo");
   // the name and subtitle are kept apart too, so the preview can bold only the name
   assert.deepStrictEqual([d.projects[0].name, d.projects[0].subtitle, d.projects[1].name, d.projects[1].subtitle], ["Payroll System", "Oracle Project", "Solo", ""]);
-  assert.strictEqual(d.education[0].detail, "AIUB | CGPA 3.5");
+  // the institution sits on its own line, the CGPA/expected-graduation line below it
+  assert.strictEqual(d.education[0].detail, "AIUB\nCGPA 3.5");
+});
+
+test("a sub-role — an earlier title held at the same company, e.g. a promotion — carries its own duration", () => {
+  const inp = input();
+  inp.experience[0].priorTitle = "QA Volunteer"; inp.experience[0].priorDuration = "Jan 2026 - Feb 2026";
+  const d = api.buildResumeDoc(inp);
+  assert.strictEqual(d.experience[0].priorTitle, "QA Volunteer");
+  assert.strictEqual(d.experience[0].priorDuration, "Jan 2026 - Feb 2026");
+});
+
+test("a degree not yet finished adds an 'Expected graduation' line; one already finished does not", () => {
+  const inp = input();
+  inp.profile.education[0].expectedGraduation = "December 2026";
+  let d = api.buildResumeDoc(inp);
+  assert.strictEqual(d.education[0].detail, "AIUB\nCGPA 3.5 | Expected graduation: December 2026");
+  inp.profile.education[0].expectedGraduation = "";
+  d = api.buildResumeDoc(inp);
+  assert.strictEqual(d.education[0].detail, "AIUB\nCGPA 3.5");
 });
 
 test("references without a name are left out", () => {
@@ -61,24 +83,24 @@ test("the document is a copy: changing the profile or the input afterwards canno
   assert.strictEqual(JSON.stringify(d), before);
 });
 
-test("plain text has the layout the TXT download always had", () => {
+test("plain text has the layout the TXT download always had: no heading over the summary, Skills after Education, Reference last", () => {
   const t = api.resumeDocToText(api.buildResumeDoc(input()));
   assert.strictEqual(t, [
     "TEST PERSON", "QA ENGINEER | SQL", "Dhaka | 01700000000 | test@example.com", "",
-    "PROFESSIONAL SUMMARY", "A summary.", "",
-    "CORE SKILLS", "Testing: Manual Testing, SQL", "",
-    "PROFESSIONAL EXPERIENCE", "QA Intern, Innolytic IT Ltd. | Dhaka | Jan 2026 - Mar 2026", "• Did a thing.", "• Did another.", "",
+    "A summary.", "",
+    "EXPERIENCE", "QA Intern, Innolytic IT Ltd. | Dhaka | Jan 2026 - Mar 2026", "• Did a thing.", "• Did another.", "",
     "PROJECTS", "Payroll System, Oracle Project", "• Built it.", "",
-    "EDUCATION", "BSc in Computer Science and Engineering | Expected October 2026", "AIUB | CGPA 3.5", "",
-    "REFERENCES", "Ref One", "Manager, Acme", "ref@example.com | 01800000000"
+    "EDUCATION", "BSc in Computer Science and Engineering | Expected October 2026", "AIUB", "CGPA 3.5", "",
+    "SKILLS", "Testing: Manual Testing, SQL", "",
+    "REFERENCE", "Ref One", "Manager, Acme", "ref@example.com | 01800000000"
   ].join("\n"));
 });
 
-test("no headline means no blank headline line; no references means no References block", () => {
+test("no headline means no blank headline line; no references means no Reference block", () => {
   const inp = input(); inp.headline = ""; inp.profile.references = [];
   const t = api.resumeDocToText(api.buildResumeDoc(inp));
   assert.ok(t.startsWith("TEST PERSON\nDhaka |"), t.slice(0, 60));
-  assert.ok(!t.includes("REFERENCES"));
+  assert.ok(!t.includes("REFERENCE"));
 });
 
 test("a hand-edited resume keeps the edited text and says so", () => {
@@ -86,7 +108,7 @@ test("a hand-edited resume keeps the edited text and says so", () => {
   const d = api.buildResumeDoc(inp);
   assert.strictEqual(d.overridden, true);
   const t = api.resumeDocToText(d);
-  assert.ok(t.includes("PROFESSIONAL EXPERIENCE\nMy own experience text\n\nPROJECTS\nMy own projects\n\nEDUCATION"));
+  assert.ok(t.includes("EXPERIENCE\nMy own experience text\n\nPROJECTS\nMy own projects\n\nEDUCATION"));
 });
 
 test("an empty profile still produces a valid document rather than throwing", () => {

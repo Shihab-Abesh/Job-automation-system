@@ -12,11 +12,17 @@
 const RD_DOC_VERSION=1;
 const rdStr=s=>s==null?"":String(s);
 const rdJoin=parts=>parts.filter(Boolean).join(" | ");
+const rdComma=parts=>parts.filter(Boolean).join(", ");
 
 // c: {profile, headline, contact, summary, skillRows, experience, projects, overridden,
 //     experienceText, projectsText}. experience/projects arrive already ordered and filtered the way
 //     the resume shows them; experienceText/projectsText are the plain-text form of the same content
 //     (or your hand-edited text, when overridden).
+//
+// An experience entry may carry an earlier title held at the same company (priorTitle/priorDuration) —
+// a promotion, say: "SQA Intern: June 2026 - September 2026" printed under the current role's header.
+// An education entry may carry expectedGraduation — a degree not yet finished — kept apart from the
+// enrolment date so the resume can say "Expected graduation: <when>" without claiming it's done.
 function buildResumeDoc(c){
  const p=c.profile||{},personal=p.personal||{};
  return {
@@ -26,22 +32,28 @@ function buildResumeDoc(c){
   contact:rdStr(c.contact),
   summary:rdStr(c.summary),
   skillRows:(c.skillRows||[]).map(g=>({category:rdStr(g.category),items:(g.items||[]).filter(Boolean).map(rdStr)})),
-  experience:(c.experience||[]).map(e=>({title:`${e.role}, ${e.company}`,meta:rdJoin([e.location,e.duration]),bullets:(e.bullets||[]).filter(Boolean).map(rdStr)})),
+  experience:(c.experience||[]).map(e=>({title:rdComma([e.role,e.company,e.location]),meta:rdStr(e.duration),
+   priorTitle:rdStr(e.priorTitle),priorDuration:rdStr(e.priorDuration),bullets:(e.bullets||[]).filter(Boolean).map(rdStr)})),
   projects:(c.projects||[]).map(x=>({title:`${x.name}${x.subtitle?`, ${x.subtitle}`:""}`,name:rdStr(x.name),subtitle:rdStr(x.subtitle),bullets:(x.bullets||[]).filter(Boolean).map(rdStr)})),
   overridden:!!c.overridden,
   experienceText:rdStr(c.experienceText),
   projectsText:rdStr(c.projectsText),
-  education:(p.education||[]).map(e=>({degree:rdStr(e.degree),date:rdStr(e.date),detail:rdJoin([e.institution,e.score])})),
+  education:(p.education||[]).map(e=>{
+   const line2=rdJoin([rdStr(e.score),e.expectedGraduation?`Expected graduation: ${rdStr(e.expectedGraduation)}`:""]);
+   return {degree:rdStr(e.degree),date:rdStr(e.date),detail:[rdStr(e.institution),line2].filter(Boolean).join("\n")};
+  }),
   references:(p.references||[]).filter(r=>r.name).map(r=>({name:rdStr(r.name),title:rdStr(r.title),contact:rdJoin([r.email,r.phone])}))
  };
 }
 
-// The same plain-text layout the dashboard has always produced for the TXT download.
+// The same plain-text layout the dashboard has always produced for the TXT download. No heading above
+// the summary (it reads directly under the contact line); Skills comes after Education, and the
+// reference section is headed "REFERENCE" (singular) — matching the owner's own resume exactly.
 function resumeDocToText(d){
  const skills=d.skillRows.map(g=>`${g.category}: ${g.items.join(", ")}`).join("\n");
  const edu=d.education.map(e=>`${e.degree}${e.date?" | "+e.date:""}\n${e.detail}`).join("\n\n");
  const refs=d.references.map(r=>`${r.name}\n${r.title}\n${r.contact}`).join("\n\n");
- return `${(d.name||"Your Name").toUpperCase()}\n${d.headline?d.headline.toUpperCase()+"\n":""}${d.contact}\n\nPROFESSIONAL SUMMARY\n${d.summary}\n\nCORE SKILLS\n${skills}\n\nPROFESSIONAL EXPERIENCE\n${d.experienceText}\n\nPROJECTS\n${d.projectsText}\n\nEDUCATION\n${edu}${refs?`\n\nREFERENCES\n${refs}`:""}`;
+ return `${(d.name||"Your Name").toUpperCase()}\n${d.headline?d.headline.toUpperCase()+"\n":""}${d.contact}\n\n${d.summary}\n\nEXPERIENCE\n${d.experienceText}\n\nPROJECTS\n${d.projectsText}\n\nEDUCATION\n${edu}\n\nSKILLS\n${skills}${refs?`\n\nREFERENCE\n${refs}`:""}`;
 }
 
 // Is this object shaped like a resume document? Used before trusting anything read back from storage

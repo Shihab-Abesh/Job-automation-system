@@ -197,6 +197,30 @@ def test_marking_applied_records_the_version_and_the_history_has_its_own_tab():
     assert 'data-testid="no-version-nudge"' in html
 
 
+def test_the_resume_follows_the_owners_cv_layout():
+    """No heading over the summary; Experience, Projects, Education, Skills, Reference in that order."""
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    preview = html[html.index("function ResumePreview("):html.index("function VersionDetail(")]
+    for old in ("PROFESSIONAL SUMMARY", "CORE SKILLS", "PROFESSIONAL EXPERIENCE", "REFERENCES"):
+        assert old not in preview, f"{old} is the old heading text; the resume now matches the owner's CV"
+    order = [preview.index(f'title="{h}"') for h in ("EXPERIENCE", "PROJECTS", "EDUCATION", "SKILLS", "REFERENCE")]
+    assert order == sorted(order)
+    # a promotion within one company, and a degree not yet finished, print a sub-line
+    assert "e.priorTitle&&" in preview and "e.priorTitle" in preview and "e.priorDuration" in preview
+    assert 'data-testid="core-skills"' in preview  # the testid outlived the heading's rename
+    # the owner's real contact details and promotion/graduation fields are the shipped defaults
+    assert '"abesh9450@gmail.com"' in html and '"https://github.com/Shihab-Abesh"' in html
+    assert 'priorTitle:"SQA Intern"' in html and 'expectedGraduation:"December 2026"' in html
+
+
+def test_a_degree_not_yet_finished_is_never_called_earned_anywhere_a_summary_is_built():
+    """generalSummary and summaryFor both derive their opening phrase from educationLabel, never hardcode it."""
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    assert "const who=educationLabel(p)" in html
+    assert 'summaryFor(strategy,p)' in html
+    assert '"Computer Science and Engineering graduate' not in html
+
+
 def test_the_document_and_version_modules_are_pure():
     """No DOM, storage or network in the modules Node tests: the storage lives in index.html."""
     for name in ("resumedoc.js", "versions.js", "privatedata.js"):

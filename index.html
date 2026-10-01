@@ -136,35 +136,40 @@ function useVaultStore(storageKey,cryptoKey,empty,noun,advice,notify){
 }
 
 const DEFAULT_PROFILE={
- personal:{fullName:"",headline:"",location:"Dhaka, Bangladesh",phone:"",email:"",linkedin:"",github:"",portfolio:""},
+ personal:{fullName:"Kazi Shihab Jaiyid",headline:"",location:"Nakhalpara, Tejgaon, Dhaka 1215",phone:"01859559450",email:"abesh9450@gmail.com",linkedin:"",github:"https://github.com/Shihab-Abesh",portfolio:""},
  education:[
-  {degree:"Bachelor of Science in Computer Science and Engineering",institution:"American International University-Bangladesh (AIUB), Dhaka",score:"CGPA 3.46 / 4.00",date:"Expected October 2026"}
+  {degree:"BSc in Computer Science & Engineering",institution:"American International University-Bangladesh (AIUB)",score:"CGPA: 3.47 / 4.00",date:"May 2022 – Present",expectedGraduation:"December 2026"},
+  {degree:"HSC in Science",institution:"BAF Shaheen College Dhaka",score:"GPA: 5.00 / 5.00",date:"2021",expectedGraduation:""},
+  {degree:"SSC in Science",institution:"Dhanmondi Govt. Boys' High School",score:"GPA: 4.78 / 5.00",date:"2019",expectedGraduation:""}
  ],
  experience:[{
-   role:"Software Quality Assurance Intern",company:"Innolytic IT Ltd.",location:"Dhaka, Bangladesh",duration:"June 2026 – September 2026",
+   role:"Software Quality Assurance",company:"Innolytic IT Ltd",location:"Dhaka",duration:"September 2026 – Present",
+   priorTitle:"SQA Intern",priorDuration:"June 2026 – September 2026",
    bullets:[
-    "Surfaced dozens of defects on a live university website rebuild by designing and executing functional test cases covering UI verification, form validation, responsive layouts and cross-browser behaviour, all reported before client delivery.",
-    "Prevented incorrect content reaching the client launch by verifying backend behaviour through frontend actions and escalating critical content-display defects to the development team.",
-    "Cut back-and-forth on fixes by documenting every defect with reproduction steps and screen recordings, then retesting and closing each fix after the developer round.",
-    "Protected released features from breakage by running regression testing on core pages and forms after each fix cycle.",
-    "Turned client needs into testable checks by taking part in requirement meetings, Scrum meetings and project meetings with developers, designers and the project manager."
+    "Tested the SUST university website rebuild as part of the development and QA team, covering functional, UI and design, form validation, responsive, cross-browser and regression testing.",
+    "Found and reported defects before client delivery, including critical content-display issues traced by checking backend behaviour through frontend actions.",
+    "Wrote every defect report with reproduction steps and screen recordings, and verified each fix before closing it.",
+    "Worked with developers, designers and the project manager in client requirement and Scrum meetings.",
+    "Verified the functionality of migrated websites during a company-wide server migration."
    ],
-   tags:["Software Quality Assurance","Information Technology","Information Systems","Application Support"]
+   tags:["Software Quality Assurance","Information Technology","Information Systems","Application Support","Hosting","DNS Configuration","SSL Installation","Server Migration Verification"]
  }],
  projects:[
-  {name:"Shipping Port Management System",subtitle:"Web Application (HTML, CSS, PHP, JavaScript, MySQL)",bullets:["Delivered a dynamic web application with full create, read, update and delete functionality for ship, terminal and shipment records.","Integrated a MySQL database through phpMyAdmin and implemented form validation and database connectivity in PHP."],skills:["HTML","CSS","PHP","JavaScript","MySQL","phpMyAdmin","Form Validation"],categories:["Information Technology","Software Development","Information Systems","Application Support"]},
-  {name:"Shipping Port Management System",subtitle:"Software Engineering Project",bullets:["Specified a port management system covering ship registration, terminal operations and shipment tracking, producing system requirements, UML diagrams, work breakdown structure, COCOMO cost estimation and risk analysis.","Validated the build against requirements by designing and running functional test cases at system level."],skills:["System Analysis","Requirements Analysis","UML","WBS","Risk Analysis","Functional Testing"],categories:["Information Systems","MIS","Business Analysis","Management & Business","Software Quality Assurance"]},
-  {name:"University Payroll Management System",subtitle:"Oracle Database Project",bullets:["Built a normalized relational database in Oracle from an ER diagram, enforcing data integrity through constraints and triggers.","Improved query performance by writing and tuning complex SQL with joins, subqueries, stored procedures and PL/SQL blocks."],skills:["Oracle","SQL","PL/SQL","Database Design","ER Diagram","Normalization"],categories:["Information Systems","MIS","Data & Reporting","Information Technology"]}
+  {name:"Fashion E-commerce Website",subtitle:"HTML, CSS, PHP, JavaScript, MySQL",bullets:["Built a bilingual (English/Bangla) online fashion store with a custom PHP MVC structure, animated mobile-first design and a full admin panel.","Added customer accounts with Google Sign-In, local payments (COD, bKash, Nagad), printable invoices, and inventory with size and colour variants.","Optimised images to WebP and secured the site with CSRF protection, password hashing and rate limiting."],skills:["HTML","CSS","PHP","JavaScript","MySQL","MVC","Google Sign-In","CSRF Protection","Password Hashing","Rate Limiting","Admin Panel","Payment Integration"],categories:["Software Development","Information Technology","Information Systems"]},
+  {name:"Shipping Port Management System",subtitle:"HTML, CSS, PHP, JavaScript, MySQL",bullets:["Planned the system end to end: requirements, UML diagrams, work breakdown structure, COCOMO cost estimate and risk analysis.","Built the web app (full CRUD) for ship registration, terminal operations and shipment tracking, then tested it."],skills:["HTML","CSS","PHP","JavaScript","MySQL","System Analysis","Requirements Analysis","UML","Work Breakdown Structure","COCOMO Cost Estimation","Risk Analysis","Functional Testing"],categories:["Information Systems","MIS","Business Analysis","Management & Business","Software Quality Assurance","Information Technology"]},
+  {name:"University Payroll Management System",subtitle:"Oracle SQL, PL/SQL",bullets:["Designed a normalised Oracle database from an ER diagram, with complex queries, triggers and procedures."],skills:["Oracle","SQL","PL/SQL","ER Diagram","Normalization","Joins","Subqueries","Triggers","Stored Procedures","Query Optimization"],categories:["Information Systems","MIS","Data & Reporting","Information Technology"]}
  ],
  skills:[
-  {category:"Software Testing",items:["Manual Testing","Test Case Design","Test Execution","Functional Testing","UI and Design Verification","Form Validation","Responsive Testing","Cross-Browser Testing","Regression Testing","Smoke Testing","Defect Reporting","Bug Life Cycle","SDLC","STLC","Agile","Scrum"]},
-  {category:"Programming and Web",items:["PHP","JavaScript","C++","HTML","CSS"]},
-  {category:"Databases",items:["Oracle SQL","PL/SQL","MySQL","phpMyAdmin","ER Modelling","Normalization","Joins","Subqueries","Triggers","Stored Procedures","Constraints","Query Optimization"]},
-  {category:"Web and Hosting",items:["E-Commerce Website Setup","Domain Purchase and Registration","DNS Configuration","Hosting Panel Management","SSL Installation","Server Migration Verification"]},
-  {category:"Tools",items:["Visual Studio Code","Microsoft Office (Excel, Word)","Cisco Packet Tracer","Dia Diagram Editor","Git and GitHub"]},
-  {category:"Documentation",items:["Test Cases","Defect Reports","Requirement Documents","UML Diagrams","Work Breakdown Structure","COCOMO Cost Estimation","Risk Analysis"]}
+  {category:"Quality and Testing",items:["Test Case Design","Defect Reporting","Bug Life Cycle","Requirement Analysis","Functional Testing","Regression Testing","Smoke Testing","UI Testing","Responsive Testing","Cross-Browser Testing"]},
+  {category:"Data and Analysis",items:["Microsoft Excel","SQL","MySQL","Oracle","PL/SQL"]},
+  {category:"Process",items:["Agile","Scrum","SDLC","STLC"]},
+  {category:"Web and Tools",items:["HTML","CSS","JavaScript","PHP","Jira","GitHub","Visual Studio Code","phpMyAdmin","Microsoft Word"]},
+  {category:"Languages",items:["Bengali (native)","English (professional working proficiency)"]}
  ],
- references:[],
+ references:[
+  {name:"Kazi Abul Kashem",title:"BA (Hons), MA (Eco), Dhaka University\nMSc (Eco), Bradford University, UK\nSecretary (Retired), Ministry of Agriculture, Ministry of Civil Aviation & Tourism, Ministry of Cultural Affairs\n(Govt. of the People's Republic of Bangladesh)",email:"kaziabulkashem@yahoo.com",phone:"01713458650"},
+  {name:"S. M. Robiul Islam Lalin",title:"Barrister at Law\nPhD (Fellow) in Law\nDevelopment Economist\nMember, International Bar Association, London, UK",email:"barristerlalin.associates@gmail.com",phone:""}
+ ],
  preferences:{
   categories:["Software Development","Information Technology","Information Systems","MIS","Management & Business","Business Analysis","Data & Reporting","Application Support","Software Quality Assurance"],
   titles:["Software Engineer","Junior Software Engineer","Web Developer","PHP Developer","System Analyst","Systems Analyst","IT Executive","IT Officer","MIS Executive","MIS Officer","MIS Analyst","Information Systems Executive","Management Trainee Officer","Management Trainee","Trainee Officer","Graduate Trainee","Business Analyst","Business Systems Analyst","Business Development Executive","Marketing Executive","Operations Executive","Project Coordinator","Data Analyst","Reporting Analyst","Application Support Engineer","QA Engineer","Software Tester"],
@@ -186,9 +191,10 @@ function migrateProfile(raw){
   degree:e.degree||"",
   institution:e.institution||"",
   score:e.score||e.cgpa||"",
-  date:e.date||e.graduation||""
+  date:e.date||e.graduation||"",
+  expectedGraduation:e.expectedGraduation||""
  }));
- p.experience=(raw.experience||[]).map(e=>({role:e.role||"",company:e.company||"",location:e.location||"",duration:e.duration||"",bullets:e.bullets||[],tags:e.tags||[]}));
+ p.experience=(raw.experience||[]).map(e=>({role:e.role||"",company:e.company||"",location:e.location||"",duration:e.duration||"",priorTitle:e.priorTitle||"",priorDuration:e.priorDuration||"",bullets:e.bullets||[],tags:e.tags||[]}));
  p.projects=(raw.projects||[]).map(x=>({
   name:x.name||"",
   subtitle:x.subtitle||"",
@@ -240,24 +246,26 @@ const ROLE_STRATEGIES={
 // For a job that fits none of the fixed strategies, in any field: a summary made only from your profile,
 // the job title, and the keywords you pressed Add for. It states nothing you have not already written.
 function generalSummary(p,job,skills){
- const edu=(p.education||[])[0]||{},exp=(p.experience||[])[0]||{};
- const field=(edu.degree||"").replace(/^.*?\bin\s+/i,"").trim();
- const who=field?`${field} graduate`:"Graduate";
+ const exp=(p.experience||[])[0]||{};
+ const who=educationLabel(p)||"Candidate";
  const where=exp.role&&exp.company?` with ${exp.role} experience at ${exp.company}`:exp.role?` with ${exp.role} experience`:"";
  const strengths=skills.length?` Strengths include ${skills.slice(0,6).join(", ")}.`:"";
  const goal=job.title?` Seeking the ${job.title} position${job.company?` at ${job.company}`:""}.`:"";
  return `${who}${where}.${strengths}${goal}`;
 }
-function summaryFor(strategy){const m={
-"Software Quality Assurance":"Computer Science and Engineering graduate with hands-on Software Quality Assurance internship experience in manual, functional and regression testing of web applications. Experienced in UI verification, form validation, responsive and cross-browser testing, defect documentation, fix verification, and collaboration with development and project teams.",
-"Information Technology":"Computer Science and Engineering graduate with practical exposure to web applications, databases, software quality validation, website infrastructure, hosting, DNS configuration, SSL setup, and technical problem solving through internship and academic projects.",
-"Information Systems":"Computer Science and Engineering graduate with experience in information systems, relational databases, SQL, system analysis, requirements documentation, UML, risk analysis, and software validation through academic projects and practical QA experience.",
-"MIS":"Computer Science and Engineering graduate with a foundation in management information systems, SQL, relational databases, data management, system analysis, and analytical problem solving.",
-"Business Analysis":"Computer Science and Engineering graduate with academic experience in requirements analysis, UML, work breakdown structures, risk analysis, system validation, and database-backed application projects.",
-"Application Support":"Computer Science and Engineering graduate with practical experience validating web applications, documenting defects, verifying fixes, working with databases, and exposure to hosting, DNS, SSL, and website migration.",
-"Software Development":"Computer Science and Engineering graduate with hands-on web development experience in PHP, JavaScript, HTML, CSS and MySQL, including a database-backed CRUD application, plus relational database design in Oracle SQL and PL/SQL. Brings practical exposure to the software delivery cycle from an internship on a live website rebuild, working in Agile and Scrum teams alongside developers, designers and project managers.",
-"Management & Business":"Computer Science and Engineering graduate whose software-company internship included client requirement meetings, Scrum and project meetings with developers, designers and project managers, and structured defect and requirement documentation. Academic projects covered work breakdown structures, COCOMO cost estimation and risk analysis. Combines analytical and technical skills with clear written communication, and is seeking a management trainee or business role.",
-"Data & Reporting":"Computer Science and Engineering graduate with practical database experience in Oracle and MySQL, SQL queries, database design, data integrity, data management, and analytical problem solving."};return m[strategy]||m["Information Systems"]}
+// The opening phrase (e.g. "Computer Science & Engineering student (degree expected December 2026)" or
+// "... graduate") comes from your Master Profile's own education, via educationLabel (applypack.js) —
+// never hardcoded here, so a summary never claims a degree you have not yet earned.
+function summaryFor(strategy,p){const who=educationLabel(p)||"Candidate";const m={
+"Software Quality Assurance":`${who} with hands-on Software Quality Assurance experience in manual, functional and regression testing of web applications. Experienced in UI verification, form validation, responsive and cross-browser testing, defect documentation, fix verification, and collaboration with development and project teams.`,
+"Information Technology":`${who} with practical exposure to web applications, databases, software quality validation, website infrastructure, hosting, DNS configuration, SSL setup, and technical problem solving through hands-on and academic projects.`,
+"Information Systems":`${who} with experience in information systems, relational databases, SQL, system analysis, requirements documentation, UML, risk analysis, and software validation through academic projects and practical QA experience.`,
+"MIS":`${who} with a foundation in management information systems, SQL, relational databases, data management, system analysis, and analytical problem solving.`,
+"Business Analysis":`${who} with academic experience in requirements analysis, UML, work breakdown structures, risk analysis, system validation, and database-backed application projects.`,
+"Application Support":`${who} with practical experience validating web applications, documenting defects, verifying fixes, working with databases, and exposure to hosting, DNS, SSL, and website migration.`,
+"Software Development":`${who} with hands-on web development experience in PHP, JavaScript, HTML, CSS and MySQL, including a database-backed CRUD application, plus relational database design in Oracle SQL and PL/SQL. Brings practical exposure to the software delivery cycle from hands-on work on a live website rebuild, working in Agile and Scrum teams alongside developers, designers and project managers.`,
+"Management & Business":`${who} whose software-company role included client requirement meetings, Scrum and project meetings with developers, designers and project managers, and structured defect and requirement documentation. Academic projects covered work breakdown structures, COCOMO cost estimation and risk analysis. Combines analytical and technical skills with clear written communication, and is seeking a management trainee or business role.`,
+"Data & Reporting":`${who} with practical database experience in Oracle and MySQL, SQL queries, database design, data integrity, data management, and analytical problem solving.`};return m[strategy]||m["Information Systems"]}
 // kws are the job's recruiter keywords (keywords.js): a bullet or project that uses them moves up.
 function scoreBullet(b,job,kws){return terms([job.title,job.description].join(" ")).filter(t=>normalize(b).includes(t)).length+3*keywordHits(b,kws||[])}
 function projectScore(x,strategy,job,kws){const text=[x.name,x.subtitle||"",...(x.skills||[]),...x.bullets].join(" ");return (x.categories.includes(strategy)?20:0)+terms([job.title,job.description].join(" ")).filter(t=>normalize(text).includes(t)).length+3*keywordHits(text,kws||[])}
@@ -565,19 +573,20 @@ function PersonalInfoForm({p,setProfile}){
 function EducationEditor({p,setProfile}){
  const items=p.education;
  const update=(i,patch)=>setProfile({...p,education:items.map((x,idx)=>idx===i?{...x,...patch}:x)});
- const add=()=>setProfile({...p,education:[...items,{degree:"",institution:"",score:"",date:""}]});
+ const add=()=>setProfile({...p,education:[...items,{degree:"",institution:"",score:"",date:"",expectedGraduation:""}]});
  const remove=i=>setProfile({...p,education:items.filter((_,idx)=>idx!==i)});
  return <Block title="Education">
   <div className="space-y-3">
    {items.map((x,i)=><EntryCard key={i} onRemove={()=>remove(i)} removeLabel="Remove this entry">
     <div className="grid md:grid-cols-2 gap-2">
-     <Input placeholder="Degree (e.g. Bachelor of Science in ...)" value={x.degree} set={v=>update(i,{degree:v})}/>
-     <Input placeholder="Date (e.g. Expected October 2026, or 2021)" value={x.date} set={v=>update(i,{date:v})}/>
+     <Input placeholder="Degree (e.g. BSc in Computer Science & Engineering)" value={x.degree} set={v=>update(i,{degree:v})}/>
+     <Input placeholder="Date (e.g. May 2022 – Present, or 2021)" value={x.date} set={v=>update(i,{date:v})}/>
     </div>
     <div className="grid md:grid-cols-2 gap-2">
      <Input placeholder="Institution" value={x.institution} set={v=>update(i,{institution:v})}/>
-     <Input placeholder="Score (e.g. CGPA 3.46 / 4.00)" value={x.score} set={v=>update(i,{score:v})}/>
+     <Input placeholder="Score (e.g. CGPA: 3.47 / 4.00)" value={x.score} set={v=>update(i,{score:v})}/>
     </div>
+    <Input placeholder="Expected graduation (optional, e.g. December 2026 — leave blank once you've graduated)" value={x.expectedGraduation||""} set={v=>update(i,{expectedGraduation:v})}/>
    </EntryCard>)}
   </div>
   <AddButton onClick={add}>Add Education Entry</AddButton>
@@ -587,7 +596,7 @@ function EducationEditor({p,setProfile}){
 function ExperienceEditor({p,setProfile}){
  const items=p.experience;
  const update=(i,patch)=>setProfile({...p,experience:items.map((x,idx)=>idx===i?{...x,...patch}:x)});
- const add=()=>setProfile({...p,experience:[...items,{role:"",company:"",location:"",duration:"",bullets:[],tags:[]}]});
+ const add=()=>setProfile({...p,experience:[...items,{role:"",company:"",location:"",duration:"",priorTitle:"",priorDuration:"",bullets:[],tags:[]}]});
  const remove=i=>setProfile({...p,experience:items.filter((_,idx)=>idx!==i)});
  return <Block title="Experience">
   <div className="space-y-3">
@@ -598,7 +607,11 @@ function ExperienceEditor({p,setProfile}){
     </div>
     <div className="grid md:grid-cols-2 gap-2">
      <Input placeholder="Location" value={x.location} set={v=>update(i,{location:v})}/>
-     <Input placeholder="Duration (e.g. June 2026 - September 2026)" value={x.duration} set={v=>update(i,{duration:v})}/>
+     <Input placeholder="Duration (e.g. September 2026 – Present)" value={x.duration} set={v=>update(i,{duration:v})}/>
+    </div>
+    <div className="grid md:grid-cols-2 gap-2">
+     <Input placeholder="Earlier title at this company (optional, e.g. after a promotion)" value={x.priorTitle||""} set={v=>update(i,{priorTitle:v})}/>
+     <Input placeholder="That earlier title's duration (e.g. June 2026 – September 2026)" value={x.priorDuration||""} set={v=>update(i,{priorDuration:v})}/>
     </div>
     <div>
      <label className="text-xs text-slate-400">Bullets (one per line)</label>
@@ -664,9 +677,10 @@ function ReferencesEditor({p,setProfile}){
   <p className="text-xs text-slate-500 mb-3">Optional, and only for people who have agreed to be a reference. This stays in your browser unless you export your profile — leave it empty to omit the section entirely.</p>
   <div className="space-y-3">
    {items.map((x,i)=><EntryCard key={i} onRemove={()=>remove(i)} removeLabel="Remove this reference">
-    <div className="grid md:grid-cols-2 gap-2">
-     <Input placeholder="Name" value={x.name} set={v=>update(i,{name:v})}/>
-     <Input placeholder="Title / Relationship" value={x.title} set={v=>update(i,{title:v})}/>
+    <Input placeholder="Name" value={x.name} set={v=>update(i,{name:v})}/>
+    <div>
+     <label className="text-xs text-slate-400">Title / credentials (one line per line, e.g. role, then qualifications)</label>
+     <textarea value={x.title} onChange={e=>update(i,{title:e.target.value})} className="w-full h-20 bg-slate-950 border border-slate-700 rounded p-3 text-sm mt-1"/>
     </div>
     <div className="grid md:grid-cols-2 gap-2">
      <Input placeholder="Email" value={x.email} set={v=>update(i,{email:v})}/>
@@ -718,11 +732,11 @@ function ResumePanel({job,p,updateJob,notify,versions,recordVersion,openApplicat
  // each entry the most relevant bullets first.
  const exp=rankExperience(p.experience,found).map(e=>({...e,bullets:[...e.bullets].filter(Boolean).sort((x,y)=>scoreBullet(y,view,found)-scoreBullet(x,view,found))}));
  const projects=[...p.projects].sort((x,y)=>projectScore(y,strategy,view,found)-projectScore(x,strategy,view,found)).slice(0,3);
- const autoSummary=strategy==="General"?generalSummary(p,job,keyItems):summaryFor(strategy);
+ const autoSummary=strategy==="General"?generalSummary(p,job,keyItems):summaryFor(strategy,p);
  const autoHeadline=p.personal.headline||(strategy==="General"?job.title:cfg.headline);
- const autoExperienceText=exp.map(e=>`${e.role}, ${e.company} — ${[e.location,e.duration].filter(Boolean).join(" | ")}\n${e.bullets.map(b=>"• "+b).join("\n")}`).join("\n\n");
- const autoProjectsText=projects.map(x=>`${x.name}${x.subtitle?", "+x.subtitle:""}\n${x.bullets.filter(Boolean).map(b=>"• "+b).join("\n")}`).join("\n\n");
- const contact=[p.personal.location,p.personal.phone,p.personal.email,p.personal.linkedin,p.personal.github,p.personal.portfolio].filter(Boolean).join(" | ");
+ const autoExperienceText=exp.map(e=>`${[e.role,e.company,e.location].filter(Boolean).join(", ")} — ${e.duration}\n${e.priorTitle?`${e.priorTitle}: ${e.priorDuration}\n`:""}${e.bullets.map(b=>"• "+b).join("\n")}`).join("\n\n");
+ const autoProjectsText=projects.map(x=>`${x.name}${x.subtitle?"\n"+x.subtitle:""}\n${x.bullets.filter(Boolean).map(b=>"• "+b).join("\n")}`).join("\n\n");
+ const contact=[p.personal.phone,p.personal.email,p.personal.linkedin,p.personal.github,p.personal.portfolio,p.personal.location].filter(Boolean).join(" • ");
 
  const ov=priv.resumeOverrides||null;
  const finalHeadline=ov?ov.headline:autoHeadline;
@@ -787,7 +801,7 @@ function ResumePanel({job,p,updateJob,notify,versions,recordVersion,openApplicat
 
   {editMode&&draft&&<div className="no-print bg-slate-900 border border-amber-700 rounded-xl p-5 space-y-3">
    <h3 className="font-semibold text-amber-300">Editing this resume's content</h3>
-   <p className="text-xs text-slate-500">Changes here apply only to this job's resume. Core Skills, Education and References always come straight from your Master Profile. Switching strategy below discards unsaved edits.</p>
+   <p className="text-xs text-slate-500">Changes here apply only to this job's resume. Skills, Education and Reference always come straight from your Master Profile. Switching strategy below discards unsaved edits.</p>
    <div><label className="text-xs text-slate-400">Headline</label><input value={draft.headline} onChange={e=>setDraft({...draft,headline:e.target.value})} className="w-full bg-slate-950 border border-slate-700 rounded p-3 text-sm mt-1"/></div>
    <div><label className="text-xs text-slate-400">Professional Summary</label><textarea value={draft.summary} onChange={e=>setDraft({...draft,summary:e.target.value})} className="w-full h-24 bg-slate-950 border border-slate-700 rounded p-3 text-sm mt-1"/></div>
    <div><label className="text-xs text-slate-400">Professional Experience</label><textarea value={draft.experienceText} onChange={e=>setDraft({...draft,experienceText:e.target.value})} className="w-full h-40 bg-slate-950 border border-slate-700 rounded p-3 text-sm font-mono mt-1"/></div>
@@ -1036,12 +1050,13 @@ function ResumeSection({title,children}){return <section className="mb-4"><h2 cl
 function ResumePreview({doc:d}){
  return <div className="bg-white text-black max-w-[794px] mx-auto p-8 md:p-10 shadow-2xl rounded print-resume">
   <header className="border-b pb-3 mb-4"><h1 className="text-3xl font-black tracking-wide">{(d.name||"YOUR NAME").toUpperCase()}</h1>{d.headline&&<p className="text-[12px] font-bold text-sky-700 mt-1 tracking-wide">{d.headline.toUpperCase()}</p>}<p className="text-[10px] mt-1 leading-4">{d.contact}</p></header>
-  <ResumeSection title="PROFESSIONAL SUMMARY"><p className="text-[10.5px] leading-5">{d.summary}</p></ResumeSection>
-  <ResumeSection title="CORE SKILLS"><div className="space-y-1" data-testid="core-skills">{d.skillRows.map((g,i)=><p key={i} className="text-[10px] leading-4"><b>{g.category}:</b> {g.items.join(", ")}</p>)}</div></ResumeSection>
-  <ResumeSection title="PROFESSIONAL EXPERIENCE">{d.overridden?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{d.experienceText}</pre>:d.experience.map((e,i)=><div key={i} className="mb-3"><div className="flex justify-between text-[10.5px]"><b>{e.title}</b><span>{e.meta}</span></div><ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{e.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
-  <ResumeSection title="PROJECTS">{d.overridden?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{d.projectsText}</pre>:d.projects.map((x,i)=><div key={i} className="mb-3"><p className="text-[10.5px]"><b>{x.name||x.title}</b>{x.subtitle&&<span>, {x.subtitle}</span>}</p><ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{x.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
-  <ResumeSection title="EDUCATION">{d.education.map((e,i)=><div key={i} className="mb-2"><div className="flex justify-between text-[10.5px]"><b>{e.degree}</b><span>{e.date}</span></div><p className="text-[10px] leading-4">{e.detail}</p></div>)}</ResumeSection>
-  {d.references.length>0&&<ResumeSection title="REFERENCES"><div className="grid grid-cols-2 gap-4">{d.references.map((r,i)=><div key={i} className="text-[10px] leading-4"><p className="font-bold text-[10.5px]">{r.name}</p><p>{r.title}</p><p>{r.contact}</p></div>)}</div></ResumeSection>}
+  {/* No heading over the summary — it reads directly under the contact line. */}
+  <p className="text-[10.5px] leading-5 mb-4">{d.summary}</p>
+  <ResumeSection title="EXPERIENCE">{d.overridden?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{d.experienceText}</pre>:d.experience.map((e,i)=><div key={i} className="mb-3"><div className="flex justify-between text-[10.5px]"><b>{e.title}</b><span>{e.meta}</span></div>{e.priorTitle&&<p className="text-[10px] leading-4 mt-0.5"><b>{e.priorTitle}:</b> {e.priorDuration}</p>}<ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{e.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
+  <ResumeSection title="PROJECTS">{d.overridden?<pre className="text-[10px] leading-4 whitespace-pre-wrap font-sans">{d.projectsText}</pre>:d.projects.map((x,i)=><div key={i} className="mb-3"><p className="text-[10.5px]"><b>{x.name||x.title}</b></p>{x.subtitle&&<p className="text-[10px] leading-4">{x.subtitle}</p>}<ul className="list-disc ml-5 mt-1 text-[10px] leading-4">{x.bullets.map((b,n)=><li key={n}>{b}</li>)}</ul></div>)}</ResumeSection>
+  <ResumeSection title="EDUCATION">{d.education.map((e,i)=><div key={i} className="mb-2"><div className="flex justify-between text-[10.5px]"><b>{e.degree}</b><span>{e.date}</span></div><p className="text-[10px] leading-4 whitespace-pre-line">{e.detail}</p></div>)}</ResumeSection>
+  <ResumeSection title="SKILLS"><div className="space-y-1" data-testid="core-skills">{d.skillRows.map((g,i)=><p key={i} className="text-[10px] leading-4"><b>{g.category}:</b> {g.items.join(", ")}</p>)}</div></ResumeSection>
+  {d.references.length>0&&<ResumeSection title="REFERENCE"><div className="grid grid-cols-2 gap-4">{d.references.map((r,i)=><div key={i} className="text-[10px] leading-4"><p className="font-bold text-[10.5px]">{r.name}</p><p className="whitespace-pre-line">{r.title}</p><p className="whitespace-pre-line">{r.contact}</p></div>)}</div></ResumeSection>}
  </div>
 }
 

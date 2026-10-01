@@ -30,6 +30,14 @@ function renderResumePDF(d,fileName){
   if(right){pdf.setFont("helvetica","normal");pdf.setFontSize(9);pdf.text(right,marginX+maxWidth,y,{align:"right"});}
   y+=13;
  };
+ // A bold label followed by normal text on the same line: "SQA Intern: June 2026 - September 2026".
+ const writeLabelLine=(label,rest,size=9.5)=>{
+  ensureSpace(12);
+  pdf.setFont("helvetica","bold");pdf.setFontSize(size);
+  pdf.text(label,marginX,y);
+  if(rest){const w=pdf.getTextWidth(label);pdf.setFont("helvetica","normal");pdf.text(" "+rest,marginX+w,y);}
+  y+=12;
+ };
  const sectionTitle=title=>{
   ensureSpace(20);
   pdf.setFont("helvetica","bold");pdf.setFontSize(10.5);
@@ -42,27 +50,36 @@ function renderResumePDF(d,fileName){
  pdf.setFont("helvetica","normal");pdf.setFontSize(9);
  pdf.text(d.contact||" ",marginX,y);y+=16;
 
- sectionTitle("Professional Summary");writeBlock(d.summary);y+=8;
+ // No heading over the summary — it reads directly under the contact line.
+ writeBlock(d.summary);y+=10;
 
- sectionTitle("Core Skills");
- d.skillRows.forEach(g=>writeBlock(`${g.category}: ${g.items.join(", ")}`));
- y+=8;
-
- sectionTitle("Professional Experience");
+ sectionTitle("Experience");
  if(d.overridden){writeBlock(d.experienceText);}
- else{d.experience.forEach(e=>{writeTwoCol(e.title,e.meta);e.bullets.forEach(b=>writeBlock("• "+b));y+=4;});}
+ else{d.experience.forEach(e=>{
+  writeTwoCol(e.title,e.meta);
+  if(e.priorTitle)writeLabelLine(e.priorTitle+":",e.priorDuration);
+  e.bullets.forEach(b=>writeBlock("• "+b));y+=4;
+ });}
  y+=4;
 
  sectionTitle("Projects");
  if(d.overridden){writeBlock(d.projectsText);}
- else{d.projects.forEach(x=>{ensureSpace(13);pdf.setFont("helvetica","bold");pdf.setFontSize(10.2);pdf.text(x.title,marginX,y);y+=13;x.bullets.forEach(b=>writeBlock("• "+b));y+=4;});}
+ else{d.projects.forEach(x=>{
+  ensureSpace(13);pdf.setFont("helvetica","bold");pdf.setFontSize(10.2);pdf.text(x.name||x.title,marginX,y);y+=12;
+  if(x.subtitle){pdf.setFont("helvetica","normal");pdf.setFontSize(9);pdf.text(x.subtitle,marginX,y);y+=12;}
+  x.bullets.forEach(b=>writeBlock("• "+b));y+=4;
+ });}
  y+=4;
 
  sectionTitle("Education");
  d.education.forEach(e=>{writeTwoCol(e.degree,e.date);writeBlock(e.detail);y+=4;});
+ y+=4;
+
+ sectionTitle("Skills");
+ d.skillRows.forEach(g=>writeBlock(`${g.category}: ${g.items.join(", ")}`));
 
  if(d.references.length){
-  y+=4;sectionTitle("References");
+  y+=8;sectionTitle("Reference");
   d.references.forEach(r=>{
    ensureSpace(12);pdf.setFont("helvetica","bold");pdf.setFontSize(9.5);pdf.text(r.name,marginX,y);y+=12;
    writeBlock(r.title,9);
@@ -77,44 +94,54 @@ async function renderResumeDOCX(d,fileName){
  const {Document,Packer,Paragraph,TextRun,TabStopType,TabStopPosition}=window.docx;
  const para=(text,opts={})=>new Paragraph({spacing:{after:opts.after??60},children:[new TextRun({text,bold:!!opts.bold,size:opts.size||20})]});
  const heading=text=>new Paragraph({spacing:{before:220,after:80},border:{bottom:{color:"000000",space:1,style:"single",size:6}},children:[new TextRun({text:text.toUpperCase(),bold:true,size:20})]});
- const bodyLines=text=>String(text||"").split("\n").map(line=>new Paragraph({spacing:{after:40},children:[new TextRun({text:line||" ",size:18})]}));
+ // One paragraph per line of text (it may hold several, "\n"-separated); every line but the last gets
+ // the tighter spacing, so e.g. an institution line and its CGPA line below it sit close together.
+ const multiLine=(text,{lineAfter=40,trailAfter=40,size=18}={})=>{
+  const lines=String(text||"").split("\n");
+  return lines.map((line,i)=>new Paragraph({spacing:{after:i===lines.length-1?trailAfter:lineAfter},children:[new TextRun({text:line||" ",size})]}));
+ };
  const twoCol=(l,r)=>new Paragraph({tabStops:[{type:TabStopType.RIGHT,position:TabStopPosition.MAX}],spacing:{after:20},children:[new TextRun({text:l,bold:true,size:20}),new TextRun({text:"\t"+(r||""),size:18})]});
+ // A bold label followed by normal text on the same line: "SQA Intern: June 2026 - September 2026".
+ const labelLine=(label,rest)=>new Paragraph({spacing:{after:20},children:[new TextRun({text:label+": ",bold:true,size:18}),new TextRun({text:rest||"",size:18})]});
 
  const children=[para(d.name?d.name.toUpperCase():"YOUR NAME",{bold:true,size:32,after:40})];
  if(d.headline)children.push(para(d.headline.toUpperCase(),{bold:true,size:20,after:40}));
  children.push(para(d.contact||" ",{size:16,after:200}));
 
- children.push(heading("Professional Summary"),...bodyLines(d.summary));
+ // No heading over the summary — it reads directly under the contact line.
+ children.push(...multiLine(d.summary,{trailAfter:200}));
 
- children.push(heading("Core Skills"));
- d.skillRows.forEach(g=>children.push(new Paragraph({spacing:{after:40},children:[new TextRun({text:`${g.category}: `,bold:true,size:18}),new TextRun({text:g.items.join(", "),size:18})]})));
-
- children.push(heading("Professional Experience"));
- if(d.overridden){children.push(...bodyLines(d.experienceText));}
+ children.push(heading("Experience"));
+ if(d.overridden){children.push(...multiLine(d.experienceText));}
  else{d.experience.forEach(e=>{
   children.push(twoCol(e.title,e.meta));
+  if(e.priorTitle)children.push(labelLine(e.priorTitle,e.priorDuration));
   e.bullets.forEach(b=>children.push(new Paragraph({spacing:{after:30},children:[new TextRun({text:"• "+b,size:18})]})));
  });}
 
  children.push(heading("Projects"));
- if(d.overridden){children.push(...bodyLines(d.projectsText));}
+ if(d.overridden){children.push(...multiLine(d.projectsText));}
  else{d.projects.forEach(x=>{
-  children.push(new Paragraph({spacing:{after:20},children:[new TextRun({text:x.title,bold:true,size:20})]}));
+  children.push(new Paragraph({spacing:{after:10},children:[new TextRun({text:x.name||x.title,bold:true,size:20})]}));
+  if(x.subtitle)children.push(new Paragraph({spacing:{after:20},children:[new TextRun({text:x.subtitle,size:18})]}));
   x.bullets.forEach(b=>children.push(new Paragraph({spacing:{after:30},children:[new TextRun({text:"• "+b,size:18})]})));
  });}
 
  children.push(heading("Education"));
  d.education.forEach(e=>{
   children.push(twoCol(e.degree,e.date));
-  children.push(new Paragraph({spacing:{after:60},children:[new TextRun({text:e.detail,size:18})]}));
+  children.push(...multiLine(e.detail,{lineAfter:10,trailAfter:60}));
  });
 
+ children.push(heading("Skills"));
+ d.skillRows.forEach(g=>children.push(new Paragraph({spacing:{after:40},children:[new TextRun({text:`${g.category}: `,bold:true,size:18}),new TextRun({text:g.items.join(", "),size:18})]})));
+
  if(d.references.length){
-  children.push(heading("References"));
+  children.push(heading("Reference"));
   d.references.forEach(r=>{
    children.push(new Paragraph({spacing:{after:10},children:[new TextRun({text:r.name,bold:true,size:18})]}));
-   children.push(new Paragraph({spacing:{after:10},children:[new TextRun({text:r.title,size:16})]}));
-   children.push(new Paragraph({spacing:{after:100},children:[new TextRun({text:r.contact,size:16})]}));
+   children.push(...multiLine(r.title,{lineAfter:10,trailAfter:10,size:16}));
+   children.push(...multiLine(r.contact,{lineAfter:10,trailAfter:100,size:16}));
   });
  }
 

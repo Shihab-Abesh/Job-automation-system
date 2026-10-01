@@ -406,6 +406,33 @@ at all is told to you plainly rather than shown as a wall of empty sections.
 This is wording- and proximity-based, not real language understanding, so treat it as a second
 opinion: a mixed bullet (above) or an unusually phrased requirement can still be misread.
 
+## The resume's layout
+
+The resume follows the owner's own CV exactly: no heading over the summary paragraph (it reads
+directly under the contact line), then **Experience, Projects, Education, Skills, Reference** — in
+that order, and "Reference" singular. A few things that layout needed, which any profile can now use:
+
+- **A promotion within one company.** An experience entry can carry an earlier title held at the
+  same company (`priorTitle` / `priorDuration` in the Master Profile), printed as a bold sub-line
+  under the current role's header — e.g. *"Software Quality Assurance, Innolytic IT Ltd, Dhaka ...
+  September 2026 - Present"* with *"SQA Intern: June 2026 - September 2026"* beneath it. Leave it
+  blank for a role that was never promoted.
+- **A degree not yet finished.** Education now has its own **Expected graduation** field, kept apart
+  from the enrolment date (which can be a range like "May 2022 - Present"). Set it and the resume
+  prints "Expected graduation: <when>" and the generated summary says "... student (degree expected
+  <when>)" instead of "graduate" — never claiming a degree before it is earned. Leave it blank once
+  you've graduated.
+- **A project's tech stack** sits on its own line below the project's bold name, not comma-joined
+  onto it.
+- **A reference's credentials** can run several lines (title, degrees, past posts); the References
+  field is a text box, one line per credential, not a single-line field.
+
+**Deliberately left out:** a photograph. It's common on a Bangladeshi CV, but this project's own ATS
+Quality checklist already promises "no graphics, icons or decorative resume elements", and a
+headshot in a downloaded PDF or DOCX is also one more way to lose a resume's single-column, parsed
+text. Ask if you want it anyway — it's a separate build (storing an image in the encrypted vault,
+embedding it in the renderers).
+
 ## Application Pack: everything for one application
 
 Below each resume, the **Application Pack** collects what you need to apply for that one job:

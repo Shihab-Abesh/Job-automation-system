@@ -126,6 +126,15 @@ test("a degree that is only expected is never called earned", () => {
   assert.ok(!/graduate/.test(pack(QA_POST, JOB).out.coverLetter.text));
 });
 
+test("an explicit expectedGraduation field is honoured even when the date is an enrolment range, not a fallback", () => {
+  // the newer schema keeps the enrolment range ("May 2022 - Present") apart from whether the degree is
+  // finished; educationLabel must read expectedGraduation, not be fooled by a date with no "expected" in it
+  const studying = { education: [{ degree: "BSc in Computer Science & Engineering", date: "May 2022 - Present", expectedGraduation: "December 2026" }] };
+  assert.strictEqual(api.educationLabel(studying), "Computer Science & Engineering student (degree expected December 2026)");
+  const finished = { education: [{ degree: "BSc in Computer Science & Engineering", date: "May 2022 - Present", expectedGraduation: "" }] };
+  assert.strictEqual(api.educationLabel(finished), "Computer Science & Engineering graduate");
+});
+
 test("apClip only removes the end of a sentence, never rewords it, and never ends on a dangling word", () => {
   for (const limit of [8, 12, 16, 24]) {
     const clipped = api.apClip(BULLET_TEST, limit);
