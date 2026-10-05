@@ -28,11 +28,9 @@
  ],
  "sources": {
   "bdrecruit": {
-   "found": 0,
-   "errors": [
-    "BDRecruit: empty or refused response"
-   ],
-   "raw": 0
+   "found": 10,
+   "errors": [],
+   "raw": 138
   },
   "jsonld": {
    "found": 4,
@@ -40,9 +38,9 @@
    "raw": 20
   },
   "rss": {
-   "found": 16,
+   "found": 17,
    "errors": [],
-   "raw": 207
+   "raw": 215
   },
   "careers": {
    "found": 0,
@@ -56,13 +54,13 @@
   }
  },
  "counts": {
-  "total": 15,
-  "new": 0,
+  "total": 25,
+  "new": 1,
   "expired": 0,
-  "duplicatesFolded": 5,
-  "priorityA": 1,
-  "priorityB": 4,
-  "priorityC": 10
+  "duplicatesFolded": 6,
+  "priorityA": 5,
+  "priorityB": 6,
+  "priorityC": 14
  },
  "filters": {
   "min_salary_bdt": 20000,
@@ -72,8 +70,6 @@
   "drop_expired": true,
   "allow_abroad": false
  },
- "blockedUrls": [
-  "https://bdrecruit.net/wp-json/wp/v2/job_listing?per_page=100&page=1&orderby=date&order=desc&_fields=id,date,link,title,content,metas"
- ],
- "ranAt": "2026-10-04T15:36:42+00:00"
+ "blockedUrls": [],
+ "ranAt": "2026-10-05T09:54:57+00:00"
 }

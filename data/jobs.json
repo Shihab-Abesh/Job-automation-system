@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-04T15:36:42+00:00",
+ "generatedAt": "2026-10-05T09:54:57+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,11 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 0,
-    "errors": [
-     "BDRecruit: empty or refused response"
-    ],
-    "raw": 0
+    "found": 10,
+    "errors": [],
+    "raw": 138
    },
    "jsonld": {
     "found": 4,
@@ -43,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 16,
+    "found": 17,
     "errors": [],
-    "raw": 207
+    "raw": 215
    },
    "careers": {
     "found": 0,
@@ -59,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 15,
-   "new": 0,
+   "total": 25,
+   "new": 1,
    "expired": 0,
-   "duplicatesFolded": 5,
-   "priorityA": 1,
-   "priorityB": 4,
-   "priorityC": 10
+   "duplicatesFolded": 6,
+   "priorityA": 5,
+   "priorityB": 6,
+   "priorityC": 14
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -75,10 +73,8 @@
    "drop_expired": true,
    "allow_abroad": false
   },
-  "blockedUrls": [
-   "https://bdrecruit.net/wp-json/wp/v2/job_listing?per_page=100&page=1&orderby=date&order=desc&_fields=id,date,link,title,content,metas"
-  ],
-  "ranAt": "2026-10-04T15:36:42+00:00"
+  "blockedUrls": [],
+  "ranAt": "2026-10-05T09:54:57+00:00"
  },
  "jobs": [
   {
@@ -107,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-04T15:36:07+00:00"
+     "found_at": "2026-10-05T09:54:22+00:00"
     }
    ],
    "matchScore": 87,
@@ -122,6 +118,219 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Management Trainee",
+   "company": "ACI Motors Limited",
+   "description": "Job Location: Dhaka\nEmployment Status: Full-time\nApplication Deadline: 05 October 2026\nSalary: Negotiable\nJob Overview\nACI Motors Limited is one of the leading automotive and Agri-machinery solution providers in Bangladesh, committed to delivering innovative, reliable, and high-quality products and services to customers across the country. With a diversified portfolio spanning automotive, agricultural machinery, commercial solutions, medical equipment, renewable energy, and related services, ACI Motors continues to strengthen its market presence through trusted global partnerships, an extensive distribution and service network, and a highly capable workforce.\nEligibility Criteria\nEducation\nBachelor’s degree in Business Administration from any reputed university.\nB.Sc. / Graduation in Engineering with MBA from any reputed university.\nExperience\nAt most 1 year of experience.\nExperience in the automobile industry will be preferred.\nFreshers are also encouraged to apply.\nAdditional Requirements\nAge: 22 to 30 years.\nStrong proficiency in using AI tools to enhance productivity, analysis, problem-solving, and business decision-making.\nResponsibilities & Context\nRotate through Sales, Service, Marketing, and other cross-functional departments to gain practical experience and understand respective functions.\nEngage in leadership training programs aimed at enhancing decision-making, communication, and team management skills.\nSubmit and present a Functional Stint Report after 3 months, summarizing key learnings and contributions.\nSubmit and present a Cross-Functional Stint Report of 1.5 months focusing on cross-departmental experiences after completion of the Functional Stint Report.\nIdentify areas for improvement in business processes, suggest actionable recommendations, and contribute to continuous improvement initiatives.\nAnalyze business data and provide insights to support decision-making, strategy development, and operational efficiency.\nFace a final defense at the end of the 6-month probation period before a selection board.\nCollaborate with supervisors and teams to achieve departmental objectives throughout the stint program.\nFollow all organizational rules and regulations.\nSelected Management Trainees after final evaluation will be assigned to specific roles with respective job descriptions.\nSkills & Expertise\nCommunication and interpersonal skills\nData analysis and presentation\nMS Office\nPositive mindset for fieldwork\nProcess Improvement\nCompensation & Benefits\nProvident Fund\nMedical Allowance\nMobile Bill\nInsurance\nProfit Share\nGratuity\nPerformance Bonus\nPartially Subsidized Lunch Facilities\nYearly Salary Review\n2 Festival Bonuses\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026-3",
+   "status": "Awaiting Review",
+   "id": "b9dc9ffe-8aa1-440a-a623-a9bc19ef1439",
+   "createdAt": "2026-09-20T15:55:32+00:00",
+   "requiredSkills": "trainee, location, dhaka, employment, status, full, time, deadline, october, 2026, salary, negotiable",
+   "postedAt": "2026-09-28",
+   "deadline": "2026-10-06",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Full Time",
+   "experienceText": "Fresher",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "6675f3ad12093490",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026-3",
+     "found_at": "2026-10-05T09:54:16+00:00"
+    }
+   ],
+   "matchScore": 83,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Management Trainee Officer (MTO)",
+   "company": "FCI Group",
+   "description": "Position: Management Trainee Officer (MTO) – Production\nLocation: Dhaka (Savar EPZ)\nEmployment Type: Full-time\nExperience: Freshers are encouraged to apply.\nAge: 22–25 Years\nSalary: Negotiable\nApplication Deadline: 9 October 2026\nJob Overview\nFCI Group is looking for energetic Textile Engineering graduates, preferably IPE, to join its Management Trainee Officer (MTO) Program in the Production department. The program offers structured job rotation and hands-on training in garment operations, productivity, quality, and efficiency while developing future production leaders.\nResponsibilities\nLearn and understand the end-to-end garment production process.\nSupport the production team in achieving daily production targets and efficiency.\nMonitor production output, manpower, quality, and line performance.\nAssist in identifying production bottlenecks and supporting improvement actions.\nPrepare and maintain daily production reports and data.\nSupport Lean, 5S, Kaizen, and productivity improvement initiatives.\nAssist with day-to-day production operations and assigned tasks.\nParticipate in meetings, training sessions, workshops, and other learning opportunities.\nObserve and learn from experienced staff members and senior management.\nGain knowledge of company policies, procedures, and operational processes.\nMaintain proper notes and communicate effectively with Managers and Supervisors.\nFulfill the learning objectives and goals set for the traineeship.\nPerform other duties assigned by Production Management.\nEducational Requirements\nBachelor of Science (BSc) in Industrial & Production Engineering (IPE) or Textile Engineering.\nMaster of Science (MSc) in Industrial & Production Engineering (IPE) or Textile Engineering.\nMinimum CGPA: 3.00.\nExperience Requirements\nAt most 1 year of experience.\nExperience in the Garments business area will be considered.\nFreshers are encouraged to apply.\nAdditional Requirements\nAge: 22–25 years.\nSelf-driven and assertive individual with business acumen.\nInterpersonal, initiative, analytical thinking, conflict resolution, decision-making, and leadership abilities.\nMust be a team player.\nAbility to multitask and work under pressure.\nAbility to act with integrity, professionalism, and confidentiality.\nExcellent written and oral communication skills.\nLeadership potential and ability to work in a factory environment.\nWhat You’ll Gain\nJob rotation across key production operations.\nOn-the-job training and mentorship.\nCareer development opportunities.\nPractical exposure to garment operations, productivity, quality, and efficiency.\nOpportunities to participate in training sessions, workshops, and other learning activities.\nCompensation & Benefits\nService Benefit\nProvident Fund\nTwo Festival Bonuses\nEarned Leave Encashment\nYearly Salary Review\nFully Subsidized Breakfast & Lunch Facilities\nMobile Allowance\nGroup Life Insurance\nHealth Insurance\nHajj Leave: Up to 35 Days\nUmrah Leave: Up to 15 Days\nApplication Process\nInterested candidates are requested to apply through the provided application process/BDJobs QR code.\nApplication Deadline: 9 October 2026.",
+   "category": "Management & Business",
+   "location": "Savar EPZ, Dhaka",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/jobs-in-bd/fci-group/career/management-trainee-officer-mto/2026",
+   "status": "Awaiting Review",
+   "id": "c014a6c6-7f0f-4950-b68c-25ed7256c6d5",
+   "createdAt": "2026-09-27T08:50:59+00:00",
+   "requiredSkills": "trainee, officer, mto, location, dhaka, savar, epz, employment, type, full, time, freshers",
+   "postedAt": "2026-09-27",
+   "deadline": "2026-10-10",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Full Time",
+   "experienceText": "Freshers",
+   "area": "Savar",
+   "distanceKm": 16.6,
+   "fingerprint": "0cdbfdd8d724bc58",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/jobs-in-bd/fci-group/career/management-trainee-officer-mto/2026",
+     "found_at": "2026-10-05T09:54:16+00:00"
+    }
+   ],
+   "matchScore": 83,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Savar is about 16.6 km out, past your 10 km limit"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Probationary Officer & Trainee Assistant Officer",
+   "company": "Midland Bank PLC",
+   "description": "Midland Bank PLC intends to recruit young, energetic, and talented resources with a good academic background and a strong learning mindset who will share its vision and execute its mission for growth.\nRewarding Start\nProbationers will be offered an attractive monthly remuneration package during the one-year probation period .\nSuccessful probationers will be absorbed into the regular cadre according to the policy of the Bank.\nApplication Deadline: 20 October 2026 | Website: Midland Bank PLC official recruitment portal shown in the job announcement.\n_\nProbationary Officer (PO) | Midland Bank PLC\nNature of Job: On Probation\nLocation: Anywhere in Bangladesh\nVacancy: Not specified\nEmployment Type: Full-time\nAge: Maximum 32 years as of 20 October 2026\nExperience: Nil\nApplication Deadline: 20 October 2026\nEducational Qualification\nMaster’s Degree from any recognized university.\nMinimum CGPA 3.00 in graduation/post-graduation.\nMinimum GPA 4.50 in SSC/HSC/equivalent.\nAdditional Requirements\nMust be a Bangladeshi citizen.\nStrong communication and interpersonal skills.\nCustomer-oriented mindset.\nAnalytical and problem-solving ability.\nProficiency in MS Office and digital tools.\nWillingness to work in a dynamic banking environment.\nCompensation & Other Benefits\nProbationers will be offered an attractive monthly remuneration package during the one-year probation period .\nSuccessful probationers will be absorbed into the regular cadre according to the policy of the Bank.\nImportant Note\nSelected candidates will be required to execute a surety bond committing to serve Midland Bank PLC for a minimum period of five (5) years from the date of joining.\nOnly shortlisted candidates will be contacted.\nAny form of persuasion or undue influence will result in immediate disqualification.\nMidland Bank PLC reserves the right to accept or reject any application without assigning any reason whatsoever.\nApply for Probationary Officer\n_\nTrainee Assistant Officer (TAO) | Midland Bank PLC\nNature of Job: On Probation\nLocation: Anywhere in Bangladesh\nVacancy: Not specified\nEmployment Type: Full-time\nAge: Maximum 32 years as of 20 October 2026\nExperience: Nil\nApplication Deadline: 20 October 2026\nEducational Qualification\nMaster’s Degree from any recognized university.\nMinimum CGPA 2.75 in graduation/post-graduation.\nMinimum GPA 4.00 in SSC/HSC/equivalent.\nAdditional Requirements\nMust be a Bangladeshi citizen.\nStrong communication and interpersonal skills.\nCustomer-oriented mindset.\nAnalytical and problem-solving ability.\nProficiency in MS Office and digital tools.\nWillingness to work in a dynamic banking environment.\nCompensation & Other Benefits\nProbationers will be offered an attractive monthly remuneration package during the one-year probation period .\nSuccessful probationers will be absorbed into the regular cadre according to the policy of the Bank.\nImportant Note\nSelected candidates will be required to execute a surety bond committing to serve Midland Bank PLC for a minimum period of five (5) years from the date of joining.\nOnly shortlisted candidates will be contacted.\nAny form of persuasion or undue influence will result in immediate disqualification.\nMidland Bank PLC reserves the right to accept or reject any application without assigning any reason whatsoever.\nApply for Trainee Assistant Officer\n_\nMake Your ATS-Friendly CV",
+   "category": "Information Technology",
+   "location": "Anywhere in Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
+   "status": "Awaiting Review",
+   "id": "d0368e13-6e81-4fb7-9bb6-9fafb1191cef",
+   "createdAt": "2026-09-22T08:09:28+00:00",
+   "requiredSkills": "probationary, officer, trainee, assistant, midland, bank, plc, intends, recruit, young, energetic, talented",
+   "postedAt": "2026-09-22",
+   "deadline": "2026-10-20",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "8bd65ce5480a4cc5",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
+     "found_at": "2026-10-05T09:54:17+00:00"
+    }
+   ],
+   "matchScore": 83,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Management Trainee Officer (MTO) – Brand",
+   "company": "RFL Group",
+   "description": "Vacancy: 10\nLocation: Dhaka (Badda)\nEmployment Type: Full-time\nJob Type: Work at Office\nAge: At least 22 years\nApplication Deadline: 26 October 2026\nJob Overview\nPRAN-RFL Group, one of the most diversified and innovation-driven conglomerates in Bangladesh, is seeking talented and dynamic professionals for the position of Management Trainee Officer – Brand . The role offers aspiring professionals hands-on experience in brand management, marketing strategy, and consumer engagement. Selected candidates will work closely with senior brand managers and cross-functional teams to learn, contribute, and grow into a future leader in the marketing function.\nJob Responsibilities\nSupport the formulation and implementation of ATL (Above-the-Line), BTL (Below-the-Line), and TTL (Through-the-Line) marketing strategies to enhance brand visibility, strengthen market presence, and improve consumer engagement.\nContribute to the planning, development, and execution of integrated brand campaigns aligned with organizational objectives, market trends, and consumer insights.\nCollaborate with creative agencies, media partners, and internal stakeholders to ensure timely, effective, and high-quality execution of brand initiatives.\nConduct deep-dive research to track industry trends, analyze consumer behavior, and benchmark competitors, providing insights that guide strategic decision-making.\nDeliver actionable insights to support product positioning, promotional planning, and market entry strategies, ensuring alignment with business goals.\nAssist in tracking, analyzing, and reporting brand performance metrics, preparing regular dashboards and reports for senior management.\nContribute to developing and executing brand differentiation strategies to build and sustain strong brand equity.\nAssist in product innovation activities, including packaging development, pricing strategies, and promotional planning to maintain market competitiveness.\nEducational Requirements\nBachelor of Business Administration (BBA) in Marketing.\nMaster of Business Administration (MBA) in Marketing.\nAdditional Requirements\nAge: At least 22 years.\nCommunication and interpersonal skills.\nCreative and innovative mindset.\nFluent in English.\nSkills & Expertise\nBrand Strategy\nMarket Research\nMarketing Analytics\nCampaign Management\nStakeholder Management\nCommunication and Interpersonal Skills\nCompensation & Benefits\nMarket-standard salary.\nSalary review after 6 months of probation based on performance.\nTransport Facilities\nMobile Bill\nTour Allowance\nProvident Fund\nPartially Subsidized Lunch\nYearly Salary Review\nTwo Festival Bonuses\nLeave Encashment\nPromising Career Path\nCredit Purchase Facilities with discounts at PRAN-RFL outlets\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Dhaka (Badda)",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
+   "status": "Awaiting Review",
+   "id": "f54ef940-3fd0-4923-bef3-6b1021eaf19c",
+   "createdAt": "2026-09-27T15:29:09+00:00",
+   "requiredSkills": "trainee, officer, mto, brand, vacancy, location, dhaka, badda, employment, type, full, time",
+   "postedAt": "2026-09-27",
+   "deadline": "2026-10-26",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "",
+   "area": "Badda",
+   "distanceKm": 3.8,
+   "fingerprint": "1bdb144fe3d87c61",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
+     "found_at": "2026-10-05T09:54:16+00:00"
+    }
+   ],
+   "matchScore": 79,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Business Performance Analyst",
+   "company": "foodpanda",
+   "description": "Company: foodpanda\nPosition: Business Performance Analyst (Shops) – Qcommerce\nJob Ref ID: JR0085714\nLocation: Dhaka, Bangladesh\nEmployment Type: Full-time\nWorkplace: On-site\nAbout The Role\nfoodpanda is looking for a data-driven operations professional with experience in Business Performance or Business Analytics to manage the operational performance of its Quick Commerce Shops portfolio across Bangladesh. The role focuses on KPI analysis, root cause identification, dashboard development, operational improvement initiatives, strategic retail partner launches, picker operations, inventory coordination, field execution, and cross-functional project management.\nKey Responsibilities\nShops Performance Management\nOwn the operational performance of the QC Shops portfolio across Bangladesh.\nMonitor, analyse, and improve key business and fulfilment metrics including Item Not Found (InF), Vendor Offline Rate, Vendor Fail Rate, Perfect Fulfilment Rate (PFR), Order Acceptance Rate, Cancellation Rate, Replacement Offered %, Picker Utilisation, Orchestration SKU Coverage, stock, and assortment availability.\nIdentify operational risks and recurring performance issues through data analysis.\nConduct root cause analysis and develop structured action plans to improve vendor performance.\nPartner with Account Managers to implement operational improvement initiatives for underperforming vendors.\nConduct joint vendor visits where required to validate operational issues and ensure agreed actions are implemented.\nMeasure, monitor, and report the business impact of operational improvement initiatives.\nStrategic Retail Partner Expansion\nLead operational execution of strategic retail partner launches from planning through post-launch stabilisation.\nCoordinate operational readiness across Operations, Commercial, Account Management, and partner teams.\nManage launch timelines, dependencies, risks, and stakeholder communication.\nCoordinate picker onboarding, training, deployment, and operational readiness for new strategic partner launches.\nEnsure operational processes and SOPs are implemented before and after launch.\nMonitor launch performance and drive corrective actions where required.\nContinuously improve the operating model for strategic retail partners as the business scales.\nPicker Operations & Inventory Coordination\nCoordinate operational readiness of foodpanda picker teams supporting Shops operations.\nMonitor picker training to deployment readiness.\nIdentify stores, categories, and SKUs requiring inventory verification based on operational data.\nDefine inventory count priorities and provide clear guidance to picker teams.\nMonitor inventory check completion, quality, and follow-up actions.\nPartner with Account Managers and picker teams to improve stock accuracy, assortment availability, and InF performance.\nField Operations & Store Excellence\nConduct regular field visits to partner stores to validate operational performance and identify root causes.\nObserve fulfilment processes including picking, packing, and order handover.\nValidate compliance with operational SOPs and foodpanda standards.\nProvide operational coaching and guidance to vendor and picker teams.\nDocument findings, assign corrective actions, and ensure timely follow-up.\nSupport live operational escalations while maintaining focus on long-term operational improvement.\nData Analytics & Business Performance\nAnalyse operational datasets to identify trends, risks, and improvement opportunities.\nBuild and maintain operational dashboards and recurring reports using Microsoft Excel or Google Sheets.\nSupport analysis using SQL, Looker, or other business intelligence tools where applicable.\nPrepare weekly and monthly business reviews for leadership.\nTranslate data into actionable recommendations and measurable improvement plans.\nTrack the effectiveness of operational initiatives and continuously optimise performance.\nOperational Excellence & Regional Collaboration\nPartner with Regional Operations teams to identify best practices, operating models, and successful initiatives across Delivery Hero markets.\nEvaluate, localise, and implement regional initiatives within Bangladesh.\nMeasure adoption and business impact of implemented initiatives.\nSupport the rollout of new operational tools, product features, and process improvements.\nCoordinate with Commercial, Account Management, Product, Logistics, and Data teams.\nDevelop and continuously improve operational SOPs, playbooks, trackers, and training materials.\nIndependently lead operational improvement projects from problem identification and solution design through implementation, stakeholder alignment, and impact measurement.\nAct as the operational subject matter expert supporting the Account Management team in driving vendor performance improvements.\nRequirements & Qualifications\nEducation\nBachelor’s degree in Business, Engineering, Supply Chain, Operations Management, Economics, Data Analytics, or a related discipline.\nExperience\n4 to 5 years of experience in Business Performance, Business Analytics, Performance Management, Operations Analytics, Marketplace Analytics, E-commerce Operations, or Quick Commerce.\nExperience owning KPIs and performance reporting is strongly preferred.\nExperience working with supermarkets, grocery retailers, marketplaces, or FMCG partners is preferred.\nTechnical Skills\nAdvanced knowledge of Excel or Google Sheets, including Pivot Tables, XLOOKUP, and INDEX-MATCH.\nExperience building dashboards and performance reports.\nStrong data analysis and KPI management skills.\nExperience with SQL, Looker, Tableau, or similar business intelligence tools is preferred.\nAdditional Requirements\nExcellent written and verbal communication skills in English and Bangla.\nDemonstrated experience managing operational performance and delivering measurable business improvements.\nStrong analytical, project management, and stakeholder management skills.\nAbility to work effectively in a fast-paced and rapidly changing operational environment.\nSkills & Competencies\nBusiness Performance Analysis\nBusiness Analytics\nKPI Management\nOperations Analytics\nData Analysis\nDashboard Development\nAdvanced Excel\nGoogle Sheets\nSQL\nLooker\nTableau\nProject Management\nStakeholder Management\nOperational Excellence\nRoot Cause Analysis\nProcess Improvement\nWhat We’re Looking For\nStrong ownership and accountability.\nExcellent problem-solving and analytical abilities.\nAbility to independently manage multiple operational priorities.\nStrong project management and execution capabilities.\nAbility to work with both operational data and field execution.\nExcellent stakeholder management and cross-functional collaboration skills.\nHigh attention to detail and operational discipline.\nStrong communication and influencing skills.\nPassion for continuous improvement and operational excellence.\nWillingness to spend time in the field to understand operational challenges firsthand.\nCollaborative mindset with a bias for action and measurable results.\nAbility to influence stakeholders and drive operational improvements without direct authority.\nMake Your ATS-Friendly CV",
+   "category": "Data & Reporting",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
+   "status": "Awaiting Review",
+   "id": "f05f01c6-5e8b-490a-98fc-27266a3da4b3",
+   "createdAt": "2026-09-20T15:55:32+00:00",
+   "requiredSkills": "business, performance, analyst, foodpanda, shops, qcommerce, ref, jr0085714, location, dhaka, bangladesh, employment",
+   "postedAt": "2026-10-01",
+   "deadline": "2026-10-31",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "4 Years",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "2f53b127b19669a4",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
+     "found_at": "2026-10-05T09:54:16+00:00"
+    }
+   ],
+   "matchScore": 73,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 83,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Software Engineer - Developer Experience",
@@ -149,7 +358,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-04T15:36:07+00:00"
+     "found_at": "2026-10-05T09:54:22+00:00"
     }
    ],
    "matchScore": 71,
@@ -191,7 +400,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/323",
-     "found_at": "2026-10-04T15:36:03+00:00"
+     "found_at": "2026-10-05T09:54:17+00:00"
     }
    ],
    "matchScore": 71,
@@ -234,7 +443,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-10-04T15:36:11+00:00"
+     "found_at": "2026-10-05T09:54:26+00:00"
     }
    ],
    "matchScore": 66,
@@ -249,6 +458,49 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Software Engineer",
+   "company": "Pathao Limited",
+   "description": "Position: Software Engineer (Backend)\nKey Responsibilities\nDesign, develop, and maintain scalable backend services and APIs.\nBuild reliable transaction and payment workflows.\nWork with databases, caching, messaging, and distributed systems.\nWrite clean, testable, and maintainable production code.\nTroubleshoot performance and production issues.\nParticipate in code reviews and system design discussions.\nRequirements\n3-4 years of similar experience.\nStrong experience with Go (Golang), Java, Python, or similar backend technologies.\nStrong SQL/PostgreSQL knowledge.\nGood understanding of REST APIs, microservices, concurrency, and distributed systems.\nStrong problem-solving and debugging skills.\nNice to Have\nExperience with Redis and RabbitMQ/Kafka.\nExperience with Docker/Kubernetes.\nExperience in Fintech, Payments, MFS, Banking, or other transaction-heavy systems.\nWhat You’ll Enjoy at Pathao\nA dynamic and collaborative workspace.\nCompetitive salary package.\nTwo annual festival bonuses.\nLeave encashment.\nComprehensive insurance coverage.\nGratuity.\nMeal allowance.\nPhone allowance.\nPeriodic team dinner.\nExclusive employee discounts on Pathao services.\nMake Your ATS-Friendly CV",
+   "category": "Software Development",
+   "location": "Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
+   "status": "Awaiting Review",
+   "id": "2c541c88-a352-438a-9a3c-0757d3712fab",
+   "createdAt": "2026-10-05T09:54:16+00:00",
+   "requiredSkills": "engineer, key, responsibilities, scalable, services, apis., reliable, transaction, payment, workflows., work, databases",
+   "postedAt": "2026-10-05",
+   "deadline": "2026-11-04",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Not specified",
+   "experienceText": "3 Years",
+   "area": "",
+   "distanceKm": null,
+   "fingerprint": "82ad2fcb593d99ed",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
+     "found_at": "2026-10-05T09:54:16+00:00"
+    }
+   ],
+   "matchScore": 66,
+   "scoreParts": {
+    "title": 100,
+    "level": 30,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Software engineer",
@@ -276,7 +528,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-04T15:36:03+00:00"
+     "found_at": "2026-10-05T09:54:18+00:00"
     }
    ],
    "matchScore": 66,
@@ -293,6 +545,91 @@
    "discoveredBy": "rss"
   },
   {
+   "title": "Executive, Ground Operations",
+   "company": "Air Astra",
+   "description": "Department: Ground Operations\nEmployment Type: Permanent\nJob Location: Dhaka, Chattogram, Cox’s Bazar, Saidpur, and Sylhet\nExperience: 0–2 years\nSalary: Negotiable\nApplication Deadline: 15 October 2026\nQualifications\nGraduate degree in any discipline from any reputed university.\nMinimum CGPA 3.00 out of 4.00 in Bachelor’s degree.\nMinimum GPA 3.00 out of 5.00 in SSC and HSC.\nThird division or equivalent results in any examination will not be accepted.\nCandidates with English medium (O & A Level) background or foreign degrees with graduation will get preference.\nFlexible to work in various shifts including days, evenings, nights, weekends, and holidays.\nKey Responsibilities\nSeek guidelines from the shift In-Charge before commencing assigned tasks.\nPerform check-in duties including ticket verification, boarding pass issuance, and baggage tagging.\nPrepare and verify trim sheets to ensure accuracy of passenger and baggage counts.\nHandle public announcements (paging) as required.\nPerform departure area duties by checking boarding passes and guiding passengers from boarding gates to the apron area.\nSupport apron operations by supervising passenger and baggage embarkation and disembarkation.\nMonitor incoming baggage in the arrival baggage hall and ensure accurate handover to passengers.\nMaintain and organize departure and arrival flight documentation.\nHandle mishandled or lost baggage, complete PIRs, and ensure prompt delivery to passengers.\nPerform other tasks assigned by supervisors from time to time.\nExperience Requirements\n0–2 years of experience in Ground Operations or Customer Service is preferred.\nRequired Skills & Competencies\nGood communication and interpersonal skills.\nProblem-solving skills.\nAbility to handle high responsibilities.\nSupervisory skills.\nGood command of spoken and written English.\nGood computer skills.\nGood leadership and quick decision-making capabilities.\nPositive attitude and ability to work hard.\nAdditional Requirements\nAge: Maximum 28 years (can be relaxed for deserving candidates).\nHeight:\nMale: Minimum 167.64 cm (5’6′′)\nFemale: Minimum 160 cm (5’3′′)\nWeight should be proportionate to height (BMI: 18–25).\nNo affidavit will be accepted.\nEyesight: 6/6, no color blindness. Spectacles are not accepted (Lasik may be considered for highly deserving candidates).\nFluent in English and Bengali (both written and spoken).\nGood physical health and medically fit to meet customer service requirements.\nStrong and upright physical appearance with no visible tattoos or marks on visible body parts.\nImpressive personality with decent and positive gestures.\nJob Details\nPosition: Executive, Ground Operations\nCompany: Air Astra\nDepartment: Ground Operations\nEmployment Type: Permanent\nLocations: Dhaka, Chattogram, Cox’s Bazar, Saidpur, and Sylhet\nApplication Deadline: 15 October 2026\nEligible candidates are encouraged to apply and become part of the dynamic team of professionals at Air Astra.\nMake Your ATS-Friendly CV",
+   "category": "Information Technology",
+   "location": "Chattogram, Cox’s Bazar, Dhaka, Saidpur, Sylhet",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/jobs-in-bd/air-astra/career/executive-ground-operations/2026",
+   "status": "Awaiting Review",
+   "id": "2b14ca51-ed4d-4d8e-b10f-1b2d80fbb512",
+   "createdAt": "2026-09-30T09:13:16+00:00",
+   "requiredSkills": "executive, ground, department, employment, type, permanent, location, dhaka, chattogram, cox, bazar, saidpur",
+   "postedAt": "2026-09-29",
+   "deadline": "2026-10-16",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Permanent",
+   "experienceText": "Freshers",
+   "area": "Chattogram",
+   "distanceKm": 211.4,
+   "fingerprint": "6cbe0209efd207ed",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/jobs-in-bd/air-astra/career/executive-ground-operations/2026",
+     "found_at": "2026-10-05T09:54:16+00:00"
+    }
+   ],
+   "matchScore": 83,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Chattogram is about 211.4 km out, past your 10 km limit"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Junior Data Analyst – Night Shift (Only Female – Work From Home)",
+   "company": "Unknown company",
+   "description": "Future Cloud Bangladesh Limited (FCBL) is a reputed multinational ITES company operating for over 11 years. We are pleased to offer full-time job opportunities for potential candidates willing to work on night shifts. Females are only encouraged to apply for this position. Female staff get the flexibility to work from home.\nResponsibilities and key learning areas:\n– Extensive online research on North American businesses and their corporate practices.\n– Hosting regular meetings with managers, collecting notes and preparing meeting minutes.\n– Organising data in a spreadsheet, PowerPoint presentation, etc.\n– Making telemarketing calls and hosting conference calls as needed.\n– Updating CRM systems, putting notes, assigning drip plans for texts and emails, etc.\n– Maintaining internal communication and completing individual assignments.\n– Maintaining external communication with corporate stakeholders.\n– Participating in collaboration meetings, workshops with industry colleagues, BASIS, etc.\n– Updating daily activity and work status in a dedicated individual tracking platform.\nEducational Requirements:\n– Bachelors/Masters students from any UGC approved University/College.\n– Running diploma students are also encouraged to apply.\n– Any discipline/department is fine. All will be treated equally.\nAdditional Requirements:\n– Age 18 to 32 years\n– Only females are allowed to apply.\n– Call center experience will get priority.\n– English medium background will get priority.\n– Must be fluent in English.\n– Experience in sales campaigns will get priority.\nCompensation & Other info:\n– 8,000 BDT remuneration per month plus 0-2,000 BDT bonus based on performance.\n– Work From Home\n– 6 days per week.\n– Office Schedule (Night Shift)\n– On-time salary.\n– Yearly 10 paid holidays.\n– Yearly 15 casual paid leaves.\n– All employees get loan facilities, including probationary employees.\n– Employees, their parents, spouses & children get a 35% discount in Ibn Sina Hospital.",
+   "category": "Data & Reporting",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
+   "status": "Awaiting Review",
+   "id": "243faeb0-7cd3-448b-9cbe-ff6f1c3a6e60",
+   "createdAt": "2026-09-20T15:55:35+00:00",
+   "requiredSkills": "junior, analyst, night, shift, only, female, work, home, future, cloud, bangladesh, limited",
+   "postedAt": "2025-11-14",
+   "deadline": null,
+   "salaryMin": 10000,
+   "salaryMax": 13000,
+   "salaryText": "Tk 10,000 - 13,000",
+   "employmentType": "Full Time",
+   "experienceText": "Freshers",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "c45bc5c4ca7092a7",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
+     "found_at": "2026-10-05T09:54:17+00:00"
+    }
+   ],
+   "matchScore": 79,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay tops out at Tk 13,000, below your Tk 20,000 floor"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
    "title": "Staff Software Engineer",
    "company": "Field Nation",
    "description": "Staff Software Engineer position at Field Nation. Required skills: Javascript, React, Redux, Html, Css.",
@@ -304,7 +641,7 @@
    "id": "f3ddac81-eb39-4c14-af2e-f1f79380ecb3",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-04",
+   "postedAt": "2026-10-05",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -318,7 +655,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/327",
-     "found_at": "2026-10-04T15:36:03+00:00"
+     "found_at": "2026-10-05T09:54:17+00:00"
     }
    ],
    "matchScore": 65,
@@ -362,7 +699,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-10-04T15:36:03+00:00"
+     "found_at": "2026-10-05T09:54:18+00:00"
     }
    ],
    "matchScore": 61,
@@ -405,7 +742,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-04T15:36:07+00:00"
+     "found_at": "2026-10-05T09:54:22+00:00"
     }
    ],
    "matchScore": 61,
@@ -435,7 +772,7 @@
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-04",
+   "postedAt": "2026-10-05",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -449,12 +786,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/15",
-     "found_at": "2026-10-04T15:36:03+00:00"
+     "found_at": "2026-10-05T09:54:17+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/14",
-     "found_at": "2026-10-04T15:36:03+00:00"
+     "found_at": "2026-10-05T09:54:17+00:00"
     }
    ],
    "matchScore": 61,
@@ -498,7 +835,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-04T15:36:03+00:00"
+     "found_at": "2026-10-05T09:54:18+00:00"
     }
    ],
    "matchScore": 61,
@@ -541,7 +878,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-10-04T15:36:07+00:00"
+     "found_at": "2026-10-05T09:54:18+00:00"
     }
    ],
    "matchScore": 57,
@@ -584,7 +921,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-10-04T15:36:03+00:00"
+     "found_at": "2026-10-05T09:54:18+00:00"
     }
    ],
    "matchScore": 57,
@@ -627,7 +964,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-04T15:36:07+00:00"
+     "found_at": "2026-10-05T09:54:22+00:00"
     }
    ],
    "matchScore": 57,
@@ -643,6 +980,50 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Sr. Executive – MIS",
+   "company": "RANCON Global Trucks Limited – JAC Motors",
+   "description": "Job Location: Dhaka\nJob Summary\nWe are looking for a detail-oriented and analytical MIS professional to manage sales and operational data, prepare regular reports, and provide accurate information to support management decisions.\nKey Responsibilities\nPrepare daily, weekly, and monthly MIS reports, dashboards, and performance summaries.\nCollect, verify, and analyze data from different departments and ensure accuracy.\nMonitor sales, target achievement, inventory, and other business KPIs and highlight key variances.\nMaintain databases and develop Excel-based reports and analysis as required.\nCoordinate with internal teams and provide timely reports and other MIS support to Management.\nRequirements\nBachelor’s degree in Business Administration, Management, Statistics, IT, Finance, or a relevant discipline.\n2–4 years of relevant MIS/reporting experience preferred.\nStrong knowledge of MS Excel, Pivot Table, VLOOKUP/XLOOKUP, Power Query, and data analysis.\nGood analytical, communication, and coordination skills.\nExperience in the automobile/commercial vehicle industry will be an advantage.\nWhat We Offer\nCompetitive Salary\nBenefits as per company policy\nCareer Growth Opportunity\nHow to Apply\nInterested candidates are requested to send their CV to: Email: hr@jacmotors.com.bd\nSubject: Application for Sr. Executive – MIS\nOnly shortlisted candidates will be contacted.\nMake Your ATS-Friendly CV",
+   "category": "MIS",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/jobs-in-bangladesh/rancon-global-trucks-limited-jac-motors/career/sr-executive-mis/2026",
+   "status": "Awaiting Review",
+   "id": "b681c1ae-fbf9-4438-97e3-6826e12e4e76",
+   "createdAt": "2026-09-28T18:20:15+00:00",
+   "requiredSkills": "sr., executive, mis, location, dhaka, summary, looking, oriented, professional, sales, operational, regular",
+   "postedAt": "2026-09-28",
+   "deadline": "2026-10-28",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Full Time",
+   "experienceText": "2 Years",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "159a6c0f811b47cc",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/jobs-in-bangladesh/rancon-global-trucks-limited-jac-motors/career/sr-executive-mis/2026",
+     "found_at": "2026-10-05T09:54:16+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting",
+    "Title matches your excluded list (Sr)"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Principal Software Engineer, AI",
@@ -670,7 +1051,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-04T15:36:07+00:00"
+     "found_at": "2026-10-05T09:54:22+00:00"
     }
    ],
    "matchScore": 57,
@@ -713,7 +1094,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-application-security",
-     "found_at": "2026-10-04T15:36:11+00:00"
+     "found_at": "2026-10-05T09:54:26+00:00"
     }
    ],
    "matchScore": 53,
@@ -729,6 +1110,51 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Assistant Manager / Senior Executive – Marketing",
+   "company": "RANCON Motorbikes Limited",
+   "description": "Location: Head Office, Dhaka\nExperience: Minimum 3 Years\nApplication Deadline: 6 October 2026\nPurpose of the Job\nThis position is responsible for assisting in driving overall brand visibility, digital asset management, integrated BTL activations, and nationwide retail/trade marketing for Suzuki Motorbikes to build brand equity, enhance consumer engagement, and maximize showroom footfall.\nKey Responsibilities\nPlan and execute nationwide on-ground BTL activations, test ride events, campus activations, and local trade promotions.\nOversee dealer showroom branding, including fascia, shop-in-shop, and 3D signage, utilizing deep technical knowledge of printing materials, outdoor signage fabrication, lightboxes, and POSM deployment.\nConceptualize and deploy 360-degree digital and offline campaign executions for new motorcycle launches, promotional offers, and lifestyle initiatives following brand guidelines.\nBrief, negotiate, and coordinate with creative agencies, printing vendors, and production houses to ensure high-quality and timely execution.\nExecute special strategic projects, ad-hoc reporting, and custom assignments in accordance with management direction.\nPerform all brand, trade, and asset management functions in full compliance with operational and governance guidelines.\nEducation & Experience\nBachelor’s degree from a reputed university.\nMinimum 3 years of experience in trade marketing, BTL activations, and vendor management.\nSkills & Expertise\nExpertise in BTL event execution, vendor negotiations, and POSM deployment.\nIn-depth technical knowledge of printing materials, substrates, outdoor signage fabrication, and POSM production.\nStrong deck design, presentation, and data-driven performance reporting capabilities.\nCompensation & Benefits\nRANCON Motorbikes offers:\nCompetitive salary and benefit packages.\nInsurance.\n2 days weekend.\nApplication Process\nInterested candidates should send their updated resume to: Email: amdhr@suzuki.com.bd\nSubject Line: Assistant Manager / Senior Executive – Marketing\nOnly shortlisted candidates will be called for the interview.\nMake Your ATS-Friendly CV",
+   "category": "Information Technology",
+   "location": "Head Office, Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/jobs-in-bd/rancon-motorbikes-limited/career/assistant-manager-senior-executive-marketing/2026",
+   "status": "Awaiting Review",
+   "id": "0f94fc62-66b9-4025-95e8-114a28a022c3",
+   "createdAt": "2026-09-25T15:42:12+00:00",
+   "requiredSkills": "assistant, senior, executive, marketing, location, head, dhaka, minimum, deadline, october, 2026, purpose",
+   "postedAt": "2026-09-25",
+   "deadline": "2026-10-07",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Not specified",
+   "experienceText": "3 Years",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "1bae4f545d84f87a",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/jobs-in-bd/rancon-motorbikes-limited/career/assistant-manager-senior-executive-marketing/2026",
+     "found_at": "2026-10-05T09:54:16+00:00"
+    }
+   ],
+   "matchScore": 53,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting",
+    "Title matches your excluded list (Senior)",
+    "Title matches your excluded list (Manager)"
+   ],
+   "discoveredBy": "bdrecruit"
   }
  ]
 }
