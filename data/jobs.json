@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-05T09:54:57+00:00",
+ "generatedAt": "2026-10-06T09:42:05+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -33,7 +33,7 @@
    "bdrecruit": {
     "found": 10,
     "errors": [],
-    "raw": 138
+    "raw": 153
    },
    "jsonld": {
     "found": 4,
@@ -43,7 +43,7 @@
    "rss": {
     "found": 17,
     "errors": [],
-    "raw": 215
+    "raw": 214
    },
    "careers": {
     "found": 0,
@@ -61,8 +61,8 @@
    "new": 1,
    "expired": 0,
    "duplicatesFolded": 6,
-   "priorityA": 5,
-   "priorityB": 6,
+   "priorityA": 4,
+   "priorityB": 7,
    "priorityC": 14
   },
   "filters": {
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-05T09:54:57+00:00"
+  "ranAt": "2026-10-06T09:42:04+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-05T09:54:22+00:00"
+     "found_at": "2026-10-06T09:41:27+00:00"
     }
    ],
    "matchScore": 87,
@@ -118,49 +118,6 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Management Trainee",
-   "company": "ACI Motors Limited",
-   "description": "Job Location: Dhaka\nEmployment Status: Full-time\nApplication Deadline: 05 October 2026\nSalary: Negotiable\nJob Overview\nACI Motors Limited is one of the leading automotive and Agri-machinery solution providers in Bangladesh, committed to delivering innovative, reliable, and high-quality products and services to customers across the country. With a diversified portfolio spanning automotive, agricultural machinery, commercial solutions, medical equipment, renewable energy, and related services, ACI Motors continues to strengthen its market presence through trusted global partnerships, an extensive distribution and service network, and a highly capable workforce.\nEligibility Criteria\nEducation\nBachelor’s degree in Business Administration from any reputed university.\nB.Sc. / Graduation in Engineering with MBA from any reputed university.\nExperience\nAt most 1 year of experience.\nExperience in the automobile industry will be preferred.\nFreshers are also encouraged to apply.\nAdditional Requirements\nAge: 22 to 30 years.\nStrong proficiency in using AI tools to enhance productivity, analysis, problem-solving, and business decision-making.\nResponsibilities & Context\nRotate through Sales, Service, Marketing, and other cross-functional departments to gain practical experience and understand respective functions.\nEngage in leadership training programs aimed at enhancing decision-making, communication, and team management skills.\nSubmit and present a Functional Stint Report after 3 months, summarizing key learnings and contributions.\nSubmit and present a Cross-Functional Stint Report of 1.5 months focusing on cross-departmental experiences after completion of the Functional Stint Report.\nIdentify areas for improvement in business processes, suggest actionable recommendations, and contribute to continuous improvement initiatives.\nAnalyze business data and provide insights to support decision-making, strategy development, and operational efficiency.\nFace a final defense at the end of the 6-month probation period before a selection board.\nCollaborate with supervisors and teams to achieve departmental objectives throughout the stint program.\nFollow all organizational rules and regulations.\nSelected Management Trainees after final evaluation will be assigned to specific roles with respective job descriptions.\nSkills & Expertise\nCommunication and interpersonal skills\nData analysis and presentation\nMS Office\nPositive mindset for fieldwork\nProcess Improvement\nCompensation & Benefits\nProvident Fund\nMedical Allowance\nMobile Bill\nInsurance\nProfit Share\nGratuity\nPerformance Bonus\nPartially Subsidized Lunch Facilities\nYearly Salary Review\n2 Festival Bonuses\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026-3",
-   "status": "Awaiting Review",
-   "id": "b9dc9ffe-8aa1-440a-a623-a9bc19ef1439",
-   "createdAt": "2026-09-20T15:55:32+00:00",
-   "requiredSkills": "trainee, location, dhaka, employment, status, full, time, deadline, october, 2026, salary, negotiable",
-   "postedAt": "2026-09-28",
-   "deadline": "2026-10-06",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Full Time",
-   "experienceText": "Fresher",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "6675f3ad12093490",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/jobs-in-bd/aci-motors-limited/career/management-trainee/2026-3",
-     "found_at": "2026-10-05T09:54:16+00:00"
-    }
-   ],
-   "matchScore": 83,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Management Trainee Officer (MTO)",
@@ -188,7 +145,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/fci-group/career/management-trainee-officer-mto/2026",
-     "found_at": "2026-10-05T09:54:16+00:00"
+     "found_at": "2026-10-06T09:41:22+00:00"
     }
    ],
    "matchScore": 83,
@@ -231,7 +188,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-10-05T09:54:17+00:00"
+     "found_at": "2026-10-06T09:41:22+00:00"
     }
    ],
    "matchScore": 83,
@@ -273,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-10-05T09:54:16+00:00"
+     "found_at": "2026-10-06T09:41:22+00:00"
     }
    ],
    "matchScore": 79,
@@ -315,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-05T09:54:16+00:00"
+     "found_at": "2026-10-06T09:41:19+00:00"
     }
    ],
    "matchScore": 73,
@@ -323,6 +280,49 @@
     "title": 100,
     "level": 10,
     "skills": 83,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Data Analyst",
+   "company": "WPP Production",
+   "description": "Position: Data Analyst\nCompany: WPP Production\nFunction: Data and Analytics (Econometrics)\nJob Location: Dhaka, Bangladesh (onsite, across different shifts as needed)\nJob Type: Full-Time\nExperience: 2 to 4 years in a similar field, with a focus on data and analytics with econometrics\nEducation: A degree that demonstrates technical ability, such as Economics, Mathematics or Statistics\nSalary: Not mentioned\nDeadline: Not mentioned, apply early\nAbout the Role\nWPP Production, the global production company of WPP, is hiring a Data Analyst in Dhaka to support client projects through data collection and preparation, model building and the interpretation of results.\nKey Responsibilities\nUndertake data extraction, manipulation and analysis to understand the marketplace and client context of each project\nOwn data collection, including preparing and sending data requests and querying data with clients and agencies\nCheck all tables, charts and outputs for accuracy and format them to organization standards\nBuild base models to the project specification and progress them towards finalisation\nCalculate sales effects and ROIs, create response curves and run optimisation scenarios\nValidate models, identify areas of weakness and test improvements\nInterpret results and explain their implications for the client’s future strategy\nRequirements\n2 to 4 years of experience in a similar field, with a focus on data and analytics with econometrics\nStrong expertise in the Python programming language is necessary\nProficiency in Excel, SQL, Python and Pandas to process and transform data and build models\nA degree that demonstrates technical ability, such as Economics, Mathematics or Statistics\nStrong verbal and written communication skills in English; experience with international clients is an advantage\nThis is an onsite role and candidates should be comfortable working across different shifts as needed\nAbout WPP Production\nWPP Production is the unified global production company that brings together WPP’s content producers, studios and craft experts. WPP states that it is an equal opportunity employer.\nHow to Apply\nInterested candidates can apply through the official WPP Production careers page using the Apply Now button. The circular does not mention an application deadline, so apply early. Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Data & Reporting",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
+   "status": "Awaiting Review",
+   "id": "6053ae12-cb64-49ac-b166-f4549e2068ff",
+   "createdAt": "2026-10-06T09:41:19+00:00",
+   "requiredSkills": "analyst, wpp, analytics, econometrics, location, dhaka, bangladesh, onsite, across, different, shifts, needed",
+   "postedAt": "2026-10-06",
+   "deadline": "2026-11-05",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "2 Years",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "fe8d0bc71a2383fd",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
+     "found_at": "2026-10-06T09:41:19+00:00"
+    }
+   ],
+   "matchScore": 72,
+   "scoreParts": {
+    "title": 100,
+    "level": 55,
+    "skills": 33,
     "preference": 100
    },
    "priority": "B",
@@ -358,7 +358,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-05T09:54:22+00:00"
+     "found_at": "2026-10-06T09:41:27+00:00"
     }
    ],
    "matchScore": 71,
@@ -381,7 +381,7 @@
    "category": "Software Quality Assurance",
    "location": "Dhaka, Bangladesh",
    "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/323",
+   "url": "https://www.bdtechjobs.com/jobs/38",
    "status": "Awaiting Review",
    "id": "6c29665a-c12a-4a40-be17-bab3cce7931a",
    "createdAt": "2026-10-04T09:14:08+00:00",
@@ -399,8 +399,8 @@
    "sources": [
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/323",
-     "found_at": "2026-10-05T09:54:17+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/38",
+     "found_at": "2026-10-06T09:41:22+00:00"
     }
    ],
    "matchScore": 71,
@@ -443,7 +443,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-10-05T09:54:26+00:00"
+     "found_at": "2026-10-06T09:41:31+00:00"
     }
    ],
    "matchScore": 66,
@@ -485,7 +485,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-05T09:54:16+00:00"
+     "found_at": "2026-10-06T09:41:19+00:00"
     }
    ],
    "matchScore": 66,
@@ -528,7 +528,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-05T09:54:18+00:00"
+     "found_at": "2026-10-06T09:41:23+00:00"
     }
    ],
    "matchScore": 66,
@@ -570,7 +570,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/air-astra/career/executive-ground-operations/2026",
-     "found_at": "2026-10-05T09:54:16+00:00"
+     "found_at": "2026-10-06T09:41:19+00:00"
     }
    ],
    "matchScore": 83,
@@ -613,7 +613,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-05T09:54:17+00:00"
+     "found_at": "2026-10-06T09:41:22+00:00"
     }
    ],
    "matchScore": 79,
@@ -636,12 +636,12 @@
    "category": "Software Development",
    "location": "Dhaka",
    "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/327",
+   "url": "https://www.bdtechjobs.com/jobs/42",
    "status": "Awaiting Review",
    "id": "f3ddac81-eb39-4c14-af2e-f1f79380ecb3",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-05",
+   "postedAt": "2026-10-06",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -654,8 +654,8 @@
    "sources": [
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/327",
-     "found_at": "2026-10-05T09:54:17+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/42",
+     "found_at": "2026-10-06T09:41:22+00:00"
     }
    ],
    "matchScore": 65,
@@ -699,7 +699,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-10-05T09:54:18+00:00"
+     "found_at": "2026-10-06T09:41:23+00:00"
     }
    ],
    "matchScore": 61,
@@ -742,7 +742,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-05T09:54:22+00:00"
+     "found_at": "2026-10-06T09:41:27+00:00"
     }
    ],
    "matchScore": 61,
@@ -767,12 +767,12 @@
    "category": "Software Development",
    "location": "Dhaka",
    "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/14",
+   "url": "https://www.bdtechjobs.com/jobs/13",
    "status": "Awaiting Review",
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-05",
+   "postedAt": "2026-10-06",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -785,13 +785,13 @@
    "sources": [
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/15",
-     "found_at": "2026-10-05T09:54:17+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/14",
+     "found_at": "2026-10-06T09:41:22+00:00"
     },
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/14",
-     "found_at": "2026-10-05T09:54:17+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/13",
+     "found_at": "2026-10-06T09:41:22+00:00"
     }
    ],
    "matchScore": 61,
@@ -835,7 +835,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-05T09:54:18+00:00"
+     "found_at": "2026-10-06T09:41:23+00:00"
     }
    ],
    "matchScore": 61,
@@ -878,7 +878,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-10-05T09:54:18+00:00"
+     "found_at": "2026-10-06T09:41:23+00:00"
     }
    ],
    "matchScore": 57,
@@ -921,7 +921,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-10-05T09:54:18+00:00"
+     "found_at": "2026-10-06T09:41:23+00:00"
     }
    ],
    "matchScore": 57,
@@ -964,7 +964,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-05T09:54:22+00:00"
+     "found_at": "2026-10-06T09:41:27+00:00"
     }
    ],
    "matchScore": 57,
@@ -1007,7 +1007,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bangladesh/rancon-global-trucks-limited-jac-motors/career/sr-executive-mis/2026",
-     "found_at": "2026-10-05T09:54:16+00:00"
+     "found_at": "2026-10-06T09:41:19+00:00"
     }
    ],
    "matchScore": 57,
@@ -1051,7 +1051,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-05T09:54:22+00:00"
+     "found_at": "2026-10-06T09:41:27+00:00"
     }
    ],
    "matchScore": 57,
@@ -1094,7 +1094,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-application-security",
-     "found_at": "2026-10-05T09:54:26+00:00"
+     "found_at": "2026-10-06T09:41:31+00:00"
     }
    ],
    "matchScore": 53,
@@ -1137,7 +1137,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rancon-motorbikes-limited/career/assistant-manager-senior-executive-marketing/2026",
-     "found_at": "2026-10-05T09:54:16+00:00"
+     "found_at": "2026-10-06T09:41:22+00:00"
     }
    ],
    "matchScore": 53,
