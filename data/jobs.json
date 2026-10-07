@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-07T09:39:47+00:00",
+ "generatedAt": "2026-10-07T17:38:29+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 10,
+    "found": 11,
     "errors": [],
-    "raw": 176
+    "raw": 195
    },
    "jsonld": {
     "found": 4,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 18,
+    "found": 19,
     "errors": [],
-    "raw": 217
+    "raw": 216
    },
    "careers": {
     "found": 0,
@@ -57,11 +57,11 @@
    }
   },
   "counts": {
-   "total": 25,
-   "new": 0,
+   "total": 26,
+   "new": 1,
    "expired": 0,
-   "duplicatesFolded": 7,
-   "priorityA": 4,
+   "duplicatesFolded": 8,
+   "priorityA": 5,
    "priorityB": 7,
    "priorityC": 14
   },
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-07T09:39:47+00:00"
+  "ranAt": "2026-10-07T17:38:28+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-07T09:39:09+00:00"
+     "found_at": "2026-10-07T17:37:52+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,7 +145,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/fci-group/career/management-trainee-officer-mto/2026",
-     "found_at": "2026-10-07T09:39:04+00:00"
+     "found_at": "2026-10-07T17:37:47+00:00"
     }
    ],
    "matchScore": 83,
@@ -188,7 +188,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-10-07T09:39:04+00:00"
+     "found_at": "2026-10-07T17:37:47+00:00"
     }
    ],
    "matchScore": 83,
@@ -202,6 +202,46 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time"
    ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Trainee Officer (Cash/GB/Others)",
+   "company": "ONE Bank PLC",
+   "description": "Position: Trainee Officer (Cash/GB/Others)\nCompany: ONE Bank PLC\nEmployment Status: Full-time\nWorkplace: Work at office\nJob Location: Anywhere in Bangladesh\nSalary: BDT 30,000 per month\nApplication Deadline: 17 October 2026\nJob Context\nONE Bank PLC is one of the leading banks in Bangladesh with 114 branches and 54 sub-branches across the country. The Bank is looking for smart, energetic, and self-motivated Bangladeshi nationals to join as Trainee Officers. Selected candidates will be placed either in Cash / General Banking at any branch or in any division / department of the Corporate HQ, as per the Bank’s requirement. The position offers a one-year probation with in-house training and on-the-job exposure and, on successful completion with satisfactory performance, may lead to absorption as Officer Grade-1.\nEducational Qualification\nGraduation or post-graduation from a recognized public or private university (UGC-approved).\nMinimum CGPA 2.50 out of 4.00 at graduate and post-graduate level.\nMinimum CGPA 3.00 out of 5.00 in SSC, HSC and equivalent levels.\nAdditional Requirements\nAge at most 32 years.\n1 to 2 years of banking experience will be an added advantage; however, fresh graduates are encouraged to apply.\nGood command of written and spoken Bangla and English.\nProficiency in computer literacy (MS Office package) and sound analytical ability.\nProficiency in using AI tools to enhance productivity and support creativity is preferred.\nSelf-motivated and detail-oriented with strong integrity, communication and interpersonal skills and the ability to work in a team and under pressure.\nWillingness to be posted to any branch or division in Bangladesh.\nJob Responsibilities\nCash / General Banking (Branch)\nHandle cash receipts and payments.\nProcess cheques, clearing instruments, fund transfers, pay orders and other general banking transactions.\nHandle account opening ensuring KYC and AML/CFT compliance.\nSupport deposit mobilization, cross-selling and achievement of assigned business targets.\nPerform other duties as and when assigned by the Management.\nDivision / Department (Corporate HQ)\nWork of the respective Divisions/Departments as assigned by the Supervisor such as maintaining files, records and correspondence and ensure proper documentation.\nCoordinate with branches and other divisions for information and follow-up.\nSupport compliance with the Bank’s policies, regulatory requirements and audit queries.\nSkills & Expertise\nBranch Banking\nCash Handling\nGeneral Ledger\nOffice Administration\nRegulatory Compliance\nSelection Procedure\nThe Bank is an equal opportunity employer and therefore, the selection procedure will be purely on merit.\nOnly short-listed candidates will be communicated for the competitive written test.\nSuccessful candidates in the written test will be called for interview.\nCandidates recommended by the viva board will go through further selection procedures such as document verification, reference / background check and any other formalities before final selection.\nFinal selection rests with the Bank’s Management.\nAny form of persuasion at any stage will lead to disqualification.",
+   "category": "Management & Business",
+   "location": "Anywhere in Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/trainee-officer-cash-gb-others/",
+   "status": "Awaiting Review",
+   "id": "9408d34e-1a50-4fa2-bfe5-32cbf92f8103",
+   "createdAt": "2026-10-07T17:37:44+00:00",
+   "requiredSkills": "trainee, officer, cash/gb/others, one, bank, plc, employment, status, full, time, workplace, work",
+   "postedAt": "2026-10-07",
+   "deadline": "2026-10-18",
+   "salaryMin": 30000,
+   "salaryMax": null,
+   "salaryText": "Tk 30,000",
+   "employmentType": "Full Time",
+   "experienceText": "Fresh Graduate",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "5f93e57436306af2",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/trainee-officer-cash-gb-others/",
+     "found_at": "2026-10-07T17:37:44+00:00"
+    }
+   ],
+   "matchScore": 79,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [],
    "discoveredBy": "bdrecruit"
   },
   {
@@ -230,7 +270,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-10-07T09:39:04+00:00"
+     "found_at": "2026-10-07T17:37:47+00:00"
     }
    ],
    "matchScore": 79,
@@ -272,7 +312,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-07T09:39:01+00:00"
+     "found_at": "2026-10-07T17:37:47+00:00"
     }
    ],
    "matchScore": 73,
@@ -315,7 +355,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-07T09:39:01+00:00"
+     "found_at": "2026-10-07T17:37:44+00:00"
     }
    ],
    "matchScore": 72,
@@ -358,7 +398,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-07T09:39:09+00:00"
+     "found_at": "2026-10-07T17:37:52+00:00"
     }
    ],
    "matchScore": 71,
@@ -400,7 +440,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/38",
-     "found_at": "2026-10-07T09:39:04+00:00"
+     "found_at": "2026-10-07T17:37:47+00:00"
     }
    ],
    "matchScore": 71,
@@ -443,7 +483,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-10-07T09:39:13+00:00"
+     "found_at": "2026-10-07T17:37:56+00:00"
     }
    ],
    "matchScore": 66,
@@ -485,7 +525,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-07T09:39:01+00:00"
+     "found_at": "2026-10-07T17:37:44+00:00"
     }
    ],
    "matchScore": 66,
@@ -528,7 +568,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-07T09:39:05+00:00"
+     "found_at": "2026-10-07T17:37:48+00:00"
     }
    ],
    "matchScore": 66,
@@ -570,7 +610,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/air-astra/career/executive-ground-operations/2026",
-     "found_at": "2026-10-07T09:39:04+00:00"
+     "found_at": "2026-10-07T17:37:47+00:00"
     }
    ],
    "matchScore": 83,
@@ -613,7 +653,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-07T09:39:04+00:00"
+     "found_at": "2026-10-07T17:37:47+00:00"
     }
    ],
    "matchScore": 79,
@@ -655,7 +695,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/42",
-     "found_at": "2026-10-07T09:39:04+00:00"
+     "found_at": "2026-10-07T17:37:47+00:00"
     }
    ],
    "matchScore": 65,
@@ -699,7 +739,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-10-07T09:39:05+00:00"
+     "found_at": "2026-10-07T17:37:48+00:00"
     }
    ],
    "matchScore": 61,
@@ -741,13 +781,13 @@
    "sources": [
     {
      "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-07T09:39:09+00:00"
+     "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
+     "found_at": "2026-10-07T17:37:48+00:00"
     },
     {
      "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-07T09:39:09+00:00"
+     "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
+     "found_at": "2026-10-07T17:37:52+00:00"
     }
    ],
    "matchScore": 61,
@@ -791,12 +831,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/14",
-     "found_at": "2026-10-07T09:39:04+00:00"
+     "found_at": "2026-10-07T17:37:47+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-07T09:39:04+00:00"
+     "found_at": "2026-10-07T17:37:47+00:00"
     }
    ],
    "matchScore": 61,
@@ -840,7 +880,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-07T09:39:05+00:00"
+     "found_at": "2026-10-07T17:37:48+00:00"
     }
    ],
    "matchScore": 61,
@@ -883,7 +923,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-10-07T09:39:05+00:00"
+     "found_at": "2026-10-07T17:37:48+00:00"
     }
    ],
    "matchScore": 57,
@@ -926,7 +966,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-10-07T09:39:05+00:00"
+     "found_at": "2026-10-07T17:37:48+00:00"
     }
    ],
    "matchScore": 57,
@@ -969,7 +1009,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-07T09:39:09+00:00"
+     "found_at": "2026-10-07T17:37:52+00:00"
     }
    ],
    "matchScore": 57,
@@ -1012,7 +1052,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bangladesh/rancon-global-trucks-limited-jac-motors/career/sr-executive-mis/2026",
-     "found_at": "2026-10-07T09:39:04+00:00"
+     "found_at": "2026-10-07T17:37:47+00:00"
     }
    ],
    "matchScore": 57,
@@ -1056,7 +1096,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-07T09:39:09+00:00"
+     "found_at": "2026-10-07T17:37:52+00:00"
     }
    ],
    "matchScore": 57,
@@ -1099,7 +1139,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-application-security",
-     "found_at": "2026-10-07T09:39:13+00:00"
+     "found_at": "2026-10-07T17:37:56+00:00"
     }
    ],
    "matchScore": 53,
@@ -1142,7 +1182,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rancon-motorbikes-limited/career/assistant-manager-senior-executive-marketing/2026",
-     "found_at": "2026-10-07T09:39:04+00:00"
+     "found_at": "2026-10-07T17:37:47+00:00"
     }
    ],
    "matchScore": 53,
