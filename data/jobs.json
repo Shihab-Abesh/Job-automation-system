@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-07T17:38:29+00:00",
+ "generatedAt": "2026-10-08T09:50:20+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,19 +31,19 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 11,
+    "found": 12,
     "errors": [],
-    "raw": 195
+    "raw": 208
    },
    "jsonld": {
-    "found": 4,
+    "found": 5,
     "errors": [],
     "raw": 20
    },
    "rss": {
-    "found": 19,
+    "found": 20,
     "errors": [],
-    "raw": 216
+    "raw": 222
    },
    "careers": {
     "found": 0,
@@ -57,12 +57,12 @@
    }
   },
   "counts": {
-   "total": 26,
-   "new": 1,
+   "total": 29,
+   "new": 4,
    "expired": 0,
    "duplicatesFolded": 8,
-   "priorityA": 5,
-   "priorityB": 7,
+   "priorityA": 7,
+   "priorityB": 8,
    "priorityC": 14
   },
   "filters": {
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-07T17:38:28+00:00"
+  "ranAt": "2026-10-08T09:50:19+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-07T17:37:52+00:00"
+     "found_at": "2026-10-08T09:49:44+00:00"
     }
    ],
    "matchScore": 87,
@@ -118,6 +118,49 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Management Trainee Officer",
+   "company": "Al-Arafah Islami Bank PLC.",
+   "description": "Organization: Al-Arafah Islami Bank PLC.\nEmployment Status: Full-time\nExperience: 0 years\nAge: 18 to 32 years\nEligibility\nMBA, MBM, Master’s in any discipline, or B.Sc in Engineering from any recognized UGC approved university.\nMinimum CGPA 3.00 out of 4.00, or CGPA 3.75 out of 5.00, or 1st Class in both Graduation and Post Graduation.\nMinimum GPA 4.50 out of 5.00 in SSC and HSC or equivalent.\nNo prior experience required.\nOnly published academic results are acceptable.\nAge not over 32 years on the circular deadline.\nKey Responsibilities\nNot specified.\nCompetencies\nExcellent communication and interpersonal skills.\nGood command of English is a must for all applicants.\nBasic computer and ICT skills, especially in MS Office and email.\nHardworking, self-driven, and change-oriented.\nAbility to work under pressure.\nExcellent analytical and problem-solving skills.\nAbility to take challenges, perform proactively and take ownership.\nWhat We Will Offer\nOutstanding career development with an excellent working environment.\nOne-year probation with an attractive compensation package.\nUpon successful completion of the probation period, selected candidates will be absorbed as Senior Executive Officer .\nOpportunity to work in a Shariah-compliant work environment.\nEducational Requirements\nMinimum MBA or equivalent degree.\nAge\n18 to 32 years\nExperience\nNo experience required\nApplication Information\nApplication deadline, company name, job location, salary and application procedure were not provided in the supplied job details.",
+   "category": "Management & Business",
+   "location": "Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
+   "status": "Awaiting Review",
+   "id": "62a5fec2-2c18-4fd7-af2e-e8822293df0a",
+   "createdAt": "2026-10-08T09:49:33+00:00",
+   "requiredSkills": "trainee, officer, organization, arafah, islami, bank, plc., employment, status, full, time, eligibility",
+   "postedAt": "2026-10-07",
+   "deadline": "2026-11-06",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "No professional experience required",
+   "area": "",
+   "distanceKm": null,
+   "fingerprint": "eb374fdd5826db3e",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
+     "found_at": "2026-10-08T09:49:33+00:00"
+    }
+   ],
+   "matchScore": 83,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Management Trainee Officer (MTO)",
@@ -145,7 +188,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/fci-group/career/management-trainee-officer-mto/2026",
-     "found_at": "2026-10-07T17:37:47+00:00"
+     "found_at": "2026-10-08T09:49:36+00:00"
     }
    ],
    "matchScore": 83,
@@ -188,7 +231,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-10-07T17:37:47+00:00"
+     "found_at": "2026-10-08T09:49:36+00:00"
     }
    ],
    "matchScore": 83,
@@ -230,7 +273,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-cash-gb-others/",
-     "found_at": "2026-10-07T17:37:44+00:00"
+     "found_at": "2026-10-08T09:49:33+00:00"
     }
    ],
    "matchScore": 79,
@@ -270,7 +313,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-10-07T17:37:47+00:00"
+     "found_at": "2026-10-08T09:49:36+00:00"
     }
    ],
    "matchScore": 79,
@@ -278,6 +321,48 @@
     "title": 100,
     "level": 100,
     "skills": 17,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Management Trainee Officer – Brand",
+   "company": "Emami Bangladesh Limited",
+   "description": "Position: Management Trainee Officer, Brand\nCompany: Emami Bangladesh Limited\nVacancy: 2\nJob Location: Anywhere in Bangladesh\nJob Type: Full-Time\nExperience: 1 to 3 years (business areas named in the circular: FMCG manufacturing, Multinational Companies, Cosmetics/Toiletries/Personal Care)\nEducation: Master of Business Administration (MBA) in Marketing\nAge: 22 to 30 years\nSalary: Negotiable\nDeadline: 17 October 2026\nAbout the Role\nEmami Bangladesh Limited is hiring two Management Trainee Officers, Brand to assist in developing and executing brand and marketing strategies, campaigns and product launches.\nKey Responsibilities\nAssist in developing and executing brand and marketing strategies to achieve business objectives\nSupport market research, consumer insights, competitor analysis and identification of market opportunities\nAssist in planning and executing brand campaigns, product launches, promotional activities and marketing initiatives\nCoordinate with internal teams and external agencies for effective execution of marketing activities\nMonitor market trends, consumer behavior and competitor activities and provide relevant insights\nRequirements\nMaster of Business Administration (MBA) in Marketing\n1 to 3 years of experience\nExperience in FMCG manufacturing, Multinational Companies or Cosmetics/Toiletries/Personal Care\nAge 22 to 30 years\nBenefits Stated in the Circular\nMobile bill\nGratuity\nInsurance\nTwo festival bonuses\nYearly salary review\nPartially subsidized lunch\nAbout Emami Bangladesh Limited\nEmami Bangladesh Limited is the Bangladesh operation of Emami, a personal care and healthcare products company headquartered in India.\nHow to Apply\nInterested candidates can apply through the bdjobs.com listing posted by Emami Bangladesh Limited using the Apply Now button. The application deadline is 17 October 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Anywhere in Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/management-trainee-officer-brand-emami-bangladesh-limited/",
+   "status": "Awaiting Review",
+   "id": "6c987737-0482-4daa-9e7a-bc53081ac3d0",
+   "createdAt": "2026-10-08T09:49:33+00:00",
+   "requiredSkills": "trainee, officer, brand, emami, bangladesh, limited, vacancy, location, anywhere, type, full, time",
+   "postedAt": "2026-10-08",
+   "deadline": "2026-10-17",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Full Time",
+   "experienceText": "1 Year+",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "a6a394ceee956ae4",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/management-trainee-officer-brand-emami-bangladesh-limited/",
+     "found_at": "2026-10-08T09:49:33+00:00"
+    }
+   ],
+   "matchScore": 75,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 0,
     "preference": 100
    },
    "priority": "A",
@@ -312,7 +397,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-07T17:37:47+00:00"
+     "found_at": "2026-10-08T09:49:36+00:00"
     }
    ],
    "matchScore": 73,
@@ -355,7 +440,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-07T17:37:44+00:00"
+     "found_at": "2026-10-08T09:49:33+00:00"
     }
    ],
    "matchScore": 72,
@@ -398,7 +483,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-07T17:37:52+00:00"
+     "found_at": "2026-10-08T09:49:44+00:00"
     }
    ],
    "matchScore": 71,
@@ -440,7 +525,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/38",
-     "found_at": "2026-10-07T17:37:47+00:00"
+     "found_at": "2026-10-08T09:49:39+00:00"
     }
    ],
    "matchScore": 71,
@@ -483,7 +568,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-10-07T17:37:56+00:00"
+     "found_at": "2026-10-08T09:49:48+00:00"
     }
    ],
    "matchScore": 66,
@@ -525,7 +610,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-07T17:37:44+00:00"
+     "found_at": "2026-10-08T09:49:36+00:00"
     }
    ],
    "matchScore": 66,
@@ -568,7 +653,49 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-07T17:37:48+00:00"
+     "found_at": "2026-10-08T09:49:39+00:00"
+    }
+   ],
+   "matchScore": 66,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Security Software Engineer, IAM",
+   "company": "Vercel",
+   "description": "Headquarters: Remote - United States\nAbout Vercel:\nVercel is the agentic infrastructure company, freeing people and agents to ship what's next. For more than a decade we've helped builders move from idea to production with speed, security, and exceptional developer experience.\nNow we're scaling our products for both agents and people to ship and run software, built in the open and trusted by OpenAI, PayPal, Ramp, Supreme, and millions of developers worldwide.\nAbout the Role:\nTraditional IAM teams operate as an approval queue: a request comes in, someone reviews it, grants it, and (hopefully) remembers to revoke it. Access reviews become quarterly spreadsheet exercises, audit evidence is assembled by hand, and the central team becomes the bottleneck for every decision. That model doesn't scale past a certain point, and Vercel is past it. Adding more approvers doesn't close the gap. Building the system that makes access self-serve, time-bound, and provable does.\nThis role is about building that system. Identity at Vercel should work like the rest of our infrastructure: defined as code, reviewed in pull requests, deployed through CI, and observable in production. You'll own that transformation end to end: migrating Okta and all related IAM configuration fully behind Terraform, and building the self-serve access platform (including just-in-time access) that lets team and system owners define, request, and time-bound their own access instead of routing every decision through a central team. Provisioning, deprovisioning, and access reviews become workflows the system runs, with the audit evidence for SOC 2 and similar generated as a byproduct rather than a manual scramble.\nYou'll also own the harder connective work: corporate IAM (employee identity, SaaS access, devices) and production IAM (service accounts, infrastructure permissions, on-call and prod access) usually live in separate silos with separate tools and separate evidence trails. You'll build them as one identity plane.\nAnd identity itself is changing shape. As agents increasingly act on behalf of users and systems, the old model of \"one human, one identity\" doesn't hold, and there's real debate about how to solve it: carry the human's identity through every hop the agent makes, or give the agent its own scoped identity that never impersonates the user. We don't have a fixed answer yet. We want someone who wants to be in the room helping us decide and then build it.\nBecause of this, we're optimizing for someone who wants to build identity infrastructure as software, not administer identity products. A software engineer who's gone deep on identity, or an IAM engineer with a strong engineering background, is exactly who we're looking for.\nYou'll work closely with Security Leadership, located remotely within the United States. If you're based within commuting distance of our SF or NY offices, the role includes in-office anchor days on Monday, Tuesday, and Friday.\nWhat You Will Do:\nOwn the full IAM strategy for corporate, production, and product environments end to end, and own the bridge between corp IAM and product/prod IAM rather than treating them as separate problems\nMigrate Okta and all related IAM configuration to Terraform , so every identity change is reviewed, tested, and versioned like the rest of our infrastructure, driving infrastructure-as-code adoption and leveling up engineering teams in its use\nBuild self-serve access governance tooling, including JIT (just-in-time) access: design and ship the framework that lets team and system owners define, request, and time-bound their own access, rather than security being a bottleneck for every request\nOwn provisioning, deprovisioning, and access review workflows , built so the evidence trail generates itself and internal and external audits (SOC 2 and similar) are fast, not a manual scramble\nWork closely with the Accounts team , the engineers who build IAM into Vercel's own product (team and project roles, enterprise SSO, SCIM, API tokens), and find where that world and ours should connect\nDesign and enforce least-privilege access controls across cloud, SaaS, and production infrastructure, partnering with platform and engineering teams to embed IAM early in design rather than bolting it on after\nHelp define what identity and access should look like as agents , not just people, request and hold access at Vercel, and build the first versions of it\nAbout You:\n7+ years of experience in identity, access management, or platform security engineering\nExperience building internal tools or self-service platforms , not just administering existing ones. You'd rather build the framework that lets other teams manage their own access than be the sole approver for every request\nProficient in a production language like TypeScript/Node.js, Go, or Python, comfortable designing and consuming REST APIs, and able to ship and operate reliable services. The access platform you'll build is a production system, not a configuration\nProficient in Terraform and committed to managing IAM infrastructure as code, ideally with experience migrating existing systems into it\nHands-on with identity protocols (OAuth2, OIDC, SAML, SCIM) at the implementation level, not just configuration, including the failure modes: token replay, deprovisioned users retaining access, sync drift between identity providers and downstream systems\nExperience designing IAM at scale across both corporate (Okta or equivalent: SSO, MFA, lifecycle management, API-driven automation) and production (AWS or GCP IAM: service accounts, roles, workload identity federation) environments\nA systems thinker who defaults to \"why does this class of access request exist\" and \"how does this scale to the next thousand employees and ten thousand agents,\" not just resolving the request in front of you\nStrong collaborator who can drive alignment across Engineering, IT, Compliance, and Security teams\nComfortable operating with autonomy and owning decisions in a fast-moving environment\nBonus If You Have\nHave led a Terraform migration for IAM or identity infrastructure at scale.\nHave designed or built JIT access systems or an access governance/request platform at a previous company.\nHave built or managed MDM/MAM tooling (Jamf, Intune, or equivalent) and device-trust integrations with identity.\nUnderstand how Vercel's own products handle IAM (team and project roles, enterprise SSO, API tokens) and are excited to partner with the Accounts team to bring internal and product-facing identity closer together.\nHave a point of view on agent identity (delegation, scoped credentials, impersonation boundaries) and want to help invent the architecture rather than apply an existing playbook.\nHave experience at a developer tools, infrastructure, or SaaS company.\nHold certifications such as Okta Certified Professional/Administrator, AWS Security Specialty, or CISSP. These demonstrate depth, though they're not required.\nCompensation & Benefits:\nCompetitive compensation package, including equity.\nInclusive Healthcare Package.\nLearn and Grow - we provide mentorship and send you to events that help you build your network and skills.\nFlexible Time Off.\nWe will provide you the gear you need to do your role, and a WFH budget for you to outfit your space as needed.\nThe San Francisco, CA base pay range for this role is $208,000 - $312,000. Actual salary will be based on job-related skills, experience, and location. Compensation outside of San Francisco may be adjusted based on employee location. The total compensation package may include benefits, equity-based compensation, and eligibility for a company bonus or variable pay program depending on the role. Your recruiter can share more details during the hiring process.\nDisclosures:\nPrivacy: Please review our Job Applicant Privacy Policy for more information on how we handle your data.\nEqual Opportunity: Vercel is committed to fostering and empowering an inclusive community within our organization. We do not discriminate on the basis of race, religion, color, gender expression or identity, sexual orientation, national origin, citizenship, age, marital status, veteran status, disability status, or any other characteristic protected by law. Vercel encourages everyone to apply for our available positions, even if they don't necessarily check every box on the job description.\nTo apply: https://weworkremotely.com/remote-jobs/vercel-security-software-engineer-iam",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/vercel-security-software-engineer-iam",
+   "status": "Awaiting Review",
+   "id": "9d68ea95-1272-479a-a846-cf2c17681a7e",
+   "createdAt": "2026-10-08T09:49:48+00:00",
+   "requiredSkills": "security, engineer, iam, headquarters, remote, united, states, about, vercel, agentic, infrastructure, freeing",
+   "postedAt": "2026-10-08",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "1a49451520c3339b",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/vercel-security-software-engineer-iam",
+     "found_at": "2026-10-08T09:49:48+00:00"
     }
    ],
    "matchScore": 66,
@@ -610,7 +737,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/air-astra/career/executive-ground-operations/2026",
-     "found_at": "2026-10-07T17:37:47+00:00"
+     "found_at": "2026-10-08T09:49:36+00:00"
     }
    ],
    "matchScore": 83,
@@ -653,7 +780,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-07T17:37:47+00:00"
+     "found_at": "2026-10-08T09:49:39+00:00"
     }
    ],
    "matchScore": 79,
@@ -681,7 +808,7 @@
    "id": "f3ddac81-eb39-4c14-af2e-f1f79380ecb3",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-07",
+   "postedAt": "2026-10-08",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -695,7 +822,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/42",
-     "found_at": "2026-10-07T17:37:47+00:00"
+     "found_at": "2026-10-08T09:49:39+00:00"
     }
    ],
    "matchScore": 65,
@@ -739,7 +866,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-10-07T17:37:48+00:00"
+     "found_at": "2026-10-08T09:49:39+00:00"
     }
    ],
    "matchScore": 61,
@@ -782,12 +909,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-07T17:37:48+00:00"
+     "found_at": "2026-10-08T09:49:39+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-07T17:37:52+00:00"
+     "found_at": "2026-10-08T09:49:44+00:00"
     }
    ],
    "matchScore": 61,
@@ -817,7 +944,7 @@
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-07",
+   "postedAt": "2026-10-08",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -831,12 +958,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/14",
-     "found_at": "2026-10-07T17:37:47+00:00"
+     "found_at": "2026-10-08T09:49:39+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-07T17:37:47+00:00"
+     "found_at": "2026-10-08T09:49:39+00:00"
     }
    ],
    "matchScore": 61,
@@ -880,7 +1007,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-07T17:37:48+00:00"
+     "found_at": "2026-10-08T09:49:39+00:00"
     }
    ],
    "matchScore": 61,
@@ -923,7 +1050,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-10-07T17:37:48+00:00"
+     "found_at": "2026-10-08T09:49:39+00:00"
     }
    ],
    "matchScore": 57,
@@ -966,7 +1093,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-10-07T17:37:48+00:00"
+     "found_at": "2026-10-08T09:49:39+00:00"
     }
    ],
    "matchScore": 57,
@@ -1009,7 +1136,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-07T17:37:52+00:00"
+     "found_at": "2026-10-08T09:49:44+00:00"
     }
    ],
    "matchScore": 57,
@@ -1052,7 +1179,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bangladesh/rancon-global-trucks-limited-jac-motors/career/sr-executive-mis/2026",
-     "found_at": "2026-10-07T17:37:47+00:00"
+     "found_at": "2026-10-08T09:49:36+00:00"
     }
    ],
    "matchScore": 57,
@@ -1096,7 +1223,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-07T17:37:52+00:00"
+     "found_at": "2026-10-08T09:49:44+00:00"
     }
    ],
    "matchScore": 57,
@@ -1112,6 +1239,50 @@
     "Title matches your excluded list (Principal)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Software Product Engineer/ Architect",
+   "company": "Brain Station 23",
+   "description": "Software Product Engineer/ Architect position at Brain Station 23. Required skills: Kubernetes, Java, React, Spring Boot, Webrtc.",
+   "category": "Information Technology",
+   "location": "Dhaka, Bangladesh",
+   "source": "BD Tech Jobs",
+   "url": "https://www.bdtechjobs.com/jobs/55",
+   "status": "Awaiting Review",
+   "id": "fe719886-2146-4ae2-8e0b-638ef84fae95",
+   "createdAt": "2026-10-08T09:49:39+00:00",
+   "requiredSkills": "engineer/, architect, brain, station, 23., required, kubernetes, react, spring, boot, webrtc.",
+   "postedAt": "2026-10-16",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full time",
+   "experienceText": "",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "537c8e56bce84814",
+   "sources": [
+    {
+     "source": "BD Tech Jobs",
+     "url": "https://www.bdtechjobs.com/jobs/55",
+     "found_at": "2026-10-08T09:49:39+00:00"
+    }
+   ],
+   "matchScore": 53,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting",
+    "Title matches your excluded list (Architect)"
+   ],
+   "discoveredBy": "jsonld"
   },
   {
    "title": "Senior Software Engineer, Application Security",
@@ -1139,7 +1310,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-application-security",
-     "found_at": "2026-10-07T17:37:56+00:00"
+     "found_at": "2026-10-08T09:49:48+00:00"
     }
    ],
    "matchScore": 53,
@@ -1155,51 +1326,6 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Assistant Manager / Senior Executive – Marketing",
-   "company": "RANCON Motorbikes Limited",
-   "description": "Location: Head Office, Dhaka\nExperience: Minimum 3 Years\nApplication Deadline: 6 October 2026\nPurpose of the Job\nThis position is responsible for assisting in driving overall brand visibility, digital asset management, integrated BTL activations, and nationwide retail/trade marketing for Suzuki Motorbikes to build brand equity, enhance consumer engagement, and maximize showroom footfall.\nKey Responsibilities\nPlan and execute nationwide on-ground BTL activations, test ride events, campus activations, and local trade promotions.\nOversee dealer showroom branding, including fascia, shop-in-shop, and 3D signage, utilizing deep technical knowledge of printing materials, outdoor signage fabrication, lightboxes, and POSM deployment.\nConceptualize and deploy 360-degree digital and offline campaign executions for new motorcycle launches, promotional offers, and lifestyle initiatives following brand guidelines.\nBrief, negotiate, and coordinate with creative agencies, printing vendors, and production houses to ensure high-quality and timely execution.\nExecute special strategic projects, ad-hoc reporting, and custom assignments in accordance with management direction.\nPerform all brand, trade, and asset management functions in full compliance with operational and governance guidelines.\nEducation & Experience\nBachelor’s degree from a reputed university.\nMinimum 3 years of experience in trade marketing, BTL activations, and vendor management.\nSkills & Expertise\nExpertise in BTL event execution, vendor negotiations, and POSM deployment.\nIn-depth technical knowledge of printing materials, substrates, outdoor signage fabrication, and POSM production.\nStrong deck design, presentation, and data-driven performance reporting capabilities.\nCompensation & Benefits\nRANCON Motorbikes offers:\nCompetitive salary and benefit packages.\nInsurance.\n2 days weekend.\nApplication Process\nInterested candidates should send their updated resume to: Email: amdhr@suzuki.com.bd\nSubject Line: Assistant Manager / Senior Executive – Marketing\nOnly shortlisted candidates will be called for the interview.\nMake Your ATS-Friendly CV",
-   "category": "Information Technology",
-   "location": "Head Office, Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/jobs-in-bd/rancon-motorbikes-limited/career/assistant-manager-senior-executive-marketing/2026",
-   "status": "Awaiting Review",
-   "id": "0f94fc62-66b9-4025-95e8-114a28a022c3",
-   "createdAt": "2026-09-25T15:42:12+00:00",
-   "requiredSkills": "assistant, senior, executive, marketing, location, head, dhaka, minimum, deadline, october, 2026, purpose",
-   "postedAt": "2026-09-25",
-   "deadline": "2026-10-07",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Not specified",
-   "experienceText": "3 Years",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "1bae4f545d84f87a",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/jobs-in-bd/rancon-motorbikes-limited/career/assistant-manager-senior-executive-marketing/2026",
-     "found_at": "2026-10-07T17:37:47+00:00"
-    }
-   ],
-   "matchScore": 53,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting",
-    "Title matches your excluded list (Senior)",
-    "Title matches your excluded list (Manager)"
-   ],
-   "discoveredBy": "bdrecruit"
   }
  ]
 }
