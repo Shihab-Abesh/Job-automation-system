@@ -30,7 +30,7 @@
   "bdrecruit": {
    "found": 13,
    "errors": [],
-   "raw": 214
+   "raw": 230
   },
   "jsonld": {
    "found": 5,
@@ -40,7 +40,7 @@
   "rss": {
    "found": 21,
    "errors": [],
-   "raw": 226
+   "raw": 224
   },
   "careers": {
    "found": 0,
@@ -71,5 +71,5 @@
   "allow_abroad": false
  },
  "blockedUrls": [],
- "ranAt": "2026-10-09T09:54:44+00:00"
+ "ranAt": "2026-10-09T17:16:52+00:00"
 }
