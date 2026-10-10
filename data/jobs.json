@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-09T17:16:52+00:00",
+ "generatedAt": "2026-10-10T09:18:50+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -33,7 +33,7 @@
    "bdrecruit": {
     "found": 13,
     "errors": [],
-    "raw": 230
+    "raw": 227
    },
    "jsonld": {
     "found": 5,
@@ -43,7 +43,7 @@
    "rss": {
     "found": 21,
     "errors": [],
-    "raw": 224
+    "raw": 233
    },
    "careers": {
     "found": 0,
@@ -58,11 +58,11 @@
   },
   "counts": {
    "total": 30,
-   "new": 0,
+   "new": 1,
    "expired": 0,
    "duplicatesFolded": 9,
-   "priorityA": 8,
-   "priorityB": 8,
+   "priorityA": 7,
+   "priorityB": 9,
    "priorityC": 14
   },
   "filters": {
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-09T17:16:52+00:00"
+  "ranAt": "2026-10-10T09:18:50+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-09T17:16:14+00:00"
+     "found_at": "2026-10-10T09:18:15+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,7 +145,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
-     "found_at": "2026-10-09T17:16:03+00:00"
+     "found_at": "2026-10-10T09:18:03+00:00"
     }
    ],
    "matchScore": 83,
@@ -159,49 +159,6 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Management Trainee Officer (MTO)",
-   "company": "FCI Group",
-   "description": "Position: Management Trainee Officer (MTO) – Production\nLocation: Dhaka (Savar EPZ)\nEmployment Type: Full-time\nExperience: Freshers are encouraged to apply.\nAge: 22–25 Years\nSalary: Negotiable\nApplication Deadline: 9 October 2026\nJob Overview\nFCI Group is looking for energetic Textile Engineering graduates, preferably IPE, to join its Management Trainee Officer (MTO) Program in the Production department. The program offers structured job rotation and hands-on training in garment operations, productivity, quality, and efficiency while developing future production leaders.\nResponsibilities\nLearn and understand the end-to-end garment production process.\nSupport the production team in achieving daily production targets and efficiency.\nMonitor production output, manpower, quality, and line performance.\nAssist in identifying production bottlenecks and supporting improvement actions.\nPrepare and maintain daily production reports and data.\nSupport Lean, 5S, Kaizen, and productivity improvement initiatives.\nAssist with day-to-day production operations and assigned tasks.\nParticipate in meetings, training sessions, workshops, and other learning opportunities.\nObserve and learn from experienced staff members and senior management.\nGain knowledge of company policies, procedures, and operational processes.\nMaintain proper notes and communicate effectively with Managers and Supervisors.\nFulfill the learning objectives and goals set for the traineeship.\nPerform other duties assigned by Production Management.\nEducational Requirements\nBachelor of Science (BSc) in Industrial & Production Engineering (IPE) or Textile Engineering.\nMaster of Science (MSc) in Industrial & Production Engineering (IPE) or Textile Engineering.\nMinimum CGPA: 3.00.\nExperience Requirements\nAt most 1 year of experience.\nExperience in the Garments business area will be considered.\nFreshers are encouraged to apply.\nAdditional Requirements\nAge: 22–25 years.\nSelf-driven and assertive individual with business acumen.\nInterpersonal, initiative, analytical thinking, conflict resolution, decision-making, and leadership abilities.\nMust be a team player.\nAbility to multitask and work under pressure.\nAbility to act with integrity, professionalism, and confidentiality.\nExcellent written and oral communication skills.\nLeadership potential and ability to work in a factory environment.\nWhat You’ll Gain\nJob rotation across key production operations.\nOn-the-job training and mentorship.\nCareer development opportunities.\nPractical exposure to garment operations, productivity, quality, and efficiency.\nOpportunities to participate in training sessions, workshops, and other learning activities.\nCompensation & Benefits\nService Benefit\nProvident Fund\nTwo Festival Bonuses\nEarned Leave Encashment\nYearly Salary Review\nFully Subsidized Breakfast & Lunch Facilities\nMobile Allowance\nGroup Life Insurance\nHealth Insurance\nHajj Leave: Up to 35 Days\nUmrah Leave: Up to 15 Days\nApplication Process\nInterested candidates are requested to apply through the provided application process/BDJobs QR code.\nApplication Deadline: 9 October 2026.",
-   "category": "Management & Business",
-   "location": "Savar EPZ, Dhaka",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/jobs-in-bd/fci-group/career/management-trainee-officer-mto/2026",
-   "status": "Awaiting Review",
-   "id": "c014a6c6-7f0f-4950-b68c-25ed7256c6d5",
-   "createdAt": "2026-09-27T08:50:59+00:00",
-   "requiredSkills": "trainee, officer, mto, location, dhaka, savar, epz, employment, type, full, time, freshers",
-   "postedAt": "2026-09-27",
-   "deadline": "2026-10-10",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Full Time",
-   "experienceText": "Freshers",
-   "area": "Savar",
-   "distanceKm": 16.6,
-   "fingerprint": "0cdbfdd8d724bc58",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/jobs-in-bd/fci-group/career/management-trainee-officer-mto/2026",
-     "found_at": "2026-10-09T17:16:06+00:00"
-    }
-   ],
-   "matchScore": 83,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Savar is about 16.6 km out, past your 10 km limit"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -231,7 +188,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-10-09T17:16:09+00:00"
+     "found_at": "2026-10-10T09:18:10+00:00"
     }
    ],
    "matchScore": 83,
@@ -273,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/midland-bank-plc/career/trainee-assistant-officer-tao/2026",
-     "found_at": "2026-10-09T17:16:03+00:00"
+     "found_at": "2026-10-10T09:18:03+00:00"
     }
    ],
    "matchScore": 83,
@@ -315,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-cash-gb-others/",
-     "found_at": "2026-10-09T17:16:03+00:00"
+     "found_at": "2026-10-10T09:18:03+00:00"
     }
    ],
    "matchScore": 79,
@@ -355,7 +312,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-10-09T17:16:06+00:00"
+     "found_at": "2026-10-10T09:18:07+00:00"
     }
    ],
    "matchScore": 79,
@@ -397,7 +354,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-brand-emami-bangladesh-limited/",
-     "found_at": "2026-10-09T17:16:03+00:00"
+     "found_at": "2026-10-10T09:18:03+00:00"
     }
    ],
    "matchScore": 75,
@@ -439,7 +396,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-09T17:16:06+00:00"
+     "found_at": "2026-10-10T09:18:07+00:00"
     }
    ],
    "matchScore": 73,
@@ -482,7 +439,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-09T17:16:03+00:00"
+     "found_at": "2026-10-10T09:18:07+00:00"
     }
    ],
    "matchScore": 72,
@@ -525,7 +482,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-09T17:16:10+00:00"
+     "found_at": "2026-10-10T09:18:11+00:00"
     }
    ],
    "matchScore": 71,
@@ -548,7 +505,7 @@
    "category": "Software Quality Assurance",
    "location": "Dhaka, Bangladesh",
    "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/38",
+   "url": "https://www.bdtechjobs.com/jobs/37",
    "status": "Awaiting Review",
    "id": "6c29665a-c12a-4a40-be17-bab3cce7931a",
    "createdAt": "2026-10-04T09:14:08+00:00",
@@ -566,8 +523,8 @@
    "sources": [
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/38",
-     "found_at": "2026-10-09T17:16:10+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/37",
+     "found_at": "2026-10-10T09:18:11+00:00"
     }
    ],
    "matchScore": 71,
@@ -610,7 +567,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-10-09T17:16:18+00:00"
+     "found_at": "2026-10-10T09:18:19+00:00"
     }
    ],
    "matchScore": 66,
@@ -652,7 +609,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-09T17:16:06+00:00"
+     "found_at": "2026-10-10T09:18:07+00:00"
     }
    ],
    "matchScore": 66,
@@ -695,7 +652,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-09T17:16:10+00:00"
+     "found_at": "2026-10-10T09:18:11+00:00"
     }
    ],
    "matchScore": 66,
@@ -737,7 +694,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-security-software-engineer-iam",
-     "found_at": "2026-10-09T17:16:18+00:00"
+     "found_at": "2026-10-10T09:18:19+00:00"
     }
    ],
    "matchScore": 66,
@@ -752,6 +709,48 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Analyst, Business Intelligence",
+   "company": "Gildan",
+   "description": "Position: Analyst, Business Intelligence\nCompany: Gildan\nJob Location: Gulshan, Dhaka, Bangladesh\nJob Type: Full-Time\nExperience: At least 3 years\nEducation: Bachelor of Science (BSc) in Computer Science & Engineering\nSalary: Not mentioned\nDeadline: Not mentioned, apply early\nAbout the Role\nGildan is hiring an Analyst, Business Intelligence in Dhaka to take part in the design, development, documentation and testing of enterprise-wide data and analytics solutions.\nThe Role\nAnalyze and provide data management and data analysis solutions through visualization tools such as Tableau\nSupport core business processes such as Sales, Marketing, Manufacturing and Finance\nConvert business logic into SQL and create technical specifications for data flow and transformation\nDocument solution design (architecture, schedule, monitoring, support)\nConduct reviews, walkthroughs and solution testing within SDLC and PMO guidelines\nTake part in developing data cleaning rules and provide post-implementation support\nThe Requirement\nBSc in Computer Science & Engineering\nAt least 3 years of experience\nExperience with an enterprise data warehouse and ETL tools\nExperience with business reporting tools: Qlikview, Tableau\nStrong SQL query knowledge and good data warehouse knowledge\nERP experience such as JD Edwards and Snowflake experience are assets\nGood written and spoken English\nAbout Gildan\nGildan is a leading apparel manufacturer founded in Canada, with brands including Gildan, American Apparel, Comfort Colors, GOLDTOE and Peds. It is dual-listed on the NYSE and TSX.\nHow to Apply\nInterested candidates can apply through the LinkedIn listing posted by Gildan using the Apply Now button. The circular does not mention an application deadline, so apply early. Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Data & Reporting",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
+   "status": "Awaiting Review",
+   "id": "2ee3b0c9-74cf-409d-97ef-467476e7d57a",
+   "createdAt": "2026-10-10T09:18:03+00:00",
+   "requiredSkills": "analyst, business, intelligence, gildan, location, gulshan, dhaka, bangladesh, type, full, time, least",
+   "postedAt": "2026-10-10",
+   "deadline": "2026-11-09",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "3 Years",
+   "area": "Gulshan",
+   "distanceKm": 3.5,
+   "fingerprint": "3c913f810c83c29e",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
+     "found_at": "2026-10-10T09:18:03+00:00"
+    }
+   ],
+   "matchScore": 62,
+   "scoreParts": {
+    "title": 100,
+    "level": 30,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Executive, Ground Operations",
@@ -779,7 +778,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/air-astra/career/executive-ground-operations/2026",
-     "found_at": "2026-10-09T17:16:06+00:00"
+     "found_at": "2026-10-10T09:18:07+00:00"
     }
    ],
    "matchScore": 83,
@@ -822,7 +821,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-09T17:16:09+00:00"
+     "found_at": "2026-10-10T09:18:10+00:00"
     }
    ],
    "matchScore": 79,
@@ -845,12 +844,12 @@
    "category": "Software Development",
    "location": "Dhaka",
    "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/42",
+   "url": "https://www.bdtechjobs.com/jobs/41",
    "status": "Awaiting Review",
    "id": "f3ddac81-eb39-4c14-af2e-f1f79380ecb3",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-09",
+   "postedAt": "2026-10-10",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -863,8 +862,8 @@
    "sources": [
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/42",
-     "found_at": "2026-10-09T17:16:10+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/41",
+     "found_at": "2026-10-10T09:18:11+00:00"
     }
    ],
    "matchScore": 65,
@@ -908,7 +907,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-10-09T17:16:10+00:00"
+     "found_at": "2026-10-10T09:18:11+00:00"
     }
    ],
    "matchScore": 61,
@@ -951,12 +950,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-09T17:16:10+00:00"
+     "found_at": "2026-10-10T09:18:11+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-09T17:16:14+00:00"
+     "found_at": "2026-10-10T09:18:15+00:00"
     }
    ],
    "matchScore": 61,
@@ -986,7 +985,7 @@
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-09",
+   "postedAt": "2026-10-10",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1000,12 +999,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/14",
-     "found_at": "2026-10-09T17:16:10+00:00"
+     "found_at": "2026-10-10T09:18:11+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-09T17:16:10+00:00"
+     "found_at": "2026-10-10T09:18:11+00:00"
     }
    ],
    "matchScore": 61,
@@ -1049,7 +1048,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-09T17:16:10+00:00"
+     "found_at": "2026-10-10T09:18:11+00:00"
     }
    ],
    "matchScore": 61,
@@ -1092,7 +1091,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-10-09T17:16:10+00:00"
+     "found_at": "2026-10-10T09:18:11+00:00"
     }
    ],
    "matchScore": 57,
@@ -1135,7 +1134,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-10-09T17:16:10+00:00"
+     "found_at": "2026-10-10T09:18:11+00:00"
     }
    ],
    "matchScore": 57,
@@ -1178,7 +1177,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-09T17:16:14+00:00"
+     "found_at": "2026-10-10T09:18:15+00:00"
     }
    ],
    "matchScore": 57,
@@ -1221,7 +1220,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bangladesh/rancon-global-trucks-limited-jac-motors/career/sr-executive-mis/2026",
-     "found_at": "2026-10-09T17:16:06+00:00"
+     "found_at": "2026-10-10T09:18:07+00:00"
     }
    ],
    "matchScore": 57,
@@ -1265,7 +1264,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-09T17:16:14+00:00"
+     "found_at": "2026-10-10T09:18:15+00:00"
     }
    ],
    "matchScore": 57,
@@ -1289,7 +1288,7 @@
    "category": "Information Technology",
    "location": "Dhaka, Bangladesh",
    "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/55",
+   "url": "https://www.bdtechjobs.com/jobs/53",
    "status": "Awaiting Review",
    "id": "fe719886-2146-4ae2-8e0b-638ef84fae95",
    "createdAt": "2026-10-08T09:49:39+00:00",
@@ -1307,8 +1306,8 @@
    "sources": [
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/55",
-     "found_at": "2026-10-09T17:16:10+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/53",
+     "found_at": "2026-10-10T09:18:11+00:00"
     }
    ],
    "matchScore": 53,
@@ -1352,7 +1351,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-application-security",
-     "found_at": "2026-10-09T17:16:18+00:00"
+     "found_at": "2026-10-10T09:18:19+00:00"
     }
    ],
    "matchScore": 53,
