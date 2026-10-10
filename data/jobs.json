@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-10T09:18:50+00:00",
+ "generatedAt": "2026-10-10T16:05:16+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 13,
+    "found": 14,
     "errors": [],
-    "raw": 227
+    "raw": 235
    },
    "jsonld": {
     "found": 5,
@@ -43,7 +43,7 @@
    "rss": {
     "found": 21,
     "errors": [],
-    "raw": 233
+    "raw": 232
    },
    "careers": {
     "found": 0,
@@ -57,12 +57,12 @@
    }
   },
   "counts": {
-   "total": 30,
+   "total": 31,
    "new": 1,
    "expired": 0,
    "duplicatesFolded": 9,
    "priorityA": 7,
-   "priorityB": 9,
+   "priorityB": 10,
    "priorityC": 14
   },
   "filters": {
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-10T09:18:50+00:00"
+  "ranAt": "2026-10-10T16:05:16+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-10T09:18:15+00:00"
+     "found_at": "2026-10-10T16:04:38+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,7 +145,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
-     "found_at": "2026-10-10T09:18:03+00:00"
+     "found_at": "2026-10-10T16:04:26+00:00"
     }
    ],
    "matchScore": 83,
@@ -188,7 +188,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-10-10T09:18:10+00:00"
+     "found_at": "2026-10-10T16:04:33+00:00"
     }
    ],
    "matchScore": 83,
@@ -230,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/midland-bank-plc/career/trainee-assistant-officer-tao/2026",
-     "found_at": "2026-10-10T09:18:03+00:00"
+     "found_at": "2026-10-10T16:04:26+00:00"
     }
    ],
    "matchScore": 83,
@@ -272,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-cash-gb-others/",
-     "found_at": "2026-10-10T09:18:03+00:00"
+     "found_at": "2026-10-10T16:04:26+00:00"
     }
    ],
    "matchScore": 79,
@@ -312,7 +312,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-10-10T09:18:07+00:00"
+     "found_at": "2026-10-10T16:04:33+00:00"
     }
    ],
    "matchScore": 79,
@@ -354,7 +354,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-brand-emami-bangladesh-limited/",
-     "found_at": "2026-10-10T09:18:03+00:00"
+     "found_at": "2026-10-10T16:04:26+00:00"
     }
    ],
    "matchScore": 75,
@@ -365,6 +365,48 @@
     "preference": 100
    },
    "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Agent Banking Operations & Customer Support Executive",
+   "company": "SBAC Bank PLC",
+   "description": "Position: Agent Banking Operations & Customer Support Executive\nCompany: SBAC Bank PLC\nJob Location: Anywhere in Bangladesh\nJob Type: Full-Time (Permanent and Contractual positions)\nExperience: Minimum 1 year of practical experience in the relevant desk of a bank\nEducation: Master’s or Bachelor’s degree in any discipline from a reputed university with no third division/class\nAge: Maximum 45 years as of the last date of application\nSalary: Not mentioned\nDeadline: 25 October 2026\nAbout the Role\nSBAC Bank PLC is hiring Agent Banking Operations & Customer Support Executives, in permanent and contractual positions, to support customers and daily operations at its Agent Points.\nKey Responsibilities\nProvide all types of account opening support at the Agent Point and verify customer information under KYC requirements\nHandle RTGS and BEFTN related customer support and transaction processing\nProvide inward and outward remittance related services\nOperate banking activities through the Flora Banking System\nMaintain proper records, registers and transaction documentation\nResolve customer queries and coordinate with branches and other departments\nRequirements\nMaster’s or Bachelor’s degree in any discipline from a reputed university with no third division/class\nMinimum 1 year of practical experience in the relevant desk of a bank\nSound knowledge of RTGS, BEFTN and remittance operations\nHands-on experience working in the Flora Banking System\nStrong communication and interpersonal skills and basic MS Office proficiency\nAge: maximum 45 years as of the last date of application\nAbout SBAC Bank PLC\nSBAC Bank PLC is a private commercial bank in Bangladesh.\nHow to Apply\nInterested candidates can apply through the bdjobs.com listing posted by SBAC Bank PLC using the Apply Now button. The application deadline is 25 October 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Information Technology",
+   "location": "Anywhere in Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/agent-banking-operations-customer-support-executive-sbac-bank-plc/",
+   "status": "Awaiting Review",
+   "id": "acf5cbcb-d504-4d8a-b3b6-ce1912e77683",
+   "createdAt": "2026-10-10T16:04:26+00:00",
+   "requiredSkills": "agent, banking, customer, executive, sbac, bank, plc, location, anywhere, bangladesh, type, full",
+   "postedAt": "2026-10-10",
+   "deadline": "2026-10-25",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "1 Year",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "a74393728b065f86",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/agent-banking-operations-customer-support-executive-sbac-bank-plc/",
+     "found_at": "2026-10-10T16:04:26+00:00"
+    }
+   ],
+   "matchScore": 74,
+   "scoreParts": {
+    "title": 100,
+    "level": 80,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "B",
    "gateNotes": [
     "Pay not stated, worth asking before you invest time"
    ],
@@ -396,7 +438,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-10T09:18:07+00:00"
+     "found_at": "2026-10-10T16:04:30+00:00"
     }
    ],
    "matchScore": 73,
@@ -439,7 +481,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-10T09:18:07+00:00"
+     "found_at": "2026-10-10T16:04:30+00:00"
     }
    ],
    "matchScore": 72,
@@ -482,7 +524,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-10T09:18:11+00:00"
+     "found_at": "2026-10-10T16:04:34+00:00"
     }
    ],
    "matchScore": 71,
@@ -524,7 +566,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/37",
-     "found_at": "2026-10-10T09:18:11+00:00"
+     "found_at": "2026-10-10T16:04:34+00:00"
     }
    ],
    "matchScore": 71,
@@ -567,7 +609,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-10-10T09:18:19+00:00"
+     "found_at": "2026-10-10T16:04:42+00:00"
     }
    ],
    "matchScore": 66,
@@ -609,7 +651,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-10T09:18:07+00:00"
+     "found_at": "2026-10-10T16:04:30+00:00"
     }
    ],
    "matchScore": 66,
@@ -652,7 +694,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-10T09:18:11+00:00"
+     "found_at": "2026-10-10T16:04:34+00:00"
     }
    ],
    "matchScore": 66,
@@ -694,7 +736,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-security-software-engineer-iam",
-     "found_at": "2026-10-10T09:18:19+00:00"
+     "found_at": "2026-10-10T16:04:42+00:00"
     }
    ],
    "matchScore": 66,
@@ -736,7 +778,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-10-10T09:18:03+00:00"
+     "found_at": "2026-10-10T16:04:26+00:00"
     }
    ],
    "matchScore": 62,
@@ -778,7 +820,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/air-astra/career/executive-ground-operations/2026",
-     "found_at": "2026-10-10T09:18:07+00:00"
+     "found_at": "2026-10-10T16:04:30+00:00"
     }
    ],
    "matchScore": 83,
@@ -821,7 +863,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-10T09:18:10+00:00"
+     "found_at": "2026-10-10T16:04:33+00:00"
     }
    ],
    "matchScore": 79,
@@ -863,7 +905,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/41",
-     "found_at": "2026-10-10T09:18:11+00:00"
+     "found_at": "2026-10-10T16:04:34+00:00"
     }
    ],
    "matchScore": 65,
@@ -907,7 +949,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-10-10T09:18:11+00:00"
+     "found_at": "2026-10-10T16:04:34+00:00"
     }
    ],
    "matchScore": 61,
@@ -950,12 +992,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-10T09:18:11+00:00"
+     "found_at": "2026-10-10T16:04:34+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-10T09:18:15+00:00"
+     "found_at": "2026-10-10T16:04:38+00:00"
     }
    ],
    "matchScore": 61,
@@ -999,12 +1041,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/14",
-     "found_at": "2026-10-10T09:18:11+00:00"
+     "found_at": "2026-10-10T16:04:34+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-10T09:18:11+00:00"
+     "found_at": "2026-10-10T16:04:34+00:00"
     }
    ],
    "matchScore": 61,
@@ -1048,7 +1090,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-10T09:18:11+00:00"
+     "found_at": "2026-10-10T16:04:34+00:00"
     }
    ],
    "matchScore": 61,
@@ -1091,7 +1133,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-10-10T09:18:11+00:00"
+     "found_at": "2026-10-10T16:04:34+00:00"
     }
    ],
    "matchScore": 57,
@@ -1134,7 +1176,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-10-10T09:18:11+00:00"
+     "found_at": "2026-10-10T16:04:34+00:00"
     }
    ],
    "matchScore": 57,
@@ -1177,7 +1219,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-10T09:18:15+00:00"
+     "found_at": "2026-10-10T16:04:38+00:00"
     }
    ],
    "matchScore": 57,
@@ -1220,7 +1262,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bangladesh/rancon-global-trucks-limited-jac-motors/career/sr-executive-mis/2026",
-     "found_at": "2026-10-10T09:18:07+00:00"
+     "found_at": "2026-10-10T16:04:30+00:00"
     }
    ],
    "matchScore": 57,
@@ -1264,7 +1306,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-10T09:18:15+00:00"
+     "found_at": "2026-10-10T16:04:38+00:00"
     }
    ],
    "matchScore": 57,
@@ -1307,7 +1349,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/53",
-     "found_at": "2026-10-10T09:18:11+00:00"
+     "found_at": "2026-10-10T16:04:34+00:00"
     }
    ],
    "matchScore": 53,
@@ -1351,7 +1393,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-application-security",
-     "found_at": "2026-10-10T09:18:19+00:00"
+     "found_at": "2026-10-10T16:04:42+00:00"
     }
    ],
    "matchScore": 53,

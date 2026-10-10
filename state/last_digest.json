@@ -28,9 +28,9 @@
  ],
  "sources": {
   "bdrecruit": {
-   "found": 13,
+   "found": 14,
    "errors": [],
-   "raw": 227
+   "raw": 235
   },
   "jsonld": {
    "found": 5,
@@ -40,7 +40,7 @@
   "rss": {
    "found": 21,
    "errors": [],
-   "raw": 233
+   "raw": 232
   },
   "careers": {
    "found": 0,
@@ -54,12 +54,12 @@
   }
  },
  "counts": {
-  "total": 30,
+  "total": 31,
   "new": 1,
   "expired": 0,
   "duplicatesFolded": 9,
   "priorityA": 7,
-  "priorityB": 9,
+  "priorityB": 10,
   "priorityC": 14
  },
  "filters": {
@@ -71,5 +71,5 @@
   "allow_abroad": false
  },
  "blockedUrls": [],
- "ranAt": "2026-10-10T09:18:50+00:00"
+ "ranAt": "2026-10-10T16:05:16+00:00"
 }
