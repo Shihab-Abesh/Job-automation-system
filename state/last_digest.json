@@ -55,7 +55,7 @@
  },
  "counts": {
   "total": 33,
-  "new": 2,
+  "new": 0,
   "expired": 0,
   "duplicatesFolded": 8,
   "priorityA": 8,
@@ -71,5 +71,5 @@
   "allow_abroad": false
  },
  "blockedUrls": [],
- "ranAt": "2026-10-11T09:35:46+00:00"
+ "ranAt": "2026-10-11T16:29:29+00:00"
 }
