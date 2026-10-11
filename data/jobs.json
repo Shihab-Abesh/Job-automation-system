@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-10T16:05:16+00:00",
+ "generatedAt": "2026-10-11T09:35:47+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -33,7 +33,7 @@
    "bdrecruit": {
     "found": 14,
     "errors": [],
-    "raw": 235
+    "raw": 236
    },
    "jsonld": {
     "found": 5,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 21,
+    "found": 22,
     "errors": [],
-    "raw": 232
+    "raw": 235
    },
    "careers": {
     "found": 0,
@@ -57,12 +57,12 @@
    }
   },
   "counts": {
-   "total": 31,
-   "new": 1,
+   "total": 33,
+   "new": 2,
    "expired": 0,
-   "duplicatesFolded": 9,
-   "priorityA": 7,
-   "priorityB": 10,
+   "duplicatesFolded": 8,
+   "priorityA": 8,
+   "priorityB": 11,
    "priorityC": 14
   },
   "filters": {
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-10T16:05:16+00:00"
+  "ranAt": "2026-10-11T09:35:46+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-10T16:04:38+00:00"
+     "found_at": "2026-10-11T09:35:11+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,7 +145,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
-     "found_at": "2026-10-10T16:04:26+00:00"
+     "found_at": "2026-10-11T09:35:00+00:00"
     }
    ],
    "matchScore": 83,
@@ -188,7 +188,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-10-10T16:04:33+00:00"
+     "found_at": "2026-10-11T09:35:06+00:00"
     }
    ],
    "matchScore": 83,
@@ -230,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/midland-bank-plc/career/trainee-assistant-officer-tao/2026",
-     "found_at": "2026-10-10T16:04:26+00:00"
+     "found_at": "2026-10-11T09:35:00+00:00"
     }
    ],
    "matchScore": 83,
@@ -245,6 +245,48 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Software Engineer, Backend",
+   "company": "Vercel",
+   "description": "Headquarters: Remote - United States\nAbout Vercel:\nVercel is the agentic infrastructure company, freeing people and agents to ship what's next. For more than a decade we've helped builders move from idea to production with speed, security, and exceptional developer experience.\nNow we're scaling our products for both agents and people to ship and run software, built in the open and trusted by OpenAI, PayPal, Ramp, Supreme, and millions of developers worldwide.\nAbout the Role:\nWe are seeking a Backend leaning Software Engineer. In this role, you will play a pivotal role in designing, building, and maintaining scalable, high-performance systems. Leveraging JavaScript/TypeScript, Node.js, SQL and NoSQL cloud-native databases, and AWS, you will develop innovative solutions for user, group, and membership management while ensuring the highest levels of security and reliability.\nIf you’re based within a pre-determined commuting distance of one of our offices (SF, NY, London, or Berlin), the role includes in-office anchor days on Monday, Tuesday, and Friday. If you're located beyond that distance, the role is fully remote. For location-specific details, please connect with our recruiting team.\nWhat You Will Do:\nEnable us to deliver secure, reliable, and scalable services that exceed industry standards and customer expectations.\nCollaborate with cross-functional teams to deliver large-scale projects with cross-team dependencies.\nCollaborate with peer teams to deliver solutions that meet industry standards and customer expectations.\nMaintain and operate services at high scale, participating in scheduled on-call rotations to ensure reliability.\nImplement identity synchronization and lifecycle management solutions using SCIM and other relevant standards.\nWork with Infrastructure as Code (Terraform, AWS CloudFormation, Kubernetes, etc.) to deliver scalable, high-availability applications.\nBuild and maintain high-quality enterprise software using TypeScript, REST APIs, and JSON.\nAbout You:\nProficiency in TypeScript/JavaScript, React, and Node.js.\nStrong knowledge of security architecture, LDAP, Active Directory, SAML, SSO, OAuth2, OpenID Connect and web protocols like XML, SOAP, JSON, and REST.\nFamiliarity with access control models such as RBAC, ABAC and ReBAC.\nExperience with SQL.\nPractical experience developing and improving applications written in Node.js.\nExhibit excellent problem-solving abilities and effective communication skills, especially when collaborating with diverse teams.\nBenefits & Compensation:\nCompetitive compensation package, including equity.\nInclusive Healthcare Package.\nLearn and Grow - we provide mentorship and send you to events that help you build your network and skills.\nFlexible Time Off.\nWe will provide you the gear you need to do your role, and a WFH budget for you to outfit your space as needed.\nThe San Francisco, CA base pay range for this role is $196,000-$294,000. Actual salary will be based on job-related skills, experience, and location. Compensation outside of San Francisco may be adjusted based on employee location. The total compensation package may include benefits, equity-based compensation, and eligibility for a company bonus or variable pay program depending on the role. Your recruiter can share more details during the hiring process.\n#LI-CL1\nDisclosures:\nPrivacy: Please review our Job Applicant Privacy Policy for more information on how we handle your data.\nEqual Opportunity: Vercel is committed to fostering and empowering an inclusive community within our organization. We do not discriminate on the basis of race, religion, color, gender expression or identity, sexual orientation, national origin, citizenship, age, marital status, veteran status, disability status, or any other characteristic protected by law. Vercel encourages everyone to apply for our available positions, even if they don't necessarily check every box on the job description.\nTo apply: https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
+   "status": "Awaiting Review",
+   "id": "a115045d-f940-4c54-b804-515c7f4ad0d0",
+   "createdAt": "2026-10-11T09:35:11+00:00",
+   "requiredSkills": "engineer, headquarters, remote, united, states, about, vercel, agentic, infrastructure, freeing, people, agents",
+   "postedAt": "2026-10-11",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "5145f62e88a8e49c",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
+     "found_at": "2026-10-11T09:35:11+00:00"
+    }
+   ],
+   "matchScore": 83,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 67,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Trainee Officer (Cash/GB/Others)",
@@ -272,7 +314,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-cash-gb-others/",
-     "found_at": "2026-10-10T16:04:26+00:00"
+     "found_at": "2026-10-11T09:35:00+00:00"
     }
    ],
    "matchScore": 79,
@@ -312,7 +354,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-10-10T16:04:33+00:00"
+     "found_at": "2026-10-11T09:35:06+00:00"
     }
    ],
    "matchScore": 79,
@@ -354,7 +396,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-brand-emami-bangladesh-limited/",
-     "found_at": "2026-10-10T16:04:26+00:00"
+     "found_at": "2026-10-11T09:35:00+00:00"
     }
    ],
    "matchScore": 75,
@@ -396,7 +438,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/agent-banking-operations-customer-support-executive-sbac-bank-plc/",
-     "found_at": "2026-10-10T16:04:26+00:00"
+     "found_at": "2026-10-11T09:35:00+00:00"
     }
    ],
    "matchScore": 74,
@@ -438,7 +480,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-10T16:04:30+00:00"
+     "found_at": "2026-10-11T09:35:03+00:00"
     }
    ],
    "matchScore": 73,
@@ -481,7 +523,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-10T16:04:30+00:00"
+     "found_at": "2026-10-11T09:35:02+00:00"
     }
    ],
    "matchScore": 72,
@@ -524,7 +566,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-10T16:04:34+00:00"
+     "found_at": "2026-10-11T09:35:07+00:00"
     }
    ],
    "matchScore": 71,
@@ -566,7 +608,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/37",
-     "found_at": "2026-10-10T16:04:34+00:00"
+     "found_at": "2026-10-11T09:35:07+00:00"
     }
    ],
    "matchScore": 71,
@@ -582,6 +624,48 @@
     "Exact area not stated in the posting"
    ],
    "discoveredBy": "jsonld"
+  },
+  {
+   "title": "Software Engineer - Data Platform",
+   "company": "Vercel",
+   "description": "Headquarters: Remote - United States\nAbout Vercel:\nVercel is the agentic infrastructure company, freeing people and agents to ship what's next. For more than a decade we've helped builders move from idea to production with speed, security, and exceptional developer experience.\nNow we're scaling our products for both agents and people to ship and run software, built in the open and trusted by OpenAI, PayPal, Ramp, Supreme, and millions of developers worldwide.\nAbout the Role\nWe're looking for a Staff level Engineer to lead the design and development of a next-generation Data Platform at Vercel. This is a unique opportunity to architect a foundational system that will power data across our products and business, supporting everything from real-time analytics to AI/ML initiatives.\nReporting directly to the Senior Director of Data Engineering, you'll define the technical vision for our data ecosystem, work across the organization to align engineering strategy with product goals, and build scalable, reliable systems using modern technologies like Kafka, ClickHouse, Tinybird, and Snowflake.\nYou'll lead from the front, writing production-grade code, setting high standards for design and data governance, and mentoring a team of engineers as the organization grows. If you're excited by the challenge of building scalable data systems that drive product innovation, we'd love to hear from you.\nWhat You Will Do\nDesign and implement a next-generation data platform that supports diverse requirements, including batch and real-time integrations, advanced analytics, and multiple data types, leveraging Kafka, Kafka-based tooling, and additional streaming technologies to power real-time data movement and processing.\nWork with engineering, product, and senior leadership teams across Vercel to architect solutions that address business needs, aligning technical strategies with product goals and ensuring seamless data availability and usability.\nDefine and maintain guidelines for data ingestion, creation, enrichment, and storage, while overseeing data modeling, ETL processes, and data warehousing (ClickHouse, Tinybird, Snowflake) to achieve low-latency analytics and scalable storage.\nDevelop end-to-end solutions across the tech stack, setting the example for engineering excellence, and provide mentorship and direction that fosters continuous improvement and innovation in the team.\nPartner with Security, Compliance, and Legal teams to ensure adherence to data protection standards, and champion high availability and fault tolerance through comprehensive monitoring, alerting, and incident response practices.\nDrive architectural decisions and roadmap planning that ensure efficiency, scalability, and high performance, and evaluate build-vs-buy trade-offs, integrating vendor solutions where appropriate.\nCollaborate with data scientists and machine learning teams to evolve infrastructure that supports advanced analytics and AI initiatives, serving as a key contributor to strategy, tooling, and platform enhancements for ML-related workloads.\nAct as a key decision-maker for discovering, vetting, and selecting data architectures and technologies critical to Vercel's success, and establish multi-phase strategic roadmaps that align with overall business objectives and drive data platform maturity.\nAbout You\n8+ years of experience in data engineering, data architecture, or related roles, with at least 5 years at the Principal Engineer level.\nProven track record designing and operating large-scale data infrastructures at high scale in a complex, fast-paced environment, with experience across Kafka and its ecosystem (e.g., Kafka Streams, Confluent Platform), ClickHouse, Tinybird, Snowflake, and broader big data frameworks.\nProficiency in cloud platforms (AWS, GCP, or Azure) and associated big data services.\nStrong background in data governance and security, and adept at ensuring compliance with regulatory standards and protecting sensitive information.\nOutstanding communication and collaboration skills, with the ability to influence technical and non-technical stakeholders across varying organizational levels.\nA leadership mindset, with demonstrated ability to mentor teams, drive consensus, and advocate for best practices across the organization.\nA Master's degree in Computer Science, Engineering, or a related field is preferred.\nIndustry recognition or notable contributions in data engineering (e.g., published works, open-source contributions) is a plus.\nCompensation & Benefits:\nCompetitive compensation package, including equity.\nInclusive Healthcare Package.\nLearn and Grow - we provide mentorship and send you to events that help you build your network and skills.\nFlexible Time Off.\nWe will provide you the gear you need to do your role, and a WFH budget for you to outfit your space as needed.\nThe San Francisco, CA base pay range for this role is $232,000 - $348,000. Actual salary will be based on job-related skills, experience, and location. Compensation outside of San Francisco may be adjusted based on employee location. The total compensation package may include benefits, equity-based compensation, and eligibility for a company bonus or variable pay program depending on the role. Your recruiter can share more details during the hiring process.\nDisclosures:\nPrivacy: Please review our Job Applicant Privacy Policy for more information on how we handle your data.\nEqual Opportunity: Vercel is committed to fostering and empowering an inclusive community within our organization. We do not discriminate on the basis of race, religion, color, gender expression or identity, sexual orientation, national origin, citizenship, age, marital status, veteran status, disability status, or any other characteristic protected by law. Vercel encourages everyone to apply for our available positions, even if they don't necessarily check every box on the job description.\nTo apply: https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
+   "status": "Awaiting Review",
+   "id": "8abe81d0-f4d3-46f1-a1fd-488db50175a9",
+   "createdAt": "2026-10-11T09:35:11+00:00",
+   "requiredSkills": "engineer, platform, headquarters, remote, united, states, about, vercel, agentic, infrastructure, freeing, people",
+   "postedAt": "2026-10-11",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "aeeac4c6a9fe84c9",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
+     "found_at": "2026-10-11T09:35:11+00:00"
+    }
+   ],
+   "matchScore": 71,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Software Engineer",
@@ -609,7 +693,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-10-10T16:04:42+00:00"
+     "found_at": "2026-10-11T09:35:15+00:00"
     }
    ],
    "matchScore": 66,
@@ -651,7 +735,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-10T16:04:30+00:00"
+     "found_at": "2026-10-11T09:35:03+00:00"
     }
    ],
    "matchScore": 66,
@@ -694,7 +778,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-10T16:04:34+00:00"
+     "found_at": "2026-10-11T09:35:11+00:00"
     }
    ],
    "matchScore": 66,
@@ -736,7 +820,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-security-software-engineer-iam",
-     "found_at": "2026-10-10T16:04:42+00:00"
+     "found_at": "2026-10-11T09:35:15+00:00"
     }
    ],
    "matchScore": 66,
@@ -778,7 +862,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-10-10T16:04:26+00:00"
+     "found_at": "2026-10-11T09:35:00+00:00"
     }
    ],
    "matchScore": 62,
@@ -820,7 +904,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/air-astra/career/executive-ground-operations/2026",
-     "found_at": "2026-10-10T16:04:30+00:00"
+     "found_at": "2026-10-11T09:35:03+00:00"
     }
    ],
    "matchScore": 83,
@@ -863,7 +947,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-10T16:04:33+00:00"
+     "found_at": "2026-10-11T09:35:06+00:00"
     }
    ],
    "matchScore": 79,
@@ -891,7 +975,7 @@
    "id": "f3ddac81-eb39-4c14-af2e-f1f79380ecb3",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-10",
+   "postedAt": "2026-10-11",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -905,7 +989,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/41",
-     "found_at": "2026-10-10T16:04:34+00:00"
+     "found_at": "2026-10-11T09:35:07+00:00"
     }
    ],
    "matchScore": 65,
@@ -949,7 +1033,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-10-10T16:04:34+00:00"
+     "found_at": "2026-10-11T09:35:07+00:00"
     }
    ],
    "matchScore": 61,
@@ -992,12 +1076,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-10T16:04:34+00:00"
+     "found_at": "2026-10-11T09:35:07+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-10T16:04:38+00:00"
+     "found_at": "2026-10-11T09:35:11+00:00"
     }
    ],
    "matchScore": 61,
@@ -1027,7 +1111,7 @@
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-10",
+   "postedAt": "2026-10-11",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1041,12 +1125,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/14",
-     "found_at": "2026-10-10T16:04:34+00:00"
+     "found_at": "2026-10-11T09:35:07+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-10T16:04:34+00:00"
+     "found_at": "2026-10-11T09:35:07+00:00"
     }
    ],
    "matchScore": 61,
@@ -1090,7 +1174,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-10T16:04:34+00:00"
+     "found_at": "2026-10-11T09:35:07+00:00"
     }
    ],
    "matchScore": 61,
@@ -1133,7 +1217,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-10-10T16:04:34+00:00"
+     "found_at": "2026-10-11T09:35:07+00:00"
     }
    ],
    "matchScore": 57,
@@ -1176,7 +1260,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-10-10T16:04:34+00:00"
+     "found_at": "2026-10-11T09:35:07+00:00"
     }
    ],
    "matchScore": 57,
@@ -1219,7 +1303,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-10T16:04:38+00:00"
+     "found_at": "2026-10-11T09:35:11+00:00"
     }
    ],
    "matchScore": 57,
@@ -1262,7 +1346,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bangladesh/rancon-global-trucks-limited-jac-motors/career/sr-executive-mis/2026",
-     "found_at": "2026-10-10T16:04:30+00:00"
+     "found_at": "2026-10-11T09:35:06+00:00"
     }
    ],
    "matchScore": 57,
@@ -1306,7 +1390,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-10T16:04:38+00:00"
+     "found_at": "2026-10-11T09:35:11+00:00"
     }
    ],
    "matchScore": 57,
@@ -1349,7 +1433,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/53",
-     "found_at": "2026-10-10T16:04:34+00:00"
+     "found_at": "2026-10-11T09:35:07+00:00"
     }
    ],
    "matchScore": 53,
@@ -1393,7 +1477,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-application-security",
-     "found_at": "2026-10-10T16:04:42+00:00"
+     "found_at": "2026-10-11T09:35:15+00:00"
     }
    ],
    "matchScore": 53,
