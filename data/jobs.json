@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-13T17:54:05+00:00",
+ "generatedAt": "2026-10-14T08:19:08+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -33,17 +33,17 @@
    "bdrecruit": {
     "found": 17,
     "errors": [],
-    "raw": 271
+    "raw": 279
    },
    "jsonld": {
-    "found": 6,
+    "found": 5,
     "errors": [],
     "raw": 20
    },
    "rss": {
-    "found": 22,
+    "found": 21,
     "errors": [],
-    "raw": 255
+    "raw": 253
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 37,
-   "new": 1,
+   "total": 35,
+   "new": 2,
    "expired": 0,
    "duplicatesFolded": 8,
-   "priorityA": 8,
-   "priorityB": 13,
-   "priorityC": 16
+   "priorityA": 9,
+   "priorityB": 11,
+   "priorityC": 15
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,9 +74,51 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-13T17:54:05+00:00"
+  "ranAt": "2026-10-14T08:19:07+00:00"
  },
  "jobs": [
+  {
+   "title": "Web Developer (Fresh graduate welcome, WFH policy, on-job-training)",
+   "company": "HR Plus",
+   "description": "Headquarters: Hong Kong, Hong Kong SAR, Hong Kong\nURL: http://hrplus.tech\nAbout the Role:\nAre you a talented and driven Web Developer looking to join a young and energetic team? Look no further! Our client, a fast-growing firm in the exciting field of web development, is seeking a skilled Web Developer to join their dynamic team. With a focus on innovation and growth, they offer a supportive and collaborative work environment where you can thrive.\nHere's what you can gain from this opportunity:\nHands-on experience in web development for various companies in different settings.\nDown-to-earth, hands-on training from experienced seniors.\nA chance to join a rapidly growing industry and build a successful career in web development.\nBenefits:\nCompetitive salary package based on skills and experience.\nYoung and energetic work environment that fosters collaboration and innovation.\n5-Day work week for a healthy work-life balance.\nWork From Home (WFH) option available one day per week.\nResponsibilities:\nDevelop and implement web applications and system enhancements.\nTake ownership of web projects from development to production.\nRevamp the company's directory website to improve functionality and enhance search engine optimization (SEO) practices.\nIncrease website capabilities, such as advanced searching features and adherence to industry standards.\nRequirements:\n1 year or more of related experience preferred, fresh graduates are also welcomed.\nStrong knowledge and experience in PHP and WordPress, MySQL, HTML, CSS, and JavaScript.\nKnowledge of server-side programming and web server configuration/administration is advantageous.\nExperience in developing web systems, API integration, and data handling.\nFamiliarity with Git/Gitlab is a plus.\nExperience in UX design is a valuable asset.\nSelf-motivated, independent, highly responsible, and able to work under pressure.\nPersonal data provided by job applicants will be used strictly in accordance with the employer's personal data policies. All information received will be kept in strict confidence and only for employment-related purposes.\n\"We are an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability status, protected veteran status, or any other characteristic protected by law.\"\nTo apply: https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
+   "status": "Awaiting Review",
+   "id": "398232bd-a380-4269-bd38-48e2d367c083",
+   "createdAt": "2026-10-14T08:18:27+00:00",
+   "requiredSkills": "fresh, graduate, welcome, wfh, policy, training, headquarters, hong, kong, sar, url, http",
+   "postedAt": "2026-09-29",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "9a05bf80a25669b5",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
+     "found_at": "2026-10-14T08:18:27+00:00"
+    }
+   ],
+   "matchScore": 96,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 83,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
+  },
   {
    "title": "FULL TIME: Software Engineer Position - React and Rest",
    "company": "Yooli",
@@ -103,7 +145,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-13T17:53:27+00:00"
+     "found_at": "2026-10-14T08:18:31+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
-     "found_at": "2026-10-13T17:53:19+00:00"
+     "found_at": "2026-10-14T08:18:23+00:00"
     }
    ],
    "matchScore": 83,
@@ -188,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-10-13T17:53:22+00:00"
+     "found_at": "2026-10-14T08:18:26+00:00"
     }
    ],
    "matchScore": 83,
@@ -230,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/midland-bank-plc/career/trainee-assistant-officer-tao/2026",
-     "found_at": "2026-10-13T17:53:19+00:00"
+     "found_at": "2026-10-14T08:18:23+00:00"
     }
    ],
    "matchScore": 83,
@@ -272,7 +314,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-10-13T17:53:27+00:00"
+     "found_at": "2026-10-14T08:18:31+00:00"
     }
    ],
    "matchScore": 83,
@@ -314,7 +356,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-cash-gb-others/",
-     "found_at": "2026-10-13T17:53:19+00:00"
+     "found_at": "2026-10-14T08:18:23+00:00"
     }
    ],
    "matchScore": 79,
@@ -354,7 +396,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-10-13T17:53:22+00:00"
+     "found_at": "2026-10-14T08:18:26+00:00"
     }
    ],
    "matchScore": 79,
@@ -396,7 +438,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-brand-emami-bangladesh-limited/",
-     "found_at": "2026-10-13T17:53:19+00:00"
+     "found_at": "2026-10-14T08:18:23+00:00"
     }
    ],
    "matchScore": 75,
@@ -438,7 +480,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/agent-banking-operations-customer-support-executive-sbac-bank-plc/",
-     "found_at": "2026-10-13T17:53:16+00:00"
+     "found_at": "2026-10-14T08:18:19+00:00"
     }
    ],
    "matchScore": 74,
@@ -480,7 +522,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-13T17:53:22+00:00"
+     "found_at": "2026-10-14T08:18:26+00:00"
     }
    ],
    "matchScore": 73,
@@ -523,7 +565,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-13T17:53:19+00:00"
+     "found_at": "2026-10-14T08:18:23+00:00"
     }
    ],
    "matchScore": 72,
@@ -566,7 +608,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-13T17:53:23+00:00"
+     "found_at": "2026-10-14T08:18:27+00:00"
     }
    ],
    "matchScore": 71,
@@ -608,7 +650,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/35",
-     "found_at": "2026-10-13T17:53:23+00:00"
+     "found_at": "2026-10-14T08:18:26+00:00"
     }
    ],
    "matchScore": 71,
@@ -622,48 +664,6 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "jsonld"
-  },
-  {
-   "title": "AI Forward QA Automation Engineer",
-   "company": "Riseup Labs",
-   "description": "AI Forward QA Automation Engineer position at Riseup Labs. Required skills: Playwright, Javascript, Typescript, Node.Js, End-To-End Testing.",
-   "category": "Software Quality Assurance",
-   "location": "Remote, Dhaka",
-   "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/56",
-   "status": "Awaiting Review",
-   "id": "21ff265a-bec4-424c-b2f8-d8b9d9eb1cae",
-   "createdAt": "2026-10-12T10:06:04+00:00",
-   "requiredSkills": "forward, automation, engineer, riseup, labs., required, playwright, typescript, node.js",
-   "postedAt": "2026-10-13",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full time",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "165a0156440926a3",
-   "sources": [
-    {
-     "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/56",
-     "found_at": "2026-10-13T17:53:23+00:00"
-    }
-   ],
-   "matchScore": 71,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "jsonld"
   },
@@ -693,7 +693,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-10-13T17:53:27+00:00"
+     "found_at": "2026-10-14T08:18:31+00:00"
     }
    ],
    "matchScore": 71,
@@ -735,7 +735,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-10-13T17:53:31+00:00"
+     "found_at": "2026-10-14T08:18:35+00:00"
     }
    ],
    "matchScore": 66,
@@ -777,7 +777,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/digital-marketing-executive-mr-diy-bangladesh/",
-     "found_at": "2026-10-13T17:53:16+00:00"
+     "found_at": "2026-10-14T08:18:19+00:00"
     }
    ],
    "matchScore": 66,
@@ -819,7 +819,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-13T17:53:19+00:00"
+     "found_at": "2026-10-14T08:18:26+00:00"
     }
    ],
    "matchScore": 66,
@@ -862,49 +862,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-13T17:53:27+00:00"
-    }
-   ],
-   "matchScore": 66,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "rss"
-  },
-  {
-   "title": "Security Software Engineer, IAM",
-   "company": "Vercel",
-   "description": "Headquarters: Remote - United States\nAbout Vercel:\nVercel is the agentic infrastructure company, freeing people and agents to ship what's next. For more than a decade we've helped builders move from idea to production with speed, security, and exceptional developer experience.\nNow we're scaling our products for both agents and people to ship and run software, built in the open and trusted by OpenAI, PayPal, Ramp, Supreme, and millions of developers worldwide.\nAbout the Role:\nTraditional IAM teams operate as an approval queue: a request comes in, someone reviews it, grants it, and (hopefully) remembers to revoke it. Access reviews become quarterly spreadsheet exercises, audit evidence is assembled by hand, and the central team becomes the bottleneck for every decision. That model doesn't scale past a certain point, and Vercel is past it. Adding more approvers doesn't close the gap. Building the system that makes access self-serve, time-bound, and provable does.\nThis role is about building that system. Identity at Vercel should work like the rest of our infrastructure: defined as code, reviewed in pull requests, deployed through CI, and observable in production. You'll own that transformation end to end: migrating Okta and all related IAM configuration fully behind Terraform, and building the self-serve access platform (including just-in-time access) that lets team and system owners define, request, and time-bound their own access instead of routing every decision through a central team. Provisioning, deprovisioning, and access reviews become workflows the system runs, with the audit evidence for SOC 2 and similar generated as a byproduct rather than a manual scramble.\nYou'll also own the harder connective work: corporate IAM (employee identity, SaaS access, devices) and production IAM (service accounts, infrastructure permissions, on-call and prod access) usually live in separate silos with separate tools and separate evidence trails. You'll build them as one identity plane.\nAnd identity itself is changing shape. As agents increasingly act on behalf of users and systems, the old model of \"one human, one identity\" doesn't hold, and there's real debate about how to solve it: carry the human's identity through every hop the agent makes, or give the agent its own scoped identity that never impersonates the user. We don't have a fixed answer yet. We want someone who wants to be in the room helping us decide and then build it.\nBecause of this, we're optimizing for someone who wants to build identity infrastructure as software, not administer identity products. A software engineer who's gone deep on identity, or an IAM engineer with a strong engineering background, is exactly who we're looking for.\nYou'll work closely with Security Leadership, located remotely within the United States. If you're based within commuting distance of our SF or NY offices, the role includes in-office anchor days on Monday, Tuesday, and Friday.\nWhat You Will Do:\nOwn the full IAM strategy for corporate, production, and product environments end to end, and own the bridge between corp IAM and product/prod IAM rather than treating them as separate problems\nMigrate Okta and all related IAM configuration to Terraform , so every identity change is reviewed, tested, and versioned like the rest of our infrastructure, driving infrastructure-as-code adoption and leveling up engineering teams in its use\nBuild self-serve access governance tooling, including JIT (just-in-time) access: design and ship the framework that lets team and system owners define, request, and time-bound their own access, rather than security being a bottleneck for every request\nOwn provisioning, deprovisioning, and access review workflows , built so the evidence trail generates itself and internal and external audits (SOC 2 and similar) are fast, not a manual scramble\nWork closely with the Accounts team , the engineers who build IAM into Vercel's own product (team and project roles, enterprise SSO, SCIM, API tokens), and find where that world and ours should connect\nDesign and enforce least-privilege access controls across cloud, SaaS, and production infrastructure, partnering with platform and engineering teams to embed IAM early in design rather than bolting it on after\nHelp define what identity and access should look like as agents , not just people, request and hold access at Vercel, and build the first versions of it\nAbout You:\n7+ years of experience in identity, access management, or platform security engineering\nExperience building internal tools or self-service platforms , not just administering existing ones. You'd rather build the framework that lets other teams manage their own access than be the sole approver for every request\nProficient in a production language like TypeScript/Node.js, Go, or Python, comfortable designing and consuming REST APIs, and able to ship and operate reliable services. The access platform you'll build is a production system, not a configuration\nProficient in Terraform and committed to managing IAM infrastructure as code, ideally with experience migrating existing systems into it\nHands-on with identity protocols (OAuth2, OIDC, SAML, SCIM) at the implementation level, not just configuration, including the failure modes: token replay, deprovisioned users retaining access, sync drift between identity providers and downstream systems\nExperience designing IAM at scale across both corporate (Okta or equivalent: SSO, MFA, lifecycle management, API-driven automation) and production (AWS or GCP IAM: service accounts, roles, workload identity federation) environments\nA systems thinker who defaults to \"why does this class of access request exist\" and \"how does this scale to the next thousand employees and ten thousand agents,\" not just resolving the request in front of you\nStrong collaborator who can drive alignment across Engineering, IT, Compliance, and Security teams\nComfortable operating with autonomy and owning decisions in a fast-moving environment\nBonus If You Have\nHave led a Terraform migration for IAM or identity infrastructure at scale.\nHave designed or built JIT access systems or an access governance/request platform at a previous company.\nHave built or managed MDM/MAM tooling (Jamf, Intune, or equivalent) and device-trust integrations with identity.\nUnderstand how Vercel's own products handle IAM (team and project roles, enterprise SSO, API tokens) and are excited to partner with the Accounts team to bring internal and product-facing identity closer together.\nHave a point of view on agent identity (delegation, scoped credentials, impersonation boundaries) and want to help invent the architecture rather than apply an existing playbook.\nHave experience at a developer tools, infrastructure, or SaaS company.\nHold certifications such as Okta Certified Professional/Administrator, AWS Security Specialty, or CISSP. These demonstrate depth, though they're not required.\nCompensation & Benefits:\nCompetitive compensation package, including equity.\nInclusive Healthcare Package.\nLearn and Grow - we provide mentorship and send you to events that help you build your network and skills.\nFlexible Time Off.\nWe will provide you the gear you need to do your role, and a WFH budget for you to outfit your space as needed.\nThe San Francisco, CA base pay range for this role is $208,000 - $312,000. Actual salary will be based on job-related skills, experience, and location. Compensation outside of San Francisco may be adjusted based on employee location. The total compensation package may include benefits, equity-based compensation, and eligibility for a company bonus or variable pay program depending on the role. Your recruiter can share more details during the hiring process.\nDisclosures:\nPrivacy: Please review our Job Applicant Privacy Policy for more information on how we handle your data.\nEqual Opportunity: Vercel is committed to fostering and empowering an inclusive community within our organization. We do not discriminate on the basis of race, religion, color, gender expression or identity, sexual orientation, national origin, citizenship, age, marital status, veteran status, disability status, or any other characteristic protected by law. Vercel encourages everyone to apply for our available positions, even if they don't necessarily check every box on the job description.\nTo apply: https://weworkremotely.com/remote-jobs/vercel-security-software-engineer-iam",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/vercel-security-software-engineer-iam",
-   "status": "Awaiting Review",
-   "id": "9d68ea95-1272-479a-a846-cf2c17681a7e",
-   "createdAt": "2026-10-08T09:49:48+00:00",
-   "requiredSkills": "security, engineer, iam, headquarters, remote, united, states, about, vercel, agentic, infrastructure, freeing",
-   "postedAt": "2026-10-08",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "1a49451520c3339b",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/vercel-security-software-engineer-iam",
-     "found_at": "2026-10-13T17:53:31+00:00"
+     "found_at": "2026-10-14T08:18:31+00:00"
     }
    ],
    "matchScore": 66,
@@ -946,7 +904,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-10-13T17:53:16+00:00"
+     "found_at": "2026-10-14T08:18:19+00:00"
     }
    ],
    "matchScore": 62,
@@ -988,7 +946,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/air-astra/career/executive-ground-operations/2026",
-     "found_at": "2026-10-13T17:53:22+00:00"
+     "found_at": "2026-10-14T08:18:26+00:00"
     }
    ],
    "matchScore": 83,
@@ -1031,7 +989,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-13T17:53:22+00:00"
+     "found_at": "2026-10-14T08:18:26+00:00"
     }
    ],
    "matchScore": 79,
@@ -1059,7 +1017,7 @@
    "id": "f3ddac81-eb39-4c14-af2e-f1f79380ecb3",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-13",
+   "postedAt": "2026-10-14",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1073,7 +1031,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/38",
-     "found_at": "2026-10-13T17:53:23+00:00"
+     "found_at": "2026-10-14T08:18:26+00:00"
     }
    ],
    "matchScore": 65,
@@ -1117,7 +1075,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/acculynx-senior-software-engineer",
-     "found_at": "2026-10-13T17:53:23+00:00"
+     "found_at": "2026-10-14T08:18:27+00:00"
     }
    ],
    "matchScore": 61,
@@ -1160,12 +1118,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-13T17:53:23+00:00"
+     "found_at": "2026-10-14T08:18:27+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-13T17:53:27+00:00"
+     "found_at": "2026-10-14T08:18:31+00:00"
     }
    ],
    "matchScore": 61,
@@ -1195,7 +1153,7 @@
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-13",
+   "postedAt": "2026-10-14",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1209,12 +1167,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/14",
-     "found_at": "2026-10-13T17:53:23+00:00"
+     "found_at": "2026-10-14T08:18:26+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-13T17:53:23+00:00"
+     "found_at": "2026-10-14T08:18:26+00:00"
     }
    ],
    "matchScore": 61,
@@ -1258,7 +1216,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-13T17:53:23+00:00"
+     "found_at": "2026-10-14T08:18:27+00:00"
     }
    ],
    "matchScore": 61,
@@ -1301,7 +1259,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-10-13T17:53:23+00:00"
+     "found_at": "2026-10-14T08:18:27+00:00"
     }
    ],
    "matchScore": 57,
@@ -1344,7 +1302,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-marketing-executive-marketing-executive-card-center-commercial-bank-of-ceylon-plc/",
-     "found_at": "2026-10-13T17:53:16+00:00"
+     "found_at": "2026-10-14T08:18:19+00:00"
     }
    ],
    "matchScore": 57,
@@ -1388,7 +1346,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-10-13T17:53:23+00:00"
+     "found_at": "2026-10-14T08:18:27+00:00"
     }
    ],
    "matchScore": 57,
@@ -1404,6 +1362,49 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Mid to Senior Level PHP Developer",
+   "company": "Invento",
+   "description": "Mid to Senior Level PHP Developer position at Invento. Required skills: Php, Laravel, Codeigniter, Python, Django.",
+   "category": "Software Development",
+   "location": "New DOHS Mohakhali, Dhaka",
+   "source": "BD Tech Jobs",
+   "url": "https://www.bdtechjobs.com/jobs/61",
+   "status": "Awaiting Review",
+   "id": "2856f686-69bb-4414-a9c0-6335c23c9ed5",
+   "createdAt": "2026-10-14T08:18:26+00:00",
+   "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
+   "postedAt": "2026-10-14",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full time",
+   "experienceText": "",
+   "area": "Mohakhali",
+   "distanceKm": 1.9,
+   "fingerprint": "7204b33ddccbaa2f",
+   "sources": [
+    {
+     "source": "BD Tech Jobs",
+     "url": "https://www.bdtechjobs.com/jobs/61",
+     "found_at": "2026-10-14T08:18:26+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "jsonld"
   },
   {
    "title": "Senior Software Engineer, Card Authorization",
@@ -1431,7 +1432,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-13T17:53:27+00:00"
+     "found_at": "2026-10-14T08:18:31+00:00"
     }
    ],
    "matchScore": 57,
@@ -1474,7 +1475,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bangladesh/rancon-global-trucks-limited-jac-motors/career/sr-executive-mis/2026",
-     "found_at": "2026-10-13T17:53:22+00:00"
+     "found_at": "2026-10-14T08:18:26+00:00"
     }
    ],
    "matchScore": 57,
@@ -1518,7 +1519,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-13T17:53:27+00:00"
+     "found_at": "2026-10-14T08:18:31+00:00"
     }
    ],
    "matchScore": 57,
@@ -1561,7 +1562,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-to-senior-executive-officer-bank-asia-plc/",
-     "found_at": "2026-10-13T17:53:16+00:00"
+     "found_at": "2026-10-14T08:18:19+00:00"
     }
    ],
    "matchScore": 53,
@@ -1577,93 +1578,6 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Software Product Engineer/ Architect",
-   "company": "Brain Station 23",
-   "description": "Software Product Engineer/ Architect position at Brain Station 23. Required skills: Kubernetes, Java, React, Spring Boot, Webrtc.",
-   "category": "Information Technology",
-   "location": "Dhaka, Bangladesh",
-   "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/46",
-   "status": "Awaiting Review",
-   "id": "fe719886-2146-4ae2-8e0b-638ef84fae95",
-   "createdAt": "2026-10-08T09:49:39+00:00",
-   "requiredSkills": "engineer/, architect, brain, station, 23., required, kubernetes, react, spring, boot, webrtc.",
-   "postedAt": "2026-10-16",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full time",
-   "experienceText": "",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "537c8e56bce84814",
-   "sources": [
-    {
-     "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/46",
-     "found_at": "2026-10-13T17:53:23+00:00"
-    }
-   ],
-   "matchScore": 53,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting",
-    "Title matches your excluded list (Architect)"
-   ],
-   "discoveredBy": "jsonld"
-  },
-  {
-   "title": "Senior Software Engineer, Application Security",
-   "company": "Discord",
-   "description": "Headquarters: San Francisco Bay Area or Remote\nDiscord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.\nDiscord empowers people to create spaces where they can find a sense of belonging in their lives. Millions of people trust Discord to keep their communications secure, private, and out of the hands of evildoers, so security and privacy are necessary to Discord's success.\nWe are looking for a Senior Software Engineer to join our Application Security team and protect Discord’s users where it matters most, their accounts. If you are an engineer with a wealth of experience making the secure way the easy way, a deep sense of curiosity, and an endless desire to improve Discord, read on!\nThis role is open to remote locations within the Pacific Standard Time Zone.\nWhat you'll do\nJoin an engineering team designing and implementing full-stack, user-facing security solutions that protect hundreds of millions of Discord users.\nLead full-stack work to strengthen session security and authentication for Discord’s users.\nImprove, operate, and maintain security-critical authentication services, owning their correctness and security.\nPartner with Product teams to drive adoption of stronger authentication and to ship user-facing account security tools.\nIdentify and design solutions for emerging threats to user account security.\nResearch and implement new security capabilities for the Discord platform, staying current on the authentication and session security landscape.\nBuild security controls and tools that emphasize self-service, automation, and performance to help identify and mitigate account security flaws.\nWho you are\nYou have 5+ years of experience securing production applications.\nYou have 3+ years of experience programming in at least one general-purpose programming language (e.g., Python, Go, Java, or Rust).\nYou have hands-on experience building and shipping production software, including security features, controls, frameworks, or guardrails.\nYou have hands-on experience with authentication and account security, such as WebAuthn, passkeys, FIDO2, MFA, and session management.\nYou are comfortable reasoning about the security of complex systems, even if they contain components you aren’t familiar with, and can give engineers clear, sound guidance on secure design and implementation.\nYou have experience leading security projects with a cross-functional group.\nYou have experience building or hardening client applications, such as desktop or native mobile apps.\nYou have experience operating in cloud-based environments (we use Google Cloud, but experience with other platforms is okay too).\nBonus points\nExperience programming in at least one systems programming language (e.g. C, C++).\nExperience developing, operating, and debugging production systems.\nFamiliarity with common application vulnerabilities on the platforms Discord ships on (that's all of them).\nCandidates must reside in or be willing to relocate to the San Francisco Bay Area (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, and Sonoma counties). Relocation assistance may be available.\nThe US base salary range for this full-time position is $196,000 to $245,000 + equity + benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in US role postings reflect the base salary only, and do not include equity, or benefits.\nWhy Discord?\nDiscord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!\nDiscord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.\nPlease see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking HERE.\nTo apply: https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-application-security",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-application-security",
-   "status": "Awaiting Review",
-   "id": "10fb6d11-4d1f-42fc-a4bd-2a23701c1efb",
-   "createdAt": "2026-09-29T09:23:08+00:00",
-   "requiredSkills": "senior, engineer, security, headquarters, san, francisco, bay, area, remote, discord, has, highly",
-   "postedAt": "2026-09-29",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "921583c24e001917",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-application-security",
-     "found_at": "2026-10-13T17:53:31+00:00"
-    }
-   ],
-   "matchScore": 53,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Senior)"
-   ],
-   "discoveredBy": "rss"
   }
  ]
 }
