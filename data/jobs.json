@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-16T15:07:00+00:00",
+ "generatedAt": "2026-10-17T07:26:09+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,7 +31,7 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 19,
+    "found": 18,
     "errors": [],
     "raw": 300
    },
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 22,
+    "found": 20,
     "errors": [],
-    "raw": 267
+    "raw": 260
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 38,
-   "new": 0,
+   "total": 36,
+   "new": 1,
    "expired": 0,
-   "duplicatesFolded": 8,
-   "priorityA": 11,
+   "duplicatesFolded": 7,
+   "priorityA": 10,
    "priorityB": 13,
-   "priorityC": 14
+   "priorityC": 13
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-16T15:07:00+00:00"
+  "ranAt": "2026-10-17T07:26:09+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
-     "found_at": "2026-10-16T15:06:20+00:00"
+     "found_at": "2026-10-17T07:25:30+00:00"
     }
    ],
    "matchScore": 96,
@@ -145,7 +145,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-16T15:06:24+00:00"
+     "found_at": "2026-10-17T07:25:34+00:00"
     }
    ],
    "matchScore": 87,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
-     "found_at": "2026-10-16T15:06:19+00:00"
+     "found_at": "2026-10-17T07:25:29+00:00"
     }
    ],
    "matchScore": 83,
@@ -201,48 +201,6 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Probationary Officer & Trainee Assistant Officer",
-   "company": "Midland Bank PLC",
-   "description": "Midland Bank PLC intends to recruit young, energetic, and talented resources with a good academic background and a strong learning mindset who will share its vision and execute its mission for growth.\nRewarding Start\nProbationers will be offered an attractive monthly remuneration package during the one-year probation period .\nSuccessful probationers will be absorbed into the regular cadre according to the policy of the Bank.\nApplication Deadline: 20 October 2026 | Website: Midland Bank PLC official recruitment portal shown in the job announcement.\n_\nProbationary Officer (PO) | Midland Bank PLC\nNature of Job: On Probation\nLocation: Anywhere in Bangladesh\nVacancy: Not specified\nEmployment Type: Full-time\nAge: Maximum 32 years as of 20 October 2026\nExperience: Nil\nApplication Deadline: 20 October 2026\nEducational Qualification\nMaster’s Degree from any recognized university.\nMinimum CGPA 3.00 in graduation/post-graduation.\nMinimum GPA 4.50 in SSC/HSC/equivalent.\nAdditional Requirements\nMust be a Bangladeshi citizen.\nStrong communication and interpersonal skills.\nCustomer-oriented mindset.\nAnalytical and problem-solving ability.\nProficiency in MS Office and digital tools.\nWillingness to work in a dynamic banking environment.\nCompensation & Other Benefits\nProbationers will be offered an attractive monthly remuneration package during the one-year probation period .\nSuccessful probationers will be absorbed into the regular cadre according to the policy of the Bank.\nImportant Note\nSelected candidates will be required to execute a surety bond committing to serve Midland Bank PLC for a minimum period of five (5) years from the date of joining.\nOnly shortlisted candidates will be contacted.\nAny form of persuasion or undue influence will result in immediate disqualification.\nMidland Bank PLC reserves the right to accept or reject any application without assigning any reason whatsoever.\nApply for Probationary Officer\n_\nTrainee Assistant Officer (TAO) | Midland Bank PLC\nNature of Job: On Probation\nLocation: Anywhere in Bangladesh\nVacancy: Not specified\nEmployment Type: Full-time\nAge: Maximum 32 years as of 20 October 2026\nExperience: Nil\nApplication Deadline: 20 October 2026\nEducational Qualification\nMaster’s Degree from any recognized university.\nMinimum CGPA 2.75 in graduation/post-graduation.\nMinimum GPA 4.00 in SSC/HSC/equivalent.\nAdditional Requirements\nMust be a Bangladeshi citizen.\nStrong communication and interpersonal skills.\nCustomer-oriented mindset.\nAnalytical and problem-solving ability.\nProficiency in MS Office and digital tools.\nWillingness to work in a dynamic banking environment.\nCompensation & Other Benefits\nProbationers will be offered an attractive monthly remuneration package during the one-year probation period .\nSuccessful probationers will be absorbed into the regular cadre according to the policy of the Bank.\nImportant Note\nSelected candidates will be required to execute a surety bond committing to serve Midland Bank PLC for a minimum period of five (5) years from the date of joining.\nOnly shortlisted candidates will be contacted.\nAny form of persuasion or undue influence will result in immediate disqualification.\nMidland Bank PLC reserves the right to accept or reject any application without assigning any reason whatsoever.\nApply for Trainee Assistant Officer\n_\nMake Your ATS-Friendly CV",
-   "category": "Information Technology",
-   "location": "Anywhere in Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-   "status": "Awaiting Review",
-   "id": "d0368e13-6e81-4fb7-9bb6-9fafb1191cef",
-   "createdAt": "2026-09-22T08:09:28+00:00",
-   "requiredSkills": "probationary, officer, trainee, assistant, midland, bank, plc, intends, recruit, young, energetic, talented",
-   "postedAt": "2026-09-22",
-   "deadline": "2026-10-20",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full Time",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "8bd65ce5480a4cc5",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-10-16T15:06:19+00:00"
-    }
-   ],
-   "matchScore": 83,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -272,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/midland-bank-plc/career/trainee-assistant-officer-tao/2026",
-     "found_at": "2026-10-16T15:06:15+00:00"
+     "found_at": "2026-10-17T07:25:26+00:00"
     }
    ],
    "matchScore": 83,
@@ -314,7 +272,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-10-16T15:06:24+00:00"
+     "found_at": "2026-10-17T07:25:34+00:00"
     }
    ],
    "matchScore": 83,
@@ -356,7 +314,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-cash-gb-others/",
-     "found_at": "2026-10-16T15:06:19+00:00"
+     "found_at": "2026-10-17T07:25:29+00:00"
     }
    ],
    "matchScore": 79,
@@ -396,7 +354,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-10-16T15:06:12+00:00"
+     "found_at": "2026-10-17T07:25:23+00:00"
     }
    ],
    "matchScore": 79,
@@ -409,48 +367,6 @@
    "priority": "A",
    "gateNotes": [
     "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Management Trainee Officer (MTO) – Brand",
-   "company": "RFL Group",
-   "description": "Vacancy: 10\nLocation: Dhaka (Badda)\nEmployment Type: Full-time\nJob Type: Work at Office\nAge: At least 22 years\nApplication Deadline: 26 October 2026\nJob Overview\nPRAN-RFL Group, one of the most diversified and innovation-driven conglomerates in Bangladesh, is seeking talented and dynamic professionals for the position of Management Trainee Officer – Brand . The role offers aspiring professionals hands-on experience in brand management, marketing strategy, and consumer engagement. Selected candidates will work closely with senior brand managers and cross-functional teams to learn, contribute, and grow into a future leader in the marketing function.\nJob Responsibilities\nSupport the formulation and implementation of ATL (Above-the-Line), BTL (Below-the-Line), and TTL (Through-the-Line) marketing strategies to enhance brand visibility, strengthen market presence, and improve consumer engagement.\nContribute to the planning, development, and execution of integrated brand campaigns aligned with organizational objectives, market trends, and consumer insights.\nCollaborate with creative agencies, media partners, and internal stakeholders to ensure timely, effective, and high-quality execution of brand initiatives.\nConduct deep-dive research to track industry trends, analyze consumer behavior, and benchmark competitors, providing insights that guide strategic decision-making.\nDeliver actionable insights to support product positioning, promotional planning, and market entry strategies, ensuring alignment with business goals.\nAssist in tracking, analyzing, and reporting brand performance metrics, preparing regular dashboards and reports for senior management.\nContribute to developing and executing brand differentiation strategies to build and sustain strong brand equity.\nAssist in product innovation activities, including packaging development, pricing strategies, and promotional planning to maintain market competitiveness.\nEducational Requirements\nBachelor of Business Administration (BBA) in Marketing.\nMaster of Business Administration (MBA) in Marketing.\nAdditional Requirements\nAge: At least 22 years.\nCommunication and interpersonal skills.\nCreative and innovative mindset.\nFluent in English.\nSkills & Expertise\nBrand Strategy\nMarket Research\nMarketing Analytics\nCampaign Management\nStakeholder Management\nCommunication and Interpersonal Skills\nCompensation & Benefits\nMarket-standard salary.\nSalary review after 6 months of probation based on performance.\nTransport Facilities\nMobile Bill\nTour Allowance\nProvident Fund\nPartially Subsidized Lunch\nYearly Salary Review\nTwo Festival Bonuses\nLeave Encashment\nPromising Career Path\nCredit Purchase Facilities with discounts at PRAN-RFL outlets\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Dhaka (Badda)",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-   "status": "Awaiting Review",
-   "id": "f54ef940-3fd0-4923-bef3-6b1021eaf19c",
-   "createdAt": "2026-09-27T15:29:09+00:00",
-   "requiredSkills": "trainee, officer, mto, brand, vacancy, location, dhaka, badda, employment, type, full, time",
-   "postedAt": "2026-09-27",
-   "deadline": "2026-10-26",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full Time",
-   "experienceText": "",
-   "area": "Badda",
-   "distanceKm": 3.8,
-   "fingerprint": "1bdb144fe3d87c61",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-10-16T15:06:19+00:00"
-    }
-   ],
-   "matchScore": 79,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -480,7 +396,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-programme-coats-bangladesh/",
-     "found_at": "2026-10-16T15:06:12+00:00"
+     "found_at": "2026-10-17T07:25:23+00:00"
     }
    ],
    "matchScore": 75,
@@ -523,7 +439,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-brand-emami-bangladesh-limited/",
-     "found_at": "2026-10-16T15:06:15+00:00"
+     "found_at": "2026-10-17T07:25:29+00:00"
     }
    ],
    "matchScore": 75,
@@ -531,6 +447,48 @@
     "title": 100,
     "level": 100,
     "skills": 0,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Business Development Analyst",
+   "company": "MR DIY",
+   "description": "Position: Business Development Analyst\nCompany: MR. D.I.Y. Bangladesh Ltd.\nJob Location: Tejgaon, Dhaka\nHow to Apply: Send your CV to bgd.hr.career@mrdiy.com\nDeadline: Not mentioned, apply early\nAbout the Role\nMR DIY Bangladesh is hiring a Business Development Analyst in Tejgaon, Dhaka for market research, data analysis and growth planning.\nKey Responsibilities\nConduct market research and analyse business trends\nIdentify new business opportunities and growth potential\nPrepare business reports, forecasts and performance analyses\nSupport strategic planning and data-driven decisions\nWork with cross-functional teams on business objectives\nRequirements\nStrong analytical, problem-solving and communication skills\nProficiency in Microsoft Excel and data analysis\nA proactive mindset and strong interest in business development\nHow to Apply\nSend your CV to bgd.hr.career@mrdiy.com\nAbout MR DIY\nMR DIY is Malaysia’s home improvement retail chain, with stores across Asia and in Bangladesh.\nHow to Apply\nInterested candidates can apply through the email to MR DIY Bangladesh (bgd.hr.career@mrdiy.com) using the Apply Now button. The circular does not mention an application deadline, so apply early. Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
+   "status": "Awaiting Review",
+   "id": "c096b107-a940-4a7c-b540-af0d20c03407",
+   "createdAt": "2026-10-17T07:25:23+00:00",
+   "requiredSkills": "business, development, analyst, mr., d.i.y., bangladesh, location, tejgaon, dhaka, how, apply, send",
+   "postedAt": "2026-10-17",
+   "deadline": "2026-11-16",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "",
+   "area": "Tejgaon",
+   "distanceKm": 0.0,
+   "fingerprint": "43b63df02fe4ab12",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
+     "found_at": "2026-10-17T07:25:23+00:00"
+    }
+   ],
+   "matchScore": 75,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 33,
     "preference": 100
    },
    "priority": "A",
@@ -565,7 +523,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/agent-banking-operations-customer-support-executive-sbac-bank-plc/",
-     "found_at": "2026-10-16T15:06:15+00:00"
+     "found_at": "2026-10-17T07:25:25+00:00"
     }
    ],
    "matchScore": 74,
@@ -607,7 +565,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-16T15:06:19+00:00"
+     "found_at": "2026-10-17T07:25:29+00:00"
     }
    ],
    "matchScore": 73,
@@ -650,7 +608,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-16T15:06:19+00:00"
+     "found_at": "2026-10-17T07:25:29+00:00"
     }
    ],
    "matchScore": 72,
@@ -693,7 +651,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-16T15:06:20+00:00"
+     "found_at": "2026-10-17T07:25:30+00:00"
     }
    ],
    "matchScore": 71,
@@ -735,7 +693,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/33",
-     "found_at": "2026-10-16T15:06:19+00:00"
+     "found_at": "2026-10-17T07:25:30+00:00"
     }
    ],
    "matchScore": 71,
@@ -778,7 +736,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-10-16T15:06:24+00:00"
+     "found_at": "2026-10-17T07:25:34+00:00"
     }
    ],
    "matchScore": 71,
@@ -820,7 +778,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
-     "found_at": "2026-10-16T15:06:12+00:00"
+     "found_at": "2026-10-17T07:25:23+00:00"
     }
    ],
    "matchScore": 70,
@@ -860,7 +818,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-10-16T15:06:24+00:00"
+     "found_at": "2026-10-17T07:25:34+00:00"
     }
    ],
    "matchScore": 66,
@@ -902,7 +860,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
-     "found_at": "2026-10-16T15:06:28+00:00"
+     "found_at": "2026-10-17T07:25:38+00:00"
     }
    ],
    "matchScore": 66,
@@ -944,7 +902,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/digital-marketing-executive-mr-diy-bangladesh/",
-     "found_at": "2026-10-16T15:06:15+00:00"
+     "found_at": "2026-10-17T07:25:25+00:00"
     }
    ],
    "matchScore": 66,
@@ -986,7 +944,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-16T15:06:19+00:00"
+     "found_at": "2026-10-17T07:25:29+00:00"
     }
    ],
    "matchScore": 66,
@@ -1029,7 +987,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-16T15:06:24+00:00"
+     "found_at": "2026-10-17T07:25:34+00:00"
     }
    ],
    "matchScore": 66,
@@ -1071,7 +1029,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-10-16T15:06:15+00:00"
+     "found_at": "2026-10-17T07:25:25+00:00"
     }
    ],
    "matchScore": 62,
@@ -1099,7 +1057,7 @@
    "id": "f3ddac81-eb39-4c14-af2e-f1f79380ecb3",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-16",
+   "postedAt": "2026-10-17",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1113,7 +1071,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/36",
-     "found_at": "2026-10-16T15:06:19+00:00"
+     "found_at": "2026-10-17T07:25:30+00:00"
     }
    ],
    "matchScore": 65,
@@ -1157,12 +1115,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-16T15:06:20+00:00"
+     "found_at": "2026-10-17T07:25:30+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-16T15:06:24+00:00"
+     "found_at": "2026-10-17T07:25:34+00:00"
     }
    ],
    "matchScore": 61,
@@ -1192,7 +1150,7 @@
    "id": "0959ac26-d2ed-4ad5-99ca-f7c38b7dc5a9",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-16",
+   "postedAt": "2026-10-17",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1206,12 +1164,12 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/14",
-     "found_at": "2026-10-16T15:06:19+00:00"
+     "found_at": "2026-10-17T07:25:30+00:00"
     },
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-16T15:06:19+00:00"
+     "found_at": "2026-10-17T07:25:30+00:00"
     }
    ],
    "matchScore": 61,
@@ -1255,7 +1213,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-16T15:06:24+00:00"
+     "found_at": "2026-10-17T07:25:34+00:00"
     }
    ],
    "matchScore": 61,
@@ -1298,7 +1256,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-10-16T15:06:20+00:00"
+     "found_at": "2026-10-17T07:25:30+00:00"
     }
    ],
    "matchScore": 57,
@@ -1341,7 +1299,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-marketing-executive-marketing-executive-card-center-commercial-bank-of-ceylon-plc/",
-     "found_at": "2026-10-16T15:06:12+00:00"
+     "found_at": "2026-10-17T07:25:25+00:00"
     }
    ],
    "matchScore": 57,
@@ -1360,49 +1318,6 @@
    "discoveredBy": "bdrecruit"
   },
   {
-   "title": "Senior Software Engineer, remote",
-   "company": "Edfinity",
-   "description": "Headquarters: Austin, TX\nURL: https://edfinity.com\nAbout Edfinity\nEdfinity is the category leader in courseware and assessment technology for higher-ed STEM. We're NSF-supported, bootstrapped, and built by a close-knit remote team of senior engineers. We're growing fast and leading the field in AI-powered courseware that moves the needle on educator productivity and student outcomes. Your work will reach hundreds of institutions, and you will help decide how it gets built.\nHow we work\nWe're fully remote, with team members distributed across the US, and with that comes personal flexibility and accountability.\nAI agents produce most of our code. We move fast, but we temper velocity with quality and stability above all else.\nEngineers frame the problems, direct the work, and are accountable for everything that ships. If you already work this way and have opinions about it, you'll feel at home.\nEveryone has opportunities to work across different areas of the platform, and team members are expected to develop deep technical expertise over time. This is particularly important as we step away from hands-on coding.\nWe're a small team of collaborative senior engineers. Your opinion matters.\nThe pace of change is real. More than ever, we're continually evolving our tooling and workflows as LLMs become more capable.\nWhat you’ll be doing\nOur stack is Ruby on Rails, MongoDB, Elasticearch, ClickHouse, Redis/Sidekiq, and React.\nFull-stack product development in areas like assessment authoring, delivery, and grading; educator and student-facing features; LMS integrations\nLLM-powered features, from prompt architecture to auto-grading to eval infrastructure\nPerformance optimization and reliability refactoring to handle both day-to-day load and high-stakes spikes\nStewardship of a mature codebase: upgrades, migrations, and paying down technical debt methodically\nPart-time technical support rotation. Customer happiness is extremely important to us.\nWhat you'll need\n8-15 years building and running scalable production web applications and services\nDeep experience with Rails\nExperience with web front-ends such as React\nRecent experience in an SDLC revolving around the use of AI agents\nStrong CS fundamentals in systems, data modeling, and complexity\nExcellent communication hygiene, collaborative skills, and strong sense of self-direction.\nInterest in a long-term seat on a close-knit team.\nAuthorization to work in the United States. We are not able to sponsor or transfer work visas at this time.\nCompensation\n$135,000-$195,000, plus eligibility for an annual discretionary bonus, retirement plan, and PTO\nTo apply: https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-   "status": "Awaiting Review",
-   "id": "be47e2d2-e898-43ea-be0c-195bcc2b4b61",
-   "createdAt": "2026-09-20T18:11:58+00:00",
-   "requiredSkills": "senior, engineer, remote, headquarters, austin, url, https, //edfinity.com, about, edfinity, category, leader",
-   "postedAt": "2026-08-17",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "c7b2d669ef87692a",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote",
-     "found_at": "2026-10-16T15:06:20+00:00"
-    }
-   ],
-   "matchScore": 57,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Senior)"
-   ],
-   "discoveredBy": "rss"
-  },
-  {
    "title": "Mid to Senior Level PHP Developer",
    "company": "Invento",
    "description": "Mid to Senior Level PHP Developer position at Invento. Required skills: Php, Laravel, Codeigniter, Python, Django.",
@@ -1414,7 +1329,7 @@
    "id": "2856f686-69bb-4414-a9c0-6335c23c9ed5",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-10-16",
+   "postedAt": "2026-10-17",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1428,7 +1343,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/58",
-     "found_at": "2026-10-16T15:06:19+00:00"
+     "found_at": "2026-10-17T07:25:30+00:00"
     }
    ],
    "matchScore": 57,
@@ -1471,7 +1386,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-10-16T15:06:24+00:00"
+     "found_at": "2026-10-17T07:25:34+00:00"
     }
    ],
    "matchScore": 57,
@@ -1514,7 +1429,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-16T15:06:20+00:00"
+     "found_at": "2026-10-17T07:25:30+00:00"
     }
    ],
    "matchScore": 57,
@@ -1557,7 +1472,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-16T15:06:20+00:00"
+     "found_at": "2026-10-17T07:25:30+00:00"
     }
    ],
    "matchScore": 57,
@@ -1600,7 +1515,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-to-senior-executive-officer-bank-asia-plc/",
-     "found_at": "2026-10-16T15:06:15+00:00"
+     "found_at": "2026-10-17T07:25:25+00:00"
     }
    ],
    "matchScore": 53,
@@ -1643,7 +1558,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-executive-marketing-brain-station-23/",
-     "found_at": "2026-10-16T15:06:12+00:00"
+     "found_at": "2026-10-17T07:25:23+00:00"
     }
    ],
    "matchScore": 53,
@@ -1687,7 +1602,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/general-protection-officer-case-management-danish-refugee-council/",
-     "found_at": "2026-10-16T15:06:12+00:00"
+     "found_at": "2026-10-17T07:25:23+00:00"
     }
    ],
    "matchScore": 51,
