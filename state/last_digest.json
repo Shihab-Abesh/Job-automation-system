@@ -33,14 +33,14 @@
    "raw": 300
   },
   "jsonld": {
-   "found": 5,
+   "found": 1,
    "errors": [],
    "raw": 20
   },
   "rss": {
-   "found": 20,
+   "found": 23,
    "errors": [],
-   "raw": 275
+   "raw": 286
   },
   "careers": {
    "found": 0,
@@ -55,9 +55,9 @@
  },
  "counts": {
   "total": 36,
-  "new": 0,
+  "new": 3,
   "expired": 0,
-  "duplicatesFolded": 7,
+  "duplicatesFolded": 6,
   "priorityA": 10,
   "priorityB": 13,
   "priorityC": 13
@@ -71,5 +71,5 @@
   "allow_abroad": false
  },
  "blockedUrls": [],
- "ranAt": "2026-10-17T14:01:23+00:00"
+ "ranAt": "2026-10-18T07:41:21+00:00"
 }
