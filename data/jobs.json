@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-19T17:18:23+00:00",
+ "generatedAt": "2026-10-20T08:07:16+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -33,7 +33,7 @@
    "bdrecruit": {
     "found": 18,
     "errors": [],
-    "raw": 300
+    "raw": 295
    },
    "jsonld": {
     "found": 1,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 24,
+    "found": 25,
     "errors": [],
-    "raw": 290
+    "raw": 289
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 36,
-   "new": 0,
+   "total": 37,
+   "new": 1,
    "expired": 0,
    "duplicatesFolded": 7,
    "priorityA": 10,
    "priorityB": 13,
-   "priorityC": 13
+   "priorityC": 14
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-19T17:18:23+00:00"
+  "ranAt": "2026-10-20T08:07:16+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
-     "found_at": "2026-10-19T17:17:41+00:00"
+     "found_at": "2026-10-20T08:06:33+00:00"
     }
    ],
    "matchScore": 96,
@@ -145,7 +145,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-19T17:17:41+00:00"
+     "found_at": "2026-10-20T08:06:33+00:00"
     }
    ],
    "matchScore": 87,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
-     "found_at": "2026-10-19T17:17:39+00:00"
+     "found_at": "2026-10-20T08:06:32+00:00"
     }
    ],
    "matchScore": 83,
@@ -201,48 +201,6 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Probationary Officer & Trainee Assistant Officer",
-   "company": "Midland Bank PLC",
-   "description": "Midland Bank PLC intends to recruit young, energetic, and talented resources with a good academic background and a strong learning mindset who will share its vision and execute its mission for growth.\nRewarding Start\nProbationers will be offered an attractive monthly remuneration package during the one-year probation period .\nSuccessful probationers will be absorbed into the regular cadre according to the policy of the Bank.\nApplication Deadline: 20 October 2026 | Website: Midland Bank PLC official recruitment portal shown in the job announcement.\n_\nProbationary Officer (PO) | Midland Bank PLC\nNature of Job: On Probation\nLocation: Anywhere in Bangladesh\nVacancy: Not specified\nEmployment Type: Full-time\nAge: Maximum 32 years as of 20 October 2026\nExperience: Nil\nApplication Deadline: 20 October 2026\nEducational Qualification\nMaster’s Degree from any recognized university.\nMinimum CGPA 3.00 in graduation/post-graduation.\nMinimum GPA 4.50 in SSC/HSC/equivalent.\nAdditional Requirements\nMust be a Bangladeshi citizen.\nStrong communication and interpersonal skills.\nCustomer-oriented mindset.\nAnalytical and problem-solving ability.\nProficiency in MS Office and digital tools.\nWillingness to work in a dynamic banking environment.\nCompensation & Other Benefits\nProbationers will be offered an attractive monthly remuneration package during the one-year probation period .\nSuccessful probationers will be absorbed into the regular cadre according to the policy of the Bank.\nImportant Note\nSelected candidates will be required to execute a surety bond committing to serve Midland Bank PLC for a minimum period of five (5) years from the date of joining.\nOnly shortlisted candidates will be contacted.\nAny form of persuasion or undue influence will result in immediate disqualification.\nMidland Bank PLC reserves the right to accept or reject any application without assigning any reason whatsoever.\nApply for Probationary Officer\n_\nTrainee Assistant Officer (TAO) | Midland Bank PLC\nNature of Job: On Probation\nLocation: Anywhere in Bangladesh\nVacancy: Not specified\nEmployment Type: Full-time\nAge: Maximum 32 years as of 20 October 2026\nExperience: Nil\nApplication Deadline: 20 October 2026\nEducational Qualification\nMaster’s Degree from any recognized university.\nMinimum CGPA 2.75 in graduation/post-graduation.\nMinimum GPA 4.00 in SSC/HSC/equivalent.\nAdditional Requirements\nMust be a Bangladeshi citizen.\nStrong communication and interpersonal skills.\nCustomer-oriented mindset.\nAnalytical and problem-solving ability.\nProficiency in MS Office and digital tools.\nWillingness to work in a dynamic banking environment.\nCompensation & Other Benefits\nProbationers will be offered an attractive monthly remuneration package during the one-year probation period .\nSuccessful probationers will be absorbed into the regular cadre according to the policy of the Bank.\nImportant Note\nSelected candidates will be required to execute a surety bond committing to serve Midland Bank PLC for a minimum period of five (5) years from the date of joining.\nOnly shortlisted candidates will be contacted.\nAny form of persuasion or undue influence will result in immediate disqualification.\nMidland Bank PLC reserves the right to accept or reject any application without assigning any reason whatsoever.\nApply for Trainee Assistant Officer\n_\nMake Your ATS-Friendly CV",
-   "category": "Information Technology",
-   "location": "Anywhere in Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-   "status": "Awaiting Review",
-   "id": "7485289b-0bdf-47be-b559-9a71b40603f2",
-   "createdAt": "2026-09-22T08:09:28+00:00",
-   "requiredSkills": "probationary, officer, trainee, assistant, midland, bank, plc, intends, recruit, young, energetic, talented",
-   "postedAt": "2026-09-22",
-   "deadline": "2026-10-20",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full Time",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "8bd65ce5480a4cc5",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/probationary-officer-trainee-assistant-officer-midland-bank-plc/",
-     "found_at": "2026-10-19T17:17:39+00:00"
-    }
-   ],
-   "matchScore": 83,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -272,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/midland-bank-plc/career/trainee-assistant-officer-tao/2026",
-     "found_at": "2026-10-19T17:17:39+00:00"
+     "found_at": "2026-10-20T08:06:32+00:00"
     }
    ],
    "matchScore": 83,
@@ -314,7 +272,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-10-19T17:17:45+00:00"
+     "found_at": "2026-10-20T08:06:37+00:00"
     }
    ],
    "matchScore": 83,
@@ -356,7 +314,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-10-19T17:17:32+00:00"
+     "found_at": "2026-10-20T08:06:25+00:00"
     }
    ],
    "matchScore": 79,
@@ -398,7 +356,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-10-19T17:17:39+00:00"
+     "found_at": "2026-10-20T08:06:32+00:00"
     }
    ],
    "matchScore": 79,
@@ -413,6 +371,48 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Business Intelligence Analyst",
+   "company": "Carrot",
+   "description": "Headquarters: Remote\nAbout Carrot:\nCarrot is the leading global fertility and family care platform, built on intelligent care orchestration: the right clinical guidance, at the right moment, in the context of each member’s life. More than a thousand multinational employers, health plans, and health systems trust Carrot to support millions of members across 195 countries – from pre-pregnancy through menopause and major life moments in between. Carrot's comprehensive clinical program delivers industry-leading cost savings for plan sponsors and award-winning experiences and improved outcomes for millions of people worldwide.\nCarrot is widely regarded as a defining force in healthcare innovation as a recipient of several top-tier awards, including Fast Company's 'Most Innovative Companies' and CNBC's '100 Barrier Breaking Startups'. The company is regularly cited by leading global outlets — including The Economist, Bloomberg, The Wall Street Journal, NPR, ABC News, and Harvard Business Review — as a leading voice on digital health, the future of work, and family health. Learn more at get-carrot.com .\nThe Opportunity\nCarrot is seeking a Business Intelligence Analyst to join our BI function as it scales to meet, and anticipate, the needs of the organization and its clients. This is an executional role providing essential analytics support across the company: you will gather requirements, field ad hoc and recurring data requests, and build the reporting dashboards that leaders across Carrot rely on to make decisions.\nYou will work hands-on with modern data tooling, including SQL, dbt, and enterprise BI platforms, and partner with teams across the business to translate their questions into clear, trustworthy answers. The BI team is highly cross-functional and sits alongside Data Engineering, making this a strong opportunity to sharpen technical skills while building broad business context in a mission-driven environment.\nWhat You’ll Own\nIn this role, you will:\nDesign and build data models in SQL with a focus on correctness, clarity, and reusability\nBuild and maintain dashboards and reports that track key business metrics and inform decision-making across the company\nConduct ad hoc analyses to answer high-priority business questions from stakeholders across the organization\nCollaborate with teams across Carrot to understand their data domains, reporting needs, and success metrics\nContribute to data quality, documentation, and self-service BI capabilities as the function scales\nWhat Success Looks Like\nIn your first 12–18 months, you will have:\nDelivered accurate, well-documented dashboards and reports that stakeholders across the company trust and use regularly\nFully ramped on Carrot's data stack and core data domains, independently owning recurring and ad hoc reporting requests\nBuilt strong working relationships with cross-functional partners and established yourself as a reliable analytics resource\nImproved turnaround and consistency of reporting by creating reusable data models and reducing manual work\nAbout You\nYou likely have:\nA Bachelor's Degree\nIntermediate-to-advanced SQL experience: ability to write advanced queries using joins, common table expressions, and window/analytic functions\nExperience with data visualization software (e.g., Tableau, Looker, DOMO, or Power BI) to bring data insights to life for broad audiences\nBasic statistics proficiency: experiment design, hypothesis testing, statistical significance, probability, and distributions\nAbility to translate business intelligence needs from a variety of stakeholders into technical execution and clear presentation\nStrong communication skills, with the ability to explain complex technical information to non-technical audiences\nNice to Have ⭐\nWhile not required, we would be especially excited if you bring:\nExperience using dbt to transform, test, and document data\nExperience working with healthcare industry data or in other complex, regulated data environments\nExperience in a high-growth environment\nFamiliarity with version control systems (Git preferred)\nUnderstanding of effective data modeling strategies and implementations\nWhy This Role Matters\nData is central to how Carrot operates and grows. Leaders across the company depend on accurate, timely reporting to serve members, support customers, and make sound business decisions. As a Business Intelligence Analyst, you will be the connective tissue between raw data and those decisions, ensuring the organization runs on insights it can trust.\nYour work directly supports Carrot's mission of expanding access to fertility and family-building care worldwide. Better data means better decisions for the members and customers who rely on Carrot every day.\nInterview Process\nWe believe in a thoughtful and transparent interview process designed to create alignment for both candidates and our team.\nFor this role, candidates can expect:\nRecruiter Screen — 30 minutes\nHiring Manager Interview — 45 minutes\nCross-Functional Panel Interviews — 45 minutes\nPerformance Task — 60 minutes\nThroughout the process, we will share additional context about the team, business priorities, customer landscape, and what success looks like in this role.\nWhy Candidates Join Carrot\nCarrot offers the opportunity to do meaningful work in service of a deeply human mission.\nHighlights include:\nA mission-driven company focused on expanding access to fertility and family-forming care globally.\nA high-growth environment where leaders are empowered to shape strategy and drive impact.\nCompetitive compensation, equity, and comprehensive benefits.\nFlexible Time Off and a culture that actively encourages employees to recharge.\nComprehensive parental leave and family-forming benefits.\nA collaborative, inclusive, and values-driven culture.\nThe opportunity to work alongside passionate, thoughtful teammates committed to improving healthcare outcomes worldwide.\nCompensation\nCarrot offers a holistic Total Rewards package designed to support our employees in all aspects of their life inside and outside of work, including health and wellness benefits, retirement savings plans, short- and long-term incentives, parental leave, family-forming assistance, and a competitive compensation package. The starting base salary for this position will range from $98,000.00- $125,000.00. Actual compensation may vary from posted base salary depending on your confirmed job-related skills and experience.\nFraud and Security Notice: Please note that all communication regarding job opportunities at Carrot will come exclusively from an @get-carrot.com email address. If you receive messages from any other domain, please disregard them and report the incident to: securityreporting@get-carrot.com\nA Note on AI\nAt Carrot, we believe AI can help us work smarter, move faster, and create more meaningful experiences for our members, customers, and each other. While not every role requires deep technical AI expertise, we value people who are curious, eager to learn, and excited to thoughtfully incorporate AI into their day-to-day work.\nFor some roles, AI fluency is a core requirement—and we'll call that out clearly in the qualifications. For everyone else, we're looking for people who embrace new ways of working, use AI responsibly to improve quality and efficiency, and continue to learn as the technology evolves.\nWhy Carrot?\nCarrot has received national and international recognition for its pioneering work, including Fast Company's Most Innovative Companies and World Changing Ideas, Inc. Power Partners, and Modern Healthcare’s Innovators. Carrot’s global workforce has been acknowledged with several accolades, including Fortune’s Best Workplaces in Healthcare, Great Place to Work, and Age-Friendly Employer certifications. Carrot is regularly featured in media reporting on issues related to the future of work, women in leadership, and healthcare innovation, including MSNBC, The Economist, Bloomberg, The Wall Street Journal, CNBC, National Public Radio, Harvard Business Review, and more. Learn more at carrotfertility.com.\nTo apply: https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
+   "category": "Data & Reporting",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
+   "status": "Awaiting Review",
+   "id": "db40f217-7fe6-4256-840a-fe2adb23f16a",
+   "createdAt": "2026-10-20T08:06:45+00:00",
+   "requiredSkills": "business, intelligence, analyst, headquarters, remote, about, carrot, leading, global, fertility, family, care",
+   "postedAt": "2026-10-20",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "f562e8c9453a9411",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
+     "found_at": "2026-10-20T08:06:45+00:00"
+    }
+   ],
+   "matchScore": 75,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Management Trainee Programme",
@@ -440,7 +440,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-programme-coats-bangladesh/",
-     "found_at": "2026-10-19T17:17:32+00:00"
+     "found_at": "2026-10-20T08:06:25+00:00"
     }
    ],
    "matchScore": 75,
@@ -483,7 +483,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-10-19T17:17:32+00:00"
+     "found_at": "2026-10-20T08:06:25+00:00"
     }
    ],
    "matchScore": 75,
@@ -525,7 +525,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/agent-banking-operations-customer-support-executive-sbac-bank-plc/",
-     "found_at": "2026-10-19T17:17:35+00:00"
+     "found_at": "2026-10-20T08:06:29+00:00"
     }
    ],
    "matchScore": 74,
@@ -567,7 +567,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-19T17:17:39+00:00"
+     "found_at": "2026-10-20T08:06:32+00:00"
     }
    ],
    "matchScore": 73,
@@ -610,7 +610,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-19T17:17:39+00:00"
+     "found_at": "2026-10-20T08:06:32+00:00"
     }
    ],
    "matchScore": 72,
@@ -653,7 +653,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-10-19T17:18:01+00:00"
+     "found_at": "2026-10-20T08:06:53+00:00"
     }
    ],
    "matchScore": 71,
@@ -695,7 +695,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-19T17:17:41+00:00"
+     "found_at": "2026-10-20T08:06:33+00:00"
     }
    ],
    "matchScore": 71,
@@ -737,7 +737,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/32",
-     "found_at": "2026-10-19T17:17:41+00:00"
+     "found_at": "2026-10-20T08:06:33+00:00"
     }
    ],
    "matchScore": 71,
@@ -780,7 +780,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-10-19T17:17:45+00:00"
+     "found_at": "2026-10-20T08:06:37+00:00"
     }
    ],
    "matchScore": 71,
@@ -822,7 +822,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
-     "found_at": "2026-10-19T17:17:32+00:00"
+     "found_at": "2026-10-20T08:06:25+00:00"
     }
    ],
    "matchScore": 70,
@@ -862,7 +862,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-10-19T17:17:45+00:00"
+     "found_at": "2026-10-20T08:06:37+00:00"
     }
    ],
    "matchScore": 66,
@@ -904,7 +904,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/digital-marketing-executive-mr-diy-bangladesh/",
-     "found_at": "2026-10-19T17:17:35+00:00"
+     "found_at": "2026-10-20T08:06:29+00:00"
     }
    ],
    "matchScore": 66,
@@ -946,7 +946,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-19T17:17:39+00:00"
+     "found_at": "2026-10-20T08:06:32+00:00"
     }
    ],
    "matchScore": 66,
@@ -989,7 +989,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-19T17:17:45+00:00"
+     "found_at": "2026-10-20T08:06:37+00:00"
     }
    ],
    "matchScore": 66,
@@ -1031,7 +1031,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-10-19T17:17:35+00:00"
+     "found_at": "2026-10-20T08:06:29+00:00"
     }
    ],
    "matchScore": 62,
@@ -1044,6 +1044,48 @@
    "priority": "B",
    "gateNotes": [
     "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Junior Data Analyst – Night Shift (Only Female – Work From Home)",
+   "company": "Unknown company",
+   "description": "Future Cloud Bangladesh Limited (FCBL) is a reputed multinational ITES company operating for over 11 years. We are pleased to offer full-time job opportunities for potential candidates willing to work on night shifts. Females are only encouraged to apply for this position. Female staff get the flexibility to work from home.\nResponsibilities and key learning areas:\n– Extensive online research on North American businesses and their corporate practices.\n– Hosting regular meetings with managers, collecting notes and preparing meeting minutes.\n– Organising data in a spreadsheet, PowerPoint presentation, etc.\n– Making telemarketing calls and hosting conference calls as needed.\n– Updating CRM systems, putting notes, assigning drip plans for texts and emails, etc.\n– Maintaining internal communication and completing individual assignments.\n– Maintaining external communication with corporate stakeholders.\n– Participating in collaboration meetings, workshops with industry colleagues, BASIS, etc.\n– Updating daily activity and work status in a dedicated individual tracking platform.\nEducational Requirements:\n– Bachelors/Masters students from any UGC approved University/College.\n– Running diploma students are also encouraged to apply.\n– Any discipline/department is fine. All will be treated equally.\nAdditional Requirements:\n– Age 18 to 32 years\n– Only females are allowed to apply.\n– Call center experience will get priority.\n– English medium background will get priority.\n– Must be fluent in English.\n– Experience in sales campaigns will get priority.\nCompensation & Other info:\n– 8,000 BDT remuneration per month plus 0-2,000 BDT bonus based on performance.\n– Work From Home\n– 6 days per week.\n– Office Schedule (Night Shift)\n– On-time salary.\n– Yearly 10 paid holidays.\n– Yearly 15 casual paid leaves.\n– All employees get loan facilities, including probationary employees.\n– Employees, their parents, spouses & children get a 35% discount in Ibn Sina Hospital.",
+   "category": "Data & Reporting",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
+   "status": "Awaiting Review",
+   "id": "bf3a9bf3-2b55-4524-95f9-570e4badf4eb",
+   "createdAt": "2026-09-20T15:55:35+00:00",
+   "requiredSkills": "junior, analyst, night, shift, only, female, work, home, future, cloud, bangladesh, limited",
+   "postedAt": "2025-11-14",
+   "deadline": null,
+   "salaryMin": 10000,
+   "salaryMax": 13000,
+   "salaryText": "Tk 10,000 - 13,000",
+   "employmentType": "Full Time",
+   "experienceText": "Freshers",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "c45bc5c4ca7092a7",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
+     "found_at": "2026-10-20T08:06:32+00:00"
+    }
+   ],
+   "matchScore": 79,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay tops out at Tk 13,000, below your Tk 20,000 floor"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -1073,7 +1115,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-10-19T17:17:45+00:00"
+     "found_at": "2026-10-20T08:06:37+00:00"
     }
    ],
    "matchScore": 65,
@@ -1116,12 +1158,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-19T17:17:41+00:00"
+     "found_at": "2026-10-20T08:06:33+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-19T17:17:45+00:00"
+     "found_at": "2026-10-20T08:06:37+00:00"
     }
    ],
    "matchScore": 61,
@@ -1165,7 +1207,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-19T17:17:45+00:00"
+     "found_at": "2026-10-20T08:06:37+00:00"
     }
    ],
    "matchScore": 61,
@@ -1208,7 +1250,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/adventure-travel-365-senior-full-stack-developer-marketplace-web-mobile-platform",
-     "found_at": "2026-10-19T17:17:41+00:00"
+     "found_at": "2026-10-20T08:06:33+00:00"
     }
    ],
    "matchScore": 57,
@@ -1251,7 +1293,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-marketing-executive-marketing-executive-card-center-commercial-bank-of-ceylon-plc/",
-     "found_at": "2026-10-19T17:17:35+00:00"
+     "found_at": "2026-10-20T08:06:29+00:00"
     }
    ],
    "matchScore": 57,
@@ -1295,7 +1337,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-10-19T17:17:45+00:00"
+     "found_at": "2026-10-20T08:06:37+00:00"
     }
    ],
    "matchScore": 57,
@@ -1338,7 +1380,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-19T17:17:41+00:00"
+     "found_at": "2026-10-20T08:06:33+00:00"
     }
    ],
    "matchScore": 57,
@@ -1381,7 +1423,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-10-19T17:17:45+00:00"
+     "found_at": "2026-10-20T08:06:37+00:00"
     }
    ],
    "matchScore": 57,
@@ -1424,7 +1466,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-10-19T17:17:45+00:00"
+     "found_at": "2026-10-20T08:06:37+00:00"
     }
    ],
    "matchScore": 57,
@@ -1467,7 +1509,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-19T17:17:41+00:00"
+     "found_at": "2026-10-20T08:06:33+00:00"
     }
    ],
    "matchScore": 57,
@@ -1510,7 +1552,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-to-senior-executive-officer-bank-asia-plc/",
-     "found_at": "2026-10-19T17:17:35+00:00"
+     "found_at": "2026-10-20T08:06:29+00:00"
     }
    ],
    "matchScore": 53,
@@ -1553,7 +1595,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-executive-marketing-brain-station-23/",
-     "found_at": "2026-10-19T17:17:32+00:00"
+     "found_at": "2026-10-20T08:06:25+00:00"
     }
    ],
    "matchScore": 53,
@@ -1597,7 +1639,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-operations-officer-noa-coxs-bazar-world-food-programme-wfp/",
-     "found_at": "2026-10-19T17:17:32+00:00"
+     "found_at": "2026-10-20T08:06:25+00:00"
     }
    ],
    "matchScore": 53,
