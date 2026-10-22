@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-21T15:49:45+00:00",
+ "generatedAt": "2026-10-22T08:14:06+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -33,17 +33,17 @@
    "bdrecruit": {
     "found": 16,
     "errors": [],
-    "raw": 283
+    "raw": 292
    },
    "jsonld": {
-    "found": 1,
+    "found": 4,
     "errors": [],
     "raw": 20
    },
    "rss": {
-    "found": 23,
+    "found": 24,
     "errors": [],
-    "raw": 299
+    "raw": 302
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 34,
-   "new": 0,
+   "total": 38,
+   "new": 1,
    "expired": 0,
    "duplicatesFolded": 6,
    "priorityA": 9,
-   "priorityB": 13,
-   "priorityC": 12
+   "priorityB": 14,
+   "priorityC": 15
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-21T15:49:45+00:00"
+  "ranAt": "2026-10-22T08:14:05+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
-     "found_at": "2026-10-21T15:47:43+00:00"
+     "found_at": "2026-10-22T08:13:24+00:00"
     }
    ],
    "matchScore": 96,
@@ -145,7 +145,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-21T15:47:43+00:00"
+     "found_at": "2026-10-22T08:13:24+00:00"
     }
    ],
    "matchScore": 87,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
-     "found_at": "2026-10-21T15:47:42+00:00"
+     "found_at": "2026-10-22T08:13:23+00:00"
     }
    ],
    "matchScore": 83,
@@ -230,7 +230,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-10-21T15:47:47+00:00"
+     "found_at": "2026-10-22T08:13:29+00:00"
     }
    ],
    "matchScore": 83,
@@ -272,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-10-21T15:47:34+00:00"
+     "found_at": "2026-10-22T08:13:19+00:00"
     }
    ],
    "matchScore": 79,
@@ -314,7 +314,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-10-21T15:47:42+00:00"
+     "found_at": "2026-10-22T08:13:23+00:00"
     }
    ],
    "matchScore": 79,
@@ -356,7 +356,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-10-21T15:47:55+00:00"
+     "found_at": "2026-10-22T08:13:36+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +398,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-programme-coats-bangladesh/",
-     "found_at": "2026-10-21T15:47:38+00:00"
+     "found_at": "2026-10-22T08:13:19+00:00"
     }
    ],
    "matchScore": 75,
@@ -441,7 +441,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-10-21T15:47:34+00:00"
+     "found_at": "2026-10-22T08:13:17+00:00"
     }
    ],
    "matchScore": 75,
@@ -483,7 +483,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/agent-banking-operations-customer-support-executive-sbac-bank-plc/",
-     "found_at": "2026-10-21T15:47:38+00:00"
+     "found_at": "2026-10-22T08:13:19+00:00"
     }
    ],
    "matchScore": 74,
@@ -525,7 +525,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-21T15:47:42+00:00"
+     "found_at": "2026-10-22T08:13:23+00:00"
     }
    ],
    "matchScore": 73,
@@ -568,7 +568,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-21T15:47:42+00:00"
+     "found_at": "2026-10-22T08:13:23+00:00"
     }
    ],
    "matchScore": 72,
@@ -611,7 +611,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-10-21T15:48:04+00:00"
+     "found_at": "2026-10-22T08:13:45+00:00"
     }
    ],
    "matchScore": 71,
@@ -653,7 +653,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-21T15:47:43+00:00"
+     "found_at": "2026-10-22T08:13:24+00:00"
     }
    ],
    "matchScore": 71,
@@ -695,7 +695,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/32",
-     "found_at": "2026-10-21T15:47:43+00:00"
+     "found_at": "2026-10-22T08:13:24+00:00"
     }
    ],
    "matchScore": 71,
@@ -738,7 +738,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-10-21T15:47:47+00:00"
+     "found_at": "2026-10-22T08:13:29+00:00"
     }
    ],
    "matchScore": 71,
@@ -780,7 +780,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
-     "found_at": "2026-10-21T15:47:34+00:00"
+     "found_at": "2026-10-22T08:13:19+00:00"
     }
    ],
    "matchScore": 70,
@@ -820,7 +820,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-10-21T15:47:47+00:00"
+     "found_at": "2026-10-22T08:13:29+00:00"
     }
    ],
    "matchScore": 66,
@@ -862,7 +862,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/digital-marketing-executive-mr-diy-bangladesh/",
-     "found_at": "2026-10-21T15:47:38+00:00"
+     "found_at": "2026-10-22T08:13:19+00:00"
     }
    ],
    "matchScore": 66,
@@ -877,6 +877,48 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Software Development Engineer II (Remote @ Colombia)",
+   "company": "OfferUp",
+   "description": "Headquarters: Remote @ Colombia\nAbout the role:\nThe OfferUp Connect team builds the moments that turn a listing into a sale. Every chat between buyers and sellers, every offer notification, and every saved-search alert runs through services we own, from messaging and notifications to location, meetups, and the subscriptions sellers pay for. We run high-volume Java microservices and streaming pipelines, integrate with partners like Braze, Amazon Pinpoint, Apple, and Google, and use experimentation to decide what ships.\nWe also take on high-visibility work beyond our domain. Connect built OfferUp's video infrastructure for listing videos and LLM-powered catalog enrichment on Amazon Bedrock, both company priorities that changed what buyers see every day. The roadmap is wide open for someone who wants to help shape it.\nAs a Software Development Engineer II, you'll own features from concept to rollout: designing and writing well-tested code, launching experiments, and measuring results with Product, Design, and Data partners. You'll raise the quality of the code around you and get the chance to join the next project like video or catalog enrichment.\nHere’s more of what you will get to do:\nDesign, build, and deploy backend services and event-driven pipelines for messaging, notifications, location, and subscriptions\nImprove the reliability, latency, and delivery rates of high-volume messaging and notification systems, including retries, rate limiting, and frequency capping\nIntegrate with and operate third-party platforms such as Braze, Amazon Pinpoint, Apple and Google push services, and app store billing\nOwn features end-to-end: plan, design, develop, deploy, measure, and iterate\nBreak down complex engineering problems into achievable tasks and deliver them within committed timeframes\nWork collaboratively with cross-functional teams (Product, Design, Data Science, Marketing, and iOS, Android, and web engineers) to design and implement new features\nContribute to A/B tests and use experimentation results to decide what ships\nActively participate in code reviews and enforce good patterns, testing, and edge-case handling\nCoach and mentor junior team members, new hires, and interns\nCreate shared components, utilities, and services that improve team velocity across the stack\nMaintain and improve the runbooks, alerting, and monitoring for the features you ship\nParticipate in a reasonable on-call rotation with the rest of the team\nUse AI coding tools (Claude Code, Gemini, and similar) to increase your daily development velocity and code quality\nBecome a subject matter expert in one or more of the team's sub-domains: messaging, notifications and campaigns, location, or subscriptions and promotions\nYou’ll thrive in this role if you have:\n2+ years of professional software engineering experience\nDemonstrated ability to own the delivery of multiple features end-to-end (plan, design, develop, and deploy) with high efficiency, including breaking down engineering problems into achievable tasks\nStrong coding skills in Java, with a working understanding of microservices and distributed-systems fundamentals\nGood knowledge of data structures and object-oriented design\nWorking knowledge of asynchronous, event-driven systems (queues, pub/sub, or streams), including retries and idempotent processing\nHands-on experience using AI coding tools (Claude Code or similar) in a real engineering workflow, and a point of view on when they help and when they don't\nA habit of following good coding patterns, writing appropriate tests, considering trade-offs, and seeking out edge cases\nComfortable giving and receiving feedback in code reviews\nA bias toward shipping, learning from production, and iterating quickly\nAn insatiable desire and ability to learn\nBS or MS in Computer Science, or equivalent practical experience\nHelpful, but not required:\nFluency in another modern object-oriented programming language\nExperience with TypeScript and Node.js\nExperience with Agile development\nExperience building and integrating with REST APIs\nExperience with AWS services such as DynamoDB, SQS, SNS, Lambda, and ElastiCache (Redis)\nExperience with notification and engagement platforms (Braze, Amazon Pinpoint, APNs, FCM) or in-app subscription billing (App Store, Google Play)\nExperience with stream processing frameworks such as Apache Flink or Kafka Streams\nExperience with A/B testing platforms (Statsig, LaunchDarkly, Optimizely) and analytics warehouses (BigQuery, Snowflake)\nExperience consuming or integrating LLM-based APIs (e.g., Bedrock, Vertex AI, OpenAI)\nFamiliarity with Kubernetes, Helm, and CI/CD pipelines\nAbout OfferUp:\nOfferUp is dedicated to creating the simplest and most trusted way for people to buy, sell, and connect in their local communities. One of the top local marketplace apps for local buyers and sellers in the U.S., OfferUp makes it easy for people to discover more of what they need—from great deals and secondhand goods to jobs, services, home rentals, and more—right in their own communities. Our trusted platform empowers millions to connect, thrive, and move life forward.\nAvailable on iOS and Android, OfferUp has consistently ranked among the top shopping apps. Founded in 2011 and based in Bellevue, WA, OfferUp serves local markets nationwide and was used by more than 1 in 6 adults in the U.S. in 2024. OfferUp is backed by leading investors, including Andreessen Horowitz, Warburg Pincus, GGV Capital, T. Rowe Price, and Coatue Management. https://about.offerup.com\nMore About OfferUp At a Glance\nTop 10 Shopping app in the App Store and Google Play Store for three years\n15%+ of adults in several major markets use OfferUp every month (LA, Miami, Phoenix, Seattle, Las Vegas, Riverside, Orlando)\nOfferUp works directly with nearly 2000 US law enforcement agencies to build trust in local communities\nOfferUp is unleashing the power of local, and we’ve built a dynamic team to do it. To learn more about working at OfferUp, check out https://about.offerup.com/people\nOfferUp provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, religion, sex, national origin, age, disability, or genetics. In addition to federal law requirements, OfferUp complies with applicable state and local laws governing nondiscrimination in employment in every location in which the company has facilities. This policy applies to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, transfer, leaves of absence, compensation, and training.\nOfferUp expressly prohibits any form of workplace harassment based on race, color, religion, gender, sexual orientation, gender identity or expression, national origin, age, genetic information, disability, or veteran status. Improper interference with the ability of OfferUp’s employees to perform their job duties may result in discipline up to and including discharge.\nTo apply: https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
+   "status": "Awaiting Review",
+   "id": "52d3a8dc-8cd2-4034-8ff6-665133c5a200",
+   "createdAt": "2026-10-22T08:13:29+00:00",
+   "requiredSkills": "development, engineer, remote, colombia, headquarters, about, offerup, team, builds, moments, turn, listing",
+   "postedAt": "2026-10-22",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "b5bb85cb908c86e4",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
+     "found_at": "2026-10-22T08:13:29+00:00"
+    }
+   ],
+   "matchScore": 66,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Software Engineer",
@@ -904,7 +946,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-21T15:47:42+00:00"
+     "found_at": "2026-10-22T08:13:23+00:00"
     }
    ],
    "matchScore": 66,
@@ -947,7 +989,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-21T15:47:47+00:00"
+     "found_at": "2026-10-22T08:13:29+00:00"
     }
    ],
    "matchScore": 66,
@@ -989,7 +1031,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-10-21T15:47:38+00:00"
+     "found_at": "2026-10-22T08:13:19+00:00"
     }
    ],
    "matchScore": 62,
@@ -1031,7 +1073,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-21T15:47:42+00:00"
+     "found_at": "2026-10-22T08:13:23+00:00"
     }
    ],
    "matchScore": 79,
@@ -1073,7 +1115,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-10-21T15:47:47+00:00"
+     "found_at": "2026-10-22T08:13:29+00:00"
     }
    ],
    "matchScore": 65,
@@ -1089,6 +1131,50 @@
     "Title matches your excluded list (Staff)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Staff Software Engineer",
+   "company": "Field Nation",
+   "description": "Staff Software Engineer position at Field Nation. Required skills: Javascript, React, Redux, Html, Css.",
+   "category": "Software Development",
+   "location": "Dhaka",
+   "source": "BD Tech Jobs",
+   "url": "https://www.bdtechjobs.com/jobs/33",
+   "status": "Awaiting Review",
+   "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
+   "createdAt": "2026-10-04T09:14:08+00:00",
+   "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
+   "postedAt": "2026-10-22",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full time",
+   "experienceText": "",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "0f4db844b373cba3",
+   "sources": [
+    {
+     "source": "BD Tech Jobs",
+     "url": "https://www.bdtechjobs.com/jobs/33",
+     "found_at": "2026-10-22T08:13:24+00:00"
+    }
+   ],
+   "matchScore": 65,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 50,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting",
+    "Title matches your excluded list (Staff)"
+   ],
+   "discoveredBy": "jsonld"
   },
   {
    "title": "Senior Staff Software Engineer - Query Execution",
@@ -1116,12 +1202,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-21T15:47:43+00:00"
+     "found_at": "2026-10-22T08:13:24+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-21T15:47:47+00:00"
+     "found_at": "2026-10-22T08:13:29+00:00"
     }
    ],
    "matchScore": 61,
@@ -1138,6 +1224,50 @@
     "Title matches your excluded list (Staff)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Senior Software Engineer (Full stack)",
+   "company": "Field Nation",
+   "description": "Senior Software Engineer (Full stack) position at Field Nation. Required skills: Php, MySQL, Node.Js, React, React-Native.",
+   "category": "Software Development",
+   "location": "Dhaka",
+   "source": "BD Tech Jobs",
+   "url": "https://www.bdtechjobs.com/jobs/13",
+   "status": "Awaiting Review",
+   "id": "f5865883-68f6-465f-bd2f-288009b745f7",
+   "createdAt": "2026-09-20T15:55:36+00:00",
+   "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
+   "postedAt": "2026-10-22",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full time",
+   "experienceText": "",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "346a2d3e096ad4d8",
+   "sources": [
+    {
+     "source": "BD Tech Jobs",
+     "url": "https://www.bdtechjobs.com/jobs/13",
+     "found_at": "2026-10-22T08:13:24+00:00"
+    }
+   ],
+   "matchScore": 61,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "jsonld"
   },
   {
    "title": "Staff Software Engineer",
@@ -1165,7 +1295,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-21T15:47:47+00:00"
+     "found_at": "2026-10-22T08:13:29+00:00"
     }
    ],
    "matchScore": 61,
@@ -1208,7 +1338,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-marketing-executive-marketing-executive-card-center-commercial-bank-of-ceylon-plc/",
-     "found_at": "2026-10-21T15:47:38+00:00"
+     "found_at": "2026-10-22T08:13:19+00:00"
     }
    ],
    "matchScore": 57,
@@ -1225,6 +1355,49 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Mid to Senior Level PHP Developer",
+   "company": "Invento",
+   "description": "Mid to Senior Level PHP Developer position at Invento. Required skills: Php, Laravel, Codeigniter, Python, Django.",
+   "category": "Software Development",
+   "location": "New DOHS Mohakhali, Dhaka",
+   "source": "BD Tech Jobs",
+   "url": "https://www.bdtechjobs.com/jobs/53",
+   "status": "Awaiting Review",
+   "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
+   "createdAt": "2026-10-14T08:18:26+00:00",
+   "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
+   "postedAt": "2026-10-22",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full time",
+   "experienceText": "",
+   "area": "Mohakhali",
+   "distanceKm": 1.9,
+   "fingerprint": "7204b33ddccbaa2f",
+   "sources": [
+    {
+     "source": "BD Tech Jobs",
+     "url": "https://www.bdtechjobs.com/jobs/53",
+     "found_at": "2026-10-22T08:13:24+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "jsonld"
   },
   {
    "title": "Senior Software Engineer, Infrastructure Platform",
@@ -1252,7 +1425,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-10-21T15:47:47+00:00"
+     "found_at": "2026-10-22T08:13:29+00:00"
     }
    ],
    "matchScore": 57,
@@ -1295,7 +1468,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-21T15:47:43+00:00"
+     "found_at": "2026-10-22T08:13:24+00:00"
     }
    ],
    "matchScore": 57,
@@ -1338,7 +1511,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-10-21T15:47:47+00:00"
+     "found_at": "2026-10-22T08:13:29+00:00"
     }
    ],
    "matchScore": 57,
@@ -1381,7 +1554,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-10-21T15:47:47+00:00"
+     "found_at": "2026-10-22T08:13:29+00:00"
     }
    ],
    "matchScore": 57,
@@ -1424,7 +1597,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-21T15:47:43+00:00"
+     "found_at": "2026-10-22T08:13:24+00:00"
     }
    ],
    "matchScore": 57,
@@ -1467,7 +1640,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-executive-marketing-brain-station-23/",
-     "found_at": "2026-10-21T15:47:34+00:00"
+     "found_at": "2026-10-22T08:13:19+00:00"
     }
    ],
    "matchScore": 53,
@@ -1511,7 +1684,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-operations-officer-noa-coxs-bazar-world-food-programme-wfp/",
-     "found_at": "2026-10-21T15:47:34+00:00"
+     "found_at": "2026-10-22T08:13:17+00:00"
     }
    ],
    "matchScore": 53,
