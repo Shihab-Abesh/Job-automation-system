@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-22T15:46:42+00:00",
+ "generatedAt": "2026-10-23T08:11:21+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 16,
+    "found": 17,
     "errors": [],
-    "raw": 291
+    "raw": 288
    },
    "jsonld": {
     "found": 4,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 24,
+    "found": 25,
     "errors": [],
-    "raw": 303
+    "raw": 306
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 38,
-   "new": 0,
+   "total": 40,
+   "new": 2,
    "expired": 0,
    "duplicatesFolded": 6,
    "priorityA": 9,
-   "priorityB": 14,
-   "priorityC": 15
+   "priorityB": 15,
+   "priorityC": 16
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-22T15:46:42+00:00"
+  "ranAt": "2026-10-23T08:11:20+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
-     "found_at": "2026-10-22T15:46:03+00:00"
+     "found_at": "2026-10-23T08:10:39+00:00"
     }
    ],
    "matchScore": 96,
@@ -145,7 +145,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-22T15:46:03+00:00"
+     "found_at": "2026-10-23T08:10:39+00:00"
     }
    ],
    "matchScore": 87,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
-     "found_at": "2026-10-22T15:46:02+00:00"
+     "found_at": "2026-10-23T08:10:38+00:00"
     }
    ],
    "matchScore": 83,
@@ -230,7 +230,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-10-22T15:46:08+00:00"
+     "found_at": "2026-10-23T08:10:44+00:00"
     }
    ],
    "matchScore": 83,
@@ -272,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-10-22T15:45:58+00:00"
+     "found_at": "2026-10-23T08:10:34+00:00"
     }
    ],
    "matchScore": 79,
@@ -314,7 +314,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-10-22T15:46:02+00:00"
+     "found_at": "2026-10-23T08:10:38+00:00"
     }
    ],
    "matchScore": 79,
@@ -356,7 +356,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-10-22T15:46:15+00:00"
+     "found_at": "2026-10-23T08:10:52+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +398,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-programme-coats-bangladesh/",
-     "found_at": "2026-10-22T15:45:58+00:00"
+     "found_at": "2026-10-23T08:10:34+00:00"
     }
    ],
    "matchScore": 75,
@@ -441,7 +441,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-10-22T15:45:55+00:00"
+     "found_at": "2026-10-23T08:10:33+00:00"
     }
    ],
    "matchScore": 75,
@@ -483,7 +483,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/agent-banking-operations-customer-support-executive-sbac-bank-plc/",
-     "found_at": "2026-10-22T15:45:59+00:00"
+     "found_at": "2026-10-23T08:10:34+00:00"
     }
    ],
    "matchScore": 74,
@@ -525,7 +525,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-22T15:46:02+00:00"
+     "found_at": "2026-10-23T08:10:38+00:00"
     }
    ],
    "matchScore": 73,
@@ -568,7 +568,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-22T15:46:02+00:00"
+     "found_at": "2026-10-23T08:10:38+00:00"
     }
    ],
    "matchScore": 72,
@@ -611,7 +611,49 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-10-22T15:46:24+00:00"
+     "found_at": "2026-10-23T08:11:00+00:00"
+    }
+   ],
+   "matchScore": 71,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "QA/DevOps Engineer",
+   "company": "Discord",
+   "description": "Headquarters: San Francisco Bay Area or Remote (U.S.)\nDiscord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.\nWe are seeking a QA/DevOps Engineer to join Discord’s Business Systems team. In this role, you will own automated test suite development and maintenance across Oracle ERP Cloud (Fusion) and Salesforce, with a focus on Tosca-based regression and progression testing. You will embed automated testing into CI/CD pipelines and partner closely with ERP Functional, Technical, and DevOps teams to ensure every release is tested consistently and defects are caught early.\nWhat you'll be doing\nRun Oracle ERP Cloud and Salesforce QA automation suites for all quarterly patch upgrades end-to-end.\nReview new Oracle and SFDC release features and recommend improvements to existing testing processes.\nBuild and improve regression and progression test automation in the Tosca environment for Oracle Fusion and Salesforce.\nCreate, maintain, and update Tosca scripts to reflect system and process changes across GL, AP, AR, and FAH modules.\nLead feature enhancement reviews as part of quarterly patch assessment cycles and new enhancement projects.\nIntegrate automated test suites into CI/CD pipelines; trigger regression suites automatically on every release candidate build.\nMaintain test infrastructure and environments in collaboration with DevOps and ERP Technical teams.\nDocument test coverage, defect trends, and release readiness in Jira and shared reporting dashboards.\nAutomation Use Cases\nFAH Process Automation: Auto-test Financial Accounting Hub on each new sales item addition to eliminate manual unit testing.\nAR Regression Suite: Automated flows for invoicing, receipts, and customer setup across every release.\nAP Regression Suite: Payment runs, supplier invoices, holds, and approvals tested automatically on each patch cycle.\nSalesforce Tosca Automation: Develop, maintain, and expand automated SFDC test suites in Tosca, integrated with release pipelines.\nWhat you should have\n3-5+ years of QA automation experience.\nHands-on Tosca experience for regression and progression test suite development and maintenance.\nExperience executing and maintaining automated test cycles for quarterly Oracle patch upgrades.\nFamiliarity with Oracle ERP Cloud and SFDC release feature review and technical impact assessment.\nExperience integrating automated test suites into CI/CD pipelines (Jenkins, GitHub Actions, GitLab CI, or equivalent).\nFamiliarity with pipeline configuration: triggering regression runs on pull requests and release candidate builds.\nWorking knowledge of version control (Git / GitHub or GitLab): branching, pull requests, and code review workflows.\nBasic scripting capability in Python, Shell, or PowerShell for test utility automation and pipeline support.\nUnderstanding of containerized test environments (Docker); experience running tests in ephemeral containers is a plus.\nJira for defect tracking, test coverage reporting, and sprint participation.\nExperience writing and maintaining test documentation: test plans, test cases, regression logs, and release readiness summaries.\nAbility to work cross-functionally with ERP Functional Analysts, ERP Technical Developers, and DevOps engineers.\nFamiliarity with SOX compliance, ITGC controls, and ERP change management practices.\nPreferred Qualifications\nOracle Fusion certification or formal training in Oracle ERP Cloud modules.\nExperience with SaaS QA automation in a high-growth technology company environment.\nExposure to OIC (Oracle Integration Cloud) or MuleSoft integration testing.\nFamiliarity with Salesforce test automation frameworks beyond Tosca (Selenium, Provar, or equivalent).\nPrior experience working with AMS or managed services vendors in an ERP context.\nKnowledge of Oracle quarterly release cycles and technical impact assessments.\nExposure to infrastructure-as-code or environment provisioning concepts (Terraform, Ansible).\nThis position is US-based and can be remote but if you live in the Bay Area, you’re welcome to work from our beautiful SF office.\nThe base salary range for this full-time position is listed below. This position will also be eligible for equity and benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in role postings reflect the base salary only, and do not include equity, or benefits.\nBase Salary\n$156,000 — $175,500 USD\nWhy Discord?\nDiscord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!\nDiscord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.\nPlease see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking HERE.\nTo apply: https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
+   "category": "Software Quality Assurance",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
+   "status": "Awaiting Review",
+   "id": "18d5dd77-8ea0-4dc9-b8fc-9e46bf403ceb",
+   "createdAt": "2026-10-23T08:10:48+00:00",
+   "requiredSkills": "qa/devops, engineer, headquarters, san, francisco, bay, area, remote, u.s., discord, has, highly",
+   "postedAt": "2026-10-23",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "a86326ab08210c3e",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
+     "found_at": "2026-10-23T08:10:48+00:00"
     }
    ],
    "matchScore": 71,
@@ -653,7 +695,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-22T15:46:03+00:00"
+     "found_at": "2026-10-23T08:10:39+00:00"
     }
    ],
    "matchScore": 71,
@@ -695,7 +737,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/32",
-     "found_at": "2026-10-22T15:46:03+00:00"
+     "found_at": "2026-10-23T08:10:39+00:00"
     }
    ],
    "matchScore": 71,
@@ -738,7 +780,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-10-22T15:46:08+00:00"
+     "found_at": "2026-10-23T08:10:44+00:00"
     }
    ],
    "matchScore": 71,
@@ -780,7 +822,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
-     "found_at": "2026-10-22T15:45:58+00:00"
+     "found_at": "2026-10-23T08:10:34+00:00"
     }
    ],
    "matchScore": 70,
@@ -820,7 +862,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-10-22T15:46:08+00:00"
+     "found_at": "2026-10-23T08:10:44+00:00"
     }
    ],
    "matchScore": 66,
@@ -862,7 +904,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/digital-marketing-executive-mr-diy-bangladesh/",
-     "found_at": "2026-10-22T15:45:59+00:00"
+     "found_at": "2026-10-23T08:10:34+00:00"
     }
    ],
    "matchScore": 66,
@@ -904,7 +946,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-10-22T15:46:07+00:00"
+     "found_at": "2026-10-23T08:10:44+00:00"
     }
    ],
    "matchScore": 66,
@@ -946,7 +988,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-22T15:46:02+00:00"
+     "found_at": "2026-10-23T08:10:38+00:00"
     }
    ],
    "matchScore": 66,
@@ -989,7 +1031,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-22T15:46:08+00:00"
+     "found_at": "2026-10-23T08:10:44+00:00"
     }
    ],
    "matchScore": 66,
@@ -1031,7 +1073,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-10-22T15:45:59+00:00"
+     "found_at": "2026-10-23T08:10:34+00:00"
     }
    ],
    "matchScore": 62,
@@ -1073,7 +1115,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-22T15:46:02+00:00"
+     "found_at": "2026-10-23T08:10:38+00:00"
     }
    ],
    "matchScore": 79,
@@ -1086,6 +1128,49 @@
    "priority": "C",
    "gateNotes": [
     "Pay tops out at Tk 13,000, below your Tk 20,000 floor"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Management Trainee Program (November 2026 Batch)",
+   "company": "MGH Group",
+   "description": "Position: Management Trainee (November 2026 Batch)\nCompany: MGH Group\nJob Location: Bangladesh (Aviation Sales based in Chittagong)\nEmployment Type: Management Trainee Program\nExperience: Fresh graduates or up to 2 years of experience\nEducation: Bachelor’s or Master’s degree in a relevant discipline, minimum CGPA 3.50\nDeadline: 30 October 2026\nAbout the Role\nMGH Group, a global conglomerate operating across 26 countries, is looking for its next generation of leaders through the MGH Group Management Trainee Program, November 2026 batch.\nAvailable Functions\nFinance (opportunities across Group businesses and locations)\nFreight Forwarding / Shipping Line: Sales, CRM & Documentation\nAviation Sales (base location: Chittagong)\nForward Deployment Engineer (automating manual processes through technology)\nHuman Resources (HR)\nWho MGH Is Looking For\nBachelor’s or Master’s degree in a relevant discipline\nMinimum CGPA: 3.50\nFresh graduates or candidates with up to 2 years of experience\nA strong zeal to learn, a sharp analytical mind, and an exceptional academic and extracurricular track record\nWhy MGH\nHands-on business exposure, learning from experienced leaders, and a structured leadership journey\nAbout MGH Group\nMGH Group is a global conglomerate operating across 26 countries.\nHow to Apply\nInterested candidates can apply through the MGH Group’s own Google Form (“MGH Group Management Trainee Program”) using the Apply Now button. The application deadline is 30 October 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/management-trainee-program-november-2026-batch-mgh-group/",
+   "status": "Awaiting Review",
+   "id": "663868f8-28ba-4ada-8a9f-c51bb3eda786",
+   "createdAt": "2026-10-23T08:10:33+00:00",
+   "requiredSkills": "trainee, program, november, 2026, batch, mgh, group, location, bangladesh, aviation, sales, based",
+   "postedAt": "2026-10-22",
+   "deadline": "2026-10-30",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "Fresher",
+   "area": "Chittagong",
+   "distanceKm": 211.4,
+   "fingerprint": "9df07dd6df9da1be",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/management-trainee-program-november-2026-batch-mgh-group/",
+     "found_at": "2026-10-23T08:10:33+00:00"
+    }
+   ],
+   "matchScore": 75,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Chittagong is about 211.4 km out, past your 10 km limit"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -1115,7 +1200,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-10-22T15:46:07+00:00"
+     "found_at": "2026-10-23T08:10:44+00:00"
     }
    ],
    "matchScore": 65,
@@ -1144,7 +1229,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-23",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1158,7 +1243,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/33",
-     "found_at": "2026-10-22T15:46:03+00:00"
+     "found_at": "2026-10-23T08:10:39+00:00"
     }
    ],
    "matchScore": 65,
@@ -1202,12 +1287,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-22T15:46:03+00:00"
+     "found_at": "2026-10-23T08:10:39+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-22T15:46:08+00:00"
+     "found_at": "2026-10-23T08:10:44+00:00"
     }
    ],
    "matchScore": 61,
@@ -1237,7 +1322,7 @@
    "id": "f5865883-68f6-465f-bd2f-288009b745f7",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-23",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1251,7 +1336,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-22T15:46:03+00:00"
+     "found_at": "2026-10-23T08:10:39+00:00"
     }
    ],
    "matchScore": 61,
@@ -1295,7 +1380,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-22T15:46:08+00:00"
+     "found_at": "2026-10-23T08:10:44+00:00"
     }
    ],
    "matchScore": 61,
@@ -1338,7 +1423,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-marketing-executive-marketing-executive-card-center-commercial-bank-of-ceylon-plc/",
-     "found_at": "2026-10-22T15:45:58+00:00"
+     "found_at": "2026-10-23T08:10:34+00:00"
     }
    ],
    "matchScore": 57,
@@ -1368,7 +1453,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-10-22",
+   "postedAt": "2026-10-23",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1382,7 +1467,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/53",
-     "found_at": "2026-10-22T15:46:03+00:00"
+     "found_at": "2026-10-23T08:10:39+00:00"
     }
    ],
    "matchScore": 57,
@@ -1425,7 +1510,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-10-22T15:46:08+00:00"
+     "found_at": "2026-10-23T08:10:44+00:00"
     }
    ],
    "matchScore": 57,
@@ -1468,7 +1553,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-22T15:46:03+00:00"
+     "found_at": "2026-10-23T08:10:39+00:00"
     }
    ],
    "matchScore": 57,
@@ -1511,7 +1596,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-10-22T15:46:07+00:00"
+     "found_at": "2026-10-23T08:10:44+00:00"
     }
    ],
    "matchScore": 57,
@@ -1554,7 +1639,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-10-22T15:46:07+00:00"
+     "found_at": "2026-10-23T08:10:44+00:00"
     }
    ],
    "matchScore": 57,
@@ -1597,7 +1682,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-22T15:46:03+00:00"
+     "found_at": "2026-10-23T08:10:39+00:00"
     }
    ],
    "matchScore": 57,
@@ -1640,7 +1725,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-executive-marketing-brain-station-23/",
-     "found_at": "2026-10-22T15:45:58+00:00"
+     "found_at": "2026-10-23T08:10:34+00:00"
     }
    ],
    "matchScore": 53,
@@ -1684,7 +1769,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-operations-officer-noa-coxs-bazar-world-food-programme-wfp/",
-     "found_at": "2026-10-22T15:45:55+00:00"
+     "found_at": "2026-10-23T08:10:33+00:00"
     }
    ],
    "matchScore": 53,
