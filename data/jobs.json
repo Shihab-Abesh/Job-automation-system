@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-23T15:35:48+00:00",
+ "generatedAt": "2026-10-24T07:49:52+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -33,7 +33,7 @@
    "bdrecruit": {
     "found": 17,
     "errors": [],
-    "raw": 288
+    "raw": 300
    },
    "jsonld": {
     "found": 4,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 25,
+    "found": 26,
     "errors": [],
-    "raw": 306
+    "raw": 308
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 40,
-   "new": 0,
+   "total": 41,
+   "new": 1,
    "expired": 0,
    "duplicatesFolded": 6,
    "priorityA": 9,
    "priorityB": 15,
-   "priorityC": 16
+   "priorityC": 17
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-23T15:35:48+00:00"
+  "ranAt": "2026-10-24T07:49:52+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
-     "found_at": "2026-10-23T15:35:07+00:00"
+     "found_at": "2026-10-24T07:49:12+00:00"
     }
    ],
    "matchScore": 96,
@@ -145,7 +145,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-23T15:35:07+00:00"
+     "found_at": "2026-10-24T07:49:12+00:00"
     }
    ],
    "matchScore": 87,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
-     "found_at": "2026-10-23T15:35:05+00:00"
+     "found_at": "2026-10-24T07:49:11+00:00"
     }
    ],
    "matchScore": 83,
@@ -230,7 +230,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-10-23T15:35:11+00:00"
+     "found_at": "2026-10-24T07:49:16+00:00"
     }
    ],
    "matchScore": 83,
@@ -272,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-10-23T15:35:01+00:00"
+     "found_at": "2026-10-24T07:49:07+00:00"
     }
    ],
    "matchScore": 79,
@@ -314,7 +314,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-10-23T15:35:05+00:00"
+     "found_at": "2026-10-24T07:49:11+00:00"
     }
    ],
    "matchScore": 79,
@@ -356,7 +356,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-10-23T15:35:19+00:00"
+     "found_at": "2026-10-24T07:49:24+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +398,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-programme-coats-bangladesh/",
-     "found_at": "2026-10-23T15:35:01+00:00"
+     "found_at": "2026-10-24T07:49:07+00:00"
     }
    ],
    "matchScore": 75,
@@ -441,7 +441,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-10-23T15:34:58+00:00"
+     "found_at": "2026-10-24T07:49:02+00:00"
     }
    ],
    "matchScore": 75,
@@ -483,7 +483,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/agent-banking-operations-customer-support-executive-sbac-bank-plc/",
-     "found_at": "2026-10-23T15:35:01+00:00"
+     "found_at": "2026-10-24T07:49:07+00:00"
     }
    ],
    "matchScore": 74,
@@ -525,7 +525,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-23T15:35:05+00:00"
+     "found_at": "2026-10-24T07:49:11+00:00"
     }
    ],
    "matchScore": 73,
@@ -568,7 +568,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-23T15:35:05+00:00"
+     "found_at": "2026-10-24T07:49:11+00:00"
     }
    ],
    "matchScore": 72,
@@ -611,7 +611,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-10-23T15:35:27+00:00"
+     "found_at": "2026-10-24T07:49:32+00:00"
     }
    ],
    "matchScore": 71,
@@ -653,7 +653,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-10-23T15:35:15+00:00"
+     "found_at": "2026-10-24T07:49:20+00:00"
     }
    ],
    "matchScore": 71,
@@ -695,7 +695,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-23T15:35:07+00:00"
+     "found_at": "2026-10-24T07:49:12+00:00"
     }
    ],
    "matchScore": 71,
@@ -737,7 +737,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/31",
-     "found_at": "2026-10-23T15:35:06+00:00"
+     "found_at": "2026-10-24T07:49:12+00:00"
     }
    ],
    "matchScore": 71,
@@ -780,7 +780,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-10-23T15:35:11+00:00"
+     "found_at": "2026-10-24T07:49:16+00:00"
     }
    ],
    "matchScore": 71,
@@ -822,7 +822,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
-     "found_at": "2026-10-23T15:35:01+00:00"
+     "found_at": "2026-10-24T07:49:07+00:00"
     }
    ],
    "matchScore": 70,
@@ -862,7 +862,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-10-23T15:35:11+00:00"
+     "found_at": "2026-10-24T07:49:16+00:00"
     }
    ],
    "matchScore": 66,
@@ -904,7 +904,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/digital-marketing-executive-mr-diy-bangladesh/",
-     "found_at": "2026-10-23T15:35:01+00:00"
+     "found_at": "2026-10-24T07:49:07+00:00"
     }
    ],
    "matchScore": 66,
@@ -946,7 +946,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-10-23T15:35:11+00:00"
+     "found_at": "2026-10-24T07:49:16+00:00"
     }
    ],
    "matchScore": 66,
@@ -988,7 +988,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-23T15:35:05+00:00"
+     "found_at": "2026-10-24T07:49:11+00:00"
     }
    ],
    "matchScore": 66,
@@ -1031,7 +1031,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-23T15:35:11+00:00"
+     "found_at": "2026-10-24T07:49:16+00:00"
     }
    ],
    "matchScore": 66,
@@ -1073,7 +1073,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-10-23T15:35:01+00:00"
+     "found_at": "2026-10-24T07:49:11+00:00"
     }
    ],
    "matchScore": 62,
@@ -1115,7 +1115,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-23T15:35:05+00:00"
+     "found_at": "2026-10-24T07:49:11+00:00"
     }
    ],
    "matchScore": 79,
@@ -1157,7 +1157,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-program-november-2026-batch-mgh-group/",
-     "found_at": "2026-10-23T15:34:58+00:00"
+     "found_at": "2026-10-24T07:49:02+00:00"
     }
    ],
    "matchScore": 75,
@@ -1200,7 +1200,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-10-23T15:35:11+00:00"
+     "found_at": "2026-10-24T07:49:16+00:00"
     }
    ],
    "matchScore": 65,
@@ -1229,7 +1229,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-24",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1243,7 +1243,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/32",
-     "found_at": "2026-10-23T15:35:06+00:00"
+     "found_at": "2026-10-24T07:49:12+00:00"
     }
    ],
    "matchScore": 65,
@@ -1287,12 +1287,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-23T15:35:07+00:00"
+     "found_at": "2026-10-24T07:49:12+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-23T15:35:11+00:00"
+     "found_at": "2026-10-24T07:49:16+00:00"
     }
    ],
    "matchScore": 61,
@@ -1322,7 +1322,7 @@
    "id": "f5865883-68f6-465f-bd2f-288009b745f7",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-24",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1336,7 +1336,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-23T15:35:06+00:00"
+     "found_at": "2026-10-24T07:49:12+00:00"
     }
    ],
    "matchScore": 61,
@@ -1353,6 +1353,49 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "jsonld"
+  },
+  {
+   "title": "Senior Software Engineer (R14285)",
+   "company": "Oportun",
+   "description": "Headquarters: Remote - US\nWho We Are\nOportun (Nasdaq: OPRT) is a mission-driven financial services company that puts its members' financial goals within reach. With intelligent borrowing, savings, and budgeting capabilities, Oportun empowers members with the confidence to build a better financial future. Since inception, Oportun has provided more than $22.7 billion in responsible and affordable credit, saved its members more than $2.5 billion in interest and fees, and helped its members set aside an average of more than $1,800 annually.\nThe Opportunity\nThe Engineering Ecosystem Org exists to help engineers deliver member value with high speed and high quality. As a Senior Software Engineer, you will design, build, and operate scalable platform services and shared libraries that improve developer productivity, system reliability, and delivery velocity. In your first year, success means delivering complex platform capabilities end-to-end, contributing to architecture decisions, and raising engineering quality through strong technical practices and mentorship .\nAt Oportun, we move fast and we hold each other to a high bar. If you care about doing your best work while actually moving the needle for real people, you'll fit right in.\nWhat You'll Do\nYour day-to-day\nYou'll design, build, test, deploy, and maintain scalable, reliable platform services and shared libraries.\nYou'll contribute to platform and system architecture decisions with a focus on reliability, scalability, and developer experience.\nYou'll write high-quality, maintainable code and model strong engineering best practices.\nYou'll collaborate with Staff Engineers and peers to implement standards and patterns that support Continuous Delivery.\nYou'll identify and address performance, scalability, and reliability issues across platform services.\nYou'll participate actively in design reviews, code reviews, and technical discussions, providing thoughtful and constructive feedback.\nYou'll drive operational excellence by improving monitoring, alerting, and incident response practices.\nYou'll investigate root causes of production issues and implement long-term fixes to reduce on-call burden.\nYou'll mentor and support junior and mid-level engineers through code reviews, pairing, and technical guidance.\nYou'll partner with cross-functional teams to understand requirements and deliver solutions that create measurable business and customer value.\nYou'll bring ideas for how we can do things better - proactively, not just when asked.\nYou'll look for ways to use AI tools thoughtfully - to work smarter, reduce manual work, and make better decisions faster.\nWho You Are\nThe right fit looks like this\nYou're a hands-on engineer who enjoys solving complex technical problems, navigating ambiguity, and improving systems that other engineers depend on. You take ownership from design through production, communicate clearly, and help raise the technical bar through mentorship and constructive feedback.\nYou're comfortable navigating complexity and don't wait for perfect information to move forward. You communicate clearly, give direct feedback, and expect the same in return.\nWhat You Bring\nSkills & experience\nRequired\nYou'll have 7-8 years of related software engineering experience with a bachelor's degree, or a master's degree with an equivalent combination of education and experience.\nYou've demonstrated strong experience in software development focused on backend systems and services.\nYou bring proficiency in Java, C#, C++, or similar backend languages, with strong knowledge of software design principles, data structures, and algorithms.\nYou have experience building and operating scalable, reliable, and secure systems, including 3+ years designing, building, deploying, and maintaining container-based applications.\nYou bring 4+ years of experience working with cloud platforms such as AWS, GCP, or Azure.\nYou have experience with Continuous Delivery practices and automated deployment pipelines.\nYou have strong problem-solving and debugging skills, effective communication and collaboration skills, and experience mentoring junior engineers and contributing to team-level technical leadership.\nYou bring working knowledge of secure development practices and security considerations in distributed systems.\nNice to Have\nExperience in financial services or the fintech industry.\nFamiliarity with shared platforms, distributed systems, developer productivity, or engineering ecosystem practices.\nYou've used AI tools such as ChatGPT, Copilot, or similar to improve your own productivity.\nOur AI Mindset\nWe build with AI. We lead with judgment.\nAI isn't a feature here. It's how we work.\nWe're excited about what AI makes possible, and we're looking for people who share that curiosity. You don't need to be an expert. You need to be open to experimenting , willing to learn, and able to apply new tools in ways that actually move the needle.\nIn this role, you'll be encouraged to explore AI tools, find practical use cases for your function, and bring ideas for working smarter. We believe the best outcomes come when human judgment and AI capability work together .\nWhy Oportun\nWhat's in it for you\nOportun offers a competitive compensation and benefits package designed to support your physical, financial, and professional well-being. Benefits vary by country of employment.\nSome of the benefits available to eligible employees include:\nUS Benefits:\nMedical, Dental & Vision Insurance\n401(k) including company match\nFlexible PTO and Parental Leave\nCompany-paid Life & Disability Insurance\nEligibility and plan details vary by location and employment status. To learn more about Oportun and our benefits, visit oportun.com/careers\nThe US salary range for this full-time position is $124,200 - $198,700.\nOur salary ranges are determined by role, level, and location. The range displayed on each job posting reflects a national minimum and maximum range for new hire salaries for this position.\nWithin this range, individual pay is determined by work location and additional factors, such as job-related skills, experience, and relevant education or training. Your recruiter can share more about the specific salary range that meets your criteria during the hiring process.\nPlease note that the compensation range listed in this posting reflects only the base salary for this position and does not include other compensation elements or benefits. #LI-REMOTE #LI-RR1\nWe are proud to be an Equal Opportunity Employer and consider all qualified applicants for employment opportunities without regard to race, age, color, religion, gender, national origin, disability, sexual orientation, veteran status or any other category protected by the laws or regulations in the locations where we operate.\nCalifornia applicants can find a copy of Oportun's CCPA Notice here: https://oportun.com/privacy/california-privacy-notice/ .\nWe will never request personal identifiable information (bank, credit card, etc.) before you are hired. We do not charge you for pre-employment fees such as background checks, training, or equipment. If you think you have been a victim of fraud by someone posing as us, please report your experience to the FBI’s Internet Crime Complaint Center (IC3).\nTo apply: https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
+   "status": "Awaiting Review",
+   "id": "e5d57ea5-595a-4eea-924a-011a1ff65a06",
+   "createdAt": "2026-10-24T07:49:16+00:00",
+   "requiredSkills": "senior, engineer, r14285, headquarters, remote, who, oportun, nasdaq, oprt, mission, driven, financial",
+   "postedAt": "2026-10-24",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "24761a7ad8ac27e9",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
+     "found_at": "2026-10-24T07:49:16+00:00"
+    }
+   ],
+   "matchScore": 61,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Staff Software Engineer",
@@ -1380,7 +1423,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-23T15:35:11+00:00"
+     "found_at": "2026-10-24T07:49:16+00:00"
     }
    ],
    "matchScore": 61,
@@ -1423,7 +1466,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-marketing-executive-marketing-executive-card-center-commercial-bank-of-ceylon-plc/",
-     "found_at": "2026-10-23T15:35:01+00:00"
+     "found_at": "2026-10-24T07:49:07+00:00"
     }
    ],
    "matchScore": 57,
@@ -1453,7 +1496,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-10-23",
+   "postedAt": "2026-10-24",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1467,7 +1510,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/47",
-     "found_at": "2026-10-23T15:35:06+00:00"
+     "found_at": "2026-10-24T07:49:12+00:00"
     }
    ],
    "matchScore": 57,
@@ -1510,7 +1553,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-10-23T15:35:11+00:00"
+     "found_at": "2026-10-24T07:49:16+00:00"
     }
    ],
    "matchScore": 57,
@@ -1553,7 +1596,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-23T15:35:07+00:00"
+     "found_at": "2026-10-24T07:49:12+00:00"
     }
    ],
    "matchScore": 57,
@@ -1596,7 +1639,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-10-23T15:35:11+00:00"
+     "found_at": "2026-10-24T07:49:16+00:00"
     }
    ],
    "matchScore": 57,
@@ -1639,7 +1682,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-10-23T15:35:11+00:00"
+     "found_at": "2026-10-24T07:49:16+00:00"
     }
    ],
    "matchScore": 57,
@@ -1682,7 +1725,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-23T15:35:07+00:00"
+     "found_at": "2026-10-24T07:49:12+00:00"
     }
    ],
    "matchScore": 57,
@@ -1725,7 +1768,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-executive-marketing-brain-station-23/",
-     "found_at": "2026-10-23T15:35:01+00:00"
+     "found_at": "2026-10-24T07:49:07+00:00"
     }
    ],
    "matchScore": 53,
@@ -1769,7 +1812,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-operations-officer-noa-coxs-bazar-world-food-programme-wfp/",
-     "found_at": "2026-10-23T15:34:58+00:00"
+     "found_at": "2026-10-24T07:49:02+00:00"
     }
    ],
    "matchScore": 53,
