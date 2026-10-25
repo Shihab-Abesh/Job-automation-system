@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-24T14:12:26+00:00",
+ "generatedAt": "2026-10-25T08:02:02+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -33,7 +33,7 @@
    "bdrecruit": {
     "found": 17,
     "errors": [],
-    "raw": 300
+    "raw": 284
    },
    "jsonld": {
     "found": 4,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 26,
+    "found": 28,
     "errors": [],
-    "raw": 308
+    "raw": 310
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 41,
-   "new": 0,
+   "total": 43,
+   "new": 3,
    "expired": 0,
    "duplicatesFolded": 6,
    "priorityA": 9,
-   "priorityB": 15,
-   "priorityC": 17
+   "priorityB": 16,
+   "priorityC": 18
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-24T14:12:26+00:00"
+  "ranAt": "2026-10-25T08:02:02+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
-     "found_at": "2026-10-24T14:11:38+00:00"
+     "found_at": "2026-10-25T08:01:22+00:00"
     }
    ],
    "matchScore": 96,
@@ -145,7 +145,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-24T14:11:38+00:00"
+     "found_at": "2026-10-25T08:01:22+00:00"
     }
    ],
    "matchScore": 87,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
-     "found_at": "2026-10-24T14:11:36+00:00"
+     "found_at": "2026-10-25T08:01:21+00:00"
     }
    ],
    "matchScore": 83,
@@ -230,7 +230,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-10-24T14:11:43+00:00"
+     "found_at": "2026-10-25T08:01:27+00:00"
     }
    ],
    "matchScore": 83,
@@ -272,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-10-24T14:11:32+00:00"
+     "found_at": "2026-10-25T08:01:18+00:00"
     }
    ],
    "matchScore": 79,
@@ -314,7 +314,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/rfl-group/career/management-trainee-officer-mto-brand/2026",
-     "found_at": "2026-10-24T14:11:36+00:00"
+     "found_at": "2026-10-25T08:01:21+00:00"
     }
    ],
    "matchScore": 79,
@@ -356,7 +356,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-10-24T14:11:50+00:00"
+     "found_at": "2026-10-25T08:01:34+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +398,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-programme-coats-bangladesh/",
-     "found_at": "2026-10-24T14:11:32+00:00"
+     "found_at": "2026-10-25T08:01:18+00:00"
     }
    ],
    "matchScore": 75,
@@ -441,7 +441,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-10-24T14:11:30+00:00"
+     "found_at": "2026-10-25T08:01:15+00:00"
     }
    ],
    "matchScore": 75,
@@ -483,7 +483,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/agent-banking-operations-customer-support-executive-sbac-bank-plc/",
-     "found_at": "2026-10-24T14:11:32+00:00"
+     "found_at": "2026-10-25T08:01:18+00:00"
     }
    ],
    "matchScore": 74,
@@ -525,7 +525,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-24T14:11:36+00:00"
+     "found_at": "2026-10-25T08:01:21+00:00"
     }
    ],
    "matchScore": 73,
@@ -568,7 +568,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-24T14:11:36+00:00"
+     "found_at": "2026-10-25T08:01:21+00:00"
     }
    ],
    "matchScore": 72,
@@ -611,7 +611,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-10-24T14:11:58+00:00"
+     "found_at": "2026-10-25T08:01:43+00:00"
     }
    ],
    "matchScore": 71,
@@ -653,7 +653,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-10-24T14:11:46+00:00"
+     "found_at": "2026-10-25T08:01:30+00:00"
     }
    ],
    "matchScore": 71,
@@ -695,7 +695,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-24T14:11:38+00:00"
+     "found_at": "2026-10-25T08:01:22+00:00"
     }
    ],
    "matchScore": 71,
@@ -737,7 +737,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/31",
-     "found_at": "2026-10-24T14:11:37+00:00"
+     "found_at": "2026-10-25T08:01:22+00:00"
     }
    ],
    "matchScore": 71,
@@ -780,7 +780,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-10-24T14:11:43+00:00"
+     "found_at": "2026-10-25T08:01:27+00:00"
     }
    ],
    "matchScore": 71,
@@ -822,7 +822,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
-     "found_at": "2026-10-24T14:11:32+00:00"
+     "found_at": "2026-10-25T08:01:18+00:00"
     }
    ],
    "matchScore": 70,
@@ -862,7 +862,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-10-24T14:11:43+00:00"
+     "found_at": "2026-10-25T08:01:27+00:00"
     }
    ],
    "matchScore": 66,
@@ -904,7 +904,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/digital-marketing-executive-mr-diy-bangladesh/",
-     "found_at": "2026-10-24T14:11:32+00:00"
+     "found_at": "2026-10-25T08:01:18+00:00"
     }
    ],
    "matchScore": 66,
@@ -946,7 +946,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-10-24T14:11:43+00:00"
+     "found_at": "2026-10-25T08:01:26+00:00"
     }
    ],
    "matchScore": 66,
@@ -988,7 +988,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-24T14:11:36+00:00"
+     "found_at": "2026-10-25T08:01:21+00:00"
     }
    ],
    "matchScore": 66,
@@ -1004,6 +1004,48 @@
     "Exact area not stated in the posting"
    ],
    "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Software Engineer - PlanetScale Postgres",
+   "company": "PlanetScale",
+   "description": "Headquarters: Remote\nPlanetScale is growing rapidly and reinventing the database space. The PlanetScale platform delivers a fully managed, multi-cloud Postgres service designed for the most demanding production workloads. We handle the complexity of provisioning, scaling, replication, and failover - so engineering teams can focus on building their products.\nOur customers entrust us with their most precious digital asset, their data, so the stakes couldn't be higher. We're looking for a Software Engineer to join our Postgres engineering team and help us build a world-class managed Postgres offering.\nWhat's the job to be done?\nYou will design and build the control plane that provisions, scales, and heals Postgres clusters with minimal customer-visible downtime.\nYou will build and maintain high availability, disaster recovery, and data protection solutions that keep customer databases safe through infrastructure failures.\nYou will tune Postgres to operate at scale for some of the largest and most demanding workloads in the world.\nYou will build tooling and automation for database operations, backup, restore, and migration workflows - and participate in an on-call rotation.\nYou will work directly with customers to understand their workloads and translate real-world needs into platform improvements.\nThese attributes best describe you...\nYou have strong experience building, operating, or maintaining large-scale Postgres deployments in production.\nYou have an excellent understanding of low-level operating systems concepts including multi-threading, memory management, networking, storage, and performance.\nYou have strong fundamental computer science skills and can reason about distributed, fault-tolerant systems.\nYou thrive in a collaborative environment, enjoy mentoring other engineers, and communicate complex technical tradeoffs clearly.\nYou are self-motivated and can work independently with minimal guidance while making sound technical decisions.\nWhat you will need\n5+ years of software engineering experience designing, building, and supporting large-scale systems in production.\nStrong proficiency in Go, with experience in other languages like Ruby, Python, Zig or Rust.\nExperience building and maintaining distributed, fault-tolerant services.\nWorking knowledge of Kubernetes and containerized applications.\nExperience building and operating distributed systems at scale.\nWhat else will help you be successful\nExperience building or operating a database-as-a-service or managed database platform.\nExperience with connection pooling and proxy layers for Postgres.\nExperience with cloud platforms (AWS, GCP, Azure) and infrastructure-as-code.\nContributions to open-source projects, especially in the Postgres or database infrastructure space.\nExperience working with remote, geographically distributed teams.\nPrevious experience at a high-growth technology company.\nWhy PlanetScale\nWe're redefining how high-growth companies manage data at scale—and we work with some of the most exciting brands in gaming, consumer tech, and B2B SaaS. As a Software Engineer, you'll be at the core of building the platform that powers world-class apps used by hundreds of millions of users worldwide. PlanetScale is a profitable company with a philosophy centered around building small teams of p99 individuals and is recognized as one of the fastest growing companies in America.\nAt PlanetScale we believe in supporting people to do their best work and thrive no matter the location. Our mission is to build a diverse, equitable, and inclusive company. We strive to build an inclusive environment where all people feel that they are equally respected and valued, whether they are a candidate or an employee. We welcome applicants of any educational background, gender identity and expression, sexual orientation, religion, ethnicity, age, citizenship, socioeconomic status, disability, pregnancy status, and veteran status.\nIf you have a disability, please let us know if there's any way we can make the interview process better for you; we're happy to accommodate!\nTotal Compensation and Pay Transparency\nAn employee's total compensation consists of base salary + variable comp where appropriate + benefits + equity. A member of our Talent Acquisition team will be happy to answer any further questions when we engage with you to begin the interview process.\nBase salary range: $120,000 - $290,000 USD\nTo apply: https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
+   "status": "Awaiting Review",
+   "id": "cb694989-5953-4f07-961a-f8ece6f93038",
+   "createdAt": "2026-10-25T08:01:26+00:00",
+   "requiredSkills": "engineer, planetscale, postgres, headquarters, remote, growing, rapidly, reinventing, space., platform, delivers, fully",
+   "postedAt": "2026-10-25",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "cda9766b42000955",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
+     "found_at": "2026-10-25T08:01:26+00:00"
+    }
+   ],
+   "matchScore": 66,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Software engineer",
@@ -1031,7 +1073,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-24T14:11:43+00:00"
+     "found_at": "2026-10-25T08:01:27+00:00"
     }
    ],
    "matchScore": 66,
@@ -1073,7 +1115,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-10-24T14:11:36+00:00"
+     "found_at": "2026-10-25T08:01:18+00:00"
     }
    ],
    "matchScore": 62,
@@ -1115,7 +1157,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-24T14:11:36+00:00"
+     "found_at": "2026-10-25T08:01:21+00:00"
     }
    ],
    "matchScore": 79,
@@ -1157,7 +1199,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-program-november-2026-batch-mgh-group/",
-     "found_at": "2026-10-24T14:11:30+00:00"
+     "found_at": "2026-10-25T08:01:15+00:00"
     }
    ],
    "matchScore": 75,
@@ -1200,7 +1242,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-10-24T14:11:43+00:00"
+     "found_at": "2026-10-25T08:01:27+00:00"
     }
    ],
    "matchScore": 65,
@@ -1229,7 +1271,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-24",
+   "postedAt": "2026-10-25",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1243,7 +1285,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/32",
-     "found_at": "2026-10-24T14:11:37+00:00"
+     "found_at": "2026-10-25T08:01:22+00:00"
     }
    ],
    "matchScore": 65,
@@ -1287,12 +1329,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-24T14:11:38+00:00"
+     "found_at": "2026-10-25T08:01:22+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-24T14:11:43+00:00"
+     "found_at": "2026-10-25T08:01:27+00:00"
     }
    ],
    "matchScore": 61,
@@ -1322,7 +1364,7 @@
    "id": "f5865883-68f6-465f-bd2f-288009b745f7",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-24",
+   "postedAt": "2026-10-25",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1336,7 +1378,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-24T14:11:37+00:00"
+     "found_at": "2026-10-25T08:01:22+00:00"
     }
    ],
    "matchScore": 61,
@@ -1380,7 +1422,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-10-24T14:11:43+00:00"
+     "found_at": "2026-10-25T08:01:26+00:00"
     }
    ],
    "matchScore": 61,
@@ -1423,7 +1465,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-24T14:11:43+00:00"
+     "found_at": "2026-10-25T08:01:27+00:00"
     }
    ],
    "matchScore": 61,
@@ -1441,46 +1483,45 @@
    "discoveredBy": "rss"
   },
   {
-   "title": "Senior Marketing Executive / Marketing Executive, Card Center",
-   "company": "Commercial Bank of Ceylon PLC",
-   "description": "Position: Senior Marketing Executive / Marketing Executive, Card Center\nCompany: Commercial Bank of Ceylon PLC\nJob Location: Dhaka\nJob Type: Full-Time\nExperience: Not mentioned\nEducation: Bachelor / Honors\nSalary: Negotiable\nDeadline: 24 October 2026\nAbout the Role\nCommercial Bank of Ceylon PLC is hiring a Senior Marketing Executive / Marketing Executive for its Card Center in Dhaka, to drive quality credit card acquisition and active card usage through direct sales, corporate relationships and targeted marketing.\nKey Responsibilities\nOwn assigned credit card targets and prepare monthly acquisition and visit plans; develop corporate, payroll, branch and referral channels, including eligible premium customers\nBuild relationships with corporate HR and finance contacts; conduct customer visits, presentations and on-site campaigns with branch and relationship teams\nPropose and execute approved campaigns within agreed budgets; monitor competitor offers, customer feedback, campaign conversion and acquisition cost\nExplain eligibility, benefits, fees and repayment obligations accurately; prepare complete applications with customer consents under the Bank’s checklist\nSubmit applications within prescribed timelines, resolve document gaps and follow up through decision and delivery\nFollow up on activation, first use and supplementary card opportunities; coordinate service issues with Card Operations and the Call Centre\nMaintain daily sales and visit records and report leads, submissions, approvals and pending items; coach junior sales staff as assigned\nProvide necessary support to the recovery team as and when applicable\nFollow Bank and regulatory policies on KYC, AML/CFT, confidentiality and fair selling; escalate suspected fraud and complaints\nRequirements\nBachelor / Honors degree\nStrong sales and negotiation skills\nAbility to demonstrate acquisition results\nKnowledge of Bangladesh’s card market\nExcellent communication and presentation skills\nProficiency in MS Office\nAbility to work independently and collaboratively\nSalary\nNegotiable\nAbout Commercial Bank of Ceylon PLC\nCommercial Bank of Ceylon PLC is a Sri Lankan bank that started its operation in Bangladesh in 2003.\nHow to Apply\nInterested candidates can apply through the bdjobs.com listing posted by Commercial Bank of Ceylon PLC using the Apply Now button. The application deadline is 24 October 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
+   "title": "Data Analyst – Monitoring, Research and Measurement (MRM)",
+   "company": "SAJIDA Foundation",
+   "description": "Position: Data Analyst – Monitoring, Research and Measurement (MRM)\nCompany: SAJIDA Foundation\nJob Location: Head Office, Dhaka (with frequent field travel)\nEmployment Type: Full-time\nExperience: Minimum 3 years of MEAL / MRM experience in NGOs, international organisations or development programmes\nEducation: Bachelor’s in Social Sciences, Statistics, International Development, Research Methods, M&E or related; Master’s an advantage\nDeadline: 28 October 2026\nAbout the Role\nSAJIDA Foundation is hiring a Data Analyst for its MRM unit to manage, analyse and report programme data for evidence-based decisions.\nKey Responsibilities\nMaintain the project MRM / MEAL framework, indicators and data collection tools\nCoordinate routine monitoring and keep project databases accurate\nRun data quality assessments and verification exercises\nLead baseline and capacity assessments and surveys\nProduce monitoring reports, dashboards and performance analyses\nRequirements\nBachelor’s in Social Sciences, Statistics, International Development, Research Methods, M&E or a related field (Master’s an advantage)\nMinimum 3 years of MEAL / MRM experience in NGOs, international organisations or development programmes\nKoBoToolbox, ODK or similar digital data collection platforms\nAdvanced Excel; SPSS, STATA, Power BI or R is an asset\nAbout SAJIDA Foundation\nSAJIDA Foundation is a Bangladeshi development organisation founded in 1993.\nHow to Apply\nInterested candidates can apply through the SAJIDA Foundation careers site using the Apply Now button. The application deadline is 28 October 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Data & Reporting",
    "location": "Dhaka, Bangladesh",
    "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/senior-marketing-executive-marketing-executive-card-center-commercial-bank-of-ceylon-plc/",
+   "url": "https://bdrecruit.net/job/data-analyst-monitoring-research-and-measurement-mrm-sajida-foundation/",
    "status": "Awaiting Review",
-   "id": "c1c2ce94-419b-438e-87aa-c8ff32e88211",
-   "createdAt": "2026-10-13T17:53:16+00:00",
-   "requiredSkills": "senior, marketing, executive, card, center, commercial, bank, ceylon, plc, location, dhaka, type",
-   "postedAt": "2026-10-13",
-   "deadline": "2026-10-24",
+   "id": "3b900eec-8556-4d66-9b26-8f69bf26bcb9",
+   "createdAt": "2026-10-25T08:01:15+00:00",
+   "requiredSkills": "analyst, monitoring, research, measurement, mrm, sajida, foundation, location, head, dhaka, frequent, field",
+   "postedAt": "2026-10-25",
+   "deadline": "2026-10-28",
    "salaryMin": null,
    "salaryMax": null,
-   "salaryText": "Negotiable",
+   "salaryText": "",
    "employmentType": "Full Time",
-   "experienceText": "",
+   "experienceText": "3 Years",
    "area": "Dhaka (area not stated)",
    "distanceKm": null,
-   "fingerprint": "3699cfb16c9879e5",
+   "fingerprint": "f54f882b1604381f",
    "sources": [
     {
      "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/senior-marketing-executive-marketing-executive-card-center-commercial-bank-of-ceylon-plc/",
-     "found_at": "2026-10-24T14:11:32+00:00"
+     "url": "https://bdrecruit.net/job/data-analyst-monitoring-research-and-measurement-mrm-sajida-foundation/",
+     "found_at": "2026-10-25T08:01:15+00:00"
     }
    ],
-   "matchScore": 57,
+   "matchScore": 58,
    "scoreParts": {
     "title": 100,
-    "level": 10,
-    "skills": 17,
+    "level": 30,
+    "skills": 0,
     "preference": 100
    },
    "priority": "C",
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting",
-    "Title matches your excluded list (Senior)"
+    "Exact area not stated in the posting"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -1496,7 +1537,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-10-24",
+   "postedAt": "2026-10-25",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1510,7 +1551,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/47",
-     "found_at": "2026-10-24T14:11:37+00:00"
+     "found_at": "2026-10-25T08:01:22+00:00"
     }
    ],
    "matchScore": 57,
@@ -1553,7 +1594,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-10-24T14:11:43+00:00"
+     "found_at": "2026-10-25T08:01:27+00:00"
     }
    ],
    "matchScore": 57,
@@ -1596,7 +1637,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-24T14:11:38+00:00"
+     "found_at": "2026-10-25T08:01:22+00:00"
     }
    ],
    "matchScore": 57,
@@ -1639,7 +1680,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-10-24T14:11:43+00:00"
+     "found_at": "2026-10-25T08:01:27+00:00"
     }
    ],
    "matchScore": 57,
@@ -1682,7 +1723,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-10-24T14:11:43+00:00"
+     "found_at": "2026-10-25T08:01:26+00:00"
     }
    ],
    "matchScore": 57,
@@ -1725,7 +1766,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-24T14:11:38+00:00"
+     "found_at": "2026-10-25T08:01:22+00:00"
     }
    ],
    "matchScore": 57,
@@ -1739,6 +1780,49 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Title matches your excluded list (Principal)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Senior Software Engineer",
+   "company": "Tebra",
+   "description": "Headquarters: United States - Remote\nTebra only initiates contact with candidates via email from an official Tebra email address (@ tebra.com , @ patientpop.com , or @ kareo.com ) or through our applicant tracking system, Greenhouse. We will only ask you to provide sensitive personal information through our official application portal — not via social media or text message. We do not conduct interviews via instant messaging.\nPosition: Senior Software Engineer\nLocation: Corona Del Mar, CA\nResponsibilities: Analyze information to determine, recommend, and provide innovative solutions to complex business problems related to existing system. Owner and subject matter expert for Large Software Systems and business initiatives. Lead Software Engineering Design Reviews to determine feasibility of design within time and cost constraints. Write software frameworks that can be extended by others on the team. Translate business requirements into software solutions. Optimize complex code in order to solve complex problems. Lead the architectural design and technical planning for major new platforms and features, such as the Worldpay Payment Facilitation system. Create technical specifications, select technologies, and define the end-to-end system architecture for mission-critical payment solutions. Hands-on development writing high-quality, production-level code for core payment systems using Java, Spring Boot, and Python. Build complex features, implement third-party API integrations like Stripe and TriPOS, and develop on cloud platforms like GCP and AWS. Improve team output and code quality, including performing detailed code reviews for peers, mentoring junior engineers on best practices in payment processing, and collaborating closely with product managers to translate business requirements into technical solutions. Serve as the subject matter expert and primary escalation point for production issues within the payments domain, which involves investigating and resolving complex payment discrepancies, managing system health on GCP, and writing code to patch critical issues.\nPosition will be headquartered in Corona Del Mar, CA but is a telecommuting position, allowing for remote employment from various unanticipated worksites throughout the United States.\nEduc./experience: Master’s degree or foreign equivalent in Computer Science, Computer Engineering, or related field, plus one (1) year of post-baccalaureate experience as a software engineer in the finance field or in a related position. Experience must include Java, Hibernate, Spring, Apache Struts, Full-Stack Development, Oracle database, High-Volume Transaction Processing, and data reporting and process automation.\nTo apply, please email your resume to: daneesha.green@tebra.com .\nSalary: $159,251/year\nIn compliance with California's pay transparency laws, the compensation range for this position will be provided and may include an hourly rate, annual salary, or On-Target Earnings (OTE), depending on the nature of the role. The specific compensation structure and detailed range will be discussed with qualified candidates during the initial talent screen.\nRemote Pay Range\n$159,251 — $159,251 USD\nAbout Tebra\nTebra is the only all-in-one EHR+ platform built exclusively for independent healthcare practices. Designed to replace the clunky, fragmented tools built for corporate systems, Tebra connects EHR software, billing, automation, telehealth solution, and marketing — so providers can spend less time on admin and more time with patients. More than 42,000 private practices trust Tebra to streamline operations, increase revenue, and reduce burnout — helping clinicians leave work on time and rediscover their purpose. Learn more at www.tebra.com .\nOur Values\nStart with the Customer\nWe get to know our customers - and their patients - and look at the world through their lens.\nKeep It Simple\nHealthcare is too complex. We aim to simplify it for everyone.\nStay Entrepreneurial\nWe reject the status quo and solve problems with creativity, perseverance, and a bias to action.\nBetter Together\nWe are diverse, humble, and collaborative. We put the team first and win together.\nCelebrate Success\nLife is short and joy is underrated. We take time to have fun and celebrate success.\nPerks & Benefits\nUnited States: In addition to our healthcare benefits, we also offer amazing perks! Need work from home basics? We offer a discount through Dell! We also offer a number of resources to help you keep your mind and body healthy. Check out Gympass for a great workout, or TelusEmployee Assistance Program to find mental health resources, along with other resources for everyday occurrences.\nCosta Rica: To assist with all of life’s needs, Tebra also offers a wellness and childcare subsidy and a University/Education discount! We also offer a number of resources to help you keep your mind and body healthy. Check out Gympass for access to health and fitness apps, or Telus Employee Assistance Program to find mental health resources, along with other resources for everyday occurrences.\nCompliance & Privacy Disclosures\nNOTE: Tebra is an equal opportunity employer. All applicants will be considered for employment without attention to age, race, color, religion, sex, sexual orientation, gender identity, national origin, veteran or disability status.\nCalifornia residents who apply or are recruited for a job with us: please carefully review our California-specific Privacy Notice under the California Consumer Protection Act here: https://www.tebra.com/privacy-policy/california-supplemental-notice/\nIf you would like to report a fraudulent Tebra job posting, please contact us at talentacquisition@tebra.com and consider reporting your experience to the FBI's Internet Crime Complaint Center or the Better Business Bureau to help keep others safe online, too.\nAs part of our commitment to a fair and efficient hiring process, Tebra utilizes Greenhouse Notetaker, Greenhouse's native interview intelligence tool, for our phone and video screenings. This technology records and transcribes interviews to help us ensure consistency, reduce bias, and make more informed hiring decisions. By applying for this position, you acknowledge that your interview may be recorded.\nTo apply: https://weworkremotely.com/remote-jobs/tebra-senior-software-engineer",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/tebra-senior-software-engineer",
+   "status": "Awaiting Review",
+   "id": "b97a695c-3d24-4b8a-a3f7-04c2500047f0",
+   "createdAt": "2026-10-25T08:01:26+00:00",
+   "requiredSkills": "senior, engineer, headquarters, united, states, remote, tebra, only, initiates, contact, candidates, via",
+   "postedAt": "2026-10-25",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "1e0caf62e1b65266",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/tebra-senior-software-engineer",
+     "found_at": "2026-10-25T08:01:26+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
   },
@@ -1768,7 +1852,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-executive-marketing-brain-station-23/",
-     "found_at": "2026-10-24T14:11:32+00:00"
+     "found_at": "2026-10-25T08:01:18+00:00"
     }
    ],
    "matchScore": 53,
@@ -1812,7 +1896,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-operations-officer-noa-coxs-bazar-world-food-programme-wfp/",
-     "found_at": "2026-10-24T14:11:30+00:00"
+     "found_at": "2026-10-25T08:01:15+00:00"
     }
    ],
    "matchScore": 53,
