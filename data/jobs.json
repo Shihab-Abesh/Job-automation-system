@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-26T17:05:41+00:00",
+ "generatedAt": "2026-10-27T08:34:20+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,11 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 0,
-    "errors": [
-     "BDRecruit: empty or refused response"
-    ],
-    "raw": 0
+    "found": 14,
+    "errors": [],
+    "raw": 267
    },
    "jsonld": {
     "found": 4,
@@ -43,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 28,
+    "found": 29,
     "errors": [],
-    "raw": 319
+    "raw": 325
    },
    "careers": {
     "found": 0,
@@ -59,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 26,
-   "new": 0,
+   "total": 41,
+   "new": 1,
    "expired": 0,
    "duplicatesFolded": 6,
-   "priorityA": 4,
-   "priorityB": 9,
-   "priorityC": 13
+   "priorityA": 7,
+   "priorityB": 15,
+   "priorityC": 19
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -75,10 +73,8 @@
    "drop_expired": true,
    "allow_abroad": false
   },
-  "blockedUrls": [
-   "https://bdrecruit.net/wp-json/wp/v2/job_listing?per_page=100&page=1&orderby=date&order=desc&_fields=id,date,link,title,content,metas"
-  ],
-  "ranAt": "2026-10-26T17:05:41+00:00"
+  "blockedUrls": [],
+  "ranAt": "2026-10-27T08:34:20+00:00"
  },
  "jobs": [
   {
@@ -107,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
-     "found_at": "2026-10-26T17:05:01+00:00"
+     "found_at": "2026-10-27T08:33:39+00:00"
     }
    ],
    "matchScore": 96,
@@ -149,7 +145,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-26T17:05:01+00:00"
+     "found_at": "2026-10-27T08:33:39+00:00"
     }
    ],
    "matchScore": 87,
@@ -164,6 +160,49 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Management Trainee Officer",
+   "company": "Al-Arafah Islami Bank PLC.",
+   "description": "Organization: Al-Arafah Islami Bank PLC.\nEmployment Status: Full-time\nExperience: 0 years\nAge: 18 to 32 years\nEligibility\nMBA, MBM, Master’s in any discipline, or B.Sc in Engineering from any recognized UGC approved university.\nMinimum CGPA 3.00 out of 4.00, or CGPA 3.75 out of 5.00, or 1st Class in both Graduation and Post Graduation.\nMinimum GPA 4.50 out of 5.00 in SSC and HSC or equivalent.\nNo prior experience required.\nOnly published academic results are acceptable.\nAge not over 32 years on the circular deadline.\nKey Responsibilities\nNot specified.\nCompetencies\nExcellent communication and interpersonal skills.\nGood command of English is a must for all applicants.\nBasic computer and ICT skills, especially in MS Office and email.\nHardworking, self-driven, and change-oriented.\nAbility to work under pressure.\nExcellent analytical and problem-solving skills.\nAbility to take challenges, perform proactively and take ownership.\nWhat We Will Offer\nOutstanding career development with an excellent working environment.\nOne-year probation with an attractive compensation package.\nUpon successful completion of the probation period, selected candidates will be absorbed as Senior Executive Officer .\nOpportunity to work in a Shariah-compliant work environment.\nEducational Requirements\nMinimum MBA or equivalent degree.\nAge\n18 to 32 years\nExperience\nNo experience required\nApplication Information\nApplication deadline, company name, job location, salary and application procedure were not provided in the supplied job details.",
+   "category": "Management & Business",
+   "location": "Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
+   "status": "Awaiting Review",
+   "id": "8447add3-4add-41b2-a7fb-ea56cf481f4c",
+   "createdAt": "2026-10-08T09:49:33+00:00",
+   "requiredSkills": "trainee, officer, organization, arafah, islami, bank, plc., employment, status, full, time, eligibility",
+   "postedAt": "2026-10-07",
+   "deadline": "2026-11-06",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "No professional experience required",
+   "area": "",
+   "distanceKm": null,
+   "fingerprint": "eb374fdd5826db3e",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
+     "found_at": "2026-10-27T08:33:38+00:00"
+    }
+   ],
+   "matchScore": 83,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Software Engineer, Backend",
@@ -191,7 +230,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 83,
@@ -206,6 +245,48 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Management Trainee Officer (MTO) – Supply Chain",
+   "company": "PRAN-RFL Group",
+   "description": "Position: Management Trainee Officer (MTO) – Supply Chain\nCompany: PRAN-RFL Group\nJob Location: Head Office (the post also names factory locations)\nExperience: Freshers and up to 1 year of experience\nEducation: BBA/MBA/BSc/MSc in Supply Chain Management, International Business, Accounts, Management, EEE, IPE, ME or ChE\nSalary: Tk. 25,000 per month, revised after the 6 month probation\nDeadline: Not mentioned, apply early\nAbout the Role\nPRAN-RFL Group is hiring fresh graduates as Management Trainee Officers in Supply Chain, with hands-on exposure to procurement, logistics, production planning and inventory.\nKey Responsibilities\nSource, evaluate and negotiate with suppliers for the best quality and cost\nPrepare purchase orders, monitor deliveries and ensure timely procurement\nAnalyse procurement costs and find savings\nDevelop purchasing strategies and contingency plans for supply risks\nWork with sales, production and finance for smooth operations\nRequirements\nBBA/MBA/BSc/MSc in SCM, International Business, Accounts, Management, EEE, IPE, ME or ChE from a reputed university\nFreshers and candidates with up to 1 year of experience\nStrong communication and good English\nAbility to work under pressure; SCM training or courses preferred\nCompensation & Benefits\nSalary Tk. 25,000, revised after the 6 month probation\nMobile bill, tour allowance, performance bonus, two festival bonuses\nTransport, subsidised lunch, leave encashment, yearly salary review\nPromotion opportunity after 6 months\nAbout PRAN-RFL Group\nPRAN-RFL Group is one of Bangladesh’s leading conglomerates in food, plastics and consumer goods.\nHow to Apply\nInterested candidates can apply through the PRAN-RFL application form using the Apply Now button. The circular does not mention an application deadline, so apply early. Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Head Office",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
+   "status": "Awaiting Review",
+   "id": "66fb5015-1059-47b7-8ae0-f16676dcd774",
+   "createdAt": "2026-10-15T07:55:10+00:00",
+   "requiredSkills": "trainee, officer, mto, supply, chain, pran, rfl, group, location, head, post, also",
+   "postedAt": "2026-10-15",
+   "deadline": "2026-11-14",
+   "salaryMin": 25000,
+   "salaryMax": null,
+   "salaryText": "Tk 25,000",
+   "employmentType": "Full Time",
+   "experienceText": "Fresher",
+   "area": "",
+   "distanceKm": null,
+   "fingerprint": "60bbe412dc92950a",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
+     "found_at": "2026-10-27T08:33:34+00:00"
+    }
+   ],
+   "matchScore": 79,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Business Intelligence Analyst",
@@ -233,7 +314,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-10-26T17:05:13+00:00"
+     "found_at": "2026-10-27T08:33:50+00:00"
     }
    ],
    "matchScore": 75,
@@ -248,6 +329,134 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Business Development Analyst",
+   "company": "MR DIY",
+   "description": "Position: Business Development Analyst\nCompany: MR. D.I.Y. Bangladesh Ltd.\nJob Location: Tejgaon, Dhaka\nHow to Apply: Send your CV to bgd.hr.career@mrdiy.com\nDeadline: Not mentioned, apply early\nAbout the Role\nMR DIY Bangladesh is hiring a Business Development Analyst in Tejgaon, Dhaka for market research, data analysis and growth planning.\nKey Responsibilities\nConduct market research and analyse business trends\nIdentify new business opportunities and growth potential\nPrepare business reports, forecasts and performance analyses\nSupport strategic planning and data-driven decisions\nWork with cross-functional teams on business objectives\nRequirements\nStrong analytical, problem-solving and communication skills\nProficiency in Microsoft Excel and data analysis\nA proactive mindset and strong interest in business development\nHow to Apply\nSend your CV to bgd.hr.career@mrdiy.com\nAbout MR DIY\nMR DIY is Malaysia’s home improvement retail chain, with stores across Asia and in Bangladesh.\nHow to Apply\nInterested candidates can apply through the email to MR DIY Bangladesh (bgd.hr.career@mrdiy.com) using the Apply Now button. The circular does not mention an application deadline, so apply early. Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
+   "status": "Awaiting Review",
+   "id": "fd8c5861-7b72-467f-a993-aba2337ba7b2",
+   "createdAt": "2026-10-17T07:25:23+00:00",
+   "requiredSkills": "business, development, analyst, mr., d.i.y., bangladesh, location, tejgaon, dhaka, how, apply, send",
+   "postedAt": "2026-10-17",
+   "deadline": "2026-11-16",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "",
+   "area": "Tejgaon",
+   "distanceKm": 0.0,
+   "fingerprint": "43b63df02fe4ab12",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
+     "found_at": "2026-10-27T08:33:34+00:00"
+    }
+   ],
+   "matchScore": 75,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Business Performance Analyst",
+   "company": "foodpanda",
+   "description": "Company: foodpanda\nPosition: Business Performance Analyst (Shops) – Qcommerce\nJob Ref ID: JR0085714\nLocation: Dhaka, Bangladesh\nEmployment Type: Full-time\nWorkplace: On-site\nAbout The Role\nfoodpanda is looking for a data-driven operations professional with experience in Business Performance or Business Analytics to manage the operational performance of its Quick Commerce Shops portfolio across Bangladesh. The role focuses on KPI analysis, root cause identification, dashboard development, operational improvement initiatives, strategic retail partner launches, picker operations, inventory coordination, field execution, and cross-functional project management.\nKey Responsibilities\nShops Performance Management\nOwn the operational performance of the QC Shops portfolio across Bangladesh.\nMonitor, analyse, and improve key business and fulfilment metrics including Item Not Found (InF), Vendor Offline Rate, Vendor Fail Rate, Perfect Fulfilment Rate (PFR), Order Acceptance Rate, Cancellation Rate, Replacement Offered %, Picker Utilisation, Orchestration SKU Coverage, stock, and assortment availability.\nIdentify operational risks and recurring performance issues through data analysis.\nConduct root cause analysis and develop structured action plans to improve vendor performance.\nPartner with Account Managers to implement operational improvement initiatives for underperforming vendors.\nConduct joint vendor visits where required to validate operational issues and ensure agreed actions are implemented.\nMeasure, monitor, and report the business impact of operational improvement initiatives.\nStrategic Retail Partner Expansion\nLead operational execution of strategic retail partner launches from planning through post-launch stabilisation.\nCoordinate operational readiness across Operations, Commercial, Account Management, and partner teams.\nManage launch timelines, dependencies, risks, and stakeholder communication.\nCoordinate picker onboarding, training, deployment, and operational readiness for new strategic partner launches.\nEnsure operational processes and SOPs are implemented before and after launch.\nMonitor launch performance and drive corrective actions where required.\nContinuously improve the operating model for strategic retail partners as the business scales.\nPicker Operations & Inventory Coordination\nCoordinate operational readiness of foodpanda picker teams supporting Shops operations.\nMonitor picker training to deployment readiness.\nIdentify stores, categories, and SKUs requiring inventory verification based on operational data.\nDefine inventory count priorities and provide clear guidance to picker teams.\nMonitor inventory check completion, quality, and follow-up actions.\nPartner with Account Managers and picker teams to improve stock accuracy, assortment availability, and InF performance.\nField Operations & Store Excellence\nConduct regular field visits to partner stores to validate operational performance and identify root causes.\nObserve fulfilment processes including picking, packing, and order handover.\nValidate compliance with operational SOPs and foodpanda standards.\nProvide operational coaching and guidance to vendor and picker teams.\nDocument findings, assign corrective actions, and ensure timely follow-up.\nSupport live operational escalations while maintaining focus on long-term operational improvement.\nData Analytics & Business Performance\nAnalyse operational datasets to identify trends, risks, and improvement opportunities.\nBuild and maintain operational dashboards and recurring reports using Microsoft Excel or Google Sheets.\nSupport analysis using SQL, Looker, or other business intelligence tools where applicable.\nPrepare weekly and monthly business reviews for leadership.\nTranslate data into actionable recommendations and measurable improvement plans.\nTrack the effectiveness of operational initiatives and continuously optimise performance.\nOperational Excellence & Regional Collaboration\nPartner with Regional Operations teams to identify best practices, operating models, and successful initiatives across Delivery Hero markets.\nEvaluate, localise, and implement regional initiatives within Bangladesh.\nMeasure adoption and business impact of implemented initiatives.\nSupport the rollout of new operational tools, product features, and process improvements.\nCoordinate with Commercial, Account Management, Product, Logistics, and Data teams.\nDevelop and continuously improve operational SOPs, playbooks, trackers, and training materials.\nIndependently lead operational improvement projects from problem identification and solution design through implementation, stakeholder alignment, and impact measurement.\nAct as the operational subject matter expert supporting the Account Management team in driving vendor performance improvements.\nRequirements & Qualifications\nEducation\nBachelor’s degree in Business, Engineering, Supply Chain, Operations Management, Economics, Data Analytics, or a related discipline.\nExperience\n4 to 5 years of experience in Business Performance, Business Analytics, Performance Management, Operations Analytics, Marketplace Analytics, E-commerce Operations, or Quick Commerce.\nExperience owning KPIs and performance reporting is strongly preferred.\nExperience working with supermarkets, grocery retailers, marketplaces, or FMCG partners is preferred.\nTechnical Skills\nAdvanced knowledge of Excel or Google Sheets, including Pivot Tables, XLOOKUP, and INDEX-MATCH.\nExperience building dashboards and performance reports.\nStrong data analysis and KPI management skills.\nExperience with SQL, Looker, Tableau, or similar business intelligence tools is preferred.\nAdditional Requirements\nExcellent written and verbal communication skills in English and Bangla.\nDemonstrated experience managing operational performance and delivering measurable business improvements.\nStrong analytical, project management, and stakeholder management skills.\nAbility to work effectively in a fast-paced and rapidly changing operational environment.\nSkills & Competencies\nBusiness Performance Analysis\nBusiness Analytics\nKPI Management\nOperations Analytics\nData Analysis\nDashboard Development\nAdvanced Excel\nGoogle Sheets\nSQL\nLooker\nTableau\nProject Management\nStakeholder Management\nOperational Excellence\nRoot Cause Analysis\nProcess Improvement\nWhat We’re Looking For\nStrong ownership and accountability.\nExcellent problem-solving and analytical abilities.\nAbility to independently manage multiple operational priorities.\nStrong project management and execution capabilities.\nAbility to work with both operational data and field execution.\nExcellent stakeholder management and cross-functional collaboration skills.\nHigh attention to detail and operational discipline.\nStrong communication and influencing skills.\nPassion for continuous improvement and operational excellence.\nWillingness to spend time in the field to understand operational challenges firsthand.\nCollaborative mindset with a bias for action and measurable results.\nAbility to influence stakeholders and drive operational improvements without direct authority.\nMake Your ATS-Friendly CV",
+   "category": "Data & Reporting",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
+   "status": "Awaiting Review",
+   "id": "993ea9d7-f210-4c27-8ffa-3acc67488d42",
+   "createdAt": "2026-09-20T15:55:32+00:00",
+   "requiredSkills": "business, performance, analyst, foodpanda, shops, qcommerce, ref, jr0085714, location, dhaka, bangladesh, employment",
+   "postedAt": "2026-10-01",
+   "deadline": "2026-10-31",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "4 Years",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "2f53b127b19669a4",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
+     "found_at": "2026-10-27T08:33:38+00:00"
+    }
+   ],
+   "matchScore": 73,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 83,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Data Analyst",
+   "company": "WPP Production",
+   "description": "Position: Data Analyst\nCompany: WPP Production\nFunction: Data and Analytics (Econometrics)\nJob Location: Dhaka, Bangladesh (onsite, across different shifts as needed)\nJob Type: Full-Time\nExperience: 2 to 4 years in a similar field, with a focus on data and analytics with econometrics\nEducation: A degree that demonstrates technical ability, such as Economics, Mathematics or Statistics\nSalary: Not mentioned\nDeadline: Not mentioned, apply early\nAbout the Role\nWPP Production, the global production company of WPP, is hiring a Data Analyst in Dhaka to support client projects through data collection and preparation, model building and the interpretation of results.\nKey Responsibilities\nUndertake data extraction, manipulation and analysis to understand the marketplace and client context of each project\nOwn data collection, including preparing and sending data requests and querying data with clients and agencies\nCheck all tables, charts and outputs for accuracy and format them to organization standards\nBuild base models to the project specification and progress them towards finalisation\nCalculate sales effects and ROIs, create response curves and run optimisation scenarios\nValidate models, identify areas of weakness and test improvements\nInterpret results and explain their implications for the client’s future strategy\nRequirements\n2 to 4 years of experience in a similar field, with a focus on data and analytics with econometrics\nStrong expertise in the Python programming language is necessary\nProficiency in Excel, SQL, Python and Pandas to process and transform data and build models\nA degree that demonstrates technical ability, such as Economics, Mathematics or Statistics\nStrong verbal and written communication skills in English; experience with international clients is an advantage\nThis is an onsite role and candidates should be comfortable working across different shifts as needed\nAbout WPP Production\nWPP Production is the unified global production company that brings together WPP’s content producers, studios and craft experts. WPP states that it is an equal opportunity employer.\nHow to Apply\nInterested candidates can apply through the official WPP Production careers page using the Apply Now button. The circular does not mention an application deadline, so apply early. Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Data & Reporting",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
+   "status": "Awaiting Review",
+   "id": "8c36537d-9088-4817-8b91-f8031786da4a",
+   "createdAt": "2026-10-06T09:41:19+00:00",
+   "requiredSkills": "analyst, wpp, analytics, econometrics, location, dhaka, bangladesh, onsite, across, different, shifts, needed",
+   "postedAt": "2026-10-06",
+   "deadline": "2026-11-05",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "2 Years",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "fe8d0bc71a2383fd",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
+     "found_at": "2026-10-27T08:33:38+00:00"
+    }
+   ],
+   "matchScore": 72,
+   "scoreParts": {
+    "title": 100,
+    "level": 55,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Data Analyst, Clinical Data Effectiveness",
@@ -275,7 +484,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-10-26T17:05:21+00:00"
+     "found_at": "2026-10-27T08:33:59+00:00"
     }
    ],
    "matchScore": 71,
@@ -317,7 +526,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-10-26T17:05:09+00:00"
+     "found_at": "2026-10-27T08:33:47+00:00"
     }
    ],
    "matchScore": 71,
@@ -359,7 +568,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-26T17:05:01+00:00"
+     "found_at": "2026-10-27T08:33:39+00:00"
     }
    ],
    "matchScore": 71,
@@ -401,7 +610,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/31",
-     "found_at": "2026-10-26T17:05:00+00:00"
+     "found_at": "2026-10-27T08:33:38+00:00"
     }
    ],
    "matchScore": 71,
@@ -444,7 +653,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 71,
@@ -459,6 +668,46 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Channel / Market Operations Executive",
+   "company": "vivo Bangladesh",
+   "description": "Position: Channel / Market Operations Executive\nCompany: vivo Bangladesh (Head Office)\nVacancies: 3\nJob Location: Dhaka (Tejgaon Industrial Area)\nExperience: 1 to 2 years in the mobile industry\nEducation: Bachelor/Honors\nAge: 28 to 32 years\nSalary: Tk. 45,000 (Monthly)\nDeadline: 4 November 2026\nAbout the Role\nvivo Bangladesh is hiring three Channel / Market Operations Executives at its Tejgaon head office to manage dealers, distributors and stores and drive sell-in and sell-out in their region.\nKey Responsibilities\nManage relationships with dealers, distributors, store owners and store managers in the assigned region\nTrack sell-in, sell-out, stock levels and target achievement, and fix underperforming stores\nMake regular market visits to check store performance, local demand and competitor activity\nFollow up on replenishment, slow-moving stock, availability and stock transfers\nImplement channel policies, incentives and promotions, and review store support and subsidies\nRequirements\nBachelor/Honors degree\n1 to 2 years of channel sales or market operations experience with a mobile phone or electronics brand, distributor or retail chain\nAge 28 to 32 years; the circular asks for male candidates\nWorking Excel skills, strong Bangla and good English\nWilling to travel regularly within the region\nAbout vivo Bangladesh\nvivo is a global smartphone brand; vivo Bangladesh runs its head office in Tejgaon, Dhaka.\nHow to Apply\nInterested candidates can apply through the bdjobs.com circular (vivo Bangladesh) using the Apply Now button. The application deadline is 4 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
+   "status": "Awaiting Review",
+   "id": "f0fd4765-0003-43a1-8bcd-6a7aef9f7771",
+   "createdAt": "2026-10-15T07:55:10+00:00",
+   "requiredSkills": "channel, market, executive, vivo, bangladesh, head, vacancies, location, dhaka, tejgaon, industrial, area",
+   "postedAt": "2026-10-15",
+   "deadline": "2026-11-04",
+   "salaryMin": 45000,
+   "salaryMax": null,
+   "salaryText": "Tk 45,000",
+   "employmentType": "Full Time",
+   "experienceText": "1 Year+",
+   "area": "Tejgaon Industrial Area",
+   "distanceKm": 0.6,
+   "fingerprint": "27f8acf7741fb233",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
+     "found_at": "2026-10-27T08:33:34+00:00"
+    }
+   ],
+   "matchScore": 70,
+   "scoreParts": {
+    "title": 100,
+    "level": 80,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Software Engineer, AI Coding Tasks (Contract)",
@@ -486,7 +735,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 66,
@@ -501,6 +750,48 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Digital Marketing Executive",
+   "company": "MR DIY Bangladesh",
+   "description": "Position: Digital Marketing Executive\nCompany: MR DIY Bangladesh\nJob Location: Tejgaon, Dhaka\nJob Type: Full-Time\nExperience: Not mentioned\nEducation: Not mentioned\nSalary: Not mentioned\nDeadline: 30 October 2026\nAbout the Role\nMR DIY Bangladesh is looking for a Digital Marketing Executive for its office in Tejgaon, Dhaka: someone creative who loves digital trends and knows how to make content stand out.\nWhat MR DIY is Looking For\nA creative person who loves digital trends\nSomeone who knows how to make content stand out\nPosition based in Tejgaon, Dhaka\nHow to Send Your CV\nEmail your CV to bgd.hr.career@mrdiy.com\nThe role is also listed on the MR DIY Bangladesh career page\nApplication deadline: 30 October 2026\nAbout MR DIY\nMR DIY is a home improvement retail chain from Malaysia with stores in more than ten countries. MR DIY Bangladesh is based at Tejgaon Industrial Area, Dhaka and is expanding its stores across the country.\nHow to Apply\nInterested candidates can apply through the MR DIY Bangladesh career page (or email your CV to bgd.hr.career@mrdiy.com) using the Apply Now button. The application deadline is 30 October 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/digital-marketing-executive-mr-diy-bangladesh/",
+   "status": "Awaiting Review",
+   "id": "83637a02-78e4-4486-9844-74912bd12c20",
+   "createdAt": "2026-10-12T10:05:57+00:00",
+   "requiredSkills": "digital, marketing, executive, diy, bangladesh, location, tejgaon, dhaka, type, full, time, not",
+   "postedAt": "2026-10-12",
+   "deadline": "2026-10-30",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "",
+   "area": "Tejgaon",
+   "distanceKm": 0.0,
+   "fingerprint": "04a62a889fd01d76",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/digital-marketing-executive-mr-diy-bangladesh/",
+     "found_at": "2026-10-27T08:33:34+00:00"
+    }
+   ],
+   "matchScore": 66,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Software Development Engineer II (Remote @ Colombia)",
@@ -528,7 +819,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 66,
@@ -543,6 +834,49 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Software Engineer",
+   "company": "Pathao Limited",
+   "description": "Position: Software Engineer (Backend)\nKey Responsibilities\nDesign, develop, and maintain scalable backend services and APIs.\nBuild reliable transaction and payment workflows.\nWork with databases, caching, messaging, and distributed systems.\nWrite clean, testable, and maintainable production code.\nTroubleshoot performance and production issues.\nParticipate in code reviews and system design discussions.\nRequirements\n3-4 years of similar experience.\nStrong experience with Go (Golang), Java, Python, or similar backend technologies.\nStrong SQL/PostgreSQL knowledge.\nGood understanding of REST APIs, microservices, concurrency, and distributed systems.\nStrong problem-solving and debugging skills.\nNice to Have\nExperience with Redis and RabbitMQ/Kafka.\nExperience with Docker/Kubernetes.\nExperience in Fintech, Payments, MFS, Banking, or other transaction-heavy systems.\nWhat You’ll Enjoy at Pathao\nA dynamic and collaborative workspace.\nCompetitive salary package.\nTwo annual festival bonuses.\nLeave encashment.\nComprehensive insurance coverage.\nGratuity.\nMeal allowance.\nPhone allowance.\nPeriodic team dinner.\nExclusive employee discounts on Pathao services.\nMake Your ATS-Friendly CV",
+   "category": "Software Development",
+   "location": "Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
+   "status": "Awaiting Review",
+   "id": "f6c5966f-c46a-4e04-9e41-7db0cb2a9788",
+   "createdAt": "2026-10-05T09:54:16+00:00",
+   "requiredSkills": "engineer, key, responsibilities, scalable, services, apis., reliable, transaction, payment, workflows., work, databases",
+   "postedAt": "2026-10-05",
+   "deadline": "2026-11-04",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Not specified",
+   "experienceText": "3 Years",
+   "area": "",
+   "distanceKm": null,
+   "fingerprint": "82ad2fcb593d99ed",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
+     "found_at": "2026-10-27T08:33:38+00:00"
+    }
+   ],
+   "matchScore": 66,
+   "scoreParts": {
+    "title": 100,
+    "level": 30,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Software Engineer - PlanetScale Postgres",
@@ -570,7 +904,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 66,
@@ -612,7 +946,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 66,
@@ -627,6 +961,133 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Analyst, Business Intelligence",
+   "company": "Gildan",
+   "description": "Position: Analyst, Business Intelligence\nCompany: Gildan\nJob Location: Gulshan, Dhaka, Bangladesh\nJob Type: Full-Time\nExperience: At least 3 years\nEducation: Bachelor of Science (BSc) in Computer Science & Engineering\nSalary: Not mentioned\nDeadline: Not mentioned, apply early\nAbout the Role\nGildan is hiring an Analyst, Business Intelligence in Dhaka to take part in the design, development, documentation and testing of enterprise-wide data and analytics solutions.\nThe Role\nAnalyze and provide data management and data analysis solutions through visualization tools such as Tableau\nSupport core business processes such as Sales, Marketing, Manufacturing and Finance\nConvert business logic into SQL and create technical specifications for data flow and transformation\nDocument solution design (architecture, schedule, monitoring, support)\nConduct reviews, walkthroughs and solution testing within SDLC and PMO guidelines\nTake part in developing data cleaning rules and provide post-implementation support\nThe Requirement\nBSc in Computer Science & Engineering\nAt least 3 years of experience\nExperience with an enterprise data warehouse and ETL tools\nExperience with business reporting tools: Qlikview, Tableau\nStrong SQL query knowledge and good data warehouse knowledge\nERP experience such as JD Edwards and Snowflake experience are assets\nGood written and spoken English\nAbout Gildan\nGildan is a leading apparel manufacturer founded in Canada, with brands including Gildan, American Apparel, Comfort Colors, GOLDTOE and Peds. It is dual-listed on the NYSE and TSX.\nHow to Apply\nInterested candidates can apply through the LinkedIn listing posted by Gildan using the Apply Now button. The circular does not mention an application deadline, so apply early. Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Data & Reporting",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
+   "status": "Awaiting Review",
+   "id": "e7ca25b7-f578-44da-8527-f5d4c1543ce0",
+   "createdAt": "2026-10-10T09:18:03+00:00",
+   "requiredSkills": "analyst, business, intelligence, gildan, location, gulshan, dhaka, bangladesh, type, full, time, least",
+   "postedAt": "2026-10-10",
+   "deadline": "2026-11-09",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "3 Years",
+   "area": "Gulshan",
+   "distanceKm": 3.5,
+   "fingerprint": "3c913f810c83c29e",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
+     "found_at": "2026-10-27T08:33:34+00:00"
+    }
+   ],
+   "matchScore": 62,
+   "scoreParts": {
+    "title": 100,
+    "level": 30,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Junior Data Analyst – Night Shift (Only Female – Work From Home)",
+   "company": "Unknown company",
+   "description": "Future Cloud Bangladesh Limited (FCBL) is a reputed multinational ITES company operating for over 11 years. We are pleased to offer full-time job opportunities for potential candidates willing to work on night shifts. Females are only encouraged to apply for this position. Female staff get the flexibility to work from home.\nResponsibilities and key learning areas:\n– Extensive online research on North American businesses and their corporate practices.\n– Hosting regular meetings with managers, collecting notes and preparing meeting minutes.\n– Organising data in a spreadsheet, PowerPoint presentation, etc.\n– Making telemarketing calls and hosting conference calls as needed.\n– Updating CRM systems, putting notes, assigning drip plans for texts and emails, etc.\n– Maintaining internal communication and completing individual assignments.\n– Maintaining external communication with corporate stakeholders.\n– Participating in collaboration meetings, workshops with industry colleagues, BASIS, etc.\n– Updating daily activity and work status in a dedicated individual tracking platform.\nEducational Requirements:\n– Bachelors/Masters students from any UGC approved University/College.\n– Running diploma students are also encouraged to apply.\n– Any discipline/department is fine. All will be treated equally.\nAdditional Requirements:\n– Age 18 to 32 years\n– Only females are allowed to apply.\n– Call center experience will get priority.\n– English medium background will get priority.\n– Must be fluent in English.\n– Experience in sales campaigns will get priority.\nCompensation & Other info:\n– 8,000 BDT remuneration per month plus 0-2,000 BDT bonus based on performance.\n– Work From Home\n– 6 days per week.\n– Office Schedule (Night Shift)\n– On-time salary.\n– Yearly 10 paid holidays.\n– Yearly 15 casual paid leaves.\n– All employees get loan facilities, including probationary employees.\n– Employees, their parents, spouses & children get a 35% discount in Ibn Sina Hospital.",
+   "category": "Data & Reporting",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
+   "status": "Awaiting Review",
+   "id": "9d1e33e1-b924-4ecf-b1e0-5404ece78c2f",
+   "createdAt": "2026-09-20T15:55:35+00:00",
+   "requiredSkills": "junior, analyst, night, shift, only, female, work, home, future, cloud, bangladesh, limited",
+   "postedAt": "2025-11-14",
+   "deadline": null,
+   "salaryMin": 10000,
+   "salaryMax": 13000,
+   "salaryText": "Tk 10,000 - 13,000",
+   "employmentType": "Full Time",
+   "experienceText": "Freshers",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "c45bc5c4ca7092a7",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
+     "found_at": "2026-10-27T08:33:38+00:00"
+    }
+   ],
+   "matchScore": 79,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay tops out at Tk 13,000, below your Tk 20,000 floor"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Management Trainee Program (November 2026 Batch)",
+   "company": "MGH Group",
+   "description": "Position: Management Trainee (November 2026 Batch)\nCompany: MGH Group\nJob Location: Bangladesh (Aviation Sales based in Chittagong)\nEmployment Type: Management Trainee Program\nExperience: Fresh graduates or up to 2 years of experience\nEducation: Bachelor’s or Master’s degree in a relevant discipline, minimum CGPA 3.50\nDeadline: 30 October 2026\nAbout the Role\nMGH Group, a global conglomerate operating across 26 countries, is looking for its next generation of leaders through the MGH Group Management Trainee Program, November 2026 batch.\nAvailable Functions\nFinance (opportunities across Group businesses and locations)\nFreight Forwarding / Shipping Line: Sales, CRM & Documentation\nAviation Sales (base location: Chittagong)\nForward Deployment Engineer (automating manual processes through technology)\nHuman Resources (HR)\nWho MGH Is Looking For\nBachelor’s or Master’s degree in a relevant discipline\nMinimum CGPA: 3.50\nFresh graduates or candidates with up to 2 years of experience\nA strong zeal to learn, a sharp analytical mind, and an exceptional academic and extracurricular track record\nWhy MGH\nHands-on business exposure, learning from experienced leaders, and a structured leadership journey\nAbout MGH Group\nMGH Group is a global conglomerate operating across 26 countries.\nHow to Apply\nInterested candidates can apply through the MGH Group’s own Google Form (“MGH Group Management Trainee Program”) using the Apply Now button. The application deadline is 30 October 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/management-trainee-program-november-2026-batch-mgh-group/",
+   "status": "Awaiting Review",
+   "id": "14beb152-9732-4e13-b3e2-00cdedd9ad5e",
+   "createdAt": "2026-10-23T08:10:33+00:00",
+   "requiredSkills": "trainee, program, november, 2026, batch, mgh, group, location, bangladesh, aviation, sales, based",
+   "postedAt": "2026-10-22",
+   "deadline": "2026-10-30",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "Fresher",
+   "area": "Chittagong",
+   "distanceKm": 211.4,
+   "fingerprint": "9df07dd6df9da1be",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/management-trainee-program-november-2026-batch-mgh-group/",
+     "found_at": "2026-10-27T08:33:31+00:00"
+    }
+   ],
+   "matchScore": 75,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Chittagong is about 211.4 km out, past your 10 km limit"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Staff Software Engineer - Connectivity",
@@ -654,7 +1115,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 65,
@@ -683,7 +1144,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-26",
+   "postedAt": "2026-10-27",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -697,7 +1158,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/32",
-     "found_at": "2026-10-26T17:05:00+00:00"
+     "found_at": "2026-10-27T08:33:38+00:00"
     }
    ],
    "matchScore": 65,
@@ -741,12 +1202,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-26T17:05:01+00:00"
+     "found_at": "2026-10-27T08:33:39+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 61,
@@ -776,7 +1237,7 @@
    "id": "f5865883-68f6-465f-bd2f-288009b745f7",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-26",
+   "postedAt": "2026-10-27",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -790,7 +1251,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-26T17:05:00+00:00"
+     "found_at": "2026-10-27T08:33:38+00:00"
     }
    ],
    "matchScore": 61,
@@ -834,7 +1295,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 61,
@@ -877,7 +1338,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 61,
@@ -895,6 +1356,49 @@
    "discoveredBy": "rss"
   },
   {
+   "title": "Data Analyst – Monitoring, Research and Measurement (MRM)",
+   "company": "SAJIDA Foundation",
+   "description": "Position: Data Analyst – Monitoring, Research and Measurement (MRM)\nCompany: SAJIDA Foundation\nJob Location: Head Office, Dhaka (with frequent field travel)\nEmployment Type: Full-time\nExperience: Minimum 3 years of MEAL / MRM experience in NGOs, international organisations or development programmes\nEducation: Bachelor’s in Social Sciences, Statistics, International Development, Research Methods, M&E or related; Master’s an advantage\nDeadline: 28 October 2026\nAbout the Role\nSAJIDA Foundation is hiring a Data Analyst for its MRM unit to manage, analyse and report programme data for evidence-based decisions.\nKey Responsibilities\nMaintain the project MRM / MEAL framework, indicators and data collection tools\nCoordinate routine monitoring and keep project databases accurate\nRun data quality assessments and verification exercises\nLead baseline and capacity assessments and surveys\nProduce monitoring reports, dashboards and performance analyses\nRequirements\nBachelor’s in Social Sciences, Statistics, International Development, Research Methods, M&E or a related field (Master’s an advantage)\nMinimum 3 years of MEAL / MRM experience in NGOs, international organisations or development programmes\nKoBoToolbox, ODK or similar digital data collection platforms\nAdvanced Excel; SPSS, STATA, Power BI or R is an asset\nAbout SAJIDA Foundation\nSAJIDA Foundation is a Bangladeshi development organisation founded in 1993.\nHow to Apply\nInterested candidates can apply through the SAJIDA Foundation careers site using the Apply Now button. The application deadline is 28 October 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Data & Reporting",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/data-analyst-monitoring-research-and-measurement-mrm-sajida-foundation/",
+   "status": "Awaiting Review",
+   "id": "6f234316-bac9-428a-a164-0d4c9b8736de",
+   "createdAt": "2026-10-25T08:01:15+00:00",
+   "requiredSkills": "analyst, monitoring, research, measurement, mrm, sajida, foundation, location, head, dhaka, frequent, field",
+   "postedAt": "2026-10-25",
+   "deadline": "2026-10-28",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "3 Years",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "f54f882b1604381f",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/data-analyst-monitoring-research-and-measurement-mrm-sajida-foundation/",
+     "found_at": "2026-10-27T08:33:31+00:00"
+    }
+   ],
+   "matchScore": 58,
+   "scoreParts": {
+    "title": 100,
+    "level": 30,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
    "title": "Mid to Senior Level PHP Developer",
    "company": "Invento",
    "description": "Mid to Senior Level PHP Developer position at Invento. Required skills: Php, Laravel, Codeigniter, Python, Django.",
@@ -906,7 +1410,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-10-26",
+   "postedAt": "2026-10-27",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -920,7 +1424,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/46",
-     "found_at": "2026-10-26T17:05:00+00:00"
+     "found_at": "2026-10-27T08:33:38+00:00"
     }
    ],
    "matchScore": 57,
@@ -963,7 +1467,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 57,
@@ -1006,7 +1510,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-26T17:05:01+00:00"
+     "found_at": "2026-10-27T08:33:39+00:00"
     }
    ],
    "matchScore": 57,
@@ -1049,7 +1553,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 57,
@@ -1092,7 +1596,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 57,
@@ -1135,7 +1639,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-26T17:05:01+00:00"
+     "found_at": "2026-10-27T08:33:39+00:00"
     }
    ],
    "matchScore": 57,
@@ -1178,7 +1682,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/tebra-senior-software-engineer",
-     "found_at": "2026-10-26T17:05:05+00:00"
+     "found_at": "2026-10-27T08:33:43+00:00"
     }
    ],
    "matchScore": 57,
@@ -1194,6 +1698,136 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Senior Software Engineer",
+   "company": "Vested, Inc.",
+   "description": "Headquarters: United States\nURL: https://vested.co\nAbout the role\nWe're looking for a Senior Software Engineer who can define and deliver products that have a real impact on people's financial futures. You'll be joining a small and early-stage engineering team where each engineer has significant ownership and your contributions will directly shape the product and the company's technical direction.\nAs a senior member of our engineering team, you'll focus on the development and supporting infrastructure of vested.co – our core equity management and stock-option-funding platform.\nWhat You'll Do\nBuild impactful features : Design and implement user-facing features that help people understand and manage their equity compensation.\nOwn end-to-end delivery : Take projects from concept to production, including system design, implementation, testing, and deployment.\nShape our technical direction : Contribute to architectural decisions and help establish engineering best practices as we scale.\nCollaborate cross-functionally : Work closely with product, design, and business teams to deliver exceptional user experiences.\nGrow the team : Share your expertise with other engineers and help build a culture of continuous learning. Help us grow and shape our inclusive, friendly, egoless engineering culture.\nSolve complex problems : Tackle challenging technical problems around financial calculations, data integrations, and building reliable systems at scale.\nWhat We're Looking For\n4+ years of software engineering experience with a track record of shipping production software.\nFull-stack capabilities with strong expertise in modern web technologies. We work with React, Next.js, TypeScript, and MongoDB. You should be experienced building frontend features, designing APIs, and modeling data relationships.\nProduct mindset : You care deeply about user experience and enjoy building products that solve real problems.\nStrong communication skills : Ability to explain complex technical concepts to both technical and non-technical audiences.\nOwnership mentality : You take pride in your work and see projects through from start to finish.\nGrowth mindset : Eager to learn new technologies and domains.\nBenefits & Perks\nMeaningful equity, with industry-leading grant terms (naturally)\nMarket competitive salary\n95% paid health insurance for employees and dependents\n401k match\nFully remote, distributed workplace\nGenerous time away including company holidays, paid time off, sick time, parental leave, and more!\nQuarterly team offsites throughout the country\nExpected salary for this role is $145,000 - $190,000 (depending on qualifications and experience)\nLocation\nFully remote. Standup and collaboration is centered mostly around the Eastern Time Zone, but we have team members from Alaska to Europe.\nReady to Join Us?\nIf you're excited about making equity ownership accessible to everyone and want to work on challenging technical problems with a real-world impact, we'd love to hear from you.\nOur interview process will include an initial meeting to assess mutual interest, a live technical interview, and further opportunities to meet the team and discuss your background.\nPlease send a brief note expressing your interest as well as your resume to engineering@vested.co with the subject “Senior Software Engineer Application.”\nVested is an equal opportunity employer and considers all quali fi ed applicants equally without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, veteran status, or disability.\nTo apply: https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
+   "status": "Awaiting Review",
+   "id": "cc47fe2d-3fe2-44fb-be28-a36f948e4588",
+   "createdAt": "2026-10-27T08:33:43+00:00",
+   "requiredSkills": "senior, engineer, headquarters, united, states, url, https, //vested.co, about, looking, who, define",
+   "postedAt": "2026-10-26",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "7d2811f0c156ce2f",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
+     "found_at": "2026-10-27T08:33:43+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Senior Executive, Marketing",
+   "company": "Brain Station 23",
+   "description": "Position: Senior Executive, Marketing\nCompany: Brain Station 23 PLC\nVacancies: 3\nJob Location: Dhaka (on-site, Mon to Fri)\nExperience: 2 to 4 years in strategic marketing, market research, GTM, growth or demand generation\nSalary: Not mentioned\nDeadline: 28 October 2026\nAbout the Role\nBrain Station 23 is looking for a Senior Executive, Marketing to drive market intelligence, go-to-market strategy and demand generation across its AI, software services, ERP and eCommerce businesses.\nKey Responsibilities\nResearch markets, customers and competitors to find growth opportunities\nBuild GTM strategies, positioning, value propositions and demand generation plans\nIdentify ideal customer profiles and run targeted LinkedIn and email outreach\nPlan and optimise Google Ads and LinkedIn Ads campaigns\nCreate industry content and case studies with sales, presales and product teams\nRequirements\n2 to 4 years in strategic marketing, market research, GTM or B2B demand generation\nStrong analytical, research and competitor analysis skills\nUnderstanding of B2B buyer behaviour and positioning\nAbout Brain Station 23\nBrain Station 23 is a Bangladeshi software company with offices in Bangladesh, the USA, Germany, the UAE, Malaysia and Japan.\nHow to Apply\nInterested candidates can apply through the Brain Station 23 careers page using the Apply Now button. The application deadline is 28 October 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Information Systems",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/senior-executive-marketing-brain-station-23/",
+   "status": "Awaiting Review",
+   "id": "30456192-1195-4c8f-8c48-b0d1edafab76",
+   "createdAt": "2026-10-15T07:55:10+00:00",
+   "requiredSkills": "senior, executive, marketing, brain, station, plc, vacancies, location, dhaka, mon, fri, strategic",
+   "postedAt": "2026-10-15",
+   "deadline": "2026-10-28",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "2 Years",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "132d886d3432fd3a",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/senior-executive-marketing-brain-station-23/",
+     "found_at": "2026-10-27T08:33:34+00:00"
+    }
+   ],
+   "matchScore": 53,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "IT Operations Officer, NOA, Cox’s Bazar",
+   "company": "World Food Programme (WFP)",
+   "description": "Position: IT Operations Officer, NOA, Cox’s Bazar\nOrganization: United Nations World Food Programme (WFP)\nJob Location: Cox’s Bazar\nJob Type: Fixed Term, 12 months (Grade NOA)\nExperience: At least 5 years overall, including 3 years of professional (managerial or supervisory) experience in Telecommunications or IT\nEducation: Advanced university degree (Master’s or equivalent) in Computer Science or a relevant field\nSalary: Not mentioned (competitive benefits package including salary, leave and medical insurance)\nDeadline: 31 October 2026, 23:59 Bangladesh time\nAbout the Role\nThe World Food Programme is hiring an IT Operations Officer (NOA) in Cox’s Bazar to support the planning, deployment and upkeep of IT and telecommunications systems that let WFP staff deliver food assistance. The vacancy is for Bangladeshi nationals.\nKey Responsibilities\nSupport the budgeting, planning and deployment of IT and telecommunications systems in line with WFP corporate standards\nMaintain IT and telecommunications systems and networks with appropriate data security and access controls\nInstall and configure new computer hardware and support technology upgrades\nProvide data and documentation for the procurement of IT and telecommunications equipment and services\nCompile data and help prepare reports on IT and telecommunications investments and costs\nResolve user queries and make sure IT policies, procedures, systems and tools are applied correctly\nGuide junior staff and support training programmes in IT and telecommunications\nCoordinate with other UN agencies on inter-agency IT and telecommunications work\nFollow emergency preparedness and contingency plans so basic IT services continue in a crisis\nRequirements\nAdvanced university degree (Master’s or equivalent) in Computer Science or a relevant field\nAt least 5 years of overall experience, including 3 years of professional (managerial or supervisory) experience in Telecommunications, IT or a related field\nWithin those 3 years, at least 1 year after the postgraduate degree\nFluent spoken and written English and Bangla\nOpen to Bangladeshi nationals\nTerms\nGrade NOA, fixed-term contract for 12 months\nDuty station: Cox’s Bazar; one position\nCompetitive benefits package including salary, leave and medical insurance\nApplication\nApply only through WFP’s online recruiting system (CVs sent by email or LinkedIn are not considered)\nWFP does not charge any fee at any stage of recruitment\nApplication deadline: 31 October 2026, 23:59 Bangladesh time\nAbout World Food Programme\nThe World Food Programme is the world’s largest humanitarian organization, saving lives in emergencies and using food assistance to build a pathway to peace, stability and prosperity. WFP is the 2020 Nobel Peace Prize Laureate.\nHow to Apply\nInterested candidates can apply through the WFP’s online recruiting system (Workday) using the Apply Now button. The application deadline is 31 October 2026, 23:59 Bangladesh time . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Information Technology",
+   "location": "Cox's Bazar",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/it-operations-officer-noa-coxs-bazar-world-food-programme-wfp/",
+   "status": "Awaiting Review",
+   "id": "dc548cb8-fb73-46c0-b20c-ba9742f1dfee",
+   "createdAt": "2026-10-19T08:22:45+00:00",
+   "requiredSkills": "officer, noa, cox, bazar, organization, united, nations, world, food, programme, wfp, location",
+   "postedAt": "2026-10-18",
+   "deadline": "2026-10-31",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Contractual",
+   "experienceText": "5 Years",
+   "area": "",
+   "distanceKm": null,
+   "fingerprint": "df02494845c8e192",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/it-operations-officer-noa-coxs-bazar-world-food-programme-wfp/",
+     "found_at": "2026-10-27T08:33:32+00:00"
+    }
+   ],
+   "matchScore": 53,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
   }
  ]
 }
