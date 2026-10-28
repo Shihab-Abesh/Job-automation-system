@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-28T09:13:45+00:00",
+ "generatedAt": "2026-10-28T16:57:02+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 15,
+    "found": 16,
     "errors": [],
-    "raw": 275
+    "raw": 277
    },
    "jsonld": {
     "found": 4,
@@ -43,7 +43,7 @@
    "rss": {
     "found": 27,
     "errors": [],
-    "raw": 329
+    "raw": 327
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 42,
-   "new": 3,
+   "total": 43,
+   "new": 1,
    "expired": 0,
    "duplicatesFolded": 4,
    "priorityA": 9,
    "priorityB": 14,
-   "priorityC": 19
+   "priorityC": 20
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-28T09:13:44+00:00"
+  "ranAt": "2026-10-28T16:57:02+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
-     "found_at": "2026-10-28T09:13:03+00:00"
+     "found_at": "2026-10-28T16:56:22+00:00"
     }
    ],
    "matchScore": 96,
@@ -145,7 +145,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-28T09:13:03+00:00"
+     "found_at": "2026-10-28T16:56:22+00:00"
     }
    ],
    "matchScore": 87,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
-     "found_at": "2026-10-28T09:13:02+00:00"
+     "found_at": "2026-10-28T16:56:21+00:00"
     }
    ],
    "matchScore": 83,
@@ -230,7 +230,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 83,
@@ -272,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-10-28T09:12:59+00:00"
+     "found_at": "2026-10-28T16:56:18+00:00"
     }
    ],
    "matchScore": 79,
@@ -314,7 +314,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-10-28T09:13:15+00:00"
+     "found_at": "2026-10-28T16:56:34+00:00"
     }
    ],
    "matchScore": 75,
@@ -356,7 +356,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +398,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-28T09:13:03+00:00"
+     "found_at": "2026-10-28T16:56:22+00:00"
     }
    ],
    "matchScore": 75,
@@ -440,7 +440,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-10-28T09:12:59+00:00"
+     "found_at": "2026-10-28T16:56:18+00:00"
     }
    ],
    "matchScore": 75,
@@ -482,7 +482,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-28T09:13:02+00:00"
+     "found_at": "2026-10-28T16:56:21+00:00"
     }
    ],
    "matchScore": 73,
@@ -525,7 +525,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-28T09:13:02+00:00"
+     "found_at": "2026-10-28T16:56:21+00:00"
     }
    ],
    "matchScore": 72,
@@ -568,7 +568,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-10-28T09:13:24+00:00"
+     "found_at": "2026-10-28T16:56:42+00:00"
     }
    ],
    "matchScore": 71,
@@ -610,7 +610,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-10-28T09:13:11+00:00"
+     "found_at": "2026-10-28T16:56:30+00:00"
     }
    ],
    "matchScore": 71,
@@ -652,7 +652,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/31",
-     "found_at": "2026-10-28T09:13:03+00:00"
+     "found_at": "2026-10-28T16:56:21+00:00"
     }
    ],
    "matchScore": 71,
@@ -695,7 +695,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 71,
@@ -737,7 +737,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
-     "found_at": "2026-10-28T09:12:59+00:00"
+     "found_at": "2026-10-28T16:56:18+00:00"
     }
    ],
    "matchScore": 70,
@@ -777,7 +777,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 66,
@@ -819,7 +819,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/digital-marketing-executive-mr-diy-bangladesh/",
-     "found_at": "2026-10-28T09:12:59+00:00"
+     "found_at": "2026-10-28T16:56:18+00:00"
     }
    ],
    "matchScore": 66,
@@ -861,7 +861,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 66,
@@ -903,7 +903,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-28T09:13:02+00:00"
+     "found_at": "2026-10-28T16:56:21+00:00"
     }
    ],
    "matchScore": 66,
@@ -946,7 +946,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 66,
@@ -988,7 +988,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 66,
@@ -1030,7 +1030,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-10-28T09:12:59+00:00"
+     "found_at": "2026-10-28T16:56:21+00:00"
     }
    ],
    "matchScore": 62,
@@ -1072,7 +1072,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-28T09:13:02+00:00"
+     "found_at": "2026-10-28T16:56:21+00:00"
     }
    ],
    "matchScore": 79,
@@ -1114,7 +1114,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-program-november-2026-batch-mgh-group/",
-     "found_at": "2026-10-28T09:12:56+00:00"
+     "found_at": "2026-10-28T16:56:15+00:00"
     }
    ],
    "matchScore": 75,
@@ -1157,7 +1157,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 65,
@@ -1200,7 +1200,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/32",
-     "found_at": "2026-10-28T09:13:03+00:00"
+     "found_at": "2026-10-28T16:56:21+00:00"
     }
    ],
    "matchScore": 65,
@@ -1244,7 +1244,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-28T09:13:03+00:00"
+     "found_at": "2026-10-28T16:56:21+00:00"
     }
    ],
    "matchScore": 61,
@@ -1288,7 +1288,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 61,
@@ -1331,7 +1331,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 61,
@@ -1374,7 +1374,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-monitoring-research-and-measurement-mrm-sajida-foundation/",
-     "found_at": "2026-10-28T09:12:56+00:00"
+     "found_at": "2026-10-28T16:56:15+00:00"
     }
    ],
    "matchScore": 58,
@@ -1417,7 +1417,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/46",
-     "found_at": "2026-10-28T09:13:03+00:00"
+     "found_at": "2026-10-28T16:56:21+00:00"
     }
    ],
    "matchScore": 57,
@@ -1460,7 +1460,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 57,
@@ -1503,7 +1503,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-28T09:13:03+00:00"
+     "found_at": "2026-10-28T16:56:22+00:00"
     }
    ],
    "matchScore": 57,
@@ -1546,7 +1546,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 57,
@@ -1589,7 +1589,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 57,
@@ -1632,7 +1632,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-10-28T09:12:56+00:00"
+     "found_at": "2026-10-28T16:56:15+00:00"
     }
    ],
    "matchScore": 57,
@@ -1675,7 +1675,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-28T09:13:03+00:00"
+     "found_at": "2026-10-28T16:56:22+00:00"
     }
    ],
    "matchScore": 57,
@@ -1691,6 +1691,50 @@
     "Title matches your excluded list (Principal)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Manager – Business Intelligence (BI) Analyst",
+   "company": "Square Textiles",
+   "description": "Position: Manager – Business Intelligence (BI) Analyst\nCompany: SQUARE Textiles Division (Square Group)\nJob Location: Head Office (Department: ERP)\nEmployment Type: Full-time\nExperience: 8+ years in Data Analytics, BI and Data Warehousing, preferably in manufacturing, textile or supply chain\nEducation: Bachelor’s/Master’s in Data Science, Computer Science, Statistics, Applied Mathematics or Industrial Engineering\nDeadline: 1 November 2026\nAbout the Role\nSQUARE Textiles Division is hiring a Manager – Business Intelligence (BI) Analyst at its head office to lead division-wide digital transformation.\nKey Responsibilities\nDrive the division-wide digital transformation roadmap across factories\nLead automation, IoT, AI, analytics and smart manufacturing initiatives\nOversee implementation, system integration, change management and user adoption\nSet digital standards, governance and performance monitoring\nMeasure the business impact and ROI of digital initiatives\nRequirements\nBachelor’s/Master’s in Data Science, Computer Science, Statistics, Applied Mathematics or Industrial Engineering\n8+ years in Data Analytics, BI and Data Warehousing, preferably in manufacturing, textile or supply chain\nData warehousing, ETL, Power BI/Tableau, Python/R, SQL, machine learning and AWS/Azure/GCP\nStrong knowledge of manufacturing KPIs (OEE, yield, downtime, production scheduling)\nLeadership, strategic thinking and executive presentation skills\nAbout Square Textiles\nSQUARE Textiles is the textiles division of Square Group, one of Bangladesh’s largest business groups.\nHow to Apply\nInterested candidates can apply through the CV by email to career.stxl@squaregroup.com, position in the subject using the Apply Now button. The application deadline is 1 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Data & Reporting",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/manager-business-intelligence-bi-analyst-square-textiles/",
+   "status": "Awaiting Review",
+   "id": "2a9d97fd-4dc3-4ca3-a8f4-4630679174ae",
+   "createdAt": "2026-10-28T16:56:15+00:00",
+   "requiredSkills": "business, intelligence, analyst, square, textiles, division, group, location, head, department, erp, employment",
+   "postedAt": "2026-10-28",
+   "deadline": "2026-11-01",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "8+",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "802f124892fb7bf7",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/manager-business-intelligence-bi-analyst-square-textiles/",
+     "found_at": "2026-10-28T16:56:15+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting",
+    "Title matches your excluded list (Manager)"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Senior Software Engineer",
@@ -1718,7 +1762,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/tebra-senior-software-engineer",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 57,
@@ -1761,7 +1805,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-10-28T09:13:08+00:00"
+     "found_at": "2026-10-28T16:56:26+00:00"
     }
    ],
    "matchScore": 57,
@@ -1804,7 +1848,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-executive-marketing-brain-station-23/",
-     "found_at": "2026-10-28T09:12:59+00:00"
+     "found_at": "2026-10-28T16:56:18+00:00"
     }
    ],
    "matchScore": 53,
@@ -1848,7 +1892,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-operations-officer-noa-coxs-bazar-world-food-programme-wfp/",
-     "found_at": "2026-10-28T09:12:59+00:00"
+     "found_at": "2026-10-28T16:56:17+00:00"
     }
    ],
    "matchScore": 53,
