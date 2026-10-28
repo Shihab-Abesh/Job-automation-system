@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-27T16:09:21+00:00",
+ "generatedAt": "2026-10-28T09:13:45+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 14,
+    "found": 15,
     "errors": [],
-    "raw": 267
+    "raw": 275
    },
    "jsonld": {
     "found": 4,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 30,
+    "found": 27,
     "errors": [],
-    "raw": 323
+    "raw": 329
    },
    "careers": {
     "found": 0,
@@ -57,12 +57,12 @@
    }
   },
   "counts": {
-   "total": 41,
-   "new": 0,
+   "total": 42,
+   "new": 3,
    "expired": 0,
-   "duplicatesFolded": 7,
-   "priorityA": 7,
-   "priorityB": 15,
+   "duplicatesFolded": 4,
+   "priorityA": 9,
+   "priorityB": 14,
    "priorityC": 19
   },
   "filters": {
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-27T16:09:21+00:00"
+  "ranAt": "2026-10-28T09:13:44+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
-     "found_at": "2026-10-27T16:08:38+00:00"
+     "found_at": "2026-10-28T09:13:03+00:00"
     }
    ],
    "matchScore": 96,
@@ -145,7 +145,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-27T16:08:38+00:00"
+     "found_at": "2026-10-28T09:13:03+00:00"
     }
    ],
    "matchScore": 87,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
-     "found_at": "2026-10-27T16:08:37+00:00"
+     "found_at": "2026-10-28T09:13:02+00:00"
     }
    ],
    "matchScore": 83,
@@ -230,7 +230,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 83,
@@ -272,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-10-27T16:08:34+00:00"
+     "found_at": "2026-10-28T09:12:59+00:00"
     }
    ],
    "matchScore": 79,
@@ -314,7 +314,91 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-10-27T16:08:50+00:00"
+     "found_at": "2026-10-28T09:13:15+00:00"
+    }
+   ],
+   "matchScore": 75,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Business Intelligence Analyst (Contractor)",
+   "company": "Doximity",
+   "description": "Headquarters: San Francisco, CA or Remote (U.S.)\n**This is a contract role expected to last until April 15th, 2027\nLocation : This role is Remote in the U.S., with the option to work onsite from our San Francisco, CA headquarters.\nVisa sponsorship is not available for this role.\nAbout Doximity\nDoximity is the leading clinical AI company with the largest network of U.S. clinicians. Doximity’s AI-powered workflow platform is trusted by over 85% of U.S. physicians and 300+ health systems. Doximity's mission is to help clinicians be more productive so they can provide better care for their patients.\nAt Doximity, we value curiosity, ownership, inclusion, and a commitment to making a meaningful impact. If you're excited about solving complex problems that improve healthcare, we'd love to hear from you.\nAbout the Role\nAs a Business Intelligence Analyst , you will:\nWork closely with our Product, Strategic Analytics, Client Success, and Sales teams to create client-facing analyses.\nShowcase your engineering skills by creating data products from scratch and automating code so they can be re-used by other teammates.\nContinue to improve your technical and non-technical skill sets.\nLeverage Doximity's extensive datasets to identify and classify behavioral patterns of medical professionals on our platform.\nGrow into a presentation/communication-focused role or dive deeper into more-involved technical challenges—the choice is yours.\nWhat We're Looking For\nWe're excited to meet candidates who have many of the following qualifications:\nMust have:\nThree (3) years of experience illustrating collaboration, passion for data, reliability, precision, curiosity, and respect for teammates and clients.\nExcellent SQL skills with proven ability to create and evaluate complex SQL statements involving numerous tables and complex relationships.\nFluent in Python and experience using common modules (numpy, pandas, statsmodels, matplotlib) for EDA.\nExperience collaborating with non-technical stakeholders.\nNice to have:\nWorking knowledge of statistics and visualization.\nExperience working with data visualization tools.\nAdvanced Excel skills.\nExperience using AI coding assistants and building AI-leveraged workflows.\nExperience working in the healthcare industry.\nExperience presenting data to a non-technical audience.\nThe Core Values of the Client Intelligence team\nAs an organization we value diversity - in backgrounds and in experiences. Healthcare is a universal concern, and we need people from all backgrounds to help build a better future for all. Below are additional core values specific to the Insights Team.\nCollaboration —The best candidates and teammates are not only strong in their own aptitudes but care deeply about supporting each other's growth.\nPassion for Data —You’re going to help our clients and team members with data-driven decision making. We need someone that can manipulate millions of rows of data and also ask the right questions to find the important insights.\nReliability – Our team is efficient, flexible, and agile only because we trust the reliability of each member. We need self-starters and goal-oriented individuals for our continued success.\nPrecision – Our team's deliverables power client analysis and inform real-world decisions. A successful candidate will triple check their work and their teammates' work, holding all of us to the highest data quality standards.\nCuriosity – Continuous learning is a cornerstone at Doximity, and curious individuals thrive in our environment. We’re looking for someone who is curious enough about data to go above-and-beyond the task for the true insight.\nRespect – A key dynamic that allows our team to flourish is respect: for ourselves and our quality of work, for our teammates, and for our internal clients who are under the pressure of deadlines and finance goals.\nWhy You'll Love Working Here\nAt Doximity, you'll join a mission-driven company where your work has a meaningful impact on healthcare. We believe great ideas come from empowered teams, and we're committed to creating an environment where people can do their best work.\nMake a real impact. Help build products that support over a million healthcare professionals and ultimately improve patient care.\nWork with exceptional teammates. Collaborate with thoughtful, talented colleagues who value curiosity, humility, and continuous learning.\nEnjoy flexibility and trust. We support flexible ways of working and empower employees with the autonomy to own their work.\nGrow your career. Take on meaningful challenges, develop new skills, and shape your career through mentorship and professional development.\nBring your authentic self. We're committed to fostering an inclusive culture where diverse perspectives are welcomed, respected, and celebrated.\nOur Hiring Process & AI Tools\nDoximity may use artificial intelligence (AI)-enabled tools throughout the hiring process to help improve the candidate experience and support our recruiting team. These tools may assist with administrative tasks such as scheduling, general communication, interview coordination, note-taking, or summarizing interview feedback. Human recruiters and hiring managers make all hiring decisions. We are committed to using AI responsibly, transparently, and in accordance with applicable laws.\nEqual Employment Opportunity\nDoximity is proud to be an Equal Opportunity Employer. We are committed to creating an inclusive workplace where everyone can thrive. We consider all qualified applicants without regard to race, color, religion, creed, sex, gender identity or expression, sexual orientation, national origin, ancestry, age, disability, veteran status, genetic information, marital status, or any other characteristic protected by applicable federal, state, or local law.\nIf you require a reasonable accommodation during the application or interview process, please let us know so we can support your participation.\nTo apply: https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
+   "category": "Data & Reporting",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
+   "status": "Awaiting Review",
+   "id": "36be8882-de6c-4185-83a1-f056dc3ff61e",
+   "createdAt": "2026-10-28T09:13:08+00:00",
+   "requiredSkills": "business, intelligence, analyst, contractor, headquarters, san, francisco, remote, u.s., contract, expected, last",
+   "postedAt": "2026-10-28",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "047d3b8e3d38f36b",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
+     "found_at": "2026-10-28T09:13:08+00:00"
+    }
+   ],
+   "matchScore": 75,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Software Engineer - Query Execution",
+   "company": "Dremio",
+   "description": "Headquarters: Portugal - Remote\nBe Part of Building the Future\nDremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost. Learn more at www.dremio.com.\nAbout the role\nDremio’s Query Execution team builds the runtime responsible for executing analytical queries at scale. The team sits between query planning and table scans, building the systems that turn query plans into efficient, reliable execution.\nAs a Software Engineer, you’ll work with experienced engineers to build, test, and support well-scoped improvements to the execution engine. You’ll learn how Dremio’s query runtime works while contributing to areas such as query operators, expression evaluation, memory management, scheduling, and performance.\nWhat you’ll be doing\nBuild and support execution-engine components: Implement, test, debug, and maintain well-defined changes to query operators, expression evaluation, execution scheduling, and resource management.\nDevelop reliable software: Write clear, maintainable Java code; add unit and integration tests; and follow established engineering practices for code review, testing, and documentation.\nInvestigate issues: Help diagnose query correctness, reliability, and performance issues using query profiles, logs, telemetry, benchmarks, and production data.\nLearn runtime and performance fundamentals: Build familiarity with vectorized processing, concurrency, memory usage, parallelism, data exchange, and disk spilling.\nCollaborate with the team: Work closely with senior engineers and partner teams to understand requirements, break work into manageable tasks, and deliver incremental improvements.\nUse AI-assisted development tools: Apply AI tools to code comprehension, debugging, test generation, and documentation, while validating results through testing, review, and sound engineering judgment.\nGrow your engineering skills: Participate actively in design discussions and code reviews, seek feedback, and steadily take on broader technical responsibility.\nWhat we’re looking for\nSoftware engineering foundation: Up to two years of professional software development experience, or equivalent experience through internships, coursework, or substantial personal projects.\nProgramming skills: Proficiency in Java or another object-oriented programming language; willingness to learn and work in a large Java codebase.\nComputer science fundamentals: Understanding of data structures, algorithms, and basic concurrency concepts.\nProblem-solving ability: Able to work through well-defined technical problems, ask good questions, and apply feedback to reach a solution.\nQuality mindset: Commitment to writing tested, maintainable code and learning established development, testing, and review practices.\nCommunication and collaboration: Able to communicate progress, surface blockers early, and work effectively with teammates.\nEducation: Bachelor’s degree in Computer Science, a related technical field, or equivalent practical experience.\nBonus points if you have\nExposure to database internals, query processing, distributed systems, or large-scale data processing.\nFamiliarity with performance-oriented software concepts such as profiling, memory management, concurrency, or vectorized processing.\nExperience with C++, Apache Arrow, Parquet, Apache Iceberg, Spark, Hadoop, or cloud object stores.\nContributions to open-source projects.\nWhat we value\nAt Dremio, we hold ourselves to high standards when it comes to People, Thinking, and Action. Our Gnarlies (that's what we call our employees) communicate with clarity, drive accountability, and are respectful towards each other. We confront brutal facts and focus on results while operating with a sense of urgency and building a \"flywheel\". People who like to jump in and drive momentum will thrive in our #GnarlyLife.\nDremio is an equal opportunity employer supporting workforce diversity. We do not discriminate on the basis of race, religion, color, national origin, gender identity, sexual orientation, age, marital status, protected veteran status, disability status, or any other unlawful factor.\nDremio is committed to providing any necessary accommodations for individuals with disabilities within our application and interview process. To request accommodation due to a disability, please inform your recruiter.\nDremio has policies in place to protect the personal information that employees and applicants disclose to us. Please click here to review the privacy notice.\nImportant Security Notice for Candidates\nAt Dremio, we uphold trust and transparency as paramount values in all our interactions with customers, partners, employees, and the general public. We have been targeted by individuals creating fake domains similar to ours to scam prospects and candidates. Please note that all official communications from us will be from an @dremio.com domain. If you suspect you've been targeted by a scam, it's imperative to report the incident to your local law enforcement agencies. For more information about this type of scam, please refer to Dremio's official statement here .\nDremio is not responsible for any fees related to unsolicited resumes and will not pay fees to any third-party agency or company that does not have a signed agreement with the Company.\nTo apply: https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
+   "status": "Awaiting Review",
+   "id": "45487292-61a5-43ac-97bc-e84c2a44feb1",
+   "createdAt": "2026-10-28T09:13:03+00:00",
+   "requiredSkills": "engineer, query, execution, headquarters, portugal, remote, building, future, dremio, unified, lakehouse, platform",
+   "postedAt": "2026-10-07",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "1c46c6bb1e0222d0",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
+     "found_at": "2026-10-28T09:13:03+00:00"
     }
    ],
    "matchScore": 75,
@@ -356,7 +440,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-10-27T16:08:34+00:00"
+     "found_at": "2026-10-28T09:12:59+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +482,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-27T16:08:37+00:00"
+     "found_at": "2026-10-28T09:13:02+00:00"
     }
    ],
    "matchScore": 73,
@@ -441,7 +525,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-27T16:08:37+00:00"
+     "found_at": "2026-10-28T09:13:02+00:00"
     }
    ],
    "matchScore": 72,
@@ -484,7 +568,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-10-27T16:08:59+00:00"
+     "found_at": "2026-10-28T09:13:24+00:00"
     }
    ],
    "matchScore": 71,
@@ -526,49 +610,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-10-27T16:08:46+00:00"
-    }
-   ],
-   "matchScore": 71,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "rss"
-  },
-  {
-   "title": "Software Engineer - Developer Experience",
-   "company": "Dremio",
-   "description": "Headquarters: Portugal - Remote\nBe Part of Building the Future\nDremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost. Learn more at www.dremio.com.\nAbout the role\nIn this role you will get opportunities to implement and maintain CI/CD systems and developer productivity solutions. You will be responsible for both regularly scheduled work as well as on-demand break-fix work to support Dremio’s CI/CD system, identifying areas of improvement, and implementing changes to increase efficiency and effectiveness of those systems.\nBring your industry experience to improve the efficiency and scale of Dremio’s infrastructure via innovation on tooling and methodologies. You should have empathy for developers and a passion for engineering productivity.\nWhat you’ll be doing\nSolve problems for fellow Dremio engineers by:\nLeveraging and contributing to playbooks to implement solutions to unblock them\nIdentifying short term workarounds and documenting them\nAutomating processes where manual processes exist.\nWorking on infrastructure across all major clouds (AWS, GCP, Azure).\nManaging access to key infrastructure.\nBuild and maintain CI/CD pipelines and associated systems to increase organizational efficiency.\nAutomate local development workflows.\nAnalyze performance bottlenecks, root cause issues, file defects, follow up with developers, and document resolutions.\nClear focus on keeping our development branches ‘green’.\nRelease engineering - automating processes to push software to delivery endpoints.\nReport out on the status, reliability and robustness of our CI/CD systems.\nActively participate in code reviews.\nWhat we’re looking for\nB.S. or M.S in Computer Science or in a related technical field\n1+ years of experience on large scale distributed systems\nComfortable navigating the fast moving, unstructured nature of a hyper-growth startup.\nDemonstrable Knowledge and Experience with at least one cloud platform (AWS, Azure, GCP)\nBasic understanding of cloud networking and cloud architecture.\nProficiency in any of Java/C++/Python/Go\nKnowledge of Maven or similar build environments\nHands on experience in pipeline automation using CI/CD tools like Jenkins\nExperience in Infrastructure as Code\nExperience with Terraform, BASH, Docker, Jenkins, and Kubernetes\nAbility to write technical reports, effectively summarizing key data\nPassion for learning and then delivering solutions using latest technologies\nStrong Affinity for collaboration and teamwork\nBonus points if you have\nWorking knowledge in data lakes and data warehousing\nProficient with SQL\nWhat we value\nAt Dremio, we hold ourselves to high standards when it comes to People, Thinking, and Action. Our Gnarlies (that's what we call our employees) communicate with clarity, drive accountability, and are respectful towards each other. We confront brutal facts and focus on results while operating with a sense of urgency and building a \"flywheel\". People who like to jump in and drive momentum will thrive in our #GnarlyLife.\nDremio is an equal opportunity employer supporting workforce diversity. We do not discriminate on the basis of race, religion, color, national origin, gender identity, sexual orientation, age, marital status, protected veteran status, disability status, or any other unlawful factor.\nDremio is committed to providing any necessary accommodations for individuals with disabilities within our application and interview process. To request accommodation due to a disability, please inform your recruiter.\nDremio has policies in place to protect the personal information that employees and applicants disclose to us. Please click here to review the privacy notice.\nImportant Security Notice for Candidates\nAt Dremio, we uphold trust and transparency as paramount values in all our interactions with customers, partners, employees, and the general public. We have been targeted by individuals creating fake domains similar to ours to scam prospects and candidates. Please note that all official communications from us will be from an @dremio.com domain. If you suspect you've been targeted by a scam, it's imperative to report the incident to your local law enforcement agencies. For more information about this type of scam, please refer to Dremio's official statement here .\nDremio is not responsible for any fees related to unsolicited resumes and will not pay fees to any third-party agency or company that does not have a signed agreement with the Company.\nTo apply: https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-   "status": "Awaiting Review",
-   "id": "83b1b004-efc4-4549-8d34-d4fe9b495ac3",
-   "createdAt": "2026-09-28T09:15:16+00:00",
-   "requiredSkills": "engineer, headquarters, portugal, remote, building, future, dremio, unified, lakehouse, platform, self, service",
-   "postedAt": "2026-09-28",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "fd0906b805f5256c",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-     "found_at": "2026-10-27T16:08:38+00:00"
+     "found_at": "2026-10-28T09:13:11+00:00"
     }
    ],
    "matchScore": 71,
@@ -610,7 +652,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/31",
-     "found_at": "2026-10-27T16:08:38+00:00"
+     "found_at": "2026-10-28T09:13:03+00:00"
     }
    ],
    "matchScore": 71,
@@ -653,7 +695,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 71,
@@ -695,7 +737,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
-     "found_at": "2026-10-27T16:08:34+00:00"
+     "found_at": "2026-10-28T09:12:59+00:00"
     }
    ],
    "matchScore": 70,
@@ -735,7 +777,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 66,
@@ -777,7 +819,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/digital-marketing-executive-mr-diy-bangladesh/",
-     "found_at": "2026-10-27T16:08:34+00:00"
+     "found_at": "2026-10-28T09:12:59+00:00"
     }
    ],
    "matchScore": 66,
@@ -819,7 +861,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 66,
@@ -861,7 +903,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-27T16:08:37+00:00"
+     "found_at": "2026-10-28T09:13:02+00:00"
     }
    ],
    "matchScore": 66,
@@ -904,7 +946,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 66,
@@ -946,7 +988,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 66,
@@ -988,7 +1030,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-10-27T16:08:34+00:00"
+     "found_at": "2026-10-28T09:12:59+00:00"
     }
    ],
    "matchScore": 62,
@@ -1030,7 +1072,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-27T16:08:37+00:00"
+     "found_at": "2026-10-28T09:13:02+00:00"
     }
    ],
    "matchScore": 79,
@@ -1072,7 +1114,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-program-november-2026-batch-mgh-group/",
-     "found_at": "2026-10-27T16:08:31+00:00"
+     "found_at": "2026-10-28T09:12:56+00:00"
     }
    ],
    "matchScore": 75,
@@ -1115,7 +1157,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 65,
@@ -1144,7 +1186,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-27",
+   "postedAt": "2026-10-28",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1158,7 +1200,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/32",
-     "found_at": "2026-10-27T16:08:38+00:00"
+     "found_at": "2026-10-28T09:13:03+00:00"
     }
    ],
    "matchScore": 65,
@@ -1177,55 +1219,6 @@
    "discoveredBy": "jsonld"
   },
   {
-   "title": "Senior Staff Software Engineer - Query Execution",
-   "company": "Dremio",
-   "description": "Headquarters: Portugal - Remote\nBe Part of Building the Future\nDremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost. Learn more at www.dremio.com.\nAbout the role\nDremio’s Query Execution team builds the runtime responsible for executing analytical queries at scale. The team sits between query planning and table scans, owning the systems that turn query plans into efficient, reliable execution.\nAs a Senior Staff Software Engineer, you’ll work on query operators, expression evaluation, memory management, execution scheduling, runtime planning, and performance optimization. Your work will directly affect query performance, scalability, and reliability across Dremio’s cloud data platform.\nWhat you’ll be doing\nBuild the execution engine: Design, implement, test, and support query operators, expression evaluation, execution scheduling, runtime planning, and resource management.\nImprove runtime performance: Optimize vectorized processing, concurrency, parallelism, memory usage, data exchange, and disk spilling.\nDiagnose difficult problems: Investigate query correctness and performance issues using query profiles, profiling tools, telemetry, benchmarks, logs, and production data.\nOptimize Java and the JVM: Improve CPU utilization, allocation behavior, garbage collection, thread behavior, and other runtime characteristics.\nCollaborate across the query engine: Work with Query Planner, Datalake, Product, Support, and field engineering teams on end-to-end query improvements.\nUse AI-assisted development tools: Apply AI tools to code comprehension, debugging, test generation, documentation, and incident analysis.\nApply engineering judgment: Validate AI-generated code and recommendations through review, testing, benchmarking, and engineering judgment.\nRaise the engineering bar: Participate in design and code reviews, contribute to technical direction, and mentor other engineers.\nWhat we’re looking for\nSoftware engineering experience: 5+ years developing production software, preferably in database systems, query execution, distributed systems, or related areas.\nProgramming skills: Strong Java skills; experience with C++ is a plus.\nComputer science fundamentals: Strong foundation in data structures, algorithms, concurrency, multithreaded programming, and asynchronous programming.\nDatabase and distributed systems knowledge: Understanding of database internals, query processing, distributed execution, and performance optimization.\nPerformance engineering experience: Experience profiling and optimizing CPU, memory, garbage collection, thread behavior, or other runtime characteristics.\nProblem-solving ability: Ability to solve ambiguous technical problems and work effectively across team boundaries.\nEngineering judgment: Ability to evaluate tradeoffs, validate solutions rigorously, and make sound decisions when working with unfamiliar or AI-assisted implementations.\nCommunication and ownership: Strong communication skills, a sense of ownership, and a commitment to delivering high-quality software.\nBonus points if you have\nQuery engines: Distributed query engines, database engines, or large-scale data processing systems.\nExecution techniques: Vectorized execution, query operators, expression evaluation, code generation, or runtime optimization.\nRuntime systems: JVM profiling, memory management, caching, networking, data exchange, execution scheduling, or disk spilling.\nData platforms: Apache Arrow, Apache Iceberg, Parquet, Avro, Spark, Hadoop, or cloud object stores.\nOpen source: Contributing to open-source projects.\nWhat we value\nAt Dremio, we hold ourselves to high standards when it comes to People, Thinking, and Action. Our Gnarlies (that's what we call our employees) communicate with clarity, drive accountability, and are respectful towards each other. We confront brutal facts and focus on results while operating with a sense of urgency and building a \"flywheel\". People who like to jump in and drive momentum will thrive in our #GnarlyLife.\nDremio is an equal opportunity employer supporting workforce diversity. We do not discriminate on the basis of race, religion, color, national origin, gender identity, sexual orientation, age, marital status, protected veteran status, disability status, or any other unlawful factor.\nDremio is committed to providing any necessary accommodations for individuals with disabilities within our application and interview process. To request accommodation due to a disability, please inform your recruiter.\nDremio has policies in place to protect the personal information that employees and applicants disclose to us. Please click here to review the privacy notice.\nImportant Security Notice for Candidates\nAt Dremio, we uphold trust and transparency as paramount values in all our interactions with customers, partners, employees, and the general public. We have been targeted by individuals creating fake domains similar to ours to scam prospects and candidates. Please note that all official communications from us will be from an @dremio.com domain. If you suspect you've been targeted by a scam, it's imperative to report the incident to your local law enforcement agencies. For more information about this type of scam, please refer to Dremio's official statement here .\nDremio is not responsible for any fees related to unsolicited resumes and will not pay fees to any third-party agency or company that does not have a signed agreement with the Company.\nTo apply: https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-   "status": "Awaiting Review",
-   "id": "b605ce77-e7e5-49d3-be5c-5cd269652aee",
-   "createdAt": "2026-09-28T09:15:16+00:00",
-   "requiredSkills": "senior, staff, engineer, query, execution, headquarters, portugal, remote, building, future, dremio, unified",
-   "postedAt": "2026-09-28",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "1a29b5df8429f795",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-27T16:08:38+00:00"
-    },
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-     "found_at": "2026-10-27T16:08:38+00:00"
-    }
-   ],
-   "matchScore": 61,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Senior)",
-    "Title matches your excluded list (Staff)"
-   ],
-   "discoveredBy": "rss"
-  },
-  {
    "title": "Senior Software Engineer (Full stack)",
    "company": "Field Nation",
    "description": "Senior Software Engineer (Full stack) position at Field Nation. Required skills: Php, MySQL, Node.Js, React, React-Native.",
@@ -1237,7 +1230,7 @@
    "id": "f5865883-68f6-465f-bd2f-288009b745f7",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-27",
+   "postedAt": "2026-10-28",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1251,7 +1244,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-27T16:08:38+00:00"
+     "found_at": "2026-10-28T09:13:03+00:00"
     }
    ],
    "matchScore": 61,
@@ -1295,7 +1288,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 61,
@@ -1338,7 +1331,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 61,
@@ -1381,7 +1374,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-monitoring-research-and-measurement-mrm-sajida-foundation/",
-     "found_at": "2026-10-27T16:08:31+00:00"
+     "found_at": "2026-10-28T09:12:56+00:00"
     }
    ],
    "matchScore": 58,
@@ -1410,7 +1403,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-10-27",
+   "postedAt": "2026-10-28",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1424,7 +1417,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/46",
-     "found_at": "2026-10-27T16:08:38+00:00"
+     "found_at": "2026-10-28T09:13:03+00:00"
     }
    ],
    "matchScore": 57,
@@ -1467,7 +1460,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 57,
@@ -1510,7 +1503,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-     "found_at": "2026-10-27T16:08:38+00:00"
+     "found_at": "2026-10-28T09:13:03+00:00"
     }
    ],
    "matchScore": 57,
@@ -1553,7 +1546,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 57,
@@ -1596,7 +1589,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 57,
@@ -1612,6 +1605,49 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Business Analyst",
+   "company": "Rancon Motorbikes (Suzuki)",
+   "description": "Position: Business Analyst\nCompany: Rancon Motorbikes Limited (Suzuki Bangladesh)\nJob Location: Head Office, Dhaka\nEmployment Type: Full-time\nExperience: At least 4 years of relevant experience\nEducation: Bachelor’s in BBA, Economics, Statistics, MIS, Engineering or a related discipline\nBenefits: Competitive salary and benefits, insurance, 2 days weekend\nDeadline: 15 November 2026\nAbout the Role\nRancon Motorbikes (Suzuki Bangladesh) is hiring a Business Analyst at its head office to support dealer development with analytics and reporting.\nKey Responsibilities\nAnalyse dealer performance and give actionable business insights\nBuild and maintain sales, dealer network and management dashboards\nAssess dealer profitability and recommend improvements\nSupport OMS (Order Management System) and business process automation\nAnalyse marketing campaign performance\nSupport business planning, budgeting, forecasting and target setting\nRequirements\nBachelor’s in BBA, Economics, Statistics, MIS, Engineering or a related discipline\nAt least 4 years of relevant experience\nAdvanced Microsoft Excel\nStrong Power BI and dashboard development\nKnowledge of SQL is an advantage\nAbout Rancon Motorbikes (Suzuki)\nRancon Motorbikes Limited markets Suzuki motorcycles in Bangladesh and is a concern of the Rancon (Rangs) group.\nHow to Apply\nInterested candidates can apply through the CV by email to Rancon Motorbikes (Suzuki) HR, subject “Business Analyst” using the Apply Now button. The application deadline is 15 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Data & Reporting",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
+   "status": "Awaiting Review",
+   "id": "b78031fd-14c2-47c5-9d27-b0dc10982eed",
+   "createdAt": "2026-10-28T09:12:56+00:00",
+   "requiredSkills": "business, analyst, rancon, motorbikes, limited, suzuki, bangladesh, location, head, dhaka, employment, type",
+   "postedAt": "2026-10-28",
+   "deadline": "2026-11-15",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Full Time",
+   "experienceText": "4 Years",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "4a309152ebf14fe4",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
+     "found_at": "2026-10-28T09:12:56+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Principal Software Engineer, AI",
@@ -1639,7 +1675,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-27T16:08:38+00:00"
+     "found_at": "2026-10-28T09:13:03+00:00"
     }
    ],
    "matchScore": 57,
@@ -1682,7 +1718,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/tebra-senior-software-engineer",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 57,
@@ -1725,7 +1761,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-10-27T16:08:43+00:00"
+     "found_at": "2026-10-28T09:13:08+00:00"
     }
    ],
    "matchScore": 57,
@@ -1768,7 +1804,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-executive-marketing-brain-station-23/",
-     "found_at": "2026-10-27T16:08:34+00:00"
+     "found_at": "2026-10-28T09:12:59+00:00"
     }
    ],
    "matchScore": 53,
@@ -1812,7 +1848,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-operations-officer-noa-coxs-bazar-world-food-programme-wfp/",
-     "found_at": "2026-10-27T16:08:31+00:00"
+     "found_at": "2026-10-28T09:12:59+00:00"
     }
    ],
    "matchScore": 53,
