@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-29T17:15:23+00:00",
+ "generatedAt": "2026-10-30T09:27:14+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,19 +31,19 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 15,
+    "found": 16,
     "errors": [],
-    "raw": 286
+    "raw": 284
    },
    "jsonld": {
-    "found": 4,
+    "found": 3,
     "errors": [],
     "raw": 20
    },
    "rss": {
-    "found": 25,
+    "found": 24,
     "errors": [],
-    "raw": 322
+    "raw": 317
    },
    "careers": {
     "found": 0,
@@ -57,12 +57,12 @@
    }
   },
   "counts": {
-   "total": 41,
-   "new": 0,
+   "total": 38,
+   "new": 1,
    "expired": 0,
-   "duplicatesFolded": 3,
-   "priorityA": 10,
-   "priorityB": 15,
+   "duplicatesFolded": 5,
+   "priorityA": 9,
+   "priorityB": 13,
    "priorityC": 16
   },
   "filters": {
@@ -74,51 +74,9 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-29T17:15:23+00:00"
+  "ranAt": "2026-10-30T09:27:14+00:00"
  },
  "jobs": [
-  {
-   "title": "Web Developer (Fresh graduate welcome, WFH policy, on-job-training)",
-   "company": "HR Plus",
-   "description": "Headquarters: Hong Kong, Hong Kong SAR, Hong Kong\nURL: http://hrplus.tech\nAbout the Role:\nAre you a talented and driven Web Developer looking to join a young and energetic team? Look no further! Our client, a fast-growing firm in the exciting field of web development, is seeking a skilled Web Developer to join their dynamic team. With a focus on innovation and growth, they offer a supportive and collaborative work environment where you can thrive.\nHere's what you can gain from this opportunity:\nHands-on experience in web development for various companies in different settings.\nDown-to-earth, hands-on training from experienced seniors.\nA chance to join a rapidly growing industry and build a successful career in web development.\nBenefits:\nCompetitive salary package based on skills and experience.\nYoung and energetic work environment that fosters collaboration and innovation.\n5-Day work week for a healthy work-life balance.\nWork From Home (WFH) option available one day per week.\nResponsibilities:\nDevelop and implement web applications and system enhancements.\nTake ownership of web projects from development to production.\nRevamp the company's directory website to improve functionality and enhance search engine optimization (SEO) practices.\nIncrease website capabilities, such as advanced searching features and adherence to industry standards.\nRequirements:\n1 year or more of related experience preferred, fresh graduates are also welcomed.\nStrong knowledge and experience in PHP and WordPress, MySQL, HTML, CSS, and JavaScript.\nKnowledge of server-side programming and web server configuration/administration is advantageous.\nExperience in developing web systems, API integration, and data handling.\nFamiliarity with Git/Gitlab is a plus.\nExperience in UX design is a valuable asset.\nSelf-motivated, independent, highly responsible, and able to work under pressure.\nPersonal data provided by job applicants will be used strictly in accordance with the employer's personal data policies. All information received will be kept in strict confidence and only for employment-related purposes.\n\"We are an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability status, protected veteran status, or any other characteristic protected by law.\"\nTo apply: https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
-   "status": "Awaiting Review",
-   "id": "398232bd-a380-4269-bd38-48e2d367c083",
-   "createdAt": "2026-10-14T08:18:27+00:00",
-   "requiredSkills": "fresh, graduate, welcome, wfh, policy, training, headquarters, hong, kong, sar, url, http",
-   "postedAt": "2026-09-29",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "9a05bf80a25669b5",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
-     "found_at": "2026-10-29T17:14:43+00:00"
-    }
-   ],
-   "matchScore": 96,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 83,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "rss"
-  },
   {
    "title": "FULL TIME: Software Engineer Position - React and Rest",
    "company": "Yooli",
@@ -145,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-29T17:14:43+00:00"
+     "found_at": "2026-10-30T09:26:34+00:00"
     }
    ],
    "matchScore": 87,
@@ -187,7 +145,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/al-arafah-islami-bank-plc./career/management-trainee-officer/2026",
-     "found_at": "2026-10-29T17:14:42+00:00"
+     "found_at": "2026-10-30T09:26:33+00:00"
     }
    ],
    "matchScore": 83,
@@ -230,7 +188,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:34+00:00"
     }
    ],
    "matchScore": 83,
@@ -272,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-10-29T17:14:38+00:00"
+     "found_at": "2026-10-30T09:26:30+00:00"
     }
    ],
    "matchScore": 79,
@@ -314,7 +272,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-10-29T17:14:55+00:00"
+     "found_at": "2026-10-30T09:26:46+00:00"
     }
    ],
    "matchScore": 75,
@@ -356,7 +314,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:38+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +356,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-29T17:14:43+00:00"
+     "found_at": "2026-10-30T09:26:34+00:00"
     }
    ],
    "matchScore": 75,
@@ -440,7 +398,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-10-29T17:14:38+00:00"
+     "found_at": "2026-10-30T09:26:30+00:00"
     }
    ],
    "matchScore": 75,
@@ -482,7 +440,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-10-29T17:14:26+00:00"
+     "found_at": "2026-10-30T09:26:27+00:00"
     }
    ],
    "matchScore": 75,
@@ -522,7 +480,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-performance-analyst-foodpanda/",
-     "found_at": "2026-10-29T17:14:42+00:00"
+     "found_at": "2026-10-30T09:26:33+00:00"
     }
    ],
    "matchScore": 73,
@@ -565,7 +523,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-29T17:14:42+00:00"
+     "found_at": "2026-10-30T09:26:33+00:00"
     }
    ],
    "matchScore": 72,
@@ -581,48 +539,6 @@
     "Exact area not stated in the posting"
    ],
    "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Software Development Engineer in Test",
-   "company": "Calm.com",
-   "description": "Headquarters: Remote, United States\nAbout Calm\nCalm is the leading mental health brand on a mission to make the world happier and healthier. Known for its flagship consumer app—ranked #1 in its category with over 180 million downloads and availability in ten languages across 190 countries—Calm helps people sleep better, stress less, and live more mindfully through content and tools from experts and beloved celebrity voices. Building on this foundation, Calm has created a broader portfolio including evidence-based solutions like Calm Health , offered through employers, health plans and providers, designed to expand access to mental health and sleep support, boost benefits engagement, and drive positive health outcomes. Today, Calm supports more than 3,500 organizations and reaches over 42 million covered lives through Calm Health. Calm has been recognized as a TIME100 Most Influential Company and one of Fast Company’s Brands That Matter . Learn more at calm.com .\nWhat We Do\nWe build Calm’s product, guide Calm’s analysis, secure Calm’s data, and operate the platforms that underpin it all. We’re product-minded, team-oriented, and grounded in the mission of meeting everyone where they’re at on their mental health journey. We work in fast-moving, small pods, and as an SDET you’ll make sure what we ship is reliable, well-tested, and ready for the millions of people who rely on Calm.\nWhat You’ll Do\nMillions of people rely on Calm every day, and you’ll help make sure every release earns their trust. As an SDET, you’ll build the automation and pipeline checks that catch issues early, lead our QA efforts, and partner with engineering, product, and design to ship the Calm app and our internal tools with confidence.\nSpecifically, you will:\nSet the testing strategy and quality bar for the Calm app and our internal content and admin tools\nArchitect and build automated test frameworks and suites (UI, API, mobile, and integration) that run reliably in our CI/CD pipelines\nReview requirements, specs, and pull requests early so issues are caught in-sprint rather than at the end\nWork with all of our consumer product teams on release planning and certification, and monitor release health after launch\nPartner with product and design (roughly 30% of your time) to define acceptance criteria and keep release timelines on track\nManage and direct our offshore QA team, shifting their work toward automation and higher-value testing over time\nTriage and document defects with clear, actionable detail, and drive them to resolution\nTrack and report on quality metrics such as coverage, flakiness, escaped defects, and release stability\nUse AI-assisted tooling to speed up test creation, maintenance, and analysis\nContribute to feature development in Android, iOS, backend, or web as the role grows\nWho You Are\n3+ years of experience as a software engineer, SDET, or QA automation engineer\nStrong programming skills in Java and JavaScript/TypeScript\nHands-on experience building test automation frameworks and integrating them into CI/CD pipelines\nExperience testing mobile apps (iOS and/or Android)\nExperience leading QA efforts and owning release readiness, ideally with distributed or offshore teams\nComfortable using AI-assisted tools in your testing and development workflow\nNice to Haves\nExperience with a consumer subscription or mobile app at scale\nHands-on development experience in a mobile, backend, or web codebase\nMinimum Requirements\n3+ years of related experience\nCalm uses a geographic pay model that determines salaries based on the location where an employee lives. For this position, the base pay ranges across Calm’s pay tiers is as follows: $111,400 - 181,500. The base pay range represents the low and high end of Calm’s salary range for this position. Not all candidates will be eligible for the upper end of the salary range. Exact salary will ultimately depend on multiple factors, which include the successful candidate's geographic location, skills, experience and other qualifications. Calm uses employee zip code to determine which pay range applies. This role is also eligible for equity + comprehensive benefits + 401k + flexible time off.\nCalm may incorporate artificial intelligence technology to support the application review process, but rest assured that human reviewers are involved in all stages of the hiring process.\nCalm is committed to providing reasonable accommodations for qualified individuals with disabilities, including disabled veterans. If you require a reasonable accommodation to complete any part of the application or interview process, please contact Calm’s Recruiting team at recruitingaccommodations@calm.com . All accommodation requests will be handled confidentially and assessed on a case-by-case basis.\nWe believe that mental health is health, and every person should be considered in the discussion. That’s why we’re proud to be an equal opportunity workplace, committed to providing equal employment opportunities to all applicants and employees regardless of race, color, religion, national origin, age, sex, marital status, ancestry, physical or mental disability, medical condition, genetic information, military or veteran status, gender identity or expression, sexual orientation, or any other characteristic protected by applicable federal, state or local law.\nCalm is deeply committed to diversity, equity and inclusion. We strive to create a mindful and respectful environment where everyone can bring their authentic self to work, and experience a culture that is free of harassment, racism, and discrimination.\nEmployment offers are contingent upon the successful completion of a background check. Roles which require access to certain types of information may also require the successful completion of a drug screening.\nFOR US BASED POSITIONS: Calm participates in e-verify. E-verify provides the federal government with your Form I-9 information to confirm that you are authorized to work in the U.S.\nRight to Work\nE-Verify Participation\nTo apply: https://weworkremotely.com/remote-jobs/calm-com-software-development-engineer-in-test",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/calm-com-software-development-engineer-in-test",
-   "status": "Awaiting Review",
-   "id": "bc99761b-df2d-450a-b181-c52aad02935d",
-   "createdAt": "2026-10-29T09:13:05+00:00",
-   "requiredSkills": "development, engineer, headquarters, remote, united, states, about, calm, leading, mental, health, brand",
-   "postedAt": "2026-10-29",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "8a91be20c9935277",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/calm-com-software-development-engineer-in-test",
-     "found_at": "2026-10-29T17:14:51+00:00"
-    }
-   ],
-   "matchScore": 71,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "rss"
   },
   {
    "title": "Data Analyst, Clinical Data Effectiveness",
@@ -650,7 +566,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-10-29T17:15:03+00:00"
+     "found_at": "2026-10-30T09:26:54+00:00"
     }
    ],
    "matchScore": 71,
@@ -692,7 +608,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-10-29T17:14:51+00:00"
+     "found_at": "2026-10-30T09:26:42+00:00"
     }
    ],
    "matchScore": 71,
@@ -707,49 +623,6 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Assistant/Associate Software Quality Assurance Engineer",
-   "company": "Dynamic Solution Innovators (DSi)",
-   "description": "Assistant/Associate Software Quality Assurance Engineer position at Dynamic Solution Innovators (DSi). Required skills: Java, Javascript, Python, Selenium, Cypress.",
-   "category": "Software Quality Assurance",
-   "location": "Dhaka, Bangladesh",
-   "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/31",
-   "status": "Awaiting Review",
-   "id": "6c29665a-c12a-4a40-be17-bab3cce7931a",
-   "createdAt": "2026-10-04T09:14:08+00:00",
-   "requiredSkills": "assistant/associate, engineer, solution, innovators, dsi, required, python, selenium, cypress.",
-   "postedAt": "2026-09-20",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full time",
-   "experienceText": "",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "483feaae30ea44f2",
-   "sources": [
-    {
-     "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/31",
-     "found_at": "2026-10-29T17:14:43+00:00"
-    }
-   ],
-   "matchScore": 71,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "jsonld"
   },
   {
    "title": "Software Engineer - Data Platform",
@@ -777,7 +650,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:34+00:00"
     }
    ],
    "matchScore": 71,
@@ -819,7 +692,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
-     "found_at": "2026-10-29T17:14:38+00:00"
+     "found_at": "2026-10-30T09:26:30+00:00"
     }
    ],
    "matchScore": 70,
@@ -859,7 +732,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:38+00:00"
     }
    ],
    "matchScore": 66,
@@ -901,7 +774,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/digital-marketing-executive-mr-diy-bangladesh/",
-     "found_at": "2026-10-29T17:14:38+00:00"
+     "found_at": "2026-10-30T09:26:33+00:00"
     }
    ],
    "matchScore": 66,
@@ -943,7 +816,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:38+00:00"
     }
    ],
    "matchScore": 66,
@@ -985,7 +858,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/jobs-in-bd/career/software-engineer/2026",
-     "found_at": "2026-10-29T17:14:42+00:00"
+     "found_at": "2026-10-30T09:26:33+00:00"
     }
    ],
    "matchScore": 66,
@@ -1028,7 +901,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:38+00:00"
     }
    ],
    "matchScore": 66,
@@ -1070,7 +943,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:34+00:00"
     }
    ],
    "matchScore": 66,
@@ -1112,7 +985,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-10-29T17:14:42+00:00"
+     "found_at": "2026-10-30T09:26:33+00:00"
     }
    ],
    "matchScore": 62,
@@ -1154,7 +1027,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-29T17:14:42+00:00"
+     "found_at": "2026-10-30T09:26:33+00:00"
     }
    ],
    "matchScore": 79,
@@ -1196,7 +1069,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-program-november-2026-batch-mgh-group/",
-     "found_at": "2026-10-29T17:14:26+00:00"
+     "found_at": "2026-10-30T09:26:30+00:00"
     }
    ],
    "matchScore": 75,
@@ -1239,7 +1112,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:38+00:00"
     }
    ],
    "matchScore": 65,
@@ -1263,12 +1136,12 @@
    "category": "Software Development",
    "location": "Dhaka",
    "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/32",
+   "url": "https://www.bdtechjobs.com/jobs/31",
    "status": "Awaiting Review",
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-29",
+   "postedAt": "2026-10-30",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1281,8 +1154,8 @@
    "sources": [
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/32",
-     "found_at": "2026-10-29T17:14:43+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/31",
+     "found_at": "2026-10-30T09:26:34+00:00"
     }
    ],
    "matchScore": 65,
@@ -1307,12 +1180,12 @@
    "category": "Software Development",
    "location": "Dhaka",
    "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/13",
+   "url": "https://www.bdtechjobs.com/jobs/12",
    "status": "Awaiting Review",
    "id": "f5865883-68f6-465f-bd2f-288009b745f7",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-29",
+   "postedAt": "2026-10-30",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1325,8 +1198,8 @@
    "sources": [
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/13",
-     "found_at": "2026-10-29T17:14:43+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/12",
+     "found_at": "2026-10-30T09:26:34+00:00"
     }
    ],
    "matchScore": 61,
@@ -1370,7 +1243,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:38+00:00"
     }
    ],
    "matchScore": 61,
@@ -1413,7 +1286,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:38+00:00"
     }
    ],
    "matchScore": 61,
@@ -1431,18 +1304,61 @@
    "discoveredBy": "rss"
   },
   {
+   "title": "Officer, Query Management – Yamaha",
+   "company": "ACI Motors",
+   "description": "Position: Officer, Query Management – Yamaha\nCompany: ACI Motors Limited\nJob Location: Dhaka (work at office)\nEmployment Type: Full-time\nExperience: 1 to 2 years in automobile; freshers encouraged\nEducation: Bachelor’s in any discipline, Marketing or Business Administration preferred\nAge: 22 to 30 years\nSalary: Negotiable\nDeadline: 15 November 2026\nAbout the Role\nACI Motors is hiring an Officer, Query Management for Yamaha in Dhaka to handle online customer queries and support digital marketing.\nKey Responsibilities\nRespond to social media customer queries in time and report market information\nCoordinate with sales and service teams to resolve customer, dealer and retailer issues\nRun sales approaches through online platforms and confirm sales\nSupport the marketing team with inquiry tracking data and digital marketing activities\nMaintain and update online content and track online performance\nRequirements\nBachelor’s in any discipline, Marketing or Business Administration preferred\n1 to 2 years of experience in automobile; freshers are encouraged to apply\nAge 22 to 30 years\nDigital marketing, data reporting or dealer coordination experience is an advantage\nProficiency in MS Excel and PowerPoint\nAbout ACI Motors\nACI Motors, a subsidiary of ACI PLC, markets Yamaha motorcycles, Foton vehicles and agricultural and infrastructure machinery in Bangladesh.\nHow to Apply\nInterested candidates can apply through the bdjobs.com using the Apply Now button. The application deadline is 15 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Information Technology",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
+   "status": "Awaiting Review",
+   "id": "2602ce68-c808-4663-89a8-5620603b6d50",
+   "createdAt": "2026-10-30T09:26:27+00:00",
+   "requiredSkills": "officer, query, yamaha, aci, motors, limited, location, dhaka, work, employment, type, full",
+   "postedAt": "2026-10-30",
+   "deadline": "2026-11-15",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Full Time",
+   "experienceText": "1 Year+",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "23f69640db31799e",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
+     "found_at": "2026-10-30T09:26:27+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 67,
+    "level": 80,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
    "title": "Mid to Senior Level PHP Developer",
    "company": "Invento",
    "description": "Mid to Senior Level PHP Developer position at Invento. Required skills: Php, Laravel, Codeigniter, Python, Django.",
    "category": "Software Development",
    "location": "New DOHS Mohakhali, Dhaka",
    "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/46",
+   "url": "https://www.bdtechjobs.com/jobs/44",
    "status": "Awaiting Review",
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-10-29",
+   "postedAt": "2026-10-30",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1455,8 +1371,8 @@
    "sources": [
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/46",
-     "found_at": "2026-10-29T17:14:43+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/44",
+     "found_at": "2026-10-30T09:26:34+00:00"
     }
    ],
    "matchScore": 57,
@@ -1499,7 +1415,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:38+00:00"
     }
    ],
    "matchScore": 57,
@@ -1542,7 +1458,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:38+00:00"
     }
    ],
    "matchScore": 57,
@@ -1585,7 +1501,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:38+00:00"
     }
    ],
    "matchScore": 57,
@@ -1628,7 +1544,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-10-29T17:14:26+00:00"
+     "found_at": "2026-10-30T09:26:27+00:00"
     }
    ],
    "matchScore": 57,
@@ -1644,49 +1560,6 @@
     "Exact area not stated in the posting"
    ],
    "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Principal Software Engineer, AI",
-   "company": "Salesloft",
-   "description": "Headquarters: United States, Remote\nJob Title: Principal Software Engineer, AI\nLocation : Remote - US\nSalesloft is building the next era of enterprise revenue — one where teams make confident decisions powered by AI and real signals. By combining our scale, insights, and AI innovation, we're building the industry's first Predictive Revenue System, enabling humans and AI to work together to make smarter decisions and drive consistent growth.\nWith thousands of customers using our platforms every day, we have an unmatched view into how revenue is actually won — the Revenue Context that reveals what happens, when, and with what outcome. This gives us a unique opportunity to transform an entire category and set a new benchmark for how modern revenue teams operate.\nJoin us to help transform how companies around the world run revenue — and build the platform that will guide leading revenue teams into the future.\nTHE OPPORTUNITY\nAt Salesloft, our Principal Engineer for AI sets the technical direction for how machine intelligence works across our Predictive Revenue System. This is the most senior individual-contributor role on our AI engineering team: you will architect the systems that turn LLMs, machine learning models, and agentic workflows into production capabilities that thousands of enterprise revenue teams depend on.\nThis is deep, ambiguous, frontier work. You will make the foundational architectural decisions for AI at Salesloft — how we serve models at scale, how we build reliable systems on top of non-deterministic components, how we evaluate and guardrail agentic behavior, and how we keep pace as the underlying foundation models evolve. You will set the standards other engineers build on and act as a technical multiplier across the AI organization.\nOn a day-to-day basis, you will:\nSet the technical architecture and direction for AI systems across the platform — model serving, LLM-powered features, agentic workflows, and the infrastructure beneath them.\nDesign production-grade systems that are reliable and observable despite being built on non-deterministic, probabilistic AI components.\nArchitect evaluation frameworks, guardrails, and quality systems that make AI behavior safe, measurable, and trustworthy at enterprise scale.\nLead the most complex AI engineering problems end to end — from research-adjacent prototyping through hardened production delivery.\nEstablish engineering standards and best practices for building AI-native systems, and mentor senior engineers across the org.\nKeep the platform at the frontier by evaluating and integrating advances in foundation models, agent frameworks, and the modern AI stack.\nThis role lives at the heart of how we Lead From the Front: you'll work at the edge of applied AI, prototype rapidly, and make architectural bets ahead of the field. And in the spirit of how we Make Your Mark, you'll set the AI engineering standards and systems that the entire organization builds on — engineered for scale, not for a demo.\nWHAT WE'RE LOOKING FOR\nWe are looking for an engineer who operates at the highest level of technical authority in AI systems — someone who has architected and shipped production AI at scale and understands the deep challenges of building reliable systems on probabilistic foundations. You lead through technical credibility and make the engineers around you better.\nYou embody what we call Evidence Over Ego — you make architectural decisions from evaluation data and evidence rather than hype, you invite rigorous challenge, and you change direction when the models or the data move. You bring systems thinking to a genuinely unsolved problem space and build for durability.\nThis is the right role if you want to define how AI works on a platform at the center of enterprise revenue.\nTHE TEAM\nThe Salesloft AI Engineering organization builds the machine intelligence at the core of the Predictive Revenue System. The team works at the intersection of applied research and production engineering, in close partnership with Product, Data Science, and Data Platform Engineering.\nThe team Moves as One — AI engineering, product, and data science share ownership of shipping trustworthy AI and make hard technical calls together. And we are relentlessly Customer Inspired: every AI capability is measured against whether it makes revenue teams genuinely more successful and more confident in the system.\nTHE SKILL SET\nExtensive experience building and architecting production software systems at scale, with significant depth in AI/ML systems.\nHands-on experience building production systems on top of LLMs or machine learning models — including designing for the challenges of non-deterministic behavior.\nDeep expertise in distributed systems, model serving, and the infrastructure required to run AI reliably at scale.\nProven experience designing evaluation frameworks, guardrails, or quality systems for AI-driven features.\nA track record of setting technical architecture and standards across teams and mentoring senior engineers.\nStrong command of a major programming language (e.g., Python, Java, or Go) and modern cloud infrastructure (AWS or GCP).\nHands-on experience with agentic systems — designing and hardening AI agents that take autonomous action in production.\nDepth in the modern AI stack — retrieval-augmented generation, vector stores, agent frameworks, model orchestration, or evaluation tooling.\nBENEFITS:\nFor more information about our company's comprehensive benefits please visit: https://salesloftbenefits.com/\nAt Salesloft, we are committed to creating an inclusive and supportive workplace where everyone belongs and can thrive. We focus on culture add, not culture fit, and believe our teams are made stronger by the unique perspectives, experiences, and identities each person brings.\nWe are proud to be an Equal Opportunity Employer and provide employment opportunities to all employees and applicants without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, veteran status, pregnancy, or any other characteristic protected by law.\nIf you’re excited about this role even though your experience may not perfectly match every requirement, we encourage you to apply. We are actively hiring across multiple geographies and would love to welcome passionate, curious, and mission-driven individuals to our growing team. Explore our open roles and consider joining us!\nPlease note that all official communication regarding job opportunities at Clari + Salesloft will come from @ salesloft.com email address. If you receive messages on LinkedIn or other job platforms claiming to be from Salesloft, they may not be legitimate. To verify the authenticity of any job-related communication, please visit our official Careers Page .\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, notetaking, or summarizing responses. These tools assist our recruitment team but do not replace human judgment - all hiring decisions are made by people. If you would like more information about how your data is processed or prefer to opt out of any AI-assisted tools, please let your recruiter know. Opting out will not impact your experience or consideration.\n#LI-REMOTE\nIt is Salesloft’s intent to pay all Lofters competitive wages and salaries that are motivational, fair and equitable. The goal of Salesloft’s compensation program is to be transparent, attract potential employees, meet the needs of all current employees and encourage employees to stay with our organization.\nActual compensation packages are based on several factors that are unique to each candidate, including but not limited to skill set, depth of experience, certifications, and specific work location.\nThe total compensation package for this position may also include performance bonus, benefits and/or other applicable incentive compensation plans.\nBase Pay Range\n$165,000 — $185,000 USD\nTo apply: https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-   "status": "Awaiting Review",
-   "id": "bc156c4a-b9d9-420c-a32a-ef4019cc0239",
-   "createdAt": "2026-09-30T09:13:23+00:00",
-   "requiredSkills": "principal, engineer, headquarters, united, states, remote, title, location, salesloft, building, next, enterprise",
-   "postedAt": "2026-09-30",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "5b57fc1f7129601f",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-     "found_at": "2026-10-29T17:14:43+00:00"
-    }
-   ],
-   "matchScore": 57,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Principal)"
-   ],
-   "discoveredBy": "rss"
   },
   {
    "title": "Manager – Business Intelligence (BI) Analyst",
@@ -1714,7 +1587,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/manager-business-intelligence-bi-analyst-square-textiles/",
-     "found_at": "2026-10-29T17:14:26+00:00"
+     "found_at": "2026-10-30T09:26:27+00:00"
     }
    ],
    "matchScore": 57,
@@ -1758,7 +1631,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-10-29T17:14:47+00:00"
+     "found_at": "2026-10-30T09:26:38+00:00"
     }
    ],
    "matchScore": 57,
@@ -1801,7 +1674,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-operations-officer-noa-coxs-bazar-world-food-programme-wfp/",
-     "found_at": "2026-10-29T17:14:38+00:00"
+     "found_at": "2026-10-30T09:26:30+00:00"
     }
    ],
    "matchScore": 53,
