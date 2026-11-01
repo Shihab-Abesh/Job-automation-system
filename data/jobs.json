@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-10-31T15:56:27+00:00",
+ "generatedAt": "2026-11-01T09:58:35+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 13,
+    "found": 12,
     "errors": [],
-    "raw": 282
+    "raw": 263
    },
    "jsonld": {
     "found": 3,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 24,
+    "found": 25,
     "errors": [],
-    "raw": 318
+    "raw": 327
    },
    "careers": {
     "found": 0,
@@ -58,7 +58,7 @@
   },
   "counts": {
    "total": 35,
-   "new": 0,
+   "new": 1,
    "expired": 0,
    "duplicatesFolded": 5,
    "priorityA": 9,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-10-31T15:56:27+00:00"
+  "ranAt": "2026-11-01T09:58:35+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-10-31T15:55:49+00:00"
+     "found_at": "2026-11-01T09:57:53+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,7 +145,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-10-31T15:55:49+00:00"
+     "found_at": "2026-11-01T09:57:53+00:00"
     }
    ],
    "matchScore": 83,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-cards-sales-eastern-bank-plc-2/",
-     "found_at": "2026-10-31T15:55:39+00:00"
+     "found_at": "2026-11-01T09:57:46+00:00"
     }
    ],
    "matchScore": 79,
@@ -229,7 +229,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-10-31T15:55:42+00:00"
+     "found_at": "2026-11-01T09:57:49+00:00"
     }
    ],
    "matchScore": 79,
@@ -271,7 +271,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-10-31T15:56:00+00:00"
+     "found_at": "2026-11-01T09:58:05+00:00"
     }
    ],
    "matchScore": 75,
@@ -313,7 +313,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-10-31T15:55:53+00:00"
+     "found_at": "2026-11-01T09:57:57+00:00"
     }
    ],
    "matchScore": 75,
@@ -355,7 +355,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-10-31T15:55:49+00:00"
+     "found_at": "2026-11-01T09:57:53+00:00"
     }
    ],
    "matchScore": 75,
@@ -397,7 +397,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-10-31T15:55:42+00:00"
+     "found_at": "2026-11-01T09:57:49+00:00"
     }
    ],
    "matchScore": 75,
@@ -439,7 +439,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-10-31T15:55:39+00:00"
+     "found_at": "2026-11-01T09:57:46+00:00"
     }
    ],
    "matchScore": 75,
@@ -479,7 +479,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-10-31T15:55:47+00:00"
+     "found_at": "2026-11-01T09:57:52+00:00"
     }
    ],
    "matchScore": 72,
@@ -522,7 +522,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-10-31T15:56:08+00:00"
+     "found_at": "2026-11-01T09:58:13+00:00"
     }
    ],
    "matchScore": 71,
@@ -564,7 +564,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-10-31T15:55:57+00:00"
+     "found_at": "2026-11-01T09:58:01+00:00"
     }
    ],
    "matchScore": 71,
@@ -606,7 +606,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-10-31T15:55:49+00:00"
+     "found_at": "2026-11-01T09:57:53+00:00"
     }
    ],
    "matchScore": 71,
@@ -648,7 +648,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
-     "found_at": "2026-10-31T15:55:42+00:00"
+     "found_at": "2026-11-01T09:57:49+00:00"
     }
    ],
    "matchScore": 70,
@@ -688,7 +688,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-10-31T15:55:53+00:00"
+     "found_at": "2026-11-01T09:57:58+00:00"
     }
    ],
    "matchScore": 66,
@@ -730,7 +730,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-10-31T15:55:53+00:00"
+     "found_at": "2026-11-01T09:57:57+00:00"
     }
    ],
    "matchScore": 66,
@@ -772,7 +772,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-10-31T15:55:53+00:00"
+     "found_at": "2026-11-01T09:57:57+00:00"
     }
    ],
    "matchScore": 66,
@@ -814,7 +814,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-10-31T15:55:49+00:00"
+     "found_at": "2026-11-01T09:57:53+00:00"
     }
    ],
    "matchScore": 66,
@@ -856,7 +856,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-10-31T15:55:47+00:00"
+     "found_at": "2026-11-01T09:57:52+00:00"
     }
    ],
    "matchScore": 62,
@@ -898,7 +898,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-10-31T15:55:47+00:00"
+     "found_at": "2026-11-01T09:57:52+00:00"
     }
    ],
    "matchScore": 79,
@@ -940,7 +940,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-10-31T15:55:53+00:00"
+     "found_at": "2026-11-01T09:57:57+00:00"
     }
    ],
    "matchScore": 65,
@@ -964,12 +964,12 @@
    "category": "Software Development",
    "location": "Dhaka",
    "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/31",
+   "url": "https://www.bdtechjobs.com/jobs/30",
    "status": "Awaiting Review",
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-10-31",
+   "postedAt": "2026-11-01",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -982,8 +982,8 @@
    "sources": [
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/31",
-     "found_at": "2026-10-31T15:55:48+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/30",
+     "found_at": "2026-11-01T09:57:53+00:00"
     }
    ],
    "matchScore": 65,
@@ -1002,6 +1002,49 @@
    "discoveredBy": "jsonld"
   },
   {
+   "title": "Senior Software Engineer, Data",
+   "company": "Doximity",
+   "description": "Headquarters: San Francisco, CA or Remote (U.S.)\nLocation : This role is remote in the United States, Canada, or some countries in South America.\nVisa sponsorship is not available for this role.\nDoximity is the leading clinical AI company with the largest network of U.S. clinicians. Doximity’s AI-powered workflow platform is trusted by over 85% of U.S. physicians and 300+ health systems. Doximity's mission is to help clinicians be more productive so they can provide better care for their patients.\nAt Doximity, we value curiosity, ownership, inclusion, and a commitment to making a meaningful impact. If you're excited about solving complex problems that improve healthcare, we'd love to hear from you.\nAbout the Role\nForemost a software engineer . You exemplify high code quality and guide others, and have at least 5 years of industry experience as a data engineer or similar role.\nYou are experienced in creating automated testing, applying design patterns, and other engineering best practices.\nYou are an expert in Python and possess fluency in SQL and have developed maintainable data pipelines with each.\nHands-on with architecting solutions. You have designed several data pipelines from start to finish. Choosing appropriate technologies, building, testing and rollout.\nExperience with aychronous systems. You are comfortable identifying and applying APIs, streaming, multithreading, and other asynchronous approaches to the right problems. You understand how to monitor and maintain these systems.\nProduct mindset. You think about the business impact of your work, and can use high-level goals to prioritize work.\nCommunication Extraordinaire. You excel at communicating to both technical and non-technical people, with an ability to explain complex concepts simply.\nML/AI–aware. You have working knowledge of how ML/AI applications are deployed and monitored, and you’re motivated to use this awareness to advance data-driven initiatives.\nHere's How You Will Make an Impact\nCollaborate with product managers, data analysts, and machine learning engineers to develop pipelines and ETL tasks in order to facilitate the extraction of insights.\nUnderstand product requirements and translate them into actionable project plans that you or your peers execute upon.\nEstablish data architecture processes and practices that can be scheduled, automated, replicated and serve as standards for other teams to leverage.\nCollaborate with your team's Data Leadership to identify and push forward meaningful projects across the commercial org.\nAbout Us\nExplore our stack\nWe have over 500 private repositories in Github containing our pipelines, our own internal multi-functional tools, and open-source projects\nWe have worked as a distributed team for a long time; we're currently about 65% distributed\nFind out more information on the Doximity engineering blog\nOur company core values\nOur recruiting process\nOur product development cycle\nOur on-boarding & mentorship process\nCompensation\nThe anticipated total compensation for this role is $165,000 - $221,000, depending on factors such as experience, skills, location, and internal equity.\nOur total compensation package may include:\nBase salary\nEquity (where applicable)\nAnnual bonus or incentive compensation (where applicable)\nSpecific compensation details will be discussed during the interview process.\nBenefits\nIn addition to competitive compensation, Doximity offers a comprehensive benefits package for full time employees. Some of our offerings include:\nMedical, dental, and vision insurance\n401(k) with company match\nFlexible paid time off and company holidays\nPaid parental leave\nProfessional development and learning opportunities\nWellness and mental health resources\nRemote work support and home office stipend (where applicable)\nWhy You'll Love Working Here\nAt Doximity, you'll join a mission-driven company where your work has a meaningful impact on healthcare. We believe great ideas come from empowered teams, and we're committed to creating an environment where people can do their best work.\nMake a real impact. Help build products that support over a million healthcare professionals and ultimately improve patient care.\nWork with exceptional teammates. Collaborate with thoughtful, talented colleagues who value curiosity, humility, and continuous learning.\nEnjoy flexibility and trust. We support flexible ways of working and empower employees with the autonomy to own their work.\nGrow your career. Take on meaningful challenges, develop new skills, and shape your career through mentorship and professional development.\nBring your authentic self. We're committed to fostering an inclusive culture where diverse perspectives are welcomed, respected, and celebrated.\nOur Hiring Process & AI Tools\nDoximity may use artificial intelligence (AI)-enabled tools throughout the hiring process to help improve the candidate experience and support our recruiting team. These tools may assist with administrative tasks such as scheduling, general communication, interview coordination, note-taking, or summarizing interview feedback. Human recruiters and hiring managers make all hiring decisions. We are committed to using AI responsibly, transparently, and in accordance with applicable laws.\nEqual Employment Opportunity\nDoximity is proud to be an Equal Opportunity Employer. We are committed to creating an inclusive workplace where everyone can thrive. We consider all qualified applicants without regard to race, color, religion, creed, sex, gender identity or expression, sexual orientation, national origin, ancestry, age, disability, veteran status, genetic information, marital status, or any other characteristic protected by applicable federal, state, or local law.\nIf you require a reasonable accommodation during the application or interview process, please let us know so we can support your participation.\nTo apply: https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
+   "status": "Awaiting Review",
+   "id": "2bc3add5-2a15-415b-8ab3-8fe11fabbe20",
+   "createdAt": "2026-11-01T09:57:57+00:00",
+   "requiredSkills": "senior, engineer, headquarters, san, francisco, remote, u.s., location, united, states, canada, some",
+   "postedAt": "2026-11-01",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "2bf8673fecad69f6",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
+     "found_at": "2026-11-01T09:57:57+00:00"
+    }
+   ],
+   "matchScore": 61,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
    "title": "Senior Software Engineer (Full stack)",
    "company": "Field Nation",
    "description": "Senior Software Engineer (Full stack) position at Field Nation. Required skills: Php, MySQL, Node.Js, React, React-Native.",
@@ -1013,7 +1056,7 @@
    "id": "f5865883-68f6-465f-bd2f-288009b745f7",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-10-31",
+   "postedAt": "2026-11-01",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1027,7 +1070,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/12",
-     "found_at": "2026-10-31T15:55:48+00:00"
+     "found_at": "2026-11-01T09:57:53+00:00"
     }
    ],
    "matchScore": 61,
@@ -1071,7 +1114,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-10-31T15:55:53+00:00"
+     "found_at": "2026-11-01T09:57:57+00:00"
     }
    ],
    "matchScore": 61,
@@ -1114,7 +1157,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-10-31T15:55:53+00:00"
+     "found_at": "2026-11-01T09:57:58+00:00"
     }
    ],
    "matchScore": 61,
@@ -1157,7 +1200,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
-     "found_at": "2026-10-31T15:55:39+00:00"
+     "found_at": "2026-11-01T09:57:46+00:00"
     }
    ],
    "matchScore": 57,
@@ -1200,7 +1243,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-10-31T15:55:39+00:00"
+     "found_at": "2026-11-01T09:57:46+00:00"
     }
    ],
    "matchScore": 57,
@@ -1224,12 +1267,12 @@
    "category": "Software Development",
    "location": "New DOHS Mohakhali, Dhaka",
    "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/44",
+   "url": "https://www.bdtechjobs.com/jobs/43",
    "status": "Awaiting Review",
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-10-31",
+   "postedAt": "2026-11-01",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1242,8 +1285,8 @@
    "sources": [
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/44",
-     "found_at": "2026-10-31T15:55:48+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/43",
+     "found_at": "2026-11-01T09:57:53+00:00"
     }
    ],
    "matchScore": 57,
@@ -1286,7 +1329,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-10-31T15:55:53+00:00"
+     "found_at": "2026-11-01T09:57:58+00:00"
     }
    ],
    "matchScore": 57,
@@ -1329,7 +1372,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-10-31T15:55:53+00:00"
+     "found_at": "2026-11-01T09:57:57+00:00"
     }
    ],
    "matchScore": 57,
@@ -1372,7 +1415,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-10-31T15:55:53+00:00"
+     "found_at": "2026-11-01T09:57:57+00:00"
     }
    ],
    "matchScore": 57,
@@ -1415,7 +1458,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-10-31T15:55:39+00:00"
+     "found_at": "2026-11-01T09:57:46+00:00"
     }
    ],
    "matchScore": 57,
@@ -1458,7 +1501,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/manager-business-intelligence-bi-analyst-square-textiles/",
-     "found_at": "2026-10-31T15:55:39+00:00"
+     "found_at": "2026-11-01T09:57:46+00:00"
     }
    ],
    "matchScore": 57,
@@ -1502,7 +1545,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-10-31T15:55:53+00:00"
+     "found_at": "2026-11-01T09:57:57+00:00"
     }
    ],
    "matchScore": 57,
@@ -1518,49 +1561,6 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "IT Operations Officer, NOA, Cox’s Bazar",
-   "company": "World Food Programme (WFP)",
-   "description": "Position: IT Operations Officer, NOA, Cox’s Bazar\nOrganization: United Nations World Food Programme (WFP)\nJob Location: Cox’s Bazar\nJob Type: Fixed Term, 12 months (Grade NOA)\nExperience: At least 5 years overall, including 3 years of professional (managerial or supervisory) experience in Telecommunications or IT\nEducation: Advanced university degree (Master’s or equivalent) in Computer Science or a relevant field\nSalary: Not mentioned (competitive benefits package including salary, leave and medical insurance)\nDeadline: 31 October 2026, 23:59 Bangladesh time\nAbout the Role\nThe World Food Programme is hiring an IT Operations Officer (NOA) in Cox’s Bazar to support the planning, deployment and upkeep of IT and telecommunications systems that let WFP staff deliver food assistance. The vacancy is for Bangladeshi nationals.\nKey Responsibilities\nSupport the budgeting, planning and deployment of IT and telecommunications systems in line with WFP corporate standards\nMaintain IT and telecommunications systems and networks with appropriate data security and access controls\nInstall and configure new computer hardware and support technology upgrades\nProvide data and documentation for the procurement of IT and telecommunications equipment and services\nCompile data and help prepare reports on IT and telecommunications investments and costs\nResolve user queries and make sure IT policies, procedures, systems and tools are applied correctly\nGuide junior staff and support training programmes in IT and telecommunications\nCoordinate with other UN agencies on inter-agency IT and telecommunications work\nFollow emergency preparedness and contingency plans so basic IT services continue in a crisis\nRequirements\nAdvanced university degree (Master’s or equivalent) in Computer Science or a relevant field\nAt least 5 years of overall experience, including 3 years of professional (managerial or supervisory) experience in Telecommunications, IT or a related field\nWithin those 3 years, at least 1 year after the postgraduate degree\nFluent spoken and written English and Bangla\nOpen to Bangladeshi nationals\nTerms\nGrade NOA, fixed-term contract for 12 months\nDuty station: Cox’s Bazar; one position\nCompetitive benefits package including salary, leave and medical insurance\nApplication\nApply only through WFP’s online recruiting system (CVs sent by email or LinkedIn are not considered)\nWFP does not charge any fee at any stage of recruitment\nApplication deadline: 31 October 2026, 23:59 Bangladesh time\nAbout World Food Programme\nThe World Food Programme is the world’s largest humanitarian organization, saving lives in emergencies and using food assistance to build a pathway to peace, stability and prosperity. WFP is the 2020 Nobel Peace Prize Laureate.\nHow to Apply\nInterested candidates can apply through the WFP’s online recruiting system (Workday) using the Apply Now button. The application deadline is 31 October 2026, 23:59 Bangladesh time . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "Information Technology",
-   "location": "Cox's Bazar",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/it-operations-officer-noa-coxs-bazar-world-food-programme-wfp/",
-   "status": "Awaiting Review",
-   "id": "dc548cb8-fb73-46c0-b20c-ba9742f1dfee",
-   "createdAt": "2026-10-19T08:22:45+00:00",
-   "requiredSkills": "officer, noa, cox, bazar, organization, united, nations, world, food, programme, wfp, location",
-   "postedAt": "2026-10-18",
-   "deadline": "2026-10-31",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Contractual",
-   "experienceText": "5 Years",
-   "area": "",
-   "distanceKm": null,
-   "fingerprint": "df02494845c8e192",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/it-operations-officer-noa-coxs-bazar-world-food-programme-wfp/",
-     "found_at": "2026-10-31T15:55:42+00:00"
-    }
-   ],
-   "matchScore": 53,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
   }
  ]
 }
