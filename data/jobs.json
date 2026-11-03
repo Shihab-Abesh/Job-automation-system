@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-02T20:37:00+00:00",
+ "generatedAt": "2026-11-03T10:23:51+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 12,
+    "found": 14,
     "errors": [],
-    "raw": 269
+    "raw": 281
    },
    "jsonld": {
     "found": 3,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 27,
+    "found": 26,
     "errors": [],
-    "raw": 339
+    "raw": 323
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 37,
-   "new": 1,
+   "total": 39,
+   "new": 2,
    "expired": 0,
-   "duplicatesFolded": 5,
-   "priorityA": 10,
+   "duplicatesFolded": 4,
+   "priorityA": 11,
    "priorityB": 11,
-   "priorityC": 16
+   "priorityC": 17
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-02T20:37:00+00:00"
+  "ranAt": "2026-11-03T10:23:51+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-11-02T20:36:20+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,7 +145,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-11-02T20:36:20+00:00"
+     "found_at": "2026-11-03T10:23:11+00:00"
     }
    ],
    "matchScore": 83,
@@ -160,6 +160,48 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Trainee Community Development Officer (TCDO), Microfinance Dabi",
+   "company": "BRAC",
+   "description": "Position: Trainee Community Development Officer (TCDO), Microfinance Dabi\nOrganization: BRAC Microfinance\nJob Location: BRAC field office, anywhere in Bangladesh\nJob Type: Regular\nSalary: Negotiable\nExperience: Not required\nEducation: Post Graduate\nDeadline: 10 November 2026\nAbout the Role\nBRAC Microfinance is hiring Trainee Community Development Officers to organise and serve Dabi clients in village organisations and grow their branch’s portfolio.\nKey Responsibilities\nCollect daily loan and savings instalments from 400-500 borrowers and about 800 savers\nSurvey households, select members and form village organisations\nAssess repayment capacity and recommend loans\nKeep passbook records and arrange their verification every three months\nPromote products and manage overdue collections\nRequirements\nPost graduate\nNo experience required\nClient relationship, communication and customer-service skills\nCash handling, record keeping and reporting skills\nWilling to work at a BRAC field office anywhere in Bangladesh\nApplication\nApply on BRAC’s careers site\nApplication deadline: 10 November 2026\nAbout BRAC\nBRAC is an international development organisation founded in Bangladesh that partners with over 100 million people living with inequality and poverty globally.\nHow to Apply\nInterested candidates can apply through the BRAC’s own careers site using the Apply Now button. The application deadline is 10 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "MIS",
+   "location": "Anywhere in Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/trainee-community-development-officer-tcdo-microfinance-dabi-brac/",
+   "status": "Awaiting Review",
+   "id": "5bbd93ae-45d6-45d2-b3eb-8405a9c61aec",
+   "createdAt": "2026-11-03T10:23:03+00:00",
+   "requiredSkills": "trainee, community, development, officer, tcdo, microfinance, dabi, organization, brac, location, field, anywhere",
+   "postedAt": "2026-11-03",
+   "deadline": "2026-11-10",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "Fresher",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "8dd411299ed26603",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/trainee-community-development-officer-tcdo-microfinance-dabi-brac/",
+     "found_at": "2026-11-03T10:23:03+00:00"
+    }
+   ],
+   "matchScore": 79,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Trainee Officer, Cards Sales",
@@ -187,7 +229,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-cards-sales-eastern-bank-plc-2/",
-     "found_at": "2026-11-02T20:36:13+00:00"
+     "found_at": "2026-11-03T10:23:03+00:00"
     }
    ],
    "matchScore": 79,
@@ -229,7 +271,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-11-02T20:36:16+00:00"
+     "found_at": "2026-11-03T10:23:10+00:00"
     }
    ],
    "matchScore": 79,
@@ -271,7 +313,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-02T20:36:32+00:00"
+     "found_at": "2026-11-03T10:23:23+00:00"
     }
    ],
    "matchScore": 75,
@@ -313,7 +355,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 75,
@@ -355,7 +397,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-11-02T20:36:20+00:00"
+     "found_at": "2026-11-03T10:23:11+00:00"
     }
    ],
    "matchScore": 75,
@@ -397,7 +439,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-11-02T20:36:16+00:00"
+     "found_at": "2026-11-03T10:23:06+00:00"
     }
    ],
    "matchScore": 75,
@@ -439,7 +481,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-11-02T20:36:13+00:00"
+     "found_at": "2026-11-03T10:23:03+00:00"
     }
    ],
    "matchScore": 75,
@@ -479,7 +521,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-02T20:36:13+00:00"
+     "found_at": "2026-11-03T10:23:03+00:00"
     }
    ],
    "matchScore": 75,
@@ -522,7 +564,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-11-02T20:36:19+00:00"
+     "found_at": "2026-11-03T10:23:10+00:00"
     }
    ],
    "matchScore": 72,
@@ -565,7 +607,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-11-02T20:36:40+00:00"
+     "found_at": "2026-11-03T10:23:31+00:00"
     }
    ],
    "matchScore": 71,
@@ -607,7 +649,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-02T20:36:28+00:00"
+     "found_at": "2026-11-03T10:23:19+00:00"
     }
    ],
    "matchScore": 71,
@@ -649,7 +691,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-11-02T20:36:20+00:00"
+     "found_at": "2026-11-03T10:23:11+00:00"
     }
    ],
    "matchScore": 71,
@@ -691,7 +733,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
-     "found_at": "2026-11-02T20:36:16+00:00"
+     "found_at": "2026-11-03T10:23:10+00:00"
     }
    ],
    "matchScore": 70,
@@ -731,7 +773,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 66,
@@ -773,7 +815,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 66,
@@ -815,7 +857,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 66,
@@ -857,7 +899,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 66,
@@ -899,7 +941,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-11-02T20:36:20+00:00"
+     "found_at": "2026-11-03T10:23:11+00:00"
     }
    ],
    "matchScore": 66,
@@ -941,7 +983,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-11-02T20:36:19+00:00"
+     "found_at": "2026-11-03T10:23:10+00:00"
     }
    ],
    "matchScore": 62,
@@ -983,7 +1025,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-11-02T20:36:19+00:00"
+     "found_at": "2026-11-03T10:23:10+00:00"
     }
    ],
    "matchScore": 79,
@@ -1025,7 +1067,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 65,
@@ -1054,7 +1096,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-11-02",
+   "postedAt": "2026-11-03",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1068,7 +1110,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/30",
-     "found_at": "2026-11-02T20:36:20+00:00"
+     "found_at": "2026-11-03T10:23:11+00:00"
     }
    ],
    "matchScore": 65,
@@ -1112,7 +1154,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 61,
@@ -1141,7 +1183,7 @@
    "id": "f5865883-68f6-465f-bd2f-288009b745f7",
    "createdAt": "2026-09-20T15:55:36+00:00",
    "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-11-02",
+   "postedAt": "2026-11-03",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1155,7 +1197,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/12",
-     "found_at": "2026-11-02T20:36:20+00:00"
+     "found_at": "2026-11-03T10:23:11+00:00"
     }
    ],
    "matchScore": 61,
@@ -1199,7 +1241,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 61,
@@ -1242,7 +1284,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 61,
@@ -1285,7 +1327,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
-     "found_at": "2026-11-02T20:36:13+00:00"
+     "found_at": "2026-11-03T10:23:03+00:00"
     }
    ],
    "matchScore": 57,
@@ -1328,7 +1370,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-02T20:36:13+00:00"
+     "found_at": "2026-11-03T10:23:03+00:00"
     }
    ],
    "matchScore": 57,
@@ -1357,7 +1399,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-11-02",
+   "postedAt": "2026-11-03",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1371,7 +1413,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/36",
-     "found_at": "2026-11-02T20:36:20+00:00"
+     "found_at": "2026-11-03T10:23:11+00:00"
     }
    ],
    "matchScore": 57,
@@ -1414,7 +1456,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 57,
@@ -1457,7 +1499,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 57,
@@ -1500,7 +1542,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 57,
@@ -1543,7 +1585,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-11-02T20:36:13+00:00"
+     "found_at": "2026-11-03T10:23:06+00:00"
     }
    ],
    "matchScore": 57,
@@ -1586,7 +1628,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 57,
@@ -1629,7 +1671,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-02T20:36:24+00:00"
+     "found_at": "2026-11-03T10:23:16+00:00"
     }
    ],
    "matchScore": 53,
@@ -1645,6 +1687,48 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Information Management Officer",
+   "company": "Norwegian Refugee Council",
+   "description": "Position: Information Management Officer\nCompany: Norwegian Refugee Council (NRC)\nJob Location: Cox’s Bazar\nEmployment Type: 12-month contract, full time\nSalary: Grade 05, BDT 78,520 gross a month\nExperience: Minimum 3 years in information management, database administration or data management\nEducation: Bachelor’s in Statistics, Information Management, Computer Science, Urban and Regional Planning or related\nEligibility: Bangladeshi nationals only\nDeadline: 10 November 2026\nAbout the Role\nThe Norwegian Refugee Council is hiring an Information Management Officer in Cox’s Bazar to run programme data systems, data quality and MEAL reporting.\nKey Responsibilities\nDevelop and update data collection tools with the Core Competency teams\nLead data cleaning, validation and data quality assurance\nAnalyse data and prepare reports, dashboards and 5Ws\nTrain staff and partners on data management and KoboToolbox / ODK\nProtect sensitive data\nRequirements\nBachelor’s in Statistics, Information Management, Computer Science, Urban and Regional Planning or related\nMinimum 3 years in information management, database administration or data management\nExcel, KoboToolbox or ODK, GIS and Power BI\nFluent Bangla and English; Bangladeshi nationals only\nAbout Norwegian Refugee Council\nThe Norwegian Refugee Council (NRC) is an independent humanitarian organisation helping people forced to flee. In Bangladesh it supports Rohingya refugees and host communities in Cox’s Bazar.\nHow to Apply\nInterested candidates can apply through the NRC Careers using the Apply Now button. The application deadline is 10 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Data & Reporting",
+   "location": "Cox’s Bazar",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/information-management-officer-norwegian-refugee-council/",
+   "status": "Awaiting Review",
+   "id": "c76f9519-4828-45ad-978e-b66eb034db4b",
+   "createdAt": "2026-11-03T10:23:03+00:00",
+   "requiredSkills": "officer, norwegian, refugee, council, nrc, location, cox, bazar, employment, type, month, contract",
+   "postedAt": "2026-11-03",
+   "deadline": "2026-11-10",
+   "salaryMin": 78520,
+   "salaryMax": null,
+   "salaryText": "Tk 78,520",
+   "employmentType": "Contractual",
+   "experienceText": "3 Years",
+   "area": "",
+   "distanceKm": null,
+   "fingerprint": "18ccce5e19fa4302",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/information-management-officer-norwegian-refugee-council/",
+     "found_at": "2026-11-03T10:23:03+00:00"
+    }
+   ],
+   "matchScore": 48,
+   "scoreParts": {
+    "title": 75,
+    "level": 30,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
   }
  ]
 }
