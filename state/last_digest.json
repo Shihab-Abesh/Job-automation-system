@@ -40,7 +40,7 @@
   "rss": {
    "found": 28,
    "errors": [],
-   "raw": 322
+   "raw": 326
   },
   "careers": {
    "found": 0,
@@ -71,5 +71,5 @@
   "allow_abroad": false
  },
  "blockedUrls": [],
- "ranAt": "2026-11-04T10:19:20+00:00"
+ "ranAt": "2026-11-04T18:22:55+00:00"
 }
