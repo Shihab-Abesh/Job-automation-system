@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-05T10:12:26+00:00",
+ "generatedAt": "2026-11-05T18:27:19+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,7 +31,7 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 13,
+    "found": 12,
     "errors": [],
     "raw": 300
    },
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 27,
+    "found": 28,
     "errors": [],
-    "raw": 325
+    "raw": 330
    },
    "careers": {
     "found": 0,
@@ -58,12 +58,12 @@
   },
   "counts": {
    "total": 34,
-   "new": 0,
+   "new": 1,
    "expired": 3,
    "duplicatesFolded": 6,
    "priorityA": 10,
-   "priorityB": 10,
-   "priorityC": 14
+   "priorityB": 9,
+   "priorityC": 15
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-05T10:12:26+00:00"
+  "ranAt": "2026-11-05T18:27:19+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-11-05T10:11:45+00:00"
+     "found_at": "2026-11-05T18:26:39+00:00"
     }
    ],
    "matchScore": 83,
@@ -145,7 +145,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-community-development-officer-tcdo-microfinance-dabi-brac/",
-     "found_at": "2026-11-05T10:11:36+00:00"
+     "found_at": "2026-11-05T18:26:31+00:00"
     }
    ],
    "matchScore": 79,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-cards-sales-eastern-bank-plc-2/",
-     "found_at": "2026-11-05T10:11:39+00:00"
+     "found_at": "2026-11-05T18:26:34+00:00"
     }
    ],
    "matchScore": 79,
@@ -229,7 +229,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-11-05T10:11:43+00:00"
+     "found_at": "2026-11-05T18:26:38+00:00"
     }
    ],
    "matchScore": 79,
@@ -271,7 +271,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-05T10:11:57+00:00"
+     "found_at": "2026-11-05T18:26:51+00:00"
     }
    ],
    "matchScore": 75,
@@ -313,7 +313,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-05T10:11:49+00:00"
+     "found_at": "2026-11-05T18:26:44+00:00"
     }
    ],
    "matchScore": 75,
@@ -355,7 +355,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-11-05T10:11:45+00:00"
+     "found_at": "2026-11-05T18:26:39+00:00"
     }
    ],
    "matchScore": 75,
@@ -397,7 +397,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-11-05T10:11:43+00:00"
+     "found_at": "2026-11-05T18:26:38+00:00"
     }
    ],
    "matchScore": 75,
@@ -439,7 +439,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-11-05T10:11:39+00:00"
+     "found_at": "2026-11-05T18:26:34+00:00"
     }
    ],
    "matchScore": 75,
@@ -479,7 +479,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-05T10:11:36+00:00"
+     "found_at": "2026-11-05T18:26:31+00:00"
     }
    ],
    "matchScore": 75,
@@ -522,7 +522,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/information-communication-technology-ict-officer-seo-ncc-bank-plc/",
-     "found_at": "2026-11-05T10:11:36+00:00"
+     "found_at": "2026-11-05T18:26:31+00:00"
     }
    ],
    "matchScore": 74,
@@ -530,49 +530,6 @@
     "title": 100,
     "level": 30,
     "skills": 67,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Data Analyst",
-   "company": "WPP Production",
-   "description": "Position: Data Analyst\nCompany: WPP Production\nFunction: Data and Analytics (Econometrics)\nJob Location: Dhaka, Bangladesh (onsite, across different shifts as needed)\nJob Type: Full-Time\nExperience: 2 to 4 years in a similar field, with a focus on data and analytics with econometrics\nEducation: A degree that demonstrates technical ability, such as Economics, Mathematics or Statistics\nSalary: Not mentioned\nDeadline: Not mentioned, apply early\nAbout the Role\nWPP Production, the global production company of WPP, is hiring a Data Analyst in Dhaka to support client projects through data collection and preparation, model building and the interpretation of results.\nKey Responsibilities\nUndertake data extraction, manipulation and analysis to understand the marketplace and client context of each project\nOwn data collection, including preparing and sending data requests and querying data with clients and agencies\nCheck all tables, charts and outputs for accuracy and format them to organization standards\nBuild base models to the project specification and progress them towards finalisation\nCalculate sales effects and ROIs, create response curves and run optimisation scenarios\nValidate models, identify areas of weakness and test improvements\nInterpret results and explain their implications for the client’s future strategy\nRequirements\n2 to 4 years of experience in a similar field, with a focus on data and analytics with econometrics\nStrong expertise in the Python programming language is necessary\nProficiency in Excel, SQL, Python and Pandas to process and transform data and build models\nA degree that demonstrates technical ability, such as Economics, Mathematics or Statistics\nStrong verbal and written communication skills in English; experience with international clients is an advantage\nThis is an onsite role and candidates should be comfortable working across different shifts as needed\nAbout WPP Production\nWPP Production is the unified global production company that brings together WPP’s content producers, studios and craft experts. WPP states that it is an equal opportunity employer.\nHow to Apply\nInterested candidates can apply through the official WPP Production careers page using the Apply Now button. The circular does not mention an application deadline, so apply early. Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "Data & Reporting",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-   "status": "Awaiting Review",
-   "id": "8c36537d-9088-4817-8b91-f8031786da4a",
-   "createdAt": "2026-10-06T09:41:19+00:00",
-   "requiredSkills": "analyst, wpp, analytics, econometrics, location, dhaka, bangladesh, onsite, across, different, shifts, needed",
-   "postedAt": "2026-10-06",
-   "deadline": "2026-11-05",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full Time",
-   "experienceText": "2 Years",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "fe8d0bc71a2383fd",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-11-05T10:11:43+00:00"
-    }
-   ],
-   "matchScore": 72,
-   "scoreParts": {
-    "title": 100,
-    "level": 55,
-    "skills": 33,
     "preference": 100
    },
    "priority": "B",
@@ -608,7 +565,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-11-05T10:12:05+00:00"
+     "found_at": "2026-11-05T18:27:00+00:00"
     }
    ],
    "matchScore": 71,
@@ -650,7 +607,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-05T10:11:53+00:00"
+     "found_at": "2026-11-05T18:26:47+00:00"
     }
    ],
    "matchScore": 71,
@@ -692,7 +649,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-11-05T10:11:45+00:00"
+     "found_at": "2026-11-05T18:26:39+00:00"
     }
    ],
    "matchScore": 71,
@@ -734,7 +691,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-11-05T10:11:45+00:00"
+     "found_at": "2026-11-05T18:26:39+00:00"
     }
    ],
    "matchScore": 66,
@@ -776,7 +733,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-05T10:11:49+00:00"
+     "found_at": "2026-11-05T18:26:44+00:00"
     }
    ],
    "matchScore": 66,
@@ -818,7 +775,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-05T10:11:49+00:00"
+     "found_at": "2026-11-05T18:26:44+00:00"
     }
    ],
    "matchScore": 66,
@@ -860,7 +817,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-05T10:11:49+00:00"
+     "found_at": "2026-11-05T18:26:44+00:00"
     }
    ],
    "matchScore": 66,
@@ -902,7 +859,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-11-05T10:11:43+00:00"
+     "found_at": "2026-11-05T18:26:38+00:00"
     }
    ],
    "matchScore": 62,
@@ -944,7 +901,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-11-05T10:11:49+00:00"
+     "found_at": "2026-11-05T18:26:44+00:00"
     }
    ],
    "matchScore": 65,
@@ -987,7 +944,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/30",
-     "found_at": "2026-11-05T10:11:45+00:00"
+     "found_at": "2026-11-05T18:26:39+00:00"
     }
    ],
    "matchScore": 65,
@@ -1031,7 +988,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-05T10:11:49+00:00"
+     "found_at": "2026-11-05T18:26:44+00:00"
     }
    ],
    "matchScore": 61,
@@ -1074,7 +1031,50 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-11-05T10:11:49+00:00"
+     "found_at": "2026-11-05T18:26:44+00:00"
+    }
+   ],
+   "matchScore": 61,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Senior Full-Stack Web Developer (.NET/C#/MongoDB/Angular/Redux) – AI-First, with GDPR Experience",
+   "company": "Secure Privacy",
+   "description": "Headquarters: Europe (DK)\nURL: https://secureprivacy.ai\nSecure Privacy is expanding, and we’re looking for an experienced Senior Full-Stack Developer with expertise in .NET, C#, and MongoDB, along with GDPR experience, to join our team! You’ll work remotely with a diverse group of developers, helping us build cutting-edge data privacy solutions for global clients. This role focuses on creating and optimizing APIs and backend services. If you’re passionate about clean, maintainable code, we’d love to hear from you!\nWhat You’ll Do:\nDevelop and maintain backend services with C# and .NET.\nDevelop and maintain frontend logic with Angular and Redux.\nUse AI coding tools (Cursor, Claude Code, or similar) as a core part of your daily workflow, and help the team get more out of them.\nWork closely with designers to bring high-quality, scalable, and maintainable solutions to life.\nEngage in all stages of the development process: planning, coding, testing, and deployment.\nAdvocate for best practices and contribute to improving our development standards.\nCollaborate in a remote environment, primarily during European business hours.\nWhat We’re Looking For:\n5+ years of backend development experience, particularly with C# and .NET Framework.\nHands-on, daily experience with AI coding tools such as Cursor or Claude Code on real projects, including giving agents good context and critically reviewing AI-generated code.\nExpertise in MongoDB, including complex operations (aggregations, compound indexes, transactions).\nExperience with GDPR, CCPA, or other data privacy compliance standards.\nExperience in Angular development, including NgRx or other Redux frameworks, is desirable.\nExperience with payment platforms such as Stripe.\nStrong Git skills, including modern branching strategies and ways of working.\nFamiliarity with profiling web apps for high availability and scalability.\nAbility to make informed decisions between server-side and client-side code.\nExcellent communication skills and the ability to collaborate with non-engineers.\nA proactive approach to problem-solving, with a high level of discipline and independence.\nStartup experience.\nBonus Points If You Have:\nExperience building MCP servers.\nOpen source contributions.\nStackOverflow or other community contributions.\nMobile app or SDK experience.\nTo apply, submit your CV and a short Loom video (max 2 minutes) introducing yourself and how you use AI to develop faster without compromising quality.\nTo apply: https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
+   "status": "Awaiting Review",
+   "id": "2503b945-0028-4014-b79a-a29c06210fe2",
+   "createdAt": "2026-11-05T18:26:44+00:00",
+   "requiredSkills": "senior, full, stack, .net/c#/mongodb/angular/redux, first, gdpr, headquarters, europe, url, https, //secureprivacy.ai, secure",
+   "postedAt": "2026-11-05",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "0483a916b8960834",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
+     "found_at": "2026-11-05T18:26:44+00:00"
     }
    ],
    "matchScore": 61,
@@ -1117,7 +1117,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
-     "found_at": "2026-11-05T10:11:39+00:00"
+     "found_at": "2026-11-05T18:26:34+00:00"
     }
    ],
    "matchScore": 57,
@@ -1160,7 +1160,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-05T10:11:39+00:00"
+     "found_at": "2026-11-05T18:26:34+00:00"
     }
    ],
    "matchScore": 57,
@@ -1203,7 +1203,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/36",
-     "found_at": "2026-11-05T10:11:45+00:00"
+     "found_at": "2026-11-05T18:26:39+00:00"
     }
    ],
    "matchScore": 57,
@@ -1246,7 +1246,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-11-05T10:11:45+00:00"
+     "found_at": "2026-11-05T18:26:39+00:00"
     }
    ],
    "matchScore": 57,
@@ -1289,7 +1289,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-11-05T10:11:49+00:00"
+     "found_at": "2026-11-05T18:26:44+00:00"
     }
    ],
    "matchScore": 57,
@@ -1332,7 +1332,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-11-05T10:11:49+00:00"
+     "found_at": "2026-11-05T18:26:44+00:00"
     }
    ],
    "matchScore": 57,
@@ -1375,7 +1375,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-11-05T10:11:39+00:00"
+     "found_at": "2026-11-05T18:26:34+00:00"
     }
    ],
    "matchScore": 57,
@@ -1418,7 +1418,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-05T10:11:49+00:00"
+     "found_at": "2026-11-05T18:26:44+00:00"
     }
    ],
    "matchScore": 57,
@@ -1461,7 +1461,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-05T10:11:49+00:00"
+     "found_at": "2026-11-05T18:26:44+00:00"
     }
    ],
    "matchScore": 53,
@@ -1504,7 +1504,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/information-management-officer-norwegian-refugee-council/",
-     "found_at": "2026-11-05T10:11:36+00:00"
+     "found_at": "2026-11-05T18:26:31+00:00"
     }
    ],
    "matchScore": 48,
