@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-04T18:22:55+00:00",
+ "generatedAt": "2026-11-05T10:12:26+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,7 +31,7 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 15,
+    "found": 13,
     "errors": [],
     "raw": 300
    },
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 28,
+    "found": 27,
     "errors": [],
-    "raw": 326
+    "raw": 325
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 40,
+   "total": 34,
    "new": 0,
-   "expired": 0,
+   "expired": 3,
    "duplicatesFolded": 6,
-   "priorityA": 11,
-   "priorityB": 12,
-   "priorityC": 17
+   "priorityA": 10,
+   "priorityB": 10,
+   "priorityC": 14
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,51 +74,9 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-04T18:22:55+00:00"
+  "ranAt": "2026-11-05T10:12:26+00:00"
  },
  "jobs": [
-  {
-   "title": "FULL TIME: Software Engineer Position - React and Rest",
-   "company": "Yooli",
-   "description": "Headquarters: Australia\nURL: http://yooli.co\nJob description\nWe are seeking a highly skilled Senior Software Engineer to join our team and contribute to the transformative tech evolution in healthcare.\nThis critical role involves developing, integrating, and optimising our backend and database systems.\nYou will work closely with our Chief Engineer and CTO to build and refine our software solutions, ensuring they remain at the cutting edge of innovation.\nYour Role:\nDevelop and maintain robust backend services using NestJS and Node.js , ensuring top-tier performance and security.\nDesign and manage efficient REST API endpoints to optimise interactions with our SQL database.\nCollaborate with cross-functional teams to define, design, and deploy new features, focusing on backend logic and database performance.\nEnsure the scalability, security, and responsiveness of backend services.\nUphold rigorous data protection standards and implement industry-leading security measures.\nParticipate in code reviews to uphold high coding standards and foster continuous improvement within the development team.\nWhat Youll Bring:\nEssential Skills & Experience:\nAt least 7 years of experience with:\nReact\nReact Vite\nREST API development\nStrong knowledge and hands-on experience with SQL .\nProficiency in Prisma for database management.\nA minimum of 5 years of experience in REST API development using the NestJS framework .\nExpertise in backend development, specifically with NestJS , Node.js , REST APIs , and PostgreSQL .\nExperience in developing single-page applications using ReactJS .\nStrong understanding of TypeScript and Object-Oriented Programming (OOP) principles.\nSolid grasp of commonly used data structures .\nProven experience with cloud hosting services (preferably AWS) and integrating them into development workflows.\nExceptional problem-solving skills and meticulous attention to detail.\nA proven ability to thrive in collaborative, remote work environments, showcasing excellent communication skills and a commitment to team success.\nA portfolio demonstrating relevant projects.\nNice-to-Haves:\nExperience with CI/CD pipelines and version control systems like Git .\nFamiliarity with agile development methodologies and project management tools.\nKnowledge of Redux for state management.\nA degree in Computer Science or a related field.\nTo apply: https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-   "status": "Awaiting Review",
-   "id": "f7f42b41-233f-4da2-8632-a03b998e505f",
-   "createdAt": "2026-09-20T18:11:54+00:00",
-   "requiredSkills": "full, time, engineer, react, rest, headquarters, australia, url, http, //yooli.co, description, seeking",
-   "postedAt": "2026-08-05",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "e574d6f4880a7b4e",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-     "found_at": "2026-11-04T18:22:19+00:00"
-    }
-   ],
-   "matchScore": 87,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 83,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "rss"
-  },
   {
    "title": "Software Engineer, Backend",
    "company": "Vercel",
@@ -145,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-11-04T18:22:15+00:00"
+     "found_at": "2026-11-05T10:11:45+00:00"
     }
    ],
    "matchScore": 83,
@@ -187,7 +145,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-community-development-officer-tcdo-microfinance-dabi-brac/",
-     "found_at": "2026-11-04T18:22:07+00:00"
+     "found_at": "2026-11-05T10:11:36+00:00"
     }
    ],
    "matchScore": 79,
@@ -229,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-cards-sales-eastern-bank-plc-2/",
-     "found_at": "2026-11-04T18:22:08+00:00"
+     "found_at": "2026-11-05T10:11:39+00:00"
     }
    ],
    "matchScore": 79,
@@ -271,7 +229,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-11-04T18:22:14+00:00"
+     "found_at": "2026-11-05T10:11:43+00:00"
     }
    ],
    "matchScore": 79,
@@ -313,7 +271,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-04T18:22:27+00:00"
+     "found_at": "2026-11-05T10:11:57+00:00"
     }
    ],
    "matchScore": 75,
@@ -355,7 +313,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-04T18:22:19+00:00"
+     "found_at": "2026-11-05T10:11:49+00:00"
     }
    ],
    "matchScore": 75,
@@ -397,7 +355,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-11-04T18:22:15+00:00"
+     "found_at": "2026-11-05T10:11:45+00:00"
     }
    ],
    "matchScore": 75,
@@ -439,7 +397,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-11-04T18:22:14+00:00"
+     "found_at": "2026-11-05T10:11:43+00:00"
     }
    ],
    "matchScore": 75,
@@ -481,7 +439,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-11-04T18:22:12+00:00"
+     "found_at": "2026-11-05T10:11:39+00:00"
     }
    ],
    "matchScore": 75,
@@ -521,7 +479,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-04T18:22:08+00:00"
+     "found_at": "2026-11-05T10:11:36+00:00"
     }
    ],
    "matchScore": 75,
@@ -564,7 +522,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/information-communication-technology-ict-officer-seo-ncc-bank-plc/",
-     "found_at": "2026-11-04T18:22:07+00:00"
+     "found_at": "2026-11-05T10:11:36+00:00"
     }
    ],
    "matchScore": 74,
@@ -607,7 +565,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/data-analyst-wpp-production/",
-     "found_at": "2026-11-04T18:22:14+00:00"
+     "found_at": "2026-11-05T10:11:43+00:00"
     }
    ],
    "matchScore": 72,
@@ -650,7 +608,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-11-04T18:22:35+00:00"
+     "found_at": "2026-11-05T10:12:05+00:00"
     }
    ],
    "matchScore": 71,
@@ -692,7 +650,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-04T18:22:23+00:00"
+     "found_at": "2026-11-05T10:11:53+00:00"
     }
    ],
    "matchScore": 71,
@@ -734,7 +692,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-11-04T18:22:15+00:00"
+     "found_at": "2026-11-05T10:11:45+00:00"
     }
    ],
    "matchScore": 71,
@@ -749,46 +707,6 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Channel / Market Operations Executive",
-   "company": "vivo Bangladesh",
-   "description": "Position: Channel / Market Operations Executive\nCompany: vivo Bangladesh (Head Office)\nVacancies: 3\nJob Location: Dhaka (Tejgaon Industrial Area)\nExperience: 1 to 2 years in the mobile industry\nEducation: Bachelor/Honors\nAge: 28 to 32 years\nSalary: Tk. 45,000 (Monthly)\nDeadline: 4 November 2026\nAbout the Role\nvivo Bangladesh is hiring three Channel / Market Operations Executives at its Tejgaon head office to manage dealers, distributors and stores and drive sell-in and sell-out in their region.\nKey Responsibilities\nManage relationships with dealers, distributors, store owners and store managers in the assigned region\nTrack sell-in, sell-out, stock levels and target achievement, and fix underperforming stores\nMake regular market visits to check store performance, local demand and competitor activity\nFollow up on replenishment, slow-moving stock, availability and stock transfers\nImplement channel policies, incentives and promotions, and review store support and subsidies\nRequirements\nBachelor/Honors degree\n1 to 2 years of channel sales or market operations experience with a mobile phone or electronics brand, distributor or retail chain\nAge 28 to 32 years; the circular asks for male candidates\nWorking Excel skills, strong Bangla and good English\nWilling to travel regularly within the region\nAbout vivo Bangladesh\nvivo is a global smartphone brand; vivo Bangladesh runs its head office in Tejgaon, Dhaka.\nHow to Apply\nInterested candidates can apply through the bdjobs.com circular (vivo Bangladesh) using the Apply Now button. The application deadline is 4 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
-   "status": "Awaiting Review",
-   "id": "f0fd4765-0003-43a1-8bcd-6a7aef9f7771",
-   "createdAt": "2026-10-15T07:55:10+00:00",
-   "requiredSkills": "channel, market, executive, vivo, bangladesh, head, vacancies, location, dhaka, tejgaon, industrial, area",
-   "postedAt": "2026-10-15",
-   "deadline": "2026-11-04",
-   "salaryMin": 45000,
-   "salaryMax": null,
-   "salaryText": "Tk 45,000",
-   "employmentType": "Full Time",
-   "experienceText": "1 Year+",
-   "area": "Tejgaon Industrial Area",
-   "distanceKm": 0.6,
-   "fingerprint": "27f8acf7741fb233",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/channel-market-operations-executive-vivo-bangladesh/",
-     "found_at": "2026-11-04T18:22:14+00:00"
-    }
-   ],
-   "matchScore": 70,
-   "scoreParts": {
-    "title": 100,
-    "level": 80,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [],
-   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Software Engineer, AI Coding Tasks (Contract)",
@@ -816,7 +734,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-11-04T18:22:15+00:00"
+     "found_at": "2026-11-05T10:11:45+00:00"
     }
    ],
    "matchScore": 66,
@@ -858,7 +776,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-04T18:22:19+00:00"
+     "found_at": "2026-11-05T10:11:49+00:00"
     }
    ],
    "matchScore": 66,
@@ -900,7 +818,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-04T18:22:19+00:00"
+     "found_at": "2026-11-05T10:11:49+00:00"
     }
    ],
    "matchScore": 66,
@@ -942,49 +860,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-04T18:22:19+00:00"
-    }
-   ],
-   "matchScore": 66,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "rss"
-  },
-  {
-   "title": "Software engineer",
-   "company": "Sticker Mule",
-   "description": "Headquarters: New York, NY\nURL: https://www.stickermule.com\nSticker Mule is building the Internet's most lucrative commerce platform by combining software, manufacturing, and AI into one fully integrated stack. No print company, or pure software company for that matter, can match what we're doing. We're privately owned, profitable, and doing 9-figures in annual revenue with no meddlesome investors.\nHow we work\nSmall, autonomous teams that own products end-to-end.\nPrioritize what matters right now and pivot instantly when needed.\nShip across web and mobile from the same codebase. We use Go, TypeScript, React, Expo, GraphQL, Postgres, and run on GCP.\nUse AI aggressively to push the limit of what we can do.\nMove fast, build for the masses, and deprioritize edge cases.\nFully remote from 40+ countries and collaborate using Asana and Slack.\nRequirements\nYou are an exceptional full-stack software engineer.\nYou use AI aggressively and write well in English.\nWhat you will work on\nYou'll help build and scale Sticker Mule Pro — a suite of software tools for creators and businesses:\nStores (Shopify alternative)\nAI tools (internal and customer-facing)\nNotify (Mailchimp alternative)\nReply (Zendesk alternative)\nHire Me (Contra alternative)\nMobile apps\nCompensation\nSalary: $150,000–$250,000 USD\n$20,000 signing bonus\n4 weeks vacation + country-specific holidays\nFully remote\nTo apply: https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-   "status": "Awaiting Review",
-   "id": "f14b8944-bb73-4049-97d5-e6f62cb2b91e",
-   "createdAt": "2026-09-20T18:11:58+00:00",
-   "requiredSkills": "engineer, headquarters, new, york, url, https, //www.stickermule.com, sticker, mule, building, internet, most",
-   "postedAt": "2026-05-14",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "a5520b13ff3fbddb",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-     "found_at": "2026-11-04T18:22:15+00:00"
+     "found_at": "2026-11-05T10:11:49+00:00"
     }
    ],
    "matchScore": 66,
@@ -1026,7 +902,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-11-04T18:22:14+00:00"
+     "found_at": "2026-11-05T10:11:43+00:00"
     }
    ],
    "matchScore": 62,
@@ -1039,48 +915,6 @@
    "priority": "B",
    "gateNotes": [
     "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Junior Data Analyst – Night Shift (Only Female – Work From Home)",
-   "company": "Unknown company",
-   "description": "Future Cloud Bangladesh Limited (FCBL) is a reputed multinational ITES company operating for over 11 years. We are pleased to offer full-time job opportunities for potential candidates willing to work on night shifts. Females are only encouraged to apply for this position. Female staff get the flexibility to work from home.\nResponsibilities and key learning areas:\n– Extensive online research on North American businesses and their corporate practices.\n– Hosting regular meetings with managers, collecting notes and preparing meeting minutes.\n– Organising data in a spreadsheet, PowerPoint presentation, etc.\n– Making telemarketing calls and hosting conference calls as needed.\n– Updating CRM systems, putting notes, assigning drip plans for texts and emails, etc.\n– Maintaining internal communication and completing individual assignments.\n– Maintaining external communication with corporate stakeholders.\n– Participating in collaboration meetings, workshops with industry colleagues, BASIS, etc.\n– Updating daily activity and work status in a dedicated individual tracking platform.\nEducational Requirements:\n– Bachelors/Masters students from any UGC approved University/College.\n– Running diploma students are also encouraged to apply.\n– Any discipline/department is fine. All will be treated equally.\nAdditional Requirements:\n– Age 18 to 32 years\n– Only females are allowed to apply.\n– Call center experience will get priority.\n– English medium background will get priority.\n– Must be fluent in English.\n– Experience in sales campaigns will get priority.\nCompensation & Other info:\n– 8,000 BDT remuneration per month plus 0-2,000 BDT bonus based on performance.\n– Work From Home\n– 6 days per week.\n– Office Schedule (Night Shift)\n– On-time salary.\n– Yearly 10 paid holidays.\n– Yearly 15 casual paid leaves.\n– All employees get loan facilities, including probationary employees.\n– Employees, their parents, spouses & children get a 35% discount in Ibn Sina Hospital.",
-   "category": "Data & Reporting",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-   "status": "Awaiting Review",
-   "id": "9d1e33e1-b924-4ecf-b1e0-5404ece78c2f",
-   "createdAt": "2026-09-20T15:55:35+00:00",
-   "requiredSkills": "junior, analyst, night, shift, only, female, work, home, future, cloud, bangladesh, limited",
-   "postedAt": "2025-11-14",
-   "deadline": null,
-   "salaryMin": 10000,
-   "salaryMax": 13000,
-   "salaryText": "Tk 10,000 - 13,000",
-   "employmentType": "Full Time",
-   "experienceText": "Freshers",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "c45bc5c4ca7092a7",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/future-cloud-bangladesh-ltd-dhaka-bangladesh-full-time-junior-data-analyst-night-shift-only-female-work-from-home/",
-     "found_at": "2026-11-04T18:22:14+00:00"
-    }
-   ],
-   "matchScore": 79,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay tops out at Tk 13,000, below your Tk 20,000 floor"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -1110,7 +944,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-11-04T18:22:19+00:00"
+     "found_at": "2026-11-05T10:11:49+00:00"
     }
    ],
    "matchScore": 65,
@@ -1139,7 +973,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-11-04",
+   "postedAt": "2026-11-05",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1153,7 +987,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/30",
-     "found_at": "2026-11-04T18:22:15+00:00"
+     "found_at": "2026-11-05T10:11:45+00:00"
     }
    ],
    "matchScore": 65,
@@ -1197,7 +1031,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-04T18:22:19+00:00"
+     "found_at": "2026-11-05T10:11:49+00:00"
     }
    ],
    "matchScore": 61,
@@ -1213,50 +1047,6 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Senior Software Engineer (Full stack)",
-   "company": "Field Nation",
-   "description": "Senior Software Engineer (Full stack) position at Field Nation. Required skills: Php, MySQL, Node.Js, React, React-Native.",
-   "category": "Software Development",
-   "location": "Dhaka",
-   "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/12",
-   "status": "Awaiting Review",
-   "id": "f5865883-68f6-465f-bd2f-288009b745f7",
-   "createdAt": "2026-09-20T15:55:36+00:00",
-   "requiredSkills": "senior, engineer, full, stack, field, nation., required, node.js, react, native.",
-   "postedAt": "2026-11-04",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full time",
-   "experienceText": "",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "346a2d3e096ad4d8",
-   "sources": [
-    {
-     "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/12",
-     "found_at": "2026-11-04T18:22:15+00:00"
-    }
-   ],
-   "matchScore": 61,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting",
-    "Title matches your excluded list (Senior)"
-   ],
-   "discoveredBy": "jsonld"
   },
   {
    "title": "Senior Software Engineer (R14285)",
@@ -1284,7 +1074,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-11-04T18:22:19+00:00"
+     "found_at": "2026-11-05T10:11:49+00:00"
     }
    ],
    "matchScore": 61,
@@ -1298,49 +1088,6 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Title matches your excluded list (Senior)"
-   ],
-   "discoveredBy": "rss"
-  },
-  {
-   "title": "Staff Software Engineer",
-   "company": "Samsara",
-   "description": "Headquarters: Remote\nURL: https://www.samsara.com/\nAbout the role:\nSamsara (NYSE: IOT) sits at the center of hardware, software, AI, and the physical world. The platform processes 25+ trillion data points annually from IoT sensors, cameras, and connected devices across thousands of organizations, and that dataset is compounding: it grew from 4 trillion to 25+ trillion in four years. We're still early in turning that data into the products that will define how physical operations run, and we're hiring the engineers who will build what comes next.\nWe're approaching ~$2B ARR growing 30%+ year over year, with 96% of our largest customers on two or more products. The fastest-growing divisions at Samsara are tackling the hardest, most ambiguous problems at the company: building new products from scratch, applying AI and ML to massive real-world datasets, and shipping capabilities that change how organizations maintain equipment, manage fleets, and run day-to-day operations. Most of this work is zero-to-one, at billion-dollar scale.\nWe're looking for software engineers who want to define what ships next. Leveling is broad and flexible: we're hiring from Senior through Staff+, across platform and product, and we're open to shaping scope around the right person's strengths and interests. That window won't stay open long.\nThis role is remote and open to candidates residing in the US. Relocation assistance will not be provided for this role.\nYou should apply if:\nYou want to impact the industries that run our world. The software you build will have real-world stakes: helping keep the lights on, getting food into grocery stores, keeping workers safe. What ships here isn't metrics on a dashboard. It shows up on the loading dock, the job site, and the dispatch floor.\nYou want to build, not maintain. Samsara is in full growth mode. We're building new systems from scratch, not babysitting old ones. You'd own entire problem spaces end to end, with the autonomy to set direction from day one.\nYou want to work where AI meets the physical world. Samsara has spent a decade building the largest proprietary dataset for physical operations. More connected assets generate more data, more data trains better models, better models drive more value, and more value wins more assets. The market and the opportunity here are what set us apart, not just the models.\nYou believe customers are more than a number. Samsara engineers have a rare closeness to end users. You'll participate in customer interviews, collaborate with product managers and customer success, and use that context to build products that solve real problems operators face every day.\nYou have the curiosity and drive to figure it out. We're looking for people who take pride in their work and get things done at all costs. The engineers who thrive here don't wait to be told what to build. They define it, ship it, and own the outcome. The rate-limiting step on our teams isn't tooling or process. It's ambition.\nIn this role, you will:\nTake ownership of technically complex, mission-critical areas and run with them. We want to point you in a direction and show up to the demo meeting impressed, not spend our weeks managing the details.\nDefine and drive technical strategy for new products and platform capabilities, from backend services and APIs to the customer-facing UI.\nDesign and ship full-stack features end to end. You'll work across backend, frontend, and potentially mobile to deliver AI-powered products that solve real operational problems.\nPartner with product, design, and customer-facing teams to translate ambiguous, real-world problems into clear technical plans and measurable outcomes.\nBuild and scale the systems behind AI-driven products, including data ingestion, APIs, and the workflows that put intelligence into the hands of operators.\nRaise the bar for the engineers around you through code reviews, design reviews, technical mentorship, and by setting a standard for quality, velocity, and craft.\nChampion, role model, and embed Samsara’s cultural principles (Focus on Customer Success, Build for the Long Term, Adopt a Growth Mindset, Be Inclusive, Win as a Team) as we scale globally and across new offices\nMinimum requirements for the role:\nBachelor's degree in Computer Science, Engineering, or equivalent practical experience.\n8+ years of experience in software design and development, including building and operating production systems at scale.\nStrong full-stack fundamentals. You're comfortable working across backend services, APIs, and frontend (web or mobile) to ship complete products.\nProficiency in modern languages and frameworks (Go, Python, TypeScript/JavaScript, React, or similar).\nDemonstrated experience leading cross-team or cross-org projects from inception through rollout, including managing ambiguity, driving alignment, and delivering measurable impact.\nExperience building AI-powered or data-driven products. You don't need to train models, but you know how to take AI capabilities and turn them into products customers love.\nStrong communication skills and the ability to translate between technical and non-technical stakeholders.\nA track record of building: zero-to-one products, systems you left in a meaningfully better place, or hard problems you refused to let stay unsolved.\nAn ideal candidate also has:\nExperience shipping AI-powered features in production, whether that's LLM-based products, agentic workflows, recommendation systems, or other customer-facing AI.\nComfort with modern AI-augmented development workflows (Cursor, LLMs, etc.) to multiply your output and accelerate delivery.\nBackground working with real-world operational data (telematics, sensor data, work orders, inspections) or a strong interest in learning the domain.\nA proven track record of mentoring senior engineers and influencing engineering culture, standards, and best practices beyond a single team.\nSide projects, open-source contributions, or other signals of curiosity and drive outside the scope of your day job.\nThe range of annual base salary for full-time employees for this position is below. Please note that base pay offered may vary depending on factors including your city of residence, job-related knowledge, skills, and experience. This role is also eligible for an initial RSU grant with no vesting cliff, and ongoing refresh opportunities tied to performance, subject to plan terms and conditions. Learn more about our total rewards and benefits below.\nAnnual Base Salary\n$162,400 — $290,000 USD\nTotal Rewards\nAt Samsara, we build for the people who keep the global economy moving. We want owners, not passengers, which is why our rewards are designed to fuel high-impact builders. Our compensation program delivers above-market total compensation through a combination of base salary, performance-based bonus/variable pay, and equity (for eligible roles) in a high-growth public company. We meaningfully differentiate pay for our top performers, who have the opportunity to earn above-market compensation that can outpace the broader market over time.\nBeyond compensation, we provide the foundations that enable long-term success: a flexible, employee-led remote model, a professional development stipend, comprehensive health and parental leave plans, and more. If you’re ready to build for the long term and own the outcome, your journey starts here.\nFlexible Working\nAt Samsara, we embrace a flexible working model that caters to the diverse needs of our teams. Our offices are open for those who prefer to work in-person and we also support remote work where it aligns with our operational requirements. For certain positions, being close to one of our offices or within a specific geographic area is important to facilitate collaboration, access to resources, or alignment with our service regions. In these cases, the job description will clearly indicate any working location requirements. Our goal is to ensure that all members of our team can contribute effectively, whether they are working on-site, in a hybrid model, or fully remotely. All offers of employment are contingent upon an individual’s ability to secure and maintain the legal right to work at the company and in the specified work location, if applicable.\nBelonging at Samsara\nAt Samsara, we welcome everyone regardless of their background. All qualified applicants will receive consideration for employment without regard to race, color, religion, national origin, sex, gender, gender identity, sexual orientation, protected veteran status, disability, age, and other characteristics protected by law. We depend on the unique approaches of our team members to help us solve complex problems and want to ensure that Samsara is a place where people from all backgrounds can make an impact.\nTo apply: https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-   "status": "Awaiting Review",
-   "id": "748c2b42-0d50-437b-8306-3cca9ff7bdc6",
-   "createdAt": "2026-09-20T18:11:58+00:00",
-   "requiredSkills": "staff, engineer, headquarters, remote, url, https, //www.samsara.com/, about, samsara, nyse, iot, sits",
-   "postedAt": "2026-08-17",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "565e4f783641b34c",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-     "found_at": "2026-11-04T18:22:19+00:00"
-    }
-   ],
-   "matchScore": 61,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Staff)"
    ],
    "discoveredBy": "rss"
   },
@@ -1370,7 +1117,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
-     "found_at": "2026-11-04T18:22:08+00:00"
+     "found_at": "2026-11-05T10:11:39+00:00"
     }
    ],
    "matchScore": 57,
@@ -1413,7 +1160,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-04T18:22:08+00:00"
+     "found_at": "2026-11-05T10:11:39+00:00"
     }
    ],
    "matchScore": 57,
@@ -1442,7 +1189,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-11-04",
+   "postedAt": "2026-11-05",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1456,7 +1203,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/36",
-     "found_at": "2026-11-04T18:22:15+00:00"
+     "found_at": "2026-11-05T10:11:45+00:00"
     }
    ],
    "matchScore": 57,
@@ -1499,7 +1246,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-11-04T18:22:15+00:00"
+     "found_at": "2026-11-05T10:11:45+00:00"
     }
    ],
    "matchScore": 57,
@@ -1542,7 +1289,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-11-04T18:22:19+00:00"
+     "found_at": "2026-11-05T10:11:49+00:00"
     }
    ],
    "matchScore": 57,
@@ -1585,7 +1332,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-11-04T18:22:19+00:00"
+     "found_at": "2026-11-05T10:11:49+00:00"
     }
    ],
    "matchScore": 57,
@@ -1628,7 +1375,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-11-04T18:22:12+00:00"
+     "found_at": "2026-11-05T10:11:39+00:00"
     }
    ],
    "matchScore": 57,
@@ -1671,7 +1418,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-04T18:22:19+00:00"
+     "found_at": "2026-11-05T10:11:49+00:00"
     }
    ],
    "matchScore": 57,
@@ -1714,7 +1461,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-04T18:22:19+00:00"
+     "found_at": "2026-11-05T10:11:49+00:00"
     }
    ],
    "matchScore": 53,
@@ -1757,7 +1504,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/information-management-officer-norwegian-refugee-council/",
-     "found_at": "2026-11-04T18:22:08+00:00"
+     "found_at": "2026-11-05T10:11:36+00:00"
     }
    ],
    "matchScore": 48,
