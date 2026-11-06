@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-05T18:27:19+00:00",
+ "generatedAt": "2026-11-06T10:16:30+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 12,
+    "found": 16,
     "errors": [],
-    "raw": 300
+    "raw": 296
    },
    "jsonld": {
     "found": 3,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 28,
+    "found": 26,
     "errors": [],
-    "raw": 330
+    "raw": 368
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 34,
-   "new": 1,
+   "total": 37,
+   "new": 4,
    "expired": 3,
-   "duplicatesFolded": 6,
-   "priorityA": 10,
-   "priorityB": 9,
-   "priorityC": 15
+   "duplicatesFolded": 5,
+   "priorityA": 11,
+   "priorityB": 10,
+   "priorityC": 16
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,9 +74,52 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-05T18:27:19+00:00"
+  "ranAt": "2026-11-06T10:16:29+00:00"
  },
  "jobs": [
+  {
+   "title": "Junior Software Engineer / Software Engineer",
+   "company": "IDLC Finance",
+   "description": "Position: Junior Software Engineer / Software Engineer, Technology Transformation\nCompany: IDLC Finance PLC\nJob Location: Head Office, Dhaka\nEmployment Type: Full-time\nSalary: Negotiable\nExperience: 0 to 2 years; fresh graduates are encouraged to apply\nEducation: Bachelor’s in CSE, EEE, software engineering or a related field, with strong academic results\nDeadline: 10 November 2026\nAbout the Role\nIDLC Finance is hiring a Junior Software Engineer / Software Engineer on a lead track in its Technology Transformation team.\nKey Responsibilities\nJoin design, partner and estimate reviews and prepare the analysis behind them\nWrite and run SQL to analyse data and check data quality\nHelp build the data warehouse and BI layer\nDocument requirements and draw data flows; prototype small automations (Python, Power Automate)\nSupport testing and UAT; track project actions and risks\nRequirements\nBachelor’s in CSE, EEE, software engineering or related, strong results\n0 to 2 years; fresh graduates encouraged\nDatabases, SQL, data structures and basic system design\nCode in at least one language (Python, Java, JavaScript, C#)\nClear English and Bangla\nAbout IDLC Finance\nIDLC Finance PLC is Bangladesh’s largest non-bank financial institution.\nHow to Apply\nInterested candidates can apply through the IDLC careers using the Apply Now button. The application deadline is 10 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Software Development",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/junior-software-engineer-software-engineer-idlc-finance/",
+   "status": "Awaiting Review",
+   "id": "ce23deb5-9a35-47a5-8ecf-453225945afd",
+   "createdAt": "2026-11-06T10:15:40+00:00",
+   "requiredSkills": "junior, engineer, technology, transformation, idlc, finance, plc, location, head, dhaka, employment, type",
+   "postedAt": "2026-11-06",
+   "deadline": "2026-11-10",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Full Time",
+   "experienceText": "Fresher",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "73377ccec4cb0a1c",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/junior-software-engineer-software-engineer-idlc-finance/",
+     "found_at": "2026-11-06T10:15:40+00:00"
+    }
+   ],
+   "matchScore": 83,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
   {
    "title": "Software Engineer, Backend",
    "company": "Vercel",
@@ -103,7 +146,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-11-05T18:26:39+00:00"
+     "found_at": "2026-11-06T10:15:48+00:00"
     }
    ],
    "matchScore": 83,
@@ -145,7 +188,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-community-development-officer-tcdo-microfinance-dabi-brac/",
-     "found_at": "2026-11-05T18:26:31+00:00"
+     "found_at": "2026-11-06T10:15:40+00:00"
     }
    ],
    "matchScore": 79,
@@ -187,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-cards-sales-eastern-bank-plc-2/",
-     "found_at": "2026-11-05T18:26:34+00:00"
+     "found_at": "2026-11-06T10:15:43+00:00"
     }
    ],
    "matchScore": 79,
@@ -229,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-11-05T18:26:38+00:00"
+     "found_at": "2026-11-06T10:15:47+00:00"
     }
    ],
    "matchScore": 79,
@@ -242,6 +285,48 @@
    "priority": "A",
    "gateNotes": [
     "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Trainee Officer – Accounts (Coal)",
+   "company": "Abul Khair Group",
+   "description": "Position: Trainee Officer – Accounts (Coal)\nCompany: Dhaka Concrete Ltd., Abul Khair Group\nJob Location: Coal Depot\nExperience: 1 to 3 years; fresh graduates are also encouraged to apply\nEducation: BBA, MBA, M.Com or graduation in Accounting / Finance\nDeadline: 15 November 2026\nAbout the Role\nAbul Khair Group is hiring Trainee Officers – Accounts (Coal) for Dhaka Concrete Ltd., posted at its coal depot.\nRequirements\nBBA, MBA, M.Com or graduation in Accounting / Finance\n1 to 3 years of experience; fresh graduates encouraged\nWork location: Coal Depot\nHow to Apply\nEmail your CV to sohebbinmahabub@abulkhairgroup.com with the subject ’Trainee Officer – Coal Accounts’ by 15 November 2026\nAbout Abul Khair Group\nAbul Khair Group is one of Bangladesh’s largest industrial conglomerates, in steel, cement, consumer goods and more.\nHow to Apply\nInterested candidates can apply through the CV by email to sohebbinmahabub@abulkhairgroup.com (Abul Khair Group’s own domain), subject ’Trainee Officer – Coal Accounts’ using the Apply Now button. The application deadline is 15 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Anywhere in Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/trainee-officer-accounts-coal-abul-khair-group/",
+   "status": "Awaiting Review",
+   "id": "c0637b2a-36c2-4e45-8143-9b5abb9844b9",
+   "createdAt": "2026-11-06T10:15:40+00:00",
+   "requiredSkills": "trainee, officer, accounts, coal, dhaka, concrete, abul, khair, group, location, depot, fresh",
+   "postedAt": "2026-11-06",
+   "deadline": "2026-11-15",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "Fresher",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "cea1eaaea1a5bc53",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/trainee-officer-accounts-coal-abul-khair-group/",
+     "found_at": "2026-11-06T10:15:40+00:00"
+    }
+   ],
+   "matchScore": 75,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -271,7 +356,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-05T18:26:51+00:00"
+     "found_at": "2026-11-06T10:16:00+00:00"
     }
    ],
    "matchScore": 75,
@@ -313,49 +398,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-05T18:26:44+00:00"
-    }
-   ],
-   "matchScore": 75,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "rss"
-  },
-  {
-   "title": "Software Engineer - Query Execution",
-   "company": "Dremio",
-   "description": "Headquarters: Portugal - Remote\nBe Part of Building the Future\nDremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost. Learn more at www.dremio.com.\nAbout the role\nDremio’s Query Execution team builds the runtime responsible for executing analytical queries at scale. The team sits between query planning and table scans, building the systems that turn query plans into efficient, reliable execution.\nAs a Software Engineer, you’ll work with experienced engineers to build, test, and support well-scoped improvements to the execution engine. You’ll learn how Dremio’s query runtime works while contributing to areas such as query operators, expression evaluation, memory management, scheduling, and performance.\nWhat you’ll be doing\nBuild and support execution-engine components: Implement, test, debug, and maintain well-defined changes to query operators, expression evaluation, execution scheduling, and resource management.\nDevelop reliable software: Write clear, maintainable Java code; add unit and integration tests; and follow established engineering practices for code review, testing, and documentation.\nInvestigate issues: Help diagnose query correctness, reliability, and performance issues using query profiles, logs, telemetry, benchmarks, and production data.\nLearn runtime and performance fundamentals: Build familiarity with vectorized processing, concurrency, memory usage, parallelism, data exchange, and disk spilling.\nCollaborate with the team: Work closely with senior engineers and partner teams to understand requirements, break work into manageable tasks, and deliver incremental improvements.\nUse AI-assisted development tools: Apply AI tools to code comprehension, debugging, test generation, and documentation, while validating results through testing, review, and sound engineering judgment.\nGrow your engineering skills: Participate actively in design discussions and code reviews, seek feedback, and steadily take on broader technical responsibility.\nWhat we’re looking for\nSoftware engineering foundation: Up to two years of professional software development experience, or equivalent experience through internships, coursework, or substantial personal projects.\nProgramming skills: Proficiency in Java or another object-oriented programming language; willingness to learn and work in a large Java codebase.\nComputer science fundamentals: Understanding of data structures, algorithms, and basic concurrency concepts.\nProblem-solving ability: Able to work through well-defined technical problems, ask good questions, and apply feedback to reach a solution.\nQuality mindset: Commitment to writing tested, maintainable code and learning established development, testing, and review practices.\nCommunication and collaboration: Able to communicate progress, surface blockers early, and work effectively with teammates.\nEducation: Bachelor’s degree in Computer Science, a related technical field, or equivalent practical experience.\nBonus points if you have\nExposure to database internals, query processing, distributed systems, or large-scale data processing.\nFamiliarity with performance-oriented software concepts such as profiling, memory management, concurrency, or vectorized processing.\nExperience with C++, Apache Arrow, Parquet, Apache Iceberg, Spark, Hadoop, or cloud object stores.\nContributions to open-source projects.\nWhat we value\nAt Dremio, we hold ourselves to high standards when it comes to People, Thinking, and Action. Our Gnarlies (that's what we call our employees) communicate with clarity, drive accountability, and are respectful towards each other. We confront brutal facts and focus on results while operating with a sense of urgency and building a \"flywheel\". People who like to jump in and drive momentum will thrive in our #GnarlyLife.\nDremio is an equal opportunity employer supporting workforce diversity. We do not discriminate on the basis of race, religion, color, national origin, gender identity, sexual orientation, age, marital status, protected veteran status, disability status, or any other unlawful factor.\nDremio is committed to providing any necessary accommodations for individuals with disabilities within our application and interview process. To request accommodation due to a disability, please inform your recruiter.\nDremio has policies in place to protect the personal information that employees and applicants disclose to us. Please click here to review the privacy notice.\nImportant Security Notice for Candidates\nAt Dremio, we uphold trust and transparency as paramount values in all our interactions with customers, partners, employees, and the general public. We have been targeted by individuals creating fake domains similar to ours to scam prospects and candidates. Please note that all official communications from us will be from an @dremio.com domain. If you suspect you've been targeted by a scam, it's imperative to report the incident to your local law enforcement agencies. For more information about this type of scam, please refer to Dremio's official statement here .\nDremio is not responsible for any fees related to unsolicited resumes and will not pay fees to any third-party agency or company that does not have a signed agreement with the Company.\nTo apply: https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-   "status": "Awaiting Review",
-   "id": "45487292-61a5-43ac-97bc-e84c2a44feb1",
-   "createdAt": "2026-10-28T09:13:03+00:00",
-   "requiredSkills": "engineer, query, execution, headquarters, portugal, remote, building, future, dremio, unified, lakehouse, platform",
-   "postedAt": "2026-10-07",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "1c46c6bb1e0222d0",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-     "found_at": "2026-11-05T18:26:39+00:00"
+     "found_at": "2026-11-06T10:15:52+00:00"
     }
    ],
    "matchScore": 75,
@@ -397,7 +440,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-11-05T18:26:38+00:00"
+     "found_at": "2026-11-06T10:15:47+00:00"
     }
    ],
    "matchScore": 75,
@@ -439,7 +482,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-11-05T18:26:34+00:00"
+     "found_at": "2026-11-06T10:15:43+00:00"
     }
    ],
    "matchScore": 75,
@@ -479,7 +522,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-05T18:26:31+00:00"
+     "found_at": "2026-11-06T10:15:40+00:00"
     }
    ],
    "matchScore": 75,
@@ -522,7 +565,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/information-communication-technology-ict-officer-seo-ncc-bank-plc/",
-     "found_at": "2026-11-05T18:26:31+00:00"
+     "found_at": "2026-11-06T10:15:40+00:00"
     }
    ],
    "matchScore": 74,
@@ -565,7 +608,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-11-05T18:27:00+00:00"
+     "found_at": "2026-11-06T10:16:08+00:00"
     }
    ],
    "matchScore": 71,
@@ -607,7 +650,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-05T18:26:47+00:00"
+     "found_at": "2026-11-06T10:15:56+00:00"
     }
    ],
    "matchScore": 71,
@@ -622,6 +665,49 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Data Driven QA Automation Engineer",
+   "company": "Riseup Labs",
+   "description": "Data Driven QA Automation Engineer position at Riseup Labs. Required skills: Python, Sql, Snowflake, Dbt, Airflow.",
+   "category": "Software Quality Assurance",
+   "location": "Canada (Vancouver/Calgary/Toronto), Dhaka",
+   "source": "BD Tech Jobs",
+   "url": "https://www.bdtechjobs.com/jobs/50",
+   "status": "Awaiting Review",
+   "id": "b92dcb60-31c4-49fb-bbf0-250ca7c6aa2c",
+   "createdAt": "2026-11-06T10:15:47+00:00",
+   "requiredSkills": "driven, automation, engineer, riseup, labs., required, python, snowflake, dbt, airflow.",
+   "postedAt": "2026-11-06",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full time",
+   "experienceText": "",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "4a7d65175e028c0e",
+   "sources": [
+    {
+     "source": "BD Tech Jobs",
+     "url": "https://www.bdtechjobs.com/jobs/50",
+     "found_at": "2026-11-06T10:15:47+00:00"
+    }
+   ],
+   "matchScore": 71,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "jsonld"
   },
   {
    "title": "Software Engineer - Data Platform",
@@ -649,7 +735,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-11-05T18:26:39+00:00"
+     "found_at": "2026-11-06T10:15:48+00:00"
     }
    ],
    "matchScore": 71,
@@ -691,7 +777,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-11-05T18:26:39+00:00"
+     "found_at": "2026-11-06T10:15:48+00:00"
     }
    ],
    "matchScore": 66,
@@ -733,7 +819,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-05T18:26:44+00:00"
+     "found_at": "2026-11-06T10:15:52+00:00"
     }
    ],
    "matchScore": 66,
@@ -775,7 +861,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-05T18:26:44+00:00"
+     "found_at": "2026-11-06T10:15:52+00:00"
     }
    ],
    "matchScore": 66,
@@ -817,7 +903,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-05T18:26:44+00:00"
+     "found_at": "2026-11-06T10:15:52+00:00"
     }
    ],
    "matchScore": 66,
@@ -859,7 +945,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-11-05T18:26:38+00:00"
+     "found_at": "2026-11-06T10:15:47+00:00"
     }
    ],
    "matchScore": 62,
@@ -901,7 +987,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-11-05T18:26:44+00:00"
+     "found_at": "2026-11-06T10:15:52+00:00"
     }
    ],
    "matchScore": 65,
@@ -925,12 +1011,12 @@
    "category": "Software Development",
    "location": "Dhaka",
    "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/30",
+   "url": "https://www.bdtechjobs.com/jobs/28",
    "status": "Awaiting Review",
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-11-05",
+   "postedAt": "2026-11-06",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -943,8 +1029,8 @@
    "sources": [
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/30",
-     "found_at": "2026-11-05T18:26:39+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/28",
+     "found_at": "2026-11-06T10:15:47+00:00"
     }
    ],
    "matchScore": 65,
@@ -988,7 +1074,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-05T18:26:44+00:00"
+     "found_at": "2026-11-06T10:15:52+00:00"
     }
    ],
    "matchScore": 61,
@@ -1031,7 +1117,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-11-05T18:26:44+00:00"
+     "found_at": "2026-11-06T10:15:52+00:00"
     }
    ],
    "matchScore": 61,
@@ -1074,7 +1160,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-05T18:26:44+00:00"
+     "found_at": "2026-11-06T10:15:52+00:00"
     }
    ],
    "matchScore": 61,
@@ -1117,7 +1203,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
-     "found_at": "2026-11-05T18:26:34+00:00"
+     "found_at": "2026-11-06T10:15:43+00:00"
     }
    ],
    "matchScore": 57,
@@ -1160,7 +1246,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-05T18:26:34+00:00"
+     "found_at": "2026-11-06T10:15:43+00:00"
     }
    ],
    "matchScore": 57,
@@ -1184,12 +1270,12 @@
    "category": "Software Development",
    "location": "New DOHS Mohakhali, Dhaka",
    "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/36",
+   "url": "https://www.bdtechjobs.com/jobs/33",
    "status": "Awaiting Review",
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-11-05",
+   "postedAt": "2026-11-06",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1202,8 +1288,8 @@
    "sources": [
     {
      "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/36",
-     "found_at": "2026-11-05T18:26:39+00:00"
+     "url": "https://www.bdtechjobs.com/jobs/33",
+     "found_at": "2026-11-06T10:15:47+00:00"
     }
    ],
    "matchScore": 57,
@@ -1246,7 +1332,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-11-05T18:26:39+00:00"
+     "found_at": "2026-11-06T10:15:48+00:00"
     }
    ],
    "matchScore": 57,
@@ -1289,7 +1375,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-11-05T18:26:44+00:00"
+     "found_at": "2026-11-06T10:15:52+00:00"
     }
    ],
    "matchScore": 57,
@@ -1332,7 +1418,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-11-05T18:26:44+00:00"
+     "found_at": "2026-11-06T10:15:52+00:00"
     }
    ],
    "matchScore": 57,
@@ -1375,7 +1461,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-11-05T18:26:34+00:00"
+     "found_at": "2026-11-06T10:15:43+00:00"
     }
    ],
    "matchScore": 57,
@@ -1418,7 +1504,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-05T18:26:44+00:00"
+     "found_at": "2026-11-06T10:15:52+00:00"
     }
    ],
    "matchScore": 57,
@@ -1434,6 +1520,48 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Project Coordinator",
+   "company": "ActionAid Bangladesh",
+   "description": "Position: Project Coordinator\nCompany: ActionAid Bangladesh\nProject: Connecting Communities and Institutions for Peace, Safety, and Social Cohesion in the Rohingya Response (SDC funded)\nJob Location: Cox’s Bazar Sadar\nEmployment Type: Fixed term contract, up to 31 October 2027 (if not extended)\nSalary: Monthly gross BDT 113,852 with mobile & internet allowance, medical benefit and group life insurance\nExperience: At least 5 to 6 years in programme coordination, project implementation or development cooperation\nEducation: Bachelor’s in Law (LLB) or a relevant social science; a postgraduate degree is an advantage\nDeadline: 11 November 2026 (rolling recruitment)\nAbout the Role\nActionAid Bangladesh is hiring a Project Coordinator in Cox’s Bazar for its SDC-funded peace, safety and social cohesion project in the Rohingya response.\nKey Responsibilities\nCoordinate the project with partners, youth-led and refugee-led organisations\nLead community-led peacebuilding, safety and conflict-prevention initiatives\nFacilitate engagement between communities, APBn, CiC offices and local administration\nSupport capacity building, advocacy and campaigning\nRequirements\nBachelor’s in Law (LLB) or a relevant social science (Development Studies, International Law, Political Science, Peace and Conflict Studies and similar)\nPostgraduate degree an advantage\nAt least 5 to 6 years in programme coordination or project implementation\nRegular field travel in Cox’s Bazar\nAbout ActionAid Bangladesh\nActionAid Bangladesh is part of ActionAid, a global federation working for human rights and against poverty.\nHow to Apply\nInterested candidates can apply through the ActionAid Bangladesh circular (apply on jobs.actionaidbd.org) using the Apply Now button. The application deadline is 11 November 2026 (rolling recruitment) . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Cox’s Bazar",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/project-coordinator-actionaid-bangladesh/",
+   "status": "Awaiting Review",
+   "id": "73d8968b-f6c4-4803-a0f3-69678e499a38",
+   "createdAt": "2026-11-06T10:15:40+00:00",
+   "requiredSkills": "coordinator, actionaid, bangladesh, connecting, communities, institutions, peace, safety, social, cohesion, rohingya, response",
+   "postedAt": "2026-11-06",
+   "deadline": "2026-11-11",
+   "salaryMin": 113852,
+   "salaryMax": null,
+   "salaryText": "Tk 113,852",
+   "employmentType": "Contractual",
+   "experienceText": "5 Years",
+   "area": "",
+   "distanceKm": null,
+   "fingerprint": "511e13542feaccdf",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/project-coordinator-actionaid-bangladesh/",
+     "found_at": "2026-11-06T10:15:40+00:00"
+    }
+   ],
+   "matchScore": 53,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Senior Software Engineer",
@@ -1461,7 +1589,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-05T18:26:44+00:00"
+     "found_at": "2026-11-06T10:15:52+00:00"
     }
    ],
    "matchScore": 53,
@@ -1504,7 +1632,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/information-management-officer-norwegian-refugee-council/",
-     "found_at": "2026-11-05T18:26:31+00:00"
+     "found_at": "2026-11-06T10:15:40+00:00"
     }
    ],
    "matchScore": 48,
