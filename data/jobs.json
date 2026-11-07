@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-07T09:31:22+00:00",
+ "generatedAt": "2026-11-07T16:43:38+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -33,7 +33,7 @@
    "bdrecruit": {
     "found": 17,
     "errors": [],
-    "raw": 296
+    "raw": 299
    },
    "jsonld": {
     "found": 3,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 28,
+    "found": 29,
     "errors": [],
-    "raw": 367
+    "raw": 366
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 39,
-   "new": 2,
+   "total": 40,
+   "new": 1,
    "expired": 3,
    "duplicatesFolded": 6,
    "priorityA": 12,
    "priorityB": 11,
-   "priorityC": 16
+   "priorityC": 17
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-07T09:31:21+00:00"
+  "ranAt": "2026-11-07T16:43:38+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/junior-software-engineer-software-engineer-idlc-finance/",
-     "found_at": "2026-11-07T09:30:32+00:00"
+     "found_at": "2026-11-07T16:42:52+00:00"
     }
    ],
    "matchScore": 83,
@@ -146,7 +146,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-11-07T09:30:40+00:00"
+     "found_at": "2026-11-07T16:42:58+00:00"
     }
    ],
    "matchScore": 83,
@@ -188,7 +188,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-community-development-officer-tcdo-microfinance-dabi-brac/",
-     "found_at": "2026-11-07T09:30:32+00:00"
+     "found_at": "2026-11-07T16:42:52+00:00"
     }
    ],
    "matchScore": 79,
@@ -230,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-cards-sales-eastern-bank-plc-2/",
-     "found_at": "2026-11-07T09:30:35+00:00"
+     "found_at": "2026-11-07T16:42:53+00:00"
     }
    ],
    "matchScore": 79,
@@ -272,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-11-07T09:30:39+00:00"
+     "found_at": "2026-11-07T16:42:57+00:00"
     }
    ],
    "matchScore": 79,
@@ -314,7 +314,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-accounts-coal-abul-khair-group/",
-     "found_at": "2026-11-07T09:30:32+00:00"
+     "found_at": "2026-11-07T16:42:52+00:00"
     }
    ],
    "matchScore": 75,
@@ -356,7 +356,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-07T09:30:52+00:00"
+     "found_at": "2026-11-07T16:43:10+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +398,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-07T09:30:32+00:00"
+     "found_at": "2026-11-07T16:42:52+00:00"
     }
    ],
    "matchScore": 75,
@@ -440,7 +440,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-07T09:30:44+00:00"
+     "found_at": "2026-11-07T16:43:02+00:00"
     }
    ],
    "matchScore": 75,
@@ -482,7 +482,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-11-07T09:30:39+00:00"
+     "found_at": "2026-11-07T16:42:57+00:00"
     }
    ],
    "matchScore": 75,
@@ -524,7 +524,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-11-07T09:30:35+00:00"
+     "found_at": "2026-11-07T16:42:53+00:00"
     }
    ],
    "matchScore": 75,
@@ -564,7 +564,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-07T09:30:35+00:00"
+     "found_at": "2026-11-07T16:42:53+00:00"
     }
    ],
    "matchScore": 75,
@@ -607,7 +607,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/information-communication-technology-ict-officer-seo-ncc-bank-plc/",
-     "found_at": "2026-11-07T09:30:32+00:00"
+     "found_at": "2026-11-07T16:42:52+00:00"
     }
    ],
    "matchScore": 74,
@@ -650,7 +650,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-11-07T09:31:00+00:00"
+     "found_at": "2026-11-07T16:43:18+00:00"
     }
    ],
    "matchScore": 71,
@@ -692,7 +692,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-07T09:30:48+00:00"
+     "found_at": "2026-11-07T16:43:06+00:00"
     }
    ],
    "matchScore": 71,
@@ -734,7 +734,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-07T09:30:44+00:00"
+     "found_at": "2026-11-07T16:43:02+00:00"
     }
    ],
    "matchScore": 71,
@@ -776,7 +776,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/50",
-     "found_at": "2026-11-07T09:30:39+00:00"
+     "found_at": "2026-11-07T16:42:58+00:00"
     }
    ],
    "matchScore": 71,
@@ -819,7 +819,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-11-07T09:30:40+00:00"
+     "found_at": "2026-11-07T16:42:58+00:00"
     }
    ],
    "matchScore": 71,
@@ -861,7 +861,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-11-07T09:30:40+00:00"
+     "found_at": "2026-11-07T16:42:58+00:00"
     }
    ],
    "matchScore": 66,
@@ -903,7 +903,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-07T09:30:44+00:00"
+     "found_at": "2026-11-07T16:43:02+00:00"
     }
    ],
    "matchScore": 66,
@@ -945,7 +945,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-07T09:30:44+00:00"
+     "found_at": "2026-11-07T16:43:02+00:00"
     }
    ],
    "matchScore": 66,
@@ -987,7 +987,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-07T09:30:44+00:00"
+     "found_at": "2026-11-07T16:43:02+00:00"
     }
    ],
    "matchScore": 66,
@@ -1029,7 +1029,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-11-07T09:30:39+00:00"
+     "found_at": "2026-11-07T16:42:57+00:00"
     }
    ],
    "matchScore": 62,
@@ -1071,7 +1071,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-11-07T09:30:39+00:00"
+     "found_at": "2026-11-07T16:42:58+00:00"
     }
    ],
    "matchScore": 65,
@@ -1114,7 +1114,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/28",
-     "found_at": "2026-11-07T09:30:39+00:00"
+     "found_at": "2026-11-07T16:42:58+00:00"
     }
    ],
    "matchScore": 65,
@@ -1158,7 +1158,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-07T09:30:44+00:00"
+     "found_at": "2026-11-07T16:43:02+00:00"
     }
    ],
    "matchScore": 61,
@@ -1201,7 +1201,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-11-07T09:30:44+00:00"
+     "found_at": "2026-11-07T16:43:02+00:00"
     }
    ],
    "matchScore": 61,
@@ -1244,7 +1244,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-07T09:30:44+00:00"
+     "found_at": "2026-11-07T16:43:02+00:00"
     }
    ],
    "matchScore": 61,
@@ -1287,7 +1287,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
-     "found_at": "2026-11-07T09:30:35+00:00"
+     "found_at": "2026-11-07T16:42:53+00:00"
     }
    ],
    "matchScore": 57,
@@ -1330,7 +1330,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-07T09:30:35+00:00"
+     "found_at": "2026-11-07T16:42:53+00:00"
     }
    ],
    "matchScore": 57,
@@ -1373,7 +1373,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/33",
-     "found_at": "2026-11-07T09:30:39+00:00"
+     "found_at": "2026-11-07T16:42:58+00:00"
     }
    ],
    "matchScore": 57,
@@ -1416,7 +1416,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-11-07T09:30:40+00:00"
+     "found_at": "2026-11-07T16:42:58+00:00"
     }
    ],
    "matchScore": 57,
@@ -1459,7 +1459,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-11-07T09:30:44+00:00"
+     "found_at": "2026-11-07T16:43:02+00:00"
     }
    ],
    "matchScore": 57,
@@ -1502,7 +1502,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-11-07T09:30:44+00:00"
+     "found_at": "2026-11-07T16:43:02+00:00"
     }
    ],
    "matchScore": 57,
@@ -1545,7 +1545,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-11-07T09:30:35+00:00"
+     "found_at": "2026-11-07T16:42:53+00:00"
     }
    ],
    "matchScore": 57,
@@ -1588,7 +1588,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-07T09:30:44+00:00"
+     "found_at": "2026-11-07T16:43:02+00:00"
     }
    ],
    "matchScore": 57,
@@ -1631,7 +1631,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/project-coordinator-actionaid-bangladesh/",
-     "found_at": "2026-11-07T09:30:32+00:00"
+     "found_at": "2026-11-07T16:42:52+00:00"
     }
    ],
    "matchScore": 53,
@@ -1646,6 +1646,49 @@
     "Exact area not stated in the posting"
    ],
    "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Staff Software Engineer, Revenue Systems",
+   "company": "Squarespace",
+   "description": "Headquarters: New York City; Remote\nSquarespace is seeking a talented Staff Software Engineer to support and evolve the systems at the core core of our monetization platform: billing, payments and orders. In this role, you will provide technical oversight over the critical monetization machinery that accepts orders, processes payments and bills subscriptions. You will regularly collaborate with engineering leadership and key product, strategy and finance stakeholders to align technical strategy with Squarespace’s business objectives. This is an opportunity to take on IC technical leadership responsibilities and own system architecture for high-visibility initiatives tied directly to Squarespace's core businesses.\nThis role is open to remote or hybrid working from our NYC office 3 days per week. You will report to the Director of Revenue Systems.\nYou'll Get To...\nOwn system architectural vision and design for critical areas of our business.\nTransform high-level system vision into estimated project plans for initiatives central to Squarespace’s strategy.\nServe as technical lead and cross-functional liaison on business-critical projects, making and defending engineering decisions key to the success of the business.\nMentor engineers on the team to deliver ever greater quality with ever growing autonomy.\nDrive best practices for engineering excellence and technical leadership, influence design reviews, question assumptions, point out pitfalls and foster shared understanding\nSet the engineering quality bar for the team through regular, high-quality code contributions across billing, orders and payments.\nWho We're Looking For\n10 or more years experience specifying, delivering and maintaining complex distributed backend services.\nSignificant experience with multiple programming languages (especially Java) and a broad range of tools like Springboot, hibernate, databases, etc.\nDemonstrated experience leading system architecture decisions across multiple teams or initiatives\nProven ability to serve as a technical lead on cross-functional projects, aligning engineering and business goals without sacrificing engineering quality\nExperience working with billing, orders or payment systems at scale\nBenefits & Perks\nA choice between medical plans with an option for 100% covered premiums including medical, dental, and vision\nSupplemental Life and Disability Insurance plans\nFertility and adoption benefits\nHeadspace mindfulness app subscription\nGlobal Employee Assistance Program\nRetirement benefits with employer match\nFlexible paid time off\n12 weeks paid parental leave and family care leave\nPretax commuter benefit\nEducation reimbursement\nEmployee donation match to community organizations\n7 Global Employee Resource Groups (ERGs)\nDog-friendly workplace\nFree lunch and snacks\nPrivate rooftop\nHack week twice per year\nCash Compensation Range: $170,000 - $299,000 USD\nThe base salary for this position will vary based on job-related criteria including relevant skills, experience, and location, among other factors.\nIn addition to the cash compensation above (which includes base salary and, where applicable for eligible roles, may include overtime pay), Squarespace employees are eligible to be granted an option to purchase our common stock. Sales positions generally offer a competitive On Target Earnings (OTE) incentive structure in addition to base salary.\nAbout Squarespace\nSquarespace is a design-driven platform helping entrepreneurs build brands and businesses online. We empower millions of customers in more than 200 countries and territories with all the tools they need to create an online presence, build an audience, monetize, and scale their business. Our suite of products range from websites, domains, ecommerce, and marketing tools, as well as tools for scheduling with Acuity and creating and managing social media presence with Bio Sites and Unfold. Our team of more than 1,700 is headquartered in New York City, with offices in Dublin, Ireland, and Aveiro, Portugal. For more information about our company, visit https://www.squarespace.com/about/careers .\nOur Commitment\nToday, more than a million people around the globe use Squarespace to share different perspectives and experiences with the world. Not only do we embrace and celebrate the diversity of our customers, but we also work toward the same in our employees. At Squarespace, we are committed to equal employment opportunity regardless of race, color, ethnicity, ancestry, religion, national origin, gender, sex, gender identity or expression, sexual orientation, age, citizenship, marital or parental status, disability, veteran status, or other class protected by applicable law. We are proud to be an equal opportunity workplace.\n#LI-Hybrid\n#LI-Remote\nThank you in advance for providing the following details about your work history from your resume! This helps us ensure that your candidate information is accurate and consistent during the hiring process.\nSquarespace will never solicit your personal banking information or ask you to transfer money in connection with a job offer or interview. We also will not reach out to you via phone or SMS without your permission or knowledge.\nIf you plan to use AI in any capacity during your candidate journey, please review our Candidate AI Policy .\nTo apply: https://weworkremotely.com/remote-jobs/squarespace-staff-software-engineer-revenue-systems",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/squarespace-staff-software-engineer-revenue-systems",
+   "status": "Awaiting Review",
+   "id": "629c9010-0f90-4805-9c60-5ed958b5a499",
+   "createdAt": "2026-11-07T16:42:58+00:00",
+   "requiredSkills": "staff, engineer, revenue, headquarters, new, york, city, remote, squarespace, seeking, talented, evolve",
+   "postedAt": "2026-10-18",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "61e8696a3e3b8701",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/squarespace-staff-software-engineer-revenue-systems",
+     "found_at": "2026-11-07T16:42:58+00:00"
+    }
+   ],
+   "matchScore": 53,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Staff)"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Senior Software Engineer",
@@ -1673,7 +1716,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-07T09:30:44+00:00"
+     "found_at": "2026-11-07T16:43:02+00:00"
     }
    ],
    "matchScore": 53,
@@ -1716,7 +1759,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/information-management-officer-norwegian-refugee-council/",
-     "found_at": "2026-11-07T09:30:32+00:00"
+     "found_at": "2026-11-07T16:42:52+00:00"
     }
    ],
    "matchScore": 48,
