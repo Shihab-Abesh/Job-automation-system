@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-06T17:47:21+00:00",
+ "generatedAt": "2026-11-07T09:31:22+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 16,
+    "found": 17,
     "errors": [],
-    "raw": 298
+    "raw": 296
    },
    "jsonld": {
     "found": 3,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 26,
+    "found": 28,
     "errors": [],
-    "raw": 373
+    "raw": 367
    },
    "careers": {
     "found": 0,
@@ -57,12 +57,12 @@
    }
   },
   "counts": {
-   "total": 37,
-   "new": 0,
+   "total": 39,
+   "new": 2,
    "expired": 3,
-   "duplicatesFolded": 5,
-   "priorityA": 11,
-   "priorityB": 10,
+   "duplicatesFolded": 6,
+   "priorityA": 12,
+   "priorityB": 11,
    "priorityC": 16
   },
   "filters": {
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-06T17:47:21+00:00"
+  "ranAt": "2026-11-07T09:31:21+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/junior-software-engineer-software-engineer-idlc-finance/",
-     "found_at": "2026-11-06T17:46:32+00:00"
+     "found_at": "2026-11-07T09:30:32+00:00"
     }
    ],
    "matchScore": 83,
@@ -146,7 +146,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-11-06T17:46:41+00:00"
+     "found_at": "2026-11-07T09:30:40+00:00"
     }
    ],
    "matchScore": 83,
@@ -188,7 +188,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-community-development-officer-tcdo-microfinance-dabi-brac/",
-     "found_at": "2026-11-06T17:46:32+00:00"
+     "found_at": "2026-11-07T09:30:32+00:00"
     }
    ],
    "matchScore": 79,
@@ -230,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-cards-sales-eastern-bank-plc-2/",
-     "found_at": "2026-11-06T17:46:35+00:00"
+     "found_at": "2026-11-07T09:30:35+00:00"
     }
    ],
    "matchScore": 79,
@@ -272,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-11-06T17:46:39+00:00"
+     "found_at": "2026-11-07T09:30:39+00:00"
     }
    ],
    "matchScore": 79,
@@ -314,7 +314,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-accounts-coal-abul-khair-group/",
-     "found_at": "2026-11-06T17:46:32+00:00"
+     "found_at": "2026-11-07T09:30:32+00:00"
     }
    ],
    "matchScore": 75,
@@ -356,7 +356,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-06T17:46:52+00:00"
+     "found_at": "2026-11-07T09:30:52+00:00"
     }
    ],
    "matchScore": 75,
@@ -371,6 +371,48 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Management Trainee (CBB NeXGen)",
+   "company": "Community Bank",
+   "description": "Position: Management Trainee (CBB NeXGen – Management Trainee Program)\nCompany: Community Bank Bangladesh PLC.\nJob Location: Anywhere in Bangladesh\nEmployment Type: Full-time; one-year MT program, then absorbed as Senior Officer\nEducation: Post-graduation in any discipline with a 4-year Bachelor’s from a UGC-approved university, minimum CGPA 3.25 out of 4.00 in each; SSC and HSC GPA 4.50 or higher in each (O Level 3As, A Level 2Bs)\nAge: 21 to 32 years; not more than 32 years as on 30 November 2026\nDeadline: 5 December 2026\nAbout the Role\nCommunity Bank Bangladesh PLC. is inviting graduates to its CBB NeXGen Management Trainee Program.\nAbout the Program\nOne-year Management Trainee program\nOn successful completion MTs are absorbed as Senior Officer in the bank’s regular pay scale\nPosting anywhere in Bangladesh\nRequirements\nPost-graduation in any discipline with a 4-year Bachelor’s from a UGC-approved university\nMinimum CGPA 3.25 out of 4.00 in each degree\nSSC and HSC GPA 4.50 or higher in each (O Level: 3As, A Level: 2Bs)\nAge 21 to 32 years, not more than 32 as on 30 November 2026\nAbout Community Bank\nCommunity Bank Bangladesh PLC. is a scheduled commercial bank in Bangladesh.\nHow to Apply\nInterested candidates can apply through the Community Bank’s circular on bdjobs (apply online) using the Apply Now button. The application deadline is 5 December 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Anywhere in Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
+   "status": "Awaiting Review",
+   "id": "c65a1f18-827c-4482-b5af-8674d1a23ce3",
+   "createdAt": "2026-11-07T09:30:32+00:00",
+   "requiredSkills": "trainee, cbb, nexgen, program, community, bank, bangladesh, plc., location, anywhere, employment, type",
+   "postedAt": "2026-11-07",
+   "deadline": "2026-12-05",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "Fresher",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "c6aadfec935c1103",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
+     "found_at": "2026-11-07T09:30:32+00:00"
+    }
+   ],
+   "matchScore": 75,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Business Intelligence Analyst (Contractor)",
@@ -398,7 +440,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-06T17:46:45+00:00"
+     "found_at": "2026-11-07T09:30:44+00:00"
     }
    ],
    "matchScore": 75,
@@ -440,7 +482,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-11-06T17:46:39+00:00"
+     "found_at": "2026-11-07T09:30:39+00:00"
     }
    ],
    "matchScore": 75,
@@ -482,7 +524,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-11-06T17:46:35+00:00"
+     "found_at": "2026-11-07T09:30:35+00:00"
     }
    ],
    "matchScore": 75,
@@ -522,7 +564,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-06T17:46:32+00:00"
+     "found_at": "2026-11-07T09:30:35+00:00"
     }
    ],
    "matchScore": 75,
@@ -565,7 +607,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/information-communication-technology-ict-officer-seo-ncc-bank-plc/",
-     "found_at": "2026-11-06T17:46:32+00:00"
+     "found_at": "2026-11-07T09:30:32+00:00"
     }
    ],
    "matchScore": 74,
@@ -608,7 +650,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-11-06T17:47:00+00:00"
+     "found_at": "2026-11-07T09:31:00+00:00"
     }
    ],
    "matchScore": 71,
@@ -650,7 +692,49 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-06T17:46:48+00:00"
+     "found_at": "2026-11-07T09:30:48+00:00"
+    }
+   ],
+   "matchScore": 71,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Software Engineer Interviewer",
+   "company": "Karat",
+   "description": "Headquarters: Seattle\nURL: https://karat.com/\nCome join Karat's Interview Engineer Community!\nKarat is always seeking talented engineers accross the world to join our Community. If you are interested in being considered for a future Interview Engineer opportunity, please submit your application to this posting.\nThis is a contractor/freelancer opportunity, and work is compensated based on tasks performed once you complete onboarding. We hire worldwide and rotate which countries we recruit in. If you’re outside the U.S., check our website to see which countries are currently open, and apply there when your country is listed.\nWhat Interview Engineers do:\nInterview Engineers facilitate technical interviews with software developers around the world. As an Interview Engineer, you will create inclusive hiring processes by mitigating bias, improving hiring signals, and completing objective evaluations. These skills are critical to hiring and managing teams in startups and large enterprises. As a Karat Interview Engineer, you will:\nInterview— Facilitate an interview through Karat's platform. Create an enjoyable candidate experience while you evaluate a candidate's fundamental coding skills and technical knowledge.\nEvaluate— Provide input on the candidate's performance, coding style, communication skills, knowledge question answers, and coding approach.\nPartner— Collaborate with Karat to test content, processes, and products.\nThe experience you will bring:\n3+ years of experience as a Software Developer or Engineer\nExcellent English communication skills (written and oral) with a high level of professionalism and interpersonal skills\nReliable access to a working webcam, microphone, and a stable Internet connection\nExperience conducting technical interviews is preferred (e.g., data structures, algorithms)\nWhile we review your application, learn more about life as an Interview Engineer by watching this video!\nTo apply: https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
+   "status": "Awaiting Review",
+   "id": "c039878d-0163-4109-afc7-a277e9ed4207",
+   "createdAt": "2026-11-07T09:30:44+00:00",
+   "requiredSkills": "engineer, interviewer, headquarters, seattle, url, https, //karat.com/, come, karat, interview, community, always",
+   "postedAt": "2026-11-06",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "0a702b440b0ef027",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
+     "found_at": "2026-11-07T09:30:44+00:00"
     }
    ],
    "matchScore": 71,
@@ -678,7 +762,7 @@
    "id": "b92dcb60-31c4-49fb-bbf0-250ca7c6aa2c",
    "createdAt": "2026-11-06T10:15:47+00:00",
    "requiredSkills": "driven, automation, engineer, riseup, labs., required, python, snowflake, dbt, airflow.",
-   "postedAt": "2026-11-06",
+   "postedAt": "2026-11-07",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -692,7 +776,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/50",
-     "found_at": "2026-11-06T17:46:39+00:00"
+     "found_at": "2026-11-07T09:30:39+00:00"
     }
    ],
    "matchScore": 71,
@@ -735,7 +819,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-11-06T17:46:41+00:00"
+     "found_at": "2026-11-07T09:30:40+00:00"
     }
    ],
    "matchScore": 71,
@@ -777,7 +861,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-11-06T17:46:41+00:00"
+     "found_at": "2026-11-07T09:30:40+00:00"
     }
    ],
    "matchScore": 66,
@@ -819,7 +903,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-06T17:46:45+00:00"
+     "found_at": "2026-11-07T09:30:44+00:00"
     }
    ],
    "matchScore": 66,
@@ -861,7 +945,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-06T17:46:45+00:00"
+     "found_at": "2026-11-07T09:30:44+00:00"
     }
    ],
    "matchScore": 66,
@@ -903,7 +987,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-06T17:46:45+00:00"
+     "found_at": "2026-11-07T09:30:44+00:00"
     }
    ],
    "matchScore": 66,
@@ -945,7 +1029,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-11-06T17:46:39+00:00"
+     "found_at": "2026-11-07T09:30:39+00:00"
     }
    ],
    "matchScore": 62,
@@ -987,7 +1071,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-11-06T17:46:45+00:00"
+     "found_at": "2026-11-07T09:30:39+00:00"
     }
    ],
    "matchScore": 65,
@@ -1016,7 +1100,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-11-06",
+   "postedAt": "2026-11-07",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1030,7 +1114,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/28",
-     "found_at": "2026-11-06T17:46:39+00:00"
+     "found_at": "2026-11-07T09:30:39+00:00"
     }
    ],
    "matchScore": 65,
@@ -1074,7 +1158,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-06T17:46:45+00:00"
+     "found_at": "2026-11-07T09:30:44+00:00"
     }
    ],
    "matchScore": 61,
@@ -1117,7 +1201,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-11-06T17:46:45+00:00"
+     "found_at": "2026-11-07T09:30:44+00:00"
     }
    ],
    "matchScore": 61,
@@ -1160,7 +1244,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-06T17:46:45+00:00"
+     "found_at": "2026-11-07T09:30:44+00:00"
     }
    ],
    "matchScore": 61,
@@ -1203,7 +1287,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
-     "found_at": "2026-11-06T17:46:35+00:00"
+     "found_at": "2026-11-07T09:30:35+00:00"
     }
    ],
    "matchScore": 57,
@@ -1246,7 +1330,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-06T17:46:35+00:00"
+     "found_at": "2026-11-07T09:30:35+00:00"
     }
    ],
    "matchScore": 57,
@@ -1275,7 +1359,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-11-06",
+   "postedAt": "2026-11-07",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1289,7 +1373,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/33",
-     "found_at": "2026-11-06T17:46:39+00:00"
+     "found_at": "2026-11-07T09:30:39+00:00"
     }
    ],
    "matchScore": 57,
@@ -1332,7 +1416,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-11-06T17:46:41+00:00"
+     "found_at": "2026-11-07T09:30:40+00:00"
     }
    ],
    "matchScore": 57,
@@ -1375,7 +1459,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-11-06T17:46:45+00:00"
+     "found_at": "2026-11-07T09:30:44+00:00"
     }
    ],
    "matchScore": 57,
@@ -1418,7 +1502,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-11-06T17:46:45+00:00"
+     "found_at": "2026-11-07T09:30:44+00:00"
     }
    ],
    "matchScore": 57,
@@ -1461,7 +1545,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-11-06T17:46:35+00:00"
+     "found_at": "2026-11-07T09:30:35+00:00"
     }
    ],
    "matchScore": 57,
@@ -1504,7 +1588,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-06T17:46:45+00:00"
+     "found_at": "2026-11-07T09:30:44+00:00"
     }
    ],
    "matchScore": 57,
@@ -1547,7 +1631,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/project-coordinator-actionaid-bangladesh/",
-     "found_at": "2026-11-06T17:46:32+00:00"
+     "found_at": "2026-11-07T09:30:32+00:00"
     }
    ],
    "matchScore": 53,
@@ -1589,7 +1673,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-06T17:46:45+00:00"
+     "found_at": "2026-11-07T09:30:44+00:00"
     }
    ],
    "matchScore": 53,
@@ -1632,7 +1716,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/information-management-officer-norwegian-refugee-council/",
-     "found_at": "2026-11-06T17:46:32+00:00"
+     "found_at": "2026-11-07T09:30:32+00:00"
     }
    ],
    "matchScore": 48,
