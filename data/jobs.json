@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-07T16:43:38+00:00",
+ "generatedAt": "2026-11-08T09:47:29+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 17,
+    "found": 16,
     "errors": [],
-    "raw": 299
+    "raw": 289
    },
    "jsonld": {
     "found": 3,
@@ -43,7 +43,7 @@
    "rss": {
     "found": 29,
     "errors": [],
-    "raw": 366
+    "raw": 364
    },
    "careers": {
     "found": 0,
@@ -57,11 +57,11 @@
    }
   },
   "counts": {
-   "total": 40,
-   "new": 1,
+   "total": 39,
+   "new": 0,
    "expired": 3,
    "duplicatesFolded": 6,
-   "priorityA": 12,
+   "priorityA": 11,
    "priorityB": 11,
    "priorityC": 17
   },
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-07T16:43:38+00:00"
+  "ranAt": "2026-11-08T09:47:29+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/junior-software-engineer-software-engineer-idlc-finance/",
-     "found_at": "2026-11-07T16:42:52+00:00"
+     "found_at": "2026-11-08T09:46:42+00:00"
     }
    ],
    "matchScore": 83,
@@ -146,7 +146,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-     "found_at": "2026-11-07T16:42:58+00:00"
+     "found_at": "2026-11-08T09:46:49+00:00"
     }
    ],
    "matchScore": 83,
@@ -188,7 +188,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-community-development-officer-tcdo-microfinance-dabi-brac/",
-     "found_at": "2026-11-07T16:42:52+00:00"
+     "found_at": "2026-11-08T09:46:45+00:00"
     }
    ],
    "matchScore": 79,
@@ -201,48 +201,6 @@
    "priority": "A",
    "gateNotes": [
     "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Trainee Officer, Cards Sales",
-   "company": "Eastern Bank PLC",
-   "description": "Position: Trainee Officer, Cards Sales\nCompany: Eastern Bank PLC\nJob Location: Dhaka\nEmployment Type: Full-time\nExperience: Not required: fresh graduates are highly encouraged; similar job experience gets preference\nEducation: Minimum graduate from a recognized institution\nSalary: BDT 31,000 per month\nDeadline: 7 November 2026\nAbout the Role\nEastern Bank PLC (EBL) is hiring Trainee Officers for Cards Sales, at a monthly gross salary of BDT 31,000, with fresh graduates highly encouraged to apply.\nKey Responsibilities\nIdentify and approach potential customers for credit card sales\nExplain the features and benefits of different credit cards and help customers complete the application\nCoordinate with the respective officers so cards are approved and delivered in the shortest possible time\nAchieve and exceed the monthly sales targets set by the bank\nEnsure card activation and encourage supplementary card usage\nGive excellent customer service, resolve queries and complaints, and ensure fraud-free onboarding\nKeep daily and weekly sales reports for the line manager\nRequirements\nMinimum graduate from a recognized institution\nFresh graduates are highly encouraged; similar job experience gets preference\nSales knowledge, customer service skills, good communication and negotiation\nPassion for a number-driven banking career\nBenefits stated\nMonthly gross salary BDT 31,000\nFestival bonus, hospitalization and maternity reimbursement, leave benefits\nAbsorption opportunity as a permanent Junior Officer after successful completion\nAbout Eastern Bank PLC\nEastern Bank PLC (EBL) is a private commercial bank in Bangladesh. Only shortlisted candidates will be contacted.\nHow to Apply\nInterested candidates can apply through the EBL’s own career site (ebl.com.bd/career) using the Apply Now button. The application deadline is 7 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/trainee-officer-cards-sales-eastern-bank-plc-2/",
-   "status": "Awaiting Review",
-   "id": "5cb265a5-53b2-4f35-8b15-2738efeca11c",
-   "createdAt": "2026-10-31T09:10:46+00:00",
-   "requiredSkills": "trainee, officer, cards, sales, eastern, bank, plc, location, dhaka, employment, type, full",
-   "postedAt": "2026-10-31",
-   "deadline": "2026-11-07",
-   "salaryMin": 31000,
-   "salaryMax": null,
-   "salaryText": "Tk 31,000",
-   "employmentType": "Full Time",
-   "experienceText": "Freshers",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "9f7f119f7e684a11",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/trainee-officer-cards-sales-eastern-bank-plc-2/",
-     "found_at": "2026-11-07T16:42:53+00:00"
-    }
-   ],
-   "matchScore": 79,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Exact area not stated in the posting"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -272,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-11-07T16:42:57+00:00"
+     "found_at": "2026-11-08T09:46:48+00:00"
     }
    ],
    "matchScore": 79,
@@ -314,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-accounts-coal-abul-khair-group/",
-     "found_at": "2026-11-07T16:42:52+00:00"
+     "found_at": "2026-11-08T09:46:42+00:00"
     }
    ],
    "matchScore": 75,
@@ -356,7 +314,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-07T16:43:10+00:00"
+     "found_at": "2026-11-08T09:47:02+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +356,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-07T16:42:52+00:00"
+     "found_at": "2026-11-08T09:46:42+00:00"
     }
    ],
    "matchScore": 75,
@@ -440,7 +398,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-07T16:43:02+00:00"
+     "found_at": "2026-11-08T09:46:53+00:00"
     }
    ],
    "matchScore": 75,
@@ -482,7 +440,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-11-07T16:42:57+00:00"
+     "found_at": "2026-11-08T09:46:48+00:00"
     }
    ],
    "matchScore": 75,
@@ -524,7 +482,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-11-07T16:42:53+00:00"
+     "found_at": "2026-11-08T09:46:45+00:00"
     }
    ],
    "matchScore": 75,
@@ -564,7 +522,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-07T16:42:53+00:00"
+     "found_at": "2026-11-08T09:46:45+00:00"
     }
    ],
    "matchScore": 75,
@@ -607,7 +565,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/information-communication-technology-ict-officer-seo-ncc-bank-plc/",
-     "found_at": "2026-11-07T16:42:52+00:00"
+     "found_at": "2026-11-08T09:46:42+00:00"
     }
    ],
    "matchScore": 74,
@@ -650,7 +608,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-11-07T16:43:18+00:00"
+     "found_at": "2026-11-08T09:47:10+00:00"
     }
    ],
    "matchScore": 71,
@@ -692,7 +650,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-07T16:43:06+00:00"
+     "found_at": "2026-11-08T09:46:57+00:00"
     }
    ],
    "matchScore": 71,
@@ -734,7 +692,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-07T16:43:02+00:00"
+     "found_at": "2026-11-08T09:46:53+00:00"
     }
    ],
    "matchScore": 71,
@@ -762,7 +720,7 @@
    "id": "b92dcb60-31c4-49fb-bbf0-250ca7c6aa2c",
    "createdAt": "2026-11-06T10:15:47+00:00",
    "requiredSkills": "driven, automation, engineer, riseup, labs., required, python, snowflake, dbt, airflow.",
-   "postedAt": "2026-11-07",
+   "postedAt": "2026-11-08",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -776,7 +734,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/50",
-     "found_at": "2026-11-07T16:42:58+00:00"
+     "found_at": "2026-11-08T09:46:49+00:00"
     }
    ],
    "matchScore": 71,
@@ -819,7 +777,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-     "found_at": "2026-11-07T16:42:58+00:00"
+     "found_at": "2026-11-08T09:46:49+00:00"
     }
    ],
    "matchScore": 71,
@@ -861,7 +819,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-11-07T16:42:58+00:00"
+     "found_at": "2026-11-08T09:46:49+00:00"
     }
    ],
    "matchScore": 66,
@@ -903,7 +861,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-07T16:43:02+00:00"
+     "found_at": "2026-11-08T09:46:53+00:00"
     }
    ],
    "matchScore": 66,
@@ -945,7 +903,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-07T16:43:02+00:00"
+     "found_at": "2026-11-08T09:46:53+00:00"
     }
    ],
    "matchScore": 66,
@@ -987,7 +945,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-07T16:43:02+00:00"
+     "found_at": "2026-11-08T09:46:53+00:00"
     }
    ],
    "matchScore": 66,
@@ -1029,7 +987,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/analyst-business-intelligence-gildan/",
-     "found_at": "2026-11-07T16:42:57+00:00"
+     "found_at": "2026-11-08T09:46:49+00:00"
     }
    ],
    "matchScore": 62,
@@ -1071,7 +1029,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-11-07T16:42:58+00:00"
+     "found_at": "2026-11-08T09:46:49+00:00"
     }
    ],
    "matchScore": 65,
@@ -1100,7 +1058,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-11-07",
+   "postedAt": "2026-11-08",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1114,7 +1072,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/28",
-     "found_at": "2026-11-07T16:42:58+00:00"
+     "found_at": "2026-11-08T09:46:49+00:00"
     }
    ],
    "matchScore": 65,
@@ -1158,7 +1116,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-07T16:43:02+00:00"
+     "found_at": "2026-11-08T09:46:53+00:00"
     }
    ],
    "matchScore": 61,
@@ -1201,7 +1159,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-11-07T16:43:02+00:00"
+     "found_at": "2026-11-08T09:46:53+00:00"
     }
    ],
    "matchScore": 61,
@@ -1244,7 +1202,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-07T16:43:02+00:00"
+     "found_at": "2026-11-08T09:46:53+00:00"
     }
    ],
    "matchScore": 61,
@@ -1287,7 +1245,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
-     "found_at": "2026-11-07T16:42:53+00:00"
+     "found_at": "2026-11-08T09:46:45+00:00"
     }
    ],
    "matchScore": 57,
@@ -1330,7 +1288,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-07T16:42:53+00:00"
+     "found_at": "2026-11-08T09:46:45+00:00"
     }
    ],
    "matchScore": 57,
@@ -1359,7 +1317,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-11-07",
+   "postedAt": "2026-11-08",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1373,7 +1331,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/33",
-     "found_at": "2026-11-07T16:42:58+00:00"
+     "found_at": "2026-11-08T09:46:49+00:00"
     }
    ],
    "matchScore": 57,
@@ -1416,7 +1374,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-11-07T16:42:58+00:00"
+     "found_at": "2026-11-08T09:46:49+00:00"
     }
    ],
    "matchScore": 57,
@@ -1459,7 +1417,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-11-07T16:43:02+00:00"
+     "found_at": "2026-11-08T09:46:54+00:00"
     }
    ],
    "matchScore": 57,
@@ -1502,7 +1460,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-11-07T16:43:02+00:00"
+     "found_at": "2026-11-08T09:46:54+00:00"
     }
    ],
    "matchScore": 57,
@@ -1545,7 +1503,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-11-07T16:42:53+00:00"
+     "found_at": "2026-11-08T09:46:45+00:00"
     }
    ],
    "matchScore": 57,
@@ -1588,7 +1546,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-07T16:43:02+00:00"
+     "found_at": "2026-11-08T09:46:53+00:00"
     }
    ],
    "matchScore": 57,
@@ -1631,7 +1589,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/project-coordinator-actionaid-bangladesh/",
-     "found_at": "2026-11-07T16:42:52+00:00"
+     "found_at": "2026-11-08T09:46:42+00:00"
     }
    ],
    "matchScore": 53,
@@ -1673,7 +1631,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/squarespace-staff-software-engineer-revenue-systems",
-     "found_at": "2026-11-07T16:42:58+00:00"
+     "found_at": "2026-11-08T09:46:49+00:00"
     }
    ],
    "matchScore": 53,
@@ -1716,7 +1674,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-07T16:43:02+00:00"
+     "found_at": "2026-11-08T09:46:53+00:00"
     }
    ],
    "matchScore": 53,
@@ -1759,7 +1717,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/information-management-officer-norwegian-refugee-council/",
-     "found_at": "2026-11-07T16:42:52+00:00"
+     "found_at": "2026-11-08T09:46:45+00:00"
     }
    ],
    "matchScore": 48,
