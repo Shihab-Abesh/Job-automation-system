@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-10T18:25:19+00:00",
+ "generatedAt": "2026-11-11T10:10:58+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 20,
+    "found": 16,
     "errors": [],
-    "raw": 293
+    "raw": 259
    },
    "jsonld": {
     "found": 3,
@@ -43,7 +43,7 @@
    "rss": {
     "found": 27,
     "errors": [],
-    "raw": 386
+    "raw": 378
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 41,
+   "total": 37,
    "new": 0,
    "expired": 3,
    "duplicatesFolded": 6,
-   "priorityA": 13,
-   "priorityB": 10,
-   "priorityC": 18
+   "priorityA": 11,
+   "priorityB": 9,
+   "priorityC": 17
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,94 +74,9 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-10T18:25:19+00:00"
+  "ranAt": "2026-11-11T10:10:58+00:00"
  },
  "jobs": [
-  {
-   "title": "Junior Software Engineer / Software Engineer",
-   "company": "IDLC Finance",
-   "description": "Position: Junior Software Engineer / Software Engineer, Technology Transformation\nCompany: IDLC Finance PLC\nJob Location: Head Office, Dhaka\nEmployment Type: Full-time\nSalary: Negotiable\nExperience: 0 to 2 years; fresh graduates are encouraged to apply\nEducation: Bachelor’s in CSE, EEE, software engineering or a related field, with strong academic results\nDeadline: 10 November 2026\nAbout the Role\nIDLC Finance is hiring a Junior Software Engineer / Software Engineer on a lead track in its Technology Transformation team.\nKey Responsibilities\nJoin design, partner and estimate reviews and prepare the analysis behind them\nWrite and run SQL to analyse data and check data quality\nHelp build the data warehouse and BI layer\nDocument requirements and draw data flows; prototype small automations (Python, Power Automate)\nSupport testing and UAT; track project actions and risks\nRequirements\nBachelor’s in CSE, EEE, software engineering or related, strong results\n0 to 2 years; fresh graduates encouraged\nDatabases, SQL, data structures and basic system design\nCode in at least one language (Python, Java, JavaScript, C#)\nClear English and Bangla\nAbout IDLC Finance\nIDLC Finance PLC is Bangladesh’s largest non-bank financial institution.\nHow to Apply\nInterested candidates can apply through the IDLC careers using the Apply Now button. The application deadline is 10 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "Software Development",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/junior-software-engineer-software-engineer-idlc-finance/",
-   "status": "Awaiting Review",
-   "id": "ce23deb5-9a35-47a5-8ecf-453225945afd",
-   "createdAt": "2026-11-06T10:15:40+00:00",
-   "requiredSkills": "junior, engineer, technology, transformation, idlc, finance, plc, location, head, dhaka, employment, type",
-   "postedAt": "2026-11-06",
-   "deadline": "2026-11-10",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Full Time",
-   "experienceText": "Fresher",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "73377ccec4cb0a1c",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/junior-software-engineer-software-engineer-idlc-finance/",
-     "found_at": "2026-11-10T18:24:26+00:00"
-    }
-   ],
-   "matchScore": 83,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Trainee Community Development Officer (TCDO), Microfinance Dabi",
-   "company": "BRAC",
-   "description": "Position: Trainee Community Development Officer (TCDO), Microfinance Dabi\nOrganization: BRAC Microfinance\nJob Location: BRAC field office, anywhere in Bangladesh\nJob Type: Regular\nSalary: Negotiable\nExperience: Not required\nEducation: Post Graduate\nDeadline: 10 November 2026\nAbout the Role\nBRAC Microfinance is hiring Trainee Community Development Officers to organise and serve Dabi clients in village organisations and grow their branch’s portfolio.\nKey Responsibilities\nCollect daily loan and savings instalments from 400-500 borrowers and about 800 savers\nSurvey households, select members and form village organisations\nAssess repayment capacity and recommend loans\nKeep passbook records and arrange their verification every three months\nPromote products and manage overdue collections\nRequirements\nPost graduate\nNo experience required\nClient relationship, communication and customer-service skills\nCash handling, record keeping and reporting skills\nWilling to work at a BRAC field office anywhere in Bangladesh\nApplication\nApply on BRAC’s careers site\nApplication deadline: 10 November 2026\nAbout BRAC\nBRAC is an international development organisation founded in Bangladesh that partners with over 100 million people living with inequality and poverty globally.\nHow to Apply\nInterested candidates can apply through the BRAC’s own careers site using the Apply Now button. The application deadline is 10 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "MIS",
-   "location": "Anywhere in Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/trainee-community-development-officer-tcdo-microfinance-dabi-brac/",
-   "status": "Awaiting Review",
-   "id": "5bbd93ae-45d6-45d2-b3eb-8405a9c61aec",
-   "createdAt": "2026-11-03T10:23:03+00:00",
-   "requiredSkills": "trainee, community, development, officer, tcdo, microfinance, dabi, organization, brac, location, field, anywhere",
-   "postedAt": "2026-11-03",
-   "deadline": "2026-11-10",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "Fresher",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "8dd411299ed26603",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/trainee-community-development-officer-tcdo-microfinance-dabi-brac/",
-     "found_at": "2026-11-10T18:24:29+00:00"
-    }
-   ],
-   "matchScore": 79,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
   {
    "title": "Management Trainee Officer (MTO) – Supply Chain",
    "company": "PRAN-RFL Group",
@@ -188,7 +103,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-11-10T18:24:33+00:00"
+     "found_at": "2026-11-11T10:10:12+00:00"
     }
    ],
    "matchScore": 79,
@@ -230,7 +145,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-accounts-coal-abul-khair-group/",
-     "found_at": "2026-11-10T18:24:26+00:00"
+     "found_at": "2026-11-11T10:10:07+00:00"
     }
    ],
    "matchScore": 75,
@@ -272,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-10T18:24:26+00:00"
+     "found_at": "2026-11-11T10:10:07+00:00"
     }
    ],
    "matchScore": 75,
@@ -314,7 +229,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-10T18:24:46+00:00"
+     "found_at": "2026-11-11T10:10:25+00:00"
     }
    ],
    "matchScore": 75,
@@ -356,7 +271,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-10T18:24:26+00:00"
+     "found_at": "2026-11-11T10:10:07+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +313,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-10T18:24:39+00:00"
+     "found_at": "2026-11-11T10:10:17+00:00"
     }
    ],
    "matchScore": 75,
@@ -440,7 +355,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/next-business-leader-nbl-management-trainee-grameenphone-ltd/",
-     "found_at": "2026-11-10T18:24:26+00:00"
+     "found_at": "2026-11-11T10:10:07+00:00"
     }
    ],
    "matchScore": 75,
@@ -483,7 +398,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-11-10T18:24:33+00:00"
+     "found_at": "2026-11-11T10:10:12+00:00"
     }
    ],
    "matchScore": 75,
@@ -525,7 +440,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-11-10T18:24:29+00:00"
+     "found_at": "2026-11-11T10:10:09+00:00"
     }
    ],
    "matchScore": 75,
@@ -565,7 +480,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-category-management-pran-rfl/",
-     "found_at": "2026-11-10T18:24:26+00:00"
+     "found_at": "2026-11-11T10:10:07+00:00"
     }
    ],
    "matchScore": 75,
@@ -607,7 +522,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-10T18:24:29+00:00"
+     "found_at": "2026-11-11T10:10:08+00:00"
     }
    ],
    "matchScore": 75,
@@ -618,49 +533,6 @@
     "preference": 100
    },
    "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Information & Communication Technology (ICT): Officer-SEO",
-   "company": "NCC Bank PLC",
-   "description": "Position: Information & Communication Technology (ICT): Officer-SEO\nCompany: NCC Bank PLC\nJob Location: Dhaka\nEmployment Type: Full-time\nExperience: Minimum 3 years of software development, programming, database or API integration experience\nEducation: Masters / four-year Bachelor’s in CSE, Software Engineering, IT, Computer Science or a relevant subject from a UGC-approved university, no 3rd class; minimum 16 years of schooling\nSalary: Negotiable (attractive package based on experience and competency)\nDeadline: 10 November 2026\nAbout the Role\nNCC Bank PLC is hiring ICT Officers to SEOs to develop and maintain its banking software.\nKey Responsibilities\nDevelop and enhance applications in Java, JavaScript/TypeScript, Python and C#\nBuild web apps and backend services with Spring Boot, .NET, Node.js or React\nDesign SQL / Oracle database solutions: stored procedures, triggers, query optimisation\nDevelop and integrate RESTful APIs between banking systems\nUnit and integration testing, code review and debugging; Git version control\nRequirements\nMasters / four-year Bachelor’s in CSE, Software Engineering, IT, Computer Science or a relevant subject from a UGC-approved university, no 3rd class; minimum 16 years of schooling\nMinimum 3 years in software development or related ICT functions\nBanking software experience is an advantage; MTO / PO background preferred\nAbout NCC Bank PLC\nNCC Bank PLC is a private commercial bank in Bangladesh with 132 branches and 10 sub-branches.\nHow to Apply\nInterested candidates can apply through the NCC Bank’s circular on bdjobs.com (apply online) using the Apply Now button. The application deadline is 10 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "Software Development",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/information-communication-technology-ict-officer-seo-ncc-bank-plc/",
-   "status": "Awaiting Review",
-   "id": "fba4b606-06e9-4683-a72e-52877a1a1e10",
-   "createdAt": "2026-11-03T18:11:42+00:00",
-   "requiredSkills": "technology, ict, officer, seo, ncc, bank, plc, location, dhaka, employment, type, full",
-   "postedAt": "2026-11-03",
-   "deadline": "2026-11-10",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Full Time",
-   "experienceText": "3 Years",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "7c7d8dae0e8e0391",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/information-communication-technology-ict-officer-seo-ncc-bank-plc/",
-     "found_at": "2026-11-10T18:24:29+00:00"
-    }
-   ],
-   "matchScore": 74,
-   "scoreParts": {
-    "title": 100,
-    "level": 30,
-    "skills": 67,
-    "preference": 100
-   },
-   "priority": "B",
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Exact area not stated in the posting"
@@ -693,7 +565,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-11-10T18:24:55+00:00"
+     "found_at": "2026-11-11T10:10:33+00:00"
     }
    ],
    "matchScore": 71,
@@ -735,7 +607,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-10T18:24:42+00:00"
+     "found_at": "2026-11-11T10:10:21+00:00"
     }
    ],
    "matchScore": 71,
@@ -777,7 +649,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-10T18:24:39+00:00"
+     "found_at": "2026-11-11T10:10:17+00:00"
     }
    ],
    "matchScore": 71,
@@ -805,7 +677,7 @@
    "id": "b92dcb60-31c4-49fb-bbf0-250ca7c6aa2c",
    "createdAt": "2026-11-06T10:15:47+00:00",
    "requiredSkills": "driven, automation, engineer, riseup, labs., required, python, snowflake, dbt, airflow.",
-   "postedAt": "2026-11-10",
+   "postedAt": "2026-11-11",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -819,7 +691,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/50",
-     "found_at": "2026-11-10T18:24:34+00:00"
+     "found_at": "2026-11-11T10:10:12+00:00"
     }
    ],
    "matchScore": 71,
@@ -862,7 +734,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-11-10T18:24:34+00:00"
+     "found_at": "2026-11-11T10:10:13+00:00"
     }
    ],
    "matchScore": 66,
@@ -904,7 +776,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-officer-british-council/",
-     "found_at": "2026-11-10T18:24:26+00:00"
+     "found_at": "2026-11-11T10:10:07+00:00"
     }
    ],
    "matchScore": 66,
@@ -946,7 +818,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-10T18:24:39+00:00"
+     "found_at": "2026-11-11T10:10:17+00:00"
     }
    ],
    "matchScore": 66,
@@ -988,7 +860,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-10T18:24:39+00:00"
+     "found_at": "2026-11-11T10:10:17+00:00"
     }
    ],
    "matchScore": 66,
@@ -1030,7 +902,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-10T18:24:39+00:00"
+     "found_at": "2026-11-11T10:10:17+00:00"
     }
    ],
    "matchScore": 66,
@@ -1072,7 +944,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-11-10T18:24:34+00:00"
+     "found_at": "2026-11-11T10:10:13+00:00"
     }
    ],
    "matchScore": 65,
@@ -1101,7 +973,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-11-10",
+   "postedAt": "2026-11-11",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1115,7 +987,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/28",
-     "found_at": "2026-11-10T18:24:34+00:00"
+     "found_at": "2026-11-11T10:10:12+00:00"
     }
    ],
    "matchScore": 65,
@@ -1159,7 +1031,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-10T18:24:39+00:00"
+     "found_at": "2026-11-11T10:10:17+00:00"
     }
    ],
    "matchScore": 61,
@@ -1202,7 +1074,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-11-10T18:24:39+00:00"
+     "found_at": "2026-11-11T10:10:17+00:00"
     }
    ],
    "matchScore": 61,
@@ -1245,7 +1117,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-10T18:24:39+00:00"
+     "found_at": "2026-11-11T10:10:17+00:00"
     }
    ],
    "matchScore": 61,
@@ -1288,7 +1160,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
-     "found_at": "2026-11-10T18:24:29+00:00"
+     "found_at": "2026-11-11T10:10:09+00:00"
     }
    ],
    "matchScore": 57,
@@ -1331,7 +1203,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-10T18:24:29+00:00"
+     "found_at": "2026-11-11T10:10:09+00:00"
     }
    ],
    "matchScore": 57,
@@ -1360,7 +1232,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-11-10",
+   "postedAt": "2026-11-11",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1374,7 +1246,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/33",
-     "found_at": "2026-11-10T18:24:34+00:00"
+     "found_at": "2026-11-11T10:10:12+00:00"
     }
    ],
    "matchScore": 57,
@@ -1417,7 +1289,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-11-10T18:24:34+00:00"
+     "found_at": "2026-11-11T10:10:13+00:00"
     }
    ],
    "matchScore": 57,
@@ -1460,7 +1332,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-11-10T18:24:34+00:00"
+     "found_at": "2026-11-11T10:10:13+00:00"
     }
    ],
    "matchScore": 57,
@@ -1503,7 +1375,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-11-10T18:24:34+00:00"
+     "found_at": "2026-11-11T10:10:13+00:00"
     }
    ],
    "matchScore": 57,
@@ -1546,7 +1418,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-11-10T18:24:29+00:00"
+     "found_at": "2026-11-11T10:10:09+00:00"
     }
    ],
    "matchScore": 57,
@@ -1589,7 +1461,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-10T18:24:39+00:00"
+     "found_at": "2026-11-11T10:10:17+00:00"
     }
    ],
    "matchScore": 57,
@@ -1632,7 +1504,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/project-coordinator-actionaid-bangladesh/",
-     "found_at": "2026-11-10T18:24:26+00:00"
+     "found_at": "2026-11-11T10:10:07+00:00"
     }
    ],
    "matchScore": 53,
@@ -1674,7 +1546,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/squarespace-staff-software-engineer-revenue-systems",
-     "found_at": "2026-11-10T18:24:34+00:00"
+     "found_at": "2026-11-11T10:10:13+00:00"
     }
    ],
    "matchScore": 53,
@@ -1717,7 +1589,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-10T18:24:39+00:00"
+     "found_at": "2026-11-11T10:10:17+00:00"
     }
    ],
    "matchScore": 53,
@@ -1733,48 +1605,6 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Information Management Officer",
-   "company": "Norwegian Refugee Council",
-   "description": "Position: Information Management Officer\nCompany: Norwegian Refugee Council (NRC)\nJob Location: Cox’s Bazar\nEmployment Type: 12-month contract, full time\nSalary: Grade 05, BDT 78,520 gross a month\nExperience: Minimum 3 years in information management, database administration or data management\nEducation: Bachelor’s in Statistics, Information Management, Computer Science, Urban and Regional Planning or related\nEligibility: Bangladeshi nationals only\nDeadline: 10 November 2026\nAbout the Role\nThe Norwegian Refugee Council is hiring an Information Management Officer in Cox’s Bazar to run programme data systems, data quality and MEAL reporting.\nKey Responsibilities\nDevelop and update data collection tools with the Core Competency teams\nLead data cleaning, validation and data quality assurance\nAnalyse data and prepare reports, dashboards and 5Ws\nTrain staff and partners on data management and KoboToolbox / ODK\nProtect sensitive data\nRequirements\nBachelor’s in Statistics, Information Management, Computer Science, Urban and Regional Planning or related\nMinimum 3 years in information management, database administration or data management\nExcel, KoboToolbox or ODK, GIS and Power BI\nFluent Bangla and English; Bangladeshi nationals only\nAbout Norwegian Refugee Council\nThe Norwegian Refugee Council (NRC) is an independent humanitarian organisation helping people forced to flee. In Bangladesh it supports Rohingya refugees and host communities in Cox’s Bazar.\nHow to Apply\nInterested candidates can apply through the NRC Careers using the Apply Now button. The application deadline is 10 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "Data & Reporting",
-   "location": "Cox’s Bazar",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/information-management-officer-norwegian-refugee-council/",
-   "status": "Awaiting Review",
-   "id": "c76f9519-4828-45ad-978e-b66eb034db4b",
-   "createdAt": "2026-11-03T10:23:03+00:00",
-   "requiredSkills": "officer, norwegian, refugee, council, nrc, location, cox, bazar, employment, type, month, contract",
-   "postedAt": "2026-11-03",
-   "deadline": "2026-11-10",
-   "salaryMin": 78520,
-   "salaryMax": null,
-   "salaryText": "Tk 78,520",
-   "employmentType": "Contractual",
-   "experienceText": "3 Years",
-   "area": "",
-   "distanceKm": null,
-   "fingerprint": "18ccce5e19fa4302",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/information-management-officer-norwegian-refugee-council/",
-     "found_at": "2026-11-10T18:24:29+00:00"
-    }
-   ],
-   "matchScore": 48,
-   "scoreParts": {
-    "title": 75,
-    "level": 30,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Officer / Associate Manager, Litigation Management",
@@ -1802,7 +1632,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-associate-manager-litigation-management-brac-bank/",
-     "found_at": "2026-11-10T18:24:26+00:00"
+     "found_at": "2026-11-11T10:10:07+00:00"
     }
    ],
    "matchScore": 39,
