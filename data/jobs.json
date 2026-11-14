@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-13T18:20:17+00:00",
+ "generatedAt": "2026-11-14T09:44:36+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 17,
+    "found": 18,
     "errors": [],
-    "raw": 274
+    "raw": 280
    },
    "jsonld": {
     "found": 3,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 28,
+    "found": 26,
     "errors": [],
-    "raw": 422
+    "raw": 421
    },
    "careers": {
     "found": 0,
@@ -58,12 +58,12 @@
   },
   "counts": {
    "total": 39,
-   "new": 0,
+   "new": 1,
    "expired": 3,
-   "duplicatesFolded": 6,
+   "duplicatesFolded": 5,
    "priorityA": 12,
-   "priorityB": 9,
-   "priorityC": 18
+   "priorityB": 10,
+   "priorityC": 17
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-13T18:20:17+00:00"
+  "ranAt": "2026-11-14T09:44:36+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-13T18:19:35+00:00"
+     "found_at": "2026-11-14T09:43:57+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,7 +145,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-11-13T18:19:30+00:00"
+     "found_at": "2026-11-14T09:43:52+00:00"
     }
    ],
    "matchScore": 79,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-accounts-coal-abul-khair-group/",
-     "found_at": "2026-11-13T18:19:26+00:00"
+     "found_at": "2026-11-14T09:43:49+00:00"
     }
    ],
    "matchScore": 75,
@@ -229,7 +229,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-13T18:19:23+00:00"
+     "found_at": "2026-11-14T09:43:46+00:00"
     }
    ],
    "matchScore": 75,
@@ -271,7 +271,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-13T18:19:43+00:00"
+     "found_at": "2026-11-14T09:44:05+00:00"
     }
    ],
    "matchScore": 75,
@@ -313,7 +313,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-13T18:19:26+00:00"
+     "found_at": "2026-11-14T09:43:49+00:00"
     }
    ],
    "matchScore": 75,
@@ -355,7 +355,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-13T18:19:35+00:00"
+     "found_at": "2026-11-14T09:43:57+00:00"
     }
    ],
    "matchScore": 75,
@@ -397,7 +397,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/next-business-leader-nbl-management-trainee-grameenphone-ltd/",
-     "found_at": "2026-11-13T18:19:23+00:00"
+     "found_at": "2026-11-14T09:43:46+00:00"
     }
    ],
    "matchScore": 75,
@@ -440,7 +440,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-11-13T18:19:30+00:00"
+     "found_at": "2026-11-14T09:43:52+00:00"
     }
    ],
    "matchScore": 75,
@@ -482,7 +482,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-11-13T18:19:26+00:00"
+     "found_at": "2026-11-14T09:43:49+00:00"
     }
    ],
    "matchScore": 75,
@@ -522,7 +522,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-category-management-pran-rfl/",
-     "found_at": "2026-11-13T18:19:23+00:00"
+     "found_at": "2026-11-14T09:43:46+00:00"
     }
    ],
    "matchScore": 75,
@@ -564,7 +564,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-13T18:19:26+00:00"
+     "found_at": "2026-11-14T09:43:49+00:00"
     }
    ],
    "matchScore": 75,
@@ -607,7 +607,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-11-13T18:19:51+00:00"
+     "found_at": "2026-11-14T09:44:13+00:00"
     }
    ],
    "matchScore": 71,
@@ -649,7 +649,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-13T18:19:38+00:00"
+     "found_at": "2026-11-14T09:44:01+00:00"
     }
    ],
    "matchScore": 71,
@@ -691,7 +691,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-13T18:19:35+00:00"
+     "found_at": "2026-11-14T09:43:57+00:00"
     }
    ],
    "matchScore": 71,
@@ -719,7 +719,7 @@
    "id": "b92dcb60-31c4-49fb-bbf0-250ca7c6aa2c",
    "createdAt": "2026-11-06T10:15:47+00:00",
    "requiredSkills": "driven, automation, engineer, riseup, labs., required, python, snowflake, dbt, airflow.",
-   "postedAt": "2026-11-13",
+   "postedAt": "2026-11-14",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -733,7 +733,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/50",
-     "found_at": "2026-11-13T18:19:30+00:00"
+     "found_at": "2026-11-14T09:43:53+00:00"
     }
    ],
    "matchScore": 71,
@@ -776,7 +776,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-11-13T18:19:30+00:00"
+     "found_at": "2026-11-14T09:43:53+00:00"
     }
    ],
    "matchScore": 66,
@@ -818,7 +818,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-officer-british-council/",
-     "found_at": "2026-11-13T18:19:23+00:00"
+     "found_at": "2026-11-14T09:43:46+00:00"
     }
    ],
    "matchScore": 66,
@@ -860,7 +860,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-13T18:19:35+00:00"
+     "found_at": "2026-11-14T09:43:57+00:00"
     }
    ],
    "matchScore": 66,
@@ -902,7 +902,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-13T18:19:35+00:00"
+     "found_at": "2026-11-14T09:43:57+00:00"
     }
    ],
    "matchScore": 66,
@@ -944,7 +944,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-13T18:19:35+00:00"
+     "found_at": "2026-11-14T09:43:57+00:00"
     }
    ],
    "matchScore": 66,
@@ -959,6 +959,48 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Executive, Sales & Marketing (Aluminium Profile)",
+   "company": "Meghna Group",
+   "description": "Position: Executive, Sales & Marketing, Aluminium Profile\nCompany: Meghna Group of Industries\nJob Location: Anywhere in Bangladesh\nEducation: Bachelor’s\nExperience: At least 2 years (group of companies, cement, glass and ceramics, steel, metal and aluminium)\nAge: At least 25 years\nSalary: Negotiable\nHow to Apply: Online through the circular on bdjobs.com\nDeadline: 19 November 2026\nAbout the Role\nMeghna Group is looking for a Sales & Marketing Executive for its aluminium profile business.\nCore Responsibilities\nVisit dealer and retailer outlets on a regular route\nKeep existing customers and find new markets\nCollect market data on competitors’ sales, campaigns and market share\nCollect orders and place them through the software\nAchieve sales targets and coordinate delivery with distribution and logistics\nPrepare sales reports, forecasts and market analysis\nRequirements\nBachelor’s degree\nAt least 2 years of experience, age at least 25\nGood interpersonal and presentation skills\nMS Word, Excel, PowerPoint and email\nAbout Meghna Group\nMeghna Group of Industries is one of the leading business conglomerates in Bangladesh.\nHow to Apply\nInterested candidates can apply through the Meghna Group of Industries’s circular on bdjobs.com (apply online there) using the Apply Now button. The application deadline is 19 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , Meghna Group of Industries’s circular on bdjobs.com (apply online there)\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Anywhere in Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/executive-sales-marketing-aluminium-profile-meghna-group/",
+   "status": "Awaiting Review",
+   "id": "53393b26-d7f3-4fac-9665-d01446fda07d",
+   "createdAt": "2026-11-14T09:43:45+00:00",
+   "requiredSkills": "executive, sales, marketing, aluminium, profile, meghna, group, industries, location, anywhere, bangladesh, education",
+   "postedAt": "2026-11-14",
+   "deadline": "2026-11-19",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Full Time",
+   "experienceText": "2 Years",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "3fa9c0373129fc0d",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/executive-sales-marketing-aluminium-profile-meghna-group/",
+     "found_at": "2026-11-14T09:43:45+00:00"
+    }
+   ],
+   "matchScore": 64,
+   "scoreParts": {
+    "title": 100,
+    "level": 55,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Staff Software Engineer - Connectivity",
@@ -986,7 +1028,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-11-13T18:19:30+00:00"
+     "found_at": "2026-11-14T09:43:53+00:00"
     }
    ],
    "matchScore": 65,
@@ -1015,7 +1057,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-11-13",
+   "postedAt": "2026-11-14",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1029,7 +1071,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/28",
-     "found_at": "2026-11-13T18:19:30+00:00"
+     "found_at": "2026-11-14T09:43:53+00:00"
     }
    ],
    "matchScore": 65,
@@ -1073,7 +1115,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-13T18:19:35+00:00"
+     "found_at": "2026-11-14T09:43:57+00:00"
     }
    ],
    "matchScore": 61,
@@ -1116,7 +1158,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-11-13T18:19:35+00:00"
+     "found_at": "2026-11-14T09:43:57+00:00"
     }
    ],
    "matchScore": 61,
@@ -1159,7 +1201,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-13T18:19:35+00:00"
+     "found_at": "2026-11-14T09:43:57+00:00"
     }
    ],
    "matchScore": 61,
@@ -1202,7 +1244,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
-     "found_at": "2026-11-13T18:19:26+00:00"
+     "found_at": "2026-11-14T09:43:49+00:00"
     }
    ],
    "matchScore": 57,
@@ -1245,7 +1287,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-13T18:19:26+00:00"
+     "found_at": "2026-11-14T09:43:49+00:00"
     }
    ],
    "matchScore": 57,
@@ -1274,7 +1316,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-11-13",
+   "postedAt": "2026-11-14",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1288,7 +1330,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/33",
-     "found_at": "2026-11-13T18:19:30+00:00"
+     "found_at": "2026-11-14T09:43:53+00:00"
     }
    ],
    "matchScore": 57,
@@ -1304,49 +1346,6 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "jsonld"
-  },
-  {
-   "title": "Senior Software Engineer, Infrastructure Platform",
-   "company": "Lattice",
-   "description": "Headquarters: Remote - Canada\nThis is Engineering at Lattice\nLattice’s Engineering team is continuously working to better both our product and our craft. We use a modern, cutting-edge tech stack and love experimenting with new technologies. We strive for maintainable, robust, and performant code. We’re highly collaborative and continuously iterative, and work closely with designers and product managers. We prioritize not only great technical architecture but also an amazing product experience.\nThe Infrastructure Platform team focuses on the cloud services, infrastructure, and internal platforms that power Lattice’s products. We build reliable, scalable pathways that make it easier for product engineers to develop, deploy, operate, and troubleshoot their services.\nWhat You Will Do\nAs a Senior Software Engineer on the Infrastructure Platform team, you will work across a broad technical footprint, including AWS infrastructure, Kubernetes, distributed systems, observability, deployment tooling, and internal developer platforms.\nYou will use your prior experience to understand how systems and services interact, identify gaps or sources of friction, and build platform capabilities that improve reliability and developer productivity.\nDesign, build, and operate AWS-based cloud infrastructure and platform services.\nCreate reusable internal platform capabilities that improve how engineers build, deploy, and operate services.\nWork across AWS, Kubernetes, IaC, CI/CD, observability, and distributed systems.\nPartner with product engineering to identify recurring needs and turn them into scalable platform solutions.\nEvaluate system interactions, identify risks or inefficiencies, and drive improvements.\nImprove reliability, performance, availability, and maintainability of production systems.\nDefine and promote platform practices (SLOs, monitoring, incident response, operational readiness).\nInstrument, debug, and improve services and infrastructure (including TypeScript services).\nLead technical initiatives from problem definition through delivery and adoption.\nCommunicate tradeoffs, risks, and progress to engineering stakeholders.\nMentor engineers on building reliable, scalable systems.\nParticipate in on-call and incident response.\nWhat You Will Bring to the Table\n5+ years of software or infrastructure engineering experience.\nDeep AWS experience in production environments.\nExperience with cloud infrastructure, distributed systems, and system design.\nExperience building internal platforms, developer tooling, or shared services.\nHands-on Kubernetes and infrastructure-as-code experience (Terraform a plus).\nStrong programming skills and ability to debug production systems (TypeScript a plus).\nExperience with CI/CD and automated deployment workflows.\nExperience with observability (metrics, logs, traces, alerting, SLOs).\nAbility to reason across complex systems and understand cross-component interactions.\nExperience leading technical initiatives with multiple stakeholders.\nStrong communication skills and collaborative mindset.\nLocation Requirement:\nThis role is open to candidates located in British Columbia or Ontario, Canada. At this time, we are only able to hire employees residing in these provinces.\n____\nThe estimated annual cash salary for this role is CAD $123,750 - CAD $165,000. This position is also eligible for incentive stock options, subject to the terms of Lattice’s applicable plans.\nBenefits: The Company offers the following benefits for this position, subject to applicable eligibility requirements: Medical insurance; Dental insurance; Life, AD&D, and Disability Insurance; Natural Disaster Support Program; Wellness Apps; Paid Parental Leave, Paid Time off inclusive of holidays and sick time; One time WFH Office Set-Up Stipend; Retirement Plan; Financial Planning; and Learning & Development Budget.\nNote on Pay Transparency:\nLattice provides an estimate of the compensation for roles that may be hired as required by regulations. Compensation may vary based on (a) location, as Lattice factors in specific location when benchmarking compensation for most roles; (b) individual candidate skills and qualifications; and (c) individual candidate experience. Additionally, Lattice leverages current market data to determine compensation, so posted compensation figures are subject to change as new market data becomes available. The salary, other compensation, and benefits information is accurate as of the date of this posting. Lattice reserves the right to modify this information at any time, subject to applicable law.\nLattice welcomes and encourages applications from people with disabilities. Accommodations are available on request for candidates taking part in all aspects of the recruitment and selection process.\n#LI-Remote\nAbout Lattice\nLattice is on a mission to build cultures where employees and their companies thrive. In an age where employees have more choices than ever before, businesses that put employees first are winning – and Lattice is building the tools to empower those people-centric companies.\nLattice is a people success platform that offers performance reviews, employee engagement surveys, real-time feedback, weekly check-ins, goal setting, and career planning in a way that allows companies to focus on employee development, growth, and engagement – yielding stronger employee retention, performance, and impact to the bottom line . Since launching in 2016, we have grown to over 5,000+ customers globally, including brands like Loom, Robinhood, and Gusto.\nLattice is committed to equal treatment and opportunity in all aspects of recruitment, selection, and employment without regard to gender, race, religion, national origin, ethnicity, disability, gender identity/expression, sexual orientation, veteran or military status, or any other category protected under the law. Lattice is an equal opportunity employer; committed to a community of inclusion, and an environment free from discrimination, harassment, and retaliation.\nBy clicking the \"Submit Application\" button below, you consent to Lattice processing your personal information for the purpose of assessing your candidacy for this position in accordance with Lattice's Job Applicant Privacy Policy .\nTo apply: https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-   "status": "Awaiting Review",
-   "id": "ad28cbef-8ca2-4022-a66f-193ed6b7736d",
-   "createdAt": "2026-10-15T07:55:22+00:00",
-   "requiredSkills": "senior, engineer, infrastructure, platform, headquarters, remote, canada, engineering, lattice, team, continuously, working",
-   "postedAt": "2026-10-15",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "d2e109c6e33187a6",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-     "found_at": "2026-11-13T18:19:30+00:00"
-    }
-   ],
-   "matchScore": 57,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Senior)"
-   ],
-   "discoveredBy": "rss"
   },
   {
    "title": "Senior Software Engineer, Processing",
@@ -1374,7 +1373,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-11-13T18:19:30+00:00"
+     "found_at": "2026-11-14T09:43:53+00:00"
     }
    ],
    "matchScore": 57,
@@ -1417,7 +1416,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-11-13T18:19:30+00:00"
+     "found_at": "2026-11-14T09:43:53+00:00"
     }
    ],
    "matchScore": 57,
@@ -1460,7 +1459,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-11-13T18:19:26+00:00"
+     "found_at": "2026-11-14T09:43:52+00:00"
     }
    ],
    "matchScore": 57,
@@ -1503,7 +1502,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-13T18:19:35+00:00"
+     "found_at": "2026-11-14T09:43:57+00:00"
     }
    ],
    "matchScore": 57,
@@ -1546,7 +1545,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/project-coordinator-commercial-bank-of-ceylon/",
-     "found_at": "2026-11-13T18:19:23+00:00"
+     "found_at": "2026-11-14T09:43:45+00:00"
     }
    ],
    "matchScore": 53,
@@ -1589,7 +1588,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/squarespace-staff-software-engineer-revenue-systems",
-     "found_at": "2026-11-13T18:19:30+00:00"
+     "found_at": "2026-11-14T09:43:53+00:00"
     }
    ],
    "matchScore": 53,
@@ -1632,7 +1631,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-13T18:19:35+00:00"
+     "found_at": "2026-11-14T09:43:57+00:00"
     }
    ],
    "matchScore": 53,
@@ -1675,7 +1674,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-associate-manager-litigation-management-brac-bank/",
-     "found_at": "2026-11-13T18:19:23+00:00"
+     "found_at": "2026-11-14T09:43:46+00:00"
     }
    ],
    "matchScore": 39,
@@ -1718,7 +1717,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-13T18:19:23+00:00"
+     "found_at": "2026-11-14T09:43:45+00:00"
     }
    ],
    "matchScore": 39,
