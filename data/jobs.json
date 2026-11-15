@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-14T16:49:37+00:00",
+ "generatedAt": "2026-11-15T10:17:20+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 18,
+    "found": 20,
     "errors": [],
-    "raw": 280
+    "raw": 276
    },
    "jsonld": {
     "found": 3,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 26,
+    "found": 24,
     "errors": [],
-    "raw": 420
+    "raw": 429
    },
    "careers": {
     "found": 0,
@@ -57,11 +57,11 @@
    }
   },
   "counts": {
-   "total": 39,
-   "new": 0,
+   "total": 40,
+   "new": 3,
    "expired": 3,
-   "duplicatesFolded": 5,
-   "priorityA": 12,
+   "duplicatesFolded": 4,
+   "priorityA": 13,
    "priorityB": 10,
    "priorityC": 17
   },
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-14T16:49:37+00:00"
+  "ranAt": "2026-11-15T10:17:20+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-14T16:49:01+00:00"
+     "found_at": "2026-11-15T10:16:40+00:00"
     }
    ],
    "matchScore": 87,
@@ -120,32 +120,32 @@
    "discoveredBy": "rss"
   },
   {
-   "title": "Management Trainee Officer (MTO) – Supply Chain",
-   "company": "PRAN-RFL Group",
-   "description": "Position: Management Trainee Officer (MTO) – Supply Chain\nCompany: PRAN-RFL Group\nJob Location: Head Office (the post also names factory locations)\nExperience: Freshers and up to 1 year of experience\nEducation: BBA/MBA/BSc/MSc in Supply Chain Management, International Business, Accounts, Management, EEE, IPE, ME or ChE\nSalary: Tk. 25,000 per month, revised after the 6 month probation\nDeadline: Not mentioned, apply early\nAbout the Role\nPRAN-RFL Group is hiring fresh graduates as Management Trainee Officers in Supply Chain, with hands-on exposure to procurement, logistics, production planning and inventory.\nKey Responsibilities\nSource, evaluate and negotiate with suppliers for the best quality and cost\nPrepare purchase orders, monitor deliveries and ensure timely procurement\nAnalyse procurement costs and find savings\nDevelop purchasing strategies and contingency plans for supply risks\nWork with sales, production and finance for smooth operations\nRequirements\nBBA/MBA/BSc/MSc in SCM, International Business, Accounts, Management, EEE, IPE, ME or ChE from a reputed university\nFreshers and candidates with up to 1 year of experience\nStrong communication and good English\nAbility to work under pressure; SCM training or courses preferred\nCompensation & Benefits\nSalary Tk. 25,000, revised after the 6 month probation\nMobile bill, tour allowance, performance bonus, two festival bonuses\nTransport, subsidised lunch, leave encashment, yearly salary review\nPromotion opportunity after 6 months\nAbout PRAN-RFL Group\nPRAN-RFL Group is one of Bangladesh’s leading conglomerates in food, plastics and consumer goods.\nHow to Apply\nInterested candidates can apply through the PRAN-RFL application form using the Apply Now button. The circular does not mention an application deadline, so apply early. Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
+   "title": "Management Trainee Officer, Key Accounts (Export)",
+   "company": "PRAN Group",
+   "description": "Position: Management Trainee Officer – Key Accounts (Export)\nCompany: PRAN Group (PRAN-RFL Group)\nJob Location: Natore\nAge: 22 to 30 years\nHow to Apply: Online through the circular on bdjobs.com\nDeadline: 21 November 2026\nAbout the Role\nPRAN Group is hiring a Management Trainee Officer to support its export key accounts and international buyers.\nCore Responsibilities\nHelp manage relationships with export key accounts\nCoordinate with international buyers on orders, specifications and delivery\nPrepare quotations, purchase orders, contracts and export documents\nTrack orders from confirmation to shipment with production, supply chain, QA and logistics\nPrepare sales forecasts and account performance reports\nRequirements\nAge 22 to 30; qualified female candidates highly encouraged\nExcellent communication and analytical skills\nMS Office (Excel, Word, PowerPoint) and report writing\nBenefits\nProvident fund, mobile bill, performance bonus, insurance, gratuity\nTwo festival bonuses, yearly salary review, subsidised lunch\nAbout PRAN Group\nPRAN Group, part of PRAN-RFL, is one of Bangladesh’s largest food and agro-processing groups and a major exporter.\nHow to Apply\nInterested candidates can apply through the PRAN Group (PRAN-RFL)’s circular on bdjobs.com (apply online there) using the Apply Now button. The application deadline is 21 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , PRAN Group (PRAN-RFL)’s circular on bdjobs.com (apply online there)\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
    "category": "Management & Business",
-   "location": "Head Office",
+   "location": "Anywhere in Bangladesh",
    "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
+   "url": "https://bdrecruit.net/job/management-trainee-officer-key-accounts-export-pran-group/",
    "status": "Awaiting Review",
-   "id": "66fb5015-1059-47b7-8ae0-f16676dcd774",
-   "createdAt": "2026-10-15T07:55:10+00:00",
-   "requiredSkills": "trainee, officer, mto, supply, chain, pran, rfl, group, location, head, post, also",
-   "postedAt": "2026-10-15",
-   "deadline": "2026-11-14",
-   "salaryMin": 25000,
+   "id": "7f6e9a64-de08-45a4-b3ad-33ceb12ed7ec",
+   "createdAt": "2026-11-15T10:16:30+00:00",
+   "requiredSkills": "trainee, officer, key, accounts, export, pran, group, rfl, location, natore, how, apply",
+   "postedAt": "2026-11-15",
+   "deadline": "2026-11-21",
+   "salaryMin": null,
    "salaryMax": null,
-   "salaryText": "Tk 25,000",
+   "salaryText": "",
    "employmentType": "Full Time",
    "experienceText": "Fresher",
-   "area": "",
-   "distanceKm": null,
-   "fingerprint": "60bbe412dc92950a",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "b347d1ecbfc29789",
    "sources": [
     {
      "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/management-trainee-officer-mto-supply-chain-pran-rfl-group/",
-     "found_at": "2026-11-14T16:48:57+00:00"
+     "url": "https://bdrecruit.net/job/management-trainee-officer-key-accounts-export-pran-group/",
+     "found_at": "2026-11-15T10:16:30+00:00"
     }
    ],
    "matchScore": 79,
@@ -157,7 +157,50 @@
    },
    "priority": "A",
    "gateNotes": [
-    "Exact area not stated in the posting"
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Management Trainee Officer, Export",
+   "company": "RFL Group",
+   "description": "Position: Management Trainee Officer – Export (10 vacancies)\nCompany: RFL Group (PRAN-RFL Group)\nJob Location: RFL Industrial Park, Gazipur, Narayanganj and Habiganj\nEducation: MBA in Marketing, International Business, Finance, Management, SCM, MIS or relevant; M.Sc. or B.Sc. in Engineering, Statistics or Social Science also encouraged\nAge: At least 22 years\nHow to Apply: Online through the circular on bdjobs.com\nDeadline: 14 December 2026\nAbout the Role\nPRAN-RFL Group is hiring 10 Management Trainee Officers for its export business, a gateway into international trade at one of Bangladesh’s largest groups.\nCore Responsibilities\nCoordinate end-to-end export orders for accurate, timely shipment\nResearch export opportunities and global trade trends\nCommunicate with international clients on orders, delivery and issues\nWork with production, procurement and warehousing on export planning\nRequirements\nMBA in Marketing, International Business, Finance, Management, SCM, MIS or relevant\nM.Sc. / B.Sc. in Engineering, Statistics or Social Science with strong communication also encouraged\nAge at least 22\nBenefits\nMarket standard salary, reviewed after 6 months’ probation\nAccommodation at factory locations; mobile bill, tour allowance, provident fund\nTwo festival bonuses, yearly salary review, leave encashment\nAbout RFL Group\nRFL Group, part of PRAN-RFL, is one of Bangladesh’s largest and most diversified manufacturing conglomerates.\nHow to Apply\nInterested candidates can apply through the RFL Group (PRAN-RFL)’s circular on bdjobs.com (apply online there) using the Apply Now button. The application deadline is 14 December 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , RFL Group (PRAN-RFL)’s circular on bdjobs.com (apply online there)\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Anywhere in Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
+   "status": "Awaiting Review",
+   "id": "d2a9a464-dd88-4160-bb6f-67d4f36f2639",
+   "createdAt": "2026-11-15T10:16:30+00:00",
+   "requiredSkills": "trainee, officer, export, vacancies, rfl, group, pran, location, industrial, park, gazipur, narayanganj",
+   "postedAt": "2026-11-15",
+   "deadline": "2026-12-14",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "Fresher",
+   "area": "Narayanganj",
+   "distanceKm": 19.0,
+   "fingerprint": "68b33b01a75583dc",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
+     "found_at": "2026-11-15T10:16:30+00:00"
+    }
+   ],
+   "matchScore": 79,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Narayanganj is about 19.0 km out, past your 10 km limit"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -187,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-officer-accounts-coal-abul-khair-group/",
-     "found_at": "2026-11-14T16:48:53+00:00"
+     "found_at": "2026-11-15T10:16:32+00:00"
     }
    ],
    "matchScore": 75,
@@ -229,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-14T16:48:50+00:00"
+     "found_at": "2026-11-15T10:16:32+00:00"
     }
    ],
    "matchScore": 75,
@@ -271,7 +314,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-14T16:49:09+00:00"
+     "found_at": "2026-11-15T10:16:48+00:00"
     }
    ],
    "matchScore": 75,
@@ -313,7 +356,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-14T16:48:53+00:00"
+     "found_at": "2026-11-15T10:16:32+00:00"
     }
    ],
    "matchScore": 75,
@@ -355,7 +398,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-14T16:49:02+00:00"
+     "found_at": "2026-11-15T10:16:40+00:00"
     }
    ],
    "matchScore": 75,
@@ -397,7 +440,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/next-business-leader-nbl-management-trainee-grameenphone-ltd/",
-     "found_at": "2026-11-14T16:48:50+00:00"
+     "found_at": "2026-11-15T10:16:30+00:00"
     }
    ],
    "matchScore": 75,
@@ -440,7 +483,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-11-14T16:48:57+00:00"
+     "found_at": "2026-11-15T10:16:35+00:00"
     }
    ],
    "matchScore": 75,
@@ -482,7 +525,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-11-14T16:48:53+00:00"
+     "found_at": "2026-11-15T10:16:35+00:00"
     }
    ],
    "matchScore": 75,
@@ -522,7 +565,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-category-management-pran-rfl/",
-     "found_at": "2026-11-14T16:48:50+00:00"
+     "found_at": "2026-11-15T10:16:32+00:00"
     }
    ],
    "matchScore": 75,
@@ -564,7 +607,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-14T16:48:53+00:00"
+     "found_at": "2026-11-15T10:16:32+00:00"
     }
    ],
    "matchScore": 75,
@@ -607,7 +650,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-11-14T16:49:18+00:00"
+     "found_at": "2026-11-15T10:16:57+00:00"
     }
    ],
    "matchScore": 71,
@@ -649,7 +692,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-14T16:49:05+00:00"
+     "found_at": "2026-11-15T10:16:44+00:00"
     }
    ],
    "matchScore": 71,
@@ -691,7 +734,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-14T16:49:01+00:00"
+     "found_at": "2026-11-15T10:16:40+00:00"
     }
    ],
    "matchScore": 71,
@@ -719,7 +762,7 @@
    "id": "b92dcb60-31c4-49fb-bbf0-250ca7c6aa2c",
    "createdAt": "2026-11-06T10:15:47+00:00",
    "requiredSkills": "driven, automation, engineer, riseup, labs., required, python, snowflake, dbt, airflow.",
-   "postedAt": "2026-11-14",
+   "postedAt": "2026-11-15",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -733,7 +776,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/50",
-     "found_at": "2026-11-14T16:48:57+00:00"
+     "found_at": "2026-11-15T10:16:36+00:00"
     }
    ],
    "matchScore": 71,
@@ -749,48 +792,6 @@
     "Exact area not stated in the posting"
    ],
    "discoveredBy": "jsonld"
-  },
-  {
-   "title": "Software Engineer, AI Coding Tasks (Contract)",
-   "company": "Askable",
-   "description": "Headquarters: Australia\nURL: https://www.askablelabs.com/\nWe're looking for experienced software engineers to build AI coding tasks from a codebase they know well. US$1,000 per task, and you can do as many tasks as you want.\nYou turn a real change from a repository you know into a task that today's best AI coding models struggle with: hard for the models, but fair for a skilled engineer. Your tasks are used to measure and train AI coding models.\nRemote, any location. US$1,000 per task that passes review. Minimum of one task a week, about 10 hours a week.\nHow it works\nApply. Complete a short screener interview and upload your resume.\nPropose. Once you're selected, pick a change from a repository you know and submit a short proposal. We approve it or suggest a better candidate.\nBuild. In our platform, set up the repository as it was before the change, then write the brief, the correct solution and the grading checks.\nStress-test. Try lazy, incorrect and shortcut solutions and make sure your checks catch them.\nModel testing. Run your task against leading AI models until strong models often fail but a skilled engineer can clearly solve it.\nReview. A reviewer checks your task and you revise it. Most tasks take more than one round.\nNext task. Once your task is accepted, start another.\nRequirements\n2+ years of professional software engineering\nCode merged into a public open-source repository, ideally one you know well. A private codebase you own may also qualify (not employer or client code)\nStrong in at least one of Python, TypeScript, Go, Rust, Java or C++\nSolid with Docker, Linux, Git and automated testing\nRegular use of an AI coding tool\nExperience writing tests, rubrics or evaluation criteria, ideally for AI models\nYou can explain a change clearly and concisely, in your own words\nAt least 10 hours a week, starting now\nA secure personal or work computer (no public or shared machines)\nNice to have\nDeep expertise in one area, such as databases, compilers, distributed systems, security or infrastructure\nExperience building agent tasks or RL environments\nTerms\nUS$1,000 for each task that passes our quality review, paid directly to you\nOnce your proposal is qualified, you sign Askable's contract and accept its terms\nThe work is used for AI training. The change and your solution must be your own, and you must be free to license them to us\nDon't publish the work anywhere: no public pull request or public fork\nApply at https://www.askable.com/experts/roles/senior-software-engineer\nTo apply: https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-   "status": "Awaiting Review",
-   "id": "4f2e5dfe-92e8-4d31-97f9-52babecb0195",
-   "createdAt": "2026-10-16T07:48:11+00:00",
-   "requiredSkills": "engineer, coding, tasks, contract, headquarters, australia, url, https, //www.askablelabs.com/, looking, experienced, engineers",
-   "postedAt": "2026-10-16",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "42a8eeac42bcbae8",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-     "found_at": "2026-11-14T16:48:57+00:00"
-    }
-   ],
-   "matchScore": 66,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "rss"
   },
   {
    "title": "IT Officer",
@@ -818,7 +819,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-officer-british-council/",
-     "found_at": "2026-11-14T16:48:50+00:00"
+     "found_at": "2026-11-15T10:16:30+00:00"
     }
    ],
    "matchScore": 66,
@@ -860,7 +861,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-14T16:49:01+00:00"
+     "found_at": "2026-11-15T10:16:40+00:00"
     }
    ],
    "matchScore": 66,
@@ -902,7 +903,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-14T16:49:02+00:00"
+     "found_at": "2026-11-15T10:16:40+00:00"
     }
    ],
    "matchScore": 66,
@@ -944,7 +945,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-14T16:49:02+00:00"
+     "found_at": "2026-11-15T10:16:40+00:00"
     }
    ],
    "matchScore": 66,
@@ -986,7 +987,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sales-marketing-aluminium-profile-meghna-group/",
-     "found_at": "2026-11-14T16:48:50+00:00"
+     "found_at": "2026-11-15T10:16:30+00:00"
     }
    ],
    "matchScore": 64,
@@ -994,6 +995,48 @@
     "title": 100,
     "level": 55,
     "skills": 0,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Executive, Graphics Design & Digital Marketing (AgroVet)",
+   "company": "Square Pharmaceuticals",
+   "description": "Position: Executive – Graphics Design & Digital Marketing, AgroVet Division\nCompany: SQUARE Pharmaceuticals PLC.\nJob Location: Anywhere in Bangladesh\nEducation: Honours / Master’s from a reputed university\nExperience: 3 to 5 years (pharmaceutical preferred)\nHow to Apply: Online through SQUARE Pharmaceuticals’ careers site\nDeadline: 18 November 2026\nAbout the Role\nSQUARE Pharmaceuticals’ AgroVet Division is looking for an Executive for graphics design and digital marketing.\nCore Responsibilities\nDesign creative content for social media, websites and digital campaigns\nDevelop digital ads, banners, infographics and promotional materials\nCreate brochures, posters and corporate collaterals\nUse AI-powered tools for creative design\nKeep brand identity consistent and meet deadlines\nRequirements\nHonours / Master’s from a reputed university\n3 to 5 years of relevant experience\nDTP, 3D animation, event design, 3D photography, video and sound editing\nGood interpersonal and communication skills\nAbout Square Pharmaceuticals\nSQUARE Pharmaceuticals PLC., the flagship of SQUARE Group, has led Bangladesh’s pharmaceutical industry since 1985.\nHow to Apply\nInterested candidates can apply through the SQUARE Pharmaceuticals’ own careers site using the Apply Now button. The application deadline is 18 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: career.squarepharma.com.bd , SQUARE Pharmaceuticals’ own careers site\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "category": "Information Technology",
+   "location": "Anywhere in Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/executive-graphics-design-digital-marketing-agrovet-square-pharmaceuticals/",
+   "status": "Awaiting Review",
+   "id": "76c9c0d7-8270-44b9-9fc8-65b86a61c18e",
+   "createdAt": "2026-11-15T10:16:30+00:00",
+   "requiredSkills": "executive, graphics, digital, marketing, agrovet, division, square, pharmaceuticals, plc., location, anywhere, bangladesh",
+   "postedAt": "2026-11-15",
+   "deadline": "2026-11-18",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "3 Years",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "f707e751d33766d6",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/executive-graphics-design-digital-marketing-agrovet-square-pharmaceuticals/",
+     "found_at": "2026-11-15T10:16:30+00:00"
+    }
+   ],
+   "matchScore": 62,
+   "scoreParts": {
+    "title": 100,
+    "level": 30,
+    "skills": 17,
     "preference": 100
    },
    "priority": "B",
@@ -1028,7 +1071,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-11-14T16:48:57+00:00"
+     "found_at": "2026-11-15T10:16:36+00:00"
     }
    ],
    "matchScore": 65,
@@ -1057,7 +1100,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-11-14",
+   "postedAt": "2026-11-15",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1071,7 +1114,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/28",
-     "found_at": "2026-11-14T16:48:57+00:00"
+     "found_at": "2026-11-15T10:16:36+00:00"
     }
    ],
    "matchScore": 65,
@@ -1115,7 +1158,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-14T16:49:02+00:00"
+     "found_at": "2026-11-15T10:16:40+00:00"
     }
    ],
    "matchScore": 61,
@@ -1158,7 +1201,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-11-14T16:49:02+00:00"
+     "found_at": "2026-11-15T10:16:40+00:00"
     }
    ],
    "matchScore": 61,
@@ -1201,7 +1244,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-14T16:49:01+00:00"
+     "found_at": "2026-11-15T10:16:40+00:00"
     }
    ],
    "matchScore": 61,
@@ -1244,7 +1287,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
-     "found_at": "2026-11-14T16:48:53+00:00"
+     "found_at": "2026-11-15T10:16:35+00:00"
     }
    ],
    "matchScore": 57,
@@ -1287,7 +1330,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-14T16:48:53+00:00"
+     "found_at": "2026-11-15T10:16:32+00:00"
     }
    ],
    "matchScore": 57,
@@ -1316,7 +1359,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-11-14",
+   "postedAt": "2026-11-15",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1330,7 +1373,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/33",
-     "found_at": "2026-11-14T16:48:57+00:00"
+     "found_at": "2026-11-15T10:16:36+00:00"
     }
    ],
    "matchScore": 57,
@@ -1373,7 +1416,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-11-14T16:48:57+00:00"
+     "found_at": "2026-11-15T10:16:36+00:00"
     }
    ],
    "matchScore": 57,
@@ -1416,7 +1459,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-11-14T16:48:57+00:00"
+     "found_at": "2026-11-15T10:16:36+00:00"
     }
    ],
    "matchScore": 57,
@@ -1459,7 +1502,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-11-14T16:48:57+00:00"
+     "found_at": "2026-11-15T10:16:35+00:00"
     }
    ],
    "matchScore": 57,
@@ -1502,7 +1545,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-14T16:49:02+00:00"
+     "found_at": "2026-11-15T10:16:40+00:00"
     }
    ],
    "matchScore": 57,
@@ -1545,7 +1588,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/project-coordinator-commercial-bank-of-ceylon/",
-     "found_at": "2026-11-14T16:48:50+00:00"
+     "found_at": "2026-11-15T10:16:30+00:00"
     }
    ],
    "matchScore": 53,
@@ -1588,7 +1631,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/squarespace-staff-software-engineer-revenue-systems",
-     "found_at": "2026-11-14T16:48:57+00:00"
+     "found_at": "2026-11-15T10:16:36+00:00"
     }
    ],
    "matchScore": 53,
@@ -1631,7 +1674,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-14T16:49:01+00:00"
+     "found_at": "2026-11-15T10:16:40+00:00"
     }
    ],
    "matchScore": 53,
@@ -1674,7 +1717,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-associate-manager-litigation-management-brac-bank/",
-     "found_at": "2026-11-14T16:48:50+00:00"
+     "found_at": "2026-11-15T10:16:30+00:00"
     }
    ],
    "matchScore": 39,
@@ -1717,7 +1760,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-14T16:48:50+00:00"
+     "found_at": "2026-11-15T10:16:30+00:00"
     }
    ],
    "matchScore": 39,
