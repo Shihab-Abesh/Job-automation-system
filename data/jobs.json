@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-15T17:32:03+00:00",
+ "generatedAt": "2026-11-16T10:31:13+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 20,
+    "found": 17,
     "errors": [],
-    "raw": 276
+    "raw": 267
    },
    "jsonld": {
     "found": 3,
@@ -43,7 +43,7 @@
    "rss": {
     "found": 23,
     "errors": [],
-    "raw": 440
+    "raw": 427
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 40,
+   "total": 36,
    "new": 0,
    "expired": 3,
-   "duplicatesFolded": 3,
-   "priorityA": 13,
+   "duplicatesFolded": 4,
+   "priorityA": 12,
    "priorityB": 10,
-   "priorityC": 17
+   "priorityC": 14
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-15T17:32:03+00:00"
+  "ranAt": "2026-11-16T10:31:13+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-15T17:31:27+00:00"
+     "found_at": "2026-11-16T10:30:37+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,7 +145,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-key-accounts-export-pran-group/",
-     "found_at": "2026-11-15T17:31:16+00:00"
+     "found_at": "2026-11-16T10:30:24+00:00"
     }
    ],
    "matchScore": 79,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
-     "found_at": "2026-11-15T17:31:16+00:00"
+     "found_at": "2026-11-16T10:30:24+00:00"
     }
    ],
    "matchScore": 79,
@@ -201,48 +201,6 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Narayanganj is about 19.0 km out, past your 10 km limit"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Trainee Officer – Accounts (Coal)",
-   "company": "Abul Khair Group",
-   "description": "Position: Trainee Officer – Accounts (Coal)\nCompany: Dhaka Concrete Ltd., Abul Khair Group\nJob Location: Coal Depot\nExperience: 1 to 3 years; fresh graduates are also encouraged to apply\nEducation: BBA, MBA, M.Com or graduation in Accounting / Finance\nDeadline: 15 November 2026\nAbout the Role\nAbul Khair Group is hiring Trainee Officers – Accounts (Coal) for Dhaka Concrete Ltd., posted at its coal depot.\nRequirements\nBBA, MBA, M.Com or graduation in Accounting / Finance\n1 to 3 years of experience; fresh graduates encouraged\nWork location: Coal Depot\nHow to Apply\nEmail your CV to sohebbinmahabub@abulkhairgroup.com with the subject ’Trainee Officer – Coal Accounts’ by 15 November 2026\nAbout Abul Khair Group\nAbul Khair Group is one of Bangladesh’s largest industrial conglomerates, in steel, cement, consumer goods and more.\nHow to Apply\nInterested candidates can apply through the CV by email to sohebbinmahabub@abulkhairgroup.com (Abul Khair Group’s own domain), subject ’Trainee Officer – Coal Accounts’ using the Apply Now button. The application deadline is 15 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Anywhere in Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/trainee-officer-accounts-coal-abul-khair-group/",
-   "status": "Awaiting Review",
-   "id": "c0637b2a-36c2-4e45-8143-9b5abb9844b9",
-   "createdAt": "2026-11-06T10:15:40+00:00",
-   "requiredSkills": "trainee, officer, accounts, coal, dhaka, concrete, abul, khair, group, location, depot, fresh",
-   "postedAt": "2026-11-06",
-   "deadline": "2026-11-15",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full Time",
-   "experienceText": "Fresher",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "cea1eaaea1a5bc53",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/trainee-officer-accounts-coal-abul-khair-group/",
-     "found_at": "2026-11-15T17:31:19+00:00"
-    }
-   ],
-   "matchScore": 75,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -272,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-15T17:31:19+00:00"
+     "found_at": "2026-11-16T10:30:30+00:00"
     }
    ],
    "matchScore": 75,
@@ -314,7 +272,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-15T17:31:35+00:00"
+     "found_at": "2026-11-16T10:30:45+00:00"
     }
    ],
    "matchScore": 75,
@@ -356,7 +314,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-15T17:31:19+00:00"
+     "found_at": "2026-11-16T10:30:30+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +356,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-15T17:31:27+00:00"
+     "found_at": "2026-11-16T10:30:37+00:00"
     }
    ],
    "matchScore": 75,
@@ -440,7 +398,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/next-business-leader-nbl-management-trainee-grameenphone-ltd/",
-     "found_at": "2026-11-15T17:31:16+00:00"
+     "found_at": "2026-11-16T10:30:30+00:00"
     }
    ],
    "matchScore": 75,
@@ -483,7 +441,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-11-15T17:31:22+00:00"
+     "found_at": "2026-11-16T10:30:31+00:00"
     }
    ],
    "matchScore": 75,
@@ -525,7 +483,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-11-15T17:31:22+00:00"
+     "found_at": "2026-11-16T10:30:31+00:00"
     }
    ],
    "matchScore": 75,
@@ -565,7 +523,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-category-management-pran-rfl/",
-     "found_at": "2026-11-15T17:31:19+00:00"
+     "found_at": "2026-11-16T10:30:30+00:00"
     }
    ],
    "matchScore": 75,
@@ -607,7 +565,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-15T17:31:19+00:00"
+     "found_at": "2026-11-16T10:30:30+00:00"
     }
    ],
    "matchScore": 75,
@@ -650,7 +608,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-11-15T17:31:43+00:00"
+     "found_at": "2026-11-16T10:30:53+00:00"
     }
    ],
    "matchScore": 71,
@@ -692,7 +650,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-15T17:31:31+00:00"
+     "found_at": "2026-11-16T10:30:41+00:00"
     }
    ],
    "matchScore": 71,
@@ -734,7 +692,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-15T17:31:27+00:00"
+     "found_at": "2026-11-16T10:30:37+00:00"
     }
    ],
    "matchScore": 71,
@@ -762,7 +720,7 @@
    "id": "b92dcb60-31c4-49fb-bbf0-250ca7c6aa2c",
    "createdAt": "2026-11-06T10:15:47+00:00",
    "requiredSkills": "driven, automation, engineer, riseup, labs., required, python, snowflake, dbt, airflow.",
-   "postedAt": "2026-11-15",
+   "postedAt": "2026-11-16",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -776,7 +734,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/50",
-     "found_at": "2026-11-15T17:31:23+00:00"
+     "found_at": "2026-11-16T10:30:33+00:00"
     }
    ],
    "matchScore": 71,
@@ -819,7 +777,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-officer-british-council/",
-     "found_at": "2026-11-15T17:31:16+00:00"
+     "found_at": "2026-11-16T10:30:30+00:00"
     }
    ],
    "matchScore": 66,
@@ -861,7 +819,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-15T17:31:27+00:00"
+     "found_at": "2026-11-16T10:30:37+00:00"
     }
    ],
    "matchScore": 66,
@@ -903,7 +861,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-15T17:31:27+00:00"
+     "found_at": "2026-11-16T10:30:33+00:00"
     }
    ],
    "matchScore": 66,
@@ -945,7 +903,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-15T17:31:27+00:00"
+     "found_at": "2026-11-16T10:30:37+00:00"
     }
    ],
    "matchScore": 66,
@@ -987,7 +945,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sales-marketing-aluminium-profile-meghna-group/",
-     "found_at": "2026-11-15T17:31:16+00:00"
+     "found_at": "2026-11-16T10:30:24+00:00"
     }
    ],
    "matchScore": 64,
@@ -1029,7 +987,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-graphics-design-digital-marketing-agrovet-square-pharmaceuticals/",
-     "found_at": "2026-11-15T17:31:16+00:00"
+     "found_at": "2026-11-16T10:30:24+00:00"
     }
    ],
    "matchScore": 62,
@@ -1071,7 +1029,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-11-15T17:31:23+00:00"
+     "found_at": "2026-11-16T10:30:33+00:00"
     }
    ],
    "matchScore": 65,
@@ -1100,7 +1058,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-11-15",
+   "postedAt": "2026-11-16",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1114,7 +1072,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/28",
-     "found_at": "2026-11-15T17:31:23+00:00"
+     "found_at": "2026-11-16T10:30:33+00:00"
     }
    ],
    "matchScore": 65,
@@ -1158,50 +1116,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-15T17:31:27+00:00"
-    }
-   ],
-   "matchScore": 61,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Senior)"
-   ],
-   "discoveredBy": "rss"
-  },
-  {
-   "title": "Senior Software Engineer (R14285)",
-   "company": "Oportun",
-   "description": "Headquarters: Remote - US\nWho We Are\nOportun (Nasdaq: OPRT) is a mission-driven financial services company that puts its members' financial goals within reach. With intelligent borrowing, savings, and budgeting capabilities, Oportun empowers members with the confidence to build a better financial future. Since inception, Oportun has provided more than $22.7 billion in responsible and affordable credit, saved its members more than $2.5 billion in interest and fees, and helped its members set aside an average of more than $1,800 annually.\nThe Opportunity\nThe Engineering Ecosystem Org exists to help engineers deliver member value with high speed and high quality. As a Senior Software Engineer, you will design, build, and operate scalable platform services and shared libraries that improve developer productivity, system reliability, and delivery velocity. In your first year, success means delivering complex platform capabilities end-to-end, contributing to architecture decisions, and raising engineering quality through strong technical practices and mentorship .\nAt Oportun, we move fast and we hold each other to a high bar. If you care about doing your best work while actually moving the needle for real people, you'll fit right in.\nWhat You'll Do\nYour day-to-day\nYou'll design, build, test, deploy, and maintain scalable, reliable platform services and shared libraries.\nYou'll contribute to platform and system architecture decisions with a focus on reliability, scalability, and developer experience.\nYou'll write high-quality, maintainable code and model strong engineering best practices.\nYou'll collaborate with Staff Engineers and peers to implement standards and patterns that support Continuous Delivery.\nYou'll identify and address performance, scalability, and reliability issues across platform services.\nYou'll participate actively in design reviews, code reviews, and technical discussions, providing thoughtful and constructive feedback.\nYou'll drive operational excellence by improving monitoring, alerting, and incident response practices.\nYou'll investigate root causes of production issues and implement long-term fixes to reduce on-call burden.\nYou'll mentor and support junior and mid-level engineers through code reviews, pairing, and technical guidance.\nYou'll partner with cross-functional teams to understand requirements and deliver solutions that create measurable business and customer value.\nYou'll bring ideas for how we can do things better - proactively, not just when asked.\nYou'll look for ways to use AI tools thoughtfully - to work smarter, reduce manual work, and make better decisions faster.\nWho You Are\nThe right fit looks like this\nYou're a hands-on engineer who enjoys solving complex technical problems, navigating ambiguity, and improving systems that other engineers depend on. You take ownership from design through production, communicate clearly, and help raise the technical bar through mentorship and constructive feedback.\nYou're comfortable navigating complexity and don't wait for perfect information to move forward. You communicate clearly, give direct feedback, and expect the same in return.\nWhat You Bring\nSkills & experience\nRequired\nYou'll have 7-8 years of related software engineering experience with a bachelor's degree, or a master's degree with an equivalent combination of education and experience.\nYou've demonstrated strong experience in software development focused on backend systems and services.\nYou bring proficiency in Java, C#, C++, or similar backend languages, with strong knowledge of software design principles, data structures, and algorithms.\nYou have experience building and operating scalable, reliable, and secure systems, including 3+ years designing, building, deploying, and maintaining container-based applications.\nYou bring 4+ years of experience working with cloud platforms such as AWS, GCP, or Azure.\nYou have experience with Continuous Delivery practices and automated deployment pipelines.\nYou have strong problem-solving and debugging skills, effective communication and collaboration skills, and experience mentoring junior engineers and contributing to team-level technical leadership.\nYou bring working knowledge of secure development practices and security considerations in distributed systems.\nNice to Have\nExperience in financial services or the fintech industry.\nFamiliarity with shared platforms, distributed systems, developer productivity, or engineering ecosystem practices.\nYou've used AI tools such as ChatGPT, Copilot, or similar to improve your own productivity.\nOur AI Mindset\nWe build with AI. We lead with judgment.\nAI isn't a feature here. It's how we work.\nWe're excited about what AI makes possible, and we're looking for people who share that curiosity. You don't need to be an expert. You need to be open to experimenting , willing to learn, and able to apply new tools in ways that actually move the needle.\nIn this role, you'll be encouraged to explore AI tools, find practical use cases for your function, and bring ideas for working smarter. We believe the best outcomes come when human judgment and AI capability work together .\nWhy Oportun\nWhat's in it for you\nOportun offers a competitive compensation and benefits package designed to support your physical, financial, and professional well-being. Benefits vary by country of employment.\nSome of the benefits available to eligible employees include:\nUS Benefits:\nMedical, Dental & Vision Insurance\n401(k) including company match\nFlexible PTO and Parental Leave\nCompany-paid Life & Disability Insurance\nEligibility and plan details vary by location and employment status. To learn more about Oportun and our benefits, visit oportun.com/careers\nThe US salary range for this full-time position is $124,200 - $198,700.\nOur salary ranges are determined by role, level, and location. The range displayed on each job posting reflects a national minimum and maximum range for new hire salaries for this position.\nWithin this range, individual pay is determined by work location and additional factors, such as job-related skills, experience, and relevant education or training. Your recruiter can share more about the specific salary range that meets your criteria during the hiring process.\nPlease note that the compensation range listed in this posting reflects only the base salary for this position and does not include other compensation elements or benefits. #LI-REMOTE #LI-RR1\nWe are proud to be an Equal Opportunity Employer and consider all qualified applicants for employment opportunities without regard to race, age, color, religion, gender, national origin, disability, sexual orientation, veteran status or any other category protected by the laws or regulations in the locations where we operate.\nCalifornia applicants can find a copy of Oportun's CCPA Notice here: https://oportun.com/privacy/california-privacy-notice/ .\nWe will never request personal identifiable information (bank, credit card, etc.) before you are hired. We do not charge you for pre-employment fees such as background checks, training, or equipment. If you think you have been a victim of fraud by someone posing as us, please report your experience to the FBI’s Internet Crime Complaint Center (IC3).\nTo apply: https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-   "status": "Awaiting Review",
-   "id": "e5d57ea5-595a-4eea-924a-011a1ff65a06",
-   "createdAt": "2026-10-24T07:49:16+00:00",
-   "requiredSkills": "senior, engineer, r14285, headquarters, remote, who, oportun, nasdaq, oprt, mission, driven, financial",
-   "postedAt": "2026-10-24",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "24761a7ad8ac27e9",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-     "found_at": "2026-11-15T17:31:27+00:00"
+     "found_at": "2026-11-16T10:30:37+00:00"
     }
    ],
    "matchScore": 61,
@@ -1244,7 +1159,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-15T17:31:27+00:00"
+     "found_at": "2026-11-16T10:30:37+00:00"
     }
    ],
    "matchScore": 61,
@@ -1260,49 +1175,6 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Officer, Query Management – Yamaha",
-   "company": "ACI Motors",
-   "description": "Position: Officer, Query Management – Yamaha\nCompany: ACI Motors Limited\nJob Location: Dhaka (work at office)\nEmployment Type: Full-time\nExperience: 1 to 2 years in automobile; freshers encouraged\nEducation: Bachelor’s in any discipline, Marketing or Business Administration preferred\nAge: 22 to 30 years\nSalary: Negotiable\nDeadline: 15 November 2026\nAbout the Role\nACI Motors is hiring an Officer, Query Management for Yamaha in Dhaka to handle online customer queries and support digital marketing.\nKey Responsibilities\nRespond to social media customer queries in time and report market information\nCoordinate with sales and service teams to resolve customer, dealer and retailer issues\nRun sales approaches through online platforms and confirm sales\nSupport the marketing team with inquiry tracking data and digital marketing activities\nMaintain and update online content and track online performance\nRequirements\nBachelor’s in any discipline, Marketing or Business Administration preferred\n1 to 2 years of experience in automobile; freshers are encouraged to apply\nAge 22 to 30 years\nDigital marketing, data reporting or dealer coordination experience is an advantage\nProficiency in MS Excel and PowerPoint\nAbout ACI Motors\nACI Motors, a subsidiary of ACI PLC, markets Yamaha motorcycles, Foton vehicles and agricultural and infrastructure machinery in Bangladesh.\nHow to Apply\nInterested candidates can apply through the bdjobs.com using the Apply Now button. The application deadline is 15 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "Information Technology",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
-   "status": "Awaiting Review",
-   "id": "2602ce68-c808-4663-89a8-5620603b6d50",
-   "createdAt": "2026-10-30T09:26:27+00:00",
-   "requiredSkills": "officer, query, yamaha, aci, motors, limited, location, dhaka, work, employment, type, full",
-   "postedAt": "2026-10-30",
-   "deadline": "2026-11-15",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Full Time",
-   "experienceText": "1 Year+",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "23f69640db31799e",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/officer-query-management-yamaha-aci-motors/",
-     "found_at": "2026-11-15T17:31:22+00:00"
-    }
-   ],
-   "matchScore": 57,
-   "scoreParts": {
-    "title": 67,
-    "level": 80,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Senior Business Analyst – Manufacturing",
@@ -1330,7 +1202,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-15T17:31:19+00:00"
+     "found_at": "2026-11-16T10:30:30+00:00"
     }
    ],
    "matchScore": 57,
@@ -1359,7 +1231,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-11-15",
+   "postedAt": "2026-11-16",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1373,7 +1245,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/33",
-     "found_at": "2026-11-15T17:31:23+00:00"
+     "found_at": "2026-11-16T10:30:33+00:00"
     }
    ],
    "matchScore": 57,
@@ -1416,7 +1288,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-11-15T17:31:23+00:00"
+     "found_at": "2026-11-16T10:30:33+00:00"
     }
    ],
    "matchScore": 57,
@@ -1459,7 +1331,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-11-15T17:31:23+00:00"
+     "found_at": "2026-11-16T10:30:33+00:00"
     }
    ],
    "matchScore": 57,
@@ -1475,49 +1347,6 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Business Analyst",
-   "company": "Rancon Motorbikes (Suzuki)",
-   "description": "Position: Business Analyst\nCompany: Rancon Motorbikes Limited (Suzuki Bangladesh)\nJob Location: Head Office, Dhaka\nEmployment Type: Full-time\nExperience: At least 4 years of relevant experience\nEducation: Bachelor’s in BBA, Economics, Statistics, MIS, Engineering or a related discipline\nBenefits: Competitive salary and benefits, insurance, 2 days weekend\nDeadline: 15 November 2026\nAbout the Role\nRancon Motorbikes (Suzuki Bangladesh) is hiring a Business Analyst at its head office to support dealer development with analytics and reporting.\nKey Responsibilities\nAnalyse dealer performance and give actionable business insights\nBuild and maintain sales, dealer network and management dashboards\nAssess dealer profitability and recommend improvements\nSupport OMS (Order Management System) and business process automation\nAnalyse marketing campaign performance\nSupport business planning, budgeting, forecasting and target setting\nRequirements\nBachelor’s in BBA, Economics, Statistics, MIS, Engineering or a related discipline\nAt least 4 years of relevant experience\nAdvanced Microsoft Excel\nStrong Power BI and dashboard development\nKnowledge of SQL is an advantage\nAbout Rancon Motorbikes (Suzuki)\nRancon Motorbikes Limited markets Suzuki motorcycles in Bangladesh and is a concern of the Rancon (Rangs) group.\nHow to Apply\nInterested candidates can apply through the CV by email to Rancon Motorbikes (Suzuki) HR, subject “Business Analyst” using the Apply Now button. The application deadline is 15 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "Data & Reporting",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-   "status": "Awaiting Review",
-   "id": "b78031fd-14c2-47c5-9d27-b0dc10982eed",
-   "createdAt": "2026-10-28T09:12:56+00:00",
-   "requiredSkills": "business, analyst, rancon, motorbikes, limited, suzuki, bangladesh, location, head, dhaka, employment, type",
-   "postedAt": "2026-10-28",
-   "deadline": "2026-11-15",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Full Time",
-   "experienceText": "4 Years",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "4a309152ebf14fe4",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/business-analyst-rancon-motorbikes-suzuki/",
-     "found_at": "2026-11-15T17:31:22+00:00"
-    }
-   ],
-   "matchScore": 57,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Senior Software Engineer",
@@ -1545,7 +1374,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-15T17:31:27+00:00"
+     "found_at": "2026-11-16T10:30:37+00:00"
     }
    ],
    "matchScore": 57,
@@ -1588,7 +1417,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/project-coordinator-commercial-bank-of-ceylon/",
-     "found_at": "2026-11-15T17:31:16+00:00"
+     "found_at": "2026-11-16T10:30:24+00:00"
     }
    ],
    "matchScore": 53,
@@ -1631,7 +1460,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/squarespace-staff-software-engineer-revenue-systems",
-     "found_at": "2026-11-15T17:31:23+00:00"
+     "found_at": "2026-11-16T10:30:33+00:00"
     }
    ],
    "matchScore": 53,
@@ -1674,7 +1503,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-15T17:31:27+00:00"
+     "found_at": "2026-11-16T10:30:37+00:00"
     }
    ],
    "matchScore": 53,
@@ -1717,7 +1546,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-associate-manager-litigation-management-brac-bank/",
-     "found_at": "2026-11-15T17:31:16+00:00"
+     "found_at": "2026-11-16T10:30:30+00:00"
     }
    ],
    "matchScore": 39,
@@ -1760,7 +1589,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-15T17:31:16+00:00"
+     "found_at": "2026-11-16T10:30:24+00:00"
     }
    ],
    "matchScore": 39,
