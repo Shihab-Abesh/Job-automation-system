@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-16T20:46:31+00:00",
+ "generatedAt": "2026-11-17T11:25:36+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 18,
+    "found": 17,
     "errors": [],
-    "raw": 268
+    "raw": 270
    },
    "jsonld": {
     "found": 3,
@@ -41,9 +41,9 @@
     "raw": 20
    },
    "rss": {
-    "found": 23,
+    "found": 16,
     "errors": [],
-    "raw": 447
+    "raw": 425
    },
    "careers": {
     "found": 0,
@@ -57,13 +57,13 @@
    }
   },
   "counts": {
-   "total": 37,
-   "new": 1,
+   "total": 32,
+   "new": 2,
    "expired": 3,
-   "duplicatesFolded": 4,
-   "priorityA": 12,
-   "priorityB": 10,
-   "priorityC": 15
+   "duplicatesFolded": 1,
+   "priorityA": 10,
+   "priorityB": 11,
+   "priorityC": 11
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-16T20:46:31+00:00"
+  "ranAt": "2026-11-17T11:25:36+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-16T20:45:55+00:00"
+     "found_at": "2026-11-17T11:25:00+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,7 +145,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-key-accounts-export-pran-group/",
-     "found_at": "2026-11-16T20:45:43+00:00"
+     "found_at": "2026-11-17T11:24:48+00:00"
     }
    ],
    "matchScore": 79,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
-     "found_at": "2026-11-16T20:45:43+00:00"
+     "found_at": "2026-11-17T11:24:48+00:00"
     }
    ],
    "matchScore": 79,
@@ -230,7 +230,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-16T20:45:46+00:00"
+     "found_at": "2026-11-17T11:24:51+00:00"
     }
    ],
    "matchScore": 75,
@@ -272,7 +272,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-16T20:46:03+00:00"
+     "found_at": "2026-11-17T11:25:07+00:00"
     }
    ],
    "matchScore": 75,
@@ -314,7 +314,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-16T20:45:46+00:00"
+     "found_at": "2026-11-17T11:24:51+00:00"
     }
    ],
    "matchScore": 75,
@@ -356,7 +356,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-16T20:45:55+00:00"
+     "found_at": "2026-11-17T11:25:00+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +398,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/next-business-leader-nbl-management-trainee-grameenphone-ltd/",
-     "found_at": "2026-11-16T20:45:46+00:00"
+     "found_at": "2026-11-17T11:24:51+00:00"
     }
    ],
    "matchScore": 75,
@@ -413,88 +413,6 @@
     "Pay not stated, worth asking before you invest time",
     "Exact area not stated in the posting"
    ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Business Development Analyst",
-   "company": "MR DIY",
-   "description": "Position: Business Development Analyst\nCompany: MR. D.I.Y. Bangladesh Ltd.\nJob Location: Tejgaon, Dhaka\nHow to Apply: Send your CV to bgd.hr.career@mrdiy.com\nDeadline: Not mentioned, apply early\nAbout the Role\nMR DIY Bangladesh is hiring a Business Development Analyst in Tejgaon, Dhaka for market research, data analysis and growth planning.\nKey Responsibilities\nConduct market research and analyse business trends\nIdentify new business opportunities and growth potential\nPrepare business reports, forecasts and performance analyses\nSupport strategic planning and data-driven decisions\nWork with cross-functional teams on business objectives\nRequirements\nStrong analytical, problem-solving and communication skills\nProficiency in Microsoft Excel and data analysis\nA proactive mindset and strong interest in business development\nHow to Apply\nSend your CV to bgd.hr.career@mrdiy.com\nAbout MR DIY\nMR DIY is Malaysia’s home improvement retail chain, with stores across Asia and in Bangladesh.\nHow to Apply\nInterested candidates can apply through the email to MR DIY Bangladesh (bgd.hr.career@mrdiy.com) using the Apply Now button. The circular does not mention an application deadline, so apply early. Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-   "status": "Awaiting Review",
-   "id": "fd8c5861-7b72-467f-a993-aba2337ba7b2",
-   "createdAt": "2026-10-17T07:25:23+00:00",
-   "requiredSkills": "business, development, analyst, mr., d.i.y., bangladesh, location, tejgaon, dhaka, how, apply, send",
-   "postedAt": "2026-10-17",
-   "deadline": "2026-11-16",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full Time",
-   "experienceText": "",
-   "area": "Tejgaon",
-   "distanceKm": 0.0,
-   "fingerprint": "43b63df02fe4ab12",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/business-development-analyst-mr-diy/",
-     "found_at": "2026-11-16T20:45:50+00:00"
-    }
-   ],
-   "matchScore": 75,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 33,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Management Trainee (MMT Program)",
-   "company": "Mutual Trust Bank",
-   "description": "Position: Management Trainee (MMT Program)\nCompany: Mutual Trust Bank PLC (MTB)\nJob Location: Anywhere in Bangladesh\nEmployment Type: Full-time\nSalary: BDT 83,000 per month during the one-year program, then BDT 115,500 as JAVP\nEducation: Bachelor’s or Master’s (any discipline), minimum CGPA 3.00; SSC/HSC GPA 4.00 or higher\nAge: Under 32 years as of 18 November 2026\nDeadline: 16 November 2026\nAbout the Role\nMutual Trust Bank is hiring Management Trainees for its one-year MMT fast-track program, paying BDT 83,000 a month.\nProgram\nOne-year learning and rotational program\nBDT 83,000 per month during the program\nThen placement as Junior Assistant Vice President (JAVP) at BDT 115,500 per month, with benefits\nRequirements\nBachelor’s or Master’s degree in any discipline from a UGC-approved university\nMinimum CGPA 3.00 out of 4.00\nSSC/HSC GPA 4.00 out of 5.00 or higher (or O/A Level equivalent)\nUnder 32 years of age as of 18 November 2026\nWilling to work anywhere in Bangladesh\nAbout Mutual Trust Bank\nMutual Trust Bank PLC (MTB) is one of Bangladesh’s leading private commercial banks.\nHow to Apply\nInterested candidates can apply through the MTB’s circular on bdjobs.com (apply online) using the Apply Now button. The application deadline is 16 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Anywhere in Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-   "status": "Awaiting Review",
-   "id": "80e9246c-23f5-466f-9041-3c0472cc54e4",
-   "createdAt": "2026-10-29T09:12:49+00:00",
-   "requiredSkills": "trainee, mmt, program, mutual, trust, bank, plc, mtb, location, anywhere, bangladesh, employment",
-   "postedAt": "2026-10-29",
-   "deadline": "2026-11-16",
-   "salaryMin": 83000,
-   "salaryMax": null,
-   "salaryText": "Tk 83,000",
-   "employmentType": "Full Time",
-   "experienceText": "Fresher",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "3c6825e3b247f969",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/management-trainee-mmt-program-mutual-trust-bank/",
-     "found_at": "2026-11-16T20:45:50+00:00"
-    }
-   ],
-   "matchScore": 75,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [],
    "discoveredBy": "bdrecruit"
   },
   {
@@ -523,7 +441,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-category-management-pran-rfl/",
-     "found_at": "2026-11-16T20:45:46+00:00"
+     "found_at": "2026-11-17T11:24:51+00:00"
     }
    ],
    "matchScore": 75,
@@ -565,7 +483,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-16T20:45:46+00:00"
+     "found_at": "2026-11-17T11:24:51+00:00"
     }
    ],
    "matchScore": 75,
@@ -608,7 +526,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-11-16T20:46:11+00:00"
+     "found_at": "2026-11-17T11:25:16+00:00"
     }
    ],
    "matchScore": 71,
@@ -650,7 +568,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-16T20:45:59+00:00"
+     "found_at": "2026-11-17T11:25:03+00:00"
     }
    ],
    "matchScore": 71,
@@ -692,7 +610,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-16T20:45:55+00:00"
+     "found_at": "2026-11-17T11:25:00+00:00"
     }
    ],
    "matchScore": 71,
@@ -720,7 +638,7 @@
    "id": "b92dcb60-31c4-49fb-bbf0-250ca7c6aa2c",
    "createdAt": "2026-11-06T10:15:47+00:00",
    "requiredSkills": "driven, automation, engineer, riseup, labs., required, python, snowflake, dbt, airflow.",
-   "postedAt": "2026-11-16",
+   "postedAt": "2026-11-17",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -734,7 +652,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/50",
-     "found_at": "2026-11-16T20:45:50+00:00"
+     "found_at": "2026-11-17T11:24:55+00:00"
     }
    ],
    "matchScore": 71,
@@ -777,7 +695,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-officer-british-council/",
-     "found_at": "2026-11-16T20:45:46+00:00"
+     "found_at": "2026-11-17T11:24:51+00:00"
     }
    ],
    "matchScore": 66,
@@ -819,7 +737,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-16T20:45:55+00:00"
+     "found_at": "2026-11-17T11:25:00+00:00"
     }
    ],
    "matchScore": 66,
@@ -861,7 +779,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-16T20:45:51+00:00"
+     "found_at": "2026-11-17T11:24:55+00:00"
     }
    ],
    "matchScore": 66,
@@ -903,7 +821,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-16T20:45:55+00:00"
+     "found_at": "2026-11-17T11:25:00+00:00"
     }
    ],
    "matchScore": 66,
@@ -918,6 +836,48 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Executive, Network & IT Operations & Business Systems",
+   "company": "Domino’s Pizza Bangladesh",
+   "description": "Position: Executive – Network & IT Operations & Business Systems\nCompany: Domino’s Pizza Bangladesh (Jubilant FoodWorks Bangladesh Limited)\nJob Location: Mohakhali, Dhaka\nEducation: Bachelor’s degree in CSE, IT, MIS, EEE or a related discipline\nExperience: 2 to 4 years in IT Operations, Infrastructure, POS Support or Helpdesk\nEmployment Type: Full time\nHow to Apply: Email g-jfl.hrdominosbd@jublfood.com, subject: Executive – Network & IT Operations & Business Systems\nDeadline: 22 November 2026\nAbout the Role\nDomino’s Pizza Bangladesh is hiring an Executive for network, IT operations and business systems support across its stores and corporate functions.\nCore Responsibilities\nManage network and IT infrastructure across head office, stores, warehouse, commissary and call centre\nSupport POS, OMS, back office and business-critical systems\nEnsure IT security compliance, system availability and user access management\nMaintain IT assets, onboarding/offboarding and endpoint support\nSupport new store openings, technology deployments and IT projects\nRequirements\nBachelor’s degree in CSE, IT, MIS, EEE or related discipline\n2 to 4 years in IT operations, infrastructure, POS support or helpdesk\nFull time, Mohakhali, Dhaka\nAbout Domino’s Pizza Bangladesh\nDomino’s Pizza Bangladesh is run by Jubilant FoodWorks Bangladesh Limited and operates a growing network of Domino’s stores across the country.\nHow to Apply\nInterested candidates can apply through the Email the CV to g-jfl.hrdominosbd@jublfood.com with the subject “Executive – Network & IT Operations & Business Systems” (Domino’s own HR mailbox, from its LinkedIn post) using the Apply Now button. The application deadline is 22 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: linkedin.com (where we found this vacancy)\nOfficial link: linkedin.com , Email the CV to g-jfl.hrdominosbd@jublfood.com with the subject “Executive – Network & IT Operations & Business Systems” (Domino’s own HR mailbox, from its LinkedIn post)\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "category": "Information Systems",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/executive-network-it-operations-business-systems-dominos-pizza-bangladesh/",
+   "status": "Awaiting Review",
+   "id": "f4f4faf3-f8d2-47d5-a152-8b3c1e3cb669",
+   "createdAt": "2026-11-17T11:24:48+00:00",
+   "requiredSkills": "executive, network, business, domino, pizza, bangladesh, jubilant, foodworks, limited, location, mohakhali, dhaka",
+   "postedAt": "2026-11-17",
+   "deadline": "2026-11-22",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "2 Years",
+   "area": "Mohakhali",
+   "distanceKm": 1.9,
+   "fingerprint": "3840082b9aebdf64",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/executive-network-it-operations-business-systems-dominos-pizza-bangladesh/",
+     "found_at": "2026-11-17T11:24:48+00:00"
+    }
+   ],
+   "matchScore": 64,
+   "scoreParts": {
+    "title": 100,
+    "level": 55,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Executive, Sales & Marketing (Aluminium Profile)",
@@ -945,7 +905,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sales-marketing-aluminium-profile-meghna-group/",
-     "found_at": "2026-11-16T20:45:43+00:00"
+     "found_at": "2026-11-17T11:24:48+00:00"
     }
    ],
    "matchScore": 64,
@@ -987,7 +947,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-graphics-design-digital-marketing-agrovet-square-pharmaceuticals/",
-     "found_at": "2026-11-16T20:45:43+00:00"
+     "found_at": "2026-11-17T11:24:48+00:00"
     }
    ],
    "matchScore": 62,
@@ -1004,49 +964,6 @@
    "discoveredBy": "bdrecruit"
   },
   {
-   "title": "Staff Software Engineer - Connectivity",
-   "company": "Dremio",
-   "description": "Headquarters: Portugal - Remote\nBe Part of Building the Future\nDremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost. Learn more at www.dremio.com.\nAbout the role\nDremio's Connectivity team builds the high-performance connectivity solutions that help customers bring data to Dremio and connect Dremio to the broader data ecosystem. The team works across client drivers, protocols, connectors, interoperability, distributed systems, and the reliability and supportability of production data access.\nAs a Staff Software Engineer, you'll independently own multiple medium-to-large features or service components within a Connectivity and Clients area. You'll define the approach for a substantial team-area scope, turn ambiguous goals into clear milestones, make sound feature and service-level design decisions, and drive work through reliable production delivery. You will bring deep expertise in at least one area, such as JDBC or ODBC drivers, Apache Arrow ADBC, Arrow Flight SQL, BI interoperability, source connectivity, or connectivity reliability, while contributing effectively across adjacent areas. You will also mentor engineers and influence partner teams through strong technical judgment and execution.\nWhat you'll be doing\nOwn substantial connectivity work: Lead multiple medium-to-large features or service components from problem definition through design, implementation, validation, release readiness, and operational handoff.\nTurn ambiguity into an execution plan: Define reviewable milestones, acceptance measures, dependencies, estimates, and risks for complex customer, product, and engineering goals.\nDesign scalable, maintainable systems: Produce technical designs and architecture diagrams, explain trade-offs, and make feature and service-level decisions across drivers, protocols, client libraries, connectors, and distributed services.\nDiagnose complex failures: Lead root-cause analysis across client/server, protocol, network, authentication, metadata, and distributed-system boundaries using logs, telemetry, profiles, benchmarks, and production evidence.\nBuild compatibility and reliability: Maintain API and protocol stability; create automated compatibility, interoperability, performance, scale, reliability, observability, and diagnostics coverage; and define practical migration paths for supported and legacy clients.\nCollaborate and influence: Partner with Product, Query Execution, QA, Support, SRE, Documentation, and external technology partners to resolve dependencies and improve certification, customer experience, and supportability.\nRaise the engineering bar: Participate actively in code and design reviews, mentor and coach engineers, improve team practices, and contribute to relevant upstream open-source projects when aligned with Dremio priorities.\nUse AI-assisted development tools responsibly: Apply Dremio-approved AI tools to code comprehension, debugging, test generation, and documentation while protecting proprietary and customer data and validating results through review, testing, and sound engineering judgment.\nWhat we're looking for\nStaff-level ownership: 8+ years of production software engineering experience, or equivalent depth demonstrated through sustained ownership of complex systems and multiple substantial team-area features.\nProgramming expertise: Deep proficiency in Java, C++, Rust, Go, or another systems or services language, with the ability to work effectively in adjacent languages and frameworks.\nConnectivity and systems depth: Experience designing and debugging APIs, protocols, client libraries, drivers, or distributed services, with strong knowledge of data structures, concurrency, asynchronous programming, networking, and failure handling.\nProblem-solving ability: Able to identify and solve non-obvious problems across client/server and distributed-system boundaries and turn findings into durable fixes and regression coverage.\nQuality mindset: Experience building comprehensive unit, integration, compatibility, performance, or reliability tests and working with production CI/CD, packaging, release, certification, and engineering quality controls.\nCommunication and influence: Clear written and verbal communication, including the ability to explain technical trade-offs, surface risks early, align contributors across teams, and influence without formal authority.\nMentorship: Demonstrated ability to mentor and coach engineers and improve the effectiveness and engineering practices of the team around you.\nEducation: Bachelor's degree in Computer Science or a related technical field, or equivalent practical experience. Advanced degrees and equivalent industry experience are welcomed.\nBonus points if you have\nExperience developing JDBC, ODBC, ADBC, or other database drivers.\nExperience with Apache Arrow or Arrow Flight SQL.\nExperience with SQL engines, databases, data platforms, or source connectors.\nBI interoperability experience with Power BI, Tableau, Excel, or similar tools, including collaboration with partner engineering teams.\nKnowledge of OAuth, OIDC, TLS, enterprise authentication, metadata discovery, or query pushdown.\nCross-platform native build, packaging, release engineering, compatibility certification, or upgrade support experience.\nObservability, production diagnostics, customer escalation, long-running data transfer, cancellation, keepalive, timeout, or proxy experience.\nContributions to Apache Arrow or other relevant open-source projects.\nWhat we value\nAt Dremio, we hold ourselves to high standards when it comes to People, Thinking, and Action. Our Gnarlies (that's what we call our employees) communicate with clarity, drive accountability, and are respectful towards each other. We confront brutal facts and focus on results while operating with a sense of urgency and building a \"flywheel\". People who like to jump in and drive momentum will thrive in our #GnarlyLife.\nDremio is an equal opportunity employer supporting workforce diversity. We do not discriminate on the basis of race, religion, color, national origin, gender identity, sexual orientation, age, marital status, protected veteran status, disability status, or any other unlawful factor.\nDremio is committed to providing any necessary accommodations for individuals with disabilities within our application and interview process. To request accommodation due to a disability, please inform your recruiter.\nDremio has policies in place to protect the personal information that employees and applicants disclose to us. Please click here to review the privacy notice.\nImportant Security Notice for Candidates\nAt Dremio, we uphold trust and transparency as paramount values in all our interactions with customers, partners, employees, and the general public. We have been targeted by individuals creating fake domains similar to ours to scam prospects and candidates. Please note that all official communications from us will be from an @dremio.com domain. If you suspect you've been targeted by a scam, it's imperative to report the incident to your local law enforcement agencies. For more information about this type of scam, please refer to Dremio's official statement here .\nDremio is not responsible for any fees related to unsolicited resumes and will not pay fees to any third-party agency or company that does not have a signed agreement with the Company.\nTo apply: https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-   "status": "Awaiting Review",
-   "id": "597640e4-41f9-4d7a-83aa-2740db69e866",
-   "createdAt": "2026-10-18T07:40:43+00:00",
-   "requiredSkills": "staff, engineer, headquarters, portugal, remote, building, future, dremio, unified, lakehouse, platform, self",
-   "postedAt": "2026-10-18",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "f2a26382a473022c",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-     "found_at": "2026-11-16T20:45:51+00:00"
-    }
-   ],
-   "matchScore": 65,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 50,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Staff)"
-   ],
-   "discoveredBy": "rss"
-  },
-  {
    "title": "Staff Software Engineer",
    "company": "Field Nation",
    "description": "Staff Software Engineer position at Field Nation. Required skills: Javascript, React, Redux, Html, Css.",
@@ -1058,7 +975,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-11-16",
+   "postedAt": "2026-11-17",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1072,7 +989,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/28",
-     "found_at": "2026-11-16T20:45:50+00:00"
+     "found_at": "2026-11-17T11:24:55+00:00"
     }
    ],
    "matchScore": 65,
@@ -1089,6 +1006,49 @@
     "Title matches your excluded list (Staff)"
    ],
    "discoveredBy": "jsonld"
+  },
+  {
+   "title": "Executive I – Costing, Budgeting & MIS (Factory)",
+   "company": "M&J Group",
+   "description": "Position: Executive I – Costing, Budgeting & MIS (Factory)\nCompany: M&J Group\nJob Location: Gazipur\nEducation: B.Com / BBA / M.Com / MBA in Accounting, Finance or Management; CMA / CA (partly qualified or intermediate) is a plus\nExperience: 2 to 5 years in costing, budgeting or cost accounting in the RMG / textile sector\nHow to Apply: Online via the QR code on the circular, or email ishrat_jerin@mj-group.com / fahim_nabi@mj-group.com (subject: Executive I – Costing)\nDeadline: Not mentioned in the circular\nAbout the Role\nM&J Group, a denim and apparel manufacturer, is hiring an Executive I for costing, budgeting and MIS at its Gazipur factory.\nCore Responsibilities\nPrepare annual and monthly budgets for production, materials, wages, overheads and utilities\nPrepare monthly BvA reports and analyse variances\nPrepare pre-costing and post-costing for buyer orders (fabric, trims, CM, wastage, freight)\nCalculate cost per piece, per dozen and per style against buyer FOB prices\nPrepare MIS reports and dashboards for management and directors\nRequirements\nB.Com / BBA / M.Com / MBA in Accounting, Finance or Management\nCMA / CA (partly qualified or intermediate) is a plus\n2 to 5 years in costing, budgeting or cost accounting in RMG / textile\nAbout M&J Group\nM&J Group is a denim and apparel manufacturer in Bangladesh with eight sister concerns.\nHow to Apply\nInterested candidates can apply through the Apply online through the QR code on M&J’s circular, or email the resume to ishrat_jerin@mj-group.com / fahim_nabi@mj-group.com with the subject “Executive I – Costing” using the Apply Now button. The circular does not mention an application deadline, so apply early. Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: linkedin.com (where we found this vacancy)\nOfficial link: linkedin.com , Apply online through the QR code on M&J’s circular, or email the resume to ishrat_jerin@mj-group.com / fahim_nabi@mj-group.com with the subject “Executive I – Costing”\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "category": "MIS",
+   "location": "Gazipur, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/executive-i-costing-budgeting-mis-factory-mj-group/",
+   "status": "Awaiting Review",
+   "id": "d78b1d79-3b16-4149-874f-f70c9c03ff7a",
+   "createdAt": "2026-11-17T11:24:48+00:00",
+   "requiredSkills": "executive, costing, budgeting, mis, factory, group, location, gazipur, education, b.com, bba, m.com",
+   "postedAt": "2026-11-17",
+   "deadline": "2026-12-17",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "2 Years",
+   "area": "Gazipur",
+   "distanceKm": 26.4,
+   "fingerprint": "d4707a1c14e98e11",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/executive-i-costing-budgeting-mis-factory-mj-group/",
+     "found_at": "2026-11-17T11:24:48+00:00"
+    }
+   ],
+   "matchScore": 64,
+   "scoreParts": {
+    "title": 100,
+    "level": 55,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Gazipur is about 26.4 km out, past your 10 km limit"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Executive, Operations (Mouchak Factory)",
@@ -1116,7 +1076,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-operations-mouchak-factory-marico-bangladesh/",
-     "found_at": "2026-11-16T20:45:43+00:00"
+     "found_at": "2026-11-17T11:24:48+00:00"
     }
    ],
    "matchScore": 64,
@@ -1159,7 +1119,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-16T20:45:55+00:00"
+     "found_at": "2026-11-17T11:25:00+00:00"
     }
    ],
    "matchScore": 61,
@@ -1202,7 +1162,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-16T20:45:55+00:00"
+     "found_at": "2026-11-17T11:25:00+00:00"
     }
    ],
    "matchScore": 61,
@@ -1245,7 +1205,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-16T20:45:46+00:00"
+     "found_at": "2026-11-17T11:24:54+00:00"
     }
    ],
    "matchScore": 57,
@@ -1274,7 +1234,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-11-16",
+   "postedAt": "2026-11-17",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1288,7 +1248,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/33",
-     "found_at": "2026-11-16T20:45:50+00:00"
+     "found_at": "2026-11-17T11:24:55+00:00"
     }
    ],
    "matchScore": 57,
@@ -1304,92 +1264,6 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "jsonld"
-  },
-  {
-   "title": "Senior Software Engineer, Processing",
-   "company": "Lithic",
-   "description": "Headquarters: Remote\nLithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.\nOur infrastructure powers card programs for 100+ innovative clients, from fintechs reimagining credit and digital banking to platforms transforming disbursements and spend management. Companies like Mercury, Flex, and Novo rely on Lithic's developer-friendly APIs, direct network connections, and flawless reconciliation to launch and scale card programs in weeks, not years.\nWe're building a future where access to better financial products materially improves people's lives, free from the constraints of 30-year-old mainframes and legacy processors. We're proud to be backed by world-class investors who share that vision, including Bessemer Venture Partners, Index Ventures, Spark Capital, Stripes, and Mastercard, along with many others.\nWe're a team of 170+ across 26 states and 7 countries, headquartered in New York City.\nPosition: Senior Software Engineer, Processing\nLocation: Remote\nWe are hiring a Senior Software Engineer for our Processing team to lead Lithic’s next phase of growth.\nThe Processing team builds and maintains the real-time interfaces between Lithic and external payment networks. Every card authorization, clearing message, and settlement file flows through systems this team owns. The team manages both online and batch transaction flows across Mastercard, Visa, and Amex, along with transaction enrichment, disputes processing, and network compliance. The systems we maintain have strict latency and uptime requirements, because they sit on the critical path for every card transaction. The team also manages the physical network peering with card network partners, so infrastructure and networking expertise are important. The team primarily uses Java, Python, and Kotlin on AWS.\nWhat you'll do:\nEnsure high reliability, low latency, and correctness for Lithic's transaction processing interfaces and related services\nDevelop new capabilities across authorization, clearing/settlement, disputes, and network integration surfaces\nEnsure that the team is delivering reliable, secure, and scalable code with minimal tech debt\nEvolve the infrastructure supporting physical network peering with card network partners, ensuring connectivity, failover, and capacity meet reliability requirements\nOwn initiatives from planning to launch, keeping stakeholders informed and aligned along the way\nParticipate in the team on-call rotation\nLead efforts to improve systems and processes both within the team and across engineering\nHelp drive strategic planning in collaboration with the engineering manager and product manager\nWhat you'll bring:\n8+ years experience shipping code in fast paced production environments\nAdvanced distributed system instincts and design skills\nExperience driving large cross-functional projects across engineering, product, and operations teams\nA proven commitment to empathy and inclusion\nExcellent communication skills\nGrowth mindset and continuous desire to learn and improve is a must\nAn interest in fintech and the payments space is preferred\nThe annual US salary range for this role is $160,000 - $200,000 plus equity. This salary range may be inclusive of several career levels at Lithic and will be narrowed during the interview process based on the candidate’s experience and qualifications.\nThis is a remote position. However, candidates must be located in the United States, Canada (Ontario or British Columbia), Netherlands, Poland, or Czech Republic. We do not offer visa sponsorship or assistance.\nThis is a hybrid position. Candidates must be located within a commutable distance to our NYC office in Soho. We do not offer visa sponsorship or assistance.\nCrack the code\nA hidden code is tucked into this application. Find it and enter it below to continue.\nIyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJUaGUgYW5zd2VyIHRvIGxpZmUsIHRoZSB1bml2ZXJzZSwgYW5kIGV2ZXJ5dGhpbmcg4oCUIGVuY3J5cHRlZC4iIiIKCnBhc3N3b3JkID0gYiJceGVkXHhjMSIKX2tleSA9IGIiXHhkOVx4ZjNceGVkXHhmYlx4ODBceGM0flx4YTdcblx4YjhceGZiPFx4ZmJPXlx4ZmIiCgpkZWYgZGVjcnlwdF9wYXNzd29yZCgpIC0+IHN0cjoKICAgIHJldHVybiBieXRlcyhhIF4gYiBmb3IgYSwgYiBpbiB6aXAocGFzc3dvcmQsIF9rZXkpKS5kZWNvZGUoKQoKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIHJlc3VsdCA9IGRlY3J5cHRfcGFzc3dvcmQoKQogICAgcHJpbnQoZiJEZWNyeXB0ZWQgcGFzc3dvcmQ6IHtyZXN1bHR9IikKICAgIGFzc2VydCByZXN1bHQgPT0gIjQyIiwgIkRvbid0IHBhbmljIOKAlCBidXQgZGVjcnlwdGlvbiBmYWlsZWQhIgo=\nBenefits for Full-Time US Employees:\nUnlimited PTO\n12-weeks fully paid parental leave\n4-Week Fully Paid Sabbatical (earned at your 5-year anniversary)\nWork From Anywhere: work from anywhere in the world 4-weeks each year\n3% cashback on card purchases with your complimentary Privacy.com employee account\nHealth, vision, and dental insurance; HSA Contribution Match\n401(k) match\nVoluntary Life Insurance and STD/LTD\nNYC-based employees work from our SoHo office three days a week. Tuesdays and Thursdays are our core days, and you'll choose a third day that works for your schedule and team needs.\nIn-office employees receive:\nCommuter benefit\nCatered lunch every Tuesday and Thursday\nTo apply: https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-   "status": "Awaiting Review",
-   "id": "dfa2a254-6ea9-4c18-8532-6ccdf0bb6404",
-   "createdAt": "2026-10-18T07:40:43+00:00",
-   "requiredSkills": "senior, engineer, processing, headquarters, remote, lithic, modern, card, issuing, platform, empowering, ambitious",
-   "postedAt": "2026-10-18",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "9e34734b59e807c8",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-     "found_at": "2026-11-16T20:45:51+00:00"
-    }
-   ],
-   "matchScore": 57,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Senior)"
-   ],
-   "discoveredBy": "rss"
-  },
-  {
-   "title": "Senior Software Engineer, Product Platform",
-   "company": "Lithic",
-   "description": "Headquarters: Remote\nLithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.\nOur infrastructure powers card programs for 100+ innovative clients, from fintechs reimagining credit and digital banking to platforms transforming disbursements and spend management. Companies like Mercury, Flex, and Novo rely on Lithic's developer-friendly APIs, direct network connections, and flawless reconciliation to launch and scale card programs in weeks, not years.\nWe're building a future where access to better financial products materially improves people's lives, free from the constraints of 30-year-old mainframes and legacy processors. We're proud to be backed by world-class investors who share that vision, including Bessemer Venture Partners, Index Ventures, Spark Capital, Stripes, and Mastercard, along with many others.\nWe're a team of 170+ across 26 states and 7 countries, headquartered in New York City.\nWe are hiring a Senior Software Engineer for the Product Platform team, which owns the foundational layer of our API that all other Lithic products build on top. The team’s mission is to make Lithic's API the best in fintech — reliable, consistent, and a joy to integrate with. This includes API Gateway, Events Platform, API key management and authorization, audit logging, or API norms and versioning strategy.\nWhat you'll do:\nWrite reliable, secure, and scalable code for Lithic's product platform with minimal tech debt\nImprove the reliability of systems in team’s scope and participate in the team on-call rotation\nOwn projects from planning to launch, spanning areas like API key management, reliability, audit logging, or search, keeping stakeholders informed and aligned along the way\nLead efforts to improve systems and processes within the team\nWhat you'll bring:\n4+ years building production backend systems, ideally including public-facing APIs at scale\nExperience in or desire to learn Rust; ability to understand Lithic’s system written in other programming languages (Python, Java)\nInterest and experience in leveraging AI tools to enhance productivity\nAbility to navigate ambiguity, align diverse perspectives, and drive toward practical solutions\nExperience with API design fundamentals and product thinking: versioning, backward compatibility, schema-driven development, and weighing tradeoffs from the customer's perspective\nComfort with designing systems from scratch and owning the product development process end-to-end\nStrong written communication skills and experience working in a remote, async-first team that’s spread across time zones\nThe annual US salary range for this role is $160,000 to $200,000 plus equity. This salary range may be inclusive of several career levels at Lithic and will be narrowed during the interview process based on the candidate’s experience and qualifications.\nThis is a remote position. However, candidates must be located in the United States, Canada (Ontario or British Columbia), Netherlands, Poland, or Czech Republic. We do not offer visa sponsorship or assistance.\nCrack the code\nA hidden code is tucked into this application. Find it and enter it below to continue.\nIyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJUaGUgYW5zd2VyIHRvIGxpZmUsIHRoZSB1bml2ZXJzZSwgYW5kIGV2ZXJ5dGhpbmcg4oCUIGVuY3J5cHRlZC4iIiIKCnBhc3N3b3JkID0gYiJceGVkXHhjMSIKX2tleSA9IGIiXHhkOVx4ZjNceGVkXHhmYlx4ODBceGM0flx4YTdcblx4YjhceGZiPFx4ZmJPXlx4ZmIiCgpkZWYgZGVjcnlwdF9wYXNzd29yZCgpIC0+IHN0cjoKICAgIHJldHVybiBieXRlcyhhIF4gYiBmb3IgYSwgYiBpbiB6aXAocGFzc3dvcmQsIF9rZXkpKS5kZWNvZGUoKQoKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIHJlc3VsdCA9IGRlY3J5cHRfcGFzc3dvcmQoKQogICAgcHJpbnQoZiJEZWNyeXB0ZWQgcGFzc3dvcmQ6IHtyZXN1bHR9IikKICAgIGFzc2VydCByZXN1bHQgPT0gIjQyIiwgIkRvbid0IHBhbmljIOKAlCBidXQgZGVjcnlwdGlvbiBmYWlsZWQhIgo=\nBenefits for Full-Time US Employees:\nUnlimited PTO\n12-weeks fully paid parental leave\n4-Week Fully Paid Sabbatical (earned at your 5-year anniversary)\nWork From Anywhere: work from anywhere in the world 4-weeks each year\n3% cashback on card purchases with your complimentary Privacy.com employee account\nHealth, vision, and dental insurance; HSA Contribution Match\n401(k) match\nVoluntary Life Insurance and STD/LTD\nNYC-based employees work from our SoHo office three days a week. Tuesdays and Thursdays are our core days, and you'll choose a third day that works for your schedule and team needs.\nIn-office employees receive:\nCommuter benefit\nCatered lunch every Tuesday and Thursday\nTo apply: https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-   "status": "Awaiting Review",
-   "id": "7a39b8dc-ac55-4b70-a529-b48083c67832",
-   "createdAt": "2026-10-18T07:40:43+00:00",
-   "requiredSkills": "senior, engineer, platform, headquarters, remote, lithic, modern, card, issuing, processing, empowering, ambitious",
-   "postedAt": "2026-10-18",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "0823ee0174733e53",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-     "found_at": "2026-11-16T20:45:51+00:00"
-    }
-   ],
-   "matchScore": 57,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Senior)"
-   ],
-   "discoveredBy": "rss"
   },
   {
    "title": "Senior Software Engineer",
@@ -1417,7 +1291,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-16T20:45:55+00:00"
+     "found_at": "2026-11-17T11:25:00+00:00"
     }
    ],
    "matchScore": 57,
@@ -1460,7 +1334,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/project-coordinator-commercial-bank-of-ceylon/",
-     "found_at": "2026-11-16T20:45:43+00:00"
+     "found_at": "2026-11-17T11:24:48+00:00"
     }
    ],
    "matchScore": 53,
@@ -1476,49 +1350,6 @@
     "Exact area not stated in the posting"
    ],
    "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Staff Software Engineer, Revenue Systems",
-   "company": "Squarespace",
-   "description": "Headquarters: New York City; Remote\nSquarespace is seeking a talented Staff Software Engineer to support and evolve the systems at the core core of our monetization platform: billing, payments and orders. In this role, you will provide technical oversight over the critical monetization machinery that accepts orders, processes payments and bills subscriptions. You will regularly collaborate with engineering leadership and key product, strategy and finance stakeholders to align technical strategy with Squarespace’s business objectives. This is an opportunity to take on IC technical leadership responsibilities and own system architecture for high-visibility initiatives tied directly to Squarespace's core businesses.\nThis role is open to remote or hybrid working from our NYC office 3 days per week. You will report to the Director of Revenue Systems.\nYou'll Get To...\nOwn system architectural vision and design for critical areas of our business.\nTransform high-level system vision into estimated project plans for initiatives central to Squarespace’s strategy.\nServe as technical lead and cross-functional liaison on business-critical projects, making and defending engineering decisions key to the success of the business.\nMentor engineers on the team to deliver ever greater quality with ever growing autonomy.\nDrive best practices for engineering excellence and technical leadership, influence design reviews, question assumptions, point out pitfalls and foster shared understanding\nSet the engineering quality bar for the team through regular, high-quality code contributions across billing, orders and payments.\nWho We're Looking For\n10 or more years experience specifying, delivering and maintaining complex distributed backend services.\nSignificant experience with multiple programming languages (especially Java) and a broad range of tools like Springboot, hibernate, databases, etc.\nDemonstrated experience leading system architecture decisions across multiple teams or initiatives\nProven ability to serve as a technical lead on cross-functional projects, aligning engineering and business goals without sacrificing engineering quality\nExperience working with billing, orders or payment systems at scale\nBenefits & Perks\nA choice between medical plans with an option for 100% covered premiums including medical, dental, and vision\nSupplemental Life and Disability Insurance plans\nFertility and adoption benefits\nHeadspace mindfulness app subscription\nGlobal Employee Assistance Program\nRetirement benefits with employer match\nFlexible paid time off\n12 weeks paid parental leave and family care leave\nPretax commuter benefit\nEducation reimbursement\nEmployee donation match to community organizations\n7 Global Employee Resource Groups (ERGs)\nDog-friendly workplace\nFree lunch and snacks\nPrivate rooftop\nHack week twice per year\nCash Compensation Range: $170,000 - $299,000 USD\nThe base salary for this position will vary based on job-related criteria including relevant skills, experience, and location, among other factors.\nIn addition to the cash compensation above (which includes base salary and, where applicable for eligible roles, may include overtime pay), Squarespace employees are eligible to be granted an option to purchase our common stock. Sales positions generally offer a competitive On Target Earnings (OTE) incentive structure in addition to base salary.\nAbout Squarespace\nSquarespace is a design-driven platform helping entrepreneurs build brands and businesses online. We empower millions of customers in more than 200 countries and territories with all the tools they need to create an online presence, build an audience, monetize, and scale their business. Our suite of products range from websites, domains, ecommerce, and marketing tools, as well as tools for scheduling with Acuity and creating and managing social media presence with Bio Sites and Unfold. Our team of more than 1,700 is headquartered in New York City, with offices in Dublin, Ireland, and Aveiro, Portugal. For more information about our company, visit https://www.squarespace.com/about/careers .\nOur Commitment\nToday, more than a million people around the globe use Squarespace to share different perspectives and experiences with the world. Not only do we embrace and celebrate the diversity of our customers, but we also work toward the same in our employees. At Squarespace, we are committed to equal employment opportunity regardless of race, color, ethnicity, ancestry, religion, national origin, gender, sex, gender identity or expression, sexual orientation, age, citizenship, marital or parental status, disability, veteran status, or other class protected by applicable law. We are proud to be an equal opportunity workplace.\n#LI-Hybrid\n#LI-Remote\nThank you in advance for providing the following details about your work history from your resume! This helps us ensure that your candidate information is accurate and consistent during the hiring process.\nSquarespace will never solicit your personal banking information or ask you to transfer money in connection with a job offer or interview. We also will not reach out to you via phone or SMS without your permission or knowledge.\nIf you plan to use AI in any capacity during your candidate journey, please review our Candidate AI Policy .\nTo apply: https://weworkremotely.com/remote-jobs/squarespace-staff-software-engineer-revenue-systems",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/squarespace-staff-software-engineer-revenue-systems",
-   "status": "Awaiting Review",
-   "id": "629c9010-0f90-4805-9c60-5ed958b5a499",
-   "createdAt": "2026-11-07T16:42:58+00:00",
-   "requiredSkills": "staff, engineer, revenue, headquarters, new, york, city, remote, squarespace, seeking, talented, evolve",
-   "postedAt": "2026-10-18",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "61e8696a3e3b8701",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/squarespace-staff-software-engineer-revenue-systems",
-     "found_at": "2026-11-16T20:45:51+00:00"
-    }
-   ],
-   "matchScore": 53,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Staff)"
-   ],
-   "discoveredBy": "rss"
   },
   {
    "title": "Senior Software Engineer",
@@ -1546,7 +1377,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-16T20:45:55+00:00"
+     "found_at": "2026-11-17T11:25:00+00:00"
     }
    ],
    "matchScore": 53,
@@ -1562,49 +1393,6 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Officer / Associate Manager, Litigation Management",
-   "company": "BRAC Bank",
-   "description": "Position: Officer / Associate Manager, Litigation Management (Legal and Recovery Division)\nCompany: BRAC Bank PLC\nGrade: OG-I to PO\nJob Location: Anywhere in Bangladesh\nEducation: Graduate or post-graduate from a UGC-approved university\nExperience: 2 to 5 years, preferably in litigation management or a legal department\nHow to Apply: Online through bdjobs.com\nDeadline: 16 November 2026\nAbout the Role\nBRAC Bank is hiring for litigation management in its Legal and Recovery Division.\nKey Responsibilities\nVet property documents, agreements and charge documents\nFile and dispose of cases (NI Act, Artha Rin Adalat Ain)\nCase MIS and regulatory reporting\nLegal opinions for bank functions\nLiaise with legal counsel and courts\nRequirements\nGraduate or post-graduate (UGC-approved university)\n2 to 5 years in litigation management or legal\nKnowledge of property and charge documents\nWord and Excel\nAbout BRAC Bank\nBRAC Bank PLC is one of the leading private commercial banks in Bangladesh and the pioneer of SME banking.\nHow to Apply\nInterested candidates can apply through the BRAC Bank’s circular on bdjobs.com (apply online) using the Apply Now button. The application deadline is 16 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: hotjobs1.bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , BRAC Bank’s circular on bdjobs.com (apply online)\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
-   "category": "MIS",
-   "location": "Anywhere in Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/officer-associate-manager-litigation-management-brac-bank/",
-   "status": "Awaiting Review",
-   "id": "dae616b6-0f79-46aa-9f79-86d41a30e378",
-   "createdAt": "2026-11-10T10:40:26+00:00",
-   "requiredSkills": "officer, associate, litigation, legal, recovery, division, brac, bank, plc, grade, location, anywhere",
-   "postedAt": "2026-11-10",
-   "deadline": "2026-11-16",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full Time",
-   "experienceText": "2 Years",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "c5143890f8b89d0e",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/officer-associate-manager-litigation-management-brac-bank/",
-     "found_at": "2026-11-16T20:45:46+00:00"
-    }
-   ],
-   "matchScore": 39,
-   "scoreParts": {
-    "title": 67,
-    "level": 10,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Manager)"
-   ],
-   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Officer / Senior Officer, Product Management & Marketing",
@@ -1632,7 +1420,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-16T20:45:44+00:00"
+     "found_at": "2026-11-17T11:24:48+00:00"
     }
    ],
    "matchScore": 39,
