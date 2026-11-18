@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-17T19:31:04+00:00",
+ "generatedAt": "2026-11-18T10:58:43+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 17,
+    "found": 20,
     "errors": [],
-    "raw": 270
+    "raw": 282
    },
    "jsonld": {
     "found": 3,
@@ -43,7 +43,7 @@
    "rss": {
     "found": 16,
     "errors": [],
-    "raw": 437
+    "raw": 432
    },
    "careers": {
     "found": 0,
@@ -57,11 +57,11 @@
    }
   },
   "counts": {
-   "total": 32,
-   "new": 0,
+   "total": 34,
+   "new": 3,
    "expired": 3,
-   "duplicatesFolded": 1,
-   "priorityA": 10,
+   "duplicatesFolded": 2,
+   "priorityA": 12,
    "priorityB": 11,
    "priorityC": 11
   },
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-17T19:31:04+00:00"
+  "ranAt": "2026-11-18T10:58:43+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-17T19:30:29+00:00"
+     "found_at": "2026-11-18T10:58:07+00:00"
     }
    ],
    "matchScore": 87,
@@ -118,6 +118,48 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Management Trainee Officer – SCM",
+   "company": "RFL Group",
+   "description": "Position: Management Trainee Officer – SCM\nCompany: RFL Group\nVacancies: 20\nJob Location: Anywhere in Bangladesh\nEducation: BSc in IPE/ME/EEE/ChE/MTE, or a bachelor’s / MBA in Supply Chain Management, Accounting, AIS, International Business, Finance & Banking, Management or a relevant discipline\nExperience: At most 2 years; freshers are encouraged\nAge: 22 to 30 years\nHow to Apply: Online through the bdjobs.com circular\nDeadline: 17 December 2026\nAbout the Role\nRFL Group is taking 20 Management Trainee Officers in supply chain: procurement, logistics, production planning and inventory.\nCore Responsibilities\nSupport and oversee end-to-end supply chain operations\nWork across procurement and logistics\nSupport production planning\nSupport inventory management in a manufacturing environment\nRequirements\nBSc in IPE, ME, EEE, ChE or MTE, or bachelor’s / MBA in SCM, Accounting, AIS, International Business, Finance & Banking or Management\nFreshers are encouraged; at most 2 years of experience\nAge 22 to 30 years\nStrong analytical, problem-solving and communication skills\nAbout RFL Group\nRFL Group, part of PRAN-RFL, is one of Bangladesh’s largest manufacturers of plastics, light engineering, bicycles, building materials and household goods.\nHow to Apply\nInterested candidates can apply through the bdjobs.com circular (online apply) using the Apply Now button. The application deadline is 17 December 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , bdjobs.com circular (online apply)\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Anywhere in Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/management-trainee-officer-scm-rfl-group/",
+   "status": "Awaiting Review",
+   "id": "07c3c854-9f56-4157-b1af-8e2535a38017",
+   "createdAt": "2026-11-18T10:57:55+00:00",
+   "requiredSkills": "trainee, officer, scm, rfl, group, vacancies, location, anywhere, bangladesh, education, bsc, ipe/me/eee/che/mte",
+   "postedAt": "2026-11-18",
+   "deadline": "2026-12-17",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "Fresher",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "57f363f52bd75685",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/management-trainee-officer-scm-rfl-group/",
+     "found_at": "2026-11-18T10:57:55+00:00"
+    }
+   ],
+   "matchScore": 83,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Management Trainee Officer, Key Accounts (Export)",
@@ -145,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-key-accounts-export-pran-group/",
-     "found_at": "2026-11-17T19:30:18+00:00"
+     "found_at": "2026-11-18T10:57:55+00:00"
     }
    ],
    "matchScore": 79,
@@ -187,7 +229,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
-     "found_at": "2026-11-17T19:30:18+00:00"
+     "found_at": "2026-11-18T10:57:55+00:00"
     }
    ],
    "matchScore": 79,
@@ -230,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-17T19:30:20+00:00"
+     "found_at": "2026-11-18T10:57:58+00:00"
     }
    ],
    "matchScore": 75,
@@ -272,7 +314,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-17T19:30:36+00:00"
+     "found_at": "2026-11-18T10:58:15+00:00"
     }
    ],
    "matchScore": 75,
@@ -314,7 +356,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-17T19:30:20+00:00"
+     "found_at": "2026-11-18T10:57:58+00:00"
     }
    ],
    "matchScore": 75,
@@ -356,7 +398,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-17T19:30:29+00:00"
+     "found_at": "2026-11-18T10:58:07+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +440,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/next-business-leader-nbl-management-trainee-grameenphone-ltd/",
-     "found_at": "2026-11-17T19:30:20+00:00"
+     "found_at": "2026-11-18T10:57:58+00:00"
     }
    ],
    "matchScore": 75,
@@ -412,6 +454,48 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Management Trainee Officer – Sales & Market Audit",
+   "company": "PRAN Group",
+   "description": "Position: Management Trainee Officer – Sales & Market Audit\nCompany: PRAN Group\nVacancies: 30\nJob Location: Anywhere in Bangladesh\nEducation: BBA / MBA\nAge: 24 to 32 years\nHow to Apply: Online through the bdjobs.com circular\nDeadline: 5 December 2026\nAbout the Role\nPRAN Group is taking 30 Management Trainee Officers for Sales & Market Audit, working across depots, distributors and markets nationwide.\nCore Responsibilities\nConduct field audits across depots, distributors and retail markets\nVerify sales transactions, trade promotions and distributor operations\nMonitor inventory, cash handling and policy compliance\nIdentify operational risks, irregularities and potential fraud\nPrepare audit reports with recommendations and follow up corrective actions\nRequirements\nBBA or MBA\nAge 24 to 32 years\nSound knowledge of accounting principles and auditing concepts\nExcellent report writing in Bangla and English; MS Excel, Word and PowerPoint\nWillingness to work extensively across Bangladesh\nAbout PRAN Group\nPRAN-RFL Group is one of Bangladesh’s largest conglomerates, making food, beverages, plastics and household products sold in over 140 countries.\nHow to Apply\nInterested candidates can apply through the bdjobs.com circular (online apply) using the Apply Now button. The application deadline is 5 December 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , bdjobs.com circular (online apply)\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Anywhere in Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/management-trainee-officer-sales-market-audit-pran-group/",
+   "status": "Awaiting Review",
+   "id": "548d67b2-57d4-472f-aab7-1385b7d7e352",
+   "createdAt": "2026-11-18T10:57:55+00:00",
+   "requiredSkills": "trainee, officer, sales, market, audit, pran, group, vacancies, location, anywhere, bangladesh, education",
+   "postedAt": "2026-11-18",
+   "deadline": "2026-12-05",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "Fresher",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "a4361f38caf04ed3",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/management-trainee-officer-sales-market-audit-pran-group/",
+     "found_at": "2026-11-18T10:57:55+00:00"
+    }
+   ],
+   "matchScore": 75,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -441,7 +525,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-category-management-pran-rfl/",
-     "found_at": "2026-11-17T19:30:20+00:00"
+     "found_at": "2026-11-18T10:57:58+00:00"
     }
    ],
    "matchScore": 75,
@@ -483,7 +567,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-17T19:30:20+00:00"
+     "found_at": "2026-11-18T10:58:02+00:00"
     }
    ],
    "matchScore": 75,
@@ -501,46 +585,46 @@
    "discoveredBy": "bdrecruit"
   },
   {
-   "title": "Data Analyst, Clinical Data Effectiveness",
-   "company": "Clover Health",
-   "description": "Headquarters: Remote - USA\nCounterpart Health is an AI‐powered physician enablement platform that delivers clinical insights to providers at the point of care. Our flagship product, Counterpart Assistant, is embedded into clinicians’ workflows and integrates with EHR systems, helping care teams drive value-based outcomes, close care gaps, and proactively manage chronic disease. As we grow our data ecosystem, expanding across legacy interoperability networks, QHIN/TEFCA connectivity, and direct HIE integrations, we need rigorous analytical ownership to ensure the clinical data powering our platform is complete, reliable, and actionable.\nYou will serve as the Subject Matter Expert (SME) for clinical data completeness and effectiveness at Counterpart Health. Sitting within the Data Products pillar, this role owns the end-to-end understanding of our clinical data lifecycle: where data comes from, where it breaks down, and how each vendor or integration pathway performs across our customer markets. Your analysis will directly shape vendor strategy, facility targeting, and data pipeline investments, thus ensuring that the clinical evidence our care teams depend on is consistently available and trustworthy.\nAs a Data Analyst, you will:\nProactively identify and monitor which healthcare facilities consistently generate high-quality, usable clinical documents (e.g., EHRs, discharge summaries, procedure notes) to precisely locate and quantify data gaps.\nConduct deep-dive analyses by mapping and correlating facility-specific data across disparate sources like structured claims, clinical care summaries (CCDAs), and ADT messages to uncover systematic patterns of missingness, latency,\nExperience with TEFCA/QHIN frameworks and evolving national interoperability standards.\nFamiliarity with vendor-specific data exchange platforms (e.g., Bamboo Health, HSX, Particle Health, Kno2).\nBackground in value-based care, population health, or clinical data operations.\nExperience with claims-clinical data reconciliation (e.g., matching EOBs to clinical encounter records).\nComfort working with Python or similar tools for data manipulation and automation.\nor incongruence in clinical records.\nEstablish and maintain clear, transparent reporting on ADT coverage across key geographic, organizational, and technological dimensions (e.g., by county, facility, and underlying EMR system).\nBased on rigorous analysis of data flow and quality, recommend and guide the implementation of optimal technical configurations for existing data vendors (e.g., Bamboo Health, PCC, Experian, HSX).\nConduct comprehensive evaluations and proof-of-concepts for potential new data integration technologies (e.g., Kno2 vs. Particle Health) to assess viability, quality improvements, and strategic fit.\nSystematically determine the existence and completeness of documentation associated with specific patient visits or encounters.\nDevelop a data-driven framework for prioritizing facility targets for direct data acquisition, assessing impact, cost-effectiveness, and technical feasibility.\nInform and guide vendor strategy around national initiatives such as TEFCA and QHIN adoption, ensuring Counterpart Health is positioned for compliant, high-quality data exchange.\nPartner cross-functionally with Product Managers to define data requirements, Engineers to implement reliable pipelines, and Clinical teams to validate data quality and clinical utility.\nAct as a critical liaison to identify and remove operational and technical bottlenecks, ensuring a predictable, scalable, and reliable clinical data flow across all customer markets.\nYou should get in touch if you have:\n5+ years of hands-on data analytics experience, with direct exposure to healthcare data interoperability\nStrong hands-on experience with healthcare data standards: HL7, CCDA, and ADT messages.\nProficiency in SQL and comfort working with large, complex datasets (claims, clinical logs, interoperability data).\nBackground in analyzing interoperability networks (e.g., Carequality, CommonWell, eHealthExchange) or HIE integrations.\nSkilled at data visualization and able to present complex findings to both technical and non-technical stakeholders.\nStrong investigative mindset, i.e., you enjoy digging into the “why” behind missing data and diverging metrics.\nSelf-directed and able to manage multiple analytical projects (vendor comparisons, visit-level reconciliation) without constant supervision.\nPreferred Qualifications:\nExperience with TEFCA/QHIN frameworks and evolving national interoperability standards.\nFamiliarity with vendor-specific data exchange platforms (e.g., Bamboo Health, HSX, Particle Health, Kno2).\nBackground in value-based care, population health, or clinical data operations.\nExperience with claims-clinical data reconciliation (e.g., matching EOBs to clinical encounter records).\nComfort working with Python or similar tools for data manipulation and automation.\nBenefits Overview :\nFinancial Well-Being : Our commitment to attracting and retaining top talent begins with a competitive base salary and equity opportunities. Additionally, we offer a performance-based bonus program, 401k matching, and regular compensation reviews to recognize and reward exceptional contributions.\nPhysical Well-Being : We prioritize the health and well-being of our employees and their families by providing comprehensive medical, dental, and vision coverage. Your health matters to us, and we invest in ensuring you have access to quality healthcare.\nMental Well-Being : We understand the importance of mental health in fostering productivity and maintaining work-life balance. To support this, we offer initiatives such as No-Meeting Fridays, monthly company holidays, access to mental health resources, and a generous flexible time-off policy. Additionally, we embrace a remote-first culture that supports collaboration and flexibility, allowing our team members to thrive from any location.\nProfessional Development : Developing internal talent is a priority for Clover. We offer learning programs, mentorship, professional development funding, and regular performance feedback and reviews.\nAdditional Perks:\nEmployee Stock Purchase Plan (ESPP) offering discounted equity opportunities\nReimbursement for office setup expenses\nMonthly cell phone & internet stipend\nRemote-first culture, enabling collaboration with global teams\nPaid parental leave for all new parents\nAnd much more!\nAbout Counterpart Health: In 2018, Clover Health set out to do something unprecedented: build a clinically intuitive, AI-enabled solution that fits within physicians' workflows to help support the earlier diagnosis and management of chronic conditions.\nYears later, that vision is a reality, with thousands of practitioners using Counterpart Assistant during patient visits to improve disease management, reduce medical expenses, and drive success in value-based care.\nWith an exceptional team of value-based care and technology experts, Counterpart Health is driving value-based care at the speed of software.\nCounterpart Health is a subsidiary of Clover Health. From Clover’s inception, Diversity & Inclusion have always been key to our success. We are an Equal Opportunity Employer and our employees are people with different strengths, experiences, perspectives, opinions, and backgrounds, who share a passion for improving people's lives. Diversity not only includes race and gender identity, but also age, disability status, veteran status, sexual orientation, religion and many other parts of one’s identity. All of our employee’s points of view are key to our success, and inclusion is everyone's responsibility.\n#LI-REMOTE\nPursuant to the San Francisco Fair Chance Ordinance, we will consider for employment qualified applicants with arrest and conviction records. We are an E-Verify company.\nTo apply: https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-   "category": "Data & Reporting",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
+   "title": "Full Stack Web Developer, IT",
+   "company": "Meghna Group of Industries",
+   "description": "Position: Full Stack Web Developer, IT\nCompany: Meghna Group of Industries\nJob Location: Gulshan, Dhaka\nEducation: Bachelor’s degree in Computer Science, Software Engineering, ICT or a related discipline\nExperience: At least 3 years of professional web development across frontend and backend\nHow to Apply: Online through the bdjobs.com circular\nDeadline: 26 November 2026\nAbout the Role\nMeghna Group is hiring a mid-level Full Stack Web Developer to build enterprise web applications and AI integrations.\nCore Responsibilities\nBuild, maintain and scale enterprise web applications and AI integrations\nDevelop with React, Next.js, TypeScript and Node.js / NestJS\nIntegrate Python services, mobile apps and AI systems\nDevelop features across frontend, APIs and databases\nSupport deployment and releases\nRequirements\nBachelor’s in CS, Software Engineering, ICT or related\nAt least 3 years of frontend and backend web development\nStrong JavaScript, working TypeScript, React and Node.js, HTML and CSS\nREST API development with authentication and secure data handling\nPractical SQL knowledge\nAbout Meghna Group of Industries\nMeghna Group of Industries is one of Bangladesh’s largest conglomerates, with businesses in food, cement, steel, paper and more.\nHow to Apply\nInterested candidates can apply through the bdjobs.com circular (online apply) using the Apply Now button. The application deadline is 26 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , bdjobs.com circular (online apply)\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "category": "Software Development",
+   "location": "Gulshan, Dhaka",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/full-stack-web-developer-it-meghna-group-of-industries/",
    "status": "Awaiting Review",
-   "id": "d4d872a9-65bc-4fda-8292-dd2e9dd1a36d",
-   "createdAt": "2026-10-19T08:23:14+00:00",
-   "requiredSkills": "analyst, clinical, effectiveness, headquarters, remote, usa, counterpart, health, powered, physician, enablement, platform",
-   "postedAt": "2026-10-19",
-   "deadline": null,
+   "id": "1cb1b3ef-4f1a-4f0f-adf7-bcaea50fe9cc",
+   "createdAt": "2026-11-18T10:57:55+00:00",
+   "requiredSkills": "full, stack, meghna, group, industries, location, gulshan, dhaka, education, bachelor, degree, computer",
+   "postedAt": "2026-11-18",
+   "deadline": "2026-11-26",
    "salaryMin": null,
    "salaryMax": null,
    "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "5dc9c6f9ff638276",
+   "employmentType": "Full Time",
+   "experienceText": "3 Years",
+   "area": "Gulshan",
+   "distanceKm": 3.5,
+   "fingerprint": "01699367f0bc7da8",
    "sources": [
     {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/clover-health-data-analyst-clinical-data-effectiveness",
-     "found_at": "2026-11-17T19:30:44+00:00"
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/full-stack-web-developer-it-meghna-group-of-industries/",
+     "found_at": "2026-11-18T10:57:55+00:00"
     }
    ],
-   "matchScore": 71,
+   "matchScore": 74,
    "scoreParts": {
     "title": 100,
-    "level": 65,
-    "skills": 17,
+    "level": 30,
+    "skills": 67,
     "preference": 100
    },
    "priority": "B",
    "gateNotes": [
     "Pay not stated, worth asking before you invest time"
    ],
-   "discoveredBy": "rss"
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "QA/DevOps Engineer",
@@ -568,7 +652,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-17T19:30:32+00:00"
+     "found_at": "2026-11-18T10:58:11+00:00"
     }
    ],
    "matchScore": 71,
@@ -610,7 +694,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-17T19:30:29+00:00"
+     "found_at": "2026-11-18T10:58:07+00:00"
     }
    ],
    "matchScore": 71,
@@ -638,7 +722,7 @@
    "id": "b92dcb60-31c4-49fb-bbf0-250ca7c6aa2c",
    "createdAt": "2026-11-06T10:15:47+00:00",
    "requiredSkills": "driven, automation, engineer, riseup, labs., required, python, snowflake, dbt, airflow.",
-   "postedAt": "2026-11-17",
+   "postedAt": "2026-11-18",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -652,7 +736,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/50",
-     "found_at": "2026-11-17T19:30:23+00:00"
+     "found_at": "2026-11-18T10:58:02+00:00"
     }
    ],
    "matchScore": 71,
@@ -695,7 +779,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-officer-british-council/",
-     "found_at": "2026-11-17T19:30:20+00:00"
+     "found_at": "2026-11-18T10:57:58+00:00"
     }
    ],
    "matchScore": 66,
@@ -737,7 +821,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-17T19:30:29+00:00"
+     "found_at": "2026-11-18T10:58:07+00:00"
     }
    ],
    "matchScore": 66,
@@ -779,7 +863,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-17T19:30:24+00:00"
+     "found_at": "2026-11-18T10:58:03+00:00"
     }
    ],
    "matchScore": 66,
@@ -821,7 +905,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-17T19:30:29+00:00"
+     "found_at": "2026-11-18T10:58:03+00:00"
     }
    ],
    "matchScore": 66,
@@ -863,7 +947,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-network-it-operations-business-systems-dominos-pizza-bangladesh/",
-     "found_at": "2026-11-17T19:30:18+00:00"
+     "found_at": "2026-11-18T10:57:55+00:00"
     }
    ],
    "matchScore": 64,
@@ -905,7 +989,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sales-marketing-aluminium-profile-meghna-group/",
-     "found_at": "2026-11-17T19:30:18+00:00"
+     "found_at": "2026-11-18T10:57:55+00:00"
     }
    ],
    "matchScore": 64,
@@ -947,7 +1031,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-graphics-design-digital-marketing-agrovet-square-pharmaceuticals/",
-     "found_at": "2026-11-17T19:30:18+00:00"
+     "found_at": "2026-11-18T10:57:55+00:00"
     }
    ],
    "matchScore": 62,
@@ -975,7 +1059,7 @@
    "id": "1cf2a899-624d-41ee-a425-d812b6fde9c5",
    "createdAt": "2026-10-04T09:14:08+00:00",
    "requiredSkills": "staff, engineer, field, nation., required, react, redux, css.",
-   "postedAt": "2026-11-17",
+   "postedAt": "2026-11-18",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -989,7 +1073,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/28",
-     "found_at": "2026-11-17T19:30:23+00:00"
+     "found_at": "2026-11-18T10:58:02+00:00"
     }
    ],
    "matchScore": 65,
@@ -1033,7 +1117,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-i-costing-budgeting-mis-factory-mj-group/",
-     "found_at": "2026-11-17T19:30:18+00:00"
+     "found_at": "2026-11-18T10:57:55+00:00"
     }
    ],
    "matchScore": 64,
@@ -1076,7 +1160,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-operations-mouchak-factory-marico-bangladesh/",
-     "found_at": "2026-11-17T19:30:18+00:00"
+     "found_at": "2026-11-18T10:57:55+00:00"
     }
    ],
    "matchScore": 64,
@@ -1119,7 +1203,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-17T19:30:29+00:00"
+     "found_at": "2026-11-18T10:58:07+00:00"
     }
    ],
    "matchScore": 61,
@@ -1162,7 +1246,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-17T19:30:29+00:00"
+     "found_at": "2026-11-18T10:58:07+00:00"
     }
    ],
    "matchScore": 61,
@@ -1205,7 +1289,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-17T19:30:23+00:00"
+     "found_at": "2026-11-18T10:58:02+00:00"
     }
    ],
    "matchScore": 57,
@@ -1234,7 +1318,7 @@
    "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
    "createdAt": "2026-10-14T08:18:26+00:00",
    "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-11-17",
+   "postedAt": "2026-11-18",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
@@ -1248,7 +1332,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/33",
-     "found_at": "2026-11-17T19:30:23+00:00"
+     "found_at": "2026-11-18T10:58:02+00:00"
     }
    ],
    "matchScore": 57,
@@ -1291,7 +1375,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-17T19:30:29+00:00"
+     "found_at": "2026-11-18T10:58:07+00:00"
     }
    ],
    "matchScore": 57,
@@ -1334,7 +1418,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/project-coordinator-commercial-bank-of-ceylon/",
-     "found_at": "2026-11-17T19:30:18+00:00"
+     "found_at": "2026-11-18T10:57:55+00:00"
     }
    ],
    "matchScore": 53,
@@ -1377,7 +1461,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-17T19:30:29+00:00"
+     "found_at": "2026-11-18T10:58:07+00:00"
     }
    ],
    "matchScore": 53,
@@ -1420,7 +1504,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-17T19:30:18+00:00"
+     "found_at": "2026-11-18T10:57:58+00:00"
     }
    ],
    "matchScore": 39,
