@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-18T10:58:43+00:00",
+ "generatedAt": "2026-11-18T19:13:48+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -43,7 +43,7 @@
    "rss": {
     "found": 16,
     "errors": [],
-    "raw": 432
+    "raw": 445
    },
    "careers": {
     "found": 0,
@@ -57,12 +57,12 @@
    }
   },
   "counts": {
-   "total": 34,
-   "new": 3,
-   "expired": 3,
+   "total": 35,
+   "new": 1,
+   "expired": 2,
    "duplicatesFolded": 2,
    "priorityA": 12,
-   "priorityB": 11,
+   "priorityB": 12,
    "priorityC": 11
   },
   "filters": {
@@ -74,7 +74,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-18T10:58:43+00:00"
+  "ranAt": "2026-11-18T19:13:47+00:00"
  },
  "jobs": [
   {
@@ -103,7 +103,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-18T10:58:07+00:00"
+     "found_at": "2026-11-18T19:13:11+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,7 +145,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-scm-rfl-group/",
-     "found_at": "2026-11-18T10:57:55+00:00"
+     "found_at": "2026-11-18T19:12:59+00:00"
     }
    ],
    "matchScore": 83,
@@ -187,7 +187,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-key-accounts-export-pran-group/",
-     "found_at": "2026-11-18T10:57:55+00:00"
+     "found_at": "2026-11-18T19:12:59+00:00"
     }
    ],
    "matchScore": 79,
@@ -229,7 +229,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
-     "found_at": "2026-11-18T10:57:55+00:00"
+     "found_at": "2026-11-18T19:12:59+00:00"
     }
    ],
    "matchScore": 79,
@@ -272,7 +272,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-18T10:57:58+00:00"
+     "found_at": "2026-11-18T19:13:03+00:00"
     }
    ],
    "matchScore": 75,
@@ -314,7 +314,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/carrot-business-intelligence-analyst",
-     "found_at": "2026-11-18T10:58:15+00:00"
+     "found_at": "2026-11-18T19:13:19+00:00"
     }
    ],
    "matchScore": 75,
@@ -356,7 +356,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-18T10:57:58+00:00"
+     "found_at": "2026-11-18T19:13:03+00:00"
     }
    ],
    "matchScore": 75,
@@ -398,7 +398,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-business-intelligence-analyst-contractor",
-     "found_at": "2026-11-18T10:58:07+00:00"
+     "found_at": "2026-11-18T19:13:11+00:00"
     }
    ],
    "matchScore": 75,
@@ -440,7 +440,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/next-business-leader-nbl-management-trainee-grameenphone-ltd/",
-     "found_at": "2026-11-18T10:57:58+00:00"
+     "found_at": "2026-11-18T19:13:03+00:00"
     }
    ],
    "matchScore": 75,
@@ -483,7 +483,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-sales-market-audit-pran-group/",
-     "found_at": "2026-11-18T10:57:55+00:00"
+     "found_at": "2026-11-18T19:12:59+00:00"
     }
    ],
    "matchScore": 75,
@@ -525,7 +525,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-category-management-pran-rfl/",
-     "found_at": "2026-11-18T10:57:58+00:00"
+     "found_at": "2026-11-18T19:13:03+00:00"
     }
    ],
    "matchScore": 75,
@@ -567,7 +567,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-18T10:58:02+00:00"
+     "found_at": "2026-11-18T19:13:06+00:00"
     }
    ],
    "matchScore": 75,
@@ -610,7 +610,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/full-stack-web-developer-it-meghna-group-of-industries/",
-     "found_at": "2026-11-18T10:57:55+00:00"
+     "found_at": "2026-11-18T19:12:59+00:00"
     }
    ],
    "matchScore": 74,
@@ -652,7 +652,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-18T10:58:11+00:00"
+     "found_at": "2026-11-18T19:13:14+00:00"
     }
    ],
    "matchScore": 71,
@@ -694,7 +694,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-18T10:58:07+00:00"
+     "found_at": "2026-11-18T19:13:11+00:00"
     }
    ],
    "matchScore": 71,
@@ -736,7 +736,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/50",
-     "found_at": "2026-11-18T10:58:02+00:00"
+     "found_at": "2026-11-18T19:13:06+00:00"
     }
    ],
    "matchScore": 71,
@@ -779,7 +779,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-officer-british-council/",
-     "found_at": "2026-11-18T10:57:58+00:00"
+     "found_at": "2026-11-18T19:13:03+00:00"
     }
    ],
    "matchScore": 66,
@@ -821,7 +821,49 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
-     "found_at": "2026-11-18T10:58:07+00:00"
+     "found_at": "2026-11-18T19:13:11+00:00"
+    }
+   ],
+   "matchScore": 66,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Software Engineer II",
+   "company": "G-P",
+   "description": "Headquarters: India\nURL: https://www.g-p.com\nAbout Us\nOur leading SaaS-based Global Employment PlatformTM enables clients to expand into over 180 countries quickly and efficiently, without the complexities of establishing local entities. At G-P, we’re dedicated to breaking down barriers to global business and creating opportunities for everyone, everywhere.\nOur diverse, remote-first teams are essential to our success. We empower our Dream Team members with flexibility and resources, fostering an environment where innovation thrives and every contribution is valued and celebrated.\nThe work you do here will positively impact lives around the world. We stand by our promise: Opportunity Made Possible. In addition to competitive compensation and benefits, we invite you to join us in expanding your skills and helping to reshape the future of work.\nAt G-P, we assist organizations in building exceptional global teams in days, not months—streamlining the hiring, onboarding, and management process to unlock growth potential for all.\nAbout the Company\nG-P is the world’s first agentic Global Employment Platform built to turn global HR and compliance into a growth engine. We’ve distilled 14+ years of legal and HR expertise into a single, secure tech stack that supports compliant employment in 180+ countries — allowing you to stop managing complexity and start driving revenue. Our technology is engineered to adapt entirely to you — designed to support you at every stage of your growth journey, and integrate securely with the systems you already use. By embedding global labor law intelligence directly into every cross-border workflow, we empower you to scale your workforce in minutes, protect your business from liability, and operate with the agility of a local competitor — anywhere on Earth.\nAbout this Position\nWe are looking for a mid-level Software Engineer II to design, build, and scale our AI powered product features with agentic experiences using AI agents and multi-agent workflows. Operating at the crossroads of Agentic AI and full-stack product engineering, you will harness the latest foundation or purpose-fit models and modern agent frameworks to resolve intricate business challenges.\nWhat you will do:\nDesign, build, and operate production AI features across the stack (APIs, services, and product UI) using modern cloud architectures\nDesign and implement agentic systems: tool-calling agents, multi-step workflows, and multi-agent orchestration patterns with guardrails, authz, rate limits, retries, fallbacks, and safe human-in-the-loop paths\nOwn quality loops: offline/online evals, benchmarks, regression sets, prompt/version management, A/B or canary rollouts, and continuous improvement of evals, accuracy, latency, and cost\nInstrument AI systems for production: tracing, token/cost metrics, failure taxonomy, grounding/hallucination signals, and operational runbooks\nCollaborate with Product and UX to translate ambiguous use cases into shippable, measurable outcomes\nContribute to shared AI platform patterns (agent frameworks, RAG/retrieval, memory, tool registries, evaluation harnesses) and evolve the SDLC for AI delivery\nWhat we're looking for:\n3+ years building Agentic / SaaS / enterprise software in distributed teams\nStrong full-stack foundations: Python, TypeScript, React, Node.js, APIs, and modern databases\nHands-on experience with AWS Bedrock, AgentCore, Strands Agents SDK (or comparable frameworks like LangGraph, CrewAI, or Claude Agent SDK), including function/tool calling, structured outputs, and streaming responses.\nDeep practical understanding of multi-agent orchestration, context management, and API integrations across models.\nHands-on experience shipping, scaling and improving AI applications in production (LLM apps, RAG, copilots, or agent workflows)\nWorking knowledge of agent design: tools/function calling, state/memory, orchestration graphs, and failure handling\nFamiliarity with cloud architectures (AWS preferred) and shipping services with CI/CD, monitoring, and secure defaults\nStartup / high-growth experience desirable\nOur ranges are established using objective market benchmarking data for this level of work. Final placement within the range is determined by gender-neutral criteria, including the candidate's relevant skills, experience, and specific qualifications for the role.\nActual compensation for this position may vary and will depend on multiple factors such as relevant qualifications, experience, education, and geographic location. For Full-Time Regular Employees, this position is also eligible for additional compensation as follows:\nSales Roles: This position is eligible for a commission structure in addition to base salary.\nNon-Sales Roles: This position is eligible for an annual bonus which is paid dependent on various factors, including and without limitation, individual and company performance in addition to base salary.\nBenefits\nG-P values its employees and offers excellent benefits and perks including generous paid parental leave, flexible time off, spending accounts, medical insurance, dental insurance, vision insurance, sabbatical after 5 years and more.\nIndividuals residing, or applying to work, in the United States: California or Philadelphia , Pennsylvania, please review the following additional information:\nG-P will consider qualified applicants with arrest or conviction records in accordance with the California Fair Chance Act, Los Angeles City Fair Chance Act Ordinance, Los Angeles County Fair Chance Act Ordinance, and San Francisco Fair Chance Act Ordinance. Los Angeles applicants can review additional information regarding the Los Angeles City Fair Chance Act here: Fair Chance Initiative for Hiring Ordinance , and Philadelphia applicants can review information pertaining to Philadelphia’s Fair Criminal Record Screening Standards Ordinance here: Fair Chance Poster . Any consideration of a candidate’s background check with arrest or conviction records will include an individualized assessment based on the factors required by applicable law, including the candidate’s specific record and the duties and requirements of the specific job.\nG-P. Global Made Possible.\nG-P is a proud Equal Opportunity Employer, and we are committed to building and maintaining a diverse, equitable and inclusive culture that celebrates authenticity. We prohibit discrimination and harassment against employees or applicants on the basis of race, color, creed, religion, national origin, ancestry, citizenship status, age, sex or gender (including pregnancy, childbirth, and pregnancy-related conditions), gender identity or expression (including transgender status), sexual orientation, marital status, military service and veteran status, physical or mental disability, genetic information, or any other legally protected status.\nG-P also is committed to providing reasonable accommodations to individuals with disabilities. Individuals with disabilities are encouraged to apply for these positions. If you need an accommodation due to a disability during the interview process, please contact us at careers@g-p.com.\nTo apply: https://weworkremotely.com/remote-jobs/g-p-software-engineer-ii",
+   "category": "Software Development",
+   "location": "Remote (Asia Only)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/g-p-software-engineer-ii",
+   "status": "Awaiting Review",
+   "id": "d22ff176-826f-45d5-a008-cb7f5cb14832",
+   "createdAt": "2026-11-18T19:13:11+00:00",
+   "requiredSkills": "engineer, headquarters, india, url, https, //www.g, p.com, about, leading, saas, based, global",
+   "postedAt": "2026-11-18",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "e050c7110f4d0efe",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/g-p-software-engineer-ii",
+     "found_at": "2026-11-18T19:13:11+00:00"
     }
    ],
    "matchScore": 66,
@@ -863,7 +905,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-18T10:58:03+00:00"
+     "found_at": "2026-11-18T19:13:07+00:00"
     }
    ],
    "matchScore": 66,
@@ -905,7 +947,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-18T10:58:03+00:00"
+     "found_at": "2026-11-18T19:13:07+00:00"
     }
    ],
    "matchScore": 66,
@@ -947,7 +989,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-network-it-operations-business-systems-dominos-pizza-bangladesh/",
-     "found_at": "2026-11-18T10:57:55+00:00"
+     "found_at": "2026-11-18T19:12:59+00:00"
     }
    ],
    "matchScore": 64,
@@ -989,7 +1031,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sales-marketing-aluminium-profile-meghna-group/",
-     "found_at": "2026-11-18T10:57:55+00:00"
+     "found_at": "2026-11-18T19:12:59+00:00"
     }
    ],
    "matchScore": 64,
@@ -1031,7 +1073,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-graphics-design-digital-marketing-agrovet-square-pharmaceuticals/",
-     "found_at": "2026-11-18T10:57:55+00:00"
+     "found_at": "2026-11-18T19:12:59+00:00"
     }
    ],
    "matchScore": 62,
@@ -1073,7 +1115,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/28",
-     "found_at": "2026-11-18T10:58:02+00:00"
+     "found_at": "2026-11-18T19:13:06+00:00"
     }
    ],
    "matchScore": 65,
@@ -1117,7 +1159,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-i-costing-budgeting-mis-factory-mj-group/",
-     "found_at": "2026-11-18T10:57:55+00:00"
+     "found_at": "2026-11-18T19:12:59+00:00"
     }
    ],
    "matchScore": 64,
@@ -1160,7 +1202,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-operations-mouchak-factory-marico-bangladesh/",
-     "found_at": "2026-11-18T10:57:55+00:00"
+     "found_at": "2026-11-18T19:12:59+00:00"
     }
    ],
    "matchScore": 64,
@@ -1203,7 +1245,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data",
-     "found_at": "2026-11-18T10:58:07+00:00"
+     "found_at": "2026-11-18T19:13:11+00:00"
     }
    ],
    "matchScore": 61,
@@ -1246,7 +1288,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-18T10:58:07+00:00"
+     "found_at": "2026-11-18T19:13:11+00:00"
     }
    ],
    "matchScore": 61,
@@ -1289,7 +1331,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-18T10:58:02+00:00"
+     "found_at": "2026-11-18T19:13:06+00:00"
     }
    ],
    "matchScore": 57,
@@ -1332,7 +1374,7 @@
     {
      "source": "BD Tech Jobs",
      "url": "https://www.bdtechjobs.com/jobs/33",
-     "found_at": "2026-11-18T10:58:02+00:00"
+     "found_at": "2026-11-18T19:13:06+00:00"
     }
    ],
    "matchScore": 57,
@@ -1375,7 +1417,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
-     "found_at": "2026-11-18T10:58:07+00:00"
+     "found_at": "2026-11-18T19:13:11+00:00"
     }
    ],
    "matchScore": 57,
@@ -1418,7 +1460,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/project-coordinator-commercial-bank-of-ceylon/",
-     "found_at": "2026-11-18T10:57:55+00:00"
+     "found_at": "2026-11-18T19:12:59+00:00"
     }
    ],
    "matchScore": 53,
@@ -1461,7 +1503,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-18T10:58:07+00:00"
+     "found_at": "2026-11-18T19:13:11+00:00"
     }
    ],
    "matchScore": 53,
@@ -1504,7 +1546,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-18T10:57:58+00:00"
+     "found_at": "2026-11-18T19:13:03+00:00"
     }
    ],
    "matchScore": 39,
