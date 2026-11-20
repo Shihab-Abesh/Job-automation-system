@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-19T19:18:23+00:00",
+ "generatedAt": "2026-11-20T10:50:08+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,17 +31,19 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 19,
+    "found": 18,
     "errors": [],
-    "raw": 279
+    "raw": 280
    },
    "jsonld": {
-    "found": 3,
-    "errors": [],
-    "raw": 20
+    "found": 0,
+    "errors": [
+     "BD Tech Jobs: empty or refused response for https://www.bdtechjobs.com/"
+    ],
+    "raw": 0
    },
    "rss": {
-    "found": 19,
+    "found": 18,
     "errors": [],
     "raw": 403
    },
@@ -57,12 +59,12 @@
    }
   },
   "counts": {
-   "total": 35,
-   "new": 4,
-   "expired": 3,
-   "duplicatesFolded": 3,
-   "priorityA": 10,
-   "priorityB": 11,
+   "total": 32,
+   "new": 1,
+   "expired": 2,
+   "duplicatesFolded": 2,
+   "priorityA": 9,
+   "priorityB": 9,
    "priorityC": 14
   },
   "filters": {
@@ -74,7 +76,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-19T19:18:23+00:00"
+  "ranAt": "2026-11-20T10:50:08+00:00"
  },
  "jobs": [
   {
@@ -103,7 +105,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-19T19:17:47+00:00"
+     "found_at": "2026-11-20T10:49:31+00:00"
     }
    ],
    "matchScore": 87,
@@ -145,7 +147,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-scm-rfl-group/",
-     "found_at": "2026-11-19T19:17:35+00:00"
+     "found_at": "2026-11-20T10:49:20+00:00"
     }
    ],
    "matchScore": 83,
@@ -187,7 +189,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-key-accounts-export-pran-group/",
-     "found_at": "2026-11-19T19:17:35+00:00"
+     "found_at": "2026-11-20T10:49:20+00:00"
     }
    ],
    "matchScore": 79,
@@ -229,7 +231,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
-     "found_at": "2026-11-19T19:17:35+00:00"
+     "found_at": "2026-11-20T10:49:20+00:00"
     }
    ],
    "matchScore": 79,
@@ -272,7 +274,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-19T19:17:38+00:00"
+     "found_at": "2026-11-20T10:49:23+00:00"
     }
    ],
    "matchScore": 75,
@@ -314,7 +316,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-19T19:17:38+00:00"
+     "found_at": "2026-11-20T10:49:23+00:00"
     }
    ],
    "matchScore": 75,
@@ -327,49 +329,6 @@
    "priority": "A",
    "gateNotes": [
     "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Next Business Leader (NBL) – Management Trainee",
-   "company": "Grameenphone Ltd",
-   "description": "Position: Next Business Leader (NBL), Management Trainee\nCompany: Grameenphone Ltd\nProgram Length: 12 months, rotational\nJob Location: Dhaka, Bangladesh\nEducation: Bachelor’s degree, preferably in Business, STEM or a related field\nExperience: Fresh graduates or 0 to 1 year\nDeadline: 19 November 2026\nAbout the Role\nGrameenphone’s Next Business Leader (NBL) program is an accelerated career pathway for promising fresh graduates. NBLs spend 12 months rotating across GP’s circles and head office, then move into one division and work on company-wide strategic projects.\nProgram Structure\nCircle Stint (3 months): revenue functions, technology, customer management and operations\nHead Office Stint (3 months): strategic insights and support functions\nRemaining 6 months: an in-depth stint in one division plus company-wide strategic projects\nSkills training, shadow partners, an open-book quiz and a solution presentation to the management team\nRequirements\nBachelor’s degree, preferably in Business, STEM or a related field\nFresh graduates, or 0 to 1 year of work experience\nFinal semester students completing their studies by December 2026 are encouraged to apply\nAttach your updated resume when applying\nAbout Grameenphone\nGrameenphone is Bangladesh’s largest mobile operator and part of the Telenor Group.\nHow to Apply\nInterested candidates can apply through Grameenphone’s own LinkedIn job listing using the Apply Now button. The application deadline is 19 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: linkedin.com (where we found this vacancy)\nOfficial link: linkedin.com , Grameenphone’s own LinkedIn job listing\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/next-business-leader-nbl-management-trainee-grameenphone-ltd/",
-   "status": "Awaiting Review",
-   "id": "2c289f3a-76d2-42f1-9f2a-1aaf87fe80a7",
-   "createdAt": "2026-11-10T10:40:26+00:00",
-   "requiredSkills": "next, business, leader, nbl, trainee, grameenphone, program, length, months, rotational, location, dhaka",
-   "postedAt": "2026-11-10",
-   "deadline": "2026-11-19",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full Time",
-   "experienceText": "Fresher",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "75c5d1e054ff3ee5",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/next-business-leader-nbl-management-trainee-grameenphone-ltd/",
-     "found_at": "2026-11-19T19:17:38+00:00"
-    }
-   ],
-   "matchScore": 75,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
    ],
    "discoveredBy": "bdrecruit"
   },
@@ -399,7 +358,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-sales-market-audit-pran-group/",
-     "found_at": "2026-11-19T19:17:35+00:00"
+     "found_at": "2026-11-20T10:49:20+00:00"
     }
    ],
    "matchScore": 75,
@@ -441,7 +400,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-category-management-pran-rfl/",
-     "found_at": "2026-11-19T19:17:38+00:00"
+     "found_at": "2026-11-20T10:49:23+00:00"
     }
    ],
    "matchScore": 75,
@@ -483,7 +442,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-19T19:17:42+00:00"
+     "found_at": "2026-11-20T10:49:26+00:00"
     }
    ],
    "matchScore": 75,
@@ -526,7 +485,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/full-stack-web-developer-it-meghna-group-of-industries/",
-     "found_at": "2026-11-19T19:17:35+00:00"
+     "found_at": "2026-11-20T10:49:20+00:00"
     }
    ],
    "matchScore": 74,
@@ -568,7 +527,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-19T19:17:50+00:00"
+     "found_at": "2026-11-20T10:49:35+00:00"
     }
    ],
    "matchScore": 71,
@@ -587,11 +546,11 @@
   {
    "title": "Backend Product Software Engineer",
    "company": "Dropbox",
-   "description": "Headquarters: Remote - Mexico\nRole Description\nAs a Product Engineer at Dropbox, you will play a pivotal role in shaping the future of collaboration and file sharing. Your responsibilities will revolve around developing and enhancing our suite of Dropbox Products to deliver exceptional user experiences. You will work closely with cross-functional teams, turning innovative ideas into robust, scalable, and user-friendly features.\nThis year, Dropbox is on a mission to expedite the creation and implementation of AI-enable products by providing a comprehensive AI technology stack that facilitates speedy prototyping and reliable deployment of AI-driven functionalities.\nOur Engineering Career Framework is viewable by anyone outside the company and describes what’s expected for our engineers at each of our career levels. Check out our blog post on this topic and more here .\nResponsibilities\nIndependently identify and deliver software solutions through a set of milestones spanning a specific product focus or a multi-component system\nWrite code alongside junior engineers, demonstrating hands-on technical leadership, understanding root causes, and leading by example.\nCollaborate closely with product managers, designers, and analysts to deeply understand user needs and develop products that meet those needs.\nDevelop and execute both short and long-term roadmaps, balancing business impact, user experience, and technical excellence.\nFoster a positive team and company culture through mentorship, participation in interviews, and engagement in new initiatives.\nEstablish and nurture relationships with other engineering teams and collaborate effectively with other functions within Dropbox.\nOn-call work may be necessary occasionally to help address bugs, outages, or other operational issues, with the goal of maintaining a stable and high-quality experience for our customers.\nRequirements\n5 + years of software engineering or related industry experience.\nBS degree in Computer Science or related technical field involving coding (e.g., physics or mathematics), or equivalent technical experience.\nProven track record in identifying and delivering software solutions through a set of milestones spanning a specific product focus or a multi-component system\nD evelop ed and shipp ed large-scale web applications with a user-centric mindset.\nProficiency in building user-facing software and supporting systems and libraries for web and/or desktop platforms.\nPreferred Qualifications\nContributions to o pen s ource p rojects or t echnical c ommunitie s\nFull-Stack Development\nTechnologies: MySQL , Python, Go, Java, Rust\nDurable Skills\nAI fluency means using these tools to amplify human judgment, not replace it. We believe people with these skills will thrive as work and technology continue to evolve:\nAwareness: Understand yourself and others.\nJudgment: Evaluate information and make decisions in complex situations.\nAdaptability: Learn, adjust, and stay effective through change.\nConnection: Communicate, collaborate, and build trust.\nTo learn more about why these skills matter and what the data shows about thriving through change, read this blog post from our Chief People Officer, Melanie Rosenwasser.\nTo apply: https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer",
+   "description": "Headquarters: Remote - Mexico\nRole Description\nAs a Product Engineer at Dropbox, you will play a pivotal role in shaping the future of collaboration and file sharing. Your responsibilities will revolve around developing and enhancing our suite of Dropbox Products to deliver exceptional user experiences. You will work closely with cross-functional teams, turning innovative ideas into robust, scalable, and user-friendly features.\nThis year, Dropbox is on a mission to expedite the creation and implementation of AI-enable d products by providing a comprehensive technology stack that facilitates rapid prototyping and reliable deployment of AI- augmented functionalit y .\nOur Engineering Career Framework is viewable by anyone outside the company and describes what’s expected for our engineers at each of our career levels. Check out our blog post on this topic and more here .\nResponsibilities\nDesigning and building scalable software to reach millions of daily users.\nCollaborating closely with product managers, designers, and analysts to understand user needs and develop products that meet those needs.\nDeveloping and executing short and long-term roadmaps, balancing business impact, user experience, and technical quality.\nActively contributing to our team and company culture through mentorship, participation in interviews, and involvement in new initiatives.\nSupporting fellow engineers through feedback, code reviews, and improvement of internal tools and processes.\nOn-call work may be necessary occasionally to help address bugs, outages, or other operational issues, with the goal of maintaining a stable and high-quality experience for our customers.\nRequirements\n3+ years of experience in software engineering or related industry roles.\nBS degree in Computer Science or related technical field involving coding (e.g., physics or mathematics), or equivalent technical experience.\nDemonstrated success in developing and deploying large-scale web applications with a user-focused approach.\nProficiency in building user-facing software and supporting web/desktop systems and libraries.\nAbility to handle full-stack projects and deliver minimum viable products efficiently.\nWillingness to participate in on-call rotations if required by the team.\nPreferred Qualifications\nContributions to o pen s ource p rojects or t echnical c ommunitie s\nFull-Stack Development\nTechnologies: Python, Go, Java, Rust, MySQL\nDurable Skills\nAI fluency means using these tools to amplify human judgment, not replace it. We believe people with these skills will thrive as work and technology continue to evolve:\nAwareness: Understand yourself and others.\nJudgment: Evaluate information and make decisions in complex situations.\nAdaptability: Learn, adjust, and stay effective through change.\nConnection: Communicate, collaborate, and build trust.\nTo learn more about why these skills matter and what the data shows about thriving through change, read this blog post from our Chief People Officer, Melanie Rosenwasser.\nTo apply: https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer-1",
    "category": "Software Development",
    "location": "Remote (Anywhere in the World)",
    "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer",
+   "url": "https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer-1",
    "status": "Awaiting Review",
    "id": "4223533a-4526-40af-9ad8-7b710ff2443e",
    "createdAt": "2026-11-19T19:17:42+00:00",
@@ -610,12 +569,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer-1",
-     "found_at": "2026-11-19T19:17:42+00:00"
-    },
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer",
-     "found_at": "2026-11-19T19:17:42+00:00"
+     "found_at": "2026-11-20T10:49:27+00:00"
     }
    ],
    "matchScore": 71,
@@ -657,7 +611,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-19T19:17:47+00:00"
+     "found_at": "2026-11-20T10:49:31+00:00"
     }
    ],
    "matchScore": 71,
@@ -672,49 +626,6 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
-  },
-  {
-   "title": "Data Driven QA Automation Engineer",
-   "company": "Riseup Labs",
-   "description": "Data Driven QA Automation Engineer position at Riseup Labs. Required skills: Python, Sql, Snowflake, Dbt, Airflow.",
-   "category": "Software Quality Assurance",
-   "location": "Canada (Vancouver/Calgary/Toronto), Dhaka",
-   "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/50",
-   "status": "Awaiting Review",
-   "id": "b92dcb60-31c4-49fb-bbf0-250ca7c6aa2c",
-   "createdAt": "2026-11-06T10:15:47+00:00",
-   "requiredSkills": "driven, automation, engineer, riseup, labs., required, python, snowflake, dbt, airflow.",
-   "postedAt": "2026-11-19",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full time",
-   "experienceText": "",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "4a7d65175e028c0e",
-   "sources": [
-    {
-     "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/50",
-     "found_at": "2026-11-19T19:17:42+00:00"
-    }
-   ],
-   "matchScore": 71,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
-   ],
-   "discoveredBy": "jsonld"
   },
   {
    "title": "IT Officer",
@@ -742,7 +653,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-officer-british-council/",
-     "found_at": "2026-11-19T19:17:38+00:00"
+     "found_at": "2026-11-20T10:49:23+00:00"
     }
    ],
    "matchScore": 66,
@@ -784,7 +695,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/g-p-software-engineer-ii",
-     "found_at": "2026-11-19T19:17:47+00:00"
+     "found_at": "2026-11-20T10:49:31+00:00"
     }
    ],
    "matchScore": 66,
@@ -826,7 +737,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-19T19:17:42+00:00"
+     "found_at": "2026-11-20T10:49:27+00:00"
     }
    ],
    "matchScore": 66,
@@ -868,7 +779,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-19T19:17:42+00:00"
+     "found_at": "2026-11-20T10:49:27+00:00"
     }
    ],
    "matchScore": 66,
@@ -910,49 +821,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-network-it-operations-business-systems-dominos-pizza-bangladesh/",
-     "found_at": "2026-11-19T19:17:35+00:00"
-    }
-   ],
-   "matchScore": 64,
-   "scoreParts": {
-    "title": 100,
-    "level": 55,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Executive, Sales & Marketing (Aluminium Profile)",
-   "company": "Meghna Group",
-   "description": "Position: Executive, Sales & Marketing, Aluminium Profile\nCompany: Meghna Group of Industries\nJob Location: Anywhere in Bangladesh\nEducation: Bachelor’s\nExperience: At least 2 years (group of companies, cement, glass and ceramics, steel, metal and aluminium)\nAge: At least 25 years\nSalary: Negotiable\nHow to Apply: Online through the circular on bdjobs.com\nDeadline: 19 November 2026\nAbout the Role\nMeghna Group is looking for a Sales & Marketing Executive for its aluminium profile business.\nCore Responsibilities\nVisit dealer and retailer outlets on a regular route\nKeep existing customers and find new markets\nCollect market data on competitors’ sales, campaigns and market share\nCollect orders and place them through the software\nAchieve sales targets and coordinate delivery with distribution and logistics\nPrepare sales reports, forecasts and market analysis\nRequirements\nBachelor’s degree\nAt least 2 years of experience, age at least 25\nGood interpersonal and presentation skills\nMS Word, Excel, PowerPoint and email\nAbout Meghna Group\nMeghna Group of Industries is one of the leading business conglomerates in Bangladesh.\nHow to Apply\nInterested candidates can apply through the Meghna Group of Industries’s circular on bdjobs.com (apply online there) using the Apply Now button. The application deadline is 19 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , Meghna Group of Industries’s circular on bdjobs.com (apply online there)\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Anywhere in Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/executive-sales-marketing-aluminium-profile-meghna-group/",
-   "status": "Awaiting Review",
-   "id": "53393b26-d7f3-4fac-9665-d01446fda07d",
-   "createdAt": "2026-11-14T09:43:45+00:00",
-   "requiredSkills": "executive, sales, marketing, aluminium, profile, meghna, group, industries, location, anywhere, bangladesh, education",
-   "postedAt": "2026-11-14",
-   "deadline": "2026-11-19",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "Negotiable",
-   "employmentType": "Full Time",
-   "experienceText": "2 Years",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "3fa9c0373129fc0d",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/executive-sales-marketing-aluminium-profile-meghna-group/",
-     "found_at": "2026-11-19T19:17:38+00:00"
+     "found_at": "2026-11-20T10:49:20+00:00"
     }
    ],
    "matchScore": 64,
@@ -994,7 +863,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-i-costing-budgeting-mis-factory-mj-group/",
-     "found_at": "2026-11-19T19:17:35+00:00"
+     "found_at": "2026-11-20T10:49:20+00:00"
     }
    ],
    "matchScore": 64,
@@ -1037,7 +906,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-operations-mouchak-factory-marico-bangladesh/",
-     "found_at": "2026-11-19T19:17:35+00:00"
+     "found_at": "2026-11-20T10:49:20+00:00"
     }
    ],
    "matchScore": 64,
@@ -1080,7 +949,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-query-planner-reflections",
-     "found_at": "2026-11-19T19:17:47+00:00"
+     "found_at": "2026-11-20T10:49:31+00:00"
     }
    ],
    "matchScore": 61,
@@ -1123,7 +992,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/legion-principal-software-engineer-devops",
-     "found_at": "2026-11-19T19:17:47+00:00"
+     "found_at": "2026-11-20T10:49:31+00:00"
     }
    ],
    "matchScore": 61,
@@ -1166,7 +1035,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-19T19:17:47+00:00"
+     "found_at": "2026-11-20T10:49:31+00:00"
     }
    ],
    "matchScore": 61,
@@ -1209,7 +1078,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-19T19:17:42+00:00"
+     "found_at": "2026-11-20T10:49:26+00:00"
     }
    ],
    "matchScore": 57,
@@ -1227,32 +1096,32 @@
    "discoveredBy": "bdrecruit"
   },
   {
-   "title": "Mid to Senior Level PHP Developer",
-   "company": "Invento",
-   "description": "Mid to Senior Level PHP Developer position at Invento. Required skills: Php, Laravel, Codeigniter, Python, Django.",
-   "category": "Software Development",
-   "location": "New DOHS Mohakhali, Dhaka",
-   "source": "BD Tech Jobs",
-   "url": "https://www.bdtechjobs.com/jobs/33",
+   "title": "Executive – MIS",
+   "company": "Runner Motors",
+   "description": "Position: Executive – MIS\nCompany: RUNNER Motors PLC\nJob Location: Tejgaon Industrial Area, Dhaka\nEducation: BBA in Marketing or Management Information Systems\nExperience: 5-10 years (automobile, battery, manufacturing)\nAge: 25 to 30 years\nSalary: Negotiable\nDeadline: 20 December 2026\nAbout the Role\nRUNNER Motors is hiring an Executive – MIS to build its marketing and sales reports and dashboards.\nCore Responsibilities\nPrepare daily, weekly and monthly marketing MIS reports\nAnalyse sales performance, market trends and campaign data\nReport on targets, achievements and dealer performance\nMaintain databases and dashboards\nRequirements\nBBA in Marketing or MIS\n5-10 years of experience\nStrong MS Excel (Pivot, VLOOKUP, XLOOKUP); Power BI and ERP an advantage\nAge 25 to 30 years\nAbout Runner Motors\nRUNNER Motors PLC, part of Runner Group, makes and sells motorcycles and commercial vehicles in Bangladesh.\nHow to Apply\nInterested candidates can apply through the Apply online through bdjobs.com using the Apply Now button. The application deadline is 20 December 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , Apply online through bdjobs.com\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "category": "MIS",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/executive-mis-runner-motors/",
    "status": "Awaiting Review",
-   "id": "46071c01-1584-4e8c-8192-e7a3409aa085",
-   "createdAt": "2026-10-14T08:18:26+00:00",
-   "requiredSkills": "mid, senior, level, invento., required, laravel, codeigniter, python, django.",
-   "postedAt": "2026-11-19",
-   "deadline": null,
+   "id": "f82d62db-4f48-4210-9d95-bc56633aacea",
+   "createdAt": "2026-11-20T10:49:20+00:00",
+   "requiredSkills": "executive, mis, runner, motors, plc, location, tejgaon, industrial, area, dhaka, education, bba",
+   "postedAt": "2026-11-20",
+   "deadline": "2026-12-20",
    "salaryMin": null,
    "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full time",
-   "experienceText": "",
-   "area": "Mohakhali",
-   "distanceKm": 1.9,
-   "fingerprint": "7204b33ddccbaa2f",
+   "salaryText": "Negotiable",
+   "employmentType": "Full Time",
+   "experienceText": "5 Years",
+   "area": "Tejgaon Industrial Area",
+   "distanceKm": 0.6,
+   "fingerprint": "0c090922827d15c4",
    "sources": [
     {
-     "source": "BD Tech Jobs",
-     "url": "https://www.bdtechjobs.com/jobs/33",
-     "found_at": "2026-11-19T19:17:42+00:00"
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/executive-mis-runner-motors/",
+     "found_at": "2026-11-20T10:49:20+00:00"
     }
    ],
    "matchScore": 57,
@@ -1264,10 +1133,9 @@
    },
    "priority": "C",
    "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Senior)"
+    "Pay not stated, worth asking before you invest time"
    ],
-   "discoveredBy": "jsonld"
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Senior Software Engineer, Query",
@@ -1295,7 +1163,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer-query",
-     "found_at": "2026-11-19T19:17:47+00:00"
+     "found_at": "2026-11-20T10:49:31+00:00"
     }
    ],
    "matchScore": 53,
@@ -1338,7 +1206,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer",
-     "found_at": "2026-11-19T19:17:50+00:00"
+     "found_at": "2026-11-20T10:49:35+00:00"
     }
    ],
    "matchScore": 53,
@@ -1381,7 +1249,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-delivery-engineering",
-     "found_at": "2026-11-19T19:17:47+00:00"
+     "found_at": "2026-11-20T10:49:31+00:00"
     }
    ],
    "matchScore": 53,
@@ -1424,7 +1292,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/project-coordinator-commercial-bank-of-ceylon/",
-     "found_at": "2026-11-19T19:17:38+00:00"
+     "found_at": "2026-11-20T10:49:23+00:00"
     }
    ],
    "matchScore": 53,
@@ -1467,7 +1335,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-issuing",
-     "found_at": "2026-11-19T19:17:47+00:00"
+     "found_at": "2026-11-20T10:49:31+00:00"
     }
    ],
    "matchScore": 53,
@@ -1510,7 +1378,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-19T19:17:47+00:00"
+     "found_at": "2026-11-20T10:49:31+00:00"
     }
    ],
    "matchScore": 53,
@@ -1553,7 +1421,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-19T19:17:38+00:00"
+     "found_at": "2026-11-20T10:49:23+00:00"
     }
    ],
    "matchScore": 39,
