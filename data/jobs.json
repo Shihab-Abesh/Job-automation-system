@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-20T10:50:08+00:00",
+ "generatedAt": "2026-11-20T18:56:49+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -43,9 +43,9 @@
     "raw": 0
    },
    "rss": {
-    "found": 18,
+    "found": 23,
     "errors": [],
-    "raw": 403
+    "raw": 469
    },
    "careers": {
     "found": 0,
@@ -59,13 +59,13 @@
    }
   },
   "counts": {
-   "total": 32,
-   "new": 1,
+   "total": 37,
+   "new": 5,
    "expired": 2,
    "duplicatesFolded": 2,
    "priorityA": 9,
-   "priorityB": 9,
-   "priorityC": 14
+   "priorityB": 10,
+   "priorityC": 18
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -76,7 +76,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-20T10:50:08+00:00"
+  "ranAt": "2026-11-20T18:56:48+00:00"
  },
  "jobs": [
   {
@@ -105,7 +105,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-20T10:49:31+00:00"
+     "found_at": "2026-11-20T18:56:10+00:00"
     }
    ],
    "matchScore": 87,
@@ -147,7 +147,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-scm-rfl-group/",
-     "found_at": "2026-11-20T10:49:20+00:00"
+     "found_at": "2026-11-20T18:55:59+00:00"
     }
    ],
    "matchScore": 83,
@@ -189,7 +189,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-key-accounts-export-pran-group/",
-     "found_at": "2026-11-20T10:49:20+00:00"
+     "found_at": "2026-11-20T18:55:59+00:00"
     }
    ],
    "matchScore": 79,
@@ -231,7 +231,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
-     "found_at": "2026-11-20T10:49:20+00:00"
+     "found_at": "2026-11-20T18:55:59+00:00"
     }
    ],
    "matchScore": 79,
@@ -274,7 +274,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-20T10:49:23+00:00"
+     "found_at": "2026-11-20T18:56:01+00:00"
     }
    ],
    "matchScore": 75,
@@ -316,7 +316,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-20T10:49:23+00:00"
+     "found_at": "2026-11-20T18:56:01+00:00"
     }
    ],
    "matchScore": 75,
@@ -358,7 +358,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-sales-market-audit-pran-group/",
-     "found_at": "2026-11-20T10:49:20+00:00"
+     "found_at": "2026-11-20T18:55:59+00:00"
     }
    ],
    "matchScore": 75,
@@ -400,7 +400,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-category-management-pran-rfl/",
-     "found_at": "2026-11-20T10:49:23+00:00"
+     "found_at": "2026-11-20T18:56:01+00:00"
     }
    ],
    "matchScore": 75,
@@ -442,7 +442,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-20T10:49:26+00:00"
+     "found_at": "2026-11-20T18:56:05+00:00"
     }
    ],
    "matchScore": 75,
@@ -485,7 +485,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/full-stack-web-developer-it-meghna-group-of-industries/",
-     "found_at": "2026-11-20T10:49:20+00:00"
+     "found_at": "2026-11-20T18:55:59+00:00"
     }
    ],
    "matchScore": 74,
@@ -527,7 +527,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-20T10:49:35+00:00"
+     "found_at": "2026-11-20T18:56:14+00:00"
     }
    ],
    "matchScore": 71,
@@ -569,7 +569,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer-1",
-     "found_at": "2026-11-20T10:49:27+00:00"
+     "found_at": "2026-11-20T18:56:06+00:00"
     }
    ],
    "matchScore": 71,
@@ -611,7 +611,49 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-20T10:49:31+00:00"
+     "found_at": "2026-11-20T18:56:10+00:00"
+    }
+   ],
+   "matchScore": 71,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Software Engineer",
+   "company": "Upsun",
+   "description": "Headquarters: Remote • UK, France, Spain, Germany or Canada\nAbout Upsun\nUpsun is the software factory for AI-human workflows. We build the tools that let engineering teams work with confidence, with AI agents and humans working together from the first idea all the way to production. Developers, DevOps engineers, and platform teams use Upsun to move faster without losing control.\nUpsun brings this together through two products: one that shapes the work, and one that runs it.\nUpsun DispatchTM: where your team and AI agents work together. Upsun Dispatch keeps the right humans in the loop at the right moments, with human approval built in, full visibility into what’s happening, and no surprises on the bill. Agents do the volume and your team holds the line.\nUpsun Cloud: where that software runs. Upsun Cloud handles building, deploying, and scaling what your team ships, with:\nPredictable performance, even at scale\nSecure, compliant environments by default\nReal-time observability and cost transparency\nCloning, configuration, and provisioning in seconds\nThe name says it all. \"Up\" means uptime, reliability, and acceleration. \"Sun\" reflects our follow-the-sun-support, a 24x7, globally distributed support team keeping the lights on while you rest. Our core belief is that software should power brighter solutions and greater innovation.\nWhat's our commonality, our cultural fabric? A curious spirit and a thirst for knowledge; an eagerness for innovative ideas and cultures. We believe we can build anything together in an environment that frees you to do your best work.\nOur values:\nWe make a positive impact.\nWe aim for the stars.\nWe care for each other.\nImpact of a Software Engineer\nAt Upsun, we build tools that shape how developers create, deploy, and run software. That can mean making an entire application environment available for testing or bringing AI agents and developers together in structured workflows. These challenges require thoughtful engineering: making powerful capabilities easy to use while giving teams control over how their software is built and operated.\nOur engineering work connects new possibilities with the demands of established systems. It takes curiosity to investigate beyond the obvious answer, technical judgment to weigh different approaches, and the drive to turn ideas into working software. Across technical backgrounds and time zones, we share expertise, question assumptions, and learn from one another to make decisions and move forward. There’s room for different strengths and perspectives to shape what we build next.\nWhat to expect\nEnd-to-end ownership: Design, build, and maintain software within your team’s area, working with teammates from implementation through release and production support.\nTechnical decisions: Bring your reasoning to design discussions, consider alternative approaches, and help the team move forward with sound trade-offs between delivery, maintainability, and risk.\nCross-functional collaboration: Work through interfaces, APIs, and user experience with Engineering, Product, Design, and Support, drawing on the expertise each team brings.\nAI-assisted engineering: Use AI tools to support development and share approaches that improve how the team works.\nQuality, security, and reliability: Build these considerations into your work from the outset, including the observability needed to understand its behaviour in production.\nShared engineering practice: Exchange knowledge through pairing, code reviews, team sessions, and feedback. Write documentation that gives colleagues the context to understand and build on your work.\nWhat you bring\nProduction experience: A track record of delivering reliable production software, with strong programming fundamentals and proficiency in Python, Go, or TypeScript. Depending on the team, your specific language experience might align best with a particular role, but we value the ability to learn new languages and technologies as needs evolve.\nSystems understanding: The ability to reason about how your work fits into a larger system, including dependencies, data flow, and component failures.\nAPIs and data: Experience building or consuming APIs and working with data stores such as relational databases.\nTesting and correctness: A habit of writing automated tests, including failure paths, with attention to the consequences of errors for users.\nSecurity: An understanding of security best practices in software development.\nCI/CD practices: Familiarity with cloud environments and CI/CD pipelines.\nCuriosity and persistence: A drive to understand difficult problems, learn from setbacks, and work with others to find a way forward.\nAI collaboration : Comfort working with AI as both a tool and a teammate, knowing when to delegate, how to review its output, and taking over when needed.\nBonus\nA background in cloud platforms or developer tools.\nExperience in areas such as identity and access management, billing, provisioning and orchestration, or frontend development for technical products.\nIntegrating complex third-party services with constraints on contracts, rate limits, and availability.\nDesigning highly available systems.\nContributions to developer experience improvements.\nWhere we hire\nAt Upsun, remote work isn’t just a trend. It’s our foundation. Upsunners are a global workforce, and we thrive in a multicultural team. We’re committed to open source and an open, welcoming environment. Our team spans more than 30 countries and a wide range of experience levels, and we’re currently hiring for this role in Canada, France, Germany, Spain, and the United Kingdom . We’re unable to provide visa sponsorship at this time, but we welcome applications from all qualified candidates who are legally authorized to work in these countries.\nHow we hire\nOur interview process is a chance for us to understand how you think, what you’ve built, and what you want to take on next, and for you to get to know us. Together, we’ll explore where your strengths and interests meet the challenges our teams are solving.\nWe know a great hire won’t meet every requirement above. If you can see yourself making the team better, we want to hear your story. Few of us would be here if someone hadn’t taken a chance on us.\nYou can expect interviews on Google Meet to follow the order below.\n45 Minutes with Talent Acquisition\n60 Minutes with Hiring Manager\n60 Minutes with Team (pair programming session in CoderPad)\nDepending on the scope of the role, the process may also include:\n60 Minutes with Team: Technical deep dive (system design challenge in CoderPad)\n45 Minutes with Executive\nAll roles require background checks.\nWhat we offer\nA product you can believe in - Join us in transforming how businesses build and manage web applications, driven making a positive impact as a proud B Corp .\nAn Award-Winning Workplace - We’ve been recognized by Forbes’ Top 30 Companies for Remote Jobs and France’s Best Workplaces for Women.\n️ A culture that values your voice - Join a flexible, open, and inclusive work environment where your voice is encouraged, and your ideas shape our growth and evolution.\nA global team - Collaborate with colleagues from diverse backgrounds across the world, embracing different perspectives\nBenefits and perks - Make the most of what matters to you\nFlexible PTO\nComprehensive healthcare coverage (UK, Canada, France, Spain, USA)\nCompany stock options\nProfessional development budget\nOffice equipment budget\n‍️ Wellness budget\nAnnual team gatherings\nInternet reimbursement\nInclusive parental leave\n️ Remote work travel program\nYou belong here\nAt Upsun, we celebrate diversity in all its forms and are committed to fostering an inclusive, equitable, and supportive workplace where everyone can thrive. We embrace and value different perspectives, backgrounds, and experiences, because they make us stronger as a team. Whoever you are, wherever you're from, and whatever path you've taken, you are welcome here. We encourage you to bring your whole self to work, connect with others, and share your passion. If you need accommodations at any stage of our hiring process, please let us know. We're here to ensure an accessible and comfortable experience for you.\nTo apply: https://weworkremotely.com/remote-jobs/upsun-software-engineer",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/upsun-software-engineer",
+   "status": "Awaiting Review",
+   "id": "4389b3dc-3dae-472c-8723-c6122ff59e94",
+   "createdAt": "2026-11-20T18:56:14+00:00",
+   "requiredSkills": "engineer, headquarters, remote, france, spain, germany, canada, about, upsun, factory, human, workflows.",
+   "postedAt": "2026-11-20",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "cf86ed59abf78a9f",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/upsun-software-engineer",
+     "found_at": "2026-11-20T18:56:14+00:00"
     }
    ],
    "matchScore": 71,
@@ -653,7 +695,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-officer-british-council/",
-     "found_at": "2026-11-20T10:49:23+00:00"
+     "found_at": "2026-11-20T18:56:01+00:00"
     }
    ],
    "matchScore": 66,
@@ -695,7 +737,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/g-p-software-engineer-ii",
-     "found_at": "2026-11-20T10:49:31+00:00"
+     "found_at": "2026-11-20T18:56:10+00:00"
     }
    ],
    "matchScore": 66,
@@ -737,7 +779,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-20T10:49:27+00:00"
+     "found_at": "2026-11-20T18:56:06+00:00"
     }
    ],
    "matchScore": 66,
@@ -779,7 +821,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-20T10:49:27+00:00"
+     "found_at": "2026-11-20T18:56:06+00:00"
     }
    ],
    "matchScore": 66,
@@ -821,7 +863,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-network-it-operations-business-systems-dominos-pizza-bangladesh/",
-     "found_at": "2026-11-20T10:49:20+00:00"
+     "found_at": "2026-11-20T18:55:59+00:00"
     }
    ],
    "matchScore": 64,
@@ -836,6 +878,49 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Senior Software Engineer",
+   "company": "Teamified",
+   "description": "Headquarters: Philippines\nURL: https://jobs.workable.com/company/sC3VVUzx14A9GZdFM7giB7/jobs-at-teamified\nAbout Teamified:\nTeamified is a talent partner helping companies build exceptional remote teams across IT, software, product, and digital innovation. We collaborate with leading enterprises and fast-scaling tech businesses worldwide to help them access world class talent and accelerate growth. With operations across the globe our mission is to make building high performing global teams simple, fast, and cost-effective. Teamified has hundreds of clients with more than 200 engineers, testers, product managers, designers, and technology experts delivering impactful solutions every day.\nJob Summary: We are looking for a Senior Software Engineer to support the design, development, and modernisation of software systems in a remote contract role. You will work across backend and full-stack solutions, contributing to legacy system modernisation, data-driven features, and high-quality technical delivery.\nResponsibilities: Design, build, and maintain scalable software applications and services\nContribute to the modernisation of legacy systems and related technical improvements\nDevelop and optimise solutions using Elasticsearch, SQL, and relational databases\nSupport ETL processes and data integration across systems\nCollaborate with cross-functional teams to deliver reliable, maintainable software\nApply AI-assisted development practices to improve productivity and code quality\nParticipate in code reviews, debugging, testing, and technical problem-solving\nRequirements: 5–7 years of experience in software engineering\nStrong experience with Elasticsearch, SQL, relational databases, ETL, full-stack development, AI-assisted development, and legacy system modernisation\nProficiency in one or more of the following technologies: Python, C#, .NET, JavaScript, PHP, or Go\nSolid understanding of software design principles, debugging, and troubleshooting\nExperience working with APIs, databases, and modern development workflows\nAbility to work independently in a remote environment and collaborate effectively with distributed teams\nBachelor’s degree in Computer Science, Software Engineering, or a related field, or equivalent practical experience\nBenefits: Flexibility in work hours and location, with a focus on managing energy rather than time.\nAccess to online learning platforms and a budget for professional development\nA collaborative, no-silos environment, encouraging learning and growth across teams\nA dynamic social culture with team lunches, social events, and opportunities for creative input\nPrivate Health insurance\nIf you are a skilled Senior Software Engineer looking for a new opportunity with a growing company, we would love to hear from you. Apply now.\nEmployment type: Contract\nTo apply: https://weworkremotely.com/remote-jobs/teamified-senior-software-engineer",
+   "category": "Software Development",
+   "location": "Remote (Asia Only)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/teamified-senior-software-engineer",
+   "status": "Awaiting Review",
+   "id": "88179abb-3951-4c3e-b4f9-129b0e70f315",
+   "createdAt": "2026-11-20T18:56:10+00:00",
+   "requiredSkills": "senior, engineer, headquarters, philippines, url, https, //jobs.workable.com/company/sc3vvuzx14a9gzdfm7gib7/jobs, teamified, about, talent, partner, helping",
+   "postedAt": "2026-11-20",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "dfb21f6a1a36f848",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/teamified-senior-software-engineer",
+     "found_at": "2026-11-20T18:56:10+00:00"
+    }
+   ],
+   "matchScore": 69,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 67,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Executive I – Costing, Budgeting & MIS (Factory)",
@@ -863,7 +948,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-i-costing-budgeting-mis-factory-mj-group/",
-     "found_at": "2026-11-20T10:49:20+00:00"
+     "found_at": "2026-11-20T18:55:59+00:00"
     }
    ],
    "matchScore": 64,
@@ -906,7 +991,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-operations-mouchak-factory-marico-bangladesh/",
-     "found_at": "2026-11-20T10:49:20+00:00"
+     "found_at": "2026-11-20T18:55:59+00:00"
     }
    ],
    "matchScore": 64,
@@ -949,7 +1034,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-query-planner-reflections",
-     "found_at": "2026-11-20T10:49:31+00:00"
+     "found_at": "2026-11-20T18:56:10+00:00"
     }
    ],
    "matchScore": 61,
@@ -992,7 +1077,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/legion-principal-software-engineer-devops",
-     "found_at": "2026-11-20T10:49:31+00:00"
+     "found_at": "2026-11-20T18:56:10+00:00"
     }
    ],
    "matchScore": 61,
@@ -1006,6 +1091,49 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Title matches your excluded list (Principal)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Senior Software Engineer, Full Stack (80% backend)",
+   "company": "Postscript",
+   "description": "Headquarters: Remote\nPostscript is the AI-powered, all-in-one retention platform trusted by 20,000+ Shopify brands, including Brooklinen, Ruggable, True Classic, and Dr. Squatch.\nOur mission is to maximize the lifetime value of every shopper. We built the best-in-class SMS platform, expanded into email, and launched revenue-driving AI products you won’t find anywhere else. Now we’re building the most AI-forward team in ecommerce, and we’re just getting started.\nBacked by Greylock and Y Combinator. Fully remote since 2018.\nAs a Senior Software Engineer at Postscript, you'll be a high-ownership contributor to one of our core product or platform teams — owning meaningful systems end-to-end, driving technical quality, and helping shape how we build across the organization. Our engineering teams operate at the intersection of scale and product velocity, which means you'll be working on distributed systems that matter to the business while also influencing the technical standards that allow Postscript to grow sustainably.\nThis is a high-autonomy role for engineers who are energized by ambiguity, take genuine ownership of their work, and bring a strong point of view on how to build things well — without sacrificing speed or pragmatism. AI isn't a nice-to-have here — it's central to how we work. We expect our engineers to be active practitioners of AI-first development: fluent with the latest agentic coding tools, curious about what's emerging, and constantly pushing the boundary of what's possible with AI in their day-to-day craft. If you're the kind of engineer who's already experimenting with new models and tooling before anyone asks you to, you'll feel at home here.\nAs a senior engineer at Postscript, you’ll no longer be only writing code but orchestrating it.\nThis position is fully remote and can be based in the US or Canada.\nPrimary Duties\nTake deep ownership of systems and product areas on your team — becoming the go-to technical expert for what you own\nIndependently investigate, design, and execute solutions across distributed systems with a high degree of ambiguity\nArchitect, build, and maintain highly available, scalable REST APIs and backend services for internal and external use\nDrive system decoupling, modularization, and technical debt reduction — improving long-term maintainability without blocking near-term delivery\nBuild agentically as your default: leveraging concurrent autonomous agent workflows, owning the output, and keeping a steady queue of aligned work moving\nStay at the forefront of emerging AI tooling and practices, bringing new techniques back to the team and helping raise the floor for how Postscript engineers work\nContribute to how we think about integrating AI into our systems and workflows — not just using AI tools, but helping shape where and how AI creates leverage across the engineering org\nCollaborate cross-functionally with product, data, and go-to-market teams — communicating clearly and proactively in an async-first environment\nIdentify and eliminate single points of failure, improving system resilience and knowledge redundancy across your team\nImprove how engineering gets done: bring better tools, fix workflow friction, build internal utilities when the leverage compounds\nWhat We'll Love About You\n6+ years of experience building large-scale backend systems and APIs\nYou are an active, daily user of AI coding tools and are using them to maximize your output — Claude Code, Cursor, Copilot, or equivalent — and can speak concretely to how they've changed your output and your workflow\nTech stack: Python, Go, React, and TypeScript; experience with Kubernetes, AWS, Datadog, and relational/NoSQL databases. You run agentic workflows autonomously and concurrently.\nYou follow the AI tooling landscape closely: new model releases, emerging agentic workflows, and evolving best practices aren't things you catch up on eventually — they're things you're tracking in real time\nYou think critically about AI output — you know where it accelerates you, where it introduces risk, and how to verify what it produces\nYou are able to context switch extremely quickly across concurrent workstreams\nExperience working on both 0-to-1 initiatives and complex existing systems — and knowing how to balance building new things with improving what's there\nStrong command of relational and NoSQL databases, SQL, and thoughtful database modeling\nFamiliarity building and observing applications on AWS, and ideally with Datadog or comparable observability tooling\nClear, direct communication — cross-functional partners and async teams can count on you to surface information proactively\nStrong instincts for technical tradeoffs informed by both engineering best practices and business priorities\nWhat You'll Love About Us\nSalary range of USD $175,000–$220,000 base plus significant equity (we do not have geo-based salaries)\nHigh growth startup — plenty of room for you to directly impact the company and grow your career\nWork from home (or wherever in US / Canada)\nFun — we're passionate and enjoy what we do\nCompetitive compensation and opportunity for equity\nFlexible paid time off\nHealth, dental, vision insurance\nFor information about how we use your personal data, please see our U.S. Job Applicant Privacy Notice\nYou are welcome here. Postscript is an ever-evolving place of equal employment for talented individuals.\nTo apply: https://weworkremotely.com/remote-jobs/postscript-senior-software-engineer-full-stack-80-backend",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/postscript-senior-software-engineer-full-stack-80-backend",
+   "status": "Awaiting Review",
+   "id": "8ad6fbb8-e05b-47ed-911e-148249af5b9e",
+   "createdAt": "2026-11-20T18:56:10+00:00",
+   "requiredSkills": "senior, engineer, full, stack, headquarters, remote, postscript, powered, all, one, retention, platform",
+   "postedAt": "2026-11-20",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "2fde843b0d9a5607",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/postscript-senior-software-engineer-full-stack-80-backend",
+     "found_at": "2026-11-20T18:56:10+00:00"
+    }
+   ],
+   "matchScore": 61,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
   },
@@ -1035,7 +1163,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-20T10:49:31+00:00"
+     "found_at": "2026-11-20T18:56:10+00:00"
     }
    ],
    "matchScore": 61,
@@ -1078,7 +1206,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-20T10:49:26+00:00"
+     "found_at": "2026-11-20T18:56:05+00:00"
     }
    ],
    "matchScore": 57,
@@ -1121,7 +1249,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-mis-runner-motors/",
-     "found_at": "2026-11-20T10:49:20+00:00"
+     "found_at": "2026-11-20T18:55:59+00:00"
     }
    ],
    "matchScore": 57,
@@ -1163,7 +1291,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer-query",
-     "found_at": "2026-11-20T10:49:31+00:00"
+     "found_at": "2026-11-20T18:56:10+00:00"
     }
    ],
    "matchScore": 53,
@@ -1206,7 +1334,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer",
-     "found_at": "2026-11-20T10:49:35+00:00"
+     "found_at": "2026-11-20T18:56:14+00:00"
     }
    ],
    "matchScore": 53,
@@ -1249,7 +1377,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-delivery-engineering",
-     "found_at": "2026-11-20T10:49:31+00:00"
+     "found_at": "2026-11-20T18:56:10+00:00"
     }
    ],
    "matchScore": 53,
@@ -1292,7 +1420,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/project-coordinator-commercial-bank-of-ceylon/",
-     "found_at": "2026-11-20T10:49:23+00:00"
+     "found_at": "2026-11-20T18:56:01+00:00"
     }
    ],
    "matchScore": 53,
@@ -1308,6 +1436,92 @@
     "Exact area not stated in the posting"
    ],
    "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Staff Software Engineer, Enterprise Platform",
+   "company": "Discord",
+   "description": "Headquarters: San Francisco Bay Area or Remote (West Coast)\nDiscord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.\nDiscord's Enterprise Technology org is building a software engineering discipline from the ground up, and this is the founding engineering hire. There is no Enterprise Platform team yet. You will not be maintaining a status quo or joining an existing backlog: you will define the discipline, set the technical foundation, and build the platform that lets the internal systems enabling Discordians scale with the company.\nDiscord's mission is to cultivate belonging, and doing that at scale requires internal systems that move as fast as the product itself. The mission of this role is to turn our enterprise infrastructure into self-service software. Your job is to replace manual consoles and tickets with a platform of reusable primitives, building blocks like \"provision a device\" or \"push an IAM policy or app integration through code,\" exposed through clean APIs and self-service portals. As a code-forward Staff engineer, you will design abstractions that hide the messy reality of Okta, Jamf, and Terraform (our identity, device management, and infrastructure-as-code tools) behind interfaces people actually want to use, operating with a platform-as-a-product mindset.\nWhat You'll Do\nManage the device fleet as code: Move device configuration off consoles and into versioned, API-driven infrastructure for endpoint management and hardware provisioning.\nAutomate the identity layer: Manage identity systems and their connections to downstream apps as code, from SSO and SCIM integrations to account workflows, so changes ship through version control and CI/CD instead of an admin console.\nOwn app delivery and Infrastructure-as-Code (IaC): Build deployment pipelines and provisioning patterns that let internal systems be built and changed safely, establishing CI/CD standards.\nBuild the self-service layer: Design and ship the APIs, CLIs, and portals that compose primitives into paved paths, like a new hire's first day, where software access and group memberships land in one automated, auditable flow.\nSet the foundation: Define the technical direction and architecture for the discipline, writing the RFCs and documentation that future hires will build on.\nWhat You Should Have\n6+ years building and operating production software and systems at a technology company, with a track record of owning ambiguous projects end to end.\nStrong software engineering fundamentals. You write production code (we lean on Python, TypeScript and Rust), and design, test, and ship it. This is not a systems admin role.\nDeep, hands-on IAM experience (SSO, SCIM, OAuth/OIDC, RBAC) and fluency with infrastructure as code (Terraform) and CI/CD.\nExperience treating endpoint and fleet management as an API-driven engineering surface at scale.\nA platform-as-a-product mindset. You have built self-service tooling that people chose to adopt.\nComfort with ambiguity and a founder's temperament; energized by building from scratch.\nBonus Points\nHands-on experience with Okta, Jamf, or Intune.\nExperience with identity and access governance for non-human, workload, or AI-agent principals.\nBackground at a high-growth consumer tech company with a highly technical employee base.\nThe base salary range for this full-time position is listed below. This position will also be eligible for equity and benefits. Benefits include medical, dental, and vision insurance; a 401(k) plan; life and disability insurance; paid time off; and paid parental leave. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in role postings reflect the base salary only, and do not include equity, or benefits. Applications for this role are accepted on an ongoing basis.\nBase Salary\n$248,000 — $310,000 USD\nWhy Discord?\nDiscord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!\nDiscord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.\nPlease see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking HERE.\nTo apply: https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-enterprise-platform",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-enterprise-platform",
+   "status": "Awaiting Review",
+   "id": "7abe9c3b-f8f3-4c44-aee3-b929d9d01d2e",
+   "createdAt": "2026-11-20T18:56:14+00:00",
+   "requiredSkills": "staff, engineer, enterprise, platform, headquarters, san, francisco, bay, area, remote, west, coast",
+   "postedAt": "2026-11-20",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "b40160b59f3fc3b0",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-enterprise-platform",
+     "found_at": "2026-11-20T18:56:14+00:00"
+    }
+   ],
+   "matchScore": 53,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Staff)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Staff Software Engineer, Safety Platform",
+   "company": "Discord",
+   "description": "Headquarters: San Francisco Bay Area or Remote (U.S.)\nDiscord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.\nDiscord is used by over 200 million people every month for many different reasons, but there’s one thing that nearly everyone does on our platform: play video games. Over 90% of our users play games, spending a combined 1.5 billion hours playing thousands of unique titles on Discord each month. Discord plays a uniquely important role in the future of gaming. We are focused on making it easier and more fun for people to talk and hang out before, during, and after playing games.\nThe Safety Platform team is at the heart of keeping Discord safe for all users. We provide the infrastructure and services that enable scalable and reliable safety on Discord. We're looking for a Staff Software Engineer who will be a technical leader and force multiplier for the Safety Platform team. You'll autonomously deliver high-impact projects that are often ambiguous and open-ended, while setting the technical direction for safety systems that protect millions of users daily.\nAs a Staff Engineer on Safety Platform, you'll not only be a top code contributor but also help the entire team level up through technical mentorship, architectural guidance, and fostering a culture of excellence. You'll embrace an \"all problems are my problem\" mindset, helping teammates overcome obstacles while maintaining Discord's high quality bar.\nWhat You'll Be Doing\nServe as a technical lead and mentor, guiding ICs through design, experimentation, and implementation while raising the technical bar\nDefine and drive Safety Platform’s technical strategy and roadmap\nSet the bar in technical reviews, including code, design, and architecture, ensuring the team builds scalable, robust, and high-quality systems\nCollaborate cross-functionally with product, data science, policy, legal, and engineering partners to align on safety goals and deliver effective solutions\nTackle the most complex and high-impact challenges in safety, including adversarial abuse, harmful content detection, and evolving threat vectors\nInfluence the company’s direction on safety, clearly communicating trade-offs and technical constraints to senior leadership and stakeholders\nWhat you should have\n8+ years of professional experience in an infrastructure focused software development role\nStrong programming skills in languages like Python, Rust, Typescript\nExperience designing and deploying scalable services using components such as PubSub, GCP/AWS, and Kubernetes\nExperience with large-scale distributed systems serving millions of users, including deployment tools and infrastructure automations like Terraform\nExperience leading projects on cross-team and company-wide scale\nExperience scaling and migrating systems with little to no downtime\nExperience mentoring engineers at various stages in their careers\nExperience driving a culture of operational excellence, with a deep understanding of metrics, alerts, and dashboards\nBonus Points\nA strong passion for Discord and gaming\nExperience tackling safety problems in collaboration with ML teams at large-scale social platforms\nThe base salary range for this full-time position is listed below. This position will also be eligible for equity and benefits. Benefits include medical, dental, and vision insurance; a 401(k) plan; life and disability insurance; paid time off; and paid parental leave. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in role postings reflect the base salary only, and do not include equity, or benefits. Applications for this role are accepted on an ongoing basis.\nBase Salary\n$279,000 — $341,000 USD\nWhy Discord?\nDiscord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!\nDiscord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.\nPlease see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking HERE.\nTo apply: https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-safety-platform",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-safety-platform",
+   "status": "Awaiting Review",
+   "id": "808917c5-8745-443a-a1a2-e0183ebb5b27",
+   "createdAt": "2026-11-20T18:56:26+00:00",
+   "requiredSkills": "staff, engineer, safety, platform, headquarters, san, francisco, bay, area, remote, u.s., discord",
+   "postedAt": "2026-11-20",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "0b031892ef685dbb",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-safety-platform",
+     "found_at": "2026-11-20T18:56:26+00:00"
+    }
+   ],
+   "matchScore": 53,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Staff)"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Senior Software Engineer, Issuing",
@@ -1335,7 +1549,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-issuing",
-     "found_at": "2026-11-20T10:49:31+00:00"
+     "found_at": "2026-11-20T18:56:10+00:00"
     }
    ],
    "matchScore": 53,
@@ -1378,7 +1592,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-20T10:49:31+00:00"
+     "found_at": "2026-11-20T18:56:10+00:00"
     }
    ],
    "matchScore": 53,
@@ -1421,7 +1635,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-20T10:49:23+00:00"
+     "found_at": "2026-11-20T18:56:01+00:00"
     }
    ],
    "matchScore": 39,
