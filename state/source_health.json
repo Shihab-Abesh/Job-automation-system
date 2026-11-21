@@ -11,10 +11,10 @@
   "streak": 0
  },
  "jsonld": {
-  "alerted": false,
+  "alerted": true,
   "last_ok": "2026-11-19",
   "last_problem": "2026-11-21",
-  "streak": 3
+  "streak": 4
  },
  "local": {
   "alerted": false,
