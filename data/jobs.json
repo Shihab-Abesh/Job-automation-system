@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-20T18:56:49+00:00",
+ "generatedAt": "2026-11-21T10:33:32+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 18,
+    "found": 19,
     "errors": [],
-    "raw": 280
+    "raw": 282
    },
    "jsonld": {
     "found": 0,
@@ -43,9 +43,9 @@
     "raw": 0
    },
    "rss": {
-    "found": 23,
+    "found": 28,
     "errors": [],
-    "raw": 469
+    "raw": 488
    },
    "careers": {
     "found": 0,
@@ -59,13 +59,13 @@
    }
   },
   "counts": {
-   "total": 37,
-   "new": 5,
+   "total": 42,
+   "new": 6,
    "expired": 2,
-   "duplicatesFolded": 2,
+   "duplicatesFolded": 3,
    "priorityA": 9,
    "priorityB": 10,
-   "priorityC": 18
+   "priorityC": 23
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -76,7 +76,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-20T18:56:48+00:00"
+  "ranAt": "2026-11-21T10:33:31+00:00"
  },
  "jobs": [
   {
@@ -105,7 +105,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-20T18:56:10+00:00"
+     "found_at": "2026-11-21T10:32:55+00:00"
     }
    ],
    "matchScore": 87,
@@ -147,7 +147,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-scm-rfl-group/",
-     "found_at": "2026-11-20T18:55:59+00:00"
+     "found_at": "2026-11-21T10:32:43+00:00"
     }
    ],
    "matchScore": 83,
@@ -189,7 +189,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-key-accounts-export-pran-group/",
-     "found_at": "2026-11-20T18:55:59+00:00"
+     "found_at": "2026-11-21T10:32:46+00:00"
     }
    ],
    "matchScore": 79,
@@ -231,7 +231,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
-     "found_at": "2026-11-20T18:55:59+00:00"
+     "found_at": "2026-11-21T10:32:46+00:00"
     }
    ],
    "matchScore": 79,
@@ -274,7 +274,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-20T18:56:01+00:00"
+     "found_at": "2026-11-21T10:32:46+00:00"
     }
    ],
    "matchScore": 75,
@@ -316,7 +316,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-20T18:56:01+00:00"
+     "found_at": "2026-11-21T10:32:46+00:00"
     }
    ],
    "matchScore": 75,
@@ -358,7 +358,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-sales-market-audit-pran-group/",
-     "found_at": "2026-11-20T18:55:59+00:00"
+     "found_at": "2026-11-21T10:32:43+00:00"
     }
    ],
    "matchScore": 75,
@@ -400,7 +400,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-category-management-pran-rfl/",
-     "found_at": "2026-11-20T18:56:01+00:00"
+     "found_at": "2026-11-21T10:32:46+00:00"
     }
    ],
    "matchScore": 75,
@@ -442,7 +442,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-20T18:56:05+00:00"
+     "found_at": "2026-11-21T10:32:50+00:00"
     }
    ],
    "matchScore": 75,
@@ -485,7 +485,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/full-stack-web-developer-it-meghna-group-of-industries/",
-     "found_at": "2026-11-20T18:55:59+00:00"
+     "found_at": "2026-11-21T10:32:43+00:00"
     }
    ],
    "matchScore": 74,
@@ -527,7 +527,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-20T18:56:14+00:00"
+     "found_at": "2026-11-21T10:32:59+00:00"
     }
    ],
    "matchScore": 71,
@@ -569,7 +569,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer-1",
-     "found_at": "2026-11-20T18:56:06+00:00"
+     "found_at": "2026-11-21T10:32:51+00:00"
     }
    ],
    "matchScore": 71,
@@ -611,7 +611,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-20T18:56:10+00:00"
+     "found_at": "2026-11-21T10:32:55+00:00"
     }
    ],
    "matchScore": 71,
@@ -653,7 +653,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upsun-software-engineer",
-     "found_at": "2026-11-20T18:56:14+00:00"
+     "found_at": "2026-11-21T10:32:59+00:00"
     }
    ],
    "matchScore": 71,
@@ -695,7 +695,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-officer-british-council/",
-     "found_at": "2026-11-20T18:56:01+00:00"
+     "found_at": "2026-11-21T10:32:46+00:00"
     }
    ],
    "matchScore": 66,
@@ -737,7 +737,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/g-p-software-engineer-ii",
-     "found_at": "2026-11-20T18:56:10+00:00"
+     "found_at": "2026-11-21T10:32:55+00:00"
     }
    ],
    "matchScore": 66,
@@ -754,32 +754,32 @@
    "discoveredBy": "rss"
   },
   {
-   "title": "Software Development Engineer II (Remote @ Colombia)",
-   "company": "OfferUp",
-   "description": "Headquarters: Remote @ Colombia\nAbout the role:\nThe OfferUp Connect team builds the moments that turn a listing into a sale. Every chat between buyers and sellers, every offer notification, and every saved-search alert runs through services we own, from messaging and notifications to location, meetups, and the subscriptions sellers pay for. We run high-volume Java microservices and streaming pipelines, integrate with partners like Braze, Amazon Pinpoint, Apple, and Google, and use experimentation to decide what ships.\nWe also take on high-visibility work beyond our domain. Connect built OfferUp's video infrastructure for listing videos and LLM-powered catalog enrichment on Amazon Bedrock, both company priorities that changed what buyers see every day. The roadmap is wide open for someone who wants to help shape it.\nAs a Software Development Engineer II, you'll own features from concept to rollout: designing and writing well-tested code, launching experiments, and measuring results with Product, Design, and Data partners. You'll raise the quality of the code around you and get the chance to join the next project like video or catalog enrichment.\nHere’s more of what you will get to do:\nDesign, build, and deploy backend services and event-driven pipelines for messaging, notifications, location, and subscriptions\nImprove the reliability, latency, and delivery rates of high-volume messaging and notification systems, including retries, rate limiting, and frequency capping\nIntegrate with and operate third-party platforms such as Braze, Amazon Pinpoint, Apple and Google push services, and app store billing\nOwn features end-to-end: plan, design, develop, deploy, measure, and iterate\nBreak down complex engineering problems into achievable tasks and deliver them within committed timeframes\nWork collaboratively with cross-functional teams (Product, Design, Data Science, Marketing, and iOS, Android, and web engineers) to design and implement new features\nContribute to A/B tests and use experimentation results to decide what ships\nActively participate in code reviews and enforce good patterns, testing, and edge-case handling\nCoach and mentor junior team members, new hires, and interns\nCreate shared components, utilities, and services that improve team velocity across the stack\nMaintain and improve the runbooks, alerting, and monitoring for the features you ship\nParticipate in a reasonable on-call rotation with the rest of the team\nUse AI coding tools (Claude Code, Gemini, and similar) to increase your daily development velocity and code quality\nBecome a subject matter expert in one or more of the team's sub-domains: messaging, notifications and campaigns, location, or subscriptions and promotions\nYou’ll thrive in this role if you have:\n2+ years of professional software engineering experience\nDemonstrated ability to own the delivery of multiple features end-to-end (plan, design, develop, and deploy) with high efficiency, including breaking down engineering problems into achievable tasks\nStrong coding skills in Java, with a working understanding of microservices and distributed-systems fundamentals\nGood knowledge of data structures and object-oriented design\nWorking knowledge of asynchronous, event-driven systems (queues, pub/sub, or streams), including retries and idempotent processing\nHands-on experience using AI coding tools (Claude Code or similar) in a real engineering workflow, and a point of view on when they help and when they don't\nA habit of following good coding patterns, writing appropriate tests, considering trade-offs, and seeking out edge cases\nComfortable giving and receiving feedback in code reviews\nA bias toward shipping, learning from production, and iterating quickly\nAn insatiable desire and ability to learn\nBS or MS in Computer Science, or equivalent practical experience\nHelpful, but not required:\nFluency in another modern object-oriented programming language\nExperience with TypeScript and Node.js\nExperience with Agile development\nExperience building and integrating with REST APIs\nExperience with AWS services such as DynamoDB, SQS, SNS, Lambda, and ElastiCache (Redis)\nExperience with notification and engagement platforms (Braze, Amazon Pinpoint, APNs, FCM) or in-app subscription billing (App Store, Google Play)\nExperience with stream processing frameworks such as Apache Flink or Kafka Streams\nExperience with A/B testing platforms (Statsig, LaunchDarkly, Optimizely) and analytics warehouses (BigQuery, Snowflake)\nExperience consuming or integrating LLM-based APIs (e.g., Bedrock, Vertex AI, OpenAI)\nFamiliarity with Kubernetes, Helm, and CI/CD pipelines\nAbout OfferUp:\nOfferUp is dedicated to creating the simplest and most trusted way for people to buy, sell, and connect in their local communities. One of the top local marketplace apps for local buyers and sellers in the U.S., OfferUp makes it easy for people to discover more of what they need—from great deals and secondhand goods to jobs, services, home rentals, and more—right in their own communities. Our trusted platform empowers millions to connect, thrive, and move life forward.\nAvailable on iOS and Android, OfferUp has consistently ranked among the top shopping apps. Founded in 2011 and based in Bellevue, WA, OfferUp serves local markets nationwide and was used by more than 1 in 6 adults in the U.S. in 2024. OfferUp is backed by leading investors, including Andreessen Horowitz, Warburg Pincus, GGV Capital, T. Rowe Price, and Coatue Management. https://about.offerup.com\nMore About OfferUp At a Glance\nTop 10 Shopping app in the App Store and Google Play Store for three years\n15%+ of adults in several major markets use OfferUp every month (LA, Miami, Phoenix, Seattle, Las Vegas, Riverside, Orlando)\nOfferUp works directly with nearly 2000 US law enforcement agencies to build trust in local communities\nOfferUp is unleashing the power of local, and we’ve built a dynamic team to do it. To learn more about working at OfferUp, check out https://about.offerup.com/people\nOfferUp provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, religion, sex, national origin, age, disability, or genetics. In addition to federal law requirements, OfferUp complies with applicable state and local laws governing nondiscrimination in employment in every location in which the company has facilities. This policy applies to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, transfer, leaves of absence, compensation, and training.\nOfferUp expressly prohibits any form of workplace harassment based on race, color, religion, gender, sexual orientation, gender identity or expression, national origin, age, genetic information, disability, or veteran status. Improper interference with the ability of OfferUp’s employees to perform their job duties may result in discipline up to and including discharge.\nTo apply: https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
+   "title": "Software Engineer, Financial Data & Payments",
+   "company": "Gusto, Inc.",
+   "description": "Headquarters: Denver, CO - Hybrid; New York, NY - Hybrid; San Francisco, CA - Hybrid; Seattle, WA - Remote\nAbout Gusto\nAt Gusto, we're on a mission to grow the small business economy. We handle the hard stuff — payroll, health insurance, 401(k)s, and HR — so owners can focus on their craft and their customers. With teams in Denver, San Francisco, and New York, we support more than 500,000 small businesses nationwide and are building a workplace that reflects the people we serve.\nAll full-time employees receive competitive base pay, benefits, and equity (RSUs) — because everyone who helps build Gusto should share in its success. Offer amounts are determined by role, level, and location. Learn more about our Total Rewards philosophy .\nAI is a fundamental part of how work gets done at Gusto. We expect all team members to actively engage with AI tools relevant to their role and grow their fluency as the technology evolves. AI experience requirements vary by role and will be assessed during the interview process.\nAbout the Role:\nWe’re hiring seasoned engineers to join our teams that work on the financial backbone of Gusto's money movement — the ledger, reconciliation, and reporting systems that account for every dollar, and the payment profile that determines how employers fund payroll and how employees and contractors get paid. As a Gusto Software Engineer at this level, you’ll be guiding projects end-to-end by driving large technical architectural decisions (focusing on scale and modularity), understanding how to take existing systems closer to desired end states, executing on projects, and maintaining code that powers core experiences. If you’re interested in building elegant software with far-reaching effects in our modern economy, join us!\nAbout the Team:\nFinancial Data & Payment Profile (FDPP) sits inside Gusto's Payments organization, which moves money safely between partners, employers, employees, government authorities, and Gusto. FDPP owns the two things that every one of those movements depends on.\nFinancial Data is the system of record for the money itself: the ledger and subledger behind every payment, the reconciliation that proves our books agree with our banks and partners, the investigation of the variances that surface when they do not, and the financial reporting that Accounting, Finance, and Compliance depend on. When Gusto needs to answer where a dollar is — and prove it — the answer comes from systems this team builds.\nPayment Profile is what makes a payment possible in the first place: the payment methods available to a customer, the bank accounts and connections behind them, the verification that makes those accounts trustworthy, and the profile state that decides whether a payment can happen at all. Hundreds of thousands of businesses depend on this being right the first time — and on it recovering gracefully when a bank account, a connection, or a preference changes.\nHere’s what you’ll do day-to-day:\nDesign, build, and test the financial data systems that record every dollar Gusto moves — the ledger and subledger that serve as the system of record, the transaction models underneath them, and the financial reporting that Accounting, Finance, Compliance, and our partners rely on to close the books\nBuild reconciliation at Gusto's scale: prove that our internal records agree with bank, processor, and partner statements, and make the breaks that fall out of that comparison traceable rather than mysterious\nLead variance investigation end-to-end — the tooling, instrumentation, and runbooks that turn \"the numbers don't tie\" into a specific root cause, and then into a fix that eliminates the whole class of break\nOwn the payment profile: how employers are set up to fund payroll and how employees and contractors are set up to be paid — the payment methods available and the rules that govern which apply to whom, the bank accounts and connections behind them, and the verification state that determines whether money can move at all\nMake setup and verification something a small business can finish on its own — instant bank verification, graceful handling of broken or revoked connections, and a clear path back to a payable state when something changes\nHelp scale one of the largest Ruby/Rails and TypeScript/React applications in the world\nCollaborate on complex and ambiguous problems with partnerships from Engineering, Product Management, Design, Data Science, Accounting, Finance, Compliance, Operations, and other cross-functional teams\nMentor and grow fellow engineers working to create holistic and scalable solutions\nHere’s what we're looking for:\nSuccessful applicants have at least 10+ years of experience and the enthusiasm for a collaborative, test-driven environment\nExperience building fault-tolerant, mission-critical software as well as designing and developing robust, distributed systems using multiple general-purpose programming languages\nExperience influencing and guiding the work of multiple teams on scaling, refactoring, and optimizing legacy products\nExperience architecting, building, and testing large-scale production level code that is maintainable, structured, and well-documented\nAn aptitude and interest in bringing clarity and simplicity to complex and ambiguous problems\nAbility to communicate technical complexity and help facilitate informed tradeoffs\nExperience in one or more of these domains is strongly preferred: ledger or subledger design, financial reconciliation, accounting systems, or payments infrastructure\nComfort with double-entry accounting concepts — journal entries, chart of accounts, debits and credits, and tying a subledger out to the general ledger — and the ability to work with accountants and controllers in their own vocabulary\nExperience building systems where correctness, auditability, and immutability matter more than raw throughput, and where a silent data error is worse than an outage\nBonus: Experience with bank account verification, payment rails (ACH, wire, RTP), or third-party banking data and verification providers\nBonus: Experience with Ruby on Rails, Typescript, and React\nOur cash compensation amount for this role is targeted at $183,000-$200,000 /yr in Denver & most remote locations, and $222,000-$245,000 /yr for San Francisco, Seattle & New York. Final offer amounts are determined by multiple factors, including candidate experience and expertise, and may vary from the amounts listed above.\nAt Gusto, we don't use titles the traditional way, as a signal of rank or hierarchy. Instead, our titles describe two things at once — your craft (what you do, e.g. Engineering, Design) and your scope of ownership (what you're accountable for) — which is why you'll see something like \"Head of X\" instead of a rank word like \"Director\" that tells you neither. Because of this, the title on this posting may look different from what you'd expect based on the scope and seniority of the role, and from how similar roles are typically titled elsewhere. If you have questions about how this role compares to your current title or level, your recruiter can help translate.\nGusto has physical office spaces in Denver, San Francisco, and New York City. Employees who are based in those locations will be expected to work from the office on designated days approximately 2-3 days per week (or more depending on role). The same office expectations apply to all Symmetry roles, Gusto's subsidiary, whose physical office is in Scottsdale.\nNote: The San Francisco office expectations encompass both the San Francisco and San Jose metro areas.\nWhen approved to work from a location other than a Gusto office, a secure, reliable, and consistent internet connection is required. This includes non-office days for hybrid employees.\nReliable, consistent presence: We expect regular and predictable attendance, whether you're working in-office, hybrid, or fully remote, so that you stay closely connected to your team, customers, and stakeholders in real time and ensure colleagues and customers receive the timely support and responsiveness they deserve.\nOur customers come from all walks of life and so do we. We hire great people from a wide variety of backgrounds, not just because it's the right thing to do, but because it makes our company stronger. If you share our values and our enthusiasm for small businesses, you will find a home at Gusto.\nGusto is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristic. Gusto considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Gusto is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. We want to see our candidates perform to the best of their ability. If you require a medical or religious accommodation at any time throughout your candidate journey, please fill out this form and a member of our team will get in touch with you.\nGusto takes security and protection of your personal information very seriously. Please review our Fraudulent Activity Disclaimer .\nPersonal information collected and processed as part of your Gusto application will be subject to Gusto's Applicant Privacy Notice .\nTo apply: https://weworkremotely.com/remote-jobs/gusto-inc-software-engineer-financial-data-payments",
    "category": "Software Development",
    "location": "Remote (Anywhere in the World)",
    "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
+   "url": "https://weworkremotely.com/remote-jobs/gusto-inc-software-engineer-financial-data-payments",
    "status": "Awaiting Review",
-   "id": "52d3a8dc-8cd2-4034-8ff6-665133c5a200",
-   "createdAt": "2026-10-22T08:13:29+00:00",
-   "requiredSkills": "development, engineer, remote, colombia, headquarters, about, offerup, team, builds, moments, turn, listing",
-   "postedAt": "2026-10-22",
+   "id": "86b8ef13-4507-48e2-ac4f-f3f215d73443",
+   "createdAt": "2026-11-21T10:32:55+00:00",
+   "requiredSkills": "engineer, financial, payments, headquarters, denver, hybrid, new, york, san, francisco, seattle, remote",
+   "postedAt": "2026-11-21",
    "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
-   "salaryText": "",
+   "salaryText": "Negotiable",
    "employmentType": "Remote or hybrid",
    "experienceText": "",
    "area": "Remote",
    "distanceKm": 0.0,
-   "fingerprint": "b5bb85cb908c86e4",
+   "fingerprint": "6a47166aeef67ef9",
    "sources": [
     {
      "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia",
-     "found_at": "2026-11-20T18:56:06+00:00"
+     "url": "https://weworkremotely.com/remote-jobs/gusto-inc-software-engineer-financial-data-payments",
+     "found_at": "2026-11-21T10:32:55+00:00"
     }
    ],
    "matchScore": 66,
@@ -821,7 +821,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-20T18:56:06+00:00"
+     "found_at": "2026-11-21T10:32:51+00:00"
     }
    ],
    "matchScore": 66,
@@ -863,7 +863,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-network-it-operations-business-systems-dominos-pizza-bangladesh/",
-     "found_at": "2026-11-20T18:55:59+00:00"
+     "found_at": "2026-11-21T10:32:43+00:00"
     }
    ],
    "matchScore": 64,
@@ -905,7 +905,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/teamified-senior-software-engineer",
-     "found_at": "2026-11-20T18:56:10+00:00"
+     "found_at": "2026-11-21T10:32:55+00:00"
     }
    ],
    "matchScore": 69,
@@ -913,6 +913,49 @@
     "title": 100,
     "level": 10,
     "skills": 67,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Senior QA Automation Engineer (HELOC)",
+   "company": "Upgrade",
+   "description": "Headquarters: United States (Remote)\nUpgrade helps customers move in the right direction with affordable and responsible financial products. Since 2017, we’ve helped over 7.5 million customers access over $42 billion in consumer credit. With a relentless focus on improving our customers' financial well-being, we build products that put more money in their pocket and support their journey toward a better financial future. We’re backed by some of the most prominent technology investors and were most recently valued at $7.3B.\nWe’re consistently recognized for our collaborative and inclusive culture. Most recently, we were named one of the World’s Top Fintech Companies by CNBC, Best Places to Work by Built In, Best Places to Work by the San Francisco Business Times, America’s Greatest Workplaces by Newsweek, Best Startup Employer by Forbes, and Healthiest Employers by Phoenix Business Journal.\nWe’re looking for new team members who get excited about designing and delivering new and better products. Come join us and help build a better financial future for millions of people.\nAbout the Role:\nWe are seeking a Senior QA Automation Engineer to join our team who has end-to-end ownership to build a new quality product. Through automation and functional testing, they validate a variety of products to offer our customers a seamless banking experience. As a Senior QA Engineer, you will work directly with our product teams and will participate in application specification reviews and architectural design sessions by providing input from a quality standpoint. You will also identify testing strategies for various features and functionalities. Within your first year, you will develop an understanding of how to deliver high performing software at pace of development. You will work in an environment that promotes ownership at all levels including configuring and monitoring apps in production.\nThis is a fully remote position to candidates who are based in the US.\nOur Core Technologies Include:\nJava, Selenium Webdriver, Playwright, Claude Code, TestNG, Maven, Git, Jenkins, ArgoCD, SQL, REST Assured, OkHttp, SumoLogic, Docker, Kubernetes, Gatling, Linux etc\nWhat You’ll Do:\nDevelop test automation at the pace of feature development utilizing AI tools and our functional and performance test frameworks\nUtilize LLMs to create feature test plans and internal knowledge stores for streamlining AI tools usage for Automation and Deep testing efforts\nDefine custom AI workflows to enable all developers to test new features using existing automation tests, evaluate test failures, and troubleshoot environment issues\nExecute functional/performance tests by spinning up disposable environments on demand to deploy microservices with different versions and configurations, and customize database content\nCustomize, configure, patch services, and deploy infrastructure and code changes all the way through to production\nAnalyze log files and troubleshoot production issues by automating and reproducing them in a non-production environment\nCollaborate with QA platform to create solutions for feature validations and test automation for your product\nWhat We Look For:\nAbility to develop test automation in Java using Selenium/Playwright to utilize Integrated Development environments (IDE) such as IntelliJ or Eclipse, with and without Coding assistants\nExperience in deploying services in various environments such as Kubernetes, using deployment tools like ArgoCD and Jenkins\nCapability to improve efficiency of existing test infrastructure using Docker, Playwright and headless browser executions\nFamiliarity with log aggregators such as SumoLogic or Kibana, and app monitoring tools such as Honeycomb or Grafana\nPassion for automating tests and delivering high quality features in a fast paced environment\nComfortable working in Agile methodology\nWhat We Offer You:\nCompetitive salary and stock option plan\nPaid coverage of medical, dental and vision insurance\nFlexible PTO\nOpportunities for professional growth and development\nPaid parental leave\nHealth & wellness initiatives\nEnvironmental & Working Conditions\nWork is performed indoors in a fast-paced environment that requires the ability to manage multiple priorities and meet established workflows, schedules, and service expectations.\nEmployees regularly input, retrieve, and exchange information accurately using digital systems and applications to support operational and customer service objectives.\nThe role requires the ability to receive and exchange information with customers, peers, supervisors, and cross-functional partners through available communication channels, which may include meetings, email, phone, and digital collaboration tools, and may involve real-time, verbal, or in-person exchanges depending on business need.\nJob duties may involve managing a high volume of inbound and/or outbound customer interactions and work activities using telecommunications and computer systems. The role requires the ability to read, analyze, and interpret information displayed on computer screens and remain in a working posture for extended periods, consistent with the demands of the position.\nWork may be performed in a contact center, office, or remote environment, depending on business needs and the nature of the role. Onsite work environments may include shared workspaces, standard office lighting, and moderate background noise typical of customer service or operational settings.\nEmployees working remotely are responsible for maintaining a secure and productive workspace with reliable internet connectivity that supports company systems and safeguards the confidentiality of company and customer information.\nReasonable accommodations may be made to enable qualified individuals with disabilities to perform the essential functions of the position in accordance with the Americans with Disabilities Act (ADA) and applicable state and local laws.\nWe are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.\nUpgrade does not accept unsolicited resumes from staffing agencies, search firms, or any third parties. Any resume submitted to any employee of Upgrade without a prior written agreement in place will be considered the property of Upgrade, and Upgrade will not be obligated to pay any referral or placement fee. Agencies must obtain advance written approval from Upgrade's Talent Acquisition department to submit resumes and only in conjunction with a valid, fully executed agreement.\nTo apply: https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc",
+   "category": "Software Quality Assurance",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc",
+   "status": "Awaiting Review",
+   "id": "68c25840-0fde-4aaf-8342-a0975b8ac4a5",
+   "createdAt": "2026-11-21T10:32:59+00:00",
+   "requiredSkills": "senior, automation, engineer, heloc, headquarters, united, states, remote, upgrade, helps, customers, move",
+   "postedAt": "2026-11-21",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "f3de4b00f31ffeb1",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc",
+     "found_at": "2026-11-21T10:32:59+00:00"
+    }
+   ],
+   "matchScore": 65,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 50,
     "preference": 100
    },
    "priority": "C",
@@ -948,7 +991,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-i-costing-budgeting-mis-factory-mj-group/",
-     "found_at": "2026-11-20T18:55:59+00:00"
+     "found_at": "2026-11-21T10:32:43+00:00"
     }
    ],
    "matchScore": 64,
@@ -991,7 +1034,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-operations-mouchak-factory-marico-bangladesh/",
-     "found_at": "2026-11-20T18:55:59+00:00"
+     "found_at": "2026-11-21T10:32:43+00:00"
     }
    ],
    "matchScore": 64,
@@ -1034,7 +1077,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-query-planner-reflections",
-     "found_at": "2026-11-20T18:56:10+00:00"
+     "found_at": "2026-11-21T10:32:55+00:00"
     }
    ],
    "matchScore": 61,
@@ -1077,7 +1120,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/legion-principal-software-engineer-devops",
-     "found_at": "2026-11-20T18:56:10+00:00"
+     "found_at": "2026-11-21T10:32:55+00:00"
     }
    ],
    "matchScore": 61,
@@ -1120,7 +1163,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/postscript-senior-software-engineer-full-stack-80-backend",
-     "found_at": "2026-11-20T18:56:10+00:00"
+     "found_at": "2026-11-21T10:32:55+00:00"
     }
    ],
    "matchScore": 61,
@@ -1163,7 +1206,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-20T18:56:10+00:00"
+     "found_at": "2026-11-21T10:32:55+00:00"
     }
    ],
    "matchScore": 61,
@@ -1179,6 +1222,49 @@
     "Title matches your excluded list (Senior)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Officer – MIS, CPV-Retail IRM",
+   "company": "Al-Arafah Islami Bank",
+   "description": "Position: Officer-MIS, CPV-Retail IRM (EO-PO)\nCompany: Al-Arafah Islami Bank PLC\nJob Location: Dhaka\nEducation: Bachelor/Honors, Masters\nExperience: At least 5 years in banking, including 3 years in a related field\nSalary: Negotiable\nDeadline: 30 November 2026\nAbout the Role\nAl-Arafah Islami Bank is hiring an Officer – MIS for its Retail Investment Risk Management unit.\nCore Responsibilities\nKeep accurate MIS for the credit card and retail investment portfolio\nCollect and validate data from branches, sales teams and risk units\nGenerate CIB reports from the Bangladesh Bank server and coordinate CPV with third-party agents\nPrepare MIS for management, the Board Risk Committee and the CRO\nRequirements\nBachelor/Honors and Masters\nAt least 5 years in banking, 3 of them in a related field\nKnowledge of retail investment and card products\nStrong Word, Excel and PowerPoint\nGood communication and presentation skills\nAbout Al-Arafah Islami Bank\nAl-Arafah Islami Bank PLC is a Shariah-based bank in Bangladesh with 226 branches and 76 sub branches.\nHow to Apply\nInterested candidates can apply through the Apply online through the bdjobs circular using the Apply Now button. The application deadline is 30 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , Apply online through the bdjobs circular\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "category": "MIS",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/officer-mis-cpv-retail-irm-al-arafah-islami-bank/",
+   "status": "Awaiting Review",
+   "id": "0082cc3f-7f8d-406b-bd02-58f7ab839086",
+   "createdAt": "2026-11-21T10:32:43+00:00",
+   "requiredSkills": "officer, mis, cpv, retail, irm, arafah, islami, bank, plc, location, dhaka, education",
+   "postedAt": "2026-11-21",
+   "deadline": "2026-11-30",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Full Time",
+   "experienceText": "5 Years",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "60b77500fd93ecc0",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/officer-mis-cpv-retail-irm-al-arafah-islami-bank/",
+     "found_at": "2026-11-21T10:32:43+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Senior Business Analyst – Manufacturing",
@@ -1206,7 +1292,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-20T18:56:05+00:00"
+     "found_at": "2026-11-21T10:32:50+00:00"
     }
    ],
    "matchScore": 57,
@@ -1249,7 +1335,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-mis-runner-motors/",
-     "found_at": "2026-11-20T18:55:59+00:00"
+     "found_at": "2026-11-21T10:32:43+00:00"
     }
    ],
    "matchScore": 57,
@@ -1264,6 +1350,49 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Staff Software Engineer, Data",
+   "company": "Stability AI",
+   "description": "Headquarters: Remote\nThe Team\nThe Data team builds and runs the systems that make Stability AI's data usable, both to operate the business and to train our models. We're a small, collaborative team that works closely with Finance, Marketing, SRE, Security, Product and Research. We focus on outcomes rather than hours, and you'll have deep technical access and the freedom to build.\nOur stack: AWS (S3, Athena, Glue, EMR, Step Functions, EventBridge), Iceberg, dbt, Postgres, Terraform, Helm, GitHub Actions, QuickSight, Stripe, Auth0, HubSpot, Customer.io, PostHog, OpenTelemetry and SLURM — or similar. We care about the judgement more than the logo.\nThe Work\nYou'll own our company data platform end to end: the AWS data lake, the transformation layer, the integrations between our business systems, and the Kubernetes-based infrastructure they run on. The data that runs the business (billing, usage telemetry, identity, CRM, ERP, cloud cost) lives in a dozen systems that were never wired together. You'll be the engineer who connects them and keeps them reliable.\nYou'll also be the data engineer for our research teams across audio, video, image and 3D, building the pipelines that turn raw media into training-ready datasets. This is a hands-on role with real ownership, not a data-prep or analyst seat.\nOwn the company data platform end to end: the S3/Athena/Glue lake, the dbt project and its daily build, ingestion from Stripe, Auth0, HubSpot, OpenTelemetry and product events, and the Postgres serving layer for dashboards and AI agents\nBuild and operate integrations between billing, CRM, ERP, identity and telemetry systems so revenue, usage, cost and customer identity reconcile automatically instead of through spreadsheets and tickets\nDesign and maintain the warehouse layer: dimensional models, data contracts with product engineering for event schemas, quality tests, lineage and a catalog\nEnforce PII tiering (open vs. restricted schemas) through access grants, working with Security and Legal\nProcess data at scale: billions of telemetry rows, terabyte log streams, Iceberg tables, partitioning and cost control\nOwn orchestration and infrastructure: orchestration on EKS, Helm, Terraform, CI/CD, monitoring and alerting, and join the business-hours on-call rotation for the daily pipelines\nDeliver operational reporting for Finance and leadership: revenue by business line, credits and prepaid liability, and cloud cost by department\nSupport the research teams across every modality: source, license-check, ingest and version large training datasets for audio, video, image and 3D\nBuild the generation, filtering, deduplication and captioning pipelines that turn raw or synthetic media into training-ready shards, and run them at scale on our SLURM cluster and cloud object storage\nKeep lineage, quality metrics and dataset documentation current so any researcher can reproduce a training set\nLead design reviews, mentor teammates and write the runbooks that remove single-person dependencies\nPartner with Finance, Marketing, SRE, Security, Product and Research on company-wide data initiatives\nWhat You Bring\nWe're looking for an engineer who pairs strong software engineering habits with warehouse. The ideal candidate combines strong software engineering habits with warehouse modelling depth, and the judgement to say what a number means and what it does not.\nExperience\n6+ years building and running production data platforms, including ownership of the architecture\nExperience integrating SaaS business systems (Stripe, HubSpot, an ERP, an identity provider) into a warehouse\nProduction experience preparing large multimodal training datasets and running batch workloads on HPC or cloud schedulers (SLURM, Kubernetes or similar)\nComfort working independently in a small team with real ownership\nSkills & Expertise\nExpert SQL and Python, with strong software engineering habits: tests, code review and CI\nWarehouse and lake experience with real modelling: Iceberg or Delta on S3, Athena/Trino, Snowflake or BigQuery, and dbt\nAn orchestrator in production (dbt, Airflow or Argo) and distributed processing (Spark or equivalent)\nAWS, Kubernetes (EKS), Helm and Terraform — you can debug a failing Glue job and a broken Helm release\nAdditional Strengths\nPrior 0-to-1 platform ownership at a startup\nExperience working with research teams on generative models, or hands-on exposure to audio, video, image or 3D data\nFinOps and cloud cost reporting\nFamiliarity with SOC 2 or similar compliance requirements for data access\nBenefits & Compensation\nOutside the United States\nCompensation and benefits are set for each country’s market and local practice. If you’re applying from outside the U.S., your recruiter will share the details for your country early in the process.\nUnited States\nA remote-first company with teammates across multiple countries who bring diverse perspectives, and flexibility built into how we collaborate.\nHealth coverage for you and your family. Choose from PPO and HMO plans, including select plans where Stability AI covers 100% of premiums for you and your eligible dependents.\nHSA and FSA accounts to set aside pre-tax dollars for healthcare and other eligible expenses.\nCompany-paid life insurance, with the option to add voluntary coverage for yourself, your spouse, and your children.\nShort- and long-term disability coverage, to protect part of your income if illness or injury keeps you from working.\n401(k) with company match of up to 4%.\nPaid parental leave to support you as your family grows.\nFlexible paid time off, plus paid company holidays.\nThe equipment you need to do your best work, provided by Stability AI.\nAt Stability AI, we aim to pay fairly and competitively, and we believe you should know what a role pays before you invest time in getting to know us. The annual base salary range for this role is $175,500 - $230,000 USD. It reflects our good-faith expectation for the role as posted and applies to candidates hired within the United States.\nWhere you fall within that range depends on the depth and relevance of your experience, your skills, and how you perform in our interview process. Because great candidates don’t always map neatly to a single level, we may also consider someone for a level above or below the one posted. If we do, the range will be adjusted to match, and we’ll talk it through with you openly.\nBase salary is also just one part of your total compensation. Eligible employees take part in our equity program and receive the benefits described above. We’d rather talk about all of this early than leave you guessing, so your recruiter is happy to walk you through the range, how offers come together, and anything else that matters to you, at any point in the process.\nPrivacy Policy\nTo learn how we collect, use, and protect your information during the hiring process, see our Privacy Policy .\nTo apply: https://weworkremotely.com/remote-jobs/stability-ai-staff-software-engineer-data",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/stability-ai-staff-software-engineer-data",
+   "status": "Awaiting Review",
+   "id": "20c852f0-ee47-445a-aaa7-b81c3f6d6dcf",
+   "createdAt": "2026-11-21T10:32:59+00:00",
+   "requiredSkills": "staff, engineer, headquarters, remote, team, builds, runs, make, stability, usable, both, operate",
+   "postedAt": "2026-11-21",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "1317eeadcb87f1e3",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/stability-ai-staff-software-engineer-data",
+     "found_at": "2026-11-21T10:32:59+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Staff)"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Senior Software Engineer, Query",
@@ -1291,7 +1420,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer-query",
-     "found_at": "2026-11-20T18:56:10+00:00"
+     "found_at": "2026-11-21T10:32:55+00:00"
     }
    ],
    "matchScore": 53,
@@ -1334,7 +1463,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer",
-     "found_at": "2026-11-20T18:56:14+00:00"
+     "found_at": "2026-11-21T10:32:59+00:00"
     }
    ],
    "matchScore": 53,
@@ -1377,7 +1506,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-delivery-engineering",
-     "found_at": "2026-11-20T18:56:10+00:00"
+     "found_at": "2026-11-21T10:32:55+00:00"
     }
    ],
    "matchScore": 53,
@@ -1420,7 +1549,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/project-coordinator-commercial-bank-of-ceylon/",
-     "found_at": "2026-11-20T18:56:01+00:00"
+     "found_at": "2026-11-21T10:32:46+00:00"
     }
    ],
    "matchScore": 53,
@@ -1463,7 +1592,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-enterprise-platform",
-     "found_at": "2026-11-20T18:56:14+00:00"
+     "found_at": "2026-11-21T10:32:59+00:00"
     }
    ],
    "matchScore": 53,
@@ -1506,7 +1635,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-safety-platform",
-     "found_at": "2026-11-20T18:56:26+00:00"
+     "found_at": "2026-11-21T10:33:11+00:00"
     }
    ],
    "matchScore": 53,
@@ -1549,7 +1678,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-issuing",
-     "found_at": "2026-11-20T18:56:10+00:00"
+     "found_at": "2026-11-21T10:32:55+00:00"
     }
    ],
    "matchScore": 53,
@@ -1563,6 +1692,90 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Software Engineer I (Remote Eligible)",
+   "company": "Smartsheet",
+   "description": "Headquarters: -REMOTE, USA-\nFor over 20 years, Smartsheet has empowered teams to manage work seamlessly and scale solutions smarter. Now, in our most ambitious chapter yet, we are uniting human teams with AI agents. By orchestrating the work agents do best, automating manual tasks and uncovering insights at scale, we create the space for people to focus on what truly matters: judgment, creativity, and big thinking. That is magic at work, and it’s what we show up for every day.\nWe are hiring a Software Engineer I to join our Engineering team. You will get your hands on full-stack services, dig into distributed systems problems, and work right at the intersection of traditional software engineering and AI-driven development. We are not just dabbling in AI here. We use it to write better code, catch bugs faster, and troubleshoot smarter, and we want engineers who want to get good at that too and help their teammates do the same. You will ship real features, sit in on architectural conversations that actually shape the product, and grow alongside a team that cares as much about doing good work as they do about doing meaningful work.\nYou Will:\n● Build scalable front-end and back-end services for the next generation of applications at Smartsheet (Kotlin, Java, Typescript, React)\n● Solve challenging distributed systems problems and work with modern cloud infrastructure (AWS, Kubernetes) ● Take part in code reviews and architectural discussions as you work with other software engineers and product managers\n● Forge a strong partnership with product management and other key areas of the business\n● Enhance existing application code with new features and strike a balance when making technical decisions (build vs refactor vs simplify)\n● Actively use AI tools to improve personal and team efficiency across coding, testing, design, and troubleshooting, exploring AI integration opportunities within team processes and features, and coaching others on effective AI use\nYou Have:\n● 1+ years software development experience building highly scalable, highly available applications\n● 1+ years of programming experience with full stack technologies such Java, Kotlin, Python or TypeScript\n● 1+ years of experience with cloud technologies (AWS, Azure, etc.)\n● Experience developing, documenting, and supporting REST APIs\n● 6+ months professional experience leveraging AI to improve personal productivity in service of building complex SaaS feature sets\n● A degree in Computer Science, Engineering, or a related field or equivalent practical experience\n● Adaptable as priorities or problems change\n● Ready to take ownership of your work and grow into bigger challenges\n● A clear written and verbal communicator, able to explain your thinking in code reviews, documentation, and team discussions\n● Legally eligible to work in the U.S. on an ongoing basis\nCurrent US Perks & Benefits:\nEmployer subsidized medical/vision and dental coverage for full-time employees\n401k Match to help you save for your future (50% of your contribution up to the first 6% of your eligible pay)\nMonthly stipend to support your work and productivity\nFlexible Time Away Program, plus Sick Time Off\nUS employees are automatically covered under Smartsheet-sponsored life insurance, short-term, and long-term disability plans\nUS employees receive 12 paid holidays per year\nUp to 24 weeks of Parental Leave\nPersonal paid Volunteer Day to support our community\nOpportunities for professional growth and development including access to Udemy online courses\nCompany Funded Perks, including a counseling membership, local retail discounts, and your own personal Smartsheet account\nTeleworking options from any registered location in the U.S. (role specific)\nSmartsheet provides a competitive base salary range for roles that may be hired in different geographic areas we are licensed to operate our business from. Actual compensation is determined by several factors including, but not limited to, level of professional, educational experience, skills, and specific candidate location. In addition, this role will be eligible for a market competitive incentive opportunity.\nUS Base Salary Pay Range\n$107,500 — $147,500 USD\nGet to Know Us:\nAt Smartsheet, your ideas are heard, your potential is supported, and your contributions have real impact. You’ll have the freedom to explore, push boundaries, and grow beyond your role. We welcome diverse perspectives and nontraditional paths—because we know that impact comes from individuals who care deeply and challenge thoughtfully. When you’re doing work that stretches you, excites you, and connects you to something bigger, that’s magic at work. Let’s build what’s next, together.\nEqual Opportunity Employer:\nSmartsheet is an Equal Opportunity (EEO) employer committed to fostering an inclusive environment with the best employees. It is our policy to provide equal employment opportunities to all qualified applicants in accordance with applicable laws in the US, UK, Australia, Germany, Costa Rica, Japan, Bulgaria, India, and Singapore. All qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, protected veteran or disabled status, or genetic information.\nIf there are preparations we can make to help ensure you have a comfortable and positive interview experience, please let us know.\nTo apply: https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-i-remote-eligible",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-i-remote-eligible",
+   "status": "Awaiting Review",
+   "id": "a8610f99-03f9-4d10-abfc-09dc4516072d",
+   "createdAt": "2026-11-21T10:32:59+00:00",
+   "requiredSkills": "engineer, remote, eligible, headquarters, usa, smartsheet, has, empowered, teams, work, seamlessly, scale",
+   "postedAt": "2026-11-21",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "4589c6f9df6ef056",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-i-remote-eligible",
+     "found_at": "2026-11-21T10:32:59+00:00"
+    }
+   ],
+   "matchScore": 53,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Software Engineer II - Full Stack (Remote Eligible)",
+   "company": "Smartsheet",
+   "description": "Headquarters: -REMOTE, USA-\nFor over 20 years, Smartsheet has empowered teams to manage work seamlessly and scale solutions smarter. Now, in our most ambitious chapter yet, we are uniting human teams with AI agents. By orchestrating the work agents do best, automating manual tasks and uncovering insights at scale, we create the space for people to focus on what truly matters: judgment, creativity, and big thinking. That is magic at work, and it’s what we show up for every day.\nAs a Software Engineer II at Smartsheet, you will help build the next generation of our platform while tackling meaningful distributed systems challenges alongside a talented engineering team. You will collaborate closely with product managers and fellow engineers through code reviews and architectural discussions, and you will have the opportunity to mentor junior engineers as you grow in your own career. This role is a strong fit for someone with a couple of years of hands-on development experience who is ready to take on more ownership, sharpen their skills in cloud infrastructure, and help shape how the team uses AI tools to work smarter and faster .\nYou Will:\nBuild scalable back-end services for the next generation of applications at Smartsheet (Kotlin, Java)\nSolve challenging distributed systems problems and work with modern cloud infrastructure (AWS, Kubernetes)\nTake part in code reviews and architectural discussions as you work with other software engineers and product managers\nMentor junior engineers on code quality and other industry best practices\nForge a strong partnership with product management and other key areas of the business\nActively use AI tools to improve personal and team efficiency across coding, testing, design, and troubleshooting, exploring AI integration opportunities within team processes and features, and coaching others on effective AI use\nYou Have:\n2+ years software development experience building highly scalable, highly available applications\n2+ years of programming experience with full stack technologies such Java, Kotlin or TypeScript\n2+ years of experience with cloud technologies (AWS, Azure, etc.)\nExperience developing, documenting, and supporting REST APIs\n6+ months professional experience leveraging AI to improve personal productivity in service of building complex SaaS feature sets\nA degree in Computer Science, Engineering, or a related field or equivalent practical experience\nLegally eligible to work in the U.S. on an ongoing basis\nCurrent US Perks & Benefits:\nEmployer subsidized medical/vision and dental coverage for full-time employees\n401k Match to help you save for your future (50% of your contribution up to the first 6% of your eligible pay)\nMonthly stipend to support your work and productivity\nFlexible Time Away Program, plus Sick Time Off\nUS employees are automatically covered under Smartsheet-sponsored life insurance, short-term, and long-term disability plans\nUS employees receive 12 paid holidays per year\nUp to 24 weeks of Parental Leave\nPersonal paid Volunteer Day to support our community\nOpportunities for professional growth and development including access to Udemy online courses\nCompany Funded Perks, including a counseling membership, local retail discounts, and your own personal Smartsheet account\nTeleworking options from any registered location in the U.S. (role specific)\nSmartsheet provides a competitive base salary range for roles that may be hired in different geographic areas we are licensed to operate our business from. Actual compensation is determined by several factors including, but not limited to, level of professional, educational experience, skills, and specific candidate location. In addition, this role will be eligible for a market competitive incentive opportunity.\nUS Base Salary Pay Range\n$125,000 — $175,000 USD\nGet to Know Us:\nAt Smartsheet, your ideas are heard, your potential is supported, and your contributions have real impact. You’ll have the freedom to explore, push boundaries, and grow beyond your role. We welcome diverse perspectives and nontraditional paths—because we know that impact comes from individuals who care deeply and challenge thoughtfully. When you’re doing work that stretches you, excites you, and connects you to something bigger, that’s magic at work. Let’s build what’s next, together.\nEqual Opportunity Employer:\nSmartsheet is an Equal Opportunity (EEO) employer committed to fostering an inclusive environment with the best employees. It is our policy to provide equal employment opportunities to all qualified applicants in accordance with applicable laws in the US, UK, Australia, Germany, Costa Rica, Japan, Bulgaria, India, and Singapore. All qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, protected veteran or disabled status, or genetic information.\nIf there are preparations we can make to help ensure you have a comfortable and positive interview experience, please let us know.\nTo apply: https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-ii-full-stack-remote-eligible",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-ii-full-stack-remote-eligible",
+   "status": "Awaiting Review",
+   "id": "cb015289-c5dc-4f95-ba2b-1deaf7e3ec86",
+   "createdAt": "2026-11-21T10:32:55+00:00",
+   "requiredSkills": "engineer, full, stack, remote, eligible, headquarters, usa, smartsheet, has, empowered, teams, work",
+   "postedAt": "2026-11-21",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "1975a8de8ef3bc2f",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-ii-full-stack-remote-eligible",
+     "found_at": "2026-11-21T10:32:55+00:00"
+    }
+   ],
+   "matchScore": 53,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
   },
@@ -1592,7 +1805,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-20T18:56:10+00:00"
+     "found_at": "2026-11-21T10:32:51+00:00"
     }
    ],
    "matchScore": 53,
@@ -1635,7 +1848,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-20T18:56:01+00:00"
+     "found_at": "2026-11-21T10:32:46+00:00"
     }
    ],
    "matchScore": 39,
