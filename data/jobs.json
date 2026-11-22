@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-22T10:37:42+00:00",
+ "generatedAt": "2026-11-22T18:11:22+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -33,7 +33,7 @@
    "bdrecruit": {
     "found": 18,
     "errors": [],
-    "raw": 275
+    "raw": 276
    },
    "jsonld": {
     "found": 0,
@@ -45,7 +45,7 @@
    "rss": {
     "found": 32,
     "errors": [],
-    "raw": 575
+    "raw": 587
    },
    "careers": {
     "found": 0,
@@ -60,7 +60,7 @@
   },
   "counts": {
    "total": 41,
-   "new": 4,
+   "new": 0,
    "expired": 2,
    "duplicatesFolded": 7,
    "priorityA": 8,
@@ -76,7 +76,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-22T10:37:41+00:00"
+  "ranAt": "2026-11-22T18:11:22+00:00"
  },
  "jobs": [
   {
@@ -105,7 +105,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     }
    ],
    "matchScore": 87,
@@ -147,7 +147,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-scm-rfl-group/",
-     "found_at": "2026-11-22T10:36:53+00:00"
+     "found_at": "2026-11-22T18:10:33+00:00"
     }
    ],
    "matchScore": 83,
@@ -189,7 +189,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/field-marketing-executive-aci/",
-     "found_at": "2026-11-22T10:36:53+00:00"
+     "found_at": "2026-11-22T18:10:33+00:00"
     }
    ],
    "matchScore": 79,
@@ -231,7 +231,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
-     "found_at": "2026-11-22T10:36:56+00:00"
+     "found_at": "2026-11-22T18:10:36+00:00"
     }
    ],
    "matchScore": 79,
@@ -274,7 +274,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-22T10:36:57+00:00"
+     "found_at": "2026-11-22T18:10:36+00:00"
     }
    ],
    "matchScore": 75,
@@ -316,7 +316,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-22T10:36:57+00:00"
+     "found_at": "2026-11-22T18:10:36+00:00"
     }
    ],
    "matchScore": 75,
@@ -358,7 +358,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-sales-market-audit-pran-group/",
-     "found_at": "2026-11-22T10:36:53+00:00"
+     "found_at": "2026-11-22T18:10:33+00:00"
     }
    ],
    "matchScore": 75,
@@ -400,7 +400,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-22T10:37:00+00:00"
+     "found_at": "2026-11-22T18:10:40+00:00"
     }
    ],
    "matchScore": 75,
@@ -443,7 +443,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/full-stack-web-developer-it-meghna-group-of-industries/",
-     "found_at": "2026-11-22T10:36:53+00:00"
+     "found_at": "2026-11-22T18:10:33+00:00"
     }
    ],
    "matchScore": 74,
@@ -485,7 +485,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer-1",
-     "found_at": "2026-11-22T10:37:01+00:00"
+     "found_at": "2026-11-22T18:10:41+00:00"
     }
    ],
    "matchScore": 71,
@@ -527,7 +527,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     }
    ],
    "matchScore": 71,
@@ -569,7 +569,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upsun-software-engineer",
-     "found_at": "2026-11-22T10:37:09+00:00"
+     "found_at": "2026-11-22T18:10:49+00:00"
     }
    ],
    "matchScore": 71,
@@ -611,7 +611,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-officer-british-council/",
-     "found_at": "2026-11-22T10:36:57+00:00"
+     "found_at": "2026-11-22T18:10:36+00:00"
     }
    ],
    "matchScore": 66,
@@ -653,7 +653,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/g-p-software-engineer-ii",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     }
    ],
    "matchScore": 66,
@@ -695,7 +695,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/gusto-inc-software-engineer-financial-data-payments",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     }
    ],
    "matchScore": 66,
@@ -737,7 +737,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-22T10:37:01+00:00"
+     "found_at": "2026-11-22T18:10:41+00:00"
     }
    ],
    "matchScore": 66,
@@ -779,7 +779,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-network-it-operations-business-systems-dominos-pizza-bangladesh/",
-     "found_at": "2026-11-22T10:36:53+00:00"
+     "found_at": "2026-11-22T18:10:33+00:00"
     }
    ],
    "matchScore": 64,
@@ -821,7 +821,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sales-marketing-front-office-support-service-epyllion-group/",
-     "found_at": "2026-11-22T10:36:53+00:00"
+     "found_at": "2026-11-22T18:10:33+00:00"
     }
    ],
    "matchScore": 62,
@@ -863,7 +863,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/teamified-senior-software-engineer",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     }
    ],
    "matchScore": 69,
@@ -906,17 +906,17 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-platform",
-     "found_at": "2026-11-22T10:37:09+00:00"
+     "found_at": "2026-11-22T18:10:49+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc-latam",
-     "found_at": "2026-11-22T10:37:09+00:00"
+     "found_at": "2026-11-22T18:10:49+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc",
-     "found_at": "2026-11-22T10:37:09+00:00"
+     "found_at": "2026-11-22T18:10:49+00:00"
     }
    ],
    "matchScore": 65,
@@ -959,7 +959,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-i-costing-budgeting-mis-factory-mj-group/",
-     "found_at": "2026-11-22T10:36:53+00:00"
+     "found_at": "2026-11-22T18:10:33+00:00"
     }
    ],
    "matchScore": 64,
@@ -1002,7 +1002,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-operations-mouchak-factory-marico-bangladesh/",
-     "found_at": "2026-11-22T10:36:56+00:00"
+     "found_at": "2026-11-22T18:10:36+00:00"
     }
    ],
    "matchScore": 64,
@@ -1045,7 +1045,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-query-planner-reflections",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     }
    ],
    "matchScore": 61,
@@ -1088,7 +1088,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/legion-principal-software-engineer-devops",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     }
    ],
    "matchScore": 61,
@@ -1131,7 +1131,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/postscript-senior-software-engineer-full-stack-80-backend",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     }
    ],
    "matchScore": 61,
@@ -1174,7 +1174,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     }
    ],
    "matchScore": 61,
@@ -1217,7 +1217,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-mis-cpv-retail-irm-al-arafah-islami-bank/",
-     "found_at": "2026-11-22T10:36:53+00:00"
+     "found_at": "2026-11-22T18:10:33+00:00"
     }
    ],
    "matchScore": 57,
@@ -1260,7 +1260,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-22T10:37:00+00:00"
+     "found_at": "2026-11-22T18:10:40+00:00"
     }
    ],
    "matchScore": 57,
@@ -1303,7 +1303,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-mis-runner-motors/",
-     "found_at": "2026-11-22T10:36:53+00:00"
+     "found_at": "2026-11-22T18:10:33+00:00"
     }
    ],
    "matchScore": 57,
@@ -1345,7 +1345,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/stability-ai-staff-software-engineer-data",
-     "found_at": "2026-11-22T10:37:09+00:00"
+     "found_at": "2026-11-22T18:10:49+00:00"
     }
    ],
    "matchScore": 57,
@@ -1388,7 +1388,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-software-engineer-data",
-     "found_at": "2026-11-22T10:37:21+00:00"
+     "found_at": "2026-11-22T18:11:01+00:00"
     }
    ],
    "matchScore": 57,
@@ -1431,7 +1431,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer-query",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     }
    ],
    "matchScore": 53,
@@ -1474,7 +1474,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-delivery-engineering",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     }
    ],
    "matchScore": 53,
@@ -1517,12 +1517,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-on-prem",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer",
-     "found_at": "2026-11-22T10:37:09+00:00"
+     "found_at": "2026-11-22T18:10:49+00:00"
     }
    ],
    "matchScore": 53,
@@ -1565,7 +1565,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-enterprise-platform",
-     "found_at": "2026-11-22T10:37:09+00:00"
+     "found_at": "2026-11-22T18:10:49+00:00"
     }
    ],
    "matchScore": 53,
@@ -1608,7 +1608,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-safety-platform",
-     "found_at": "2026-11-22T10:37:21+00:00"
+     "found_at": "2026-11-22T18:11:01+00:00"
     }
    ],
    "matchScore": 53,
@@ -1651,7 +1651,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-issuing",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     }
    ],
    "matchScore": 53,
@@ -1694,12 +1694,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-remote-eligible-in-bulgaria",
-     "found_at": "2026-11-22T10:37:09+00:00"
+     "found_at": "2026-11-22T18:10:49+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-i-remote-eligible",
-     "found_at": "2026-11-22T10:37:09+00:00"
+     "found_at": "2026-11-22T18:10:49+00:00"
     }
    ],
    "matchScore": 53,
@@ -1741,7 +1741,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-ii-full-stack-remote-eligible",
-     "found_at": "2026-11-22T10:37:05+00:00"
+     "found_at": "2026-11-22T18:10:45+00:00"
     }
    ],
    "matchScore": 53,
@@ -1783,7 +1783,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-22T10:37:01+00:00"
+     "found_at": "2026-11-22T18:10:41+00:00"
     }
    ],
    "matchScore": 53,
@@ -1826,7 +1826,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-22T10:36:57+00:00"
+     "found_at": "2026-11-22T18:10:36+00:00"
     }
    ],
    "matchScore": 39,
