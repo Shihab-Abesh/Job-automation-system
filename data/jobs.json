@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-21T17:52:04+00:00",
+ "generatedAt": "2026-11-22T10:37:42+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 19,
+    "found": 18,
     "errors": [],
-    "raw": 282
+    "raw": 275
    },
    "jsonld": {
     "found": 0,
@@ -43,9 +43,9 @@
     "raw": 0
    },
    "rss": {
-    "found": 28,
+    "found": 32,
     "errors": [],
-    "raw": 513
+    "raw": 575
    },
    "careers": {
     "found": 0,
@@ -59,11 +59,11 @@
    }
   },
   "counts": {
-   "total": 42,
-   "new": 0,
+   "total": 41,
+   "new": 4,
    "expired": 2,
-   "duplicatesFolded": 3,
-   "priorityA": 9,
+   "duplicatesFolded": 7,
+   "priorityA": 8,
    "priorityB": 10,
    "priorityC": 23
   },
@@ -76,7 +76,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-21T17:52:04+00:00"
+  "ranAt": "2026-11-22T10:37:41+00:00"
  },
  "jobs": [
   {
@@ -105,7 +105,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-21T17:51:28+00:00"
+     "found_at": "2026-11-22T10:37:05+00:00"
     }
    ],
    "matchScore": 87,
@@ -147,7 +147,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-scm-rfl-group/",
-     "found_at": "2026-11-21T17:51:17+00:00"
+     "found_at": "2026-11-22T10:36:53+00:00"
     }
    ],
    "matchScore": 83,
@@ -164,19 +164,19 @@
    "discoveredBy": "bdrecruit"
   },
   {
-   "title": "Management Trainee Officer, Key Accounts (Export)",
-   "company": "PRAN Group",
-   "description": "Position: Management Trainee Officer – Key Accounts (Export)\nCompany: PRAN Group (PRAN-RFL Group)\nJob Location: Natore\nAge: 22 to 30 years\nHow to Apply: Online through the circular on bdjobs.com\nDeadline: 21 November 2026\nAbout the Role\nPRAN Group is hiring a Management Trainee Officer to support its export key accounts and international buyers.\nCore Responsibilities\nHelp manage relationships with export key accounts\nCoordinate with international buyers on orders, specifications and delivery\nPrepare quotations, purchase orders, contracts and export documents\nTrack orders from confirmation to shipment with production, supply chain, QA and logistics\nPrepare sales forecasts and account performance reports\nRequirements\nAge 22 to 30; qualified female candidates highly encouraged\nExcellent communication and analytical skills\nMS Office (Excel, Word, PowerPoint) and report writing\nBenefits\nProvident fund, mobile bill, performance bonus, insurance, gratuity\nTwo festival bonuses, yearly salary review, subsidised lunch\nAbout PRAN Group\nPRAN Group, part of PRAN-RFL, is one of Bangladesh’s largest food and agro-processing groups and a major exporter.\nHow to Apply\nInterested candidates can apply through the PRAN Group (PRAN-RFL)’s circular on bdjobs.com (apply online there) using the Apply Now button. The application deadline is 21 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , PRAN Group (PRAN-RFL)’s circular on bdjobs.com (apply online there)\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "title": "Field Marketing Executive",
+   "company": "ACI",
+   "description": "Position: Field Marketing Executive\nCompany: ACI PLC\nJob Location: Anywhere in Bangladesh\nEducation: Masters or Graduate in any discipline with Science up to SSC\nAge: At most 32 years\nDeadline: 29 November 2026\nAbout the Role\nACI Pharma is hiring Field Marketing Executives to work anywhere in Bangladesh.\nKey Responsibilities\nBe the link between ACI and doctors, pharmacies and healthcare professionals\nShare reliable product information and build lasting relationships\nBring ACI’s brands closer to patients across Bangladesh\nRequirements\nMasters or Graduate in any discipline with Science up to SSC\nGood communication in English and Bangla\nWilling to build a career in pharmaceutical sales and work anywhere in Bangladesh\nAge at most 32 years\nAbout ACI\nACI PLC is one of Bangladesh’s largest conglomerates, with pharmaceuticals, consumer brands and agribusiness.\nHow to Apply\nInterested candidates can apply through the Apply online through the bdjobs circular using the Apply Now button. The application deadline is 29 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , Apply online through the bdjobs circular\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
    "category": "Management & Business",
    "location": "Anywhere in Bangladesh",
    "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/management-trainee-officer-key-accounts-export-pran-group/",
+   "url": "https://bdrecruit.net/job/field-marketing-executive-aci/",
    "status": "Awaiting Review",
-   "id": "7f6e9a64-de08-45a4-b3ad-33ceb12ed7ec",
-   "createdAt": "2026-11-15T10:16:30+00:00",
-   "requiredSkills": "trainee, officer, key, accounts, export, pran, group, rfl, location, natore, how, apply",
-   "postedAt": "2026-11-15",
-   "deadline": "2026-11-21",
+   "id": "e05d5b31-60d9-4649-afdf-aae4db949451",
+   "createdAt": "2026-11-22T10:36:53+00:00",
+   "requiredSkills": "field, marketing, executive, aci, plc, location, anywhere, bangladesh, education, masters, graduate, any",
+   "postedAt": "2026-11-22",
+   "deadline": "2026-11-29",
    "salaryMin": null,
    "salaryMax": null,
    "salaryText": "",
@@ -184,12 +184,12 @@
    "experienceText": "Fresher",
    "area": "Remote",
    "distanceKm": 0.0,
-   "fingerprint": "b347d1ecbfc29789",
+   "fingerprint": "10982ae716476022",
    "sources": [
     {
      "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/management-trainee-officer-key-accounts-export-pran-group/",
-     "found_at": "2026-11-21T17:51:19+00:00"
+     "url": "https://bdrecruit.net/job/field-marketing-executive-aci/",
+     "found_at": "2026-11-22T10:36:53+00:00"
     }
    ],
    "matchScore": 79,
@@ -231,7 +231,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
-     "found_at": "2026-11-21T17:51:19+00:00"
+     "found_at": "2026-11-22T10:36:56+00:00"
     }
    ],
    "matchScore": 79,
@@ -274,7 +274,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-21T17:51:19+00:00"
+     "found_at": "2026-11-22T10:36:57+00:00"
     }
    ],
    "matchScore": 75,
@@ -316,7 +316,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-21T17:51:19+00:00"
+     "found_at": "2026-11-22T10:36:57+00:00"
     }
    ],
    "matchScore": 75,
@@ -358,49 +358,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-sales-market-audit-pran-group/",
-     "found_at": "2026-11-21T17:51:17+00:00"
-    }
-   ],
-   "matchScore": 75,
-   "scoreParts": {
-    "title": 100,
-    "level": 100,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "A",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "Management Trainee Officer – Category Management",
-   "company": "PRAN-RFL",
-   "description": "Position: Management Trainee Officer – Category Management\nCompany: PRAN Group\nJob Location: Anywhere in Bangladesh\nEducation: BBA/MBA in Marketing, Finance, Management, SCM or Business Administration from a reputed university\nExperience: At most 1 year; freshers encouraged\nOther Requirements: Age 23 to 30 years\nBenefits: T/A, provident fund, mobile bill, performance bonus, insurance, gratuity, two festival bonuses\nHow to Apply: Online through bdjobs.com\nDeadline: 21 November 2026\nAbout the Role\nPRAN Group is hiring Management Trainee Officers for category management in its retail business.\nKey Responsibilities\nDaily operations of retail outlets and SOP compliance\nSales and profitability targets; promotions and new launches\nStock counts, shrinkage control and merchandising standards\nOperational reports, retail analytics and cross-functional rotations\nRequirements\nBBA/MBA in Marketing, Finance, Management, SCM or Business\nFreshers encouraged (at most 1 year)\nAge 23 to 30 years\nExcel, PowerPoint and data analysis\nAbout PRAN-RFL\nPRAN-RFL Group is one of the largest food and manufacturing groups in Bangladesh, founded in 1981.\nHow to Apply\nInterested candidates can apply through the PRAN Group’s circular on bdjobs.com (apply online) using the Apply Now button. The application deadline is 21 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , PRAN Group’s circular on bdjobs.com (apply online)\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Anywhere in Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/management-trainee-officer-category-management-pran-rfl/",
-   "status": "Awaiting Review",
-   "id": "93817170-4509-459c-a86c-6cc6d7aaabb2",
-   "createdAt": "2026-11-09T10:46:57+00:00",
-   "requiredSkills": "trainee, officer, category, pran, group, location, anywhere, bangladesh, education, bba/mba, marketing, finance",
-   "postedAt": "2026-11-09",
-   "deadline": "2026-11-21",
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Full Time",
-   "experienceText": "Fresher",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "92c10e50c7ec69c0",
-   "sources": [
-    {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/management-trainee-officer-category-management-pran-rfl/",
-     "found_at": "2026-11-21T17:51:19+00:00"
+     "found_at": "2026-11-22T10:36:53+00:00"
     }
    ],
    "matchScore": 75,
@@ -442,7 +400,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-21T17:51:23+00:00"
+     "found_at": "2026-11-22T10:37:00+00:00"
     }
    ],
    "matchScore": 75,
@@ -485,7 +443,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/full-stack-web-developer-it-meghna-group-of-industries/",
-     "found_at": "2026-11-21T17:51:17+00:00"
+     "found_at": "2026-11-22T10:36:53+00:00"
     }
    ],
    "matchScore": 74,
@@ -500,48 +458,6 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
-  },
-  {
-   "title": "QA/DevOps Engineer",
-   "company": "Discord",
-   "description": "Headquarters: San Francisco Bay Area or Remote (U.S.)\nDiscord has a highly engaged community of millions of daily active users who use the platform for many different reasons, but there’s one thing that nearly everyone does: play video games. Discord plays a uniquely important role in the future of gaming, and we are focused on making it easier and more fun for people to hang out before, during, and after playing games.\nWe are seeking a QA/DevOps Engineer to join Discord’s Business Systems team. In this role, you will own automated test suite development and maintenance across Oracle ERP Cloud (Fusion) and Salesforce, with a focus on Tosca-based regression and progression testing. You will embed automated testing into CI/CD pipelines and partner closely with ERP Functional, Technical, and DevOps teams to ensure every release is tested consistently and defects are caught early.\nWhat you'll be doing\nRun Oracle ERP Cloud and Salesforce QA automation suites for all quarterly patch upgrades end-to-end.\nReview new Oracle and SFDC release features and recommend improvements to existing testing processes.\nBuild and improve regression and progression test automation in the Tosca environment for Oracle Fusion and Salesforce.\nCreate, maintain, and update Tosca scripts to reflect system and process changes across GL, AP, AR, and FAH modules.\nLead feature enhancement reviews as part of quarterly patch assessment cycles and new enhancement projects.\nIntegrate automated test suites into CI/CD pipelines; trigger regression suites automatically on every release candidate build.\nMaintain test infrastructure and environments in collaboration with DevOps and ERP Technical teams.\nDocument test coverage, defect trends, and release readiness in Jira and shared reporting dashboards.\nAutomation Use Cases\nFAH Process Automation: Auto-test Financial Accounting Hub on each new sales item addition to eliminate manual unit testing.\nAR Regression Suite: Automated flows for invoicing, receipts, and customer setup across every release.\nAP Regression Suite: Payment runs, supplier invoices, holds, and approvals tested automatically on each patch cycle.\nSalesforce Tosca Automation: Develop, maintain, and expand automated SFDC test suites in Tosca, integrated with release pipelines.\nWhat you should have\n3-5+ years of QA automation experience.\nHands-on Tosca experience for regression and progression test suite development and maintenance.\nExperience executing and maintaining automated test cycles for quarterly Oracle patch upgrades.\nFamiliarity with Oracle ERP Cloud and SFDC release feature review and technical impact assessment.\nExperience integrating automated test suites into CI/CD pipelines (Jenkins, GitHub Actions, GitLab CI, or equivalent).\nFamiliarity with pipeline configuration: triggering regression runs on pull requests and release candidate builds.\nWorking knowledge of version control (Git / GitHub or GitLab): branching, pull requests, and code review workflows.\nBasic scripting capability in Python, Shell, or PowerShell for test utility automation and pipeline support.\nUnderstanding of containerized test environments (Docker); experience running tests in ephemeral containers is a plus.\nJira for defect tracking, test coverage reporting, and sprint participation.\nExperience writing and maintaining test documentation: test plans, test cases, regression logs, and release readiness summaries.\nAbility to work cross-functionally with ERP Functional Analysts, ERP Technical Developers, and DevOps engineers.\nFamiliarity with SOX compliance, ITGC controls, and ERP change management practices.\nPreferred Qualifications\nOracle Fusion certification or formal training in Oracle ERP Cloud modules.\nExperience with SaaS QA automation in a high-growth technology company environment.\nExposure to OIC (Oracle Integration Cloud) or MuleSoft integration testing.\nFamiliarity with Salesforce test automation frameworks beyond Tosca (Selenium, Provar, or equivalent).\nPrior experience working with AMS or managed services vendors in an ERP context.\nKnowledge of Oracle quarterly release cycles and technical impact assessments.\nExposure to infrastructure-as-code or environment provisioning concepts (Terraform, Ansible).\nThis position is US-based and can be remote but if you live in the Bay Area, you’re welcome to work from our beautiful SF office.\nThe base salary range for this full-time position is listed below. This position will also be eligible for equity and benefits. Our salary ranges are determined by role and level. Within the range, individual pay is determined by additional factors, including job-related skills, experience, and relevant education or training. Please note that the compensation details listed in role postings reflect the base salary only, and do not include equity, or benefits.\nBase Salary\n$156,000 — $175,500 USD\nWhy Discord?\nDiscord plays a uniquely important role in the future of gaming. We're a multiplatform, multigenerational and multiplayer platform that helps people deepen their friendships around games and shared interests, and helps developers build and grow their businesses. We believe games give us a way to have fun with our favorite people, whether listening to music together or grinding in competitive matches for diamond rank. Join us in our mission! Your future is just a click away!\nDiscord is committed to inclusion and providing reasonable accommodations during the interview process. We want you to feel set up for success, so if you are in need of reasonable accommodations, please let your recruiter know.\nPlease see our Applicant and Candidate Privacy Policy for details regarding Discord’s collection and usage of personal information relating to the application and recruitment process by clicking HERE.\nTo apply: https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-   "category": "Software Quality Assurance",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-   "status": "Awaiting Review",
-   "id": "18d5dd77-8ea0-4dc9-b8fc-9e46bf403ceb",
-   "createdAt": "2026-10-23T08:10:48+00:00",
-   "requiredSkills": "qa/devops, engineer, headquarters, san, francisco, bay, area, remote, u.s., discord, has, highly",
-   "postedAt": "2026-10-23",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "a86326ab08210c3e",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
-     "found_at": "2026-11-21T17:51:31+00:00"
-    }
-   ],
-   "matchScore": 71,
-   "scoreParts": {
-    "title": 100,
-    "level": 65,
-    "skills": 17,
-    "preference": 100
-   },
-   "priority": "B",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time"
-   ],
-   "discoveredBy": "rss"
   },
   {
    "title": "Backend Product Software Engineer",
@@ -569,7 +485,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer-1",
-     "found_at": "2026-11-21T17:51:23+00:00"
+     "found_at": "2026-11-22T10:37:01+00:00"
     }
    ],
    "matchScore": 71,
@@ -611,7 +527,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-21T17:51:28+00:00"
+     "found_at": "2026-11-22T10:37:05+00:00"
     }
    ],
    "matchScore": 71,
@@ -653,7 +569,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upsun-software-engineer",
-     "found_at": "2026-11-21T17:51:31+00:00"
+     "found_at": "2026-11-22T10:37:09+00:00"
     }
    ],
    "matchScore": 71,
@@ -695,7 +611,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/it-officer-british-council/",
-     "found_at": "2026-11-21T17:51:19+00:00"
+     "found_at": "2026-11-22T10:36:57+00:00"
     }
    ],
    "matchScore": 66,
@@ -737,7 +653,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/g-p-software-engineer-ii",
-     "found_at": "2026-11-21T17:51:28+00:00"
+     "found_at": "2026-11-22T10:37:05+00:00"
     }
    ],
    "matchScore": 66,
@@ -779,7 +695,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/gusto-inc-software-engineer-financial-data-payments",
-     "found_at": "2026-11-21T17:51:28+00:00"
+     "found_at": "2026-11-22T10:37:05+00:00"
     }
    ],
    "matchScore": 66,
@@ -821,7 +737,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-     "found_at": "2026-11-21T17:51:23+00:00"
+     "found_at": "2026-11-22T10:37:01+00:00"
     }
    ],
    "matchScore": 66,
@@ -863,7 +779,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-network-it-operations-business-systems-dominos-pizza-bangladesh/",
-     "found_at": "2026-11-21T17:51:17+00:00"
+     "found_at": "2026-11-22T10:36:53+00:00"
     }
    ],
    "matchScore": 64,
@@ -871,6 +787,48 @@
     "title": 100,
     "level": 55,
     "skills": 0,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Executive – Sales & Marketing (Front Office & Support Service)",
+   "company": "Epyllion Group",
+   "description": "Position: Executive – Sales & Marketing (Front Office & Support Service)\nCompany: Epyllion Group\nJob Location: Tejgaon, Dhaka (Nina Kabbo building)\nExperience: At least 3 years\nEducation: Minimum Bachelor’s degree\nAge: At least 25 years\nDeadline: 22 December 2026\nAbout the Role\nEpyllion Group is hiring an Executive for front office and support service at its Nina Kabbo building, Tejgaon.\nKey Responsibilities\nWelcome visitors, clients and officials and handle their queries\nAnswer incoming calls and route mail and parcels\nManage visitor entry and approvals in the KYC software\nCoordinate tenants, housekeeping and office programmes\nRequirements\nMinimum Bachelor’s degree\nAt least 3 years of experience\nGood written and verbal communication and presentation skills\nAge at least 25 years\nAbout Epyllion Group\nEpyllion Group is one of Bangladesh’s large export garment and textile groups.\nHow to Apply\nInterested candidates can apply through the Apply online through the bdjobs circular using the Apply Now button. The application deadline is 22 December 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: bdjobs.com (where we found this vacancy)\nOfficial link: bdjobs.com , Apply online through the bdjobs circular\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "category": "Information Technology",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/executive-sales-marketing-front-office-support-service-epyllion-group/",
+   "status": "Awaiting Review",
+   "id": "87151b92-983b-46a3-836b-9570c451bacf",
+   "createdAt": "2026-11-22T10:36:53+00:00",
+   "requiredSkills": "executive, sales, marketing, service, epyllion, group, location, tejgaon, dhaka, nina, kabbo, building",
+   "postedAt": "2026-11-22",
+   "deadline": "2026-12-22",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "3 Years",
+   "area": "Tejgaon",
+   "distanceKm": 0.0,
+   "fingerprint": "6505bec29b77a70f",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/executive-sales-marketing-front-office-support-service-epyllion-group/",
+     "found_at": "2026-11-22T10:36:53+00:00"
+    }
+   ],
+   "matchScore": 62,
+   "scoreParts": {
+    "title": 100,
+    "level": 30,
+    "skills": 17,
     "preference": 100
    },
    "priority": "B",
@@ -905,7 +863,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/teamified-senior-software-engineer",
-     "found_at": "2026-11-21T17:51:28+00:00"
+     "found_at": "2026-11-22T10:37:05+00:00"
     }
    ],
    "matchScore": 69,
@@ -947,8 +905,18 @@
    "sources": [
     {
      "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-platform",
+     "found_at": "2026-11-22T10:37:09+00:00"
+    },
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc-latam",
+     "found_at": "2026-11-22T10:37:09+00:00"
+    },
+    {
+     "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc",
-     "found_at": "2026-11-21T17:51:31+00:00"
+     "found_at": "2026-11-22T10:37:09+00:00"
     }
    ],
    "matchScore": 65,
@@ -991,7 +959,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-i-costing-budgeting-mis-factory-mj-group/",
-     "found_at": "2026-11-21T17:51:17+00:00"
+     "found_at": "2026-11-22T10:36:53+00:00"
     }
    ],
    "matchScore": 64,
@@ -1034,7 +1002,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-operations-mouchak-factory-marico-bangladesh/",
-     "found_at": "2026-11-21T17:51:17+00:00"
+     "found_at": "2026-11-22T10:36:56+00:00"
     }
    ],
    "matchScore": 64,
@@ -1077,7 +1045,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-query-planner-reflections",
-     "found_at": "2026-11-21T17:51:28+00:00"
+     "found_at": "2026-11-22T10:37:05+00:00"
     }
    ],
    "matchScore": 61,
@@ -1120,7 +1088,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/legion-principal-software-engineer-devops",
-     "found_at": "2026-11-21T17:51:28+00:00"
+     "found_at": "2026-11-22T10:37:05+00:00"
     }
    ],
    "matchScore": 61,
@@ -1163,7 +1131,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/postscript-senior-software-engineer-full-stack-80-backend",
-     "found_at": "2026-11-21T17:51:28+00:00"
+     "found_at": "2026-11-22T10:37:05+00:00"
     }
    ],
    "matchScore": 61,
@@ -1206,7 +1174,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-21T17:51:28+00:00"
+     "found_at": "2026-11-22T10:37:05+00:00"
     }
    ],
    "matchScore": 61,
@@ -1249,7 +1217,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-mis-cpv-retail-irm-al-arafah-islami-bank/",
-     "found_at": "2026-11-21T17:51:17+00:00"
+     "found_at": "2026-11-22T10:36:53+00:00"
     }
    ],
    "matchScore": 57,
@@ -1292,7 +1260,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-21T17:51:23+00:00"
+     "found_at": "2026-11-22T10:37:00+00:00"
     }
    ],
    "matchScore": 57,
@@ -1335,7 +1303,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-mis-runner-motors/",
-     "found_at": "2026-11-21T17:51:17+00:00"
+     "found_at": "2026-11-22T10:36:53+00:00"
     }
    ],
    "matchScore": 57,
@@ -1377,7 +1345,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/stability-ai-staff-software-engineer-data",
-     "found_at": "2026-11-21T17:51:31+00:00"
+     "found_at": "2026-11-22T10:37:09+00:00"
     }
    ],
    "matchScore": 57,
@@ -1391,6 +1359,49 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Title matches your excluded list (Staff)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Principal Software Engineer - Data",
+   "company": "ZoomInfo Technologies LLC",
+   "description": "Headquarters: Bethesda, Maryland, United States; Remote-US-CA; Remote-US-NY; Toronto, Ontario, Canada; Waltham, Massachusetts, United States\nZoomInfo is where careers accelerate. We move fast, think boldly, and empower you to do the best work of your life. You’ll be surrounded by teammates who care deeply, challenge each other, and celebrate wins. With tools that amplify your impact and a culture that backs your ambition, you won’t just contribute. You’ll make things happen fast.\nAbout the Role:\nWe are seeking an experienced Principal Software Engineer (Data) to join our fast-paced, collaborative data team. In this role, you will have broad authority to drive the direction of our technographic data services, building world-class data pipelines and systems to process billions of signals and data points. This is an exciting opportunity to solve challenging problems and make a big impact as we invest in making technographics a first-class offering.\nWhat You'll Do:\nBuild and optimize big data pipelines to extract and process signals from the web, job postings, and other sources\nDesign and implement data architectures and storage solutions to efficiently handle massive data volumes\nCollaborate closely with data scientists to support and integrate ML models into data workflows\nContinuously improve data quality, performance, and scalability of our technographic data platform\nDrive technical strategy and roadmap for the data processing infrastructure.\nWhat We're Looking For:\nExtensive experience building and scaling big data pipelines and architectures from scratch\nDeep expertise in big data frameworks (Hadoop, Spark ) and the JVM stack ( Java , Scala )\nStrong software engineering fundamentals and ability to write efficient, high-quality code\nExperience with entity recognition and NLP techniques a plus\nProven track record delivering results and driving projects in a fast-paced environment\nExcellent collaboration and communication skills to work with data scientists, analysts and product teams\nPassion for leveraging huge datasets to power valuable insights.\nIdeal Background:\n10+ years of experience in software engineering roles.\nExperience working with very large datasets and distributed systems\nFamiliarity building data pipelines at large tech companies or data-driven organizations\nBachelor's or advanced degree in Computer Science, Engineering or related technical field.\n#LI-SK1\n#LI-Remote\nActual compensation offered will be based on factors such as the candidate’s work location, qualifications, skills, experience and/or training. Your recruiter can share more information about the specific salary range for your desired work location during the hiring process. We want our employees and their families to thrive.\nIn addition to comprehensive benefits we offer holistic mind, body and lifestyle programs designed for overall well-being. Learn more about ZoomInfo benefits here .\nBelow is the US base salary for this position. Additional compensation such as Bonus, Commission, Equity and other benefits may also apply.\n$163,800 — $257,400 USD\nAbout us:\nZoomInfo (NASDAQ: GTM), the all-in-one AI GTM platform, enables sales, marketing, and customer success teams to execute their go-to-market strategy with confidence. Powered by the industry's most comprehensive B2B data, including more than 100 million companies, 500 million contacts, and billions of signals, ZoomInfo delivers the intelligence, automation, and integrations that modern revenue teams need to identify, engage, and convert their best buyers.\nZoomInfo is committed to protecting your privacy when you apply for jobs with us. Please review our Job Applicant Privacy Notice for more details on how we handle your personal information.\nZoomInfo may use a software-based assessment as part of the recruitment process. More information about this tool, including the results of the most recent bias audit, is available here .\nZoomInfo is proud to be an equal opportunity employer, hiring based on qualifications, merit, and business needs, and does not discriminate based on protected status. We welcome all applicants and are committed to providing equal employment opportunities regardless of sex, race, age, color, national origin, sexual orientation, gender identity, marital status, disability status, religion, protected military or veteran status, medical condition, or any other characteristic protected by applicable law. We also consider qualified candidates with criminal histories in accordance with legal requirements.\nFor Massachusetts Applicants: It is unlawful in Massachusetts to require or administer a lie detector test as a condition of employment or continued employment. An employer who violates this law shall be subject to criminal penalties and civil liability. ZoomInfo does not administer lie detector tests to applicants in any location.\nTo apply: https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-software-engineer-data",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-software-engineer-data",
+   "status": "Awaiting Review",
+   "id": "ac9d063f-7783-45fc-86a8-bc82b082452f",
+   "createdAt": "2026-11-22T10:37:21+00:00",
+   "requiredSkills": "principal, engineer, headquarters, bethesda, maryland, united, states, remote, toronto, ontario, canada, waltham",
+   "postedAt": "2026-11-21",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "ea37a994939805ba",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-software-engineer-data",
+     "found_at": "2026-11-22T10:37:21+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Principal)"
    ],
    "discoveredBy": "rss"
   },
@@ -1420,7 +1431,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer-query",
-     "found_at": "2026-11-21T17:51:28+00:00"
+     "found_at": "2026-11-22T10:37:05+00:00"
     }
    ],
    "matchScore": 53,
@@ -1434,49 +1445,6 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Title matches your excluded list (Senior)"
-   ],
-   "discoveredBy": "rss"
-  },
-  {
-   "title": "Staff Software Engineer",
-   "company": "CircleCI",
-   "description": "Headquarters: Canada (Remote), United States (Remote), United Kingdom (Remote) Mexico City, Mexico - Hybrid\nAbout CircleCI Engineering\nCI/CD has been solved. Now it's being reinvented. AI agents don't just run pipelines. They write code, trigger builds, interpret failures, and propose fixes. The interfaces that developers use to understand and trust that work don't exist yet. We're building them.\nAt CircleCI, our guiding principles aren't posters on a wall. We learn fast: we run experiments, accept failure, and scale what works. We think like the customer: every decision connects back to the developer sitting in front of a failing build at 2 am. We own the outcome: not just our slice of it, but the whole thing. If that's how you already work, you'll fit here.\nTeam-Agnostic Placement\nWe don't hire for a team. We hire for CircleCI. Where you land depends on where your strengths create the most leverage, and we figure that out together. You might own the CI pipeline experience, deploy and release tooling, notification infrastructure, monetization flows, AI agent surfaces, or the foundational web platform. The through line across all of it is the same: full-stack ownership, a high bar for craft, and work that directly shapes how tens of thousands of developers experience CircleCI every day.\nWhat You'll Do\nBuild AI-natively. AI is how we work. It's not a productivity layer on top of engineering, but the default starting point for how problems get approached and solved.\nOwn technical strategy for your domain. You decide when and how the architecture evolves, balancing technical debt against velocity. When a project spans teams, you're the one who breaks down the ambiguity and takes ownership of whether it lands.\nInvent new interfaces. Software delivery is being reinvented. Pipelines run autonomously, generate fixes, and surface results that need human judgment. The tools developers use to understand, trust, and act on that work don't exist yet. You'll define what they look like and establish the patterns the team builds on.\nOwn the full stack, at scale. Build features end-to-end in Go, React, and TypeScript. Your ownership extends past your own code to the systems and teams around it.\nConnect engineering to the business. Partner directly with Product and Engineering Management to translate business goals into technical strategy. You understand the \"why\" behind the roadmap and use it to make tradeoffs.\nChampion observability. Drive monitoring and alerting strategy across your domain, not just your own services. Use Honeycomb, Datadog, and Rollbar to reduce noise and improve the org's ability to diagnose problems quickly.\nMentor at scale. Mentor multiple engineers at once. Build the systems and documentation that transfer knowledge and remove single points of failure, not just your own.\nWhat You'll Bring\nAI-native engineering practices. You use AI tools daily and can speak to what you've built, where they changed your approach, and where they fall short.\nA track record of shipping at scale. You've built and owned systems that other engineers build on. 8+ years of production full-stack experience, with a history of taking accountability for outcomes.\nFull-stack depth. Strong across the stack — React and TypeScript on the frontend, Go on the backend, owning API design, data modeling, and service integration.\nSystem design , across domains. You own architecture decisions that span multiple systems and teams. You make the tradeoff calls, document the reasoning, and are the person others escalate to when the answer isn't obvious.\nBusiness acumen. You understand how your domain connects to the broader business, and you use that context to guide technical decisions, not just implement them.\nTechnical leadership. You mentor engineers, give direct feedback on technical direction, and raise the quality bar across teams through how you engage in reviews and design discussions, not just what you ship.\nSound like you?\nYou've stopped waiting for AI to mature and are already building with it, not as a productivity trick, but as a core part of how you think about problems. You care about the product as much as the code. You're drawn to work where the patterns don't exist yet and the best answer requires you to invent it. If that's how you already operate, we want to talk.\nThe salary range listed reflects the wide geographic scope of this posting, as we hire across the United States and Canada. Actual compensation is determined based on a combination of factors, including but not limited to skills, experience, job-related knowledge, and geographic location. As a result, the starting salary offered may vary and could fall anywhere within the posted range, and not all candidates should expect to receive an offer at the top of the range.\nCanada Base Pay Range\n$195,000 — $265,000 CAD\nUnited Kingdom Base Pay Range\n£125,000 — £170,000 GBP\nExpected salary range for San Francisco and the surrounding area.\nUS SF Bay Area (Metro Zone 3)\n$205,000 — $285,000 USD\nExpected salary range for specific metro areas including Boston, Washington DC, Denver, Los Angeles, New York, Portland, San Diego, and Seattle. These metro areas may change periodically.\nUS Metro Zone 2\n$200,000 — $275,000 USD\nExpected pay range for all other US locations not falling into Metro Zone 3 or Metro Zone 2.\nUS General\n$180,000 — $250,000 USD\nWe will ensure that individuals with disabilities are provided reasonable accommodation to participate in the job application or interview process, to perform essential job functions, and to receive other benefits and privileges of employment. Please contact us to request accommodation.\nAbout CircleCI\nCircleCI is the world’s largest continuous integration/continuous delivery (CI/CD) platform, and the hub where code moves from idea to delivery. As one of the most-used DevOps tools - processing more than 3 million jobs a day - CircleCI has unique access to data on how the most effective engineering teams work, and the tools to help software companies successfully leverage the power of AI into their commercial applications. Companies like Hinge, HuggingFace, and Samsung use us to improve engineering team productivity, release better products, and get to market faster.\nFounded in 2011 and headquartered in downtown San Francisco with a global, remote workforce, CircleCI is venture-backed by Base10, Greenspring Associates, Eleven Prime, IVP, Sapphire Ventures, Top Tier Capital Partners, Baseline Ventures, Threshold\nVentures, Scale Venture Partners, Owl Rock Capital, Next Equity Partners, Heavybit, and Harrison Metal Capital.\nCircleCI is an Equal Opportunity and Affirmative Action employer. We do not discriminate based upon race, religion, color, national origin, sexual orientation, gender, gender identity, gender expression, transgender status, sexual stereotypes, age, status as a protected veteran, status as an individual with a disability, or other applicable legally protected characteristics. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law.\nHow CircleCI Uses AI in Hiring\nAt CircleCI, people make our hiring decisions. We use technology to support our recruiting team so they can spend more time on what matters most: getting to know you.\nWhere we may use AI\nJob descriptions and messaging : AI may help draft job descriptions and role-specific messaging so they are clear and accurate.\nApplication review : For some roles, we use an AI tool to review applications, including resumes and application responses, against criteria our hiring team sets for the role. The tool generates a fit score and summary to help recruiters organize and prioritize applications.\nInterview notes : With advance notice, an AI note-taking tool may join interviews to record, transcribe, and summarize the conversation. This lets interviewers focus on talking with you. You will be told before each interview, and you may opt out at any stage by letting your recruiter know. If you opt out, the tool will not join, and your candidacy is not affected.\nOutreach : AI may help draft candidate outreach and scheduling messages, which our team reviews before sending.\nOur commitment\nAI does not make hiring decisions at CircleCI. Our recruiters and hiring teams review candidates and make every decision to advance or reject an application. No candidate is rejected based solely on an AI score. We have tools and processes in place to test for bias and to review how these tools perform, and we adjust our approach as AI technology and the laws that govern it change.\nYour choices\nYou can ask for human-only review of your application, opt out of AI interview note-taking, request an accommodation, or ask questions about how we use AI. Contact recruiting@circleci.com . For how we handle your data, including retention, see our Privacy Policy.\nTo apply: https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer",
-   "category": "Software Development",
-   "location": "Remote (Anywhere in the World)",
-   "source": "We Work Remotely",
-   "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer",
-   "status": "Awaiting Review",
-   "id": "e13b59c1-e69b-46b1-82fb-3d073044a880",
-   "createdAt": "2026-11-19T19:17:50+00:00",
-   "requiredSkills": "staff, engineer, headquarters, canada, remote, united, states, kingdom, mexico, city, hybrid, about",
-   "postedAt": "2026-11-19",
-   "deadline": null,
-   "salaryMin": null,
-   "salaryMax": null,
-   "salaryText": "",
-   "employmentType": "Remote or hybrid",
-   "experienceText": "",
-   "area": "Remote",
-   "distanceKm": 0.0,
-   "fingerprint": "cea4c7c473b44e43",
-   "sources": [
-    {
-     "source": "We Work Remotely",
-     "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer",
-     "found_at": "2026-11-21T17:51:31+00:00"
-    }
-   ],
-   "matchScore": 53,
-   "scoreParts": {
-    "title": 100,
-    "level": 10,
-    "skills": 0,
-    "preference": 100
-   },
-   "priority": "C",
-   "gateNotes": [
-    "Pay not stated, worth asking before you invest time",
-    "Title matches your excluded list (Staff)"
    ],
    "discoveredBy": "rss"
   },
@@ -1506,7 +1474,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-delivery-engineering",
-     "found_at": "2026-11-21T17:51:28+00:00"
+     "found_at": "2026-11-22T10:37:05+00:00"
     }
    ],
    "matchScore": 53,
@@ -1524,32 +1492,37 @@
    "discoveredBy": "rss"
   },
   {
-   "title": "Project Coordinator",
-   "company": "Commercial Bank of Ceylon",
-   "description": "Position: Project Coordinator\nCompany: Commercial Bank of Ceylon PLC (Bangladesh)\nJob Location: Dhaka\nEducation: Bachelor’s in Business Administration, Management, IT or related\nExperience: At least 5 years in project administration or coordination\nHow to Apply: The bank’s LinkedIn job listing (Easy Apply)\nDeadline: 21 November 2026\nAbout the Role\nCommercial Bank of Ceylon PLC is looking for a Project Coordinator for its Bangladesh operation in Dhaka.\nCore Responsibilities\nHelp the Project Manager set schedules and track milestones\nKeep project charters, plans, minutes, scope and status reports\nRun check-ins, GAP sessions and UAT coordination and follow up action items\nLiaise between business units, vendors and management\nRequirements\nBachelor’s in Business Administration, Management, IT or related\nAt least 5 years in project administration or coordination\nAbout Commercial Bank of Ceylon\nCommercial Bank of Ceylon PLC is a leading Sri Lankan bank (founded 1920) with a long-established operation in Bangladesh.\nHow to Apply\nInterested candidates can apply through the Commercial Bank of Ceylon’s own LinkedIn job listing (Easy Apply) using the Apply Now button. The application deadline is 21 November 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: linkedin.com (where we found this vacancy)\nOfficial link: linkedin.com , Commercial Bank of Ceylon’s own LinkedIn job listing (Easy Apply)\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
-   "category": "Management & Business",
-   "location": "Dhaka, Bangladesh",
-   "source": "BDRecruit",
-   "url": "https://bdrecruit.net/job/project-coordinator-commercial-bank-of-ceylon/",
+   "title": "Staff Software Engineer, On-Prem",
+   "company": "CircleCI",
+   "description": "Headquarters: Canada (Remote) or United States (Remote) or Mexico City, Mexico (Hybrid)\nAbout CircleCI Engineering\nCI/CD has been solved. Now it's being reinvented. AI agents don't just run pipelines. They write code, trigger builds, interpret failures, and propose fixes. The interfaces that developers use to understand and trust that work don't exist yet. We're building them.\nAt CircleCI, our guiding principles aren't posters on a wall. We learn fast: we run experiments, accept failure, and scale what works. We think like the customer: every decision connects back to the developer sitting in front of a failing build at 2 am. We own the outcome: not just our slice of it, but the whole thing. If that's how you already work, you'll fit here.\nAbout the On-Prem Team\nThe On-Prem team ships CircleCI Server, our self-hosted CI/CD platform for customers who need to run everything inside their own infrastructure: regulated industries, air-gapped environments, and teams with strict data residency and compliance requirements. Our mission is to deliver an on-premises CircleCI that is secure, highly available, and easy to install, upgrade, and support.\nOur team serves two kinds of customers: the organizations that run Server, and the CircleCI engineering teams whose services ship inside it. Beyond the product itself, we own the tooling and infrastructure that let those teams package, test, and release their services into Server and keep them current. As a Staff Engineer here, you'll care as much about the internal release experience as about making Server reliable and easy to operate for external customers.\nWhat You'll Do\nBuild AI-natively. AI is how we work. It's not a productivity layer on top of engineering, but the default starting point for how we approach and solve problems.\nMake shipping into Server easy for every team. Own the platform strategy, setting the technical direction for the tooling, test infrastructure, and release automation that CircleCI teams use to develop and maintain their services inside Server.\nGive customers confidence installing, upgrading, and running CircleCI Server. Customers run Server in environments you'll never see. Make the install experience simpler and more predictable, upgrades safer, and day-to-day operation easier, starting with sensible defaults.\nOwn Server's foundation. You'll be responsible for everything from the Kubernetes infrastructure Server deploys into, to the tooling internal teams and customers depend on. That responsibility extends past your own code to the systems and teams around it.\nGet operators from symptom to root cause fast. Standardize Server's observability on OpenTelemetry so it works with whatever platform each customer already runs. Build diagnostics that help operators, and the engineers supporting them, find the problem quickly. Partner with Support, Customer Engineering, and customers to find recurring issues and fix them at the source.\nConnect engineering to the business. Partner directly with Product and Engineering Management to translate business goals into technical strategy. You understand the \"why\" behind the roadmap and use it to make tradeoffs.\nWhat You'll Bring\nA platform mindset. You default to building tools, frameworks, and systems that make other engineers more productive rather than solving each problem one-off. You've built internal platforms before and can talk about the leverage they created for the teams that used them.\nAI-native engineering practices. You use AI tools daily and can speak to what you've built, where they changed your approach, and where they fall short.\nDeep experience with Kubernetes and Helm. You've designed, deployed, and debugged production systems on Kubernetes. You know where the sharp edges are, especially in customer-operated environments (air-gapped, restricted network, unfamiliar cluster shapes).\nStrong backend and systems foundation. 8+ years building production backend and infrastructure systems, with a history of taking accountability for outcomes. Strong in Go, with real experience in API design, data modelling, distributed systems, and operational tooling.\nSystem design with business context. You make architecture decisions that span multiple systems and teams, weigh tradeoffs against business needs, and document your reasoning. You're the person others escalate to when the answer isn't obvious.\nTechnical leadership. You mentor engineers, give direct feedback on technical direction, and raise the quality bar across teams through how you engage in reviews and design discussions, not just what you ship.\nExperience with on-premises or self-hosted software. You've shipped software that runs in someone else's environment (enterprise on-prem, self-hosted SaaS, or a distributed system installed by customers), and you understand how that constraint shapes your design choices, release process, and support model.\nSound Like You?\nYou believe the best platform work makes everyone else faster. You're energized by the challenge of building software that has to work in environments you can't see or control. You want to take a product customers depend on and make it dramatically easier to build, ship, and run, both for them and for the teams whose services live inside it. If that sounds like you, let's talk.\nCanada Base Pay Range\n$195,000 — $265,000 CAD\nExpected salary range for San Francisco and the surrounding area.\nUS SF Bay Area (Metro Zone 3)\n$205,000 — $285,000 USD\nExpected salary range for specific metro areas including Boston, Washington DC, Denver, Los Angeles, New York, Portland, San Diego, and Seattle. These metro areas may change periodically.\nUS Metro Zone 2\n$200,000 — $275,000 USD\nExpected pay range for all other US locations not falling into Metro Zone 3 or Metro Zone 2.\nUS General\n$180,000 — $250,000 USD\nWe will ensure that individuals with disabilities are provided reasonable accommodation to participate in the job application or interview process, to perform essential job functions, and to receive other benefits and privileges of employment. Please contact us to request accommodation.\nAbout CircleCI\nCircleCI is the world’s largest continuous integration/continuous delivery (CI/CD) platform, and the hub where code moves from idea to delivery. As one of the most-used DevOps tools - processing more than 3 million jobs a day - CircleCI has unique access to data on how the most effective engineering teams work, and the tools to help software companies successfully leverage the power of AI into their commercial applications. Companies like Hinge, HuggingFace, and Samsung use us to improve engineering team productivity, release better products, and get to market faster.\nFounded in 2011 and headquartered in downtown San Francisco with a global, remote workforce, CircleCI is venture-backed by Base10, Greenspring Associates, Eleven Prime, IVP, Sapphire Ventures, Top Tier Capital Partners, Baseline Ventures, Threshold\nVentures, Scale Venture Partners, Owl Rock Capital, Next Equity Partners, Heavybit, and Harrison Metal Capital.\nCircleCI is an Equal Opportunity and Affirmative Action employer. We do not discriminate based upon race, religion, color, national origin, sexual orientation, gender, gender identity, gender expression, transgender status, sexual stereotypes, age, status as a protected veteran, status as an individual with a disability, or other applicable legally protected characteristics. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law.\nHow CircleCI Uses AI in Hiring\nAt CircleCI, people make our hiring decisions. We use technology to support our recruiting team so they can spend more time on what matters most: getting to know you.\nWhere we may use AI\nJob descriptions and messaging : AI may help draft job descriptions and role-specific messaging so they are clear and accurate.\nApplication review : For some roles, we use an AI tool to review applications, including resumes and application responses, against criteria our hiring team sets for the role. The tool generates a fit score and summary to help recruiters organize and prioritize applications.\nInterview notes : With advance notice, an AI note-taking tool may join interviews to record, transcribe, and summarize the conversation. This lets interviewers focus on talking with you. You will be told before each interview, and you may opt out at any stage by letting your recruiter know. If you opt out, the tool will not join, and your candidacy is not affected.\nOutreach : AI may help draft candidate outreach and scheduling messages, which our team reviews before sending.\nOur commitment\nAI does not make hiring decisions at CircleCI. Our recruiters and hiring teams review candidates and make every decision to advance or reject an application. No candidate is rejected based solely on an AI score. We have tools and processes in place to test for bias and to review how these tools perform, and we adjust our approach as AI technology and the laws that govern it change.\nYour choices\nYou can ask for human-only review of your application, opt out of AI interview note-taking, request an accommodation, or ask questions about how we use AI. Contact recruiting@circleci.com . For how we handle your data, including retention, see our Privacy Policy.\nTo apply: https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-on-prem",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-on-prem",
    "status": "Awaiting Review",
-   "id": "6e26ba93-a302-4dba-8e95-5334b0328887",
-   "createdAt": "2026-11-13T10:25:56+00:00",
-   "requiredSkills": "coordinator, commercial, bank, ceylon, plc, bangladesh, location, dhaka, education, bachelor, business, administration",
-   "postedAt": "2026-11-13",
-   "deadline": "2026-11-21",
+   "id": "78141f60-3e70-450c-916e-16f2b52cf6d1",
+   "createdAt": "2026-11-22T10:37:05+00:00",
+   "requiredSkills": "staff, engineer, prem, headquarters, canada, remote, united, states, mexico, city, hybrid, about",
+   "postedAt": "2026-11-19",
+   "deadline": null,
    "salaryMin": null,
    "salaryMax": null,
    "salaryText": "",
-   "employmentType": "Full Time",
-   "experienceText": "5 Years",
-   "area": "Dhaka (area not stated)",
-   "distanceKm": null,
-   "fingerprint": "9444d17c9a2661f8",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "b673ad3e5fd64950",
    "sources": [
     {
-     "source": "BDRecruit",
-     "url": "https://bdrecruit.net/job/project-coordinator-commercial-bank-of-ceylon/",
-     "found_at": "2026-11-21T17:51:19+00:00"
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-on-prem",
+     "found_at": "2026-11-22T10:37:05+00:00"
+    },
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer",
+     "found_at": "2026-11-22T10:37:09+00:00"
     }
    ],
    "matchScore": 53,
@@ -1562,9 +1535,9 @@
    "priority": "C",
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
-    "Exact area not stated in the posting"
+    "Title matches your excluded list (Staff)"
    ],
-   "discoveredBy": "bdrecruit"
+   "discoveredBy": "rss"
   },
   {
    "title": "Staff Software Engineer, Enterprise Platform",
@@ -1592,7 +1565,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-enterprise-platform",
-     "found_at": "2026-11-21T17:51:31+00:00"
+     "found_at": "2026-11-22T10:37:09+00:00"
     }
    ],
    "matchScore": 53,
@@ -1635,7 +1608,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-safety-platform",
-     "found_at": "2026-11-21T17:51:44+00:00"
+     "found_at": "2026-11-22T10:37:21+00:00"
     }
    ],
    "matchScore": 53,
@@ -1678,7 +1651,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-issuing",
-     "found_at": "2026-11-21T17:51:28+00:00"
+     "found_at": "2026-11-22T10:37:05+00:00"
     }
    ],
    "matchScore": 53,
@@ -1720,8 +1693,13 @@
    "sources": [
     {
      "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-remote-eligible-in-bulgaria",
+     "found_at": "2026-11-22T10:37:09+00:00"
+    },
+    {
+     "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-i-remote-eligible",
-     "found_at": "2026-11-21T17:51:31+00:00"
+     "found_at": "2026-11-22T10:37:09+00:00"
     }
    ],
    "matchScore": 53,
@@ -1763,7 +1741,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-ii-full-stack-remote-eligible",
-     "found_at": "2026-11-21T17:51:28+00:00"
+     "found_at": "2026-11-22T10:37:05+00:00"
     }
    ],
    "matchScore": 53,
@@ -1805,7 +1783,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-21T17:51:23+00:00"
+     "found_at": "2026-11-22T10:37:01+00:00"
     }
    ],
    "matchScore": 53,
@@ -1848,7 +1826,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-21T17:51:19+00:00"
+     "found_at": "2026-11-22T10:36:57+00:00"
     }
    ],
    "matchScore": 39,
