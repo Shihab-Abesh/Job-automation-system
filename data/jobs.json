@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-24T13:11:51+00:00",
+ "generatedAt": "2026-11-24T20:58:22+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -43,9 +43,9 @@
     "raw": 0
    },
    "rss": {
-    "found": 37,
+    "found": 40,
     "errors": [],
-    "raw": 710
+    "raw": 758
    },
    "careers": {
     "found": 0,
@@ -59,13 +59,13 @@
    }
   },
   "counts": {
-   "total": 47,
-   "new": 5,
+   "total": 50,
+   "new": 3,
    "expired": 2,
    "duplicatesFolded": 6,
-   "priorityA": 11,
+   "priorityA": 12,
    "priorityB": 7,
-   "priorityC": 29
+   "priorityC": 31
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -76,7 +76,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-24T13:11:51+00:00"
+  "ranAt": "2026-11-24T20:58:21+00:00"
  },
  "jobs": [
   {
@@ -105,7 +105,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:43+00:00"
     }
    ],
    "matchScore": 87,
@@ -147,7 +147,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-product",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:42+00:00"
     }
    ],
    "matchScore": 83,
@@ -189,7 +189,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-scm-rfl-group/",
-     "found_at": "2026-11-24T13:11:01+00:00"
+     "found_at": "2026-11-24T20:57:33+00:00"
     }
    ],
    "matchScore": 83,
@@ -231,7 +231,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/field-marketing-executive-aci/",
-     "found_at": "2026-11-24T13:10:58+00:00"
+     "found_at": "2026-11-24T20:57:30+00:00"
     }
    ],
    "matchScore": 79,
@@ -273,7 +273,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-full-stack-product-software-engineer",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:42+00:00"
     }
    ],
    "matchScore": 79,
@@ -315,7 +315,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
-     "found_at": "2026-11-24T13:11:01+00:00"
+     "found_at": "2026-11-24T20:57:33+00:00"
     }
    ],
    "matchScore": 79,
@@ -358,7 +358,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-24T13:11:06+00:00"
+     "found_at": "2026-11-24T20:57:37+00:00"
     }
    ],
    "matchScore": 75,
@@ -400,7 +400,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-24T13:11:06+00:00"
+     "found_at": "2026-11-24T20:57:37+00:00"
     }
    ],
    "matchScore": 75,
@@ -442,7 +442,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-sales-market-audit-pran-group/",
-     "found_at": "2026-11-24T13:11:01+00:00"
+     "found_at": "2026-11-24T20:57:33+00:00"
     }
    ],
    "matchScore": 75,
@@ -457,6 +457,48 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Software Engineer Intern",
+   "company": "Ritual",
+   "description": "Headquarters: Remote\nAbout Ritual\nRitual is building a sovereign, execution layer for AI, with our private testnet already live and running. The Ritual chain is the first blockchain custom-built to support AI-native operations, designed from the ground up to enable a new class of applications at the intersection of crypto and AI. Our first product, Infernet, is pioneering new ground as the first solution to enable developers to access AI models both on-chain via smart contracts and off-chain, demonstrating our commitment to bridging these transformative technologies.\nAbout the role\nPrototype rapidly, iterate and execute quickly based on technical guidance\nWork at the frontier of modern cryptographic schemes and open-source AI\nRelease your work into the open-source world and build alongside the Ritual community\nAbout you\nIntellectually curious around intersections of interdisciplinary fields ranging from game theory to cryptography to machine learning\nQuick iteration and development cycles on writing and/or proof-of-concept\nExtras\nExperience in cryptography, machine learning software projects, ideally in open-source land\nWhy join us\nJoin a passionate group of engineers, researchers, and operators on a mission to build the next generation of AI infrastructure hardened by cryptographic schemes\nWe work completely in open-source and ship weekly\nMaximize your knowledge gradient around fields that typically would not intersect\nWe’re open to exceptional people of all backgrounds for research (e.g. high school, undergraduate and postgraduate degree).\nTo apply: https://weworkremotely.com/remote-jobs/ritual-software-engineer-intern",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/ritual-software-engineer-intern",
+   "status": "Awaiting Review",
+   "id": "39373a19-2a32-4c4e-8d23-1a81115cccf5",
+   "createdAt": "2026-11-24T20:57:42+00:00",
+   "requiredSkills": "engineer, headquarters, remote, about, ritual, building, sovereign, execution, layer, private, testnet, already",
+   "postedAt": "2026-11-24",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "b629437b7e9e19fc",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/ritual-software-engineer-intern",
+     "found_at": "2026-11-24T20:57:42+00:00"
+    }
+   ],
+   "matchScore": 75,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Management Trainee – Business Analyst",
@@ -484,7 +526,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-24T13:11:06+00:00"
+     "found_at": "2026-11-24T20:57:37+00:00"
     }
    ],
    "matchScore": 75,
@@ -527,7 +569,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-programme-shanta/",
-     "found_at": "2026-11-24T13:10:58+00:00"
+     "found_at": "2026-11-24T20:57:30+00:00"
     }
    ],
    "matchScore": 75,
@@ -570,7 +612,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/full-stack-web-developer-it-meghna-group-of-industries/",
-     "found_at": "2026-11-24T13:11:01+00:00"
+     "found_at": "2026-11-24T20:57:33+00:00"
     }
    ],
    "matchScore": 74,
@@ -612,7 +654,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer-1",
-     "found_at": "2026-11-24T13:11:06+00:00"
+     "found_at": "2026-11-24T20:57:38+00:00"
     }
    ],
    "matchScore": 71,
@@ -654,7 +696,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:43+00:00"
     }
    ],
    "matchScore": 71,
@@ -696,7 +738,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upsun-software-engineer",
-     "found_at": "2026-11-24T13:11:14+00:00"
+     "found_at": "2026-11-24T20:57:46+00:00"
     }
    ],
    "matchScore": 71,
@@ -738,7 +780,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/g-p-software-engineer-ii",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:43+00:00"
     }
    ],
    "matchScore": 66,
@@ -780,7 +822,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/gusto-inc-software-engineer-financial-data-payments",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:42+00:00"
     }
    ],
    "matchScore": 66,
@@ -822,7 +864,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sales-marketing-front-office-support-service-epyllion-group/",
-     "found_at": "2026-11-24T13:10:58+00:00"
+     "found_at": "2026-11-24T20:57:30+00:00"
     }
    ],
    "matchScore": 62,
@@ -864,7 +906,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/teamified-senior-software-engineer",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:43+00:00"
     }
    ],
    "matchScore": 69,
@@ -907,17 +949,17 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-platform",
-     "found_at": "2026-11-24T13:11:14+00:00"
+     "found_at": "2026-11-24T20:57:46+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc-latam",
-     "found_at": "2026-11-24T13:11:14+00:00"
+     "found_at": "2026-11-24T20:57:46+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc",
-     "found_at": "2026-11-24T13:11:14+00:00"
+     "found_at": "2026-11-24T20:57:46+00:00"
     }
    ],
    "matchScore": 65,
@@ -960,7 +1002,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-i-costing-budgeting-mis-factory-mj-group/",
-     "found_at": "2026-11-24T13:11:01+00:00"
+     "found_at": "2026-11-24T20:57:33+00:00"
     }
    ],
    "matchScore": 64,
@@ -1003,7 +1045,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-operations-mouchak-factory-marico-bangladesh/",
-     "found_at": "2026-11-24T13:11:01+00:00"
+     "found_at": "2026-11-24T20:57:33+00:00"
     }
    ],
    "matchScore": 64,
@@ -1019,6 +1061,49 @@
     "Gazipur is about 26.4 km out, past your 10 km limit"
    ],
    "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Senior Software Engineer, Partner Integrations",
+   "company": "Airbnb",
+   "description": "Headquarters: Remote, USA\nAirbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.\nThe Community You Will Join:\nThe Partner Integration team is responsible for integrating new business partners and functionality into Airbnb’s product. We work to improve both the supply and demand side of Airbnb’s Stays, Experiences and Services businesses through thoughtfully designed product experiences for Guest and Hosts.\nWe recently launched exciting new features such as grocery delivery and airport transfers, as well as integrations with smart lock providers, rewards programs and more. We are looking to rapidly expand our offerings.\nYou will be working closely with a strong, fast-moving team integrating new product functionality into the Guest experience of Airbnb’s core product. This role also interacts with a large cross-functional team of partners across product and design, business and partnerships, customer support and more\nThe Difference You Will Make:\nAs an Engineer on the Partner Integrations team, you will:\nContribute directly to company growth in new areas as we explore partnerships outside of Airbnb.\nLead projects end-to-end – from working with partners directly, to clicking that launch button.\nIdentify patterns that allow us to scale new partnerships quickly in the future.\nHave attention to detail about the user experience.\nA Typical Day:\nDesign, write and test new APIs and integrations with partners.\nWrite documents to propose, align and document changes to the system.\nDebug external integrations and join the team on-call rotation.\nCollaborate with cross-functional partners such as Product, Program, Design and Engineers, and directly with external partners.\nProvide input in team roadmap and technical direction.\nBuild large scale backend solutions that are efficient, reliable, performant and scalable.\nYour Expertise:\n6+ years of experience\nExperience designing scalable and resilient large-scale service-oriented architectures\nExperience leading projects\nPrevious experience working with third party API’s is a plus.\nPrevious experience with authentication or secure signing mechanisms is a plus.\nPassionate about reliability, efficiency, availability, and system quality.\nGood judgment in making and communicating tradeoffs to balance short-term business needs with long-term technical quality.\nHigh sense of user empathy and the ability to identify and solve for user needs and friction.\nEnd-to-end mentality that transcends team boundaries and helps find globally optimal solutions.\nExcellent communication skills and the ability to work well within a team and with teams across the engineering organization.\nYour Location:\nThis position is US - Remote Eligible. The role may include occasional work at an Airbnb office or attendance at offsites, as agreed to with your manager. While the position is Remote Eligible, you must live in a state where Airbnb, Inc. has a registered entity. Click here for the up-to-date list of excluded states. This list is continuously evolving, so please check back with us if the state you live in is on the exclusion list . If your position is employed by another Airbnb entity, your recruiter will inform you what states you are eligible to work from.\nOur Commitment To Inclusion & Belonging:\nAirbnb is committed to working with the broadest talent pool possible. We believe diverse ideas foster innovation and engagement, and allow us to attract creatively-led people, and to develop the best products, services and solutions. All qualified individuals are encouraged to apply.\nWe strive to also provide a disability inclusive application and interview process. If you are a candidate with a disability and require reasonable accommodation in order to submit an application, please contact us at: reasonableaccommodations@airbnb.com . Please include your full name, the role you’re applying for and the accommodation necessary to assist you with the recruiting process.\nWe ask that you only reach out to us if you are a candidate whose disability prevents you from being able to complete our online application.\nEqual Employment Opportunity :\nAirbnb values diversity & belonging and is proud to be an Equal Employment Opportunity employer. All individuals seeking employment at Airbnb are considered without regard to race, color, religion, national origin, age, gender, sex, marital status, ancestry, physical or mental disability, veteran status, gender identity, gender expression, sexual orientation, or any other legally protected characteristic.\nHow We'll Take Care of You:\nOur job titles may span more than one career level. The actual base pay is dependent upon many factors, such as: training, transferable skills, work experience, business needs and market demands. The base pay range is subject to change and may be modified in the future. This role may also be eligible for bonus, equity, benefits, and Employee Travel Credits.\nPay Range\n$190,000 — $220,000 USD\nReasonable Accommodations: We are committed to providing reasonable accommodations throughout the recruitment process for applicants with disabilities. If you need assistance, or an accommodation, please let your recruiter know once you are contacted about a role.\nA Note on Recruiting Scams: Scammers sometimes pose as Airbnb recruiters to get money or personal information from candidates. A few things that will always be true for Airbnb’s hiring process: our open roles are posted on Airbnb’s Career’s Page at careers.airbnb.com, and our recruiters correspond only from @ airbnb.com or @ ext.airbnb.com email addresses. Our recruiters will never ask for your Social Security number, bank account details, passport, or payment app information while you are interviewing. We’ll also never ask you to pay a fee, send money, deposit or cash a check, or purchase work-related equipment (such as a company laptop) during the interview process. We encourage candidates to remain vigilant of these recruiting scams and not share sensitive information if you do not believe an individual is actually affiliated with Airbnb.\nTo apply: https://weworkremotely.com/remote-jobs/airbnb-senior-software-engineer-partner-integrations",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-software-engineer-partner-integrations",
+   "status": "Awaiting Review",
+   "id": "3f41d138-7c05-46a7-8e20-be4146006f1e",
+   "createdAt": "2026-11-24T20:57:42+00:00",
+   "requiredSkills": "senior, engineer, partner, integrations, headquarters, remote, usa, airbnb, was, born, 2007, when",
+   "postedAt": "2026-11-24",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "ce820fc03f64c13a",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-software-engineer-partner-integrations",
+     "found_at": "2026-11-24T20:57:42+00:00"
+    }
+   ],
+   "matchScore": 61,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Senior Software Engineer, Data Platform",
@@ -1046,7 +1131,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data-platform",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:42+00:00"
     }
    ],
    "matchScore": 61,
@@ -1089,7 +1174,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-query-planner-reflections",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:43+00:00"
     }
    ],
    "matchScore": 61,
@@ -1132,7 +1217,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/legion-principal-software-engineer-devops",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:43+00:00"
     }
    ],
    "matchScore": 61,
@@ -1175,7 +1260,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/postscript-senior-software-engineer-full-stack-80-backend",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:43+00:00"
     }
    ],
    "matchScore": 61,
@@ -1218,7 +1303,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-24T13:11:06+00:00"
+     "found_at": "2026-11-24T20:57:38+00:00"
     }
    ],
    "matchScore": 61,
@@ -1261,7 +1346,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/storyblok-senior-qa-engineer-europe",
-     "found_at": "2026-11-24T13:11:27+00:00"
+     "found_at": "2026-11-24T20:57:58+00:00"
     }
    ],
    "matchScore": 61,
@@ -1304,7 +1389,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-senior-business-intelligence-analyst-product-analytics",
-     "found_at": "2026-11-24T13:11:27+00:00"
+     "found_at": "2026-11-24T20:57:58+00:00"
     }
    ],
    "matchScore": 61,
@@ -1347,7 +1432,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-mobile-software-engineer-quality-engineering",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:42+00:00"
     }
    ],
    "matchScore": 57,
@@ -1390,7 +1475,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-software-engineer-guest-host",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:42+00:00"
     }
    ],
    "matchScore": 57,
@@ -1433,7 +1518,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-mis-cpv-retail-irm-al-arafah-islami-bank/",
-     "found_at": "2026-11-24T13:10:58+00:00"
+     "found_at": "2026-11-24T20:57:30+00:00"
     }
    ],
    "matchScore": 57,
@@ -1476,7 +1561,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-24T13:11:06+00:00"
+     "found_at": "2026-11-24T20:57:37+00:00"
     }
    ],
    "matchScore": 57,
@@ -1519,7 +1604,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-mis-runner-motors/",
-     "found_at": "2026-11-24T13:10:58+00:00"
+     "found_at": "2026-11-24T20:57:31+00:00"
     }
    ],
    "matchScore": 57,
@@ -1561,7 +1646,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/stability-ai-staff-software-engineer-data",
-     "found_at": "2026-11-24T13:11:14+00:00"
+     "found_at": "2026-11-24T20:57:46+00:00"
     }
    ],
    "matchScore": 57,
@@ -1604,7 +1689,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-software-engineer-data",
-     "found_at": "2026-11-24T13:11:27+00:00"
+     "found_at": "2026-11-24T20:57:58+00:00"
     }
    ],
    "matchScore": 57,
@@ -1647,7 +1732,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sr-executive-medico-marketing-aci/",
-     "found_at": "2026-11-24T13:10:58+00:00"
+     "found_at": "2026-11-24T20:57:30+00:00"
     }
    ],
    "matchScore": 53,
@@ -1691,7 +1776,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer-query",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:43+00:00"
     }
    ],
    "matchScore": 53,
@@ -1734,7 +1819,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-delivery-engineering",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:43+00:00"
     }
    ],
    "matchScore": 53,
@@ -1777,12 +1862,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-on-prem",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:42+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer",
-     "found_at": "2026-11-24T13:11:14+00:00"
+     "found_at": "2026-11-24T20:57:46+00:00"
     }
    ],
    "matchScore": 53,
@@ -1796,6 +1881,48 @@
    "gateNotes": [
     "Pay not stated, worth asking before you invest time",
     "Title matches your excluded list (Staff)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "VP, Product Marketing & Executive Thought Leadership",
+   "company": "Collibra",
+   "description": "Headquarters: Remote, USA\nJoining Collibra's Marketing Team\nAt Collibra, we believe the next decade of enterprise value will be decided by whether AI can be trusted to act. Agents are moving from demos to decisions, and the leaders deploying them need certainty at the speed of AI. It's why we built the Enterprise AI Control Plane, over eighteen years of ontology engineering, to govern context and ensure control across any data, any model, any agent. We are builders who come from a wide range of backgrounds to do what has never been done before.\nAbout this role\nWe are looking for a VP, Product Marketing & Executive Thought Leadership to own the narrative for Collibra's business, and to lead the team that takes it to market. This is a category-defining role at a defining moment: the vocabulary of AI context is being written right now, and we intend to author it.\nYou will make our CEO the recognized voice of the category, on every stage and in every byline that matters. You will build the joint story with the platforms the world runs AI on — Snowflake, Databricks, AWS, Google Cloud, SAP. And you will grow and coach a team of product marketers into a multi-layer org that ships market-moving launches without you in the room. You manage managers: directors own the day-to-day launches; you own the bar, the narrative, and the few things that cannot be delegated. This is a 0→1 category role inside an 18-year-old company — you'll define how a new market is positioned, messaged, and brought to the world.\nAbout you\nYou are a builder of leaders, not a soloist. You've run a PMM org through managers and you know the difference between setting a standard and taking back the pen — you coach the launch from spec-sheet to stake, and you let your directors own it. You move fluently between a whiteboard with engineers and a green room with a CEO, translating architecture into a story technical and business leaders both lean toward. You've moved a category before, ideally from the challenger's seat, not the incumbent's. You have a passion for proof — every number you ship traces to a source — and an unapologetic focus on customer truth over internal belief. You thrive where the assets are good but the narrative and the discipline are the gap, and you'd rather open a new frontier than chase a competitor into theirs.\nAbout Collibra\nCollibra is building the Enterprise AI Control Plane — the layer that governs context and ensures control so enterprises can deploy AI with certainty. Eighteen years of ontology and semantic engineering sit underneath it. We are at the center of the most important shift in enterprise software: the move from data governance to governing the context and agents that act on it. We are an entrepreneurial company with a founder who wants to be the author of this category, and a marketing team rebuilding around the AI growth motion to make that real.\nVP, Product Marketing Managers at Collibra are responsible for\nBuild and lead the team. Hire, develop, and coach director-level PMM leaders and their teams. Create an environment where strong people do their best work, raise the bar with every hire, and build a bench that ships launch-quality narrative without you in the room.\nSet the launch standard, your team's own execution. Your team runs day-to-day launches. You own the bar: the narrative spine, the proof discipline, and the go/no-go on whether a story is ready for the CEO and the market. You coach the story from spec-sheet to stake; you don't write every one.\nOwn the category narrative. Enterprise AI Control Plane, “context and control,” and the Context Gravity thesis. This you hold yourself.\nDrive sales success through storytelling. Own the ICP journey (Hero journey) that turns narrative into pipeline: the demos, content, and sales collateral that make reps and partner sellers win. Set the storytelling standard across the funnel, first-call decks, demo scripts, solution maps, campaign briefs, customer proof, playbooks, so the field carries a story buyers move on, not a feature list. Measured by what closes, not what ships.\nShape the CEO's narrative. Architect the keynote story arcs, anchor bylines, podcast and press narrative.\nOwn strategic partner marketing. Set the joint narrative and co-marketing strategy with Snowflake, Databricks, AWS, Google Cloud, and SAP, and carry the executive partner relationships. Your team runs the joint launches, co-funded campaigns, and partner-event activations. Make Collibra the governance and context layer those platforms recommend by name.\nOwn analyst relations strategy. Run AR as a growth lever and hold the principal analyst relationships yourself. Enable Collibra to position strongly in Gartner and Forrester briefings and quadrants.\nOwn competitive read. Direct the day-to-day and longer-horizon competitive intelligence. Adjust the narrative to hold differentiation, without reacting into a challenger's frame.\nRun the thought-leadership program. Design the executive roundtable and content series for CAIOs, CIOs, and AI leaders; your team builds and runs it. Grounded in customer truth, not a vendor pitch.\nYou have\n15+ years in enterprise software, spanning product marketing, technology evangelism, and product management roles, ideally in databases, analytics, and AI.\nProven ability to market to both technical and business leaders, up to C-level (CAIO, CIO, CDO), translating architecture into narrative for engineers and into business stakes for executives.\n6+ years leading teams, with direct experience managing managers (director-level reports); built and developed a multi-layer PMM organization.\nDemonstrated ownership of a category narrative that moved a market, ideally from a challenger position, not the incumbent.\nTrack record architecting executive keynotes or bylines that landed on a major industry stage.\nStrategic partner or alliance marketing experience across a hyperscaler / data-platform ecosystem (AWS, Google Cloud, Snowflake, Databricks, SAP, or equivalent).\nHands-on analyst relations with Gartner and/or Forrester, including Wave/MQ engagement.\nDemonstrated proficiency in leveraging AI tools (e.g., Claude, Gemini, ChatGPT, Copilot) to solve real-world business challenges, drive measurable outcomes, or streamline workflows.\nA bachelor’s degree or equivalent related working experience is required.\nThis position is not eligible for visa sponsorship.\nYou are\nExperienced creating or shifting category vocabulary.\nSomeone who has built a PMM function or messaging architecture from an early or rebuilding state.\nAble to operate without a large-company machine underneath you, scrappy, high-output, owns the outcome.\nComfortable building the executive's voice rather than performing your own, and comfortable coaching launches rather than running them.\nFluent with the agentic-AI buyer (CAIO / AI leader), not data alone.\nExperienced running partner co-marketing at scale inside or alongside a hyperscaler.\nExperienced with carrying a technology-evangelist or developer-facing platform mandate at scale.\nCompensation for this role\nThe standard base salary range for this position is $272,000 - $340,000 per year. This position is not eligible for additional commission-based compensation. Salary offers are based on a combination of factors, including, but not limited to, experience, skills, and location.\nIn addition to base salary, we offer a competitive total rewards package, including bonus potential, equity for eligible roles, a Flex Fund monthly stipend, pension/401k plans, and more.\nBenefits at Collibra\nCollibra recognizes and values that everyone has different needs, interests, and life goals. We built our benefits program with flexibility in mind to support you and your loved ones through a diverse range of circumstances and life events. These flexible offerings sit on a foundation of competitive compensation, health coverage, and time off. Learn more about Collibra’s benefits .\nWe create inclusion and belonging through how we onboard, meet, connect, engage, and communicate. Learn more about diversity, equity, and inclusion at Collibra.\nAt Collibra, we’re proud to be an equal opportunity employer. We realize the key to creating a company with a world-class culture and employee experience comes from who we hire and creating a workplace that celebrates everyone.\nWith this, we proudly consider qualified applicants without regard to race, color, religion, creed, gender, national origin, age, disability, veteran status, sexual orientation, pregnancy, sex, gender identity, gender expression, genetic information, physical or mental disability, HIV status, registered domestic partner status, caregiver status, marital status, veteran or military status, citizenship status or any other legally protected category. If you have a need that requires accommodation, let us know by completing our Accommodations for Applicants form .\nTo apply: https://weworkremotely.com/remote-jobs/collibra-vp-product-marketing-executive-thought-leadership",
+   "category": "Management & Business",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/collibra-vp-product-marketing-executive-thought-leadership",
+   "status": "Awaiting Review",
+   "id": "b273144c-d4ba-4c96-beeb-9e4c7c7d169a",
+   "createdAt": "2026-11-24T20:57:54+00:00",
+   "requiredSkills": "marketing, executive, thought, leadership, headquarters, remote, usa, joining, collibra, team, believe, next",
+   "postedAt": "2026-11-24",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "0f3fc1a07acb245b",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/collibra-vp-product-marketing-executive-thought-leadership",
+     "found_at": "2026-11-24T20:57:54+00:00"
+    }
+   ],
+   "matchScore": 53,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 0,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
   },
@@ -1825,7 +1952,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-enterprise-platform",
-     "found_at": "2026-11-24T13:11:14+00:00"
+     "found_at": "2026-11-24T20:57:46+00:00"
     }
    ],
    "matchScore": 53,
@@ -1868,7 +1995,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-safety-platform",
-     "found_at": "2026-11-24T13:11:27+00:00"
+     "found_at": "2026-11-24T20:57:58+00:00"
     }
    ],
    "matchScore": 53,
@@ -1911,7 +2038,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-issuing",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:43+00:00"
     }
    ],
    "matchScore": 53,
@@ -1954,7 +2081,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-i-remote-eligible",
-     "found_at": "2026-11-24T13:11:14+00:00"
+     "found_at": "2026-11-24T20:57:46+00:00"
     }
    ],
    "matchScore": 53,
@@ -1996,7 +2123,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-ii-full-stack-remote-eligible",
-     "found_at": "2026-11-24T13:11:11+00:00"
+     "found_at": "2026-11-24T20:57:43+00:00"
     }
    ],
    "matchScore": 53,
@@ -2038,7 +2165,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-24T13:11:06+00:00"
+     "found_at": "2026-11-24T20:57:38+00:00"
     }
    ],
    "matchScore": 53,
@@ -2081,7 +2208,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-24T13:11:01+00:00"
+     "found_at": "2026-11-24T20:57:33+00:00"
     }
    ],
    "matchScore": 39,
