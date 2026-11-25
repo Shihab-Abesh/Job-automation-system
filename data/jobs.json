@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-25T11:59:54+00:00",
+ "generatedAt": "2026-11-25T20:20:44+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -43,9 +43,9 @@
     "raw": 0
    },
    "rss": {
-    "found": 43,
+    "found": 45,
     "errors": [],
-    "raw": 773
+    "raw": 816
    },
    "careers": {
     "found": 0,
@@ -59,11 +59,11 @@
    }
   },
   "counts": {
-   "total": 52,
-   "new": 2,
+   "total": 53,
+   "new": 1,
    "expired": 2,
-   "duplicatesFolded": 7,
-   "priorityA": 12,
+   "duplicatesFolded": 8,
+   "priorityA": 13,
    "priorityB": 8,
    "priorityC": 32
   },
@@ -76,7 +76,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-25T11:59:53+00:00"
+  "ranAt": "2026-11-25T20:20:44+00:00"
  },
  "jobs": [
   {
@@ -105,7 +105,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 87,
@@ -147,7 +147,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-product",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 83,
@@ -189,7 +189,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-scm-rfl-group/",
-     "found_at": "2026-11-25T11:59:06+00:00"
+     "found_at": "2026-11-25T20:19:57+00:00"
     }
    ],
    "matchScore": 83,
@@ -204,6 +204,53 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "bdrecruit"
+  },
+  {
+   "title": "Junior Software Engineer with Accounting Experience (Argentina)",
+   "company": "Sezzle",
+   "description": "Headquarters: Argentina, Remote\nThe salary range for this role is $1,500 - $4,000 per month (Gross in USD)\nAbout Sezzle:\nWith a mission to financially empower the next generation, Sezzle is revolutionizing the shopping experience beyond payments, blending cutting-edge tech with seamless, interest-free installment plans that make shopping smarter and more accessible. We’re not just transforming payments; we’re redefining how people discover, interact with, and purchase the things they love while driving real impact on merchant sales through increased conversions and higher order values. As we continue to shape the future of fintech and retail, we’re building an innovative, dynamic team passionate about creating more than just a transaction but a truly unique shopping journey. If you’re excited about pushing boundaries in tech and delivering a game-changing experience for consumers and merchants alike, come join us at Sezzle and help create the future of shopping!\nAbout the Role:\nWe are seeking a talented and motivated Junior Software Engineer with a unique blend of accounting experience who is best in class with a high IQ plus a high EQ. This role presents an exciting opportunity to thrive in a dynamic, fast-paced environment within a rapidly growing team, with abundant prospects for career advancement. This role is tailored for professionals who started their careers in accounting but pivoted to engineering and now want to leverage their domain expertise to solve technical challenges in fintech. This role presents an exciting opportunity to thrive in a dynamic, fast-paced environment within a rapidly growing team, with abundant prospects for career advancement. The Junior Software Engineer will assist us with the design, development, and installation of software solutions. Your duties will include development, writing code, and documenting functionality. You should be able to build high-quality, innovative and fully performing software in compliance with coding standards and technical design.\nInterview Process\nWe believe transparency is important at Sezzle. Regularly providing feedback while setting expectations is part of our culture starting with the interview process. Advancement through each step is not guaranteed.\nApplication submitted (you are here)\nWonderlic test (30-40 min)\nCoding assessment (~1.5 hours)\nInterview with recruiters (30 min)\nInterview with engineers (1 hour)\nInterview with engineering leadership (30-45 min)\nOffer\nSezzle Technical Stack:\nGolang backend, React / React Native front-end\nGrafana / Loki / Prometheus metrics\nKubernetes\nAWS\nAmazon Aurora (MySQL) RDS\nGitlab CI/CD deployments\nUnit, Integration, and end-to-end testing\nWhat You'll Do:\nCollaborate with cross-functional teams to enhance and maintain software solutions for financial processes.\nBe an integral part of the software development lifecycle.\nWork as an integrated team member developing new features.\nLeverage accounting background to identify gaps and improve automation and reconciliation workflows .\nEvaluate and deploy software tools, processes, and metrics.\nProvide support and consulting on software systems usage.\nEnsure compliance with project plans and industry standards.\nWhat We Look For:\nPrior experience as an accountant or financial analyst.\nSolid understanding of financial operations such as reconciliation, reporting, and compliance .\nProficient in at least one programming language (e.g., Python, Java, Go) and familiar with database systems like MySQL or PostgreSQL.\nExperience with backend API development.\nExperience with relational database storage and retrieval.\nFamiliarity with software engineering tools, software development methodology, and release processes.\nDemonstrated experience working with Claude or equivalent large language model tools is required; candidates must be comfortable leveraging AI to enhance productivity, research, and communication.\nBachelor’s degree in Accounting, Computer Science, or a related field.\nSezzle’s Technology Stack:\nLanguages: Golang, Typescript, Python\nFrontend: Typescript - React and React Native\nBackend: Golang\nDatabase: MySQL, Postgres, Elasticsearch\nDevOps & Cloud: AWS, Kubernetes\nVersion Control: Git\nCI/CD: Gitlab\nTesting: Developer-driven, focus on automated unit, integration, and end-to-end tests\nSezzle is focused on using open source, and we build what we can before buying!\nAbout You:\nYou have relentlessly high standards - many people may think your standards are unreasonably high. You are continually raising the bar and driving those around you to deliver great results. You make sure that defects do not get sent down the line and that problems are fixed so they stay fixed.\nYou’re not bound by convention - your success—and much of the fun—lies in developing new ways to do things\nYou need action - speed matters in business. Many decisions and actions are reversible and do not need extensive study. We value calculated risk-taking.\nYou earn trust - you listen attentively, speak candidly, and treat others respectfully.\nYou have backbone; disagree, then commit - you can respectfully challenge decisions when you disagree, even when doing so is uncomfortable or exhausting. You have conviction and are tenacious. You do not compromise for the sake of social cohesion. Once a decision is determined, you commit wholly.\nYou deliver results - you focus on the key inputs and deliver them with the right quality and in a timely fashion. Despite setbacks, you rise to the occasion and never settle.\nWhat Makes Working at Sezzle Awesome:\nAt Sezzle, we are more than just brilliant engineers, passionate data enthusiasts, out-of-the-box thinkers, and determined innovators. We believe in surrounding ourselves with only the best and the brightest individuals. Our culture is not defined by a certain set of perks designed to give the illusion of the traditional startup culture, but rather, it is the visible example living in every employee that we hire.\n#Li-remote #Full-time\nTo apply: https://weworkremotely.com/remote-jobs/sezzle-junior-software-engineer-with-accounting-experience-argentina",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/sezzle-junior-software-engineer-with-accounting-experience-argentina",
+   "status": "Awaiting Review",
+   "id": "960c3a81-d2a6-471a-a1a5-ed80f69eff00",
+   "createdAt": "2026-11-25T20:20:14+00:00",
+   "requiredSkills": "junior, engineer, accounting, argentina, headquarters, remote, salary, range, 500, 000, month, gross",
+   "postedAt": "2026-11-25",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "9c82156739039654",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/sezzle-junior-software-engineer-with-accounting-experience-argentina",
+     "found_at": "2026-11-25T20:20:14+00:00"
+    },
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/sezzle-junior-software-engineer-with-accounting-experience",
+     "found_at": "2026-11-25T20:20:14+00:00"
+    }
+   ],
+   "matchScore": 83,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
   },
   {
    "title": "Field Marketing Executive",
@@ -231,7 +278,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/field-marketing-executive-aci/",
-     "found_at": "2026-11-25T11:59:04+00:00"
+     "found_at": "2026-11-25T20:19:54+00:00"
     }
    ],
    "matchScore": 79,
@@ -273,7 +320,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-full-stack-product-software-engineer",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 79,
@@ -315,7 +362,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
-     "found_at": "2026-11-25T11:59:06+00:00"
+     "found_at": "2026-11-25T20:19:57+00:00"
     }
    ],
    "matchScore": 79,
@@ -358,7 +405,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-25T11:59:10+00:00"
+     "found_at": "2026-11-25T20:20:01+00:00"
     }
    ],
    "matchScore": 75,
@@ -400,7 +447,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-25T11:59:10+00:00"
+     "found_at": "2026-11-25T20:20:01+00:00"
     }
    ],
    "matchScore": 75,
@@ -442,7 +489,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-sales-market-audit-pran-group/",
-     "found_at": "2026-11-25T11:59:06+00:00"
+     "found_at": "2026-11-25T20:19:57+00:00"
     }
    ],
    "matchScore": 75,
@@ -484,7 +531,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/ritual-software-engineer-intern",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 75,
@@ -526,7 +573,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-25T11:59:10+00:00"
+     "found_at": "2026-11-25T20:20:01+00:00"
     }
    ],
    "matchScore": 75,
@@ -569,7 +616,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-programme-shanta/",
-     "found_at": "2026-11-25T11:59:04+00:00"
+     "found_at": "2026-11-25T20:19:54+00:00"
     }
    ],
    "matchScore": 75,
@@ -612,7 +659,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/full-stack-web-developer-it-meghna-group-of-industries/",
-     "found_at": "2026-11-25T11:59:06+00:00"
+     "found_at": "2026-11-25T20:19:57+00:00"
     }
    ],
    "matchScore": 74,
@@ -654,7 +701,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer-1",
-     "found_at": "2026-11-25T11:59:10+00:00"
+     "found_at": "2026-11-25T20:20:02+00:00"
     }
    ],
    "matchScore": 71,
@@ -696,7 +743,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 71,
@@ -738,7 +785,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upsun-software-engineer",
-     "found_at": "2026-11-25T11:59:19+00:00"
+     "found_at": "2026-11-25T20:20:10+00:00"
     }
    ],
    "matchScore": 71,
@@ -780,7 +827,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/beyondtrust-software-development-engineer",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 66,
@@ -822,7 +869,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/g-p-software-engineer-ii",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 66,
@@ -864,7 +911,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/gusto-inc-software-engineer-financial-data-payments",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 66,
@@ -906,7 +953,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sales-marketing-front-office-support-service-epyllion-group/",
-     "found_at": "2026-11-25T11:59:04+00:00"
+     "found_at": "2026-11-25T20:19:54+00:00"
     }
    ],
    "matchScore": 62,
@@ -948,7 +995,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/teamified-senior-software-engineer",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 69,
@@ -991,17 +1038,17 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-platform",
-     "found_at": "2026-11-25T11:59:19+00:00"
+     "found_at": "2026-11-25T20:20:10+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc-latam",
-     "found_at": "2026-11-25T11:59:19+00:00"
+     "found_at": "2026-11-25T20:20:10+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc",
-     "found_at": "2026-11-25T11:59:19+00:00"
+     "found_at": "2026-11-25T20:20:10+00:00"
     }
    ],
    "matchScore": 65,
@@ -1044,7 +1091,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-i-costing-budgeting-mis-factory-mj-group/",
-     "found_at": "2026-11-25T11:59:06+00:00"
+     "found_at": "2026-11-25T20:19:57+00:00"
     }
    ],
    "matchScore": 64,
@@ -1087,7 +1134,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-operations-mouchak-factory-marico-bangladesh/",
-     "found_at": "2026-11-25T11:59:06+00:00"
+     "found_at": "2026-11-25T20:19:57+00:00"
     }
    ],
    "matchScore": 64,
@@ -1130,7 +1177,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-software-engineer-partner-integrations",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 61,
@@ -1173,7 +1220,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/customer-io-senior-software-engineer-backend",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 61,
@@ -1216,7 +1263,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data-platform",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 61,
@@ -1259,7 +1306,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-query-planner-reflections",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 61,
@@ -1302,7 +1349,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/legion-principal-software-engineer-devops",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 61,
@@ -1345,7 +1392,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/postscript-senior-software-engineer-full-stack-80-backend",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 61,
@@ -1388,7 +1435,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-25T11:59:10+00:00"
+     "found_at": "2026-11-25T20:20:02+00:00"
     }
    ],
    "matchScore": 61,
@@ -1431,7 +1478,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/storyblok-senior-qa-engineer-europe",
-     "found_at": "2026-11-25T11:59:31+00:00"
+     "found_at": "2026-11-25T20:20:22+00:00"
     }
    ],
    "matchScore": 61,
@@ -1474,7 +1521,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-senior-business-intelligence-analyst-product-analytics",
-     "found_at": "2026-11-25T11:59:31+00:00"
+     "found_at": "2026-11-25T20:20:22+00:00"
     }
    ],
    "matchScore": 61,
@@ -1517,7 +1564,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-mobile-software-engineer-quality-engineering",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 57,
@@ -1560,7 +1607,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-software-engineer-guest-host",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 57,
@@ -1603,7 +1650,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-mis-cpv-retail-irm-al-arafah-islami-bank/",
-     "found_at": "2026-11-25T11:59:04+00:00"
+     "found_at": "2026-11-25T20:19:54+00:00"
     }
    ],
    "matchScore": 57,
@@ -1646,7 +1693,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-25T11:59:10+00:00"
+     "found_at": "2026-11-25T20:20:01+00:00"
     }
    ],
    "matchScore": 57,
@@ -1689,7 +1736,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-mis-runner-motors/",
-     "found_at": "2026-11-25T11:59:04+00:00"
+     "found_at": "2026-11-25T20:19:54+00:00"
     }
    ],
    "matchScore": 57,
@@ -1731,7 +1778,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/stability-ai-staff-software-engineer-data",
-     "found_at": "2026-11-25T11:59:19+00:00"
+     "found_at": "2026-11-25T20:20:10+00:00"
     }
    ],
    "matchScore": 57,
@@ -1774,7 +1821,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-software-engineer-data",
-     "found_at": "2026-11-25T11:59:31+00:00"
+     "found_at": "2026-11-25T20:20:22+00:00"
     }
    ],
    "matchScore": 57,
@@ -1817,7 +1864,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sr-executive-medico-marketing-aci/",
-     "found_at": "2026-11-25T11:59:04+00:00"
+     "found_at": "2026-11-25T20:19:54+00:00"
     }
    ],
    "matchScore": 53,
@@ -1861,7 +1908,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer-query",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 53,
@@ -1904,7 +1951,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-delivery-engineering",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 53,
@@ -1947,12 +1994,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-on-prem",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer",
-     "found_at": "2026-11-25T11:59:19+00:00"
+     "found_at": "2026-11-25T20:20:10+00:00"
     }
    ],
    "matchScore": 53,
@@ -1995,7 +2042,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/collibra-vp-product-marketing-executive-thought-leadership",
-     "found_at": "2026-11-25T11:59:27+00:00"
+     "found_at": "2026-11-25T20:20:18+00:00"
     }
    ],
    "matchScore": 53,
@@ -2037,7 +2084,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-enterprise-platform",
-     "found_at": "2026-11-25T11:59:19+00:00"
+     "found_at": "2026-11-25T20:20:10+00:00"
     }
    ],
    "matchScore": 53,
@@ -2080,7 +2127,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-safety-platform",
-     "found_at": "2026-11-25T11:59:31+00:00"
+     "found_at": "2026-11-25T20:20:22+00:00"
     }
    ],
    "matchScore": 53,
@@ -2123,7 +2170,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-issuing",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 53,
@@ -2166,7 +2213,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-i-remote-eligible",
-     "found_at": "2026-11-25T11:59:19+00:00"
+     "found_at": "2026-11-25T20:20:10+00:00"
     }
    ],
    "matchScore": 53,
@@ -2208,7 +2255,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-ii-full-stack-remote-eligible",
-     "found_at": "2026-11-25T11:59:15+00:00"
+     "found_at": "2026-11-25T20:20:06+00:00"
     }
    ],
    "matchScore": 53,
@@ -2250,7 +2297,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-25T11:59:10+00:00"
+     "found_at": "2026-11-25T20:20:02+00:00"
     }
    ],
    "matchScore": 53,
@@ -2293,7 +2340,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-25T11:59:06+00:00"
+     "found_at": "2026-11-25T20:19:57+00:00"
     }
    ],
    "matchScore": 39,
