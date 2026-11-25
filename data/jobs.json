@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-24T20:58:22+00:00",
+ "generatedAt": "2026-11-25T11:59:54+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -33,7 +33,7 @@
    "bdrecruit": {
     "found": 18,
     "errors": [],
-    "raw": 286
+    "raw": 292
    },
    "jsonld": {
     "found": 0,
@@ -43,9 +43,9 @@
     "raw": 0
    },
    "rss": {
-    "found": 40,
+    "found": 43,
     "errors": [],
-    "raw": 758
+    "raw": 773
    },
    "careers": {
     "found": 0,
@@ -59,13 +59,13 @@
    }
   },
   "counts": {
-   "total": 50,
-   "new": 3,
+   "total": 52,
+   "new": 2,
    "expired": 2,
-   "duplicatesFolded": 6,
+   "duplicatesFolded": 7,
    "priorityA": 12,
-   "priorityB": 7,
-   "priorityC": 31
+   "priorityB": 8,
+   "priorityC": 32
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -76,7 +76,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-24T20:58:21+00:00"
+  "ranAt": "2026-11-25T11:59:53+00:00"
  },
  "jobs": [
   {
@@ -105,7 +105,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-24T20:57:43+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 87,
@@ -147,7 +147,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-product",
-     "found_at": "2026-11-24T20:57:42+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 83,
@@ -189,7 +189,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-scm-rfl-group/",
-     "found_at": "2026-11-24T20:57:33+00:00"
+     "found_at": "2026-11-25T11:59:06+00:00"
     }
    ],
    "matchScore": 83,
@@ -231,7 +231,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/field-marketing-executive-aci/",
-     "found_at": "2026-11-24T20:57:30+00:00"
+     "found_at": "2026-11-25T11:59:04+00:00"
     }
    ],
    "matchScore": 79,
@@ -273,7 +273,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-full-stack-product-software-engineer",
-     "found_at": "2026-11-24T20:57:42+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 79,
@@ -315,7 +315,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
-     "found_at": "2026-11-24T20:57:33+00:00"
+     "found_at": "2026-11-25T11:59:06+00:00"
     }
    ],
    "matchScore": 79,
@@ -358,7 +358,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-24T20:57:37+00:00"
+     "found_at": "2026-11-25T11:59:10+00:00"
     }
    ],
    "matchScore": 75,
@@ -400,7 +400,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-24T20:57:37+00:00"
+     "found_at": "2026-11-25T11:59:10+00:00"
     }
    ],
    "matchScore": 75,
@@ -442,7 +442,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-sales-market-audit-pran-group/",
-     "found_at": "2026-11-24T20:57:33+00:00"
+     "found_at": "2026-11-25T11:59:06+00:00"
     }
    ],
    "matchScore": 75,
@@ -484,7 +484,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/ritual-software-engineer-intern",
-     "found_at": "2026-11-24T20:57:42+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 75,
@@ -526,7 +526,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-24T20:57:37+00:00"
+     "found_at": "2026-11-25T11:59:10+00:00"
     }
    ],
    "matchScore": 75,
@@ -569,7 +569,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-programme-shanta/",
-     "found_at": "2026-11-24T20:57:30+00:00"
+     "found_at": "2026-11-25T11:59:04+00:00"
     }
    ],
    "matchScore": 75,
@@ -612,7 +612,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/full-stack-web-developer-it-meghna-group-of-industries/",
-     "found_at": "2026-11-24T20:57:33+00:00"
+     "found_at": "2026-11-25T11:59:06+00:00"
     }
    ],
    "matchScore": 74,
@@ -654,7 +654,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer-1",
-     "found_at": "2026-11-24T20:57:38+00:00"
+     "found_at": "2026-11-25T11:59:10+00:00"
     }
    ],
    "matchScore": 71,
@@ -696,7 +696,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-24T20:57:43+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 71,
@@ -738,7 +738,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upsun-software-engineer",
-     "found_at": "2026-11-24T20:57:46+00:00"
+     "found_at": "2026-11-25T11:59:19+00:00"
     }
    ],
    "matchScore": 71,
@@ -746,6 +746,48 @@
     "title": 100,
     "level": 65,
     "skills": 17,
+    "preference": 100
+   },
+   "priority": "B",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Software Development Engineer",
+   "company": "BeyondTrust",
+   "description": "Headquarters: Remote United States\nBeyondTrust is a place where you can bring your purpose to life through the work that you do, creating a safer world through our cybersecurity SaaS portfolio.\nOur culture of flexibility, trust, and continual learning means you will be recognized for your growth, and for the impact you make on our success. You will be surrounded by people who challenge, support, and inspire you to be the best version of yourself.\nThe Role\nBeyondTrust is seeking a Software Development Engineer with a passion for developing robust software and building reliable, scalable, and efficient cloud-based services. As part of the Platform Core Services team, you will be instrumental in designing and maintaining foundational platform capabilities that support multiple product lines, including authentication & authorization (AuthN/AuthZ), onboarding, RBAC, reporting, auditing, notifications, and platform APIs. This role presents an exciting opportunity to solve cloud-scale challenges, define best practices, and shape the way we build, test, and deliver a world-class identity security platform with high reliability and performance. Previous experience working on platform, core, or shared services teams is highly desired.\nWhat You’ll Do\nDevelop and Maintain Core Platform Services - Design, build, and maintain highly scalable and resilient microservices supporting platform-wide capabilities. Ensure our cloud platform is modular, extensible, and meets the needs of multiple product teams.\nEnhance System Reliability & Observability - Implement and manage robust monitoring and alerting systems using Datadog to ensure operational visibility and proactive issue resolution. Drive best practices for logging, tracing, and monitoring across platform services.\nInfrastructure as Code & Cloud Automation - Utilize Infrastructure as Code (IaC) tools such as Terraform and Terragrunt to automate and streamline cloud infrastructure provisioning and management. Optimize deployment pipelines to improve reliability and developer efficiency.\nTechnical Leadership & Cross-Team Collaboration - Provide technical leadership in system design, architecture, and best practices for building scalable services. Collaborate with product managers, engineers, and other teams to align platform capabilities with business needs. Act as a connector across teams, fostering collaboration and ensuring smooth integrations.\nOperational Excellence & Continuous Improvement - Participate in operational reviews, post-mortems, and reliability initiatives to enhance system stability. Create follow-up actions for incident resolution and continuously work to improve system reliability and scalability. Drive efforts to reduce technical debt and improve engineering efficiency through automation and best practices.\nWhat You’ll Bring\nSoftware Development Experience - Proven track record of delivering enterprise-ready, cloud-based systems with a focus on performance, security, and scalability.\nModern Software Practices - Strong proficiency in one or more programming languages: C#, Go, or Java. Experience with API services, distributed systems, and microservice architectures.\nCloud & Site Reliability Engineering (SRE) Skills - Deep understanding of AWS, Google Cloud, or Azure with hands-on experience designing for scalability, observability, and reliability. Knowledge of Kubernetes (EKS/GKE), Docker, and cloud-native application design.\nInfrastructure Automation & DevOps - Experience with Infrastructure as Code (Terraform, AWS CDK, Terragrunt). Proficiency in CI/CD tooling such as GitHub Actions, ArgoCD, or Jenkins.\nObservability & Monitoring - Hands-on experience with Datadog, Prometheus, or similar monitoring tools to drive operational excellence.\nCross-Team Collaboration & Business Focus - Ability to work effectively across teams, communicate clearly, and drive alignment with multiple stakeholders. A strong understanding of customer needs and how technical solutions align with business objectives.\nPlatform/Core Services Experience (Highly Desired) - Prior experience working on platform, core, or shared services teams is highly desirable. Experience building foundational services that support multiple product lines and teams.\nWho You Are\nA strong team player who values open and constructive feedback and fosters a culture of learning.\nSomeone who communicates value, risks, tradeoffs, and recommended direction effectively.\nAdaptable and flexible, ready to navigate changing priorities with a positive mindset.\nProactive in identifying and solving problems, with persistence and coordination to overcome challenges.\nAble to balance speed with risk, making data-driven decisions while ensuring long-term sustainability.\nCommitted to mentorship and lifting others up, fostering shared growth and excellence across the team.\nBetter Together\nDiversity. Inclusion. They’re more than just words for us. They are the guiding values of how we build our teams, cultivate leaders, and create a culture where people feel connected.\nWe take care of our employees so they can take care of our customers. Customers who come from all walks of life just like us. We hire incredible people from diverse backgrounds because when we are different together, we are stronger together.\nAbout Us\nBeyondTrust is the global identity security leader protecting Paths to PrivilegeTM. Our identity-centric approach goes beyond securing privileges and access, empowering organizations with the most effective solution to manage the entire identity attack surface and neutralize threats, whether from external attacks or insiders.\nBeyondTrust is leading the charge in transforming identity security to prevent breaches and limit the blast radius of attacks, while creating a superior customer experience and operational efficiencies. We are trusted by 20,000 customers, including 75 of the Fortune 100, and our global ecosystem of partners.\nLearn more at www.beyondtrust.com .\n#LI-DF1\nTo apply: https://weworkremotely.com/remote-jobs/beyondtrust-software-development-engineer",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/beyondtrust-software-development-engineer",
+   "status": "Awaiting Review",
+   "id": "e4f9c1e6-e8f6-42c1-a321-08fd411ba785",
+   "createdAt": "2026-11-25T11:59:15+00:00",
+   "requiredSkills": "development, engineer, headquarters, remote, united, states, beyondtrust, place, where, you, bring, your",
+   "postedAt": "2026-11-25",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "af02e9dff85879c1",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/beyondtrust-software-development-engineer",
+     "found_at": "2026-11-25T11:59:15+00:00"
+    }
+   ],
+   "matchScore": 66,
+   "scoreParts": {
+    "title": 100,
+    "level": 65,
+    "skills": 0,
     "preference": 100
    },
    "priority": "B",
@@ -780,7 +822,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/g-p-software-engineer-ii",
-     "found_at": "2026-11-24T20:57:43+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 66,
@@ -822,7 +864,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/gusto-inc-software-engineer-financial-data-payments",
-     "found_at": "2026-11-24T20:57:42+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 66,
@@ -864,7 +906,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sales-marketing-front-office-support-service-epyllion-group/",
-     "found_at": "2026-11-24T20:57:30+00:00"
+     "found_at": "2026-11-25T11:59:04+00:00"
     }
    ],
    "matchScore": 62,
@@ -906,7 +948,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/teamified-senior-software-engineer",
-     "found_at": "2026-11-24T20:57:43+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 69,
@@ -949,17 +991,17 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-platform",
-     "found_at": "2026-11-24T20:57:46+00:00"
+     "found_at": "2026-11-25T11:59:19+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc-latam",
-     "found_at": "2026-11-24T20:57:46+00:00"
+     "found_at": "2026-11-25T11:59:19+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc",
-     "found_at": "2026-11-24T20:57:46+00:00"
+     "found_at": "2026-11-25T11:59:19+00:00"
     }
    ],
    "matchScore": 65,
@@ -1002,7 +1044,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-i-costing-budgeting-mis-factory-mj-group/",
-     "found_at": "2026-11-24T20:57:33+00:00"
+     "found_at": "2026-11-25T11:59:06+00:00"
     }
    ],
    "matchScore": 64,
@@ -1045,7 +1087,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-operations-mouchak-factory-marico-bangladesh/",
-     "found_at": "2026-11-24T20:57:33+00:00"
+     "found_at": "2026-11-25T11:59:06+00:00"
     }
    ],
    "matchScore": 64,
@@ -1088,7 +1130,50 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-software-engineer-partner-integrations",
-     "found_at": "2026-11-24T20:57:42+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
+    }
+   ],
+   "matchScore": 61,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Senior Software Engineer, Backend",
+   "company": "Customer.io",
+   "description": "Headquarters: Americas Remote\nHi, I’m Paul, VP of Engineering at Customer.io . We’re looking for experienced backend engineers who care deeply about reliability, performance, and scalability. You’ll design, build, and evolve the systems that power communication at massive scale - while helping us push the boundaries of what great engineering can look like.\nAbout Customer.io\nOver 9,000 companies - from scrappy startups to global brands - use our platform to send billions of emails, push notifications, in-app messages, and SMS every day. Customer.io powers automated communication that people actually want to receive.\nWe help teams send smarter, more relevant messages using real-time behavioral data. Under the hood: Go, React, Ember and AI help us ship fast and scale with confidence.\nWhat We Value\nOwnership\nYou own problems end to end. You move fast, act like an owner, and thrive in ambiguity. You've led complex projects before, whether officially or not, and you're ready to do it again.\nEngineers with product taste\nYou think like a user, not just an engineer. You care how your systems power real customer value - and how to make them better.\nA healthy skepticism for “the way things are done.”\nYou bring rigor and creativity. Best practices matter - but never more than forward motion.\nWhat You’ll Do\nDesign and build distributed systems in Go that help customers send timely, relevant messages at scale\nCollaborate across teams to debug issues and deliver reliable solutions\nOwn problems end to end - from architecture and schema design to testing, deployment, and monitoring\nParticipate in an on-call rotation as required, supporting the reliability of the systems you build\nShare knowledge and raise the bar through sharing your progress publicly with short videos, thoughtful writing, and mentorship\nUse AI agents to make multi-file changes by scoping the work, writing the prompt, and verifying the output\nWhat we're looking for\n7+ years of experience building scalable, distributed systems in Go (or similar statically typed languages)\nComfort working in cloud-native environments (AWS, GCP)\nFamiliarity with relational databases (we use MySQL) and an understanding of performance tradeoffs\nExperience with observability tooling and operating production systems\nA bias for action over perfection, and pride in owning technical decisions\nCompensation & Benefits\nWe believe in transparency. Starting salary for this role is $150,000 - $200,000 USD (or equivalent in local currency) depending on experience and subject to market rate adjustment. In addition to base salary, this role includes an equity grant in the form of stock options, so you share in the success you help build.\nWe know our people are what make us great, and we’re committed to taking great care of them. Our inclusive benefits package supports your well-being and growth, including 100% coverage of medical, dental, vision, mental health, and supplemental insurance premiums for you and your family . We also offer 16 weeks paid parental leave , unlimited PTO , stipends for remote work and wellness, a professional development budget, and more.\nSee full benefits here →\nOur Process\nNo gotchas, no trick questions - just a clear, human process designed to help both of us make an informed decision.\nApplication - We review everyone with care. Tell us why you're interested.\nRecruiter Call (30 mins) - Let’s chat about what you’re looking for and how we work.\nHiring Manager Interview (60 mins) - Talk with one of our hiring managers about your working style and a project you've owned end-to-end, plus a short AI-assisted coding exercise.\nTechnical Interview (60 mins) - A collaborative system design conversation focused on scaling challenges.\nTake-Home Assignment - Complete a short, realistic task similar to what you’d work on here.\nAssignment Review Call (60 mins) - Walk us through your work and discuss tradeoffs, priorities, and how you’d iterate.\nAll final candidates will be asked to complete a background check and employment verifications as part of our pre-employment process.\nCustomer.io recognizes the stifling impact of systemic injustice on diverse communities. We commit to using our influence to increase inclusion and equity within the tech industry. We strive to build an inclusive team culture, implement bias-free hiring practices, and develop community partnerships to expand our global impact.\nZoom is the only video conference platform that we use, virtual interviews will be conducted using the video capability (i.e., not via the chat), and offers will be extended in writing on official Customer.io letterhead. Please be vigilant in all of your job search activity, and if you have any questions please contact jobs@customer.io.\nJoin us!\nWe believe in empathy, transparency, responsibility, and, yes, a little awkwardness. If you’re excited by what you read and want to build software that makes communication better for everyone—apply now.\nTo apply: https://weworkremotely.com/remote-jobs/customer-io-senior-software-engineer-backend",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/customer-io-senior-software-engineer-backend",
+   "status": "Awaiting Review",
+   "id": "1d15fbc5-7ae0-4f31-a5d5-4f067e05d016",
+   "createdAt": "2026-11-25T11:59:15+00:00",
+   "requiredSkills": "senior, engineer, headquarters, americas, remote, paul, engineering, customer.io, looking, experienced, engineers, who",
+   "postedAt": "2026-11-25",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "55a0704554f89f92",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/customer-io-senior-software-engineer-backend",
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 61,
@@ -1131,7 +1216,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data-platform",
-     "found_at": "2026-11-24T20:57:42+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 61,
@@ -1174,7 +1259,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-query-planner-reflections",
-     "found_at": "2026-11-24T20:57:43+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 61,
@@ -1217,7 +1302,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/legion-principal-software-engineer-devops",
-     "found_at": "2026-11-24T20:57:43+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 61,
@@ -1260,7 +1345,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/postscript-senior-software-engineer-full-stack-80-backend",
-     "found_at": "2026-11-24T20:57:43+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 61,
@@ -1303,7 +1388,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-24T20:57:38+00:00"
+     "found_at": "2026-11-25T11:59:10+00:00"
     }
    ],
    "matchScore": 61,
@@ -1346,7 +1431,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/storyblok-senior-qa-engineer-europe",
-     "found_at": "2026-11-24T20:57:58+00:00"
+     "found_at": "2026-11-25T11:59:31+00:00"
     }
    ],
    "matchScore": 61,
@@ -1389,7 +1474,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-senior-business-intelligence-analyst-product-analytics",
-     "found_at": "2026-11-24T20:57:58+00:00"
+     "found_at": "2026-11-25T11:59:31+00:00"
     }
    ],
    "matchScore": 61,
@@ -1432,7 +1517,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-mobile-software-engineer-quality-engineering",
-     "found_at": "2026-11-24T20:57:42+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 57,
@@ -1475,7 +1560,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-software-engineer-guest-host",
-     "found_at": "2026-11-24T20:57:42+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 57,
@@ -1518,7 +1603,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-mis-cpv-retail-irm-al-arafah-islami-bank/",
-     "found_at": "2026-11-24T20:57:30+00:00"
+     "found_at": "2026-11-25T11:59:04+00:00"
     }
    ],
    "matchScore": 57,
@@ -1561,7 +1646,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-24T20:57:37+00:00"
+     "found_at": "2026-11-25T11:59:10+00:00"
     }
    ],
    "matchScore": 57,
@@ -1604,7 +1689,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-mis-runner-motors/",
-     "found_at": "2026-11-24T20:57:31+00:00"
+     "found_at": "2026-11-25T11:59:04+00:00"
     }
    ],
    "matchScore": 57,
@@ -1646,7 +1731,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/stability-ai-staff-software-engineer-data",
-     "found_at": "2026-11-24T20:57:46+00:00"
+     "found_at": "2026-11-25T11:59:19+00:00"
     }
    ],
    "matchScore": 57,
@@ -1689,7 +1774,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-software-engineer-data",
-     "found_at": "2026-11-24T20:57:58+00:00"
+     "found_at": "2026-11-25T11:59:31+00:00"
     }
    ],
    "matchScore": 57,
@@ -1732,7 +1817,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sr-executive-medico-marketing-aci/",
-     "found_at": "2026-11-24T20:57:30+00:00"
+     "found_at": "2026-11-25T11:59:04+00:00"
     }
    ],
    "matchScore": 53,
@@ -1776,7 +1861,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer-query",
-     "found_at": "2026-11-24T20:57:43+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 53,
@@ -1819,7 +1904,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-delivery-engineering",
-     "found_at": "2026-11-24T20:57:43+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 53,
@@ -1862,12 +1947,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-on-prem",
-     "found_at": "2026-11-24T20:57:42+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer",
-     "found_at": "2026-11-24T20:57:46+00:00"
+     "found_at": "2026-11-25T11:59:19+00:00"
     }
    ],
    "matchScore": 53,
@@ -1910,7 +1995,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/collibra-vp-product-marketing-executive-thought-leadership",
-     "found_at": "2026-11-24T20:57:54+00:00"
+     "found_at": "2026-11-25T11:59:27+00:00"
     }
    ],
    "matchScore": 53,
@@ -1952,7 +2037,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-enterprise-platform",
-     "found_at": "2026-11-24T20:57:46+00:00"
+     "found_at": "2026-11-25T11:59:19+00:00"
     }
    ],
    "matchScore": 53,
@@ -1995,7 +2080,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-safety-platform",
-     "found_at": "2026-11-24T20:57:58+00:00"
+     "found_at": "2026-11-25T11:59:31+00:00"
     }
    ],
    "matchScore": 53,
@@ -2038,7 +2123,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-issuing",
-     "found_at": "2026-11-24T20:57:43+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 53,
@@ -2081,7 +2166,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-i-remote-eligible",
-     "found_at": "2026-11-24T20:57:46+00:00"
+     "found_at": "2026-11-25T11:59:19+00:00"
     }
    ],
    "matchScore": 53,
@@ -2123,7 +2208,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-ii-full-stack-remote-eligible",
-     "found_at": "2026-11-24T20:57:43+00:00"
+     "found_at": "2026-11-25T11:59:15+00:00"
     }
    ],
    "matchScore": 53,
@@ -2165,7 +2250,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-24T20:57:38+00:00"
+     "found_at": "2026-11-25T11:59:10+00:00"
     }
    ],
    "matchScore": 53,
@@ -2208,7 +2293,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-24T20:57:33+00:00"
+     "found_at": "2026-11-25T11:59:06+00:00"
     }
    ],
    "matchScore": 39,
