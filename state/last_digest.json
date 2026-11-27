@@ -40,9 +40,9 @@
    "raw": 0
   },
   "rss": {
-   "found": 58,
+   "found": 63,
    "errors": [],
-   "raw": 908
+   "raw": 963
   },
   "careers": {
    "found": 0,
@@ -56,13 +56,13 @@
   }
  },
  "counts": {
-  "total": 63,
-  "new": 5,
+  "total": 65,
+  "new": 3,
   "expired": 2,
-  "duplicatesFolded": 12,
+  "duplicatesFolded": 15,
   "priorityA": 15,
   "priorityB": 9,
-  "priorityC": 39
+  "priorityC": 41
  },
  "filters": {
   "min_salary_bdt": 20000,
@@ -73,5 +73,5 @@
   "allow_abroad": false
  },
  "blockedUrls": [],
- "ranAt": "2026-11-27T11:41:18+00:00"
+ "ranAt": "2026-11-27T19:46:12+00:00"
 }
