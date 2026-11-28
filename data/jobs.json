@@ -1,6 +1,6 @@
 {
  "schema": 2,
- "generatedAt": "2026-11-27T19:46:12+00:00",
+ "generatedAt": "2026-11-28T11:16:29+00:00",
  "meta": {
   "queries": [
    "software engineer",
@@ -31,9 +31,9 @@
   ],
   "sources": {
    "bdrecruit": {
-    "found": 19,
+    "found": 21,
     "errors": [],
-    "raw": 290
+    "raw": 296
    },
    "jsonld": {
     "found": 0,
@@ -43,9 +43,9 @@
     "raw": 0
    },
    "rss": {
-    "found": 63,
+    "found": 64,
     "errors": [],
-    "raw": 963
+    "raw": 995
    },
    "careers": {
     "found": 0,
@@ -59,13 +59,13 @@
    }
   },
   "counts": {
-   "total": 65,
+   "total": 68,
    "new": 3,
    "expired": 2,
    "duplicatesFolded": 15,
-   "priorityA": 15,
+   "priorityA": 16,
    "priorityB": 9,
-   "priorityC": 41
+   "priorityC": 43
   },
   "filters": {
    "min_salary_bdt": 20000,
@@ -76,7 +76,7 @@
    "allow_abroad": false
   },
   "blockedUrls": [],
-  "ranAt": "2026-11-27T19:46:12+00:00"
+  "ranAt": "2026-11-28T11:16:28+00:00"
  },
  "jobs": [
   {
@@ -105,7 +105,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/proarch-business-system-analyst",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:49+00:00"
     }
    ],
    "matchScore": 87,
@@ -147,7 +147,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-product",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 83,
@@ -162,6 +162,49 @@
     "Pay not stated, worth asking before you invest time"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Management Trainee Program, Daily Waadaa",
+   "company": "MGH Media",
+   "description": "Position: Management Trainee Program, Daily Waadaa\nCompany: MGH Media Limited (Daily Waadaa)\nEmployment Type: Management Trainee Program\nExperience: Fresh graduates and early-career professionals\nEducation: Graduates in Journalism, Mass Communication, Media Studies, International Relations, English or relevant disciplines\nDeadline: Not stated in the circular\nAbout the Role\nMGH Media Limited invites fresh graduates to join its newspaper Daily Waadaa as Management Trainees.\nRequirements\nGraduates in Journalism, Mass Communication, Media Studies, International Relations, English or other relevant disciplines\nFresh graduates and early-career professionals with a strong interest in journalism and storytelling\nStrong communication, analytical, research and problem-solving abilities\nPrior internship at a leading national daily or established media organisation is preferred\nAbout MGH Media\nMGH Media Limited is part of MGH Group, one of Bangladesh’s established business groups.\nHow to Apply\nInterested candidates can apply through the apply through the Google Form in MGH’s own careers post using the Apply Now button. The circular does not mention an application deadline, so apply early. Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: facebook.com (where we found this vacancy)\nOfficial link: forms.gle , apply through the Google Form in MGH’s own careers post\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "category": "Management & Business",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/management-trainee-program-daily-waadaa-mgh-media/",
+   "status": "Awaiting Review",
+   "id": "30727a77-e68e-4b3c-a2f5-354706b70ce3",
+   "createdAt": "2026-11-28T11:15:37+00:00",
+   "requiredSkills": "trainee, program, daily, waadaa, mgh, media, limited, employment, type, fresh, graduates, early",
+   "postedAt": "2026-11-28",
+   "deadline": "2026-12-28",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Full Time",
+   "experienceText": "Fresh Graduate",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "691d50598787fb2e",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/management-trainee-program-daily-waadaa-mgh-media/",
+     "found_at": "2026-11-28T11:15:37+00:00"
+    }
+   ],
+   "matchScore": 83,
+   "scoreParts": {
+    "title": 100,
+    "level": 100,
+    "skills": 33,
+    "preference": 100
+   },
+   "priority": "A",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Management Trainee Officer – SCM",
@@ -189,7 +232,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-scm-rfl-group/",
-     "found_at": "2026-11-27T19:45:27+00:00"
+     "found_at": "2026-11-28T11:15:40+00:00"
     }
    ],
    "matchScore": 83,
@@ -231,32 +274,32 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sezzle-junior-software-engineer-with-accounting-experience-mexico",
-     "found_at": "2026-11-27T19:45:43+00:00"
+     "found_at": "2026-11-28T11:15:56+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sezzle-junior-software-engineer-with-accounting-experience-latam",
-     "found_at": "2026-11-27T19:45:43+00:00"
+     "found_at": "2026-11-28T11:15:56+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sezzle-junior-software-engineer-with-accounting-experience-chile",
-     "found_at": "2026-11-27T19:45:43+00:00"
+     "found_at": "2026-11-28T11:15:56+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sezzle-junior-software-engineer-with-accounting-experience-brazil",
-     "found_at": "2026-11-27T19:45:43+00:00"
+     "found_at": "2026-11-28T11:15:56+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sezzle-junior-software-engineer-with-accounting-experience-argentina",
-     "found_at": "2026-11-27T19:45:43+00:00"
+     "found_at": "2026-11-28T11:15:56+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sezzle-junior-software-engineer-with-accounting-experience",
-     "found_at": "2026-11-27T19:45:43+00:00"
+     "found_at": "2026-11-28T11:15:56+00:00"
     }
    ],
    "matchScore": 83,
@@ -298,7 +341,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/field-marketing-executive-aci/",
-     "found_at": "2026-11-27T19:45:24+00:00"
+     "found_at": "2026-11-28T11:15:40+00:00"
     }
    ],
    "matchScore": 79,
@@ -340,7 +383,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-full-stack-product-software-engineer",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 79,
@@ -382,7 +425,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-export-rfl-group/",
-     "found_at": "2026-11-27T19:45:27+00:00"
+     "found_at": "2026-11-28T11:15:40+00:00"
     }
    ],
    "matchScore": 79,
@@ -425,7 +468,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/trainee-territory-officer-territory-officer-aci/",
-     "found_at": "2026-11-27T19:45:30+00:00"
+     "found_at": "2026-11-28T11:15:43+00:00"
     }
    ],
    "matchScore": 75,
@@ -467,7 +510,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-cbb-nexgen-community-bank/",
-     "found_at": "2026-11-27T19:45:30+00:00"
+     "found_at": "2026-11-28T11:15:43+00:00"
     }
    ],
    "matchScore": 75,
@@ -509,7 +552,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-sales-market-audit-pran-group/",
-     "found_at": "2026-11-27T19:45:27+00:00"
+     "found_at": "2026-11-28T11:15:40+00:00"
     }
    ],
    "matchScore": 75,
@@ -551,7 +594,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/ritual-software-engineer-intern",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 75,
@@ -593,7 +636,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-business-analyst-sailor/",
-     "found_at": "2026-11-27T19:45:31+00:00"
+     "found_at": "2026-11-28T11:15:43+00:00"
     }
    ],
    "matchScore": 75,
@@ -636,7 +679,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/sardine-qa-automation-engineer",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 75,
@@ -678,7 +721,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-programme-shanta/",
-     "found_at": "2026-11-27T19:45:24+00:00"
+     "found_at": "2026-11-28T11:15:37+00:00"
     }
    ],
    "matchScore": 75,
@@ -721,7 +764,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/management-trainee-officer-merchandising-snowtex/",
-     "found_at": "2026-11-27T19:45:24+00:00"
+     "found_at": "2026-11-28T11:15:37+00:00"
     }
    ],
    "matchScore": 75,
@@ -763,7 +806,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/abnormal-software-engineer-i-backend",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 71,
@@ -805,7 +848,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer-1",
-     "found_at": "2026-11-27T19:45:31+00:00"
+     "found_at": "2026-11-28T11:15:44+00:00"
     }
    ],
    "matchScore": 71,
@@ -847,7 +890,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-infrastructure-software-engineer-orchestration",
-     "found_at": "2026-11-27T19:45:39+00:00"
+     "found_at": "2026-11-28T11:15:52+00:00"
     }
    ],
    "matchScore": 71,
@@ -889,7 +932,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer",
-     "found_at": "2026-11-27T19:45:31+00:00"
+     "found_at": "2026-11-28T11:15:44+00:00"
     }
    ],
    "matchScore": 71,
@@ -931,7 +974,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upsun-software-engineer",
-     "found_at": "2026-11-27T19:45:39+00:00"
+     "found_at": "2026-11-28T11:15:52+00:00"
     }
    ],
    "matchScore": 71,
@@ -973,7 +1016,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/beyondtrust-software-development-engineer",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 66,
@@ -1015,7 +1058,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/g-p-software-engineer-ii",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:49+00:00"
     }
    ],
    "matchScore": 66,
@@ -1057,7 +1100,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/gusto-inc-software-engineer-financial-data-payments",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 66,
@@ -1099,7 +1142,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sales-marketing-front-office-support-service-epyllion-group/",
-     "found_at": "2026-11-27T19:45:24+00:00"
+     "found_at": "2026-11-28T11:15:40+00:00"
     }
    ],
    "matchScore": 62,
@@ -1141,7 +1184,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/teamified-senior-software-engineer",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:49+00:00"
     }
    ],
    "matchScore": 69,
@@ -1184,7 +1227,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/ping-identity-principal-software-engineer",
-     "found_at": "2026-11-27T19:45:39+00:00"
+     "found_at": "2026-11-28T11:15:52+00:00"
     }
    ],
    "matchScore": 65,
@@ -1227,17 +1270,17 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-platform",
-     "found_at": "2026-11-27T19:45:39+00:00"
+     "found_at": "2026-11-28T11:15:52+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc-latam",
-     "found_at": "2026-11-27T19:45:39+00:00"
+     "found_at": "2026-11-28T11:15:52+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upgrade-senior-qa-automation-engineer-heloc",
-     "found_at": "2026-11-27T19:45:39+00:00"
+     "found_at": "2026-11-28T11:15:52+00:00"
     }
    ],
    "matchScore": 65,
@@ -1280,7 +1323,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-i-costing-budgeting-mis-factory-mj-group/",
-     "found_at": "2026-11-27T19:45:27+00:00"
+     "found_at": "2026-11-28T11:15:40+00:00"
     }
    ],
    "matchScore": 64,
@@ -1323,7 +1366,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-operations-mouchak-factory-marico-bangladesh/",
-     "found_at": "2026-11-27T19:45:27+00:00"
+     "found_at": "2026-11-28T11:15:40+00:00"
     }
    ],
    "matchScore": 64,
@@ -1366,7 +1409,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-software-engineer-partner-integrations",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 61,
@@ -1409,17 +1452,17 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/customer-io-staff-software-engineer-backend",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/customer-io-senior-software-engineer-backend-platform",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/customer-io-senior-software-engineer-backend",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 61,
@@ -1462,7 +1505,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data-platform",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 61,
@@ -1505,7 +1548,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-query-planner-reflections",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:49+00:00"
     }
    ],
    "matchScore": 61,
@@ -1548,7 +1591,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/legion-principal-software-engineer-devops",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:49+00:00"
     }
    ],
    "matchScore": 61,
@@ -1591,7 +1634,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/postscript-senior-software-engineer-full-stack-80-backend",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:49+00:00"
     }
    ],
    "matchScore": 61,
@@ -1634,7 +1677,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-     "found_at": "2026-11-27T19:45:31+00:00"
+     "found_at": "2026-11-28T11:15:44+00:00"
     }
    ],
    "matchScore": 61,
@@ -1677,7 +1720,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/storyblok-senior-qa-engineer-europe",
-     "found_at": "2026-11-27T19:45:52+00:00"
+     "found_at": "2026-11-28T11:16:05+00:00"
     }
    ],
    "matchScore": 61,
@@ -1720,7 +1763,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-senior-business-intelligence-analyst-product-analytics",
-     "found_at": "2026-11-27T19:45:52+00:00"
+     "found_at": "2026-11-28T11:16:05+00:00"
     }
    ],
    "matchScore": 61,
@@ -1763,7 +1806,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-digital-marketing-consumer-engagement-aarong-dairy-brac-enterprises/",
-     "found_at": "2026-11-27T19:45:24+00:00"
+     "found_at": "2026-11-28T11:15:37+00:00"
     }
    ],
    "matchScore": 58,
@@ -1806,7 +1849,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-mobile-software-engineer-quality-engineering",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 57,
@@ -1849,7 +1892,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-software-engineer-guest-host",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 57,
@@ -1892,7 +1935,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-staff-software-engineer-marketing-technology",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 57,
@@ -1936,7 +1979,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-staff-software-engineer-payments",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 57,
@@ -1980,7 +2023,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-mis-cpv-retail-irm-al-arafah-islami-bank/",
-     "found_at": "2026-11-27T19:45:27+00:00"
+     "found_at": "2026-11-28T11:15:40+00:00"
     }
    ],
    "matchScore": 57,
@@ -2023,7 +2066,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/senior-business-analyst-manufacturing-avery-dennison/",
-     "found_at": "2026-11-27T19:45:31+00:00"
+     "found_at": "2026-11-28T11:15:43+00:00"
     }
    ],
    "matchScore": 57,
@@ -2066,7 +2109,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/customer-io-senior-software-engineer-product-ai",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 57,
@@ -2109,7 +2152,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/fivetran-principal-software-engineer-data-lakes",
-     "found_at": "2026-11-27T19:45:39+00:00"
+     "found_at": "2026-11-28T11:15:52+00:00"
     }
    ],
    "matchScore": 57,
@@ -2152,7 +2195,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-mis-runner-motors/",
-     "found_at": "2026-11-27T19:45:27+00:00"
+     "found_at": "2026-11-28T11:15:40+00:00"
     }
    ],
    "matchScore": 57,
@@ -2194,7 +2237,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/stability-ai-staff-software-engineer-data",
-     "found_at": "2026-11-27T19:45:39+00:00"
+     "found_at": "2026-11-28T11:15:52+00:00"
     }
    ],
    "matchScore": 57,
@@ -2210,6 +2253,94 @@
     "Title matches your excluded list (Staff)"
    ],
    "discoveredBy": "rss"
+  },
+  {
+   "title": "Senior Software Engineer",
+   "company": "Talkspace",
+   "description": "Headquarters: New York, NY (Remote)\nAt Talkspace, we are committed to fostering a diverse, equitable, inclusive, and belonging-centered workplace where everyone can thrive while making a difference in mental health. Want to help over two million people receive quality mental healthcare? Come join our mission of getting therapy in the hands of everyone!\nWe are looking for an experienced Senior Software Engineer to join our team. This individual will play a key role in designing, building, and scaling the core applications and services that power our platform. The ideal candidate is a hands-on full-stack engineer looking to build 0 to 1. To work at Talkspace, you need to be as passionate as we are about our work, and excited to partner with us on delivering quality mental healthcare. As a senior member of the team, you'll partner closely with Product, Design, and Engineering stakeholders to deliver high-quality solutions while helping shape technical standards and best practices across the organization.\nThis is a remote position. Candidates must be based in Eastern Time. Talkspace Headquarters is located in NYC.\nWhat You’ll Do\nTechnical Skills\nWrites correct and consistent code using both knowledge and expertise (backend, frontend, and devops).\nDevelops and maintains full-stack web applications using React on the frontend and Node.js on the backend.\nDesigns, builds, and integrates APIs and backend services to support product functionality and system integrations.\nReviews code efficiently and give feedback on it.\nUnderstands industry standards and consistently keeps informed of upcoming trends.\nCommunication and Leadership\nCommunicates and justifies technical decisions via design docs, tech talks and documentation.\nMentors Junior Engineers via Pairing, Feedback, PR Review and 1:1's.\nCommunicates effectively cross-functionally to the Product team, his manager, and business if needed.\nProactively identifies problems with requirements for and his own projects and the engineers they support and communicates it to stakeholders.\nProject Management\nDelivers complex product to QA that is fully developed and bug-free.\nTakes initiative to fix bugs, open tickets and improve code when needed\nPersistent in the face of roadblocks, knows when to pull others to solve the problem if needed.\nImpact\nEnd-to-end responsibility for getting production-ready features to the finish line.\nIdentifies problems and potential risks in his code and others.\nHelps keep consistency and quality in the code base with PR overview and feedback.\nHelps enforce proper QA for all products that he is involved in.\nPerforms other related duties as assigned.\nAbout You\nBachelor's degree or higher in Computer Science, Technology, Engineering or Math.\n5+ years of professional experience developing software\n5+ years of professional experience working in both react and node.js\nBenefits\nComprehensive Medical, Dental and Vision plans\nPre-tax benefits: HSA/ FSA\n401k Retirement Savings Program with matching up to 3%\nVoluntary benefits including disability, basic life or pet insurance, etc.\nFlexible PTO and Remote First Environment\nRegular team events, including Wellness Workshops and Team Building Events\nFree access to Talkspace products for you and one household member, as well as access to a friends and family discount!\nCompensation\nAt Talkspace, we believe that pay transparency during the interview process is a critical part of diversity, equity, and inclusion. Our salary bands are based on internal and external compensation benchmarks, which we regularly evaluate to ensure we pay competitively.\nThe base salary range for this role is between $146,000 - $180,000. Within the salary bands, leveling corresponds to each candidate’s relevant experience, skills as assessed during the interview process, education, and applicable certifications.\nWhy Talkspace?\nTalkspace, a UHS company, is the world’s leading online therapy company, serving over 2 million users looking to begin their wellness journey through tele-health. According to the World Health Organization, close to 1 billion people worldwide live with a mental disorder, and on average more than 75% with mental, neurological, and substance use disorders receive no treatment for their condition at all. Additionally, one-third of the world’s population – 2 billion people – live in countries that spend less than 1% of their health budgets on mental health. Therapy is an universal need and it's our mission here to change the world by cultivating an intentional space for people to feel supported through quality care that is simple and accessible.\nCombining our passion for innovation along with our desire to help others overcome the stigma behind “getting help,” we are transforming the way patients find the right care provider, making an otherwise impossible feat easily conquerable. Our network of licensed, accredited, and board-certified clinicians are increasing access to mental health for our members through a myriad of high quality therapy services: anytime and for a fraction of the price. Dedicated to our mission, we are looking for candidates that want to bring their talents into a diverse “for purpose” space. If you’re equally as passionate about making quality mental healthcare accessible to all then Talkspace is the right place for you!\nEQUAL OPPORTUNITY EMPLOYER\nTalkspace welcomes and celebrates talent from all backgrounds, perspectives, and walks of life to foster an innovative and diverse workforce. We encourage you to apply, even if you don’t meet every qualification or if your path has been nontraditional — such as not completing a formal degree program, taking a career break, or having a prior criminal record — if you believe you could make a great addition to this team. Come as you are and learn about the exciting opportunities on our team.\nIndividuals seeking employment at Talkspace are considered without regard to race, color, religious creed, sex, national origin, citizenship status, age, physical or mental disability, sexual orientation, marital, parental, veteran or military status, unfavorable military discharge, or any other status protected by applicable federal, state or local law.\nHow do we define Diversity, Equity, Inclusion, and Belonging at Talkspace?\nDiversity\nDiversity encompasses the unique attributes of our employees as individuals. We value and embrace the richness arising from their varied backgrounds, perspectives, and experiences, which include, but are not limited to, age, ability, ethnicity, gender, race, and cultural background.\nEquity\nEquity refers to a fair and impartial workplace, aiming to ensure equal growth and advancement opportunities for all employees. This involves amplifying underrepresented voices, addressing unconscious biases, and providing inclusive, culturally competent mental health care.\nInclusion\nInclusion signifies the practice of granting equal access to opportunities and resources for all employees, particularly those who might otherwise be excluded or marginalized. It ensures that everyone feels a sense of belonging, value, support, and respect as an individual.\nBelonging\nBelonging reflects the affinity and positive relationships that develop among employees from diverse backgrounds when businesses actively promote diversity, equity, and inclusion in the workplace.\nTo apply: https://weworkremotely.com/remote-jobs/talkspace-senior-software-engineer",
+   "category": "Software Development",
+   "location": "Remote (Anywhere in the World)",
+   "source": "We Work Remotely",
+   "url": "https://weworkremotely.com/remote-jobs/talkspace-senior-software-engineer",
+   "status": "Awaiting Review",
+   "id": "9c2ab689-02ce-4609-9e19-dd0318a136c7",
+   "createdAt": "2026-11-28T11:15:52+00:00",
+   "requiredSkills": "senior, engineer, headquarters, new, york, remote, talkspace, committed, fostering, diverse, equitable, inclusive",
+   "postedAt": "2026-11-28",
+   "deadline": null,
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "",
+   "employmentType": "Remote or hybrid",
+   "experienceText": "",
+   "area": "Remote",
+   "distanceKm": 0.0,
+   "fingerprint": "69622188dad0bddb",
+   "sources": [
+    {
+     "source": "We Work Remotely",
+     "url": "https://weworkremotely.com/remote-jobs/talkspace-senior-software-engineer",
+     "found_at": "2026-11-28T11:15:52+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Title matches your excluded list (Senior)"
+   ],
+   "discoveredBy": "rss"
+  },
+  {
+   "title": "Sr./Executive/Assistant Manager, Digital Marketing & Public Relation",
+   "company": "TECNO",
+   "description": "Position: Sr./Executive/Assistant Manager, Digital Marketing & Public Relation\nCompany: TECNO Mobile Bangladesh (Transsion)\nJob Location: Dhaka\nExperience: 2 to 6 years in social media management, digital content or creative communication\nEducation: Bachelor’s in Marketing, Media & Communication, Business Administration, Journalism or relevant discipline\nSalary: Negotiable\nDeadline: 05 December 2026\nAbout the Role\nTECNO Mobile is hiring for Digital Marketing and Public Relation in Dhaka.\nRequirements\nBachelor’s degree in Marketing, Media & Communication, Business Administration, Journalism or a relevant discipline\n2 to 6 years in social media management, digital content or creative communication\nTVC/OVC production, content development and website management\nGoogle Analytics, Facebook Ads Manager, Google Ads and DSP knowledge\nAbout TECNO\nTECNO is a global smartphone brand of Transsion Holdings, operating in Bangladesh.\nHow to Apply\nInterested candidates can apply through the send your resume and portfolio to hrcoe.ismartubd@transsion.com (Transsion’s own mailbox) using the Apply Now button. The application deadline is 05 December 2026 . Before you apply, make sure your CV is ATS friendly and tailored to this role.\nSource\nSource: linkedin.com (where we found this vacancy)\nOfficial link: linkedin.com , send your resume and portfolio to hrcoe.ismartubd@transsion.com (Transsion’s own mailbox)\nDetails may change; the official circular is final.\nMake Your ATS-Friendly CV",
+   "category": "Data & Reporting",
+   "location": "Dhaka, Bangladesh",
+   "source": "BDRecruit",
+   "url": "https://bdrecruit.net/job/sr-executive-assistant-manager-digital-marketing-public-relation-tecno/",
+   "status": "Awaiting Review",
+   "id": "5b2537e3-b52f-4e7b-b4dd-7128c4b6f23f",
+   "createdAt": "2026-11-28T11:15:37+00:00",
+   "requiredSkills": "sr./executive/assistant, digital, marketing, public, tecno, mobile, bangladesh, transsion, location, dhaka, social, media",
+   "postedAt": "2026-11-28",
+   "deadline": "2026-12-05",
+   "salaryMin": null,
+   "salaryMax": null,
+   "salaryText": "Negotiable",
+   "employmentType": "Full Time",
+   "experienceText": "2 Years",
+   "area": "Dhaka (area not stated)",
+   "distanceKm": null,
+   "fingerprint": "8709a1a386b33c2b",
+   "sources": [
+    {
+     "source": "BDRecruit",
+     "url": "https://bdrecruit.net/job/sr-executive-assistant-manager-digital-marketing-public-relation-tecno/",
+     "found_at": "2026-11-28T11:15:37+00:00"
+    }
+   ],
+   "matchScore": 57,
+   "scoreParts": {
+    "title": 100,
+    "level": 10,
+    "skills": 17,
+    "preference": 100
+   },
+   "priority": "C",
+   "gateNotes": [
+    "Pay not stated, worth asking before you invest time",
+    "Exact area not stated in the posting",
+    "Title matches your excluded list (Sr)",
+    "Title matches your excluded list (Manager)"
+   ],
+   "discoveredBy": "bdrecruit"
   },
   {
    "title": "Principal Software Engineer - Data",
@@ -2237,7 +2368,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/zoominfo-technologies-llc-principal-software-engineer-data",
-     "found_at": "2026-11-27T19:45:52+00:00"
+     "found_at": "2026-11-28T11:16:05+00:00"
     }
    ],
    "matchScore": 57,
@@ -2280,7 +2411,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/executive-sr-executive-medico-marketing-aci/",
-     "found_at": "2026-11-27T19:45:24+00:00"
+     "found_at": "2026-11-28T11:15:37+00:00"
     }
    ],
    "matchScore": 53,
@@ -2324,7 +2455,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer-query",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:49+00:00"
     }
    ],
    "matchScore": 53,
@@ -2367,7 +2498,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-delivery-engineering",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:49+00:00"
     }
    ],
    "matchScore": 53,
@@ -2410,12 +2541,12 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-on-prem",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     },
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer",
-     "found_at": "2026-11-27T19:45:39+00:00"
+     "found_at": "2026-11-28T11:15:52+00:00"
     }
    ],
    "matchScore": 53,
@@ -2458,7 +2589,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/collibra-vp-product-marketing-executive-thought-leadership",
-     "found_at": "2026-11-27T19:45:48+00:00"
+     "found_at": "2026-11-28T11:16:01+00:00"
     }
    ],
    "matchScore": 53,
@@ -2500,7 +2631,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-enterprise-platform",
-     "found_at": "2026-11-27T19:45:39+00:00"
+     "found_at": "2026-11-28T11:15:52+00:00"
     }
    ],
    "matchScore": 53,
@@ -2543,7 +2674,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/discord-staff-software-engineer-safety-platform",
-     "found_at": "2026-11-27T19:45:52+00:00"
+     "found_at": "2026-11-28T11:16:05+00:00"
     }
    ],
    "matchScore": 53,
@@ -2586,7 +2717,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/dropbox-principal-software-engineer-product-engineering",
-     "found_at": "2026-11-27T19:45:52+00:00"
+     "found_at": "2026-11-28T11:16:05+00:00"
     }
    ],
    "matchScore": 53,
@@ -2629,7 +2760,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/gusto-inc-staff-software-engineer-retirement-financial-platform",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 53,
@@ -2672,7 +2803,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-issuing",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:49+00:00"
     }
    ],
    "matchScore": 53,
@@ -2715,7 +2846,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-i-remote-eligible",
-     "found_at": "2026-11-27T19:45:39+00:00"
+     "found_at": "2026-11-28T11:15:52+00:00"
     }
    ],
    "matchScore": 53,
@@ -2757,7 +2888,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-ii-full-stack-remote-eligible",
-     "found_at": "2026-11-27T19:45:36+00:00"
+     "found_at": "2026-11-28T11:15:48+00:00"
     }
    ],
    "matchScore": 53,
@@ -2799,7 +2930,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/upstart-principal-software-engineer-capital-marketplace",
-     "found_at": "2026-11-27T19:45:52+00:00"
+     "found_at": "2026-11-28T11:16:05+00:00"
     }
    ],
    "matchScore": 53,
@@ -2842,7 +2973,7 @@
     {
      "source": "We Work Remotely",
      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
-     "found_at": "2026-11-27T19:45:31+00:00"
+     "found_at": "2026-11-28T11:15:44+00:00"
     }
    ],
    "matchScore": 53,
@@ -2885,7 +3016,7 @@
     {
      "source": "BDRecruit",
      "url": "https://bdrecruit.net/job/officer-senior-officer-product-management-marketing-rahimafrooz/",
-     "found_at": "2026-11-27T19:45:27+00:00"
+     "found_at": "2026-11-28T11:15:43+00:00"
     }
    ],
    "matchScore": 39,
